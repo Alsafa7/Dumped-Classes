@@ -1,0 +1,163 @@
+@interface PLCameraEffectsRenderer : NSObject
+{
+	id _eaglContext;
+	id _ciContext;
+	id _dispatchQueue;
+	BOOL _isShowingGrid;
+	BOOL _gridTransitionInFlight;
+	BOOL _gridTransitionIsAnimated;
+	id _delegate;
+	double _lastReportedFrameDropTime;
+	usigned long long _totalFramesSinceLastReportedFrameDrop;
+	usigned long long _droppedFramesSinceLastReportedFrameDrop;
+	BOOL __atomicPreviewStartedNotificationNeeded;
+	BOOL _atomicMirrorFilterRendering;
+	BOOL __previewLayerEnabled;
+	BOOL __inBackground;
+	id __renderEffectsFullsizeView;
+	id __renderGridView;
+	id _atomicVideoPreviewView;
+	usigned long long _atomicFilterIndex;
+	id __atomicPreviewStartedBlock;
+	long long _atomicCameraMode;
+}
+
++ initWithDispatchQueue:
++ dealloc
++ setDelegate:
++ init
++ delegate
++ _applicationDidBecomeActive:
++ _applicationWillResignActive:
++ _applicationDidEnterBackground:
++ _applicationWillEnterForeground:
++ setCameraMode:
++ cameraMode
++ _deviceStarted:
++ renderWithSampleBuffer:
++ didDropSampleBuffer:
++ setMirrorFilterRendering:
++ setFilterIndex:forceStateChange:renderNotifyBlock:
++ videoPreviewView
++ setVideoPreviewView:
++ isShowingGrid
++ setShowGrid:animated:
++ filterIndex
++ setFilterIndex:
++ _setInBackground:
++ _createContextIfNecessary
++ _setPreviewLayerEnabled:
++ _setVideoDataOutputEnabled:
++ _setPreviewStartedNotificationNeeded:
++ _previewStarted:
++ _tearDownEffectsView:
++ _isInBackground
++ _renderEffectsFullsizeView
++ _renderGridView
++ _setupEffectsView:
++ atomicFilterIndex
++ setAtomicFilterIndex:
++ _updateEffectsFullsizeView
++ _setPreviewStartedBlock:
++ _forceResetToFilteredRendering:
++ _runOnMainThreadImmediatelyIfPossibleWithBlock:
++ atomicVideoPreviewView
++ _destroyEffectsFullsizeView
++ _destroyEffectsGridView
++ setAtomicVideoPreviewView:
++ _setupEffectsGridView
++ _setupEffectsFullsizeView
++ _setRenderEffectsFullsizeView:
++ _setRenderGridView:
++ mirrorFilterRendering
++ _notifyOfRenderIfNecessary
++ _renderWithSampleBuffer:
++ _updateStatsForFrameWasDropped:
++ _reportStatsForFrameDrops
++ _resumeRendering
++ _previewStartedNotificationNeeded
++ _handlePreviewStartedFiltered:
++ _previewStartedBlock
++ _gridTransitionInFlight
++ _setGridTransitionIsInFlight:
++ _transitionToGrid:
++ _transitionFromGrid:
++ _animatedLayerForView:
++ _gridFrameForCurrentFilters
++ _animateToGrid:layer:fadeOutLayer:startFrame:endFrame:completion:
++ _animateGridLayerZoomToGrid:
++ _frameToZoomFromFrame:toFrame:withinFrame:
++ _animateLayer:startFrame:endFrame:viewTransform:animationDuration:animationTimingFunction:animationDelegate:
++ _zoomedFrameForRect:fromFullFrame:toZoomFrame:
++ setShowGrid:
++ _previewLayerEnabled
+- initWithDispatchQueue:
+- dealloc
+- setDelegate:
+- init
+- delegate
+- _applicationDidBecomeActive:
+- _applicationWillResignActive:
+- _applicationDidEnterBackground:
+- _applicationWillEnterForeground:
+- setCameraMode:
+- cameraMode
+- _deviceStarted:
+- renderWithSampleBuffer:
+- didDropSampleBuffer:
+- setMirrorFilterRendering:
+- setFilterIndex:forceStateChange:renderNotifyBlock:
+- videoPreviewView
+- setVideoPreviewView:
+- isShowingGrid
+- setShowGrid:animated:
+- filterIndex
+- setFilterIndex:
+- _setInBackground:
+- _createContextIfNecessary
+- _setPreviewLayerEnabled:
+- _setVideoDataOutputEnabled:
+- _setPreviewStartedNotificationNeeded:
+- _previewStarted:
+- _tearDownEffectsView:
+- _isInBackground
+- _renderEffectsFullsizeView
+- _renderGridView
+- _setupEffectsView:
+- atomicFilterIndex
+- setAtomicFilterIndex:
+- _updateEffectsFullsizeView
+- _setPreviewStartedBlock:
+- _forceResetToFilteredRendering:
+- _runOnMainThreadImmediatelyIfPossibleWithBlock:
+- atomicVideoPreviewView
+- _destroyEffectsFullsizeView
+- _destroyEffectsGridView
+- setAtomicVideoPreviewView:
+- _setupEffectsGridView
+- _setupEffectsFullsizeView
+- _setRenderEffectsFullsizeView:
+- _setRenderGridView:
+- mirrorFilterRendering
+- _notifyOfRenderIfNecessary
+- _renderWithSampleBuffer:
+- _updateStatsForFrameWasDropped:
+- _reportStatsForFrameDrops
+- _resumeRendering
+- _previewStartedNotificationNeeded
+- _handlePreviewStartedFiltered:
+- _previewStartedBlock
+- _gridTransitionInFlight
+- _setGridTransitionIsInFlight:
+- _transitionToGrid:
+- _transitionFromGrid:
+- _animatedLayerForView:
+- _gridFrameForCurrentFilters
+- _animateToGrid:layer:fadeOutLayer:startFrame:endFrame:completion:
+- _animateGridLayerZoomToGrid:
+- _frameToZoomFromFrame:toFrame:withinFrame:
+- _animateLayer:startFrame:endFrame:viewTransform:animationDuration:animationTimingFunction:animationDelegate:
+- _zoomedFrameForRect:fromFullFrame:toZoomFrame:
+- setShowGrid:
+- _previewLayerEnabled
+@end

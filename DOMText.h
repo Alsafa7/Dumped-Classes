@@ -1,0 +1,6 @@
+@interface DOMText : DOMCharacterData
+{
+
+}
+
+@end

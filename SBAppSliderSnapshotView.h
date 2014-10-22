@@ -1,0 +1,110 @@
+@interface SBAppSliderSnapshotView : UIView
+{
+	id _application;
+	id _containerView;
+	id _wallpaperEffectView;
+	id _snapshotImageInfo;
+	id _snapshotImage;
+	struct _imageSize;
+	id _statusBarCache;
+	id _statusBar;
+	id _statusBarCacheKey;
+	BOOL _isVisible;
+	BOOL _invalidated;
+	BOOL _needsZoomFilter;
+	BOOL _loadedImage;
+	id _snapshotQueue;
+	long long _orientation;
+}
+
++ _viewPresenting:
++ _viewDismissing:
++ prepareToBecomeVisibleIfNecessary
++ respondToBecomingInvisibleIfNecessary
++ setOrientation:orientationBehavior:
++ setApplication:
++ _layoutStatusBar
++ invalidated
++ setInvalidated:
++ initWithApplication:orientation:async:withQueue:statusBarCache:
++ _containerOrientation
++ snapshotImageInfo
++ _statusBarCacheKeyForStyleRequest:
++ _updateStatusbarTranslucency
++ _snapshotFrame
++ _layoutContainer
++ _rotationTransformForOrientation
++ _loadSnapshotAsync
++ _loadSnapshotSync
++ _snapshotInfos
++ _cachedImageForImageInfos:foundInfo:
++ _snapshotInfoForSnapshotFromInfos:
++ _snapshotImageForImageInfo:
++ _snapshotInfoForDefaultPNG
++ setSnapshotImageInfo:
++ _updateTranslucency
++ _loadImageAsyncFromSnapshotInfo:
++ _snapshotName
++ _cachedSnapshotForSnapshotInfos:foundInfo:
++ _queue_keepGoing
++ _queue_createDecodedImageIfPossible:
++ _snapshotImageLoaded:withInfo:
++ _cgImageForSnapshotInfo:
++ _imageAtPath:preferredScale:orientation:
++ _defaultImageforImageInfo:
++ initWithFrame:
++ dealloc
++ layoutSubviews
++ description
++ sizeThatFits:
++ invalidate
++ orientation
++ setOrientation:
++ _snapshotImage
++ application
+- _viewPresenting:
+- _viewDismissing:
+- prepareToBecomeVisibleIfNecessary
+- respondToBecomingInvisibleIfNecessary
+- setOrientation:orientationBehavior:
+- setApplication:
+- _layoutStatusBar
+- invalidated
+- setInvalidated:
+- initWithApplication:orientation:async:withQueue:statusBarCache:
+- _containerOrientation
+- snapshotImageInfo
+- _statusBarCacheKeyForStyleRequest:
+- _updateStatusbarTranslucency
+- _snapshotFrame
+- _layoutContainer
+- _rotationTransformForOrientation
+- _loadSnapshotAsync
+- _loadSnapshotSync
+- _snapshotInfos
+- _cachedImageForImageInfos:foundInfo:
+- _snapshotInfoForSnapshotFromInfos:
+- _snapshotImageForImageInfo:
+- _snapshotInfoForDefaultPNG
+- setSnapshotImageInfo:
+- _updateTranslucency
+- _loadImageAsyncFromSnapshotInfo:
+- _snapshotName
+- _cachedSnapshotForSnapshotInfos:foundInfo:
+- _queue_keepGoing
+- _queue_createDecodedImageIfPossible:
+- _snapshotImageLoaded:withInfo:
+- _cgImageForSnapshotInfo:
+- _imageAtPath:preferredScale:orientation:
+- _defaultImageforImageInfo:
+- initWithFrame:
+- dealloc
+- layoutSubviews
+- description
+- sizeThatFits:
+- invalidate
+- orientation
+- setOrientation:
+- _snapshotImage
+- application
+@end

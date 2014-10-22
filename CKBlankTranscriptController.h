@@ -1,0 +1,6 @@
+@interface CKBlankTranscriptController : UIViewController
+{
+
+}
+
+@end

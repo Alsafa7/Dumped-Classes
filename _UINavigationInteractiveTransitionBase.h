@@ -1,0 +1,153 @@
+@interface _UINavigationInteractiveTransitionBase : UIPercentDrivenInteractiveTransition
+{
+	id _gestureRecognizerView;
+	id _gestureRecognizer;
+	long long __interactionState;
+	BOOL __transitionWasStopped;
+	BOOL __stoppedTransitionWasCancelled;
+	id __parent;
+	BOOL __useAugmentedShouldPopDecisionProcedure;
+	BOOL __completesTransitionOnEnd;
+	id _displayLink;
+	Array _timestamps;
+	Array _velocities;
+	Array _accelerations;
+	BOOL _shouldReverseTranslation;
+	BOOL _springAnimationIsPending;
+	BOOL _inSpringAnimation;
+	id _animationController;
+	id _delegate;
+	usigned long long _sampleCount;
+	double _totalDistance;
+	double _skipTimeStamp;
+	double _previousTimeStamp;
+	double _previousDisplacement;
+	double _previousVelocity;
+	double _previousAcceleration;
+	double _averageVelocity;
+	double _averageAcceleration;
+}
+
++ dealloc
++ setDelegate:
++ delegate
++ _resetInteractionController
++ _setInteractionState:
++ _setCompletesTransitionOnEnd:
++ setAnimationController:
++ handleNavigationTransition:
++ setGestureRecognizer:
++ gestureRecognizer
++ gestureRecognizerView
++ cancelInteractiveTransition
++ finishInteractiveTransition
++ _stopInteractiveTransition
++ startInteractiveTransition:
++ startInteractiveTransition
++ animationController
++ _updateStatistics:firstSample:finalSample:
++ springAnimationIsPending
++ popGesture:withRemainingDuration:shouldPopWithVelocity:
++ _completesTransitionOnEnd
++ setNotInteractiveTransition
++ gestureRecognizerShouldBegin:
++ gestureRecognizer:shouldRecognizeSimultaneouslyWithGestureRecognizer:
++ gestureRecognizer:shouldReceiveTouch:
++ initWithGestureRecognizerView:animator:delegate:
++ _navigationGesture
++ _completeStoppedInteractiveTransition
++ _gestureRecognizer:shouldBeRequiredToFailByGestureRecognizer:
++ shouldReverseTranslation
++ setShouldReverseTranslation:
++ _interactionState
++ _transitionWasStopped
++ _setTransitionWasStopped:
++ _stoppedTransitionWasCancelled
++ _setStoppedTransitionWasCancelled:
++ _parent
++ _setParent:
++ _useAugmentedShouldPopDecisionProcedure
++ _setUseAugmentedShouldPopDecisionProcedure:
++ setSpringAnimationIsPending:
++ inSpringAnimation
++ setInSpringAnimation:
++ sampleCount
++ setSampleCount:
++ totalDistance
++ setTotalDistance:
++ skipTimeStamp
++ setSkipTimeStamp:
++ previousTimeStamp
++ setPreviousTimeStamp:
++ previousDisplacement
++ setPreviousDisplacement:
++ previousVelocity
++ setPreviousVelocity:
++ previousAcceleration
++ setPreviousAcceleration:
++ averageVelocity
++ setAverageVelocity:
++ averageAcceleration
++ setAverageAcceleration:
+- dealloc
+- setDelegate:
+- delegate
+- _resetInteractionController
+- _setInteractionState:
+- _setCompletesTransitionOnEnd:
+- setAnimationController:
+- handleNavigationTransition:
+- setGestureRecognizer:
+- gestureRecognizer
+- gestureRecognizerView
+- cancelInteractiveTransition
+- finishInteractiveTransition
+- _stopInteractiveTransition
+- startInteractiveTransition:
+- startInteractiveTransition
+- animationController
+- _updateStatistics:firstSample:finalSample:
+- springAnimationIsPending
+- popGesture:withRemainingDuration:shouldPopWithVelocity:
+- _completesTransitionOnEnd
+- setNotInteractiveTransition
+- gestureRecognizerShouldBegin:
+- gestureRecognizer:shouldRecognizeSimultaneouslyWithGestureRecognizer:
+- gestureRecognizer:shouldReceiveTouch:
+- initWithGestureRecognizerView:animator:delegate:
+- _navigationGesture
+- _completeStoppedInteractiveTransition
+- _gestureRecognizer:shouldBeRequiredToFailByGestureRecognizer:
+- shouldReverseTranslation
+- setShouldReverseTranslation:
+- _interactionState
+- _transitionWasStopped
+- _setTransitionWasStopped:
+- _stoppedTransitionWasCancelled
+- _setStoppedTransitionWasCancelled:
+- _parent
+- _setParent:
+- _useAugmentedShouldPopDecisionProcedure
+- _setUseAugmentedShouldPopDecisionProcedure:
+- setSpringAnimationIsPending:
+- inSpringAnimation
+- setInSpringAnimation:
+- sampleCount
+- setSampleCount:
+- totalDistance
+- setTotalDistance:
+- skipTimeStamp
+- setSkipTimeStamp:
+- previousTimeStamp
+- setPreviousTimeStamp:
+- previousDisplacement
+- setPreviousDisplacement:
+- previousVelocity
+- setPreviousVelocity:
+- previousAcceleration
+- setPreviousAcceleration:
+- averageVelocity
+- setAverageVelocity:
+- averageAcceleration
+- setAverageAcceleration:
+@end

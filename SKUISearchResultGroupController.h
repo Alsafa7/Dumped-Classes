@@ -1,0 +1,68 @@
+@interface SKUISearchResultGroupController : NSObject
+{
+	id _resultGroup;
+	id _delegate;
+	id _operationQueue;
+	id _clientContext;
+	id _itemIndexesToLoad;
+	id _editorialIndexesToLoad;
+	id _editorialItemIdentifierIndexesToLoad;
+	id _editorialItemArtworkIndexPathsToLoad;
+	id _editorialArtworkIndexesToLoad;
+	id _artworksByIndex;
+	id _entitiesByIndex;
+	id _itemArtworksByIndexPath;
+	id _onScreenIndexes;
+}
+
++ dealloc
++ setDelegate:
++ delegate
++ clientContext
++ numberOfEntities
++ entityTypeAtIndex:
++ entityAtIndex:
++ _loadMore
++ _loadItemsAtIndexes:
++ _loadEditorialItemArtworkAtIndexPath:
++ _loadEditorialItemIdentifiersAtIndex:
++ _loadEditorialAtIndex:
++ _loadArtworkAtIndex:
++ _setItemResponse:error:forIndexes:
++ editorialAtIndex:
++ _setEditorialItemArtworkResponse:error:forIndexPath:
++ _setEditorialItemIdentifierResponse:error:forIndex:
++ _setEditorialResponse:error:forIndex:
++ _setArtworkResponse:error:forIndex:
++ identifierAtIndex:
++ initWithSearchResultGroup:clientContext:
++ itemAtIndex:
++ editorialArtworkAtIndex:
++ updateForVisibleIndexes:
++ .cxx_destruct
+- dealloc
+- setDelegate:
+- delegate
+- clientContext
+- numberOfEntities
+- entityTypeAtIndex:
+- entityAtIndex:
+- _loadMore
+- _loadItemsAtIndexes:
+- _loadEditorialItemArtworkAtIndexPath:
+- _loadEditorialItemIdentifiersAtIndex:
+- _loadEditorialAtIndex:
+- _loadArtworkAtIndex:
+- _setItemResponse:error:forIndexes:
+- editorialAtIndex:
+- _setEditorialItemArtworkResponse:error:forIndexPath:
+- _setEditorialItemIdentifierResponse:error:forIndex:
+- _setEditorialResponse:error:forIndex:
+- _setArtworkResponse:error:forIndex:
+- identifierAtIndex:
+- initWithSearchResultGroup:clientContext:
+- itemAtIndex:
+- editorialArtworkAtIndex:
+- updateForVisibleIndexes:
+- .cxx_destruct
+@end

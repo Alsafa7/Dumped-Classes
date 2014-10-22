@@ -1,0 +1,6 @@
+@interface CKConversationListNewMessageCell : UITableViewCell
+{
+
+}
+
+@end

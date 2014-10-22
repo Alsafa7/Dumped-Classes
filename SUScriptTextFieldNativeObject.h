@@ -1,0 +1,66 @@
+@interface SUScriptTextFieldNativeObject : SUScriptNativeObject
+{
+	id _textFieldDelegate;
+}
+
++ dealloc
++ resignFirstResponder
++ becomeFirstResponder
++ setValue:
++ value
++ width
++ setWidth:
++ autocapitalizationType
++ setAutocapitalizationType:
++ autocorrectionType
++ setAutocorrectionType:
++ keyboardType
++ setKeyboardType:
++ setPlaceholder:
++ textFieldShouldBeginEditing:
++ textFieldDidBeginEditing:
++ textFieldDidEndEditing:
++ placeholder
++ searchBar:textDidChange:
++ searchBarShouldBeginEditing:
++ searchBarTextDidBeginEditing:
++ searchBarTextDidEndEditing:
++ searchBarSearchButtonClicked:
++ destroyNativeObject
++ setupNativeObject
++ _nativeObjectDelegate
++ _setNativeObjectDelegate:
++ _textDidChange:
++ _textDidEndEditingOnExit:
++ _sendScriptDidChange
+- dealloc
+- resignFirstResponder
+- becomeFirstResponder
+- setValue:
+- value
+- width
+- setWidth:
+- autocapitalizationType
+- setAutocapitalizationType:
+- autocorrectionType
+- setAutocorrectionType:
+- keyboardType
+- setKeyboardType:
+- setPlaceholder:
+- textFieldShouldBeginEditing:
+- textFieldDidBeginEditing:
+- textFieldDidEndEditing:
+- placeholder
+- searchBar:textDidChange:
+- searchBarShouldBeginEditing:
+- searchBarTextDidBeginEditing:
+- searchBarTextDidEndEditing:
+- searchBarSearchButtonClicked:
+- destroyNativeObject
+- setupNativeObject
+- _nativeObjectDelegate
+- _setNativeObjectDelegate:
+- _textDidChange:
+- _textDidEndEditingOnExit:
+- _sendScriptDidChange
+@end

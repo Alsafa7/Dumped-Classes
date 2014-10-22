@@ -1,0 +1,110 @@
+@interface WiFiUtils : NSObject
+{
+	id _unmergedScanInfoDict;
+	id _missingBSSIDCounts;
+	pointer _wifiShim;
+	id _wifiBusy;
+	BOOL _scanInProgress;
+	BOOL _joinInProgress;
+	BOOL _scanningActive;
+	BOOL _scanOnlyWhenAppActive;
+	id _scanTimer;
+}
+
++ openWiFi
++ setUnmergedScanInfoDict:
++ scanTimerCallback:
++ closeWiFi
++ triggerScan
++ setScanInProgress:
++ setJoinInProgress:
++ unmergedScanInfoDict
++ joinNetworkWithScanInfoThread:
++ joinNetworkWithNameThread:
++ scanInfoViaDirectedScanThread:
++ asyncWiFiScan:
++ scanInfoViaDirectedScanSync:wifiType:scanInfo:
++ joinNetworkWithScanInfo:password:rememberChoice:
++ asyncWiFiScanThread:
++ mergeScanResults:
++ dealloc
++ init
++ airPortIsOn
++ activateScanning:
++ setAutoJoinState:
++ unmergedScanInfoArray
++ cancelAsync
++ getPreferredNetworks:
++ isCurrentlyAssociatedToAnInfrastructureNetwork:
++ getCurrentAssociationInfo
++ getAutoJoinState
++ dissassociateSync
++ clearScanCacheSync
++ joinNetworkWithScanInfoAsync:password:rememberChoice:
++ scanInfoViaDirectedScanAsync:wifiType:retries:
++ isScanningActive
++ mergedScanInfoArray
++ getNetworkPasswordForNetworkNamed:
++ scanInfoForMACAddress:
++ scanInfoForName:wifiType:
++ joinNetworkWithNameAsync:password:rememberChoice:
++ _scanTimer
++ set_scanTimer:
++ isScanInProgress
++ isJoinInProgress
++ getCurrentAssociationScanInfo
++ setScanOnlyWhenAppActive:
++ unconfiguredScanInfosOfType:
++ resetScanInfosOfType:
++ getCurrentAssociationInfoOrNil
++ getIfList
++ getLinkStatus
+- openWiFi
+- setUnmergedScanInfoDict:
+- scanTimerCallback:
+- closeWiFi
+- triggerScan
+- setScanInProgress:
+- setJoinInProgress:
+- unmergedScanInfoDict
+- joinNetworkWithScanInfoThread:
+- joinNetworkWithNameThread:
+- scanInfoViaDirectedScanThread:
+- asyncWiFiScan:
+- scanInfoViaDirectedScanSync:wifiType:scanInfo:
+- joinNetworkWithScanInfo:password:rememberChoice:
+- asyncWiFiScanThread:
+- mergeScanResults:
+- dealloc
+- init
+- airPortIsOn
+- activateScanning:
+- setAutoJoinState:
+- unmergedScanInfoArray
+- cancelAsync
+- getPreferredNetworks:
+- isCurrentlyAssociatedToAnInfrastructureNetwork:
+- getCurrentAssociationInfo
+- getAutoJoinState
+- dissassociateSync
+- clearScanCacheSync
+- joinNetworkWithScanInfoAsync:password:rememberChoice:
+- scanInfoViaDirectedScanAsync:wifiType:retries:
+- isScanningActive
+- mergedScanInfoArray
+- getNetworkPasswordForNetworkNamed:
+- scanInfoForMACAddress:
+- scanInfoForName:wifiType:
+- joinNetworkWithNameAsync:password:rememberChoice:
+- _scanTimer
+- set_scanTimer:
+- isScanInProgress
+- isJoinInProgress
+- getCurrentAssociationScanInfo
+- setScanOnlyWhenAppActive:
+- unconfiguredScanInfosOfType:
+- resetScanInfosOfType:
+- getCurrentAssociationInfoOrNil
+- getIfList
+- getLinkStatus
+@end

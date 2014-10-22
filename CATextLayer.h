@@ -1,0 +1,70 @@
+@interface CATextLayer : CALayer
+{
+	pointer _state;
+}
+
++ allowsFontSubpixelQuantization
++ truncationString
++ wrapped
++ setTruncationString:
++ setAllowsFontSubpixelQuantization:
++ _prepareContext:
++ _preferredSize
++ _drawLine:inContext:atPoint:
++ isWrapped
++ _createStringDict
++ _retainTypesetter
++ alignmentMode
++ truncationMode
++ _createTruncationToken
++ _applyLinesToFunction:info:
++ setWrapped:
++ setTruncationMode:
++ dealloc
++ init
++ didChangeValueForKey:
++ string
++ implicitAnimationForKeyPath:
++ setFont:
++ font
++ setFontSize:
++ setString:
++ initWithLayer:
++ foregroundColor
++ setForegroundColor:
++ setAlignmentMode:
++ fontSize
++ drawInContext:
+- allowsFontSubpixelQuantization
+- truncationString
+- wrapped
+- setTruncationString:
+- setAllowsFontSubpixelQuantization:
+- _prepareContext:
+- _preferredSize
+- _drawLine:inContext:atPoint:
+- isWrapped
+- _createStringDict
+- _retainTypesetter
+- alignmentMode
+- truncationMode
+- _createTruncationToken
+- _applyLinesToFunction:info:
+- setWrapped:
+- setTruncationMode:
+- dealloc
+- init
+- didChangeValueForKey:
+- string
+- implicitAnimationForKeyPath:
+- setFont:
+- font
+- setFontSize:
+- setString:
+- initWithLayer:
+- foregroundColor
+- setForegroundColor:
+- setAlignmentMode:
+- fontSize
+- drawInContext:
+@end

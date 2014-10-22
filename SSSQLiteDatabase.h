@@ -1,0 +1,77 @@
+@interface SSSQLiteDatabase : NSObject
+{
+	pointer _db;
+	id _dispatchQueue;
+	id _databasePath;
+	BOOL _readOnly;
+	BOOL _isInTransaction;
+	id _setupBlock;
+	pointer _statementCache;
+	BOOL _takesTaskCompletionAssertions;
+	pointer _taskAssertion;
+	long long _taskAssertionCount;
+}
+
++ dealloc
++ performTransactionWithBlock:
++ userVersion
++ setUserVersion:
++ _openDatabase
++ initWithDatabaseURL:
++ setSetupBlock:
++ prepareStatementForSQL:cache:usingBlock:
++ executeSQL:
++ initWithDatabaseURL:readOnly:
++ dispatchBlockAsync:
++ _beginTaskCompletionAssertion
++ _endTaskCompletionAssertion
++ _accessDatabaseUsingBlock:
++ _resetCorruptDatabase
++ _statementForSQL:cache:
++ setUserVersion:forDatabase:
++ userVersionForDatabase:
++ _openFlags
++ _resetAndReopenDatabaseWithPath:
++ _resetDatabaseWithPath:
++ accessDatabaseUsingBlock:
++ countChanges
++ dispatchAfter:block:
++ dispatchBlockSync:
++ newDispatchSourceWithType:
++ beginTaskCompletionAssertion
++ endTaskCompletionAssertion
++ setTakesTaskCompletionAssertions:
++ takesTaskCompletionAssertions
++ setupBlock
+- dealloc
+- performTransactionWithBlock:
+- userVersion
+- setUserVersion:
+- _openDatabase
+- initWithDatabaseURL:
+- setSetupBlock:
+- prepareStatementForSQL:cache:usingBlock:
+- executeSQL:
+- initWithDatabaseURL:readOnly:
+- dispatchBlockAsync:
+- _beginTaskCompletionAssertion
+- _endTaskCompletionAssertion
+- _accessDatabaseUsingBlock:
+- _resetCorruptDatabase
+- _statementForSQL:cache:
+- setUserVersion:forDatabase:
+- userVersionForDatabase:
+- _openFlags
+- _resetAndReopenDatabaseWithPath:
+- _resetDatabaseWithPath:
+- accessDatabaseUsingBlock:
+- countChanges
+- dispatchAfter:block:
+- dispatchBlockSync:
+- newDispatchSourceWithType:
+- beginTaskCompletionAssertion
+- endTaskCompletionAssertion
+- setTakesTaskCompletionAssertions:
+- takesTaskCompletionAssertions
+- setupBlock
+@end

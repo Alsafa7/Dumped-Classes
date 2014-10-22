@@ -1,0 +1,103 @@
+@interface SSAuthenticationContext : NSObject
+{
+	id _accountName;
+	BOOL _accountNameEditable;
+	long long _accountScope;
+	BOOL _allowsBioAuthentication;
+	BOOL _allowsRetry;
+	BOOL _canCreateNewAccount;
+	BOOL _canSetActiveAccount;
+	id _clientIdentifierHeader;
+	BOOL _demoAccount;
+	id _httpHeaders;
+	id _initialPassword;
+	BOOL _persistsAcrossDeviceLock;
+	BOOL _persistsPasswordFallback;
+	id _preferredITunesStoreClient;
+	long long _promptStyle;
+	id _requestParameters;
+	id _requiredUniqueIdentifier;
+	BOOL _shouldCreateNewSession;
+	BOOL _shouldFollowAccountButtons;
+	BOOL _shouldIgnoreProtocol;
+	BOOL _shouldSuppressDialogs;
+	id _signupRequestParameters;
+	long long _tokenType;
+	id _userAgentComponents;
+}
+
++ initWithAccountIdentifier:
++ dealloc
++ init
++ description
++ copyWithZone:
++ mutableCopyWithZone:
++ accountName
++ initWithAccount:
++ initWithXPCEncoding:
++ copyXPCEncoding
++ isDemoAccount
++ _allowCreateAccount
++ _initSSAuthenticationContext
++ _copyIvarsToCopy:withZone:
++ URLBagContext
++ isAccountNameEditable
++ allowsRetry
++ canCreateNewAccount
++ canSetActiveAccount
++ clientIdentifierHeader
++ initialPassword
++ persistsAcrossDeviceLock
++ persistsPasswordFallback
++ preferredITunesStoreClient
++ promptStyle
++ shouldCreateNewSession
++ shouldFollowAccountButtons
++ shouldIgnoreProtocol
++ shouldSuppressDialogs
++ signupRequestParameters
++ tokenType
++ userAgentComponents
++ allowsBioAuthentication
++ requiredUniqueIdentifier
++ requestParameters
++ HTTPHeaders
++ accountScope
+- initWithAccountIdentifier:
+- dealloc
+- init
+- description
+- copyWithZone:
+- mutableCopyWithZone:
+- accountName
+- initWithAccount:
+- initWithXPCEncoding:
+- copyXPCEncoding
+- isDemoAccount
+- _allowCreateAccount
+- _initSSAuthenticationContext
+- _copyIvarsToCopy:withZone:
+- URLBagContext
+- isAccountNameEditable
+- allowsRetry
+- canCreateNewAccount
+- canSetActiveAccount
+- clientIdentifierHeader
+- initialPassword
+- persistsAcrossDeviceLock
+- persistsPasswordFallback
+- preferredITunesStoreClient
+- promptStyle
+- shouldCreateNewSession
+- shouldFollowAccountButtons
+- shouldIgnoreProtocol
+- shouldSuppressDialogs
+- signupRequestParameters
+- tokenType
+- userAgentComponents
+- allowsBioAuthentication
+- requiredUniqueIdentifier
+- requestParameters
+- HTTPHeaders
+- accountScope
+@end

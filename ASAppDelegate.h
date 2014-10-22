@@ -1,0 +1,99 @@
+@interface ASAppDelegate : UIResponder
+{
+	id _clientContext;
+	id _enterEvent;
+	id _exitEvent;
+	id _loadConfigurationViewController;
+	id _metricsController;
+	long long _networkStartCount;
+	id _overlayController;
+	id _presentationQueue;
+	BOOL _storeFrontChangedDuringAccountFlow;
+	id _window;
+}
+
++ _accountViewControllerDisappearNotification:
++ _networkingStartNotification:
++ _networkingStopNotification:
++ _storeFrontChangeNotification:
++ _setupWindowIfNecessary
++ _showAccessoryLookupWithURL:
++ _showAccountViewControllerWithURL:
++ _showDonationViewControllerWithURL:
++ _showEULAViewControllerWithURL:
++ _showGiftViewControllerWithURL:
++ _showLookupResultWithURL:
++ _showSearchViewControllerWithURL:
++ _resolveURLForItemKind:tabBarIndex:
++ _resolveURLForBagKey:
++ _showRedeemViewControllerWithURL:
++ _selectUpdatesTab
++ _showTransientViewController:
++ _activeStoreFrontID
++ _recordMetricsEvent:flushImmediately:
++ _defaultRootViewControllers
++ _resetUserInterfaceAfterStoreFrontChange
++ _isStoreFront:equalToStoreFront:
++ _isDisplayingAccountViewController
++ _presentNextQueuedViewController
++ _presentURLViewController:
++ viewController:didLoadContext:
++ dealloc
++ init
++ application:openURL:sourceApplication:annotation:
++ applicationDidBecomeActive:
++ applicationWillResignActive:
++ applicationWillEnterForeground:
++ application:shouldSaveApplicationState:
++ application:shouldRestoreApplicationState:
++ application:supportedInterfaceOrientationsForWindow:
++ application:didFinishLaunchingWithOptions:
++ application:willEncodeRestorableStateWithCoder:
++ application:didDecodeRestorableStateWithCoder:
++ tabBarController:shouldSelectViewController:
++ productPageOverlayDidDismiss:
++ application:recordExitMetricsEventWithURL:
++ .cxx_destruct
+- _accountViewControllerDisappearNotification:
+- _networkingStartNotification:
+- _networkingStopNotification:
+- _storeFrontChangeNotification:
+- _setupWindowIfNecessary
+- _showAccessoryLookupWithURL:
+- _showAccountViewControllerWithURL:
+- _showDonationViewControllerWithURL:
+- _showEULAViewControllerWithURL:
+- _showGiftViewControllerWithURL:
+- _showLookupResultWithURL:
+- _showSearchViewControllerWithURL:
+- _resolveURLForItemKind:tabBarIndex:
+- _resolveURLForBagKey:
+- _showRedeemViewControllerWithURL:
+- _selectUpdatesTab
+- _showTransientViewController:
+- _activeStoreFrontID
+- _recordMetricsEvent:flushImmediately:
+- _defaultRootViewControllers
+- _resetUserInterfaceAfterStoreFrontChange
+- _isStoreFront:equalToStoreFront:
+- _isDisplayingAccountViewController
+- _presentNextQueuedViewController
+- _presentURLViewController:
+- viewController:didLoadContext:
+- dealloc
+- init
+- application:openURL:sourceApplication:annotation:
+- applicationDidBecomeActive:
+- applicationWillResignActive:
+- applicationWillEnterForeground:
+- application:shouldSaveApplicationState:
+- application:shouldRestoreApplicationState:
+- application:supportedInterfaceOrientationsForWindow:
+- application:didFinishLaunchingWithOptions:
+- application:willEncodeRestorableStateWithCoder:
+- application:didDecodeRestorableStateWithCoder:
+- tabBarController:shouldSelectViewController:
+- productPageOverlayDidDismiss:
+- application:recordExitMetricsEventWithURL:
+- .cxx_destruct
+@end

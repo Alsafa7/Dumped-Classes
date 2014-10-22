@@ -1,0 +1,77 @@
+@interface BBAction : NSObject
+{
+	id _internalBlock;
+	BOOL _deliverResponse;
+	id _launchURL;
+	id _launchBundleID;
+	BOOL _launchCanBypassPinLock;
+	id _activatePluginName;
+	id _activatePluginContext;
+	long long _actionType;
+}
+
++ bundleID
++ dealloc
++ initWithCoder:
++ encodeWithCoder:
++ isEqual:
++ hash
++ description
++ copyWithZone:
++ url
++ deliverResponse:
++ setCallblock:
++ setLaunchBundleID:
++ initWithActivatePluginName:activationContext:
++ setActivatePluginName:
++ setActivatePluginContext:
++ setInternalBlock:
++ launchCanBypassPinLock
++ setLaunchCanBypassPinLock:
++ internalBlock
++ launchBundleID
++ activatePluginName
++ activatePluginContext
++ canBypassPinLock
++ setCanBypassPinLock:
++ partialDescription
++ hasLaunchInfo
++ isURLLaunchAction
++ isAppLaunchAction
++ setActionType:
++ actionType
++ setLaunchURL:
++ launchURL
+- bundleID
+- dealloc
+- initWithCoder:
+- encodeWithCoder:
+- isEqual:
+- hash
+- description
+- copyWithZone:
+- url
+- deliverResponse:
+- setCallblock:
+- setLaunchBundleID:
+- initWithActivatePluginName:activationContext:
+- setActivatePluginName:
+- setActivatePluginContext:
+- setInternalBlock:
+- launchCanBypassPinLock
+- setLaunchCanBypassPinLock:
+- internalBlock
+- launchBundleID
+- activatePluginName
+- activatePluginContext
+- canBypassPinLock
+- setCanBypassPinLock:
+- partialDescription
+- hasLaunchInfo
+- isURLLaunchAction
+- isAppLaunchAction
+- setActionType:
+- actionType
+- setLaunchURL:
+- launchURL
+@end

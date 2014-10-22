@@ -1,0 +1,70 @@
+@interface AFDiagnostics : NSObject
+{
+	id _serverConnection;
+	id _queue;
+	id _connectionStartTime;
+	id _voiceRecordingStartTime;
+	id _voiceRecordingEndTime;
+	id _voiceSendStartTime;
+	id _voiceSendEndTime;
+}
+
++ logSpeechRecognized
++ logConnectionStart
++ logConnectionOpenWithConnectionType:
++ logVoiceRecordingStart
++ logVoiceRecordingEnd
++ _AWDTimestampTruncatedToHourPrecision
++ _setConnectionStartTime:
++ _submitMetricWithIdentifier:hotShipIdentifier:hotShipTimestamp:generation:
++ _connectionStartTime
++ _durationInMillisecondsFromTime:toTime:
++ _setVoiceRecordingStartTime:
++ _setVoiceRecordingEndTime:
++ _voiceRecordingStartTime
++ _setVoiceSendStartTime:
++ _setVoiceSendEndTime:
++ _voiceSendStartTime
++ _voiceRecordingEndTime
++ _voiceSendEndTime
++ _submitMetricWithIdentifier:generation:
++ logConnectionFailedWithError:connectionType:
++ logVoiceSendStart
++ logVoiceSendEnd
++ logNetworkAnalyzeRunWithResults:
++ init
++ flush
++ _queue
++ _serverConnection
++ .cxx_destruct
++ _currentTime
+- logSpeechRecognized
+- logConnectionStart
+- logConnectionOpenWithConnectionType:
+- logVoiceRecordingStart
+- logVoiceRecordingEnd
+- _AWDTimestampTruncatedToHourPrecision
+- _setConnectionStartTime:
+- _submitMetricWithIdentifier:hotShipIdentifier:hotShipTimestamp:generation:
+- _connectionStartTime
+- _durationInMillisecondsFromTime:toTime:
+- _setVoiceRecordingStartTime:
+- _setVoiceRecordingEndTime:
+- _voiceRecordingStartTime
+- _setVoiceSendStartTime:
+- _setVoiceSendEndTime:
+- _voiceSendStartTime
+- _voiceRecordingEndTime
+- _voiceSendEndTime
+- _submitMetricWithIdentifier:generation:
+- logConnectionFailedWithError:connectionType:
+- logVoiceSendStart
+- logVoiceSendEnd
+- logNetworkAnalyzeRunWithResults:
+- init
+- flush
+- _queue
+- _serverConnection
+- .cxx_destruct
+- _currentTime
+@end

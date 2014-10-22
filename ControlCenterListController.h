@@ -1,0 +1,6 @@
+@interface ControlCenterListController : PSListController
+{
+
+}
+
+@end

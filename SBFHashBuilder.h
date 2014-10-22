@@ -1,0 +1,6 @@
+@interface SBFHashBuilder : NSObject
+{
+
+}
+
+@end

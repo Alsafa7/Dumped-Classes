@@ -1,0 +1,6 @@
+@interface GKGameStatServicePrivateInterface : GKServiceInterface
+{
+
+}
+
+@end

@@ -1,0 +1,162 @@
+@interface SMSApplication : UIApplication
+{
+	BOOL _waitToSendFinishLaunching;
+	BOOL _isLocked;
+	BOOL _isSuspended;
+	BOOL _hasEmail;
+	id _window;
+	id _messagesController;
+	int _delaySuspendCount;
+	usigned long long _backgroundTask;
+	id _madridRegistrationController;
+	id _defaultPng;
+	int _suspendTimeStatusBarStyle;
+	id _suspendUnreadMessages;
+	id _deferredLoadURL;
+	id _backgroundAssertion;
+	id _alert;
+}
+
++ startShowMessagesTest:
++ startScrollConversationsTest:
++ startScrollTranscriptTest:
++ startRotationTest:
++ showTranscriptListNotAnimated
++ showNextMessage
++ showTranscriptList
++ scrollTranscript
++ didChangeOrientation:
++ finishedTest:extraResults:
++ failedTest:
++ runTest:options:
++ showKeyboard
++ didShowAMessage
++ didShowTranscriptList
++ _handleUnreadCountChanged:
++ _handleTypingIndicatorChanged:
++ _shouldShowMadridRegistrationView
++ _restoreState:
++ _mediaDidStartSaving
++ _mediaDidFinishSaving
++ _receivedMessage:
++ _clearFailureBadge
++ _handleAccountsChanged:
++ _destroyMadridRegistrationView
++ stopPlayingLastAlertTone
++ _playMessageReceivedForMessage:
++ _loadURLMessageGUID:
++ setWaitToSendFinishLaunching:
++ defaultPng
++ deferredLoadURL
++ setDeferredLoadURL:
++ reportAppLaunchFinished
++ setDefaultPng:
++ _storeState
++ _restoreState
++ _scheduleDeferredSetup
++ _prepareForResume:
++ _showMadridRegistrationViewIfNecessary
++ __updateAppSnapshot
++ _isShowingNewComposition
++ _updateAppSnapshot
++ _updateDefaultPNGSuspended
++ _updateMadridRegistrationViewAnimated:
++ __showMadridRegistrationViewIfNecessary
++ _createMadridRegistrationViewIfNecessary
++ _updateNetworkFlags
++ _prepareForSuspend
++ dealloc
++ init
++ applicationDidBecomeActive:
++ application:didFinishLaunchingWithOptions:
++ applicationDidResumeFromUnderLock
++ applicationSuspend:settings:
++ openURL:
++ applicationOpenURL:
++ applicationDidEndResumeAnimation
++ isHandlingURL
++ significantTimeChange
++ isLocked
++ handleURL:
++ messagesController
++ setMessagesController:
++ firstRunControllerDidFinish:finished:
++ _handleDaemonConnected:
++ _handleDaemonDisconnected:
++ systemApplicationDidSuspend
++ systemApplicationDidResume
++ systemApplicationDidSuspendForEventsOnly
++ systemApplicationDidResumeForEventsOnly
++ _resetIdleTimer
+- startShowMessagesTest:
+- startScrollConversationsTest:
+- startScrollTranscriptTest:
+- startRotationTest:
+- showTranscriptListNotAnimated
+- showNextMessage
+- showTranscriptList
+- scrollTranscript
+- didChangeOrientation:
+- finishedTest:extraResults:
+- failedTest:
+- runTest:options:
+- showKeyboard
+- didShowAMessage
+- didShowTranscriptList
+- _handleUnreadCountChanged:
+- _handleTypingIndicatorChanged:
+- _shouldShowMadridRegistrationView
+- _restoreState:
+- _mediaDidStartSaving
+- _mediaDidFinishSaving
+- _receivedMessage:
+- _clearFailureBadge
+- _handleAccountsChanged:
+- _destroyMadridRegistrationView
+- stopPlayingLastAlertTone
+- _playMessageReceivedForMessage:
+- _loadURLMessageGUID:
+- setWaitToSendFinishLaunching:
+- defaultPng
+- deferredLoadURL
+- setDeferredLoadURL:
+- reportAppLaunchFinished
+- setDefaultPng:
+- _storeState
+- _restoreState
+- _scheduleDeferredSetup
+- _prepareForResume:
+- _showMadridRegistrationViewIfNecessary
+- __updateAppSnapshot
+- _isShowingNewComposition
+- _updateAppSnapshot
+- _updateDefaultPNGSuspended
+- _updateMadridRegistrationViewAnimated:
+- __showMadridRegistrationViewIfNecessary
+- _createMadridRegistrationViewIfNecessary
+- _updateNetworkFlags
+- _prepareForSuspend
+- dealloc
+- init
+- applicationDidBecomeActive:
+- application:didFinishLaunchingWithOptions:
+- applicationDidResumeFromUnderLock
+- applicationSuspend:settings:
+- openURL:
+- applicationOpenURL:
+- applicationDidEndResumeAnimation
+- isHandlingURL
+- significantTimeChange
+- isLocked
+- handleURL:
+- messagesController
+- setMessagesController:
+- firstRunControllerDidFinish:finished:
+- _handleDaemonConnected:
+- _handleDaemonDisconnected:
+- systemApplicationDidSuspend
+- systemApplicationDidResume
+- systemApplicationDidSuspendForEventsOnly
+- systemApplicationDidResumeForEventsOnly
+- _resetIdleTimer
+@end

@@ -1,0 +1,74 @@
+@interface MPUChronologicalProgressView : UIView
+{
+	id _scrubController;
+	id _slider;
+	id _currentTimeLabel;
+	id _remainingTimeLabel;
+	id _lastCurrentTimeString;
+	id _lastRemainingTimeString;
+	double _lastDisplayedDuration;
+	BOOL _showTimeLabels;
+	BOOL _scrubbingEnabled;
+	id _delegate;
+	long long _style;
+	double _totalDuration;
+	double _currentTime;
+}
+
++ _updateTimeLabels
++ currentTime
++ setCurrentTime:
++ detailScrubControllerDidBeginScrubbing:
++ detailScrubControllerDidEndScrubbing:
++ detailScrubController:didChangeValue:
++ initWithFrame:
++ setDelegate:
++ layoutSubviews
++ sizeThatFits:
++ delegate
++ style
++ initWithStyle:
++ trackRect
++ _styledImageName:
++ _trackImage
++ _thumbImage
++ _createTimeLabelWithStyle:
++ _internalSetCurrentTime:
++ _sliderNormalizedValueForTime:
++ _timeLabelFont
++ showTimeLabels
++ setShowTimeLabels:
++ setTotalDuration:
++ totalDuration
++ setScrubbingEnabled:
++ scrubbingEnabled
++ .cxx_destruct
+- _updateTimeLabels
+- currentTime
+- setCurrentTime:
+- detailScrubControllerDidBeginScrubbing:
+- detailScrubControllerDidEndScrubbing:
+- detailScrubController:didChangeValue:
+- initWithFrame:
+- setDelegate:
+- layoutSubviews
+- sizeThatFits:
+- delegate
+- style
+- initWithStyle:
+- trackRect
+- _styledImageName:
+- _trackImage
+- _thumbImage
+- _createTimeLabelWithStyle:
+- _internalSetCurrentTime:
+- _sliderNormalizedValueForTime:
+- _timeLabelFont
+- showTimeLabels
+- setShowTimeLabels:
+- setTotalDuration:
+- totalDuration
+- setScrubbingEnabled:
+- scrubbingEnabled
+- .cxx_destruct
+@end

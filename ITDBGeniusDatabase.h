@@ -1,0 +1,66 @@
+@interface ITDBGeniusDatabase : NSObject
+{
+	id _musicLibrary;
+	id _geniusDBConnection;
+	double _connectionFailedTime;
+	pointer _statementCache;
+	BOOL _isInTransaction;
+}
+
++ init
++ _invalidateDatabase
++ _connect
++ databaseConnection
++ _copyBlobData:blobAllocType:table:blobColumn:where:
++ _hasAnySongs
++ _hasRowsInTable:
++ _getInt32ValueInTable:column:
++ _copyBlobDataAndBytesInTable:blobColumn:where:
++ _readBlobIntoData:table:blobColumn:where:
++ _readBlobForRowID:intoData:table:blobColumn:
++ _getInt64ValueInTable:column:where:limit:
++ hasDatabase
++ hasGeniusDataAvailable
++ hasGeniusFeatureEnabled
++ defaultMinTrackCount
++ defaultTrackCount
++ copyGeniusConfigrationDataAndBytes
++ geniusConfigurationVersion
++ copyGeniusMetadataDataAndBytesForGlobalID:
++ copyGeniusSimilaritiesDataAndBytesForGlobalID:
++ getGeniusConfigrationDataAndBytesIntoData:
++ getGeniusMetadataDataAndBytesForGlobalID:intoData:
++ getGeniusSimilaritiesDataAndBytesForGlobalID:intoData:
++ isInTransaction
++ setIsInTransaction:
++ musicLibrary
++ .cxx_destruct
+- init
+- _invalidateDatabase
+- _connect
+- databaseConnection
+- _copyBlobData:blobAllocType:table:blobColumn:where:
+- _hasAnySongs
+- _hasRowsInTable:
+- _getInt32ValueInTable:column:
+- _copyBlobDataAndBytesInTable:blobColumn:where:
+- _readBlobIntoData:table:blobColumn:where:
+- _readBlobForRowID:intoData:table:blobColumn:
+- _getInt64ValueInTable:column:where:limit:
+- hasDatabase
+- hasGeniusDataAvailable
+- hasGeniusFeatureEnabled
+- defaultMinTrackCount
+- defaultTrackCount
+- copyGeniusConfigrationDataAndBytes
+- geniusConfigurationVersion
+- copyGeniusMetadataDataAndBytesForGlobalID:
+- copyGeniusSimilaritiesDataAndBytesForGlobalID:
+- getGeniusConfigrationDataAndBytesIntoData:
+- getGeniusMetadataDataAndBytesForGlobalID:intoData:
+- getGeniusSimilaritiesDataAndBytesForGlobalID:intoData:
+- isInTransaction
+- setIsInTransaction:
+- musicLibrary
+- .cxx_destruct
+@end

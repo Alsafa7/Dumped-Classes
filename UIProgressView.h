@@ -1,0 +1,96 @@
+@interface UIProgressView : UIView
+{
+	long long _progressViewStyle;
+	float _progress;
+	long long _barStyle;
+	id _progressTintColor;
+	id _trackTintColor;
+	id _trackView;
+	id _progressView;
+	BOOL _isAnimating;
+	BOOL _useArtwork;
+	id _trackGradientLayer;
+	id _progressGradientLayer;
+	struct _previousBounds;
+	struct _previousProgressBounds;
+	id _trackImage;
+	id _progressImage;
+}
+
++ isElementAccessibilityExposedToInterfaceBuilder
++ setBarStyle:
++ barStyle
++ initWithFrame:
++ dealloc
++ initWithCoder:
++ _populateArchivedSubviews:
++ encodeWithCoder:
++ _intrinsicSizeWithinSize:
++ setFrame:
++ layoutSubviews
++ setBounds:
++ _contentHuggingDefault_isUsuallyFixedHeight
++ sizeThatFits:
++ alignmentRectInsets
++ setProgress:
++ _updateImages
++ _setProgress:
++ setProgressViewStyle:
++ _shouldTintTrack
++ _shouldTintProgress
++ trackTintColor
++ progressTintColor
++ _appropriateProgressImage
++ _appropriateTrackImage
++ _setProgressAnimated:duration:delay:options:
++ setProgressTintColor:
++ initWithProgressViewStyle:
++ setProgress:animated:
++ _progressColor
++ _setProgressColor:
++ setProgressImage:
++ setTrackTintColor:
++ setTrackImage:
++ progressViewStyle
++ progress
++ trackImage
++ progressImage
+- isElementAccessibilityExposedToInterfaceBuilder
+- setBarStyle:
+- barStyle
+- initWithFrame:
+- dealloc
+- initWithCoder:
+- _populateArchivedSubviews:
+- encodeWithCoder:
+- _intrinsicSizeWithinSize:
+- setFrame:
+- layoutSubviews
+- setBounds:
+- _contentHuggingDefault_isUsuallyFixedHeight
+- sizeThatFits:
+- alignmentRectInsets
+- setProgress:
+- _updateImages
+- _setProgress:
+- setProgressViewStyle:
+- _shouldTintTrack
+- _shouldTintProgress
+- trackTintColor
+- progressTintColor
+- _appropriateProgressImage
+- _appropriateTrackImage
+- _setProgressAnimated:duration:delay:options:
+- setProgressTintColor:
+- initWithProgressViewStyle:
+- setProgress:animated:
+- _progressColor
+- _setProgressColor:
+- setProgressImage:
+- setTrackTintColor:
+- setTrackImage:
+- progressViewStyle
+- progress
+- trackImage
+- progressImage
+@end

@@ -1,0 +1,450 @@
+@interface _UIBackdropView : UIView
+{
+	BOOL _autosizesToFitSuperview;
+	BOOL _computesColorSettings;
+	BOOL _appliesOutputSettingsAutomatically;
+	BOOL _appliesOutputSettingsAutomaticallyEnabledComputesColorSettings;
+	BOOL _applyingBackdropChanges;
+	BOOL _applyingTransition;
+	BOOL _requiresTintViews;
+	BOOL _wantsColorSettings;
+	BOOL _blursBackground;
+	BOOL _allowsColorSettingsSuppression;
+	BOOL _contentViewAccessed;
+	BOOL _contentViewAccessorGuard;
+	BOOL _applySettingsAfterLayout;
+	BOOL _updateMaskViewsForViewReentrancyGuard;
+	BOOL _simulatesMasks;
+	BOOL _backdropVisibilitySetOnce;
+	BOOL _blurRadiusSetOnce;
+	BOOL __backdropVisible;
+	BOOL __zoomsBack;
+	long long _style;
+	id _observers;
+	id _observer;
+	double _appliesOutputSettingsAnimationDuration;
+	id _inputSettings;
+	id _outputSettings;
+	id _savedInputSettingsDuringRenderInContext;
+	long long _configuration;
+	id _backdropEffectView;
+	id _groupName;
+	id _filterMaskImage;
+	id _grayscaleTintView;
+	id _grayscaleTintMaskImage;
+	id _colorTintView;
+	id _colorTintMaskImage;
+	id _gaussianBlurFilter;
+	id _colorSaturateFilter;
+	id _tintFilter;
+	id _contentView;
+	long long _maskMode;
+	id _partialMaskViews;
+	id _grayscaleTintMaskViewContainer;
+	id _grayscaleTintMaskViewMap;
+	id _colorTintMaskViewContainer;
+	id _colorTintMaskViewMap;
+	id _filterMaskViewContainer;
+	id _filterMaskViewMap;
+	id _computeAndApplySettingsNotificationObserver;
+	double _colorMatrixGrayscaleTintLevel;
+	double _colorMatrixGrayscaleTintAlpha;
+	id _colorMatrixColorTint;
+	double _colorMatrixColorTintAlpha;
+	long long _blurHardEdges;
+	pointer _updateInputBoundsRunLoopObserver;
+	double _previousBackdropStatisticsRed;
+	double _previousBackdropStatisticsGreen;
+	double _previousBackdropStatisticsBlue;
+	double _previousBackdropStatisticsContrast;
+	id _graphicsQualityChangeDelegate;
+	id __blurQuality;
+	double __blurRadius;
+	double __saturationDeltaFactor;
+}
+
++ initWithFrame:
++ dealloc
++ init
++ setFrame:
++ layoutSubviews
++ setBounds:
++ setStyle:
++ grayscaleTintMaskImage
++ colorTintMaskImage
++ filterMaskImage
++ blurRadius
++ saturationDeltaFactor
++ style
++ setBlurRadius:
++ setSaturationDeltaFactor:
++ removeObserver:
++ contentView
++ setContentView:
++ didMoveToSuperview
++ filters
++ setGroupName:
++ setGraphicsQualityChangeDelegate:
++ initWithPrivateStyle:
++ inputSettings
++ setBlurHardEdges:
++ initWithFrame:style:
++ initWithStyle:
++ updateMaskViewsForView:
++ setComputesColorSettings:
++ setAllowsColorSettingsSuppression:
++ transitionToStyle:
++ applySettings:
++ groupName
++ setBackdropVisible:
++ setGrayscaleTintMaskImage:
++ setColorTintMaskImage:
++ setFilterMaskImage:
++ initWithFrame:privateStyle:
++ transitionToPrivateStyle:
++ initWithSettings:
++ transitionToSettings:
++ setBlurQuality:
++ setZoomsBack:
++ isBackdropVisible
++ blurQuality
++ blurHardEdges
++ settingsDidChange:
++ setBlursWithHardEdges:
++ blursWithHardEdges
++ _backdropVisible
++ _zoomsBack
++ _blurRadius
++ _blurQuality
++ _saturationDeltaFactor
++ setAppliesOutputSettingsAnimationDuration:
++ backdropLayerStatisticsDidChange:
++ willCallRenderInContextOnBackdropViewLayer
++ didCallRenderInContextOnBackdropViewLayer
++ allowsColorSettingsSuppression
++ computesColorSettings
++ setWantsColorSettings:
++ wantsColorSettings
++ graphicsQualityChangeDelegate
++ backdropViewLayer
++ setAutosizesToFitSuperview:
++ autosizesToFitSuperview
++ setInputSettings:
++ setOutputSettings:
++ setObservers:
++ updateSubviewHierarchyIfNeededForSettings:
++ computeAndApplySettings:
++ setComputeAndApplySettingsNotificationObserver:
++ initWithFrame:autosizesToFitSuperview:settings:
++ computeAndApplySettingsNotificationObserver
++ clearUpdateInputBoundsRunLoopObserver
++ backdropEffectView
++ outputSettings
++ applyingBackdropChanges
++ appliesOutputSettingsAutomatically
++ applySettingsWithBuiltInAnimation:
++ observers
++ setApplyingBackdropChanges:
++ delayedComputeAndApplySettings
++ addObserver:
++ setAppliesOutputSettingsAutomaticallyEnabledComputesColorSettings:
++ appliesOutputSettingsAutomaticallyEnabledComputesColorSettings
++ setApplySettingsAfterLayout:
++ applySettingsAfterLayout
++ adjustTintImplementationIfNeeded:
++ _updateInputBounds
++ setMaskImage:onLayer:
++ grayscaleTintView
++ colorTintView
++ grayscaleTintMaskViewMap
++ grayscaleTintMaskViewContainer
++ colorTintMaskViewMap
++ colorTintMaskViewContainer
++ filterMaskViewMap
++ filterMaskViewContainer
++ maskMode
++ setGrayscaleTintMaskViewMap:
++ setGrayscaleTintMaskViewContainer:
++ setColorTintMaskViewMap:
++ setColorTintMaskViewContainer:
++ setFilterMaskViewMap:
++ setFilterMaskViewContainer:
++ simulatesMasks
++ removeOverlayBlendModeFromView:
++ applyOverlayBlendModeToView:
++ updateMaskViewsForViewReentrancyGuard
++ setUpdateMaskViewsForViewReentrancyGuard:
++ partialMaskViews
++ setPartialMaskViews:
++ updateMaskViewForView:flag:
++ gaussianBlurFilter
++ colorSaturateFilter
++ tintFilter
++ blurRadiusSetOnce
++ setBlurRadiusSetOnce:
++ setBlurFilterWithRadius:blurQuality:
++ setBlurFilterWithRadius:blurQuality:blurHardEdges:
++ setGaussianBlurFilter:
++ _updateFilters
++ scheduleUpdateInputBoundsIfNeeded
++ updateInputBoundsRunLoopObserver
++ setUpdateInputBoundsRunLoopObserver:
++ setColorSaturateFilter:
++ setTintFilter:
++ colorMatrixGrayscaleTintLevel
++ colorMatrixGrayscaleTintAlpha
++ colorMatrixColorTintAlpha
++ colorMatrixColorTint
++ setColorMatrixGrayscaleTintLevel:
++ setColorMatrixGrayscaleTintAlpha:
++ setColorMatrixColorTint:
++ setColorMatrixColorTintAlpha:
++ backdropVisibilitySetOnce
++ setBackdropVisibilitySetOnce:
++ ensureProperSubviewOrdering
++ configuration
++ setConfiguration:
++ effectView
++ setApplyingTransition:
++ prepareForTransitionToSettings:
++ computeAndApplySettingsForTransition
++ transitionIncrementallyToStyle:weighting:
++ applyingTransition
++ contentViewAccessorGuard
++ setContentViewAccessorGuard:
++ setContentViewAccessed:
++ addBackdropEffectViewIfNeededForSettings:
++ addGrayscaleTintViewIfNeededForSettings:
++ addColorTintViewIfNeededForSettings:
++ addContentViewIfNeededForSettings:
++ setBackdropEffectView:
++ setAppliesOutputSettingsAutomatically:
++ setGrayscaleTintView:
++ setColorTintView:
++ contentViewAccessed
++ requiresTintViews
++ setTintFilterForSettings:
++ transitionComplete
++ appliesOutputSettingsAnimationDuration
++ initWithFrame:settings:
++ setShouldRasterizeEffectsView:
++ setObserver:
++ setMaskMode:
++ removeMaskViews
++ applyOverlayBlendMode:toView:
++ setUsesZoom
++ _setBlursBackground:
++ transitionToColor:
++ transitionIncrementallyToPrivateStyle:weighting:
++ observer
++ savedInputSettingsDuringRenderInContext
++ setSavedInputSettingsDuringRenderInContext:
++ setRequiresTintViews:
++ blursBackground
++ setBlursBackground:
++ setSimulatesMasks:
++ previousBackdropStatisticsRed
++ setPreviousBackdropStatisticsRed:
++ previousBackdropStatisticsGreen
++ setPreviousBackdropStatisticsGreen:
++ previousBackdropStatisticsBlue
++ setPreviousBackdropStatisticsBlue:
++ previousBackdropStatisticsContrast
++ setPreviousBackdropStatisticsContrast:
++ set_blurQuality:
++ set_blurRadius:
++ set_saturationDeltaFactor:
++ set_backdropVisible:
+- initWithFrame:
+- dealloc
+- init
+- setFrame:
+- layoutSubviews
+- setBounds:
+- setStyle:
+- grayscaleTintMaskImage
+- colorTintMaskImage
+- filterMaskImage
+- blurRadius
+- saturationDeltaFactor
+- style
+- setBlurRadius:
+- setSaturationDeltaFactor:
+- removeObserver:
+- contentView
+- setContentView:
+- didMoveToSuperview
+- filters
+- setGroupName:
+- setGraphicsQualityChangeDelegate:
+- initWithPrivateStyle:
+- inputSettings
+- setBlurHardEdges:
+- initWithFrame:style:
+- initWithStyle:
+- updateMaskViewsForView:
+- setComputesColorSettings:
+- setAllowsColorSettingsSuppression:
+- transitionToStyle:
+- applySettings:
+- groupName
+- setBackdropVisible:
+- setGrayscaleTintMaskImage:
+- setColorTintMaskImage:
+- setFilterMaskImage:
+- initWithFrame:privateStyle:
+- transitionToPrivateStyle:
+- initWithSettings:
+- transitionToSettings:
+- setBlurQuality:
+- setZoomsBack:
+- isBackdropVisible
+- blurQuality
+- blurHardEdges
+- settingsDidChange:
+- setBlursWithHardEdges:
+- blursWithHardEdges
+- _backdropVisible
+- _zoomsBack
+- _blurRadius
+- _blurQuality
+- _saturationDeltaFactor
+- setAppliesOutputSettingsAnimationDuration:
+- backdropLayerStatisticsDidChange:
+- willCallRenderInContextOnBackdropViewLayer
+- didCallRenderInContextOnBackdropViewLayer
+- allowsColorSettingsSuppression
+- computesColorSettings
+- setWantsColorSettings:
+- wantsColorSettings
+- graphicsQualityChangeDelegate
+- backdropViewLayer
+- setAutosizesToFitSuperview:
+- autosizesToFitSuperview
+- setInputSettings:
+- setOutputSettings:
+- setObservers:
+- updateSubviewHierarchyIfNeededForSettings:
+- computeAndApplySettings:
+- setComputeAndApplySettingsNotificationObserver:
+- initWithFrame:autosizesToFitSuperview:settings:
+- computeAndApplySettingsNotificationObserver
+- clearUpdateInputBoundsRunLoopObserver
+- backdropEffectView
+- outputSettings
+- applyingBackdropChanges
+- appliesOutputSettingsAutomatically
+- applySettingsWithBuiltInAnimation:
+- observers
+- setApplyingBackdropChanges:
+- delayedComputeAndApplySettings
+- addObserver:
+- setAppliesOutputSettingsAutomaticallyEnabledComputesColorSettings:
+- appliesOutputSettingsAutomaticallyEnabledComputesColorSettings
+- setApplySettingsAfterLayout:
+- applySettingsAfterLayout
+- adjustTintImplementationIfNeeded:
+- _updateInputBounds
+- setMaskImage:onLayer:
+- grayscaleTintView
+- colorTintView
+- grayscaleTintMaskViewMap
+- grayscaleTintMaskViewContainer
+- colorTintMaskViewMap
+- colorTintMaskViewContainer
+- filterMaskViewMap
+- filterMaskViewContainer
+- maskMode
+- setGrayscaleTintMaskViewMap:
+- setGrayscaleTintMaskViewContainer:
+- setColorTintMaskViewMap:
+- setColorTintMaskViewContainer:
+- setFilterMaskViewMap:
+- setFilterMaskViewContainer:
+- simulatesMasks
+- removeOverlayBlendModeFromView:
+- applyOverlayBlendModeToView:
+- updateMaskViewsForViewReentrancyGuard
+- setUpdateMaskViewsForViewReentrancyGuard:
+- partialMaskViews
+- setPartialMaskViews:
+- updateMaskViewForView:flag:
+- gaussianBlurFilter
+- colorSaturateFilter
+- tintFilter
+- blurRadiusSetOnce
+- setBlurRadiusSetOnce:
+- setBlurFilterWithRadius:blurQuality:
+- setBlurFilterWithRadius:blurQuality:blurHardEdges:
+- setGaussianBlurFilter:
+- _updateFilters
+- scheduleUpdateInputBoundsIfNeeded
+- updateInputBoundsRunLoopObserver
+- setUpdateInputBoundsRunLoopObserver:
+- setColorSaturateFilter:
+- setTintFilter:
+- colorMatrixGrayscaleTintLevel
+- colorMatrixGrayscaleTintAlpha
+- colorMatrixColorTintAlpha
+- colorMatrixColorTint
+- setColorMatrixGrayscaleTintLevel:
+- setColorMatrixGrayscaleTintAlpha:
+- setColorMatrixColorTint:
+- setColorMatrixColorTintAlpha:
+- backdropVisibilitySetOnce
+- setBackdropVisibilitySetOnce:
+- ensureProperSubviewOrdering
+- configuration
+- setConfiguration:
+- effectView
+- setApplyingTransition:
+- prepareForTransitionToSettings:
+- computeAndApplySettingsForTransition
+- transitionIncrementallyToStyle:weighting:
+- applyingTransition
+- contentViewAccessorGuard
+- setContentViewAccessorGuard:
+- setContentViewAccessed:
+- addBackdropEffectViewIfNeededForSettings:
+- addGrayscaleTintViewIfNeededForSettings:
+- addColorTintViewIfNeededForSettings:
+- addContentViewIfNeededForSettings:
+- setBackdropEffectView:
+- setAppliesOutputSettingsAutomatically:
+- setGrayscaleTintView:
+- setColorTintView:
+- contentViewAccessed
+- requiresTintViews
+- setTintFilterForSettings:
+- transitionComplete
+- appliesOutputSettingsAnimationDuration
+- initWithFrame:settings:
+- setShouldRasterizeEffectsView:
+- setObserver:
+- setMaskMode:
+- removeMaskViews
+- applyOverlayBlendMode:toView:
+- setUsesZoom
+- _setBlursBackground:
+- transitionToColor:
+- transitionIncrementallyToPrivateStyle:weighting:
+- observer
+- savedInputSettingsDuringRenderInContext
+- setSavedInputSettingsDuringRenderInContext:
+- setRequiresTintViews:
+- blursBackground
+- setBlursBackground:
+- setSimulatesMasks:
+- previousBackdropStatisticsRed
+- setPreviousBackdropStatisticsRed:
+- previousBackdropStatisticsGreen
+- setPreviousBackdropStatisticsGreen:
+- previousBackdropStatisticsBlue
+- setPreviousBackdropStatisticsBlue:
+- previousBackdropStatisticsContrast
+- setPreviousBackdropStatisticsContrast:
+- set_blurQuality:
+- set_blurRadius:
+- set_saturationDeltaFactor:
+- set_backdropVisible:
+@end

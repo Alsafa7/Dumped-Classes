@@ -1,0 +1,82 @@
+@interface AlarmManager : NSObject
+{
+	id _defaultSound;
+	long long _defaultSoundType;
+	BOOL _dirty;
+	id _alarms;
+	BOOL invalidAlarmsDetected;
+	id logMessageList;
+	id lastModified;
+}
+
++ alarms
++ removeAlarm:
++ setLastModified:
++ dealloc
++ init
++ setLogMessageList:
++ loadDefaultSoundAndType
++ unloadAlarms
++ countAlarmsInAggregateDictionary
++ updateAlarm:active:
++ saveAlarms
++ handleAlarm:stoppedUsingSong:
++ loadScheduledNotificationsWithCancelUnused:
++ reloadScheduledNotificationsWithRefreshActive:cancelUnused:
++ handleNotificationFired:
++ handleNotificationSnoozed:
++ defaultSound
++ defaultSoundType
++ setDefaultSound:ofType:
++ loadAlarms
++ checkIfAlarmsModified
++ alarmWithId:
++ alarmWithIdUrl:
++ nextAlarmForDate:activeOnly:allowRepeating:
++ addAlarm:active:
++ setAlarm:active:
++ handleAlarm:startedUsingSong:
++ loadScheduledNotifications
++ reloadScheduledNotifications
++ handleAnyNotificationChanges
++ handleExpiredOrSnoozedNotificationsOnly:
++ logMessageList
++ invalidAlarmsDetected
++ setInvalidAlarmsDetected:
++ lastModified
+- alarms
+- removeAlarm:
+- setLastModified:
+- dealloc
+- init
+- setLogMessageList:
+- loadDefaultSoundAndType
+- unloadAlarms
+- countAlarmsInAggregateDictionary
+- updateAlarm:active:
+- saveAlarms
+- handleAlarm:stoppedUsingSong:
+- loadScheduledNotificationsWithCancelUnused:
+- reloadScheduledNotificationsWithRefreshActive:cancelUnused:
+- handleNotificationFired:
+- handleNotificationSnoozed:
+- defaultSound
+- defaultSoundType
+- setDefaultSound:ofType:
+- loadAlarms
+- checkIfAlarmsModified
+- alarmWithId:
+- alarmWithIdUrl:
+- nextAlarmForDate:activeOnly:allowRepeating:
+- addAlarm:active:
+- setAlarm:active:
+- handleAlarm:startedUsingSong:
+- loadScheduledNotifications
+- reloadScheduledNotifications
+- handleAnyNotificationChanges
+- handleExpiredOrSnoozedNotificationsOnly:
+- logMessageList
+- invalidAlarmsDetected
+- setInvalidAlarmsDetected:
+- lastModified
+@end

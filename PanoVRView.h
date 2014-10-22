@@ -1,0 +1,63 @@
+@interface PanoVRView : WKOpenGLESView
+{
+	id _delegate;
+	BOOL _shouldGenerateBlurs;
+	id _pano;
+	id _mini;
+	id _maxi;
+	struct _blurRect;
+}
+
++ drawAtTime:
++ blurRect
++ pano
++ maxi
++ setPano:
++ setDrawableSize:
++ averageColorForPanoRect:
++ mini
++ setMini:
++ setMaxi:
++ setBlurRect:
++ shouldGenerateBlurs
++ setShouldGenerateBlurs:
++ prepare
++ setDelegate:
++ init
++ layoutSubviews
++ delegate
++ view
++ setAnimating:
++ setWallpaperOptions:
++ stopGeneratingBlurs
++ averageLifetimeColor
++ startGeneratingBlursForRect:
++ copyBlurForRect:
++ .cxx_destruct
+- drawAtTime:
+- blurRect
+- pano
+- maxi
+- setPano:
+- setDrawableSize:
+- averageColorForPanoRect:
+- mini
+- setMini:
+- setMaxi:
+- setBlurRect:
+- shouldGenerateBlurs
+- setShouldGenerateBlurs:
+- prepare
+- setDelegate:
+- init
+- layoutSubviews
+- delegate
+- view
+- setAnimating:
+- setWallpaperOptions:
+- stopGeneratingBlurs
+- averageLifetimeColor
+- startGeneratingBlursForRect:
+- copyBlurForRect:
+- .cxx_destruct
+@end

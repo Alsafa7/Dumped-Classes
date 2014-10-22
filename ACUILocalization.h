@@ -1,0 +1,6 @@
+@interface ACUILocalization : NSObject
+{
+
+}
+
+@end

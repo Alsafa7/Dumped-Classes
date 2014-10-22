@@ -1,0 +1,6 @@
+@interface ABDynamicLoader : NSObject
+{
+
+}
+
+@end

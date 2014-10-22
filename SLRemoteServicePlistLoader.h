@@ -1,0 +1,6 @@
+@interface SLRemoteServicePlistLoader : NSObject
+{
+
+}
+
+@end

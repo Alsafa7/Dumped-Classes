@@ -1,0 +1,65 @@
+@interface _UISettingsGroup : _UISettings
+{
+	id _internal_group;
+	id _internal_groupObservers;
+}
+
++ dealloc
++ countByEnumeratingWithState:objects:count:
++ count
++ setValuesFromModel:
++ _startInit
++ _continueInitBySettingDefaultValues
++ _completeInitByApplyingArchiveDictionary:
++ _stopObservingPropertiesAndChildren
++ _addInternalEntriesToArchiveDictionary:
++ archiveDictionary
++ _hasObservers
++ _startObservingPropertiesAndChildren
++ addGroupObserver:
++ removeGroupObserver:
++ settings:changedValueForKeyPath:
++ indexOfSettings:
++ insertSettings:atIndex:
++ _sendInsert:atIndex:
++ removeSettingsAtIndex:
++ _sendRemove:atIndex:
++ moveSettingsAtIndex:toIndex:
++ _sendMove:fromIndex:toIndex:
++ valueForUndefinedKey:
++ settingsAtIndex:
++ containsSettings:
++ addSettings:
++ removeSettings:
++ moveSettings:toIndex:
++ enumerateSettingsUsingBlock:
+- dealloc
+- countByEnumeratingWithState:objects:count:
+- count
+- setValuesFromModel:
+- _startInit
+- _continueInitBySettingDefaultValues
+- _completeInitByApplyingArchiveDictionary:
+- _stopObservingPropertiesAndChildren
+- _addInternalEntriesToArchiveDictionary:
+- archiveDictionary
+- _hasObservers
+- _startObservingPropertiesAndChildren
+- addGroupObserver:
+- removeGroupObserver:
+- settings:changedValueForKeyPath:
+- indexOfSettings:
+- insertSettings:atIndex:
+- _sendInsert:atIndex:
+- removeSettingsAtIndex:
+- _sendRemove:atIndex:
+- moveSettingsAtIndex:toIndex:
+- _sendMove:fromIndex:toIndex:
+- valueForUndefinedKey:
+- settingsAtIndex:
+- containsSettings:
+- addSettings:
+- removeSettings:
+- moveSettings:toIndex:
+- enumerateSettingsUsingBlock:
+@end

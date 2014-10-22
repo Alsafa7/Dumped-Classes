@@ -1,0 +1,66 @@
+@interface IMHandleRegistrar : NSObject
+{
+	id _internal;
+}
+
++ dealloc
++ init
++ _dumpOutAllIMHandlesForAccount:
++ clearSiblingCacheForIMHandle:
++ registerIMHandle:
++ unregisterIMHandle:
++ _clearAccountSiblingsForGUID:handle:
++ _clearChatSiblingsForGUID:handle:
++ _buildingChatSiblings
++ nameStyle
++ _existingAccountSiblingsForHandle:
++ _accountSiblingsForHandle:
++ _existingChatSiblingsForHandle:
++ _chatSiblingsForHandle:
++ siblingsForIMHandle:
++ allIMHandles
++ _accountsChanged:
++ _rebuildUniqueNameMapWithStyleChange:
++ _emptySiblingCacheForIMHandleGUID:
++ _buildSiblingsForIMHandle:
++ _clearSiblingsCacheForIMHandle:rebuildAfter:
++ clearNameReservationsForObject:
++ rebuildUniqueNameMap
++ candidateUniqueNamesForIMHandle:
++ reassessIMHandleForUniqueName:rebuild:
++ setNameStyle:
++ reassessIMHandleForUniqueName:
++ imHandleInfoChanged:
++ _dumpOutAllIMHandles
++ _addressBookChanged
+- dealloc
+- init
+- _dumpOutAllIMHandlesForAccount:
+- clearSiblingCacheForIMHandle:
+- registerIMHandle:
+- unregisterIMHandle:
+- _clearAccountSiblingsForGUID:handle:
+- _clearChatSiblingsForGUID:handle:
+- _buildingChatSiblings
+- nameStyle
+- _existingAccountSiblingsForHandle:
+- _accountSiblingsForHandle:
+- _existingChatSiblingsForHandle:
+- _chatSiblingsForHandle:
+- siblingsForIMHandle:
+- allIMHandles
+- _accountsChanged:
+- _rebuildUniqueNameMapWithStyleChange:
+- _emptySiblingCacheForIMHandleGUID:
+- _buildSiblingsForIMHandle:
+- _clearSiblingsCacheForIMHandle:rebuildAfter:
+- clearNameReservationsForObject:
+- rebuildUniqueNameMap
+- candidateUniqueNamesForIMHandle:
+- reassessIMHandleForUniqueName:rebuild:
+- setNameStyle:
+- reassessIMHandleForUniqueName:
+- imHandleInfoChanged:
+- _dumpOutAllIMHandles
+- _addressBookChanged
+@end

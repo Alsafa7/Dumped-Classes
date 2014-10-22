@@ -1,0 +1,140 @@
+@interface SBBannerController : NSObject
+{
+	id _sources;
+	id _pendingBannerContextsNeedingRepop;
+	id _bannerViewBackgroundImage;
+	id _bannerView;
+	BOOL _soundIsPlaying;
+	BOOL _dismissalOverdue;
+	BOOL _replaceDelayIsActive;
+	BOOL _showingStickyDurationBanner;
+	BOOL _suppressingBanners;
+	BOOL _enableDelayActive;
+	BOOL _assistantIsFullyVisible;
+	BOOL _locked;
+	long long _activeDismissGestureType;
+	long long _overdueDismissReason;
+	id _overdueCompletionBlock;
+	BOOL _dismissingBannerForAssistantReveal;
+	BOOL _dismissingBannerForAssistantDismiss;
+	id _assistantRevealCompletionBlock;
+	id _assistantDismissCompletionBlock;
+}
+
++ handleSystemDismissGestureWithState:position:velocity:
++ _lockStateChanged:
++ bulletinWindowStoppedBeingBusy
++ _updateBannerSuppressionState
++ _setOverdueCompletionBlock:
++ _fireCompletionBlockForBannerAnimationForAssistantRevealIfNecessary
++ _fireCompletionBlockForBannerAnimationForAssistantDismissIfNecessary
++ _dismissBannerWithAnimation:reason:forceEvenIfBusy:completion:
++ bannerTargetIdiom
++ _handleDismissGestureType:withState:displacement:velocity:
++ _newBannerViewForContext:
++ _bannerFrameForOrientation:
++ _removePendingContextsForSourceNeedingRepop:
++ dismissBannerWithAnimation:reason:
++ _dequeueBannerIfPossible
++ _pendingBannerContextForSourceNeedingRepop:
++ currentBannerContextForSource:
++ _dequeueBannerIfPossibleIgnoringStickyBanner:existingDismissReason:
++ _dismissOverdueOrDequeueIfPossible
++ isShowingBanner
++ _updateBannerSuppressionStateAndDequeueIfPossible:withDelay:
++ _dismissIntervalElapsed
++ _tryToDismissWithAnimation:reason:forceEvenIfBusy:completion:
++ _dequeueAfterDelayIfPossible
++ _isItemShowable:fromSource:
++ _canDequeueIgnoringStickyBanner:
++ _presentBannerForContext:reason:
++ _dequeueNextBannerContext
++ _performTransition:withAnimation:context:reason:completion:
++ _stopCurrentSound
++ _updateDismissGestureState:withDisplacement:velocity:
++ _tearDownViewWithReason:
++ _shouldPendStickyBannerContext:withReason:
++ _bannerViewBackgroundImage
++ _durationForTransition:
++ _replaceIntervalElapsed
++ _handleBannerPanGesture:
++ _handleBannerTapGesture:
++ _playSoundForContext:
++ _soundDidFinishPlayingForBannerContext:
++ isTrackingDismissGesture
++ registerSource:
++ unregisterSource:
++ signalSource:
++ dismissCurrentBannerContextForSource:
++ assistant:viewWillAppear:
++ assistant:viewDidAppear:
++ assistant:viewWillDisappear:
++ assistant:viewDidDisappear:
++ bulletinWindowWillRotateToOrientation:duration:
++ bulletinWindowIsAnimatingRotationToOrientation:duration:
++ bulletinWindowDidRotateFromOrientation:
++ dismissBannerWithAnimation:reason:forceEvenIfBusy:
++ setBannerAlpha:
++ newBannerSnapshotViewRotatedForOrientation:
++ dealloc
++ init
++ gestureRecognizerShouldBegin:
+- handleSystemDismissGestureWithState:position:velocity:
+- _lockStateChanged:
+- bulletinWindowStoppedBeingBusy
+- _updateBannerSuppressionState
+- _setOverdueCompletionBlock:
+- _fireCompletionBlockForBannerAnimationForAssistantRevealIfNecessary
+- _fireCompletionBlockForBannerAnimationForAssistantDismissIfNecessary
+- _dismissBannerWithAnimation:reason:forceEvenIfBusy:completion:
+- bannerTargetIdiom
+- _handleDismissGestureType:withState:displacement:velocity:
+- _newBannerViewForContext:
+- _bannerFrameForOrientation:
+- _removePendingContextsForSourceNeedingRepop:
+- dismissBannerWithAnimation:reason:
+- _dequeueBannerIfPossible
+- _pendingBannerContextForSourceNeedingRepop:
+- currentBannerContextForSource:
+- _dequeueBannerIfPossibleIgnoringStickyBanner:existingDismissReason:
+- _dismissOverdueOrDequeueIfPossible
+- isShowingBanner
+- _updateBannerSuppressionStateAndDequeueIfPossible:withDelay:
+- _dismissIntervalElapsed
+- _tryToDismissWithAnimation:reason:forceEvenIfBusy:completion:
+- _dequeueAfterDelayIfPossible
+- _isItemShowable:fromSource:
+- _canDequeueIgnoringStickyBanner:
+- _presentBannerForContext:reason:
+- _dequeueNextBannerContext
+- _performTransition:withAnimation:context:reason:completion:
+- _stopCurrentSound
+- _updateDismissGestureState:withDisplacement:velocity:
+- _tearDownViewWithReason:
+- _shouldPendStickyBannerContext:withReason:
+- _bannerViewBackgroundImage
+- _durationForTransition:
+- _replaceIntervalElapsed
+- _handleBannerPanGesture:
+- _handleBannerTapGesture:
+- _playSoundForContext:
+- _soundDidFinishPlayingForBannerContext:
+- isTrackingDismissGesture
+- registerSource:
+- unregisterSource:
+- signalSource:
+- dismissCurrentBannerContextForSource:
+- assistant:viewWillAppear:
+- assistant:viewDidAppear:
+- assistant:viewWillDisappear:
+- assistant:viewDidDisappear:
+- bulletinWindowWillRotateToOrientation:duration:
+- bulletinWindowIsAnimatingRotationToOrientation:duration:
+- bulletinWindowDidRotateFromOrientation:
+- dismissBannerWithAnimation:reason:forceEvenIfBusy:
+- setBannerAlpha:
+- newBannerSnapshotViewRotatedForOrientation:
+- dealloc
+- init
+- gestureRecognizerShouldBegin:
+@end

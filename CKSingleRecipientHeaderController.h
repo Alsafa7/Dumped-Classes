@@ -1,0 +1,6 @@
+@interface CKSingleRecipientHeaderController : CKTranscriptHeaderController
+{
+
+}
+
+@end

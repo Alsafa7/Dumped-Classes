@@ -1,0 +1,147 @@
+@interface GKCollectionViewDataSource : NSObject
+{
+	id _delegate;
+	id _defaultSearchKey;
+	id _dataSourceMetricsInternal;
+	id _defaultSectionMetricsInternal;
+	id _kindsToFactories;
+	id _listeners;
+	id _sectionsToMetrics;
+	id _sectionsToSearchKeys;
+}
+
++ registerSupplementaryViewKind:withFactory:
++ supplementaryViewFactoryForKind:atIndexPath:
++ refreshContentsForDataType:userInfo:updateNotifier:
++ configureCollectionView:
++ itemAtIndexPath:
++ removeItemAtIndexPath:
++ dataSourceMetrics
++ setMetrics:forSection:
++ _gkDescriptionWithChildren:
++ notifySectionsInserted:
++ notifySectionsRemoved:
++ notifySectionsRefreshed:
++ notifyItemsRemovedAtIndexPaths:
++ collectionViewDidBecomeInactive:
++ indexPathsForItem:
++ loadDataWithCompletionHandlerAndError:
++ collectionViewWillBecomeActive:
++ resetViewFactories
++ item:matchesSearchTerms:inSection:
++ enumerateItemsAndIndexPathsUsingBlock:
++ isRootDataSource
++ searchKeyForSection:
++ setSectionsToSearchKeys:
++ setDataSourceMetricsInternal:
++ setDefaultSectionMetricsInternal:
++ defaultSectionMetrics
++ defaultSectionMetricsInternal
++ metricsForSectionInternal:
++ collectionView:evaluateFactoryForSupplementaryElementOfKind:atIndexPath:isRecursive:
++ collectionView:defaultViewForSupplementaryElementOfKind:atIndexPath:
++ localDescription
++ dataSourceForSection:
++ sectionForDataSource:
++ containsDataSource:
++ setSearchKey:forSection:
++ setDataSourceMetrics:
++ setDefaultSectionMetrics:
++ metricsForSection:
++ createMetricsTreeWithGridLayout:
++ totalItemCount
++ notifyItemsInsertedAtIndexPaths:
++ notifyItemsRefreshedAtIndexPaths:
++ notifyItemMovedFromIndexPath:toIndexPaths:
++ notifySectionMovedFrom:to:
++ notifySectionsMovedWithItems
++ notifyDidReloadData
++ notifyPlaceholderUpdated:
++ notifyBatchUpdate:
++ notifyBatchUpdate:complete:
++ defaultSearchKey
++ setDefaultSearchKey:
++ dataSourceMetricsInternal
++ kindsToFactories
++ setKindsToFactories:
++ listeners
++ setListeners:
++ sectionsToMetrics
++ setSectionsToMetrics:
++ sectionsToSearchKeys
++ dealloc
++ setDelegate:
++ init
++ description
++ delegate
++ collectionView:numberOfItemsInSection:
++ collectionView:cellForItemAtIndexPath:
++ collectionView:viewForSupplementaryElementOfKind:atIndexPath:
+- registerSupplementaryViewKind:withFactory:
+- supplementaryViewFactoryForKind:atIndexPath:
+- refreshContentsForDataType:userInfo:updateNotifier:
+- configureCollectionView:
+- itemAtIndexPath:
+- removeItemAtIndexPath:
+- dataSourceMetrics
+- setMetrics:forSection:
+- _gkDescriptionWithChildren:
+- notifySectionsInserted:
+- notifySectionsRemoved:
+- notifySectionsRefreshed:
+- notifyItemsRemovedAtIndexPaths:
+- collectionViewDidBecomeInactive:
+- indexPathsForItem:
+- loadDataWithCompletionHandlerAndError:
+- collectionViewWillBecomeActive:
+- resetViewFactories
+- item:matchesSearchTerms:inSection:
+- enumerateItemsAndIndexPathsUsingBlock:
+- isRootDataSource
+- searchKeyForSection:
+- setSectionsToSearchKeys:
+- setDataSourceMetricsInternal:
+- setDefaultSectionMetricsInternal:
+- defaultSectionMetrics
+- defaultSectionMetricsInternal
+- metricsForSectionInternal:
+- collectionView:evaluateFactoryForSupplementaryElementOfKind:atIndexPath:isRecursive:
+- collectionView:defaultViewForSupplementaryElementOfKind:atIndexPath:
+- localDescription
+- dataSourceForSection:
+- sectionForDataSource:
+- containsDataSource:
+- setSearchKey:forSection:
+- setDataSourceMetrics:
+- setDefaultSectionMetrics:
+- metricsForSection:
+- createMetricsTreeWithGridLayout:
+- totalItemCount
+- notifyItemsInsertedAtIndexPaths:
+- notifyItemsRefreshedAtIndexPaths:
+- notifyItemMovedFromIndexPath:toIndexPaths:
+- notifySectionMovedFrom:to:
+- notifySectionsMovedWithItems
+- notifyDidReloadData
+- notifyPlaceholderUpdated:
+- notifyBatchUpdate:
+- notifyBatchUpdate:complete:
+- defaultSearchKey
+- setDefaultSearchKey:
+- dataSourceMetricsInternal
+- kindsToFactories
+- setKindsToFactories:
+- listeners
+- setListeners:
+- sectionsToMetrics
+- setSectionsToMetrics:
+- sectionsToSearchKeys
+- dealloc
+- setDelegate:
+- init
+- description
+- delegate
+- collectionView:numberOfItemsInSection:
+- collectionView:cellForItemAtIndexPath:
+- collectionView:viewForSupplementaryElementOfKind:atIndexPath:
+@end

@@ -1,0 +1,6 @@
+@interface GKSettingsButtonTableCell : PSTableCell
+{
+
+}
+
+@end

@@ -1,0 +1,64 @@
+@interface SpringBoard : UIApplication
+{
+	id _uiController;
+	id _menuButtonTimer;
+	id _lockButtonTimer;
+	double _headsetButtonDownTime;
+	pointer _headsetDownEvent;
+	int _headsetClickCount;
+	int _ringerSwitchState;
+	bit[8] _headsetButtonClickCount;
+	bit[8] _menuButtonClickCount;
+	bit[1] _screenWasDimOnMenuDown;
+	bit[1] _waitingForMenuDoubleTapAfterActingOnSingleTap;
+	bit[1] _screenshotWasTaken;
+	bit[1] _dontLockOnNextLockUp;
+	bit[1] _poweringDown;
+	bit[1] _headsetDownDelayedActionPerformed;
+	bit[1] _isSeekingInMedia;
+	long long _statusBarOrientationOverride;
+	int _mediaSeekDirection;
+	unsigned int _springBoardRequestsAccelerometerEvents;
+	long long _activeInterfaceOrientation;
+	id _activeInterfaceOrientationObservers;
+	id _activeInterfaceOrientationOverrideStack;
+	BOOL _wantsOrientationEvents;
+	int _notifyDontAnimateREOToken;
+	int _notifyDontAllowMediaHUDToken;
+	BOOL _expectsFaceContact;
+	BOOL _expectsFaceContactInLandscape;
+	BOOL _proximityEventsEnabled;
+	BOOL _smartCoverClosed;
+	BOOL _keybagRefetchTransactionIsActive;
+	BOOL _menuButtonDown;
+	id _restrictionDisabledApplications;
+	id _nowPlayingApp;
+	id _menuButtonInterceptApp;
+	BOOL _menuButtonInterceptAppEnabledForever;
+	id _disableNowPlayingHUDAssertionBundleIds;
+	id _appsRegisteredForVolumeEvents;
+	id _decimalFormatter;
+	id _percentFormatter;
+	id _midnightTimer;
+	id _midnightFireDate;
+	pointer _backgroundMIGServerThread;
+	pointer _iconGenerationMIGServerThread;
+	id _memoryPressureSource;
+	unsigned int _memoryPressureStatus;
+	id _blocksAwaitingAvailableMemory;
+	id _bulletinBoardConnection;
+	id _bulletinBoardQueue;
+	id _cardItemsController;
+	pointer _hasCameraCapability;
+	pointer _hasCameraRestriction;
+	pointer _shouldDelaySleepForHeadsetClick;
+	id _volumePressBandits;
+	usigned long long _menuButtonHoldStartTime;
+	double _menuButtonHoldAbsoluteStartTime;
+	id _menuButtonUpBlocks;
+	BOOL _didPlayLockSound;
+	id _disableActiveOrientationChangeAssertions;
+	BOOL _typingActive;
+}
+
+@end

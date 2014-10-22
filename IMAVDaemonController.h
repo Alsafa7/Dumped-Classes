@@ -1,0 +1,73 @@
+@interface IMAVDaemonController : NSObject
+{
+	id _remoteObject;
+	id _localObject;
+	id _daemonListener;
+	id _protocol;
+	id _listenerID;
+	id _listeners;
+	id _connectionLock;
+	id _listenerLockQueue;
+	id _remoteDaemonLockQueue;
+	id _remoteMessageQueue;
+	id _localObjectLockQueue;
+	pointer _runLoopSource;
+	BOOL _hasCheckedForDaemon;
+	BOOL _acquiringDaemonConnection;
+}
+
++ isConnected
++ isConnecting
++ dealloc
++ init
++ methodSignatureForSelector:
++ forwardInvocation:
++ listener
++ addListenerID:
++ _connectToDaemon
++ _disconnectFromDaemon
++ _cleanUpConnection
++ _makeConnectionWithCompletionBlock:
++ _localObjectDiedNotification:
++ _remoteObjectDiedNotification:
++ _noteSetupComplete
++ _localObjectCleanup
++ _remoteObjectCleanup
++ __isLocalObjectValidOnQueue:
++ __isRemoteObjectValidOnQueue:
++ remoteObjectExists
++ remoteObjectDiedNotification:
++ localObjectDiedNotification:
++ localObjectExists
++ hasListenerForID:
++ _listenerSetUpdated
++ removeListenerID:
++ _remoteMessageQueue
+- isConnected
+- isConnecting
+- dealloc
+- init
+- methodSignatureForSelector:
+- forwardInvocation:
+- listener
+- addListenerID:
+- _connectToDaemon
+- _disconnectFromDaemon
+- _cleanUpConnection
+- _makeConnectionWithCompletionBlock:
+- _localObjectDiedNotification:
+- _remoteObjectDiedNotification:
+- _noteSetupComplete
+- _localObjectCleanup
+- _remoteObjectCleanup
+- __isLocalObjectValidOnQueue:
+- __isRemoteObjectValidOnQueue:
+- remoteObjectExists
+- remoteObjectDiedNotification:
+- localObjectDiedNotification:
+- localObjectExists
+- hasListenerForID:
+- _listenerSetUpdated
+- removeListenerID:
+- _remoteMessageQueue
+@end

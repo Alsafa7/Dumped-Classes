@@ -1,0 +1,86 @@
+@interface NSCalendarDate : NSDate
+{
+	usigned long long refCount;
+	double _timeIntervalSinceReferenceDate;
+	id _timeZone;
+	id _formatString;
+	pointer _reserved;
+}
+
++ replacementObjectForPortCoder:
++ ekmsuidGMTDateToDateInTimeZone:
++ ekmsuidStringForYearMonthDay
++ addTimeInterval:
++ setCalendarFormat:
++ initWithYear:month:day:hour:minute:second:timeZone:
++ calendarFormat
++ descriptionWithCalendarFormat:locale:
++ initWithString:calendarFormat:locale:
++ timeZoneDetail
++ dayOfCommonEra
++ yearOfCommonEra
++ monthOfYear
++ dayOfMonth
++ dayOfWeek
++ dayOfYear
++ hourOfDay
++ minuteOfHour
++ secondOfMinute
++ microsecondOfSecond
++ dateByAddingYears:months:days:hours:minutes:seconds:
++ years:months:days:hours:minutes:seconds:sinceDate:
++ initWithString:calendarFormat:
++ release
++ dealloc
++ initWithCoder:
++ encodeWithCoder:
++ init
++ description
++ timeIntervalSinceReferenceDate
++ setTimeZone:
++ copyWithZone:
++ classForCoder
++ initWithString:
++ timeZone
++ descriptionWithCalendarFormat:
++ initWithTimeIntervalSinceReferenceDate:
++ descriptionWithLocale:
+- replacementObjectForPortCoder:
+- ekmsuidGMTDateToDateInTimeZone:
+- ekmsuidStringForYearMonthDay
+- addTimeInterval:
+- setCalendarFormat:
+- initWithYear:month:day:hour:minute:second:timeZone:
+- calendarFormat
+- descriptionWithCalendarFormat:locale:
+- initWithString:calendarFormat:locale:
+- timeZoneDetail
+- dayOfCommonEra
+- yearOfCommonEra
+- monthOfYear
+- dayOfMonth
+- dayOfWeek
+- dayOfYear
+- hourOfDay
+- minuteOfHour
+- secondOfMinute
+- microsecondOfSecond
+- dateByAddingYears:months:days:hours:minutes:seconds:
+- years:months:days:hours:minutes:seconds:sinceDate:
+- initWithString:calendarFormat:
+- release
+- dealloc
+- initWithCoder:
+- encodeWithCoder:
+- init
+- description
+- timeIntervalSinceReferenceDate
+- setTimeZone:
+- copyWithZone:
+- classForCoder
+- initWithString:
+- timeZone
+- descriptionWithCalendarFormat:
+- initWithTimeIntervalSinceReferenceDate:
+- descriptionWithLocale:
+@end

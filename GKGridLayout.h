@@ -1,0 +1,322 @@
+@interface GKGridLayout : UICollectionViewLayout
+{
+	pointer _sectionToPresentationData;
+	pointer _sectionToMetricData;
+	BOOL _hideSearchBarOnAppear;
+	BOOL _hideAboveSegmentOnAppear;
+	BOOL _noMoreShowMore;
+	BOOL _movedItemsInUpdateCarrySections;
+	BOOL _displayClipView;
+	BOOL _displayingOverlay;
+	usigned long long _portraitInterleavedSectionsCount;
+	usigned long long _landscapeInterleavedSectionsCount;
+	id _visibleIndexPathsFilter;
+	id _defaultSectionMetricsInternal;
+	id _dataSourceMetrics;
+	double _hiddenSearchBarOffset;
+	double _segmentedHeaderPinningOffset;
+	id _laidOutAttributes;
+	id _laidOutPinnableAttributes;
+	id _indexPathToSupplementary;
+	id _indexPathToDecoration;
+	id _indexPathToItem;
+	id _oldIndexPathToSupplementary;
+	id _oldIndexPathToDecoration;
+	id _oldIndexPathToItem;
+	id _indexPathToMetrics;
+	id _revealedIndexPaths;
+	id _indexPathOfTouchedShowMore;
+	id _keyToMetricData;
+	id _oldSectionToMetricKeys;
+	long long _metricsInvalidationCount;
+	id _currentUpdateItems;
+	id _knownSupplementaryKinds;
+	id _dataSourceForUpdate;
+	usigned long long _updateType;
+	id _clipViewAttributes;
+	usigned long long _invalidationFlags;
+	struct _laidOutContentSize;
+	struct _oldLaidOutContentSize;
+}
+
++ dataSourceMetrics
++ _gkDescriptionWithChildren:
++ forceFullInvalidate
++ setVisibleIndexPathsFilter:
++ updatePlaceholderVisibility:
++ prepareForMovingItemsCarryingSections
++ prepareForUpdate:inDataSource:
++ revealMoreForSectionIndex:
++ enableClipView
++ disableClipView
++ visibleIndexPathsFilter
++ revealMoreForSectionIndex:revealCount:andDeleteItemCount:
++ setDefaultSectionMetricsInternal:
++ defaultSectionMetricsInternal
++ setDataSourceMetrics:
++ metricsForSection:
++ laidOutContentSize
++ setHideSearchBarOnAppear:
++ metricDataForKey:
++ setMetricData:forSection:
++ metricDataForSection:
++ filteredTotalItemCountForSection:
++ _sizeAdjustedForTabBarSettingsBasedOnSize:
++ refreshMetrics
++ indexOfSupplementaryMetricsOfKind:inList:
++ sectionsPerRow
++ presentationDataForSection:
++ calculatedBottomPaddingForSection:
++ _areWePortrait
++ yOffsetForSection:
++ updatePresentationDataInSection:withAttributes:supplementaryLocation:
++ setClipViewAttributes:
++ firstVisibleIndexAtOrAfterItem:itemCount:inSection:
++ fullyRebuildLayout
++ _resetState
++ _prepareSupplementaryLayoutForSection:atLocation:offset:globalOffset:
++ _prepareOverlayLayoutForSection:offset:
++ _prepareItemLayoutForSection:
++ updatePresentationDataForLastInterleavedSections
++ finalizeGlobalPresentationDataWithSectionRange:
++ calculateCollectionViewContentSize
++ _filterPinnedAttributes
++ applyBottomPinningToAttributes:minY:maxY:
++ applyTopPinningToAttributes:minY:maxY:
++ resetPinnableAttributes
++ layoutTopPinningAttributes:minY:maxY:
++ finalizePinnedAttributes:forSection:footer:
++ layoutBottomPinningAttributes:minY:maxY:
++ sectionsOverlappingYOffset:
++ setIndexPathOfTouchedShowMore:
++ setRevealedIndexPaths:
++ yOffsetForSlidingUpdate
++ initialLayoutAttributesForSlidingInItemAtIndexPath:
++ finalLayoutAttributesForSlidingAwayItemAtIndexPath:
++ shouldSlideInSupplementaryElementOfKind:forUpdateItem:atIndexPath:
++ shouldSlideOutSupplementaryElementOfKind:forUpdateItem:atIndexPath:
++ setCurrentUpdateItems:
++ setUpdateType:
++ setDataSourceForUpdate:
++ setMovedItemsInUpdateCarrySections:
++ setPortraitInterleavedSectionsCount:
++ setLandscapeInterleavedSectionsCount:
++ currentMaxVisibleItemCountForSection:
++ portraitInterleavedSectionsCount
++ landscapeInterleavedSectionsCount
++ hideSearchBarOnAppear
++ hideAboveSegmentOnAppear
++ setHideAboveSegmentOnAppear:
++ setLaidOutContentSize:
++ hiddenSearchBarOffset
++ setHiddenSearchBarOffset:
++ segmentedHeaderPinningOffset
++ setSegmentedHeaderPinningOffset:
++ laidOutAttributes
++ setLaidOutAttributes:
++ laidOutPinnableAttributes
++ setLaidOutPinnableAttributes:
++ oldLaidOutContentSize
++ setOldLaidOutContentSize:
++ indexPathToSupplementary
++ setIndexPathToSupplementary:
++ indexPathToDecoration
++ setIndexPathToDecoration:
++ indexPathToItem
++ setIndexPathToItem:
++ oldIndexPathToSupplementary
++ setOldIndexPathToSupplementary:
++ oldIndexPathToDecoration
++ setOldIndexPathToDecoration:
++ oldIndexPathToItem
++ setOldIndexPathToItem:
++ indexPathToMetrics
++ setIndexPathToMetrics:
++ revealedIndexPaths
++ indexPathOfTouchedShowMore
++ noMoreShowMore
++ setNoMoreShowMore:
++ keyToMetricData
++ setKeyToMetricData:
++ oldSectionToMetricKeys
++ setOldSectionToMetricKeys:
++ metricsInvalidationCount
++ setMetricsInvalidationCount:
++ currentUpdateItems
++ knownSupplementaryKinds
++ setKnownSupplementaryKinds:
++ dataSourceForUpdate
++ updateType
++ movedItemsInUpdateCarrySections
++ displayClipView
++ setDisplayClipView:
++ clipViewAttributes
++ invalidationFlags
++ setInvalidationFlags:
++ displayingOverlay
++ setDisplayingOverlay:
++ dealloc
++ init
++ collectionViewContentSize
++ layoutAttributesForItemAtIndexPath:
++ invalidateLayout
++ prepareLayout
++ layoutAttributesForElementsInRect:
++ layoutAttributesForSupplementaryViewOfKind:atIndexPath:
++ indexPathsToDeleteForSupplementaryViewOfKind:
++ shouldInvalidateLayoutForBoundsChange:
++ invalidationContextForBoundsChange:
++ prepareForAnimatedBoundsChange:
++ targetContentOffsetForProposedContentOffset:
++ finalLayoutAttributesForDisappearingItemAtIndexPath:
++ finalLayoutAttributesForDisappearingSupplementaryElementOfKind:atIndexPath:
++ initialLayoutAttributesForAppearingItemAtIndexPath:
++ initialLayoutAttributesForAppearingSupplementaryElementOfKind:atIndexPath:
++ layoutAttributesForDecorationViewOfKind:atIndexPath:
++ finalizeAnimatedBoundsChange
++ _animationForReusableView:toLayoutAttributes:type:
++ targetContentOffsetForProposedContentOffset:withScrollingVelocity:
++ prepareForCollectionViewUpdates:
++ finalizeCollectionViewUpdates
++ invalidateLayoutWithContext:
+- dataSourceMetrics
+- _gkDescriptionWithChildren:
+- forceFullInvalidate
+- setVisibleIndexPathsFilter:
+- updatePlaceholderVisibility:
+- prepareForMovingItemsCarryingSections
+- prepareForUpdate:inDataSource:
+- revealMoreForSectionIndex:
+- enableClipView
+- disableClipView
+- visibleIndexPathsFilter
+- revealMoreForSectionIndex:revealCount:andDeleteItemCount:
+- setDefaultSectionMetricsInternal:
+- defaultSectionMetricsInternal
+- setDataSourceMetrics:
+- metricsForSection:
+- laidOutContentSize
+- setHideSearchBarOnAppear:
+- metricDataForKey:
+- setMetricData:forSection:
+- metricDataForSection:
+- filteredTotalItemCountForSection:
+- _sizeAdjustedForTabBarSettingsBasedOnSize:
+- refreshMetrics
+- indexOfSupplementaryMetricsOfKind:inList:
+- sectionsPerRow
+- presentationDataForSection:
+- calculatedBottomPaddingForSection:
+- _areWePortrait
+- yOffsetForSection:
+- updatePresentationDataInSection:withAttributes:supplementaryLocation:
+- setClipViewAttributes:
+- firstVisibleIndexAtOrAfterItem:itemCount:inSection:
+- fullyRebuildLayout
+- _resetState
+- _prepareSupplementaryLayoutForSection:atLocation:offset:globalOffset:
+- _prepareOverlayLayoutForSection:offset:
+- _prepareItemLayoutForSection:
+- updatePresentationDataForLastInterleavedSections
+- finalizeGlobalPresentationDataWithSectionRange:
+- calculateCollectionViewContentSize
+- _filterPinnedAttributes
+- applyBottomPinningToAttributes:minY:maxY:
+- applyTopPinningToAttributes:minY:maxY:
+- resetPinnableAttributes
+- layoutTopPinningAttributes:minY:maxY:
+- finalizePinnedAttributes:forSection:footer:
+- layoutBottomPinningAttributes:minY:maxY:
+- sectionsOverlappingYOffset:
+- setIndexPathOfTouchedShowMore:
+- setRevealedIndexPaths:
+- yOffsetForSlidingUpdate
+- initialLayoutAttributesForSlidingInItemAtIndexPath:
+- finalLayoutAttributesForSlidingAwayItemAtIndexPath:
+- shouldSlideInSupplementaryElementOfKind:forUpdateItem:atIndexPath:
+- shouldSlideOutSupplementaryElementOfKind:forUpdateItem:atIndexPath:
+- setCurrentUpdateItems:
+- setUpdateType:
+- setDataSourceForUpdate:
+- setMovedItemsInUpdateCarrySections:
+- setPortraitInterleavedSectionsCount:
+- setLandscapeInterleavedSectionsCount:
+- currentMaxVisibleItemCountForSection:
+- portraitInterleavedSectionsCount
+- landscapeInterleavedSectionsCount
+- hideSearchBarOnAppear
+- hideAboveSegmentOnAppear
+- setHideAboveSegmentOnAppear:
+- setLaidOutContentSize:
+- hiddenSearchBarOffset
+- setHiddenSearchBarOffset:
+- segmentedHeaderPinningOffset
+- setSegmentedHeaderPinningOffset:
+- laidOutAttributes
+- setLaidOutAttributes:
+- laidOutPinnableAttributes
+- setLaidOutPinnableAttributes:
+- oldLaidOutContentSize
+- setOldLaidOutContentSize:
+- indexPathToSupplementary
+- setIndexPathToSupplementary:
+- indexPathToDecoration
+- setIndexPathToDecoration:
+- indexPathToItem
+- setIndexPathToItem:
+- oldIndexPathToSupplementary
+- setOldIndexPathToSupplementary:
+- oldIndexPathToDecoration
+- setOldIndexPathToDecoration:
+- oldIndexPathToItem
+- setOldIndexPathToItem:
+- indexPathToMetrics
+- setIndexPathToMetrics:
+- revealedIndexPaths
+- indexPathOfTouchedShowMore
+- noMoreShowMore
+- setNoMoreShowMore:
+- keyToMetricData
+- setKeyToMetricData:
+- oldSectionToMetricKeys
+- setOldSectionToMetricKeys:
+- metricsInvalidationCount
+- setMetricsInvalidationCount:
+- currentUpdateItems
+- knownSupplementaryKinds
+- setKnownSupplementaryKinds:
+- dataSourceForUpdate
+- updateType
+- movedItemsInUpdateCarrySections
+- displayClipView
+- setDisplayClipView:
+- clipViewAttributes
+- invalidationFlags
+- setInvalidationFlags:
+- displayingOverlay
+- setDisplayingOverlay:
+- dealloc
+- init
+- collectionViewContentSize
+- layoutAttributesForItemAtIndexPath:
+- invalidateLayout
+- prepareLayout
+- layoutAttributesForElementsInRect:
+- layoutAttributesForSupplementaryViewOfKind:atIndexPath:
+- indexPathsToDeleteForSupplementaryViewOfKind:
+- shouldInvalidateLayoutForBoundsChange:
+- invalidationContextForBoundsChange:
+- prepareForAnimatedBoundsChange:
+- targetContentOffsetForProposedContentOffset:
+- finalLayoutAttributesForDisappearingItemAtIndexPath:
+- finalLayoutAttributesForDisappearingSupplementaryElementOfKind:atIndexPath:
+- initialLayoutAttributesForAppearingItemAtIndexPath:
+- initialLayoutAttributesForAppearingSupplementaryElementOfKind:atIndexPath:
+- layoutAttributesForDecorationViewOfKind:atIndexPath:
+- finalizeAnimatedBoundsChange
+- _animationForReusableView:toLayoutAttributes:type:
+- targetContentOffsetForProposedContentOffset:withScrollingVelocity:
+- prepareForCollectionViewUpdates:
+- finalizeCollectionViewUpdates
+- invalidateLayoutWithContext:
+@end

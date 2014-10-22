@@ -1,0 +1,75 @@
+@interface UINavigationItemView : UIView
+{
+	id _item;
+	struct _titleSize;
+	id _topCrossView;
+	id _bottomCrossView;
+	BOOL _isCrossFading;
+	BOOL _customFontSet;
+	id _label;
+	BOOL _isFadingInFromCustomAlpha;
+}
+
++ dealloc
++ setFrame:
++ layoutSubviews
++ navigationItem
++ _scriptingInfo
++ _resetTitleSize
++ _setLineBreakMode:
++ title
++ setFont:
++ font
++ initWithNavigationItem:
++ titleAutoresizesToFit
++ setTitleAutoresizesToFit:
++ _updateLabelColor
++ _prepareCrossViewsForNewSize:
++ _crossFadeHiddingButton:
++ _cleanUpCrossView
++ _titleSize
++ _isFadingInFromCustomAlpha
++ _setFadingInFromCustomAlpha:
++ _defaultFont
++ _setFont:
++ _labelFrame
++ _useSilverLookForBarStyle:
++ _currentTextColorForBarStyle:
++ _currentTextShadowOffsetForBarStyle:
++ _currentTextShadowColorForBarStyle:
++ _titleYAdjustmentCustomization
++ _updateLabel
++ _updateLabelContents
++ _adjustLabelTrackingIfNecessary
+- dealloc
+- setFrame:
+- layoutSubviews
+- navigationItem
+- _scriptingInfo
+- _resetTitleSize
+- _setLineBreakMode:
+- title
+- setFont:
+- font
+- initWithNavigationItem:
+- titleAutoresizesToFit
+- setTitleAutoresizesToFit:
+- _updateLabelColor
+- _prepareCrossViewsForNewSize:
+- _crossFadeHiddingButton:
+- _cleanUpCrossView
+- _titleSize
+- _isFadingInFromCustomAlpha
+- _setFadingInFromCustomAlpha:
+- _defaultFont
+- _setFont:
+- _labelFrame
+- _useSilverLookForBarStyle:
+- _currentTextColorForBarStyle:
+- _currentTextShadowOffsetForBarStyle:
+- _currentTextShadowColorForBarStyle:
+- _titleYAdjustmentCustomization
+- _updateLabel
+- _updateLabelContents
+- _adjustLabelTrackingIfNecessary
+@end

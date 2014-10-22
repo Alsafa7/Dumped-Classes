@@ -1,0 +1,6 @@
+@interface CNFServiceHandler : NSObject
+{
+
+}
+
+@end

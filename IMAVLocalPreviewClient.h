@@ -1,0 +1,84 @@
+@interface IMAVLocalPreviewClient : NSObject
+{
+	BOOL _wantsPreview;
+	BOOL _wantsPausedPreview;
+	BOOL _wantsUnpausedPreview;
+}
+
++ dealloc
++ init
++ localScreenAttributesForVideoAttributes:
++ setLocalScreenAttributes:
++ startPreview
++ isPreviewRunning
++ setCameraType:
++ pausePreview
++ stopPreview
++ didReceiveErrorFromCamera:error:
++ didReceiveFirstPreviewFrameFromCamera:
++ didChangeLocalVideoAttributes:
++ didChangeLocalScreenAttributes:
++ didStartPreview
++ didPausePreview
++ didStopPreview
++ setLocalVideoLayer:
++ localVideoLayer
++ didReceiveCommError
++ setLocalCamera:
++ localCamera
++ systemApplicationDidEnterBackground
++ systemApplicationWillEnterForeground
++ systemScreenDidPowerUp
++ systemScreenDidPowerDown
++ localVideoBackLayer
++ setLocalVideoBackLayer:
++ _avDaemonConnected
++ _shouldPreviewBeRunning
++ _updatePreviewState
++ unpausePreview
++ beginAnimationToPIP
++ endAnimationToPIP
++ beginAnimationToPreview
++ endAnimationToPreview
++ cameraType
++ cameraOrientation
++ setCameraOrientation:
+- dealloc
+- init
+- localScreenAttributesForVideoAttributes:
+- setLocalScreenAttributes:
+- startPreview
+- isPreviewRunning
+- setCameraType:
+- pausePreview
+- stopPreview
+- didReceiveErrorFromCamera:error:
+- didReceiveFirstPreviewFrameFromCamera:
+- didChangeLocalVideoAttributes:
+- didChangeLocalScreenAttributes:
+- didStartPreview
+- didPausePreview
+- didStopPreview
+- setLocalVideoLayer:
+- localVideoLayer
+- didReceiveCommError
+- setLocalCamera:
+- localCamera
+- systemApplicationDidEnterBackground
+- systemApplicationWillEnterForeground
+- systemScreenDidPowerUp
+- systemScreenDidPowerDown
+- localVideoBackLayer
+- setLocalVideoBackLayer:
+- _avDaemonConnected
+- _shouldPreviewBeRunning
+- _updatePreviewState
+- unpausePreview
+- beginAnimationToPIP
+- endAnimationToPIP
+- beginAnimationToPreview
+- endAnimationToPreview
+- cameraType
+- cameraOrientation
+- setCameraOrientation:
+@end

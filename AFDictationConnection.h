@@ -1,0 +1,106 @@
+@interface AFDictationConnection : NSObject
+{
+	id _assistantConnection;
+	id _lastUsedLanguage;
+	id _delegate;
+	bit[1] _stateInSync;
+	unsigned int _audioSessionID;
+	float _averagePower;
+	float _peakPower;
+	BOOL _isCapturingSpeech;
+	BOOL _hasActiveRequest;
+}
+
++ startDictationWithSpeechFileAtURL:options:forLanguage:
++ startDictationWithSpeechFileAtURL:isNarrowBand:options:forLanguage:
++ dealloc
++ setDelegate:
++ init
++ delegate
++ _updateState
++ dictationIsAvailableForLanguage:
++ sendSpeechCorrection:forIdentifier:
++ cancelAvailabilityMonitoring
++ beginAvailabilityMonitoring
++ averagePower
++ startDictationWithLanguageCode:options:speechOptions:
++ endSession
++ cancelSpeech
++ stopSpeechWithOptions:
++ currentlyUsingLocalDication
++ preheat
++ _tellDelegateAudioSessionIDChanged:
++ _tellSpeechDelegateRecordingDidFail:
++ _connectionInterrupted
++ _setAudioSessionID:
++ _checkAndSetIsCapturingSpeech:
++ _speechRecordingDidUpdateAveragePower:peakPower:
++ _tellSpeechDelegateRecordingWillBegin
++ _tellSpeechDelegateRecordingDidEnd
++ _tellSpeechDelegateRecordingDidCancel
++ _tellSpeechDelegateRecognitionDidFail:
++ stopSpeech
++ peakPower
++ _clearConnections
++ _assistantDictationService
++ _willFailDictationWithError:
++ _willCompleteDictation
++ _registerInvalidationHandlerForXPCConnection:
++ prepareWithOptions:
++ _assistantConnection
++ _availabilityChanged:
++ _willStartDictation
++ _willCancelDictation
++ _tellSpeechDelegateRecordingDidBegin
++ _tellSpeechDelegateDidHypothesizeSpeechPhrases:languageModel:
++ _tellSpeechDelegateDidRecognizeSpeechPhrases:languageModel:correctionIdentifier:
++ startDictationWithLanguageCode:options:
++ audioSessionID
++ .cxx_destruct
+- startDictationWithSpeechFileAtURL:options:forLanguage:
+- startDictationWithSpeechFileAtURL:isNarrowBand:options:forLanguage:
+- dealloc
+- setDelegate:
+- init
+- delegate
+- _updateState
+- dictationIsAvailableForLanguage:
+- sendSpeechCorrection:forIdentifier:
+- cancelAvailabilityMonitoring
+- beginAvailabilityMonitoring
+- averagePower
+- startDictationWithLanguageCode:options:speechOptions:
+- endSession
+- cancelSpeech
+- stopSpeechWithOptions:
+- currentlyUsingLocalDication
+- preheat
+- _tellDelegateAudioSessionIDChanged:
+- _tellSpeechDelegateRecordingDidFail:
+- _connectionInterrupted
+- _setAudioSessionID:
+- _checkAndSetIsCapturingSpeech:
+- _speechRecordingDidUpdateAveragePower:peakPower:
+- _tellSpeechDelegateRecordingWillBegin
+- _tellSpeechDelegateRecordingDidEnd
+- _tellSpeechDelegateRecordingDidCancel
+- _tellSpeechDelegateRecognitionDidFail:
+- stopSpeech
+- peakPower
+- _clearConnections
+- _assistantDictationService
+- _willFailDictationWithError:
+- _willCompleteDictation
+- _registerInvalidationHandlerForXPCConnection:
+- prepareWithOptions:
+- _assistantConnection
+- _availabilityChanged:
+- _willStartDictation
+- _willCancelDictation
+- _tellSpeechDelegateRecordingDidBegin
+- _tellSpeechDelegateDidHypothesizeSpeechPhrases:languageModel:
+- _tellSpeechDelegateDidRecognizeSpeechPhrases:languageModel:correctionIdentifier:
+- startDictationWithLanguageCode:options:
+- audioSessionID
+- .cxx_destruct
+@end

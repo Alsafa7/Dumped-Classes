@@ -1,0 +1,6 @@
+@interface MusicPlaylistsListViewController : MusicPlaylistsViewController
+{
+
+}
+
+@end

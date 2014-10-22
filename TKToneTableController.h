@@ -1,0 +1,327 @@
+@interface TKToneTableController : NSObject
+{
+	id _delegate;
+	id _ringtoneGroupLists;
+	id _ringtoneGroupNames;
+	id _selectedRingtoneIndexPath;
+	BOOL _showsNone;
+	BOOL _showsDefault;
+	id _noneString;
+	id _noneIdentifier;
+	id _classicTextTonesIdentifier;
+	id _classicRingtonesIdentifier;
+	id _defaultIdentifier;
+	BOOL _showsNothingSelected;
+	BOOL _showsRingtonesStore;
+	BOOL _noneAtTop;
+	id _tableView;
+	BOOL _showsVibrations;
+	BOOL _showsDefaultVibration;
+	BOOL _showsUserGeneratedVibrations;
+	BOOL _showsNoneVibration;
+	BOOL _showsNoVibrationSelected;
+	BOOL _allowsDeletingCurrentSystemVibration;
+	id _selectedVibrationIdentifier;
+	id _vibrationPickerViewController;
+	BOOL _showsMedia;
+	BOOL _showMediaAtTop;
+	id _mediaPickerController;
+	id _mediaItems;
+	id _musicPlayer;
+	id _ringtoneManager;
+	id _avController;
+	BOOL _startedInteruption;
+	BOOL _customAVController;
+	BOOL _tonePicker;
+	usigned long long _filter;
+	usigned long long _systemRingtoneStartIndex;
+	Class _customTableViewCellClass;
+	int _context;
+	BOOL _showsStoreButtonInNavigationBar;
+	id checkmarkImage;
+	id classicTextToneIdentifiers;
+	id classicRingtoneIdentifiers;
+	id selectedClassicTextTonesIndexPath;
+	id selectedClassicRingtonesIndexPath;
+	long long selectedClassicTextToneIndex;
+	long long selectedClassicRingtoneIndex;
+	id _vibrationAccountIdentifier;
+	id _styleProvider;
+	id _defaultSectionHeaderView;
+	id _mediaSectionHeaderView;
+	id _regularToneSectionHeaderViews;
+}
+
++ styleProvider
++ setStyleProvider:
++ setSelectedRingtoneIdentifier:
++ setSelectedVibrationIdentifier:
++ setShowsNothingSelected:
++ setShowsNone:
++ setNoneAtTop:
++ setShowsDefault:
++ setShowsVibrations:
++ selectedRingtoneIdentifier
++ stopPlaying
++ setCustomTableViewCellClass:
++ selectedVibrationIdentifier
++ setAVController:
++ mediaPickerDidCancel:
++ mediaPicker:didPickMediaItems:
++ dealloc
++ setDelegate:
++ init
++ tableView:willDisplayCell:forRowAtIndexPath:
++ tableView:heightForRowAtIndexPath:
++ tableView:heightForHeaderInSection:
++ tableView:viewForHeaderInSection:
++ tableView:didSelectRowAtIndexPath:
++ tableView:numberOfRowsInSection:
++ tableView:cellForRowAtIndexPath:
++ numberOfSectionsInTableView:
++ tableView:titleForHeaderInSection:
++ setContext:
++ setTableView:
++ avController
++ ringtoneManager
++ indexPathForSelectedRingtone
++ indexPathForFirstRingtoneGroup
++ reloadRingtones
++ setDefaultIdentifier:
++ vibrationAccountIdentifier
++ setVibrationAccountIdentifier:
++ setNoneString:
++ selectedIdentifier:
++ setShowsMedia:
++ setSelectedMediaIdentifier:
++ setMediaAtTop:
++ setShowsStoreButtonInNavigationBar:
++ initWithAVController:filter:tonePicker:
++ updateSelectedIdentifierForExternalChange
++ addMediaItems:
++ removeMediaItems:
++ setShowsDefaultVibration:
++ setShowsUserGeneratedVibrations:
++ setShowsNoneVibration:
++ setShowsNoVibrationSelected:
++ allowsDeletingCurrentSystemVibration
++ setAllowsDeletingCurrentSystemVibration:
++ configureNavigationBarIfNeeded
++ stopPlayingWithFadeOut:
++ finishedWithPicker
++ setCheckmarkImage:
++ toneIdentifiersForToneClassicsTableView:
++ preselectedIndexForToneClassicsTableView:
++ toneClassicsTableView:willDimissWithNewSelectedIndexPath:
++ currentToneContext
++ checkmarkImage
++ playRingtoneWithIdentifier:
++ togglePlayWithRingtoneWithIdentifier:
++ _configureTextColorOfLabelInCell:checked:
++ processNewRingtoneSelected:
++ initWithAVController:
++ _canShowStore
++ indexPathForNone
++ setSelectedClassicTextToneIndex:
++ setSelectedClassicRingtoneIndex:
++ _unregisterForItemPlaybackDidEndNotificationWithCurrentAVController
++ _setDefaultSectionHeaderView:
++ _setMediaSectionHeaderView:
++ _setRegularToneSectionHeaderViews:
++ _setStyleProvider:
++ _showsVibrations
++ identifierOfRingtoneAtIndexPath:
++ isMediaGroupAtIndexPath:
++ isDefaultGroupAtIndexPath:
++ isNoneGroupAtIndexPath:
++ selectedClassicTextToneIndex
++ classicTextToneIdentifiers
++ selectedClassicRingtoneIndex
++ classicRingtoneIdentifiers
++ indexPathForMediaGroup
++ indexPathForRingtoneWithIdentifier:
++ _loadTonesFromPlistDictionary:
++ _refreshMediaItems
++ identifierAtIndexPath:isMediaItem:
++ _regularToneSectionHeaderViews
++ addRingtonesInDirectory:toArray:fileExtension:
++ loadRingtonesFromPlist
++ setClassicRingtoneIdentifiers:
++ loadTextTonesFromPlist
++ setClassicTextToneIdentifiers:
++ indexPathForDefaultGroup
++ processNewMediaItemSelected:
++ _mediaItemForIdentifier:
++ _addMediaIdentifierToList:
++ identifierOfSelectedClassicTextTone
++ identifierOfSelectedClassicRingtone
++ _styleProvider
++ _goToStore
++ isVibrationGroupAtIndexPath:
++ isDividerAtIndexPath:
++ isRingtonesStoreGroupAtIndexPath:
++ copyCurrentPhoneTextToneName
++ copyCurrentPhoneRingtoneName
++ indexPathForRingtonesStoreGroup
++ indexPathForVibrationGroup
++ playMediaItemWithIdentifier:
++ togglePlayMediaItemWithIdentifier:
++ showsDefaultVibration
++ showsUserGeneratedVibrations
++ showsNoneVibration
++ setSelectedClassicTextTonesIndexPath:
++ setSelectedClassicRingtonesIndexPath:
++ _defaultSectionHeaderView
++ _mediaSectionHeaderView
++ _getTitle:customHeaderView:forHeaderInSection:
++ _registerForItemPlaybackDidEndNotificationWithCurrentAVController
++ copyCurrentPhoneTextToneIdentifier
++ copyCurrentPhoneRingtoneIdentifier
++ musicPlayer
++ selectedClassicTextTonesIndexPath
++ selectedClassicRingtonesIndexPath
++ vibrationPickerViewController:selectedVibrationWithIdentifier:
++ compareRingtoneWithIdentifier:toRingtoneWithIdentifier:
++ setShowsRingtonesStore:
++ _handleItemPlaybackDidEndWithAVController:
++ _setRingtoneManager:
++ defaultIdentifier
++ showsVibrations
++ showsNoVibrationSelected
+- styleProvider
+- setStyleProvider:
+- setSelectedRingtoneIdentifier:
+- setSelectedVibrationIdentifier:
+- setShowsNothingSelected:
+- setShowsNone:
+- setNoneAtTop:
+- setShowsDefault:
+- setShowsVibrations:
+- selectedRingtoneIdentifier
+- stopPlaying
+- setCustomTableViewCellClass:
+- selectedVibrationIdentifier
+- setAVController:
+- mediaPickerDidCancel:
+- mediaPicker:didPickMediaItems:
+- dealloc
+- setDelegate:
+- init
+- tableView:willDisplayCell:forRowAtIndexPath:
+- tableView:heightForRowAtIndexPath:
+- tableView:heightForHeaderInSection:
+- tableView:viewForHeaderInSection:
+- tableView:didSelectRowAtIndexPath:
+- tableView:numberOfRowsInSection:
+- tableView:cellForRowAtIndexPath:
+- numberOfSectionsInTableView:
+- tableView:titleForHeaderInSection:
+- setContext:
+- setTableView:
+- avController
+- ringtoneManager
+- indexPathForSelectedRingtone
+- indexPathForFirstRingtoneGroup
+- reloadRingtones
+- setDefaultIdentifier:
+- vibrationAccountIdentifier
+- setVibrationAccountIdentifier:
+- setNoneString:
+- selectedIdentifier:
+- setShowsMedia:
+- setSelectedMediaIdentifier:
+- setMediaAtTop:
+- setShowsStoreButtonInNavigationBar:
+- initWithAVController:filter:tonePicker:
+- updateSelectedIdentifierForExternalChange
+- addMediaItems:
+- removeMediaItems:
+- setShowsDefaultVibration:
+- setShowsUserGeneratedVibrations:
+- setShowsNoneVibration:
+- setShowsNoVibrationSelected:
+- allowsDeletingCurrentSystemVibration
+- setAllowsDeletingCurrentSystemVibration:
+- configureNavigationBarIfNeeded
+- stopPlayingWithFadeOut:
+- finishedWithPicker
+- setCheckmarkImage:
+- toneIdentifiersForToneClassicsTableView:
+- preselectedIndexForToneClassicsTableView:
+- toneClassicsTableView:willDimissWithNewSelectedIndexPath:
+- currentToneContext
+- checkmarkImage
+- playRingtoneWithIdentifier:
+- togglePlayWithRingtoneWithIdentifier:
+- _configureTextColorOfLabelInCell:checked:
+- processNewRingtoneSelected:
+- initWithAVController:
+- _canShowStore
+- indexPathForNone
+- setSelectedClassicTextToneIndex:
+- setSelectedClassicRingtoneIndex:
+- _unregisterForItemPlaybackDidEndNotificationWithCurrentAVController
+- _setDefaultSectionHeaderView:
+- _setMediaSectionHeaderView:
+- _setRegularToneSectionHeaderViews:
+- _setStyleProvider:
+- _showsVibrations
+- identifierOfRingtoneAtIndexPath:
+- isMediaGroupAtIndexPath:
+- isDefaultGroupAtIndexPath:
+- isNoneGroupAtIndexPath:
+- selectedClassicTextToneIndex
+- classicTextToneIdentifiers
+- selectedClassicRingtoneIndex
+- classicRingtoneIdentifiers
+- indexPathForMediaGroup
+- indexPathForRingtoneWithIdentifier:
+- _loadTonesFromPlistDictionary:
+- _refreshMediaItems
+- identifierAtIndexPath:isMediaItem:
+- _regularToneSectionHeaderViews
+- addRingtonesInDirectory:toArray:fileExtension:
+- loadRingtonesFromPlist
+- setClassicRingtoneIdentifiers:
+- loadTextTonesFromPlist
+- setClassicTextToneIdentifiers:
+- indexPathForDefaultGroup
+- processNewMediaItemSelected:
+- _mediaItemForIdentifier:
+- _addMediaIdentifierToList:
+- identifierOfSelectedClassicTextTone
+- identifierOfSelectedClassicRingtone
+- _styleProvider
+- _goToStore
+- isVibrationGroupAtIndexPath:
+- isDividerAtIndexPath:
+- isRingtonesStoreGroupAtIndexPath:
+- copyCurrentPhoneTextToneName
+- copyCurrentPhoneRingtoneName
+- indexPathForRingtonesStoreGroup
+- indexPathForVibrationGroup
+- playMediaItemWithIdentifier:
+- togglePlayMediaItemWithIdentifier:
+- showsDefaultVibration
+- showsUserGeneratedVibrations
+- showsNoneVibration
+- setSelectedClassicTextTonesIndexPath:
+- setSelectedClassicRingtonesIndexPath:
+- _defaultSectionHeaderView
+- _mediaSectionHeaderView
+- _getTitle:customHeaderView:forHeaderInSection:
+- _registerForItemPlaybackDidEndNotificationWithCurrentAVController
+- copyCurrentPhoneTextToneIdentifier
+- copyCurrentPhoneRingtoneIdentifier
+- musicPlayer
+- selectedClassicTextTonesIndexPath
+- selectedClassicRingtonesIndexPath
+- vibrationPickerViewController:selectedVibrationWithIdentifier:
+- compareRingtoneWithIdentifier:toRingtoneWithIdentifier:
+- setShowsRingtonesStore:
+- _handleItemPlaybackDidEndWithAVController:
+- _setRingtoneManager:
+- defaultIdentifier
+- showsVibrations
+- showsNoVibrationSelected
+@end

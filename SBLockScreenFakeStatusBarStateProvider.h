@@ -1,0 +1,6 @@
+@interface SBLockScreenFakeStatusBarStateProvider : SBStatusBarStateProvider
+{
+
+}
+
+@end

@@ -1,0 +1,117 @@
+@interface MPRadioAdObserver : NSObject
+{
+	id _accessQueue;
+	id _audioDeviceController;
+	int _blankedStateNotifyToken;
+	BOOL _blankedStateNotifyTokenIsValid;
+	id _currentItem;
+	int _lockStateNotifyToken;
+	BOOL _lockStateNotifyTokenIsValid;
+	double _minDurationToCountAsPlayed;
+	id _pickedRoute;
+	id _playEventFlushTimerSource;
+	long long _policyEngineEnabledCount;
+	id _queuedAds;
+	id _skipEventsByStationInfo;
+	double _startTimeForCurrentItem;
+	id _station;
+	long long _visualEngagementCount;
+	BOOL _visuallyEngaged;
+	usigned long long _numberOfSkippedTracks;
+}
+
++ _playbackStateDidChangeNotification:
++ station
++ _itemChangedNotification:
++ audioDeviceControllerAudioRoutesChanged:
++ _applicationDidBecomeActiveNotification:
++ _applicationWillResignActiveNotification:
++ setStation:
++ _songBeganResponseNotification:
++ didScheduleAd:
++ _itemWillChangeNotification:
++ cancelQueuedAds
++ optimalTransmissionWindowDidOpen
++ _loadMinDurationToCountAsPlayedFromURLBag
++ _adPolicyEngine
++ _heartbeatChangedNotification:
++ _hideAdViewNotification:
++ _stationEntryResponseNotification:
++ _radioConfigurationDidChangeNotification:
++ _deviceOrientationDidChangeNotification:
++ _isPolicyEngineEnabled
++ _cancelPlayEventFlushTimer
++ _updateVisualEngagementWithApplicationState:
++ _clearAssetCacheForItem:
++ _itemTimeForItem:wasSkipped:didAssetFailToLoad:
++ _playEventForItem:
++ _stationInfoForItem:
++ _addPlayEvents:withStationInfo:
++ _sendPlayAndSkipEvents
++ _handleSkipForChangedItem:
++ _itemAssetLoadedDidChangeNotification:
++ _enablePolicyEngine
++ _disablePolicyEngine
++ _reportPlaybackEndedForTimeout
++ _schedulePlayEventFlushTimer
++ bannerView:didFailToReceiveAdWithError:
++ bannerViewActionShouldBegin:willLeaveApplication:
++ bannerViewActionDidFinish:
++ bannerViewStoryboardPresentationInDidComplete:
++ beginVisualEngagement
++ didHitPlaybackTimeoutEndingPlayback:withCurrentItem:
++ endVisualEngagement
++ willHitPlaybackTimeoutEndingPlayback:withCurrentItem:
++ isVisuallyEngaged
++ numberOfSkippedTracks
++ dealloc
++ init
++ .cxx_destruct
+- _playbackStateDidChangeNotification:
+- station
+- _itemChangedNotification:
+- audioDeviceControllerAudioRoutesChanged:
+- _applicationDidBecomeActiveNotification:
+- _applicationWillResignActiveNotification:
+- setStation:
+- _songBeganResponseNotification:
+- didScheduleAd:
+- _itemWillChangeNotification:
+- cancelQueuedAds
+- optimalTransmissionWindowDidOpen
+- _loadMinDurationToCountAsPlayedFromURLBag
+- _adPolicyEngine
+- _heartbeatChangedNotification:
+- _hideAdViewNotification:
+- _stationEntryResponseNotification:
+- _radioConfigurationDidChangeNotification:
+- _deviceOrientationDidChangeNotification:
+- _isPolicyEngineEnabled
+- _cancelPlayEventFlushTimer
+- _updateVisualEngagementWithApplicationState:
+- _clearAssetCacheForItem:
+- _itemTimeForItem:wasSkipped:didAssetFailToLoad:
+- _playEventForItem:
+- _stationInfoForItem:
+- _addPlayEvents:withStationInfo:
+- _sendPlayAndSkipEvents
+- _handleSkipForChangedItem:
+- _itemAssetLoadedDidChangeNotification:
+- _enablePolicyEngine
+- _disablePolicyEngine
+- _reportPlaybackEndedForTimeout
+- _schedulePlayEventFlushTimer
+- bannerView:didFailToReceiveAdWithError:
+- bannerViewActionShouldBegin:willLeaveApplication:
+- bannerViewActionDidFinish:
+- bannerViewStoryboardPresentationInDidComplete:
+- beginVisualEngagement
+- didHitPlaybackTimeoutEndingPlayback:withCurrentItem:
+- endVisualEngagement
+- willHitPlaybackTimeoutEndingPlayback:withCurrentItem:
+- isVisuallyEngaged
+- numberOfSkippedTracks
+- dealloc
+- init
+- .cxx_destruct
+@end

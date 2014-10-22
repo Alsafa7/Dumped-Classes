@@ -1,0 +1,119 @@
+@interface SBLockScreenNotificationListView : UIView
+{
+	id _tableView;
+	id _tableHeaderView;
+	id _tableFooterView;
+	id _topPocketView;
+	id _bottomPocketView;
+	id _containerView;
+	id _delegate;
+	id _model;
+	id _displayLink;
+	double _currentTextAlpha;
+	double _fadeStartTimestamp;
+	id _oldTextDisabledTimer;
+	usigned long long _indexOfNewItem;
+	BOOL _notificationCellIsScrollingToPasscode;
+	double _notificationScrollDecelerationRatio;
+	id _heightForListItemCache;
+	double _totalContentHeight;
+	double _startingScrollOffset;
+	double _lastDistanceScrolled;
+	BOOL _updateCellsToVisibleOnPluginWillDisable;
+}
+
++ setInScreenOffMode:
++ updateForAdditionOfItemAtIndex:allowHighlightOnInsert:
++ updateForModificationOfItemWithOldIndex:andNewIndex:
++ updateForRemovalOfItemAtIndex:removedItem:
++ updateForRemovalOfItems
++ lockScreenDidEndScrollingOnPage:
++ scrollToTopOfListAnimated:
++ _tableHeaderView
++ _tableFooterView
++ _pocketLineColor
++ _disableIdleTimer:
++ _clearTextDisabledTimer
++ _clearTextFadeTimer
++ _resetAllFadeTimers
++ _setContentForTableCell:withItem:atIndexPath:
++ _setNonSelectedCellsToVisible:withSelectedCell:
++ setUpdateCellsToVisibleOnPluginWillDisable:
++ _scrollingEndedInScrollView:
++ _updateBottomShadowVisibility
++ _rowAnimationForInsert
++ _updateTotalContentHeight
++ _disableExistingContent
++ _rowAnimationForDelete
++ _postludeForUpdateForRemoval:
++ _pluginWillDisable:
++ _textDisabledTimerFired:
++ _cellTextFadeTimerFired:
++ updateCellsToVisibleOnPluginWillDisable
++ initWithFrame:
++ dealloc
++ setDelegate:
++ layoutSubviews
++ tableView:willDisplayCell:forRowAtIndexPath:
++ tableView:didEndDisplayingCell:forRowAtIndexPath:
++ tableView:heightForRowAtIndexPath:
++ scrollViewDidScroll:
++ scrollViewWillBeginDragging:
++ scrollViewDidEndDragging:willDecelerate:
++ scrollViewDidEndDecelerating:
++ tableView:numberOfRowsInSection:
++ tableView:cellForRowAtIndexPath:
++ tableView:canEditRowAtIndexPath:
++ delegate
++ model
++ prepareForRemoval
++ _contentViewInsets
++ setModel:
+- setInScreenOffMode:
+- updateForAdditionOfItemAtIndex:allowHighlightOnInsert:
+- updateForModificationOfItemWithOldIndex:andNewIndex:
+- updateForRemovalOfItemAtIndex:removedItem:
+- updateForRemovalOfItems
+- lockScreenDidEndScrollingOnPage:
+- scrollToTopOfListAnimated:
+- _tableHeaderView
+- _tableFooterView
+- _pocketLineColor
+- _disableIdleTimer:
+- _clearTextDisabledTimer
+- _clearTextFadeTimer
+- _resetAllFadeTimers
+- _setContentForTableCell:withItem:atIndexPath:
+- _setNonSelectedCellsToVisible:withSelectedCell:
+- setUpdateCellsToVisibleOnPluginWillDisable:
+- _scrollingEndedInScrollView:
+- _updateBottomShadowVisibility
+- _rowAnimationForInsert
+- _updateTotalContentHeight
+- _disableExistingContent
+- _rowAnimationForDelete
+- _postludeForUpdateForRemoval:
+- _pluginWillDisable:
+- _textDisabledTimerFired:
+- _cellTextFadeTimerFired:
+- updateCellsToVisibleOnPluginWillDisable
+- initWithFrame:
+- dealloc
+- setDelegate:
+- layoutSubviews
+- tableView:willDisplayCell:forRowAtIndexPath:
+- tableView:didEndDisplayingCell:forRowAtIndexPath:
+- tableView:heightForRowAtIndexPath:
+- scrollViewDidScroll:
+- scrollViewWillBeginDragging:
+- scrollViewDidEndDragging:willDecelerate:
+- scrollViewDidEndDecelerating:
+- tableView:numberOfRowsInSection:
+- tableView:cellForRowAtIndexPath:
+- tableView:canEditRowAtIndexPath:
+- delegate
+- model
+- prepareForRemoval
+- _contentViewInsets
+- setModel:
+@end

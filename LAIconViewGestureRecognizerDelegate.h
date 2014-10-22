@@ -1,0 +1,6 @@
+@interface LAIconViewGestureRecognizerDelegate : NSObject
+{
+
+}
+
+@end

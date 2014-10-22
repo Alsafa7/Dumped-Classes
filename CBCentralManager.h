@@ -1,0 +1,82 @@
+@interface CBCentralManager : NSObject
+{
+	id _delegate;
+	long long _state;
+	id _peripherals;
+	BOOL _isScanning;
+	id _connection;
+}
+
++ sendMsg:args:
++ sendSyncMsg:args:
++ cancelPeripheralConnection:
++ orphanPeripherals
++ peripheralForUUID:args:
++ retrieveConnectedPeripheralsWithServices:allowAll:
++ dataArrayToUUIDArray:
++ handleStateUpdated:
++ handleRestoringState:
++ handlePeripheralDiscovered:
++ handlePeripheralsRetrieved:
++ handleConnectedPeripheralsRetrieved:
++ handlePeripheralConnectionCompleted:
++ handlePeripheralDisconnectionCompleted:
++ handlePeripheralConnectionStateUpdated:
++ handleZoneLost:
++ handlePeripheralMsg:args:
++ xpcConnectionDidReset:
++ xpcConnectionIsInvalid:
++ xpcConnection:didReceiveMsg:args:
++ peripheralWillBeReleased:
++ retrievePeripherals:
++ retrieveConnectedPeripherals
++ retrievePairedPeripherals
++ dealloc
++ setDelegate:
++ delegate
++ state
++ initWithDelegate:queue:options:
++ retrievePeripheralsWithIdentifiers:
++ scanForPeripheralsWithServices:options:
++ retrieveConnectedPeripheralsWithServices:
++ connectPeripheral:options:
++ cancelPeripheralConnection:force:
++ initWithDelegate:queue:
++ stopScan
+- sendMsg:args:
+- sendSyncMsg:args:
+- cancelPeripheralConnection:
+- orphanPeripherals
+- peripheralForUUID:args:
+- retrieveConnectedPeripheralsWithServices:allowAll:
+- dataArrayToUUIDArray:
+- handleStateUpdated:
+- handleRestoringState:
+- handlePeripheralDiscovered:
+- handlePeripheralsRetrieved:
+- handleConnectedPeripheralsRetrieved:
+- handlePeripheralConnectionCompleted:
+- handlePeripheralDisconnectionCompleted:
+- handlePeripheralConnectionStateUpdated:
+- handleZoneLost:
+- handlePeripheralMsg:args:
+- xpcConnectionDidReset:
+- xpcConnectionIsInvalid:
+- xpcConnection:didReceiveMsg:args:
+- peripheralWillBeReleased:
+- retrievePeripherals:
+- retrieveConnectedPeripherals
+- retrievePairedPeripherals
+- dealloc
+- setDelegate:
+- delegate
+- state
+- initWithDelegate:queue:options:
+- retrievePeripheralsWithIdentifiers:
+- scanForPeripheralsWithServices:options:
+- retrieveConnectedPeripheralsWithServices:
+- connectPeripheral:options:
+- cancelPeripheralConnection:force:
+- initWithDelegate:queue:
+- stopScan
+@end

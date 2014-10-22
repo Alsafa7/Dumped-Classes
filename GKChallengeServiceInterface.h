@@ -1,0 +1,6 @@
+@interface GKChallengeServiceInterface : GKServiceInterface
+{
+
+}
+
+@end

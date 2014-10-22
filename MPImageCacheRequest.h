@@ -1,0 +1,103 @@
+@interface MPImageCacheRequest : NSOperation
+{
+	id _cache;
+	id _completionHandler;
+	int _contentMode;
+	BOOL _decodeOnFetch;
+	id _delegate;
+	id _fillColor;
+	struct _finalSize;
+	BOOL _finalSizeMayDifferWhenApsectRatioMatches;
+	id _modifier;
+	id _uniqueKey;
+	long long _tag;
+	int _interpolationQuality;
+}
+
++ modifier
++ setFinalSize:
++ placeholderImage
++ setDecodeOnFetch:
++ uniqueKey
++ copyRawImageReturningError:
++ copyImageFromImage:
++ setModifier:
++ completeImageLoadOperationWithImage:
++ finalSize
++ _canUseInputImageAsFinalOutput:
++ _newBitmapImageFromImage:finalSize:
++ _finishWithBlock:
++ _finishWithDelegate:
++ decodeOnFetch
++ _finishWithImage:
++ _getGeometryForCreatingNewImage:finalSize:contentSize:contentSubRect:imageFrame:
++ canRequestSynchronously
++ finalPlaceholderImage
++ setUniqueKey:
++ finalSizeMayDifferWhenApsectRatioMatches
++ setFinalSizeMayDifferWhenApsectRatioMatches:
++ interpolationQuality
++ setInterpolationQuality:
++ setDelegate:
++ init
++ isEqual:
++ hash
++ description
++ delegate
++ setContentMode:
++ setTag:
++ contentMode
++ tag
++ completionHandler
++ cancel
++ setFillColor:
++ main
++ fillColor
++ cache
++ setCompletionHandler:
++ setCache:
++ .cxx_destruct
+- modifier
+- setFinalSize:
+- placeholderImage
+- setDecodeOnFetch:
+- uniqueKey
+- copyRawImageReturningError:
+- copyImageFromImage:
+- setModifier:
+- completeImageLoadOperationWithImage:
+- finalSize
+- _canUseInputImageAsFinalOutput:
+- _newBitmapImageFromImage:finalSize:
+- _finishWithBlock:
+- _finishWithDelegate:
+- decodeOnFetch
+- _finishWithImage:
+- _getGeometryForCreatingNewImage:finalSize:contentSize:contentSubRect:imageFrame:
+- canRequestSynchronously
+- finalPlaceholderImage
+- setUniqueKey:
+- finalSizeMayDifferWhenApsectRatioMatches
+- setFinalSizeMayDifferWhenApsectRatioMatches:
+- interpolationQuality
+- setInterpolationQuality:
+- setDelegate:
+- init
+- isEqual:
+- hash
+- description
+- delegate
+- setContentMode:
+- setTag:
+- contentMode
+- tag
+- completionHandler
+- cancel
+- setFillColor:
+- main
+- fillColor
+- cache
+- setCompletionHandler:
+- setCache:
+- .cxx_destruct
+@end

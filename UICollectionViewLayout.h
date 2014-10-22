@@ -1,0 +1,146 @@
+@interface UICollectionViewLayout : NSObject
+{
+	id _collectionView;
+	struct _collectionViewBoundsSize;
+	id _initialAnimationLayoutAttributesDict;
+	id _finalAnimationLayoutAttributesDict;
+	id _deletedSupplementaryIndexPathsDict;
+	id _insertedSupplementaryIndexPathsDict;
+	id _deletedDecorationIndexPathsDict;
+	id _insertedDecorationIndexPathsDict;
+	id _deletedSectionsSet;
+	id _insertedSectionsSet;
+	id _decorationViewClassDict;
+	id _decorationViewNibDict;
+	id _decorationViewExternalObjectsTables;
+	id _transitioningFromLayout;
+	id _transitioningToLayout;
+	BOOL _inTransitionFromTransitionLayout;
+	BOOL _inTransitionToTransitionLayout;
+	id _animator;
+	id _invalidationContext;
+}
+
++ pu_layoutAttributesForElementClosestToPoint:inRect:passingTest:
++ indexPathsToDeleteForSupplementaryViewOfKind:
++ indexPathsToDeleteForDecorationViewOfKind:
++ indexPathsToInsertForSupplementaryViewOfKind:
++ indexPathsToInsertForDecorationViewOfKind:
++ _setCollectionView:
++ _invalidateLayoutUsingContext:
++ _decorationViewForLayoutAttributes:
++ prepareForAnimatedBoundsChange:
++ _prepareToAnimateFromCollectionViewItems:atContentOffset:toItems:atContentOffset:
++ finalLayoutAttributesForDisappearingItemAtIndexPath:
++ finalLayoutAttributesForDisappearingSupplementaryElementOfKind:atIndexPath:
++ finalLayoutAttributesForDisappearingDecorationElementOfKind:atIndexPath:
++ initialLayoutAttributesForAppearingItemAtIndexPath:
++ initialLayoutAttributesForAppearingDecorationElementOfKind:atIndexPath:
++ initialLayoutAttributesForAppearingSupplementaryElementOfKind:atIndexPath:
++ _finalizeCollectionViewItemAnimations
++ finalizeAnimatedBoundsChange
++ _supportsAdvancedTransitionAnimations
++ _indexPathsToDeleteForSupplementaryViewOfKind:
++ _indexPathsToDeleteForDecorationViewOfKind:
++ _indexPathsToInsertForSupplementaryViewOfKind:
++ _indexPathsToInsertForDecorationViewOfKind:
++ _setCollectionViewBoundsSize:
++ _setDynamicAnimator:
++ _dynamicAnimator
++ _setExternalObjectTable:forNibLoadingOfDecorationViewOfKind:
++ dealloc
++ bounds
++ initWithCoder:
++ encodeWithCoder:
++ init
++ collectionViewContentSize
++ collectionView
++ layoutAttributesForItemAtIndexPath:
++ invalidateLayout
++ prepareLayout
++ layoutAttributesForElementsInRect:
++ layoutAttributesForSupplementaryViewOfKind:atIndexPath:
++ shouldInvalidateLayoutForBoundsChange:
++ invalidationContextForBoundsChange:
++ targetContentOffsetForProposedContentOffset:
++ layoutAttributesForDecorationViewOfKind:atIndexPath:
++ _animationForReusableView:toLayoutAttributes:type:
++ _prepareForTransitionToLayout:
++ _prepareForTransitionFromLayout:
++ transitionContentOffsetForProposedContentOffset:keyItemIndexPath:
++ _finalizeLayoutTransition
++ _didFinishLayoutTransitionAnimations:
++ targetContentOffsetForProposedContentOffset:withScrollingVelocity:
++ prepareForCollectionViewUpdates:
++ updatesContentOffsetForProposedContentOffset:
++ finalizeCollectionViewUpdates
++ invalidateLayoutWithContext:
++ _animationForReusableView:toLayoutAttributes:
++ prepareForTransitionToLayout:
++ prepareForTransitionFromLayout:
++ finalizeLayoutTransition
++ snapshottedLayoutAttributeForItemAtIndexPath:
++ registerClass:forDecorationViewOfKind:
++ registerNib:forDecorationViewOfKind:
+- pu_layoutAttributesForElementClosestToPoint:inRect:passingTest:
+- indexPathsToDeleteForSupplementaryViewOfKind:
+- indexPathsToDeleteForDecorationViewOfKind:
+- indexPathsToInsertForSupplementaryViewOfKind:
+- indexPathsToInsertForDecorationViewOfKind:
+- _setCollectionView:
+- _invalidateLayoutUsingContext:
+- _decorationViewForLayoutAttributes:
+- prepareForAnimatedBoundsChange:
+- _prepareToAnimateFromCollectionViewItems:atContentOffset:toItems:atContentOffset:
+- finalLayoutAttributesForDisappearingItemAtIndexPath:
+- finalLayoutAttributesForDisappearingSupplementaryElementOfKind:atIndexPath:
+- finalLayoutAttributesForDisappearingDecorationElementOfKind:atIndexPath:
+- initialLayoutAttributesForAppearingItemAtIndexPath:
+- initialLayoutAttributesForAppearingDecorationElementOfKind:atIndexPath:
+- initialLayoutAttributesForAppearingSupplementaryElementOfKind:atIndexPath:
+- _finalizeCollectionViewItemAnimations
+- finalizeAnimatedBoundsChange
+- _supportsAdvancedTransitionAnimations
+- _indexPathsToDeleteForSupplementaryViewOfKind:
+- _indexPathsToDeleteForDecorationViewOfKind:
+- _indexPathsToInsertForSupplementaryViewOfKind:
+- _indexPathsToInsertForDecorationViewOfKind:
+- _setCollectionViewBoundsSize:
+- _setDynamicAnimator:
+- _dynamicAnimator
+- _setExternalObjectTable:forNibLoadingOfDecorationViewOfKind:
+- dealloc
+- bounds
+- initWithCoder:
+- encodeWithCoder:
+- init
+- collectionViewContentSize
+- collectionView
+- layoutAttributesForItemAtIndexPath:
+- invalidateLayout
+- prepareLayout
+- layoutAttributesForElementsInRect:
+- layoutAttributesForSupplementaryViewOfKind:atIndexPath:
+- shouldInvalidateLayoutForBoundsChange:
+- invalidationContextForBoundsChange:
+- targetContentOffsetForProposedContentOffset:
+- layoutAttributesForDecorationViewOfKind:atIndexPath:
+- _animationForReusableView:toLayoutAttributes:type:
+- _prepareForTransitionToLayout:
+- _prepareForTransitionFromLayout:
+- transitionContentOffsetForProposedContentOffset:keyItemIndexPath:
+- _finalizeLayoutTransition
+- _didFinishLayoutTransitionAnimations:
+- targetContentOffsetForProposedContentOffset:withScrollingVelocity:
+- prepareForCollectionViewUpdates:
+- updatesContentOffsetForProposedContentOffset:
+- finalizeCollectionViewUpdates
+- invalidateLayoutWithContext:
+- _animationForReusableView:toLayoutAttributes:
+- prepareForTransitionToLayout:
+- prepareForTransitionFromLayout:
+- finalizeLayoutTransition
+- snapshottedLayoutAttributeForItemAtIndexPath:
+- registerClass:forDecorationViewOfKind:
+- registerNib:forDecorationViewOfKind:
+@end

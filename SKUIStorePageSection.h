@@ -1,0 +1,83 @@
+@interface SKUIStorePageSection : NSObject
+{
+	id _component;
+	id _context;
+	id _overlayController;
+	long long _sectionIndex;
+}
+
++ dealloc
++ context
++ willRotateToInterfaceOrientation:duration:
++ didRotateFromInterfaceOrientation:
++ _setContext:
++ sectionIndex
++ setSectionIndex:
++ initWithPageComponent:
++ showPageWithLink:
++ cellSizeForIndexPath:
++ invalidateCachedLayoutInformation
++ addImpressionsForIndexPath:toSession:
++ numberOfCells
++ collectionViewDidEndDisplayingCellForItemAtIndexPath:
++ collectionViewDidSelectItemAtIndexPath:
++ collectionViewShouldHighlightItemAtIndexPath:
++ collectionViewShouldSelectItemAtIndexPath:
++ collectionViewDidConfirmItemOfferAtIndexPath:
++ popPinnedHeaderView
++ restorePinnedHeaderView:
++ pageComponent
++ willAppearInContext:
++ prefetchResourcesWithReason:
++ fitsToHeight
++ contentInsetAdjustmentForCollectionView:
++ productPageOverlayDidDismiss:
++ _clickEventWithElementName:index:fieldData:
++ clickEventWithLink:elementName:index:
++ backgroundColorForIndexPath:
++ showProductViewControllerWithItem:
++ clickEventWithItem:elementName:index:
++ clickEventWithMedia:elementName:index:
++ collectionViewWillApplyLayoutAttributes:
++ itemOfferClickEventWithItem:elementName:index:
++ performItemOfferActionForItem:
++ .cxx_destruct
++ cellForIndexPath:
+- dealloc
+- context
+- willRotateToInterfaceOrientation:duration:
+- didRotateFromInterfaceOrientation:
+- _setContext:
+- sectionIndex
+- setSectionIndex:
+- initWithPageComponent:
+- showPageWithLink:
+- cellSizeForIndexPath:
+- invalidateCachedLayoutInformation
+- addImpressionsForIndexPath:toSession:
+- numberOfCells
+- collectionViewDidEndDisplayingCellForItemAtIndexPath:
+- collectionViewDidSelectItemAtIndexPath:
+- collectionViewShouldHighlightItemAtIndexPath:
+- collectionViewShouldSelectItemAtIndexPath:
+- collectionViewDidConfirmItemOfferAtIndexPath:
+- popPinnedHeaderView
+- restorePinnedHeaderView:
+- pageComponent
+- willAppearInContext:
+- prefetchResourcesWithReason:
+- fitsToHeight
+- contentInsetAdjustmentForCollectionView:
+- productPageOverlayDidDismiss:
+- _clickEventWithElementName:index:fieldData:
+- clickEventWithLink:elementName:index:
+- backgroundColorForIndexPath:
+- showProductViewControllerWithItem:
+- clickEventWithItem:elementName:index:
+- clickEventWithMedia:elementName:index:
+- collectionViewWillApplyLayoutAttributes:
+- itemOfferClickEventWithItem:elementName:index:
+- performItemOfferActionForItem:
+- .cxx_destruct
+- cellForIndexPath:
+@end

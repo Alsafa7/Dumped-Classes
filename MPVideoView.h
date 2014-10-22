@@ -1,0 +1,84 @@
+@interface MPVideoView : UIView
+{
+	id _player;
+	id _moviePath;
+	id _movieSubtitle;
+	id _movieTitle;
+	id _videoID;
+	double _startTime;
+	double _stopTime;
+	id _AVURLAssetOptions;
+	usigned long long _scaleMode;
+}
+
++ movieTitle
++ movieSubtitle
++ play
++ scaleMode
++ setMovieSubtitle:
++ setMovieTitle:
++ _bufferingStateChangedNotification:
++ setVideoID:
++ setMovieWithPath:
++ toggleScaleMode:
++ moviePath
++ stopTime
++ videoID
++ setStopTime:
++ canChangeScaleMode
++ setScaleMode:
++ setScaleMode:animated:
++ _playbackStateChangedNotification:
++ prepareAVControllerQueue
++ setScaleMode:duration:
++ playWhenLikelyToKeepUp
++ playFromBeginning
++ effectiveScaleMode
++ movieFrame
++ movieContentFrame
++ AVURLAssetOptions
++ setAVURLAssetOptions:
++ initWithFrame:
++ dealloc
++ didMoveToWindow
++ setStartTime:
++ startTime
++ .cxx_destruct
++ player
++ setPlayer:
+- movieTitle
+- movieSubtitle
+- play
+- scaleMode
+- setMovieSubtitle:
+- setMovieTitle:
+- _bufferingStateChangedNotification:
+- setVideoID:
+- setMovieWithPath:
+- toggleScaleMode:
+- moviePath
+- stopTime
+- videoID
+- setStopTime:
+- canChangeScaleMode
+- setScaleMode:
+- setScaleMode:animated:
+- _playbackStateChangedNotification:
+- prepareAVControllerQueue
+- setScaleMode:duration:
+- playWhenLikelyToKeepUp
+- playFromBeginning
+- effectiveScaleMode
+- movieFrame
+- movieContentFrame
+- AVURLAssetOptions
+- setAVURLAssetOptions:
+- initWithFrame:
+- dealloc
+- didMoveToWindow
+- setStartTime:
+- startTime
+- .cxx_destruct
+- player
+- setPlayer:
+@end

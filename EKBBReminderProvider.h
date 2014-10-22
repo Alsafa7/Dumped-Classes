@@ -1,0 +1,68 @@
+@interface EKBBReminderProvider : EKBBDataProvider
+{
+	id _closedBulletins;
+	BOOL _needsReload;
+	id _loaderQueue;
+	id _closedQueue;
+	id _badgeCountQueue;
+}
+
++ clearAlerts
++ entityScheme
++ emptyModalTitle
++ bulletinClosed:
++ alarmsDidFire:
++ _updateBadgeCount:
++ _bulletinRequestForReminder:
++ databaseChanged:
++ modalTitleForAlertInfo:
++ modalMessageForAlertInfo:
++ messageStringForAlert:
++ expirationDateForAlertInfo:
++ actionButtonTitleForAlertInfo:
++ defaultURLForAlertInfo:
++ _handleDeclineAndRemindMessageWithUserInfo:
++ deviceUnlocked
++ allowedEntityTypes
++ _reloadIfNeeded
++ init
++ sectionIdentifier
++ sectionParameters
++ dataProviderDidLoad
++ bulletinsFilteredBy:count:lastCleared:
++ clearedInfoForBulletins:lastClearedInfo:
++ defaultSectionInfo
++ receiveMessageWithName:userInfo:
++ sortDescriptors
++ _reload
++ .cxx_destruct
+- clearAlerts
+- entityScheme
+- emptyModalTitle
+- bulletinClosed:
+- alarmsDidFire:
+- _updateBadgeCount:
+- _bulletinRequestForReminder:
+- databaseChanged:
+- modalTitleForAlertInfo:
+- modalMessageForAlertInfo:
+- messageStringForAlert:
+- expirationDateForAlertInfo:
+- actionButtonTitleForAlertInfo:
+- defaultURLForAlertInfo:
+- _handleDeclineAndRemindMessageWithUserInfo:
+- deviceUnlocked
+- allowedEntityTypes
+- _reloadIfNeeded
+- init
+- sectionIdentifier
+- sectionParameters
+- dataProviderDidLoad
+- bulletinsFilteredBy:count:lastCleared:
+- clearedInfoForBulletins:lastClearedInfo:
+- defaultSectionInfo
+- receiveMessageWithName:userInfo:
+- sortDescriptors
+- _reload
+- .cxx_destruct
+@end

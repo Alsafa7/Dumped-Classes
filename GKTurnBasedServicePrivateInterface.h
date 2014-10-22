@@ -1,0 +1,6 @@
+@interface GKTurnBasedServicePrivateInterface : GKServiceInterface
+{
+
+}
+
+@end

@@ -1,0 +1,313 @@
+@interface SBTelephonyManager : NSObject
+{
+	BOOL _containsCellularRadio;
+	BOOL _hasCellularTelephony;
+	BOOL _hasCellularData;
+	BOOL _hasAppleTelephony;
+	BOOL _hasAnyTelephony;
+	id _cachedCTRegistrationStatus;
+	int _registrationStatus;
+	BOOL _signalStrengthHasBeenSet;
+	int _signalStrength;
+	int _signalStrengthBars;
+	id _operatorName;
+	id _lastKnownNetworkCountryCode;
+	bit[1] _usingWifi;
+	bit[1] _usingVPN;
+	bit[1] _iTunesNeedsToRecheckActivation;
+	bit[1] _pretendingToSearch;
+	bit[2] _callForwardingIndicator;
+	BOOL _isNetworkTethering;
+	int _numberOfNetworkTetheredDevices;
+	bit[1] _hasShownWaitingAlert;
+	id _activationAlertItem;
+	int _numActivationFailures;
+	int _inEmergencyCallbackMode;
+	bit[1] _loggingCallAudio;
+	id _inCallStatusPreamble;
+	id _inCallTimer;
+	id _radioPrefs;
+	int _needsUserIdentificationModule;
+	id _simStatus;
+	int _wantsToHideDataIndicators;
+	int _lteConnectionShows4G;
+	int _modemDataConnectionType;
+	BOOL _modemDataConnectionTypeIsKnown;
+	BOOL _fallingBackToCellular;
+	pointer _cellularFallbackWatcher;
+	pointer _queue_fastDormancySuspendAssertion;
+	id _incomingCall;
+	id _activeCall;
+	id _heldCall;
+	id _outgoingCall;
+}
+
++ setIncomingVoiceCallsEnabled:
++ _proximityChanged:
++ dataConnectionType
++ isInAirplaneMode
++ SIMStatus
++ needsUserIdentificationModule
++ updateTTYIndicator
++ containsCellularRadio
++ MALoggingEnabled
++ isInEmergencyCallbackMode
++ activeCallExists
++ exitEmergencyCallbackMode
++ isEmergencyCallActive
++ disconnectCall
++ heldCallExists
++ swapCalls
++ disconnectCallAndActivateHeld
++ hasAnyTelephony
++ isEmergencyCallScheme:
++ shouldPromptForTTY
++ urlWithScheme:fromDialingNumber:abUID:urlPathAddition:service:forceAssist:suppressAssist:wasAlreadyAssisted:
++ updateDisplaySettings:forOutgoingCallURL:outURL:
++ faceTimeAudioCallCount
++ telephonyCallCount
++ incomingCallExists
++ shouldHangUpOnLock
++ callEventHandler:
++ handleCallControlFailure:
++ handleCallAudioFinished:
++ updateSpringBoard
++ _headphoneChanged:
++ _postDataConnectionTypeChanged
++ setNetworkRegistrationEnabled:
++ updateCalls
++ _postStartupNotification
++ SBTelephonyDaemonRestartHandler
++ queue_setFastDormancySuspended:withConnection:
++ _performQueryInBackground:withMainQueueResultHandler:
++ updateCallForwardingIndicator
++ _resetCTMMode
++ setCallForwardingIndicator:
++ _resetModemConnectionType
++ updateStatusBarCallState:
++ _phoneApp
++ _phoneActivationStateChanged:
++ updateStatusBarCallDuration
++ inCallDuration
++ _stopFakeService
++ _cachedCTRegistrationStatus
++ _setRegistrationStatus:
++ _updateRegistrationNow
++ updateAirplaneMode
++ setActiveCall:
++ setHeldCall:
++ setOutgoingCall:
++ activeCall
++ heldCall
++ setOperatorName:
++ _fetchOperatorNameWithCompletion:
++ updateLocale
++ _updateLastKnownNetworkCountryCode
++ outgoingCall
++ _delayedAudioResume
++ unmute
++ callWouldUseReceiver:
++ hasCellularTelephony
++ _callCountForService:
++ _avSystemControllerDidError:
++ _serverConnectionDidError:
++ _lteConnectionShows4G
++ cellularRadioCapabilityIsActive
++ _updateModemDataConnectionTypeWithCTInfo:
++ _setWantsToHideDataIndicators:
++ _setCurrentActivationAlertItem:
++ _setIsInEmergencyCallbackMode:
++ isTTYEnabled
++ configureForTTY:
++ setLimitTransmitPowerPerBandEnabled:
++ _setCachedCTRegistrationStatus:
++ _cancelFakeService
++ _reallySetOperatorName:
++ _startFakeServiceIfNecessary
++ setIsNetworkTethering:withNumberOfDevices:
++ hasCellularData
++ callForwardingIndicator
++ setFastDormancySuspended:
++ updateNetworkLocale
++ lastKnownNetworkCountryCode
++ outgoingCallExists
++ multipleCallsExist
++ inCallUsingSpeakerOrReceiver
++ inCallUsingReceiverForcingRoutingToReceiver:
++ disconnectIncomingCall
++ isCallAmbiguous
++ isLoggingCallAudio
++ _setIsLoggingCallAudio:
++ dumpBasebandState:
++ isNetworkRegistrationEnabled
++ EDGEIsOn
++ setIsInAirplaneMode:
++ isUsingSlowDataConnection
++ _setIsUsingWiFiConnection:
++ setIsUsingVPNConnection:
++ isUsingVPNConnection
++ copyMobileEquipmentInfo
++ copyTelephonyCapabilities
++ _provisioningUpdateWithStatus:
++ ttyTitle
++ postponementStatusChanged
++ _pretendingToSearch
++ _prepareToAnswerCall
++ _setSignalStrength:andBars:
++ signalStrengthBars
++ _setSIMStatus:
++ registrationCauseCode
++ noteSIMUnlockAttempt
++ isNetworkTethering
++ numberOfNetworkTetheredDevices
++ noteWirelessModemChanged
++ init
++ _updateState
++ signalStrength
++ airplaneModeChanged
++ registrationStatus
++ _serverConnection
++ inCall
++ callCount
++ carrierBundleChanged
++ operatorBundleChanged
++ displayedCall
++ disconnectAllCalls
++ setIncomingCall:
++ incomingCall
++ operatorName
+- setIncomingVoiceCallsEnabled:
+- _proximityChanged:
+- dataConnectionType
+- isInAirplaneMode
+- SIMStatus
+- needsUserIdentificationModule
+- updateTTYIndicator
+- containsCellularRadio
+- MALoggingEnabled
+- isInEmergencyCallbackMode
+- activeCallExists
+- exitEmergencyCallbackMode
+- isEmergencyCallActive
+- disconnectCall
+- heldCallExists
+- swapCalls
+- disconnectCallAndActivateHeld
+- hasAnyTelephony
+- isEmergencyCallScheme:
+- shouldPromptForTTY
+- urlWithScheme:fromDialingNumber:abUID:urlPathAddition:service:forceAssist:suppressAssist:wasAlreadyAssisted:
+- updateDisplaySettings:forOutgoingCallURL:outURL:
+- faceTimeAudioCallCount
+- telephonyCallCount
+- incomingCallExists
+- shouldHangUpOnLock
+- callEventHandler:
+- handleCallControlFailure:
+- handleCallAudioFinished:
+- updateSpringBoard
+- _headphoneChanged:
+- _postDataConnectionTypeChanged
+- setNetworkRegistrationEnabled:
+- updateCalls
+- _postStartupNotification
+- SBTelephonyDaemonRestartHandler
+- queue_setFastDormancySuspended:withConnection:
+- _performQueryInBackground:withMainQueueResultHandler:
+- updateCallForwardingIndicator
+- _resetCTMMode
+- setCallForwardingIndicator:
+- _resetModemConnectionType
+- updateStatusBarCallState:
+- _phoneApp
+- _phoneActivationStateChanged:
+- updateStatusBarCallDuration
+- inCallDuration
+- _stopFakeService
+- _cachedCTRegistrationStatus
+- _setRegistrationStatus:
+- _updateRegistrationNow
+- updateAirplaneMode
+- setActiveCall:
+- setHeldCall:
+- setOutgoingCall:
+- activeCall
+- heldCall
+- setOperatorName:
+- _fetchOperatorNameWithCompletion:
+- updateLocale
+- _updateLastKnownNetworkCountryCode
+- outgoingCall
+- _delayedAudioResume
+- unmute
+- callWouldUseReceiver:
+- hasCellularTelephony
+- _callCountForService:
+- _avSystemControllerDidError:
+- _serverConnectionDidError:
+- _lteConnectionShows4G
+- cellularRadioCapabilityIsActive
+- _updateModemDataConnectionTypeWithCTInfo:
+- _setWantsToHideDataIndicators:
+- _setCurrentActivationAlertItem:
+- _setIsInEmergencyCallbackMode:
+- isTTYEnabled
+- configureForTTY:
+- setLimitTransmitPowerPerBandEnabled:
+- _setCachedCTRegistrationStatus:
+- _cancelFakeService
+- _reallySetOperatorName:
+- _startFakeServiceIfNecessary
+- setIsNetworkTethering:withNumberOfDevices:
+- hasCellularData
+- callForwardingIndicator
+- setFastDormancySuspended:
+- updateNetworkLocale
+- lastKnownNetworkCountryCode
+- outgoingCallExists
+- multipleCallsExist
+- inCallUsingSpeakerOrReceiver
+- inCallUsingReceiverForcingRoutingToReceiver:
+- disconnectIncomingCall
+- isCallAmbiguous
+- isLoggingCallAudio
+- _setIsLoggingCallAudio:
+- dumpBasebandState:
+- isNetworkRegistrationEnabled
+- EDGEIsOn
+- setIsInAirplaneMode:
+- isUsingSlowDataConnection
+- _setIsUsingWiFiConnection:
+- setIsUsingVPNConnection:
+- isUsingVPNConnection
+- copyMobileEquipmentInfo
+- copyTelephonyCapabilities
+- _provisioningUpdateWithStatus:
+- ttyTitle
+- postponementStatusChanged
+- _pretendingToSearch
+- _prepareToAnswerCall
+- _setSignalStrength:andBars:
+- signalStrengthBars
+- _setSIMStatus:
+- registrationCauseCode
+- noteSIMUnlockAttempt
+- isNetworkTethering
+- numberOfNetworkTetheredDevices
+- noteWirelessModemChanged
+- init
+- _updateState
+- signalStrength
+- airplaneModeChanged
+- registrationStatus
+- _serverConnection
+- inCall
+- callCount
+- carrierBundleChanged
+- operatorBundleChanged
+- displayedCall
+- disconnectAllCalls
+- setIncomingCall:
+- incomingCall
+- operatorName
+@end

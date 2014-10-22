@@ -1,0 +1,62 @@
+@interface _IDSService : NSObject
+{
+	id _accountController;
+	id _uniqueIDToConnection;
+	id _commands;
+	id _rerouteService;
+	BOOL _everHadDelegate;
+	id _delegateToInfo;
+	id _delegateContext;
+}
+
++ dealloc
++ addDelegate:queue:
++ accounts
++ sendMessage:fromAccount:toDestinations:priority:options:identifier:error:
++ devices
++ requestKeepAlive
++ _callDelegatesWithBlock:
++ connection:isActiveChanged:
++ connection:devicesChanged:
++ connection:messageIdentifier:updatedWithResponseCode:error:lastCall:
++ connection:identifier:didSendWithSuccess:error:
++ connection:incomingMessage:fromID:
++ connection:incomingTopLevelMessage:fromID:messageContext:
++ initWithService:commands:delegateContext:
++ sendServerMessage:command:fromAccount:
++ _processAccountSet:
++ _logConnectionMap
++ _tearDownConnectionForUniqueID:
++ _setupNewConnectionForAccount:
++ accountController:accountsChanged:
++ accountController:accountAdded:
++ accountController:accountRemoved:
++ accountController:accountEnabled:
++ accountController:accountDisabled:
++ removeDelegate:
+- dealloc
+- addDelegate:queue:
+- accounts
+- sendMessage:fromAccount:toDestinations:priority:options:identifier:error:
+- devices
+- requestKeepAlive
+- _callDelegatesWithBlock:
+- connection:isActiveChanged:
+- connection:devicesChanged:
+- connection:messageIdentifier:updatedWithResponseCode:error:lastCall:
+- connection:identifier:didSendWithSuccess:error:
+- connection:incomingMessage:fromID:
+- connection:incomingTopLevelMessage:fromID:messageContext:
+- initWithService:commands:delegateContext:
+- sendServerMessage:command:fromAccount:
+- _processAccountSet:
+- _logConnectionMap
+- _tearDownConnectionForUniqueID:
+- _setupNewConnectionForAccount:
+- accountController:accountsChanged:
+- accountController:accountAdded:
+- accountController:accountRemoved:
+- accountController:accountEnabled:
+- accountController:accountDisabled:
+- removeDelegate:
+@end

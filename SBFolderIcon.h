@@ -1,0 +1,103 @@
+@interface SBFolderIcon : SBIcon
+{
+	id _cachedMiniGrids;
+	id _folder;
+	id _nodeObservers;
+	id _finishedDownloadIdentifiers;
+	long long _progressState;
+	double _progressPercent;
+}
+
++ iconImageViewClassForLocation:
++ iconViewClassForLocation:
++ localeChanged
++ launchFromLocation:
++ generateIconImage:
++ purgeCachedImages
++ isFolderIcon
++ nodeIdentifier
++ containsNodeIdentifier:
++ initWithFolder:
++ matchesRepresentation:
++ getGenericIconImage:
++ addNodeObserver:
++ _appPlaceholdersDidChange:
++ _updateBadgeValue
++ removeNodeObserver:
++ gridImages
++ progressPercent
++ _adjustForIconsAdded:removed:
++ _containedIconImageChanged:
++ listIndexForContainedIcon:
++ hasFolderIconView
++ gridCellIndexForIconIndex:
++ _miniIconGridForPage:
++ containedNodeIdentifiers
++ indexPathsForContainedNodeIdentifier:prefixPath:
++ nodesAlongIndexPath:consumedIndexes:
++ nodeDescriptionWithPrefix:
++ node:didAddContainedNodeIdentifiers:
++ node:didRemoveContainedNodeIdentifiers:
++ folder:didAddList:
++ folder:didRemoveLists:atIndexes:
++ iconImageDidUpdate:
++ iconAccessoriesDidUpdate:
++ progressIsPaused
++ noteContainedIconsAdded:removed:
++ noteContainedIcon:replacedIcon:
++ miniGridCellImageForIcon:
++ _updateProgress
++ updateLabel
++ dealloc
++ description
++ representation
++ displayName
++ folder
++ progressState
+- iconImageViewClassForLocation:
+- iconViewClassForLocation:
+- localeChanged
+- launchFromLocation:
+- generateIconImage:
+- purgeCachedImages
+- isFolderIcon
+- nodeIdentifier
+- containsNodeIdentifier:
+- initWithFolder:
+- matchesRepresentation:
+- getGenericIconImage:
+- addNodeObserver:
+- _appPlaceholdersDidChange:
+- _updateBadgeValue
+- removeNodeObserver:
+- gridImages
+- progressPercent
+- _adjustForIconsAdded:removed:
+- _containedIconImageChanged:
+- listIndexForContainedIcon:
+- hasFolderIconView
+- gridCellIndexForIconIndex:
+- _miniIconGridForPage:
+- containedNodeIdentifiers
+- indexPathsForContainedNodeIdentifier:prefixPath:
+- nodesAlongIndexPath:consumedIndexes:
+- nodeDescriptionWithPrefix:
+- node:didAddContainedNodeIdentifiers:
+- node:didRemoveContainedNodeIdentifiers:
+- folder:didAddList:
+- folder:didRemoveLists:atIndexes:
+- iconImageDidUpdate:
+- iconAccessoriesDidUpdate:
+- progressIsPaused
+- noteContainedIconsAdded:removed:
+- noteContainedIcon:replacedIcon:
+- miniGridCellImageForIcon:
+- _updateProgress
+- updateLabel
+- dealloc
+- description
+- representation
+- displayName
+- folder
+- progressState
+@end

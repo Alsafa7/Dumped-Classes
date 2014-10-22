@@ -1,0 +1,96 @@
+@interface CKTranscriptData : NSObject
+{
+	id _conversation;
+	id _rows;
+	id _delegate;
+	id _handler;
+	id _messageIndexes;
+	id _updateNotifications;
+	id _updater;
+}
+
++ dealloc
++ setDelegate:
++ objectAtIndex:
++ description
++ delegate
++ objectsAtIndexes:
++ rows
++ setRows:
++ setHandler:
++ handler
++ conversation
++ indexOfTransfer:
++ setConversation:
++ initWithConversation:
++ addSendingMessage:handler:
++ indexesOfPartsOfMessage:
++ endHoldingUpdatesForKey:
++ isHoldingUpdates
++ beginHoldingUpdatesForKey:
++ indexOfMediaObject:
++ allIndexes
++ updateIfNeededWithHandler:
++ removeSizesAtIndexes:
++ messagesAtIndexes:
++ removeDeletedMessages:reloadChangedMessages:handler:
++ messageAtIndex:
++ reloadDowngradedMessage:handler:
++ updater
++ setUpdateNotifications:
++ _updateRows
++ setUpdater:
++ messageIndexes
++ _messagesArrayAndTypingMessageForIndexes:typingMessage:hasHeader:
++ _updateRows:reloadMessages:handler:
++ indexesOfMessage:
++ updateNotifications
++ setMessageIndexes:
++ messageContentDidChange:
++ messageSendErrorDidChange:
++ conversationDidEndBatchUpdates:
++ rowAtIndex:
++ updateIfNeeded
+- dealloc
+- setDelegate:
+- objectAtIndex:
+- description
+- delegate
+- objectsAtIndexes:
+- rows
+- setRows:
+- setHandler:
+- handler
+- conversation
+- indexOfTransfer:
+- setConversation:
+- initWithConversation:
+- addSendingMessage:handler:
+- indexesOfPartsOfMessage:
+- endHoldingUpdatesForKey:
+- isHoldingUpdates
+- beginHoldingUpdatesForKey:
+- indexOfMediaObject:
+- allIndexes
+- updateIfNeededWithHandler:
+- removeSizesAtIndexes:
+- messagesAtIndexes:
+- removeDeletedMessages:reloadChangedMessages:handler:
+- messageAtIndex:
+- reloadDowngradedMessage:handler:
+- updater
+- setUpdateNotifications:
+- _updateRows
+- setUpdater:
+- messageIndexes
+- _messagesArrayAndTypingMessageForIndexes:typingMessage:hasHeader:
+- _updateRows:reloadMessages:handler:
+- indexesOfMessage:
+- updateNotifications
+- setMessageIndexes:
+- messageContentDidChange:
+- messageSendErrorDidChange:
+- conversationDidEndBatchUpdates:
+- rowAtIndex:
+- updateIfNeeded
+@end

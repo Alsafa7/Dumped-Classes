@@ -1,0 +1,65 @@
+@interface AITTarget : NSObject
+{
+	int _notifyToken;
+	id _observerRecords;
+	id _xpcConnection;
+	id _clientQueue;
+	double _startTime;
+	id _queuedProbes;
+	id _rpcDispatchQueue;
+	id _rpcSelectorPrefix;
+	id _rpcTarget;
+	id _watchdogSource;
+}
+
++ release
++ retain
++ init
++ autorelease
++ retainCount
++ copyWithZone:
++ addObserver:forMessage:dispatchQueue:block:
++ _probeIsEnabled:
++ _fireProbe:withArgumentDictionary:
++ _probeBarrier:
++ _appIsWhitelisted
++ _flushQueuedProbes
++ _setupXPCConnectionIfNeeded
++ _rpcTarget
++ _sendAckForToken:success:returnValue:details:
++ removeObserver:forMessage:
++ setRpcTarget:
++ rpcTarget
++ setRpcSelectorPrefix:
++ rpcSelectorPrefix
++ setRpcDispatchQueue:
++ rpcDispatchQueue
++ xpcConnection:receivedMessage:userInfo:
++ xpcConnectionFailed:
++ xpcConnectionUnhandledMessage:
+- release
+- retain
+- init
+- autorelease
+- retainCount
+- copyWithZone:
+- addObserver:forMessage:dispatchQueue:block:
+- _probeIsEnabled:
+- _fireProbe:withArgumentDictionary:
+- _probeBarrier:
+- _appIsWhitelisted
+- _flushQueuedProbes
+- _setupXPCConnectionIfNeeded
+- _rpcTarget
+- _sendAckForToken:success:returnValue:details:
+- removeObserver:forMessage:
+- setRpcTarget:
+- rpcTarget
+- setRpcSelectorPrefix:
+- rpcSelectorPrefix
+- setRpcDispatchQueue:
+- rpcDispatchQueue
+- xpcConnection:receivedMessage:userInfo:
+- xpcConnectionFailed:
+- xpcConnectionUnhandledMessage:
+@end

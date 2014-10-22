@@ -1,0 +1,196 @@
+@interface IMServiceImpl : IMService
+{
+	id _name;
+	id _localizedName;
+	id _localizedShortName;
+	id _cardMap;
+	id _personToIDMap;
+	id _bestAccount;
+	id _serviceDefaults;
+	id _serviceProps;
+	id _defaultSettings;
+	id _imageData;
+	id _abProperties;
+	id _emailDomains;
+	id _idsService;
+	unsigned int _screenNameSensitivity;
+	BOOL _hasLoadedServiceProperties;
+	BOOL _handlesChatInvites;
+	BOOL _supportsSMS;
+	BOOL _supportsPhoneNumberMapping;
+	BOOL _supportsGroupAttachments;
+	BOOL _supportsMutatingGroupMembers;
+	BOOL _supportsAuthorization;
+	BOOL _supportsRegistration;
+	BOOL _supportsAdding;
+	BOOL _supportsPresence;
+	BOOL _supportsIDStatusLookup;
+	BOOL _supportsDatabaseStorage;
+	BOOL _shouldInternationalizeNumbers;
+	BOOL _supportsOfflineTransfers;
+	BOOL _shouldDisableDeactivation;
+	BOOL _ignoresNetworkConnectivity;
+	BOOL _isPersistent;
+	BOOL _isPlugInService;
+	BOOL _allowsMultipleConnections;
+}
+
++ dealloc
++ description
++ isEnabled
++ name
++ localizedName
++ isPersistent
++ initWithName:
++ disconnect
++ status
++ internalName
++ supportsIDStatusLookup
++ maxChatParticipants
++ initialSyncPerformed
++ localizedShortName
++ infoForScreenName:
++ infoForAllScreenNames
++ infoForPreferredScreenNames
++ canonicalFormOfID:
++ peopleWithScreenName:
++ screenNamesForPerson:
++ myScreenNames
++ activeAccountsChanged:
++ _syncWithRemoteBuddies
++ statusChangedForAccount:from:to:
++ clearIDToCardMap
++ _calculateBestAccount
++ _blockUntilInitialSyncPerformed
++ _abPropertiesBySanitizingABProperties:
++ _loadPropertiesIfNeeded
++ supportsPhoneNumberMapping
++ _IDsToMapForIMPerson:
++ imABPeopleWithScreenName:countryCode:identifier:
++ imABPeopleWithScreenName:identifier:
++ doneSetup
++ equalID:andID:
++ normalizedFormOfID:
++ compareNames:
++ serviceProperties
++ setServiceProperties:
++ _accountForUniqueID:
++ subtypeInformationForAccount:
++ serviceImageData
++ maxAttachmentSize
++ _supportsDatabaseStorage
++ _wantsInternationizedNumbers
++ addressBookProperty
++ buddyNotesMaxByteLength
++ accountIDs
++ _addAddressBookCards:toMap:
++ _dumpCardMap
++ _newIDToCardMap
++ updateIDToCardMapWithNotification:
++ cardMap
++ imABPeopleWithScreenName:
++ imABPeopleWithScreenName:options:
++ _personToIDMap
++ screenNamesForIMPerson:
++ defaultsChanged:
++ serviceDefaults
++ setServiceDefaults:
++ defaultAccountSettings
++ setDefaultAccountSettings:
++ supportsAuthorization
++ handlesChatInvites
++ supportsRegistration
++ ignoresNetworkConnectivity
++ supportsOfflineTransfers
++ supportsPresence
++ supportsMutatingGroupMembers
++ supportsGroupAttachments
++ supportsAdding
++ isPlugInService
++ allowsMultipleConnections
++ shouldDisableDeactivation
++ IDSensitivity
++ addressBookProperties
++ emailDomains
++ shortName
++ accountClass
+- dealloc
+- description
+- isEnabled
+- name
+- localizedName
+- isPersistent
+- initWithName:
+- disconnect
+- status
+- internalName
+- supportsIDStatusLookup
+- maxChatParticipants
+- initialSyncPerformed
+- localizedShortName
+- infoForScreenName:
+- infoForAllScreenNames
+- infoForPreferredScreenNames
+- canonicalFormOfID:
+- peopleWithScreenName:
+- screenNamesForPerson:
+- myScreenNames
+- activeAccountsChanged:
+- _syncWithRemoteBuddies
+- statusChangedForAccount:from:to:
+- clearIDToCardMap
+- _calculateBestAccount
+- _blockUntilInitialSyncPerformed
+- _abPropertiesBySanitizingABProperties:
+- _loadPropertiesIfNeeded
+- supportsPhoneNumberMapping
+- _IDsToMapForIMPerson:
+- imABPeopleWithScreenName:countryCode:identifier:
+- imABPeopleWithScreenName:identifier:
+- doneSetup
+- equalID:andID:
+- normalizedFormOfID:
+- compareNames:
+- serviceProperties
+- setServiceProperties:
+- _accountForUniqueID:
+- subtypeInformationForAccount:
+- serviceImageData
+- maxAttachmentSize
+- _supportsDatabaseStorage
+- _wantsInternationizedNumbers
+- addressBookProperty
+- buddyNotesMaxByteLength
+- accountIDs
+- _addAddressBookCards:toMap:
+- _dumpCardMap
+- _newIDToCardMap
+- updateIDToCardMapWithNotification:
+- cardMap
+- imABPeopleWithScreenName:
+- imABPeopleWithScreenName:options:
+- _personToIDMap
+- screenNamesForIMPerson:
+- defaultsChanged:
+- serviceDefaults
+- setServiceDefaults:
+- defaultAccountSettings
+- setDefaultAccountSettings:
+- supportsAuthorization
+- handlesChatInvites
+- supportsRegistration
+- ignoresNetworkConnectivity
+- supportsOfflineTransfers
+- supportsPresence
+- supportsMutatingGroupMembers
+- supportsGroupAttachments
+- supportsAdding
+- isPlugInService
+- allowsMultipleConnections
+- shouldDisableDeactivation
+- IDSensitivity
+- addressBookProperties
+- emailDomains
+- shortName
+- accountClass
+@end

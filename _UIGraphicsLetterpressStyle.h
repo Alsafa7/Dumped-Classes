@@ -1,0 +1,83 @@
+@interface _UIGraphicsLetterpressStyle : NSObject
+{
+	int innerShadowBlendMode;
+	int outerShadowBlendMode;
+	id embossHighlightColor;
+	id embossShadowColor;
+	double embossSize;
+	id innerShadowColor;
+	double innerShadowBlur;
+	id outerShadowColor;
+	double outerShadowBlur;
+	id topGradientColor;
+	id bottomGradientColor;
+	double innerOpacity;
+	struct innerShadowOffset;
+	struct outerShadowOffset;
+}
+
++ dealloc
++ isEqual:
++ copyWithZone:
++ setEmbossHighlightColor:
++ setEmbossShadowColor:
++ setEmbossSize:
++ setInnerShadowColor:
++ setInnerShadowOffset:
++ setInnerShadowBlur:
++ setInnerShadowBlendMode:
++ setOuterShadowColor:
++ setOuterShadowOffset:
++ setOuterShadowBlur:
++ setOuterShadowBlendMode:
++ setTopGradientColor:
++ setBottomGradientColor:
++ setInnerOpacity:
++ embossHighlightColor
++ embossShadowColor
++ embossSize
++ innerShadowColor
++ innerShadowOffset
++ innerShadowBlur
++ innerShadowBlendMode
++ outerShadowColor
++ outerShadowOffset
++ outerShadowBlur
++ outerShadowBlendMode
++ topGradientColor
++ bottomGradientColor
++ innerOpacity
++ edgeInsets
+- dealloc
+- isEqual:
+- copyWithZone:
+- setEmbossHighlightColor:
+- setEmbossShadowColor:
+- setEmbossSize:
+- setInnerShadowColor:
+- setInnerShadowOffset:
+- setInnerShadowBlur:
+- setInnerShadowBlendMode:
+- setOuterShadowColor:
+- setOuterShadowOffset:
+- setOuterShadowBlur:
+- setOuterShadowBlendMode:
+- setTopGradientColor:
+- setBottomGradientColor:
+- setInnerOpacity:
+- embossHighlightColor
+- embossShadowColor
+- embossSize
+- innerShadowColor
+- innerShadowOffset
+- innerShadowBlur
+- innerShadowBlendMode
+- outerShadowColor
+- outerShadowOffset
+- outerShadowBlur
+- outerShadowBlendMode
+- topGradientColor
+- bottomGradientColor
+- innerOpacity
+- edgeInsets
+@end

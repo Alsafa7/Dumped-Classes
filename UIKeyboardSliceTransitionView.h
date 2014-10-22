@@ -1,0 +1,81 @@
+@interface UIKeyboardSliceTransitionView : UIKeyboardSplitTransitionView
+{
+	pointer _defaultKeyplaneImage;
+	pointer _splitKeyplaneImage;
+	id _leftKeys;
+	id _rightKeys;
+	id _spaceFill;
+	id _controlKeys;
+	id _topEdgeHighlight;
+	id _keyplaneToken;
+	long long _orientation;
+	struct _rebuildFlags;
+}
+
++ initWithFrame:
++ dealloc
++ setHidden:
++ setFrame:
++ rebuildFromKeyplane:toKeyplane:keyboardType:orientation:
++ updateWithProgress:
++ canDisplayTransition
++ rebuildControlKeys:
++ rebuildTransitionForSplitStyleChange:
++ transformForProgress:
++ defaultKeyboardImage
++ splitKeyboardImage
++ initializeLayers
++ setRebuildFlags
++ updateTransition
++ crossfadeOpacityAnimation
++ adjustedLeftWidthAtMergePoint
++ adjustedRightWidthAtMergePoint
++ rebuildTopEdgeHighlightTransition
++ rebuildShadows
++ timingFunctionForSlice:
++ getKeyboardImageAsSplit:
++ updateTransitionForSlice:withStart:startContents:end:endContents:updateContents:
++ meshTransformForProgress:
++ rebuildPositionTransition
++ rebuildBackgroundAndShadowTransitions
++ rebuildBackgroundGradientTransitions
++ refreshKeyplaneImages
++ rebuildSliceTransitions
++ rebuildShiftSlices
++ rebuildReturnSlices
++ rebuildMoreIntlKeys
++ _delayedUpdateTransition
+- initWithFrame:
+- dealloc
+- setHidden:
+- setFrame:
+- rebuildFromKeyplane:toKeyplane:keyboardType:orientation:
+- updateWithProgress:
+- canDisplayTransition
+- rebuildControlKeys:
+- rebuildTransitionForSplitStyleChange:
+- transformForProgress:
+- defaultKeyboardImage
+- splitKeyboardImage
+- initializeLayers
+- setRebuildFlags
+- updateTransition
+- crossfadeOpacityAnimation
+- adjustedLeftWidthAtMergePoint
+- adjustedRightWidthAtMergePoint
+- rebuildTopEdgeHighlightTransition
+- rebuildShadows
+- timingFunctionForSlice:
+- getKeyboardImageAsSplit:
+- updateTransitionForSlice:withStart:startContents:end:endContents:updateContents:
+- meshTransformForProgress:
+- rebuildPositionTransition
+- rebuildBackgroundAndShadowTransitions
+- rebuildBackgroundGradientTransitions
+- refreshKeyplaneImages
+- rebuildSliceTransitions
+- rebuildShiftSlices
+- rebuildReturnSlices
+- rebuildMoreIntlKeys
+- _delayedUpdateTransition
+@end

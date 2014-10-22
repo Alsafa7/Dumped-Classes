@@ -1,0 +1,93 @@
+@interface NSSQLFetchIntermediate : NSSQLIntermediate
+{
+	id _governingEntity;
+	id _governingAlias;
+	id _correlationToken;
+	id _selectClause;
+	id _whereClause;
+	id _groupByClause;
+	id _havingClause;
+	id _limitClause;
+	id _offsetClause;
+	id _orderIntermediate;
+	id _joinIntermediates;
+	id _joinKeypaths;
+	id _groupByKeypaths;
+	BOOL _isDictionaryCountFetch;
+}
+
++ generateSQLStringInContext:
++ initWithScope:
++ governingEntityForKeypathExpression:
++ setLimitIntermediate:
++ selectIntermediate
++ isFunctionScoped
++ _generateJoinSQLStringInContext:
++ fetchIntermediateForKeypathExpression:
++ governingAliasForKeypathExpression:
++ keypathExpressionIsSafeLHSForIn:
++ initWithEntity:alias:inScope:
++ fetchIntermediate
++ isDictionaryCountFetch
++ setDictionaryCountFetch:
++ setSelectIntermediate:
++ groupByIntermediate
++ setGroupByIntermediate:
++ addGroupByKeypath:
++ groupByClauseContainsKeypath:
++ havingIntermediate
++ setHavingIntermediate:
++ setWhereIntermediate:
++ limitIntermediate
++ setOffsetIntermediate:
++ addJoinIntermediate:atKeypathWithComponents:
++ finalJoinForKeypathWithComponents:
++ promoteToOuterJoinsAlongKeypathWithComponents:
++ promoteToOuterJoinAtKeypathWithComponents:
++ joinIntermediates
++ setOrderIntermediate:
++ setCorrelationToken:
++ governingAlias
++ setGoverningAlias:
++ governingEntity
++ setGoverningEntity:
++ selectDistinct
++ dealloc
+- generateSQLStringInContext:
+- initWithScope:
+- governingEntityForKeypathExpression:
+- setLimitIntermediate:
+- selectIntermediate
+- isFunctionScoped
+- _generateJoinSQLStringInContext:
+- fetchIntermediateForKeypathExpression:
+- governingAliasForKeypathExpression:
+- keypathExpressionIsSafeLHSForIn:
+- initWithEntity:alias:inScope:
+- fetchIntermediate
+- isDictionaryCountFetch
+- setDictionaryCountFetch:
+- setSelectIntermediate:
+- groupByIntermediate
+- setGroupByIntermediate:
+- addGroupByKeypath:
+- groupByClauseContainsKeypath:
+- havingIntermediate
+- setHavingIntermediate:
+- setWhereIntermediate:
+- limitIntermediate
+- setOffsetIntermediate:
+- addJoinIntermediate:atKeypathWithComponents:
+- finalJoinForKeypathWithComponents:
+- promoteToOuterJoinsAlongKeypathWithComponents:
+- promoteToOuterJoinAtKeypathWithComponents:
+- joinIntermediates
+- setOrderIntermediate:
+- setCorrelationToken:
+- governingAlias
+- setGoverningAlias:
+- governingEntity
+- setGoverningEntity:
+- selectDistinct
+- dealloc
+@end

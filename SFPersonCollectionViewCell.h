@@ -1,0 +1,109 @@
+@interface SFPersonCollectionViewCell : UICollectionViewCell
+{
+	struct _personViewFrame;
+	id _personImageView;
+	id _circleProgressView;
+	id _nameLabel;
+	struct _nameLabelOneLineFrame;
+	struct _nameLabelTwoLinesFrame;
+	id _nameLabelMaskLayer;
+	double _nameLabelOriginY;
+	id _secondaryNameLabel;
+	id _waitingLabel;
+	id _sendingLabel;
+	id _sentLabel;
+	id _declinedLabel;
+	id _failedLabel;
+	id _progressToken;
+	id _progress;
+	id _progressKeyPaths;
+	BOOL _darkStyleOnLegacyApp;
+	BOOL _stateBeingRestored;
+	id _person;
+	long long _cellState;
+	id _sessionID;
+	id _textColor;
+	id _delegate;
+}
+
++ initWithFrame:
++ dealloc
++ setDelegate:
++ didMoveToWindow
++ delegate
++ setProgress:
++ setHighlighted:
++ setTextColor:
++ prepareForReuse
++ textColor
++ observeValueForKeyPath:ofObject:change:context:
++ progress
++ darkStyleOnLegacyApp
++ setDarkStyleOnLegacyApp:
++ person
++ setPerson:
++ sessionID
++ setSessionID:
++ userDidCancel
++ createLabelWithFrame:
++ setCellState:
++ resetPersonIconView
++ resetNameLabel
++ removeObserverOfValuesForKeyPaths:ofObject:
++ addObserverOfValuesForKeyPaths:ofObject:
++ updatePersonIconView
++ updateNameLabel
++ triggerKVOForKeyPaths:ofObject:
++ setCellState:animated:
++ switchToStatusLabel:animated:completion:
++ visibleStatusLabel
++ handleKVOUpdateForPerson:keyPath:
++ handleKVOUpdateForProgress:keyPath:
++ restoreCellStateFromFinalTransferState:
++ animateCellShow:delay:completion:
++ userDidSelect
++ cellState
++ stateBeingRestored
++ setStateBeingRestored:
++ .cxx_destruct
+- initWithFrame:
+- dealloc
+- setDelegate:
+- didMoveToWindow
+- delegate
+- setProgress:
+- setHighlighted:
+- setTextColor:
+- prepareForReuse
+- textColor
+- observeValueForKeyPath:ofObject:change:context:
+- progress
+- darkStyleOnLegacyApp
+- setDarkStyleOnLegacyApp:
+- person
+- setPerson:
+- sessionID
+- setSessionID:
+- userDidCancel
+- createLabelWithFrame:
+- setCellState:
+- resetPersonIconView
+- resetNameLabel
+- removeObserverOfValuesForKeyPaths:ofObject:
+- addObserverOfValuesForKeyPaths:ofObject:
+- updatePersonIconView
+- updateNameLabel
+- triggerKVOForKeyPaths:ofObject:
+- setCellState:animated:
+- switchToStatusLabel:animated:completion:
+- visibleStatusLabel
+- handleKVOUpdateForPerson:keyPath:
+- handleKVOUpdateForProgress:keyPath:
+- restoreCellStateFromFinalTransferState:
+- animateCellShow:delay:completion:
+- userDidSelect
+- cellState
+- stateBeingRestored
+- setStateBeingRestored:
+- .cxx_destruct
+@end

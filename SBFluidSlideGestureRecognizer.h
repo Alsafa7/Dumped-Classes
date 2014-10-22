@@ -1,0 +1,100 @@
+@interface SBFluidSlideGestureRecognizer : SBGestureRecognizer
+{
+	int m_degreeOfFreedom;
+	usigned long long m_minTouches;
+	BOOL m_blocksIconController;
+	double _animationDistance;
+	double _commitDistance;
+	double _accelerationThreshold;
+	double _accelerationPower;
+	int _requiredDirectionality;
+	double _defaultHandSize;
+	double _handSizeCompensationPower;
+	double _incrementalMotion;
+	double _smoothedIncrementalMotion;
+	double _cumulativeMotion;
+	double _cumulativeMotionEnvelope;
+	double _cumulativeMotionSkipped;
+	BOOL _hasSignificantMotion;
+	struct _movementVelocityInPointsPerSecond;
+	struct _centroidPoint;
+	double _recognitionStartTimestamp;
+}
+
++ cumulativePercentage
++ completionTypeProjectingMomentumForInterval:
++ skipCumulativeMotion
++ skippedCumulativePercentage
++ centroidPoint
++ movementVelocityInPointsPerSecond
++ animationDistance
++ cumulativeMotion
++ activeRecognitionDuration
++ activeTouchTimestamp
++ computeIncrementalGestureMotion:
++ projectMotionForInterval:
++ computeGestureMotion:
++ computeHasSignificantMotionIfNeeded:
++ computeCentroidPoint:
++ updateActiveTouches:
++ updateForBeganOrMovedTouches:
++ updateForEndedOrCancelledTouches:
++ incrementalMotion
++ computeNonlinearSpeedGain:
++ computeHandSizeCompensationGain:
++ degreeOfFreedom
++ minTouches
++ setMinTouches:
++ setAnimationDistance:
++ accelerationThreshold
++ setAccelerationThreshold:
++ accelerationPower
++ setAccelerationPower:
++ requiredDirectionality
++ setRequiredDirectionality:
++ init
++ setState:
++ reset
++ touchesBegan:
++ touchesMoved:
++ touchesEnded:
++ touchesCancelled:
+- cumulativePercentage
+- completionTypeProjectingMomentumForInterval:
+- skipCumulativeMotion
+- skippedCumulativePercentage
+- centroidPoint
+- movementVelocityInPointsPerSecond
+- animationDistance
+- cumulativeMotion
+- activeRecognitionDuration
+- activeTouchTimestamp
+- computeIncrementalGestureMotion:
+- projectMotionForInterval:
+- computeGestureMotion:
+- computeHasSignificantMotionIfNeeded:
+- computeCentroidPoint:
+- updateActiveTouches:
+- updateForBeganOrMovedTouches:
+- updateForEndedOrCancelledTouches:
+- incrementalMotion
+- computeNonlinearSpeedGain:
+- computeHandSizeCompensationGain:
+- degreeOfFreedom
+- minTouches
+- setMinTouches:
+- setAnimationDistance:
+- accelerationThreshold
+- setAccelerationThreshold:
+- accelerationPower
+- setAccelerationPower:
+- requiredDirectionality
+- setRequiredDirectionality:
+- init
+- setState:
+- reset
+- touchesBegan:
+- touchesMoved:
+- touchesEnded:
+- touchesCancelled:
+@end

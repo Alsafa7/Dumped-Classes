@@ -1,0 +1,94 @@
+@interface RemindersApp : UIApplication
+{
+	id _stackViewController;
+	id _splitViewController;
+	id _eventStore;
+	id _sortedCalendars;
+	id _locationManager;
+	id _window;
+	id _controllersByCalendar;
+	id _scheduledCard;
+	id _scheduledList;
+	id _actionToPerform;
+	id _actionAlertView;
+}
+
++ startScrollRemindersCardStackTestWithName:options:
++ startShowScheduledRemindersCardTestWithName:options:
++ startScrollScheduledRemindersCardTestWithName:simulateSync:options:
++ _simulateExternalChange
++ startSearchTestWithName:options:
++ _extendLaunchTest
++ runTest:options:
++ eventStoreChanged:
++ reminderURLFromLaunchURL:openedViaBB:
++ listControllerForCalendarToDisplay:
++ adjustStackForTimestamp:
++ reenableLocationReminders
++ sortedCalendars
++ archive:
++ cancelLocationRequest
++ detailViewContentRect
++ calendarsChangedWithChangedObjectIDs:
++ sortedDisplayOrders:
++ highestDisplayOrderInSource:
++ removeUnnecessaryCachedControllers
++ cardControllerForCalendarToDisplay:
++ createReminderInCalendar:
++ _alarmsDidFire
++ deleteCalendar:
++ moveCalendar:toSortedIndex:
++ assignDisplayOrders:
++ calendarsChanged
++ archivedSortedLists
++ eventStore
++ dealloc
++ application:openURL:sourceApplication:annotation:
++ applicationDidEnterBackground:
++ applicationWillEnterForeground:
++ application:didFinishLaunchingWithOptions:
++ applicationDidResume
++ applicationDidEndResumeAnimation
++ alertView:clickedButtonAtIndex:
++ addCalendar:
++ .cxx_destruct
+- startScrollRemindersCardStackTestWithName:options:
+- startShowScheduledRemindersCardTestWithName:options:
+- startScrollScheduledRemindersCardTestWithName:simulateSync:options:
+- _simulateExternalChange
+- startSearchTestWithName:options:
+- _extendLaunchTest
+- runTest:options:
+- eventStoreChanged:
+- reminderURLFromLaunchURL:openedViaBB:
+- listControllerForCalendarToDisplay:
+- adjustStackForTimestamp:
+- reenableLocationReminders
+- sortedCalendars
+- archive:
+- cancelLocationRequest
+- detailViewContentRect
+- calendarsChangedWithChangedObjectIDs:
+- sortedDisplayOrders:
+- highestDisplayOrderInSource:
+- removeUnnecessaryCachedControllers
+- cardControllerForCalendarToDisplay:
+- createReminderInCalendar:
+- _alarmsDidFire
+- deleteCalendar:
+- moveCalendar:toSortedIndex:
+- assignDisplayOrders:
+- calendarsChanged
+- archivedSortedLists
+- eventStore
+- dealloc
+- application:openURL:sourceApplication:annotation:
+- applicationDidEnterBackground:
+- applicationWillEnterForeground:
+- application:didFinishLaunchingWithOptions:
+- applicationDidResume
+- applicationDidEndResumeAnimation
+- alertView:clickedButtonAtIndex:
+- addCalendar:
+- .cxx_destruct
+@end

@@ -1,0 +1,79 @@
+@interface MusicRadioPlaybackCoordinator : NSObject
+{
+	id _audioDeviceController;
+	BOOL _deviceIsDocked;
+	BOOL _deviceIsLocked;
+	BOOL _didPresentNotificationForCurrentItem;
+	int _lockStateNotifyToken;
+	BOOL _lockStateNotifyTokenIsValid;
+	pointer _mediaRemoteCommandObserver;
+	id _pauseTimeoutTimerSource;
+	id _playbackNotificationStation;
+	id _pickedRoute;
+	BOOL _playbackIsPaused;
+	id _playbackTimeoutBeginDate;
+	double _playbackTimeoutDuration;
+	pointer _playbackTimeoutNotification;
+	BOOL _playbackTimeoutNotificationDidExpire;
+	id _playbackTimeoutNotificationExpirationTimerSource;
+	pointer _playbackTimeoutNotificationRunLoopSource;
+	id _currentStation;
+}
+
++ _playbackStateDidChangeNotification:
++ _applicationWillEnterForegroundNotification:
++ audioDeviceControllerAudioRoutesChanged:
++ _radioModelDidChangeNotification:
++ _itemWillChangeNotification:
++ dealloc
++ init
++ _init
++ currentStation
++ requestPlaybackForStation:withCompletionHandler:
++ _resetPlaybackTimeoutInformation
++ _updatePlaybackTimerForDeviceStateChangeAllowingExpiredPlaybackTimeoutNotificationDismissal:
++ _effectiveVolumeDidChangeNotification:
++ _playbackContentsDidChangeNotification:
++ _itemIsBannedDidChangeNotification:
++ _itemIsInWishListDidChangeNotification:
++ _itemIsLikedDidChangeNotification:
++ _itemDurationDidBecomeAvailableNotification:
++ _cancelPlaybackTimeoutNotification
++ _cancelPauseTimeoutTimer
++ setCurrentStation:
++ _isRadioRelevantItem:
++ _presentPlaybackTimeoutNotificationForCurrentItemIfNeeded
++ _schedulePlaybackTimeoutNotificationExpirationTimerIfNeeded
++ _cancelPlaybackTimeoutNotificationExpirationTimer
++ _fullMuteDidChangeNotification:
++ _receivedUserNotificationResponseForUserNotification:withResponseFlags:
++ .cxx_destruct
+- _playbackStateDidChangeNotification:
+- _applicationWillEnterForegroundNotification:
+- audioDeviceControllerAudioRoutesChanged:
+- _radioModelDidChangeNotification:
+- _itemWillChangeNotification:
+- dealloc
+- init
+- _init
+- currentStation
+- requestPlaybackForStation:withCompletionHandler:
+- _resetPlaybackTimeoutInformation
+- _updatePlaybackTimerForDeviceStateChangeAllowingExpiredPlaybackTimeoutNotificationDismissal:
+- _effectiveVolumeDidChangeNotification:
+- _playbackContentsDidChangeNotification:
+- _itemIsBannedDidChangeNotification:
+- _itemIsInWishListDidChangeNotification:
+- _itemIsLikedDidChangeNotification:
+- _itemDurationDidBecomeAvailableNotification:
+- _cancelPlaybackTimeoutNotification
+- _cancelPauseTimeoutTimer
+- setCurrentStation:
+- _isRadioRelevantItem:
+- _presentPlaybackTimeoutNotificationForCurrentItemIfNeeded
+- _schedulePlaybackTimeoutNotificationExpirationTimerIfNeeded
+- _cancelPlaybackTimeoutNotificationExpirationTimer
+- _fullMuteDidChangeNotification:
+- _receivedUserNotificationResponseForUserNotification:withResponseFlags:
+- .cxx_destruct
+@end

@@ -1,0 +1,134 @@
+@interface SUPurchaseManager : NSObject
+{
+	id _delegate;
+	id _futurePurchases;
+	id _inflightContinuations;
+	id _observedDownloadManagers;
+	id _pendingContinuations;
+	id _pendingPurchases;
+	id _purchasedIdentifiers;
+	id _purchaseRequests;
+	id _queueSessionManager;
+	BOOL _showingErrorDialogs;
+	long long _updatesCount;
+	id _userAgent;
+	BOOL _waitingForAuthentication;
+}
+
++ addExternalDownloads:withOptions:inContext:
++ _newDictionaryForWebScriptValue:inContext:
++ _newExternalDownloadWithDictionary:
++ _addBatchForPurchases:options:
++ copyPurchaseForScriptObject:inContext:
++ _newPurchaseBatchForPurchases:
++ purchaseScriptObject:withOptions:inContext:
++ _schedulePurchaseCallback:
++ _newExternalDownloadWithItemDictionary:
++ _newExternalDownloadWithDownloadDictionary:
++ addExternalDownloads:inContext:
++ copyPurchaseForScriptObject:
++ enqueueScriptPurchases:
++ purchaseScriptObject:
++ request:didFailWithError:
++ requestDidFinish:
++ dealloc
++ setDelegate:
++ init
++ beginUpdates
++ endUpdates
++ delegate
++ setUserAgent:
++ userAgent
++ _dialogDidFinish:
++ addPurchasedItemIdentifier:
++ _showDialogsForErrors:
++ _enqueueContinuations:
++ _enqueuePurchases:
++ _performNextAction
++ removePurchasedItemIdentifier:
++ _removePlaceholdersForPurchase:
++ _removePurchaseRequest:
++ _downloadManagerForDownloadKind:
++ _accountForPurchase:
++ addPurchasedItemIdentifiers:
++ _startContinuations:
++ _startPurchases:
++ _enqueueExternalDownload:
++ _issuePurchaseRequestForPurchases:
++ purchaseRequest:purchaseDidSucceedWithResponse:
++ purchaseRequest:purchaseDidFail:withError:
++ purchaseRequest:purchaseDidSucceed:
++ continuation:failedWithError:
++ continuationFinished:
++ addFuturePurchase:
++ addPurchaseBatch:
++ cancelFuturePurchase:
++ itemIdentifierIsPurchased:
++ itemIdentifierIsPurchasing:
++ newPurchaseBatchForItems:offers:
++ numberOfPendingPurchases
++ _addDownloadingIconForPurchases:
++ _needsAuthenticationForPurchases:
++ futurePurchases
++ purchasedItemIdentifiers
++ queueSessionManager
++ setQueueSessionManager:
+- addExternalDownloads:withOptions:inContext:
+- _newDictionaryForWebScriptValue:inContext:
+- _newExternalDownloadWithDictionary:
+- _addBatchForPurchases:options:
+- copyPurchaseForScriptObject:inContext:
+- _newPurchaseBatchForPurchases:
+- purchaseScriptObject:withOptions:inContext:
+- _schedulePurchaseCallback:
+- _newExternalDownloadWithItemDictionary:
+- _newExternalDownloadWithDownloadDictionary:
+- addExternalDownloads:inContext:
+- copyPurchaseForScriptObject:
+- enqueueScriptPurchases:
+- purchaseScriptObject:
+- request:didFailWithError:
+- requestDidFinish:
+- dealloc
+- setDelegate:
+- init
+- beginUpdates
+- endUpdates
+- delegate
+- setUserAgent:
+- userAgent
+- _dialogDidFinish:
+- addPurchasedItemIdentifier:
+- _showDialogsForErrors:
+- _enqueueContinuations:
+- _enqueuePurchases:
+- _performNextAction
+- removePurchasedItemIdentifier:
+- _removePlaceholdersForPurchase:
+- _removePurchaseRequest:
+- _downloadManagerForDownloadKind:
+- _accountForPurchase:
+- addPurchasedItemIdentifiers:
+- _startContinuations:
+- _startPurchases:
+- _enqueueExternalDownload:
+- _issuePurchaseRequestForPurchases:
+- purchaseRequest:purchaseDidSucceedWithResponse:
+- purchaseRequest:purchaseDidFail:withError:
+- purchaseRequest:purchaseDidSucceed:
+- continuation:failedWithError:
+- continuationFinished:
+- addFuturePurchase:
+- addPurchaseBatch:
+- cancelFuturePurchase:
+- itemIdentifierIsPurchased:
+- itemIdentifierIsPurchasing:
+- newPurchaseBatchForItems:offers:
+- numberOfPendingPurchases
+- _addDownloadingIconForPurchases:
+- _needsAuthenticationForPurchases:
+- futurePurchases
+- purchasedItemIdentifiers
+- queueSessionManager
+- setQueueSessionManager:
+@end

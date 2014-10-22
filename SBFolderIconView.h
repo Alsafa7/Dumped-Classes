@@ -1,0 +1,74 @@
+@interface SBFolderIconView : SBIconView
+{
+	id _folderSettings;
+}
+
++ prepareDropGlow
++ showDropGlow:
++ removeDropGlow
++ dropGlow
++ frameForMiniIconAtIndex:
++ iconBackgroundView
++ folderIcon
++ scrollToFirstGapAnimated:
++ firstVisibleMiniIconIndex
++ scrollToTopOfFirstPageAnimated:
++ setBackgroundAndIconGridImageAlpha:
++ scrollToTopOfPage:animated:
++ visibleMiniIconCount
++ setFloatyFolderCrossfadeFraction:
++ scrollToGapOrTopIfFullOfPage:animated:
++ visibleMiniIconListIndex
++ centerVisibleMiniIconIndex
++ lastVisibleMiniIconIndex
++ visibleImageRelativeFrameForMiniIconAtIndex:
++ setIconGridImageAlpha:
++ setSuppressesBlurryBackgroundChanges:
++ prepareToCrossfadeWithFloatyFolderView:allowFolderInteraction:
++ cleanupAfterFloatyFolderCrossfade
++ _updateAdaptiveColors
++ grabDurationForEvent:
++ allowsTapWhileEditing
++ _applyEditingStateAnimated:
++ _folderIconImageView
++ initWithFrame:
++ dealloc
++ description
++ setIcon:
++ settings:changedValueForKey:
++ folder
+- prepareDropGlow
+- showDropGlow:
+- removeDropGlow
+- dropGlow
+- frameForMiniIconAtIndex:
+- iconBackgroundView
+- folderIcon
+- scrollToFirstGapAnimated:
+- firstVisibleMiniIconIndex
+- scrollToTopOfFirstPageAnimated:
+- setBackgroundAndIconGridImageAlpha:
+- scrollToTopOfPage:animated:
+- visibleMiniIconCount
+- setFloatyFolderCrossfadeFraction:
+- scrollToGapOrTopIfFullOfPage:animated:
+- visibleMiniIconListIndex
+- centerVisibleMiniIconIndex
+- lastVisibleMiniIconIndex
+- visibleImageRelativeFrameForMiniIconAtIndex:
+- setIconGridImageAlpha:
+- setSuppressesBlurryBackgroundChanges:
+- prepareToCrossfadeWithFloatyFolderView:allowFolderInteraction:
+- cleanupAfterFloatyFolderCrossfade
+- _updateAdaptiveColors
+- grabDurationForEvent:
+- allowsTapWhileEditing
+- _applyEditingStateAnimated:
+- _folderIconImageView
+- initWithFrame:
+- dealloc
+- description
+- setIcon:
+- settings:changedValueForKey:
+- folder
+@end

@@ -1,0 +1,6 @@
+@interface asmcsa : NSObject
+{
+
+}
+
+@end

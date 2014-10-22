@@ -1,0 +1,6 @@
+@interface LACallListener : LAContactListener
+{
+
+}
+
+@end

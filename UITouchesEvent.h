@@ -1,0 +1,73 @@
+@interface UITouchesEvent : UIInternalEvent
+{
+	id _touches;
+	pointer _keyedTouches;
+	pointer _keyedTouchesByWindow;
+	pointer _gestureRecognizersByWindow;
+}
+
++ dealloc
++ description
++ _init
++ _addTouch:forDelayedDelivery:
++ type
++ touchesForGestureRecognizer:
++ _clearViewForTouch:
++ _removeTouch:
++ allTouches
++ _windows
++ _clearTouches
++ _dismissSharedCalloutBarIfNeeded
++ _addGestureRecognizersForView:toTouch:currentTouchMap:newTouchMap:
++ _touchesForKey:
++ _gestureRecognizersForWindow:
++ _touchesForGesture:withPhase:intoSet:
++ _viewsForWindow:
++ _touchesForView:withPhase:
++ _invalidateGestureRecognizerForWindowCache
++ _firstTouchForView:
++ _cloneEvent
++ touchesForWindow:
++ touchesForView:
++ _initWithEvent:touches:
++ _touchesForGestureRecognizer:
++ _touchesForWindow:
++ _removeTouchesForKey:
++ _removeTouchesForWindow:
++ _allTouches
++ _removeTouch:fromGestureRecognizer:
++ _touchesForGesture:withPhase:
++ _moveTouchesFromView:toView:
+- dealloc
+- description
+- _init
+- _addTouch:forDelayedDelivery:
+- type
+- touchesForGestureRecognizer:
+- _clearViewForTouch:
+- _removeTouch:
+- allTouches
+- _windows
+- _clearTouches
+- _dismissSharedCalloutBarIfNeeded
+- _addGestureRecognizersForView:toTouch:currentTouchMap:newTouchMap:
+- _touchesForKey:
+- _gestureRecognizersForWindow:
+- _touchesForGesture:withPhase:intoSet:
+- _viewsForWindow:
+- _touchesForView:withPhase:
+- _invalidateGestureRecognizerForWindowCache
+- _firstTouchForView:
+- _cloneEvent
+- touchesForWindow:
+- touchesForView:
+- _initWithEvent:touches:
+- _touchesForGestureRecognizer:
+- _touchesForWindow:
+- _removeTouchesForKey:
+- _removeTouchesForWindow:
+- _allTouches
+- _removeTouch:fromGestureRecognizer:
+- _touchesForGesture:withPhase:
+- _moveTouchesFromView:toView:
+@end

@@ -1,0 +1,6 @@
+@interface CKAddressBook : NSObject
+{
+
+}
+
+@end

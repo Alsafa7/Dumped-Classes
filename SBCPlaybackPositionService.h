@@ -1,0 +1,30 @@
+@interface SBCPlaybackPositionService : SBCXPCService
+{
+	id _databasePath;
+}
+
++ noteChangedPlaybackPositionMetadataForTrackPersistentID:isCheckpoint:
++ beginUsingPlaybackPositions
++ endUsingPlaybackPositions
++ synchronizeImmediately
++ updateUbiquitousDatabaseByRemovingUbiquitousMetadataFromTrackWithPersistentID:
++ updateMusicLibraryByApplyingUbiquitousBookmarkMetadataToTrackWithPersistentID:
++ databasePath
++ initWithServiceInterfaceClass:databasePath:
++ didConnectToService
++ noteChangedNowPlayingTrackPersistentID:
++ synchronizeLocalChangesSoon
++ .cxx_destruct
+- noteChangedPlaybackPositionMetadataForTrackPersistentID:isCheckpoint:
+- beginUsingPlaybackPositions
+- endUsingPlaybackPositions
+- synchronizeImmediately
+- updateUbiquitousDatabaseByRemovingUbiquitousMetadataFromTrackWithPersistentID:
+- updateMusicLibraryByApplyingUbiquitousBookmarkMetadataToTrackWithPersistentID:
+- databasePath
+- initWithServiceInterfaceClass:databasePath:
+- didConnectToService
+- noteChangedNowPlayingTrackPersistentID:
+- synchronizeLocalChangesSoon
+- .cxx_destruct
+@end

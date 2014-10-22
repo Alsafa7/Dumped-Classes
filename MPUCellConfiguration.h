@@ -1,0 +1,6 @@
+@interface MPUCellConfiguration : NSObject
+{
+
+}
+
+@end

@@ -1,0 +1,139 @@
+@interface UITableViewHeaderFooterView : UIView
+{
+	long long _tableViewStyle;
+	id _backgroundImage;
+	struct _frame;
+	long long _textAlignment;
+	id _tableView;
+	double _maxTitleWidth;
+	id _reuseIdentifier;
+	id _backgroundView;
+	id _label;
+	id _detailLabel;
+	id _contentView;
+	id _tintColor;
+	struct _separatorInset;
+	struct _headerFooterFlags;
+}
+
++ initWithFrame:
++ setOpaque:
++ dealloc
++ setBackgroundColor:
++ setFrame:
++ layoutSubviews
++ frame
++ contentView
++ tintColor
++ setTintColor:
++ text
++ _scriptingInfo
++ backgroundImage
++ _updateBackgroundImage
++ _labelFrame
++ setText:
++ setMaxTitleWidth:
++ setFloating:
++ setTableViewStyle:
++ setSectionHeader:
++ setTableView:
++ _setMarginWidth:
++ _setRightMarginWidth:
++ setTextAlignment:
++ _setupLabelAppearance
++ _setBackgroundViewColor:
++ initWithReuseIdentifier:
++ reuseIdentifier
++ setBackgroundView:
++ prepareForReuse
++ setReuseIdentifier:
++ textLabel
++ detailTextLabel
++ _tableViewDidUpdateMarginWidth
++ backgroundView
++ _marginWidth
++ textAlignment
++ setBackgroundImage:
++ _sizeThatFits:stripPaddingForAbuttingView:isTopHeader:
++ tableViewStyle
++ _rightMarginWidth
++ _setupBackgroundView
++ tableView
++ _invalidateLabelBackgroundColor
++ _invalidateDetailLabelBackgroundColor
++ _backgroundRect
++ sectionHeader
++ _useDetailText
++ _updateLabelBackgroundColor
++ _updateDetailLabelBackgroundColor
++ _label:
++ _textSizeForWidth:
++ _detailTextSizeForWidth:
++ _updateLayerContents
++ _updateContentAndBackgroundView
++ _updateLabelBackgroundColorIfNeeeded
++ _detailLabelFrame
++ _updateDetailLabelBackgroundColorIfNeeded
++ floating
++ maxTitleWidth
+- initWithFrame:
+- setOpaque:
+- dealloc
+- setBackgroundColor:
+- setFrame:
+- layoutSubviews
+- frame
+- contentView
+- tintColor
+- setTintColor:
+- text
+- _scriptingInfo
+- backgroundImage
+- _updateBackgroundImage
+- _labelFrame
+- setText:
+- setMaxTitleWidth:
+- setFloating:
+- setTableViewStyle:
+- setSectionHeader:
+- setTableView:
+- _setMarginWidth:
+- _setRightMarginWidth:
+- setTextAlignment:
+- _setupLabelAppearance
+- _setBackgroundViewColor:
+- initWithReuseIdentifier:
+- reuseIdentifier
+- setBackgroundView:
+- prepareForReuse
+- setReuseIdentifier:
+- textLabel
+- detailTextLabel
+- _tableViewDidUpdateMarginWidth
+- backgroundView
+- _marginWidth
+- textAlignment
+- setBackgroundImage:
+- _sizeThatFits:stripPaddingForAbuttingView:isTopHeader:
+- tableViewStyle
+- _rightMarginWidth
+- _setupBackgroundView
+- tableView
+- _invalidateLabelBackgroundColor
+- _invalidateDetailLabelBackgroundColor
+- _backgroundRect
+- sectionHeader
+- _useDetailText
+- _updateLabelBackgroundColor
+- _updateDetailLabelBackgroundColor
+- _label:
+- _textSizeForWidth:
+- _detailTextSizeForWidth:
+- _updateLayerContents
+- _updateContentAndBackgroundView
+- _updateLabelBackgroundColorIfNeeeded
+- _detailLabelFrame
+- _updateDetailLabelBackgroundColorIfNeeded
+- floating
+- maxTitleWidth
+@end

@@ -1,0 +1,74 @@
+@interface MPUbiquitousPlaybackPositionController : NSObject
+{
+	BOOL _databaseHasBookmarkableContents;
+	BOOL _isServiceActive;
+	BOOL _externallyActive;
+	BOOL _beganUsingPlaybackPositionMetadata;
+	BOOL _applicationBecomingActive;
+	id _queue;
+	id _uppServiceProxy;
+}
+
++ _applicationDidEnterBackgroundNotification:
++ _applicationWillEnterForegroundNotification:
++ noteChangedPlaybackPositionMetadataForTrackPersistentID:isCheckpoint:
++ _defaultMediaLibraryDidChangeNotification:
++ _applicationDidEnterForegroundNotification:
++ _mediaLibraryDidChangeNotification:
++ _onQueue_updateBoomkarkabilityState
++ _onQueue_connectedUPPServiceProxy
++ _onQueue_shouldBeActive
++ _onQueue_resignActiveService
++ _onQueue_updateActiveServiceIfNeeded
++ _onQueue_becomeActiveService
++ _onQueue_setDatabaseHasBookmarkableContents:
++ databaseHasBookmarkableContents
++ beginUsingPlaybackPositionMetadata
++ setExternallyActive:
++ setDatabaseHasBookmarkableContents:
++ synchronizeImmediatelyWithCompletionBlock:
++ isServiceActive
++ isServiceActive
++ setServiceActive:
++ externallyActive
++ uppServiceProxy
++ setUppServiceProxy:
++ setBeganUsingPlaybackPositionMetadata:
++ applicationBecomingActive
++ dealloc
++ init
++ _isEnabled
++ queue
++ .cxx_destruct
+- _applicationDidEnterBackgroundNotification:
+- _applicationWillEnterForegroundNotification:
+- noteChangedPlaybackPositionMetadataForTrackPersistentID:isCheckpoint:
+- _defaultMediaLibraryDidChangeNotification:
+- _applicationDidEnterForegroundNotification:
+- _mediaLibraryDidChangeNotification:
+- _onQueue_updateBoomkarkabilityState
+- _onQueue_connectedUPPServiceProxy
+- _onQueue_shouldBeActive
+- _onQueue_resignActiveService
+- _onQueue_updateActiveServiceIfNeeded
+- _onQueue_becomeActiveService
+- _onQueue_setDatabaseHasBookmarkableContents:
+- databaseHasBookmarkableContents
+- beginUsingPlaybackPositionMetadata
+- setExternallyActive:
+- setDatabaseHasBookmarkableContents:
+- synchronizeImmediatelyWithCompletionBlock:
+- isServiceActive
+- isServiceActive
+- setServiceActive:
+- externallyActive
+- uppServiceProxy
+- setUppServiceProxy:
+- setBeganUsingPlaybackPositionMetadata:
+- applicationBecomingActive
+- dealloc
+- init
+- _isEnabled
+- queue
+- .cxx_destruct
+@end

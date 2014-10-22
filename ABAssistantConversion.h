@@ -1,0 +1,6 @@
+@interface ABAssistantConversion : NSObject
+{
+
+}
+
+@end

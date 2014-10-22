@@ -1,0 +1,6 @@
+@interface GKLinkedAccountsServicePrivateInterface : GKServiceInterface
+{
+
+}
+
+@end

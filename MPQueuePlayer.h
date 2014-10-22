@@ -1,0 +1,146 @@
+@interface MPQueuePlayer : NSObject
+{
+	id _audioDeviceController;
+	id _currentItem;
+	struct _currentTime;
+	BOOL _isExternalPlaybackActive;
+	BOOL _pausedForPlaybackQueueTransaction;
+	id _pickedRouteDescription;
+	id _playbackQueueCommitHandler;
+	long long _playbackQueueTransactionCount;
+	id _player;
+	id _queuedOperations;
+	id _queuedOperationsAccessQueue;
+	float _rate;
+	float _rateBeforePlaybackQueueTransaction;
+	BOOL _routeDidChangeDuringPlaybackQueueTransaction;
+	long long _status;
+	long long _defaultItemEQPresetType;
+	BOOL _outputObscuredDueToInsufficientExternalProtection;
+}
+
++ _player
++ currentTime
++ play
++ isExternalPlaybackActive
++ disallowsAMRAudio
++ setDisallowsAMRAudio:
++ setActionAtItemEnd:
++ _setEQPreset:
++ seekToTime:
++ removeTimeObserver:
++ _setStoppingFadeOutDuration:
++ allowsExternalPlayback
++ setAllowsExternalPlayback:
++ isClosedCaptionDisplayEnabled
++ usesExternalPlaybackWhileExternalScreenIsActive
++ setUsesExternalPlaybackWhileExternalScreenIsActive:
++ setClosedCaptionDisplayEnabled:
++ _userVolume
++ _setUserVolume:
++ externalPlaybackType
++ externalPlaybackVideoGravity
++ _setPreferredLanguageList:
++ _setPreparesItemsForPlaybackAsynchronously:
++ playerAVAudioSession
++ setExternalPlaybackVideoGravity:
++ seekToTime:toleranceBefore:toleranceAfter:
++ setUsesAudioOnlyModeForExternalPlayback:
++ usesAudioOnlyModeForExternalPlayback
++ _CALayerDestinationIsTVOut
++ _setCALayerDestinationIsTVOut:
++ isPlaybackQueueTransactionActive
++ actionAtItemEnd
++ _resumePlayback:error:
++ audioDeviceControllerAudioRoutesChanged:
++ outputObscuredDueToInsufficientExternalProtection
++ _setClientName:
++ addBoundaryTimeObserverForTimes:queue:usingBlock:
++ _setWantsVolumeChangesWhenPausedOrInactive:
++ advanceToNextItem
++ setPlaybackQueueCommitHandler:
++ defaultItemEQPresetType
++ beginPlaybackQueueTransactionAndPause:
++ setCurrentPlaybackQueueTransactionDisplayTime:
++ commitPlaybackQueueTransaction
++ insertItem:afterItem:
++ _externalProtectionStatus
++ prepareItem:withCompletionHandler:
++ setMediaSelectionCriteria:forMediaCharacteristic:
++ setDefaultItemEQPresetType:
++ playbackQueueCommitHandler
++ dealloc
++ init
++ items
++ currentItem
++ observeValueForKeyPath:ofObject:change:context:
++ removeItem:
++ pause
++ status
++ rate
++ error
++ .cxx_destruct
++ setRate:
+- _player
+- currentTime
+- play
+- isExternalPlaybackActive
+- disallowsAMRAudio
+- setDisallowsAMRAudio:
+- setActionAtItemEnd:
+- _setEQPreset:
+- seekToTime:
+- removeTimeObserver:
+- _setStoppingFadeOutDuration:
+- allowsExternalPlayback
+- setAllowsExternalPlayback:
+- isClosedCaptionDisplayEnabled
+- usesExternalPlaybackWhileExternalScreenIsActive
+- setUsesExternalPlaybackWhileExternalScreenIsActive:
+- setClosedCaptionDisplayEnabled:
+- _userVolume
+- _setUserVolume:
+- externalPlaybackType
+- externalPlaybackVideoGravity
+- _setPreferredLanguageList:
+- _setPreparesItemsForPlaybackAsynchronously:
+- playerAVAudioSession
+- setExternalPlaybackVideoGravity:
+- seekToTime:toleranceBefore:toleranceAfter:
+- setUsesAudioOnlyModeForExternalPlayback:
+- usesAudioOnlyModeForExternalPlayback
+- _CALayerDestinationIsTVOut
+- _setCALayerDestinationIsTVOut:
+- isPlaybackQueueTransactionActive
+- actionAtItemEnd
+- _resumePlayback:error:
+- audioDeviceControllerAudioRoutesChanged:
+- outputObscuredDueToInsufficientExternalProtection
+- _setClientName:
+- addBoundaryTimeObserverForTimes:queue:usingBlock:
+- _setWantsVolumeChangesWhenPausedOrInactive:
+- advanceToNextItem
+- setPlaybackQueueCommitHandler:
+- defaultItemEQPresetType
+- beginPlaybackQueueTransactionAndPause:
+- setCurrentPlaybackQueueTransactionDisplayTime:
+- commitPlaybackQueueTransaction
+- insertItem:afterItem:
+- _externalProtectionStatus
+- prepareItem:withCompletionHandler:
+- setMediaSelectionCriteria:forMediaCharacteristic:
+- setDefaultItemEQPresetType:
+- playbackQueueCommitHandler
+- dealloc
+- init
+- items
+- currentItem
+- observeValueForKeyPath:ofObject:change:context:
+- removeItem:
+- pause
+- status
+- rate
+- error
+- .cxx_destruct
+- setRate:
+@end

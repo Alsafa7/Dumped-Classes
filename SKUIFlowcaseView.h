@@ -1,0 +1,85 @@
+@interface SKUIFlowcaseView : UIControl
+{
+	id _delegate;
+	long long _distanceIndex;
+	id _displayLink;
+	Array _distances;
+	BOOL _landscape;
+	id _maskLayer1;
+	id _maskLayer2;
+	double _position;
+	id _positions;
+	BOOL _sendScrollDidEnd;
+	long long _selection;
+	id _selectionLayer;
+	id _shadowView1;
+	id _shadowView2;
+	struct _startPoint;
+	double _startTime;
+	id _timer;
+	id _views;
+}
+
++ initWithFrame:
++ dealloc
++ setDelegate:
++ layoutSubviews
++ sizeThatFits:
++ delegate
++ touchesCancelled:withEvent:
++ setPosition:
++ touchesBegan:withEvent:
++ touchesMoved:withEvent:
++ touchesEnded:withEvent:
++ position
++ _update
++ start
++ clearSelection
++ stop
++ setViews:
++ views
++ indexSetForVisibleViews
++ setLandscape:
++ _showSelectionAtIndex:immediately:
++ _reloadForPosition
++ _timerStart
++ _timerStop
++ _indexOfViewAtPoint:
++ _decelerateWithVelocity:
++ _positionForPosition:
++ _transformForPosition:
++ _timerAction:
++ landscape
++ .cxx_destruct
+- initWithFrame:
+- dealloc
+- setDelegate:
+- layoutSubviews
+- sizeThatFits:
+- delegate
+- touchesCancelled:withEvent:
+- setPosition:
+- touchesBegan:withEvent:
+- touchesMoved:withEvent:
+- touchesEnded:withEvent:
+- position
+- _update
+- start
+- clearSelection
+- stop
+- setViews:
+- views
+- indexSetForVisibleViews
+- setLandscape:
+- _showSelectionAtIndex:immediately:
+- _reloadForPosition
+- _timerStart
+- _timerStop
+- _indexOfViewAtPoint:
+- _decelerateWithVelocity:
+- _positionForPosition:
+- _transformForPosition:
+- _timerAction:
+- landscape
+- .cxx_destruct
+@end

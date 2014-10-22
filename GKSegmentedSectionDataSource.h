@@ -1,0 +1,156 @@
+@interface GKSegmentedSectionDataSource : GKCollectionViewDataSource
+{
+	BOOL _usePlaceholder;
+	BOOL _waitingForAnimation;
+	id _noContentTitle;
+	id _noContentMessage;
+	id _segmentInfos;
+	id _headerView;
+	id _placeholderView;
+	id _selectedSegmentInfo;
+	id _rootDataSource;
+}
+
++ refreshContentsForDataType:userInfo:updateNotifier:
++ configureCollectionView:
++ setNoContentTitle:
++ setNoContentMessage:
++ setPlaceholderView:
++ placeholderView
++ noContentTitle
++ noContentMessage
++ dataSource:didInsertItemsAtIndexPaths:
++ dataSource:didRemoveItemsAtIndexPaths:
++ dataSource:didRefreshItemsAtIndexPaths:
++ itemAtIndexPath:
++ removeItemAtIndexPath:
++ _gkDescriptionWithChildren:
++ collectionViewDidBecomeInactive:
++ indexPathsForItem:
++ collectionViewWillBecomeActive:
++ resetViewFactories
++ item:matchesSearchTerms:inSection:
++ selectedDataSourceIndex
++ setSelectedDataSourceIndex:reload:
++ dataSource:didMoveItemAtIndexPath:toIndexPath:
++ dataSource:didInsertSections:
++ dataSource:didRemoveSections:
++ dataSource:didRefreshSections:
++ dataSource:didMoveSection:toSection:
++ dataSourceDidReloadData:
++ dataSource:performBatchUpdate:complete:
++ collectionView:evaluateFactoryForSupplementaryElementOfKind:atIndexPath:isRecursive:
++ dataSourceForSection:
++ sectionForDataSource:
++ containsDataSource:
++ createMetricsTreeWithGridLayout:
++ selectedSegmentChanged:
++ removeDataSource:
++ dataSourceDidLoad
++ segmentDidChangeLoadingState:
++ initWithDataSources:rootDataSource:
++ addDataSource:
++ setRootDataSource:
++ selectedDataSource
++ allTitles
++ infoForDataSource:
++ infosChanged
++ setSelectedDataSourceIndex:
++ updatePlaceholderNotify:
++ setSelectedSegmentInfo:
++ setWaitingForAnimation:
++ dataSourceWillLoad
++ groupDidLoad:
++ waitingForAnimation
++ initWithDataSources:
++ hoistSegmentedFactoryToRoot
++ infoForSegment:
++ dataSources
++ setTitle:forDataSource:
++ setSelectedDataSource:
++ usePlaceholder
++ setUsePlaceholder:
++ segmentInfos
++ setSegmentInfos:
++ selectedSegmentInfo
++ rootDataSource
++ dealloc
++ description
++ collectionView:numberOfItemsInSection:
++ collectionView:cellForItemAtIndexPath:
++ numberOfSectionsInCollectionView:
++ collectionView:viewForSupplementaryElementOfKind:atIndexPath:
++ headerView
++ setHeaderView:
+- refreshContentsForDataType:userInfo:updateNotifier:
+- configureCollectionView:
+- setNoContentTitle:
+- setNoContentMessage:
+- setPlaceholderView:
+- placeholderView
+- noContentTitle
+- noContentMessage
+- dataSource:didInsertItemsAtIndexPaths:
+- dataSource:didRemoveItemsAtIndexPaths:
+- dataSource:didRefreshItemsAtIndexPaths:
+- itemAtIndexPath:
+- removeItemAtIndexPath:
+- _gkDescriptionWithChildren:
+- collectionViewDidBecomeInactive:
+- indexPathsForItem:
+- collectionViewWillBecomeActive:
+- resetViewFactories
+- item:matchesSearchTerms:inSection:
+- selectedDataSourceIndex
+- setSelectedDataSourceIndex:reload:
+- dataSource:didMoveItemAtIndexPath:toIndexPath:
+- dataSource:didInsertSections:
+- dataSource:didRemoveSections:
+- dataSource:didRefreshSections:
+- dataSource:didMoveSection:toSection:
+- dataSourceDidReloadData:
+- dataSource:performBatchUpdate:complete:
+- collectionView:evaluateFactoryForSupplementaryElementOfKind:atIndexPath:isRecursive:
+- dataSourceForSection:
+- sectionForDataSource:
+- containsDataSource:
+- createMetricsTreeWithGridLayout:
+- selectedSegmentChanged:
+- removeDataSource:
+- dataSourceDidLoad
+- segmentDidChangeLoadingState:
+- initWithDataSources:rootDataSource:
+- addDataSource:
+- setRootDataSource:
+- selectedDataSource
+- allTitles
+- infoForDataSource:
+- infosChanged
+- setSelectedDataSourceIndex:
+- updatePlaceholderNotify:
+- setSelectedSegmentInfo:
+- setWaitingForAnimation:
+- dataSourceWillLoad
+- groupDidLoad:
+- waitingForAnimation
+- initWithDataSources:
+- hoistSegmentedFactoryToRoot
+- infoForSegment:
+- dataSources
+- setTitle:forDataSource:
+- setSelectedDataSource:
+- usePlaceholder
+- setUsePlaceholder:
+- segmentInfos
+- setSegmentInfos:
+- selectedSegmentInfo
+- rootDataSource
+- dealloc
+- description
+- collectionView:numberOfItemsInSection:
+- collectionView:cellForItemAtIndexPath:
+- numberOfSectionsInCollectionView:
+- collectionView:viewForSupplementaryElementOfKind:atIndexPath:
+- headerView
+- setHeaderView:
+@end

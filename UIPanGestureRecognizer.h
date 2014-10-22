@@ -1,0 +1,119 @@
+@interface UIPanGestureRecognizer : UIGestureRecognizer
+{
+	struct _firstScreenLocation;
+	struct _lastScreenLocation;
+	double _lastTouchTime;
+	id _velocitySample;
+	id _previousVelocitySample;
+	id _touches;
+	usigned long long _lastTouchCount;
+	usigned long long _minimumNumberOfTouches;
+	usigned long long _maximumNumberOfTouches;
+	double _hysteresis;
+	struct _lastUnadjustedScreenLocation;
+	bit[1] _failsPastMaxTouches;
+	bit[1] _canPanHorizontally;
+	bit[1] _canPanVertically;
+	bit[1] _ignoresStationaryTouches;
+	id _movingTouches;
+}
+
++ dealloc
++ initWithCoder:
++ encodeWithCoder:
++ setMaximumNumberOfTouches:
++ translationInView:
++ velocityInView:
++ initWithTarget:action:
++ _hysteresis
++ _setHysteresis:
++ locationInView:
++ touchesCancelled:withEvent:
++ touchesBegan:withEvent:
++ touchesMoved:withEvent:
++ touchesEnded:withEvent:
++ _setIgnoresStationaryTouches:
++ setFailsPastMaxTouches:
++ setTranslation:inView:
++ numberOfTouches
++ locationOfTouch:inView:
++ minimumNumberOfTouches
++ setMinimumNumberOfTouches:
++ _resetGestureRecognizer
++ _setCanPanVertically:
++ _willBeginAfterSatisfyingFailureRequirements
++ _velocitySample
++ _previousVelocitySample
++ _resetVelocitySamples
++ _convertPoint:fromScreenCoordinatesToView:
++ _convertPoint:toScreenCoordinatesFromView:
++ _convertVelocitySample:fromScreenCoordinatesToView:
++ _offsetInViewFromScreenLocation:toScreenLocation:
++ _shiftPanLocationToNewScreenLocation:lockingToAxis:
++ _adjustScreenLocation:
++ _willScrollX
++ _willScrollY
++ _touchesListChangedFrom:to:
++ _updateMovingTouchesArraySavingOldArray:
++ _centroidMovedTo:atTime:
++ _processTouchesMoved:withEvent:
++ _shouldTryToBeginWithEvent:
++ _removeHysteresisFromTranslation
++ _handleEndedTouches:withFinalStateAdjustments:
++ failsPastMaxTouches
++ _lastTouchCount
++ _ignoresStationaryTouches
++ _canPanHorizontally
++ _canPanVertically
++ _setCanPanHorizontally:
++ maximumNumberOfTouches
+- dealloc
+- initWithCoder:
+- encodeWithCoder:
+- setMaximumNumberOfTouches:
+- translationInView:
+- velocityInView:
+- initWithTarget:action:
+- _hysteresis
+- _setHysteresis:
+- locationInView:
+- touchesCancelled:withEvent:
+- touchesBegan:withEvent:
+- touchesMoved:withEvent:
+- touchesEnded:withEvent:
+- _setIgnoresStationaryTouches:
+- setFailsPastMaxTouches:
+- setTranslation:inView:
+- numberOfTouches
+- locationOfTouch:inView:
+- minimumNumberOfTouches
+- setMinimumNumberOfTouches:
+- _resetGestureRecognizer
+- _setCanPanVertically:
+- _willBeginAfterSatisfyingFailureRequirements
+- _velocitySample
+- _previousVelocitySample
+- _resetVelocitySamples
+- _convertPoint:fromScreenCoordinatesToView:
+- _convertPoint:toScreenCoordinatesFromView:
+- _convertVelocitySample:fromScreenCoordinatesToView:
+- _offsetInViewFromScreenLocation:toScreenLocation:
+- _shiftPanLocationToNewScreenLocation:lockingToAxis:
+- _adjustScreenLocation:
+- _willScrollX
+- _willScrollY
+- _touchesListChangedFrom:to:
+- _updateMovingTouchesArraySavingOldArray:
+- _centroidMovedTo:atTime:
+- _processTouchesMoved:withEvent:
+- _shouldTryToBeginWithEvent:
+- _removeHysteresisFromTranslation
+- _handleEndedTouches:withFinalStateAdjustments:
+- failsPastMaxTouches
+- _lastTouchCount
+- _ignoresStationaryTouches
+- _canPanHorizontally
+- _canPanVertically
+- _setCanPanHorizontally:
+- maximumNumberOfTouches
+@end

@@ -1,0 +1,6 @@
+@interface GKBulletinServiceInterface : GKServiceInterface
+{
+
+}
+
+@end

@@ -1,0 +1,6 @@
+@interface PKDefaults : NSObject
+{
+
+}
+
+@end

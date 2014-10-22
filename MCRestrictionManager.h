@@ -1,0 +1,111 @@
+@interface MCRestrictionManager : NSObject
+{
+	id _memberQueueRestrictions;
+	id _memberQueueClientRestrictions;
+	id _memberQueueUserSettings;
+	id _memberQueueEffectiveUserSettings;
+	id _memberQueue;
+	id _memberQueueProfileRestrictions;
+}
+
++ appWhitelistState
++ init
++ description
++ defaultSettings
++ memberQueue
++ setMemberQueue:
++ userInfoForClientUUID:
++ invalidateRestrictions
++ invalidateSettings
++ defaultRestrictions
++ restrictedBoolForFeature:
++ valueForFeature:
++ objectForFeature:
++ currentRestrictions
++ clientRestrictions
++ allClientUUIDsForClientType:
++ userSettings
++ effectiveParametersForBoolSetting:
++ effectiveParametersForIntersectedSetting:
++ effectiveParametersForUnionSetting:
++ effectiveParametersForValueSetting:
++ isBoolSettingLockedDownByRestrictions:
++ isValueSettingLockedDownByRestrictions:
++ effectiveIntersectedValuesForSetting:
++ effectiveUnionValuesForSetting:
++ effectiveUserSettings
++ profileRestrictions
++ combinedProfileRestrictions
++ effectiveRestrictedBoolForSetting:
++ intersectedValuesForFeature:
++ setMemberQueueRestrictions:
++ setMemberQueueProfileRestrictions:
++ setMemberQueueClientRestrictions:
++ setMemberQueueUserSettings:
++ setMemberQueueEffectiveUserSettings:
++ memberQueueRestrictions
++ memberQueueProfileRestrictions
++ memberQueueCombinedProfileRestrictions
++ memberQueueClientRestrictions
++ memberQueueClientRestrictionsForClientUUID:
++ memberQueueUserInfoForClientUUID:
++ memberQueueUserSettings
++ memberQueueEffectiveUserSettings
++ potentialRestrictionsAfterApplyingRestrictionsDictionary:outChangeDetected:outError:
++ unionValuesForFeature:
++ memberQueueClientTypeForClientUUID:
++ clientRestrictionsForClientUUID:
++ memberQueueCommitUserSettingsToDisk
++ effectiveValueForSetting:
++ .cxx_destruct
+- appWhitelistState
+- init
+- description
+- defaultSettings
+- memberQueue
+- setMemberQueue:
+- userInfoForClientUUID:
+- invalidateRestrictions
+- invalidateSettings
+- defaultRestrictions
+- restrictedBoolForFeature:
+- valueForFeature:
+- objectForFeature:
+- currentRestrictions
+- clientRestrictions
+- allClientUUIDsForClientType:
+- userSettings
+- effectiveParametersForBoolSetting:
+- effectiveParametersForIntersectedSetting:
+- effectiveParametersForUnionSetting:
+- effectiveParametersForValueSetting:
+- isBoolSettingLockedDownByRestrictions:
+- isValueSettingLockedDownByRestrictions:
+- effectiveIntersectedValuesForSetting:
+- effectiveUnionValuesForSetting:
+- effectiveUserSettings
+- profileRestrictions
+- combinedProfileRestrictions
+- effectiveRestrictedBoolForSetting:
+- intersectedValuesForFeature:
+- setMemberQueueRestrictions:
+- setMemberQueueProfileRestrictions:
+- setMemberQueueClientRestrictions:
+- setMemberQueueUserSettings:
+- setMemberQueueEffectiveUserSettings:
+- memberQueueRestrictions
+- memberQueueProfileRestrictions
+- memberQueueCombinedProfileRestrictions
+- memberQueueClientRestrictions
+- memberQueueClientRestrictionsForClientUUID:
+- memberQueueUserInfoForClientUUID:
+- memberQueueUserSettings
+- memberQueueEffectiveUserSettings
+- potentialRestrictionsAfterApplyingRestrictionsDictionary:outChangeDetected:outError:
+- unionValuesForFeature:
+- memberQueueClientTypeForClientUUID:
+- clientRestrictionsForClientUUID:
+- memberQueueCommitUserSettingsToDisk
+- effectiveValueForSetting:
+- .cxx_destruct
+@end

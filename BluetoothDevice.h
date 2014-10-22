@@ -1,0 +1,84 @@
+@interface BluetoothDevice : NSObject
+{
+	id _name;
+	id _address;
+	pointer _device;
+}
+
++ ac_isEyesFree
++ setDevice:
++ isServiceSupported:
++ dealloc
++ description
++ type
++ copyWithZone:
++ name
++ compare:
++ batteryLevel
++ connect
++ disconnect
++ device
++ unpair
++ isAccessory
++ initWithDevice:address:
++ _clearName
++ _isNameCached
++ majorClass
++ minorClass
++ scoUID
++ paired
++ connectedServicesCount
++ supportsBatteryLevel
++ getServiceSetting:key:
++ setServiceSetting:key:value:
++ connectWithServices:
++ acceptSSP:
++ startVoiceCommand
++ endVoiceCommand
++ syncSettings
++ setSyncSettings:
++ syncGroups
++ setSyncGroup:enabled:
++ connectedServices
++ connected
++ address
++ setPIN:
+- ac_isEyesFree
+- setDevice:
+- isServiceSupported:
+- dealloc
+- description
+- type
+- copyWithZone:
+- name
+- compare:
+- batteryLevel
+- connect
+- disconnect
+- device
+- unpair
+- isAccessory
+- initWithDevice:address:
+- _clearName
+- _isNameCached
+- majorClass
+- minorClass
+- scoUID
+- paired
+- connectedServicesCount
+- supportsBatteryLevel
+- getServiceSetting:key:
+- setServiceSetting:key:value:
+- connectWithServices:
+- acceptSSP:
+- startVoiceCommand
+- endVoiceCommand
+- syncSettings
+- setSyncSettings:
+- syncGroups
+- setSyncGroup:enabled:
+- connectedServices
+- connected
+- address
+- setPIN:
+@end

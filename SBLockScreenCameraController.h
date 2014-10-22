@@ -1,0 +1,126 @@
+@interface SBLockScreenCameraController : SBLockScreenSlideUpController
+{
+	id _cameraClippingView;
+	id _cameraDefaultImageView;
+	id _cameraLandscapeDefaultImageView;
+	id _cameraBackgroundView;
+	id _cameraContainerView;
+	id _cameraFakeStatusBar;
+	id _cameraViewController;
+	BOOL _animatingCameraIn;
+	BOOL _cancelCameraAnimation;
+	BOOL _cameraModeActive;
+	BOOL _cameraVisible;
+	id _lastCameraSessionID;
+	BOOL _exitedCameraForAlert;
+	BOOL _exitedCameraToHomescreen;
+	BOOL _restartCameraAfterCall;
+	BOOL _disableGracePeriodForCamera;
+	id _disableGracePeriodForCameraAssertion;
+	id _prewarmQueue;
+	id _savedWindowDelegate;
+	BOOL _prewarming;
+	id _delegate;
+}
+
++ shouldReturnToCameraAfterCall
++ noteStartingPhoneCallWhileUILocked
++ setInScreenOffMode:
++ activateCamera
++ _tearDownCameraPreview
++ setLockScreenView:
++ isCameraActive
++ _createCameraViewControllerWithNewSessionID:andStartPreview:
++ _disableRotationForCamera
++ cleanupFromGesture
++ _didDeactivate
++ translateSlidingViewByY:
++ _enableRotationForCamera
++ _didActivate
++ isCameraVisible
++ _dismissCameraAnimated:
++ _setupCameraSlideDownAnimation
++ _cleanupFromDismissal
++ prepareForSlideUpAnimation
++ _prewarmCamera
++ _cancelCameraPrewarm
++ setDisableGracePeriodForCamera:
++ _removeCameraPreviewViews
++ _removeLockScreenViewFakeStatusBar
++ finalizeGesture
++ _setCameraSessionID:
++ _hideLockScreenView
++ _createCameraViewControllerWithNewSessionID
++ _createCameraViewControllerWithOldSessionID
++ cancelReturnToCameraAfterCall
++ _activateCameraWithNewSessionID:afterCall:
++ _activateCameraAfterCall
++ abortDynamicAnimationForScreenOff
++ tearDownCameraUIImmediately
++ setGrabberOnLockScreen:
++ wantsStatusBar
++ presentCameraAnimated:
++ prepareToReturnToCameraFromCall
++ dealloc
++ setDelegate:
++ init
++ delegate
++ deactivate
++ willRotateToInterfaceOrientation:duration:
++ willAnimateRotationToInterfaceOrientation:duration:
++ didRotateFromInterfaceOrientation:
++ activate
++ cameraView
++ handleMenuButtonTap
++ grabberView
+- shouldReturnToCameraAfterCall
+- noteStartingPhoneCallWhileUILocked
+- setInScreenOffMode:
+- activateCamera
+- _tearDownCameraPreview
+- setLockScreenView:
+- isCameraActive
+- _createCameraViewControllerWithNewSessionID:andStartPreview:
+- _disableRotationForCamera
+- cleanupFromGesture
+- _didDeactivate
+- translateSlidingViewByY:
+- _enableRotationForCamera
+- _didActivate
+- isCameraVisible
+- _dismissCameraAnimated:
+- _setupCameraSlideDownAnimation
+- _cleanupFromDismissal
+- prepareForSlideUpAnimation
+- _prewarmCamera
+- _cancelCameraPrewarm
+- setDisableGracePeriodForCamera:
+- _removeCameraPreviewViews
+- _removeLockScreenViewFakeStatusBar
+- finalizeGesture
+- _setCameraSessionID:
+- _hideLockScreenView
+- _createCameraViewControllerWithNewSessionID
+- _createCameraViewControllerWithOldSessionID
+- cancelReturnToCameraAfterCall
+- _activateCameraWithNewSessionID:afterCall:
+- _activateCameraAfterCall
+- abortDynamicAnimationForScreenOff
+- tearDownCameraUIImmediately
+- setGrabberOnLockScreen:
+- wantsStatusBar
+- presentCameraAnimated:
+- prepareToReturnToCameraFromCall
+- dealloc
+- setDelegate:
+- init
+- delegate
+- deactivate
+- willRotateToInterfaceOrientation:duration:
+- willAnimateRotationToInterfaceOrientation:duration:
+- didRotateFromInterfaceOrientation:
+- activate
+- cameraView
+- handleMenuButtonTap
+- grabberView
+@end

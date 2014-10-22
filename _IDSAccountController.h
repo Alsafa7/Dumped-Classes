@@ -1,0 +1,75 @@
+@interface _IDSAccountController : NSObject
+{
+	id _delegateContext;
+	id _delegateToInfo;
+	id _serviceToken;
+	id _service;
+	id _cachedAccounts;
+	id _enabledAccounts;
+	id _transactionIDToHandlersMap;
+	BOOL _accountsLoaded;
+}
+
++ serviceName
++ dealloc
++ accountWithLoginID:service:
++ setupAccountWithSetupParameters:aliases:completionHandler:
++ accountAdded:
++ addDelegate:queue:
++ accounts
++ _removeAndDeregisterAccount:
++ accountUpdated:
++ accountsChanged:forTopic:
++ accountEnabled:onService:
++ accountDisabled:onService:
++ setupCompleteForAccount:transactionID:setupError:
++ _callDelegatesWithBlock:
++ initWithService:delegateContext:
++ accountWithUniqueID:
++ setupAccountWithLoginID:aliases:password:completionHandler:
++ setupAccountWithLoginID:password:completionHandler:
++ setupAccountWithLoginID:authToken:profileID:selfHandle:completionHandler:
++ setupAccountWithLoginID:authToken:profileID:selfHandle:aliases:completionHandler:
++ _loadCachedAccounts
++ _loadCachedAccountsWithDictionaries:
++ _setupAccountWithLoginID:accountConfig:authToken:password:completionHandler:
++ accountRemoved:
++ disableAccount:
++ enableAccount:
++ enabledAccounts
++ _removeAccount:
++ _connect
++ addAccount:
++ removeDelegate:
+- serviceName
+- dealloc
+- accountWithLoginID:service:
+- setupAccountWithSetupParameters:aliases:completionHandler:
+- accountAdded:
+- addDelegate:queue:
+- accounts
+- _removeAndDeregisterAccount:
+- accountUpdated:
+- accountsChanged:forTopic:
+- accountEnabled:onService:
+- accountDisabled:onService:
+- setupCompleteForAccount:transactionID:setupError:
+- _callDelegatesWithBlock:
+- initWithService:delegateContext:
+- accountWithUniqueID:
+- setupAccountWithLoginID:aliases:password:completionHandler:
+- setupAccountWithLoginID:password:completionHandler:
+- setupAccountWithLoginID:authToken:profileID:selfHandle:completionHandler:
+- setupAccountWithLoginID:authToken:profileID:selfHandle:aliases:completionHandler:
+- _loadCachedAccounts
+- _loadCachedAccountsWithDictionaries:
+- _setupAccountWithLoginID:accountConfig:authToken:password:completionHandler:
+- accountRemoved:
+- disableAccount:
+- enableAccount:
+- enabledAccounts
+- _removeAccount:
+- _connect
+- addAccount:
+- removeDelegate:
+@end

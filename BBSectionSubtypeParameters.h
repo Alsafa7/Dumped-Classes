@@ -1,0 +1,129 @@
+@interface BBSectionSubtypeParameters : NSObject
+{
+	id _fallbackParameters;
+	id _topic;
+	id _missedBannerDescriptionFormat;
+	id _fullUnlockActionLabel;
+	id _unlockActionLabel;
+	id _alertSuppressionAppIDs;
+	id _sectionIconOverride;
+	id _boxedCoalescesWhenLocked;
+	id _boxedSuppressesMessageForPrivacy;
+	id _boxedRealertCount;
+	id _boxedInertWhenLocked;
+	id _boxedPreservesUnlockActionCase;
+	id _boxedBannerShowsSubtitle;
+	id _boxedVisuallyIndicatesWhenDateIsInFuture;
+	id _boxedSubtypePriority;
+	id _boxedIPodOutAlertType;
+}
+
++ dealloc
++ initWithCoder:
++ encodeWithCoder:
++ setUnlockActionLabel:
++ realertCount
++ setRealertCount:
++ initWithFallbackParameters:
++ setFallbackParameters:
++ missedBannerDescriptionFormat
++ fullUnlockActionLabel
++ unlockActionLabel
++ alertSuppressionAppIDs
++ sectionIconOverride
++ coalescesWhenLocked
++ suppressesMessageForPrivacy
++ inertWhenLocked
++ preservesUnlockActionCase
++ bannerShowsSubtitle
++ visuallyIndicatesWhenDateIsInFuture
++ subtypePriority
++ iPodOutAlertType
++ setBoxedCoalescesWhenLocked:
++ setBoxedSuppressesMessageForPrivacy:
++ setBoxedRealertCount:
++ setBoxedInertWhenLocked:
++ setBoxedPreservesUnlockActionCase:
++ setBoxedBannerShowsSubtitle:
++ setBoxedVisuallyIndicatesWhenDateIsInFuture:
++ setBoxedSubtypePriority:
++ setBoxedIPodOutAlertType:
++ setMissedBannerDescriptionFormat:
++ setFullUnlockActionLabel:
++ setAlertSuppressionAppIDs:
++ setSectionIconOverride:
++ fallbackParameters
++ boxedCoalescesWhenLocked
++ boxedSuppressesMessageForPrivacy
++ boxedRealertCount
++ boxedInertWhenLocked
++ boxedPreservesUnlockActionCase
++ boxedBannerShowsSubtitle
++ boxedVisuallyIndicatesWhenDateIsInFuture
++ boxedSubtypePriority
++ boxedIPodOutAlertType
++ setCoalescesWhenLocked:
++ setSuppressesMessageForPrivacy:
++ setInertWhenLocked:
++ setPreservesUnlockActionCase:
++ setBannerShowsSubtitle:
++ setVisuallyIndicatesWhenDateIsInFuture:
++ setSubtypePriority:
++ setIPodOutAlertType:
++ setTopic:
++ topic
+- dealloc
+- initWithCoder:
+- encodeWithCoder:
+- setUnlockActionLabel:
+- realertCount
+- setRealertCount:
+- initWithFallbackParameters:
+- setFallbackParameters:
+- missedBannerDescriptionFormat
+- fullUnlockActionLabel
+- unlockActionLabel
+- alertSuppressionAppIDs
+- sectionIconOverride
+- coalescesWhenLocked
+- suppressesMessageForPrivacy
+- inertWhenLocked
+- preservesUnlockActionCase
+- bannerShowsSubtitle
+- visuallyIndicatesWhenDateIsInFuture
+- subtypePriority
+- iPodOutAlertType
+- setBoxedCoalescesWhenLocked:
+- setBoxedSuppressesMessageForPrivacy:
+- setBoxedRealertCount:
+- setBoxedInertWhenLocked:
+- setBoxedPreservesUnlockActionCase:
+- setBoxedBannerShowsSubtitle:
+- setBoxedVisuallyIndicatesWhenDateIsInFuture:
+- setBoxedSubtypePriority:
+- setBoxedIPodOutAlertType:
+- setMissedBannerDescriptionFormat:
+- setFullUnlockActionLabel:
+- setAlertSuppressionAppIDs:
+- setSectionIconOverride:
+- fallbackParameters
+- boxedCoalescesWhenLocked
+- boxedSuppressesMessageForPrivacy
+- boxedRealertCount
+- boxedInertWhenLocked
+- boxedPreservesUnlockActionCase
+- boxedBannerShowsSubtitle
+- boxedVisuallyIndicatesWhenDateIsInFuture
+- boxedSubtypePriority
+- boxedIPodOutAlertType
+- setCoalescesWhenLocked:
+- setSuppressesMessageForPrivacy:
+- setInertWhenLocked:
+- setPreservesUnlockActionCase:
+- setBannerShowsSubtitle:
+- setVisuallyIndicatesWhenDateIsInFuture:
+- setSubtypePriority:
+- setIPodOutAlertType:
+- setTopic:
+- topic
+@end

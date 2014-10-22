@@ -1,0 +1,79 @@
+@interface ADDaemon : NSObject
+{
+	id _queue;
+	id _clientListener;
+	usigned long long _clientConnectionsCount;
+	id _dictationListener;
+	usigned long long _dictationConnectionsCount;
+	id _settingsListener;
+	id _managedStorageListener;
+	id _syncListener;
+	id _idleTimerSource;
+	BOOL _idleTimerFlag;
+	BOOL _syncNotifyTokenRegistered;
+	int _syncNotifyToken;
+}
+
++ _daemonDidLaunch
++ _daemonWillShutdown
++ _resetIdleTimerFlag
++ _idleTimerConditionsMet
++ _clientListenerShouldAcceptNewConnection:
++ _settingsListenerShouldAcceptNewConnection:
++ _dictationListenerShouldAcceptNewConnection:
++ _managedStorageListenerShouldAcceptNewConnection:
++ _setupClientListener
++ _setupDictationListener
++ _setupSettingsListener
++ _setupManagedStorageListener
++ _setupBackgroundTaskAgent
++ _setupSyncListener
++ _registerForSyncNotifications
++ _setupNotifyHandlers
++ _setupIdleTimer
++ idleTimerInterval
++ scheduleSyncJob
++ scheduleDestroyJob
++ unscheduleDestroyJob
++ scheduleValidationRefreshForInterval:
++ scheduleActivationTokenRefresh
++ dealloc
++ init
++ run
++ _queue
++ listener:shouldAcceptNewConnection:
++ keepAlive
++ shutdown
++ .cxx_destruct
+- _daemonDidLaunch
+- _daemonWillShutdown
+- _resetIdleTimerFlag
+- _idleTimerConditionsMet
+- _clientListenerShouldAcceptNewConnection:
+- _settingsListenerShouldAcceptNewConnection:
+- _dictationListenerShouldAcceptNewConnection:
+- _managedStorageListenerShouldAcceptNewConnection:
+- _setupClientListener
+- _setupDictationListener
+- _setupSettingsListener
+- _setupManagedStorageListener
+- _setupBackgroundTaskAgent
+- _setupSyncListener
+- _registerForSyncNotifications
+- _setupNotifyHandlers
+- _setupIdleTimer
+- idleTimerInterval
+- scheduleSyncJob
+- scheduleDestroyJob
+- unscheduleDestroyJob
+- scheduleValidationRefreshForInterval:
+- scheduleActivationTokenRefresh
+- dealloc
+- init
+- run
+- _queue
+- listener:shouldAcceptNewConnection:
+- keepAlive
+- shutdown
+- .cxx_destruct
+@end

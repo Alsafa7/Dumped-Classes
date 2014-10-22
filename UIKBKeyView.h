@@ -1,0 +1,83 @@
+@interface UIKBKeyView : UIView
+{
+	id m_keyplane;
+	id m_key;
+	struct m_drawFrame;
+	pointer m_allowsCaching;
+	id m_renderConfig;
+	id _keyBorders;
+	id _keyBackgrounds;
+	id _keyCaps;
+	int _renderedKeyState;
+	BOOL _usesControlOpacities;
+	BOOL _renderAsMask;
+	id _popupMenu;
+}
+
++ dealloc
++ drawRect:
++ layoutSubviews
++ _generateBackdropMaskImage
++ _applyAppearanceInvocations
++ textEffectsVisibilityLevel
++ renderConfig
++ setRenderConfig:
++ initWithFrame:keyplane:key:
++ updateForKeyplane:key:
++ key
++ displayLayer:
++ setDrawFrame:
++ keyplane
++ cacheKey
++ cachedWidth
++ cacheKeysForRenderFlags:
++ drawContentsOfRenderers:
++ cacheDeferable
++ keepNonPersistent
++ setPopupMenu:
++ dimKeyCaps:duration:
++ _popuplateLayer:withContents:
++ _viewShouldBeOpaque
++ drawFrame
++ cachedRenderFlags
++ renderAsMask
++ displayInsets
++ _shouldUpdateLayers
++ setUsesControlOpacities:
++ popupMenu
++ usesControlOpacities
++ setRenderAsMask:
+- dealloc
+- drawRect:
+- layoutSubviews
+- _generateBackdropMaskImage
+- _applyAppearanceInvocations
+- textEffectsVisibilityLevel
+- renderConfig
+- setRenderConfig:
+- initWithFrame:keyplane:key:
+- updateForKeyplane:key:
+- key
+- displayLayer:
+- setDrawFrame:
+- keyplane
+- cacheKey
+- cachedWidth
+- cacheKeysForRenderFlags:
+- drawContentsOfRenderers:
+- cacheDeferable
+- keepNonPersistent
+- setPopupMenu:
+- dimKeyCaps:duration:
+- _popuplateLayer:withContents:
+- _viewShouldBeOpaque
+- drawFrame
+- cachedRenderFlags
+- renderAsMask
+- displayInsets
+- _shouldUpdateLayers
+- setUsesControlOpacities:
+- popupMenu
+- usesControlOpacities
+- setRenderAsMask:
+@end

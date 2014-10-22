@@ -1,0 +1,66 @@
+@interface VPNBundleController : PSBundleController
+{
+	id _passwordSetupSpecifier;
+	id _vpnSpecifier;
+	id _toggleVPNSpecifier;
+	id _linkVPNSpecifier;
+	id _store;
+	BOOL _isToggleSwitchInRootMenu;
+	BOOL _isRootMenuItem;
+	BOOL _networkSpinnerVisible;
+	id _serviceCount;
+}
+
++ unload
++ dealloc
++ freeSC
++ updateNetworkSpinnerVisibility:
++ getStatusAndUpdateNetworkSpinnerVisibility:
++ _vpnStatusChanged:
++ _showPasswordDialog
++ _setVPNActive:
++ _vpnNetworkingIsDisabled
++ setVPNActive:forSpecifier:
++ vpnActiveForSpecifier:
++ confirmAirplaneModeDisable:
++ cancelAirplaneModeDisable:
++ _vpnConfigurationChanged:
++ applicationResigned:
++ initSC
++ _lastConnectionAttemptFailedForServiceId:
++ _updateVPNSwitchStatus
++ activateVPN:
++ passwordController:enteredPassword:
++ passwordControllerCancelled:
++ statusForSpecifier:
++ airplaneModeChanged
++ applicationResumed:
++ initWithParentListController:
++ specifiersWithSpecifier:
+- unload
+- dealloc
+- freeSC
+- updateNetworkSpinnerVisibility:
+- getStatusAndUpdateNetworkSpinnerVisibility:
+- _vpnStatusChanged:
+- _showPasswordDialog
+- _setVPNActive:
+- _vpnNetworkingIsDisabled
+- setVPNActive:forSpecifier:
+- vpnActiveForSpecifier:
+- confirmAirplaneModeDisable:
+- cancelAirplaneModeDisable:
+- _vpnConfigurationChanged:
+- applicationResigned:
+- initSC
+- _lastConnectionAttemptFailedForServiceId:
+- _updateVPNSwitchStatus
+- activateVPN:
+- passwordController:enteredPassword:
+- passwordControllerCancelled:
+- statusForSpecifier:
+- airplaneModeChanged
+- applicationResumed:
+- initWithParentListController:
+- specifiersWithSpecifier:
+@end

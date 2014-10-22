@@ -1,0 +1,66 @@
+@interface CUIShapeEffectPreset : NSObject
+{
+	Array _parameterList;
+	Array _effectIndex;
+	double _scaleFactor;
+}
+
++ initWithConstantPreset:
++ CUIEffectDataRepresentation
++ _parameterCount
++ init
++ _insertEffectTuple:atEffectIndex:
++ addValue:forParameter:withEffectType:atEffectIndex:
++ addValue:forParameter:withNewEffectType:
++ appendValue:forParameter:withEffectType:
++ addColorValueRed:green:blue:forParameter:withNewEffectType:
++ appendFloatValue:forParameter:withEffectType:
++ appendColorValueRed:green:blue:forParameter:withEffectType:
++ appendIntValue:forParameter:withEffectType:
++ appendAngleValue:forParameter:withEffectType:
++ initWithEffectScale:
++ effectScale
++ effectTypeAtIndex:
++ valueForParameter:inEffectAtIndex:
++ getEffectTuples:count:atEffectIndex:
++ addFloatValue:forParameter:withNewEffectType:
++ addIntValue:forParameter:withNewEffectType:
++ addColorFillWithRed:green:blue:opacity:
++ addGradientFillWithTopColorRed:green:blue:bottomColorRed:green:blue:opacity:
++ addInnerGlowWithColorRed:green:blue:opacity:blur:
++ addInnerShadowWithColorRed:green:blue:opacity:blur:offset:angle:
++ addOuterGlowWithColorRed:green:blue:opacity:blur:
++ addDropShadowWithColorRed:green:blue:opacity:blur:offset:angle:
++ addExtraShadowWithColorRed:green:blue:opacity:blur:offset:angle:
++ addBevelEmbossWithHighlightColorRed:green:blue:opacity:shadowColorRed:green:blue:opacity:blur:soften:
++ effectCount
+- initWithConstantPreset:
+- CUIEffectDataRepresentation
+- _parameterCount
+- init
+- _insertEffectTuple:atEffectIndex:
+- addValue:forParameter:withEffectType:atEffectIndex:
+- addValue:forParameter:withNewEffectType:
+- appendValue:forParameter:withEffectType:
+- addColorValueRed:green:blue:forParameter:withNewEffectType:
+- appendFloatValue:forParameter:withEffectType:
+- appendColorValueRed:green:blue:forParameter:withEffectType:
+- appendIntValue:forParameter:withEffectType:
+- appendAngleValue:forParameter:withEffectType:
+- initWithEffectScale:
+- effectScale
+- effectTypeAtIndex:
+- valueForParameter:inEffectAtIndex:
+- getEffectTuples:count:atEffectIndex:
+- addFloatValue:forParameter:withNewEffectType:
+- addIntValue:forParameter:withNewEffectType:
+- addColorFillWithRed:green:blue:opacity:
+- addGradientFillWithTopColorRed:green:blue:bottomColorRed:green:blue:opacity:
+- addInnerGlowWithColorRed:green:blue:opacity:blur:
+- addInnerShadowWithColorRed:green:blue:opacity:blur:offset:angle:
+- addOuterGlowWithColorRed:green:blue:opacity:blur:
+- addDropShadowWithColorRed:green:blue:opacity:blur:offset:angle:
+- addExtraShadowWithColorRed:green:blue:opacity:blur:offset:angle:
+- addBevelEmbossWithHighlightColorRed:green:blue:opacity:shadowColorRed:green:blue:opacity:blur:soften:
+- effectCount
+@end

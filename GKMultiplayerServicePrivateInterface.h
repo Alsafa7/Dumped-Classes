@@ -1,0 +1,6 @@
+@interface GKMultiplayerServicePrivateInterface : GKServiceInterface
+{
+
+}
+
+@end

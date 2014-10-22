@@ -1,0 +1,6 @@
+@interface SBMappedImageCache : SBFMappedImageCache
+{
+
+}
+
+@end

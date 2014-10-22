@@ -1,0 +1,65 @@
+@interface BKSApplicationDataStoreRepositoryClient : BKSBaseXPCClient
+{
+	id _prefetchedKeyCounts;
+	id _prefetchedKeyValues;
+	id _pendingChangesToPrefetchedKeys;
+	id _prefetchedDataQueue;
+}
+
++ initWithEndpoint:
++ dealloc
++ init
++ invalidate
++ queue_handleMessage:
++ availableDataStores:
++ synchronizeWithCompletion:
++ addPrefetchedKeys:withCompletion:
++ _prefetchedObjectIfAvailableForKey:application:outObject:
++ objectForKey:forApplication:withResult:checkPrefetch:
++ objectForKey:forApplication:withResult:
++ setObject:forKey:forApplication:withCompletion:
++ removeObjectForKey:forApplication:withCompletion:
++ removeAllObjectsForApplication:withCompletion:
++ _sendPrefetchedKeys:withCompletion:
++ fireCompletion:error:
++ _sendMessageType:withMessage:withReplyHandler:waitForReply:
++ fireCompletion:arrayResults:error:
++ fireCompletion:result:error:
++ _setPrefetchedObjectIfNecessary:forKey:application:
++ _setChangeInFlight:forPrefetchedKey:application:
++ _handleValueChanged:
++ _handleStoreInvalidated:
++ _isChangeInFlightForPrefetchedKey:application:
++ clientCallbackQueue
++ removePrefetchedKeys:withCompletion:
++ queue_connectionWasCreated
++ _allPrefetchedChangesInFlightForApplication:
+- initWithEndpoint:
+- dealloc
+- init
+- invalidate
+- queue_handleMessage:
+- availableDataStores:
+- synchronizeWithCompletion:
+- addPrefetchedKeys:withCompletion:
+- _prefetchedObjectIfAvailableForKey:application:outObject:
+- objectForKey:forApplication:withResult:checkPrefetch:
+- objectForKey:forApplication:withResult:
+- setObject:forKey:forApplication:withCompletion:
+- removeObjectForKey:forApplication:withCompletion:
+- removeAllObjectsForApplication:withCompletion:
+- _sendPrefetchedKeys:withCompletion:
+- fireCompletion:error:
+- _sendMessageType:withMessage:withReplyHandler:waitForReply:
+- fireCompletion:arrayResults:error:
+- fireCompletion:result:error:
+- _setPrefetchedObjectIfNecessary:forKey:application:
+- _setChangeInFlight:forPrefetchedKey:application:
+- _handleValueChanged:
+- _handleStoreInvalidated:
+- _isChangeInFlightForPrefetchedKey:application:
+- clientCallbackQueue
+- removePrefetchedKeys:withCompletion:
+- queue_connectionWasCreated
+- _allPrefetchedChangesInFlightForApplication:
+@end

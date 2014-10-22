@@ -1,0 +1,91 @@
+@interface CUIShapeEffectStack : NSObject
+{
+	BOOL hasColorOverlay;
+	struct colorOverlay;
+	BOOL hasInnerGradient;
+	struct innerGradient;
+	BOOL hasInnerGlow;
+	struct innerGlow;
+	BOOL hasInnerShadow;
+	struct insideShadow;
+	BOOL hasOuterGlow;
+	struct outerGlow;
+	BOOL hasEngraveShadow;
+	struct engraveShadow;
+	BOOL hasExtraShadow;
+	struct extraShadow;
+	BOOL hasBevelEmboss;
+	struct emboss;
+	float scalefactor;
+	int renderStrategy;
+}
+
++ effectPreset
++ initWithEffectPreset:
++ processedImageFromShapeImage:withScale:
++ effectPaddingWithScale:
++ scaleEffectParametersBy:
++ _updateRenderStrategyFromEffect:
++ _precompositeColorOverlayInnerGradient
++ _setColorFillFromPreset:atIndex:
++ _setInteriorGradientFromPreset:atIndex:
++ _addInnerGlowFromPreset:atIndex:
++ _addInnerShadowFromPreset:atIndex:
++ _addOuterGlowFromPreset:atIndex:
++ _addEngraveShadowFromPreset:atIndex:
++ _addBevelEmbossFromPreset:atIndex:
++ _addExtraShadowFromPreset:atIndex:
++ imageWithInteriorGradientFillOfImage:
++ imageWithColorOverlayOfImage:
++ imageWithInnerGlowOfImage:
++ imageWithInnerShadowOfImage:
++ imageWithOuterGlowOfImage:
++ imageWithEngraveShadowOfImage:
++ imageWithExtraShadowOfImage:
++ imageWithBevelEmbossOfImage:
++ imageWithSingleBlurShapeEffectOfImage:withInteriorFill:
++ optimizedSingleBlurEffectCompositeWithShapeImage:
++ standardEffectCompositeWithShapeImage:
++ compositeEffectStackWithShapeImage:withScale:
++ newFlattenedImageFromShapeCGImage:withScale:
++ applyCustomForegroundColor:
++ effectInsetsWithScale:
++ processedImageFromShapeImage:
++ newFlattenedImageFromShapeCGImage:withScale:ciContext:
++ newFlattenedImageFromShapeCGImage:
++ processedImageFromShapePath:inRect:
+- effectPreset
+- initWithEffectPreset:
+- processedImageFromShapeImage:withScale:
+- effectPaddingWithScale:
+- scaleEffectParametersBy:
+- _updateRenderStrategyFromEffect:
+- _precompositeColorOverlayInnerGradient
+- _setColorFillFromPreset:atIndex:
+- _setInteriorGradientFromPreset:atIndex:
+- _addInnerGlowFromPreset:atIndex:
+- _addInnerShadowFromPreset:atIndex:
+- _addOuterGlowFromPreset:atIndex:
+- _addEngraveShadowFromPreset:atIndex:
+- _addBevelEmbossFromPreset:atIndex:
+- _addExtraShadowFromPreset:atIndex:
+- imageWithInteriorGradientFillOfImage:
+- imageWithColorOverlayOfImage:
+- imageWithInnerGlowOfImage:
+- imageWithInnerShadowOfImage:
+- imageWithOuterGlowOfImage:
+- imageWithEngraveShadowOfImage:
+- imageWithExtraShadowOfImage:
+- imageWithBevelEmbossOfImage:
+- imageWithSingleBlurShapeEffectOfImage:withInteriorFill:
+- optimizedSingleBlurEffectCompositeWithShapeImage:
+- standardEffectCompositeWithShapeImage:
+- compositeEffectStackWithShapeImage:withScale:
+- newFlattenedImageFromShapeCGImage:withScale:
+- applyCustomForegroundColor:
+- effectInsetsWithScale:
+- processedImageFromShapeImage:
+- newFlattenedImageFromShapeCGImage:withScale:ciContext:
+- newFlattenedImageFromShapeCGImage:
+- processedImageFromShapePath:inRect:
+@end

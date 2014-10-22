@@ -1,0 +1,6 @@
+@interface SBSLocalNotificationClient : NSObject
+{
+
+}
+
+@end

@@ -1,0 +1,85 @@
+@interface SBNotificationsBulletinInfo : SBBBBulletinInfo
+{
+	id _sectionInfo;
+	double _heightForReusableView;
+	struct _referenceSize;
+	id _icon;
+	id _attachmentImage;
+	struct _attachmentImageSize;
+	double _secondaryTextHeight;
+	BOOL _suppressingMessageForPrivacy;
+	BOOL _isCachedMessageSuppressionValid;
+	id _secondaryTextColor;
+}
+
++ _endDate
++ setAttachmentImage:
++ _relevanceDateLabel
++ _eventDateLabel
++ attachmentImage
++ reusableViewClass
++ heightForReusableViewInTableView:
++ _isLayoutValidWithReferenceSize:
++ invalidateCachedLayoutData
++ populateReusableView:
++ isSuppressingMessageForPrivacy
++ setAttachmentImageSize:
++ _subtitleText
++ _relevanceDateLabelDescription
++ _relevanceDateTextColor
++ _primaryText
++ _subtitleTextToDisplay
++ _secondaryTextToDisplay
++ _eventDateLabelForDisplay
++ _effectiveAttachmentImageSize
++ _primaryTextColor
++ _secondaryTextColor
++ _configureRelevanceDateLabel:
++ _configureEventDateLabel:
++ _attachmentImageToDisplay
++ attachmentImageSize
++ _secondaryText
++ icon
++ sectionInfo
++ _subtitleTextColor
++ dealloc
++ identifier
++ setIcon:
++ setSectionInfo:
++ secondaryTextColor
+- _endDate
+- setAttachmentImage:
+- _relevanceDateLabel
+- _eventDateLabel
+- attachmentImage
+- reusableViewClass
+- heightForReusableViewInTableView:
+- _isLayoutValidWithReferenceSize:
+- invalidateCachedLayoutData
+- populateReusableView:
+- isSuppressingMessageForPrivacy
+- setAttachmentImageSize:
+- _subtitleText
+- _relevanceDateLabelDescription
+- _relevanceDateTextColor
+- _primaryText
+- _subtitleTextToDisplay
+- _secondaryTextToDisplay
+- _eventDateLabelForDisplay
+- _effectiveAttachmentImageSize
+- _primaryTextColor
+- _secondaryTextColor
+- _configureRelevanceDateLabel:
+- _configureEventDateLabel:
+- _attachmentImageToDisplay
+- attachmentImageSize
+- _secondaryText
+- icon
+- sectionInfo
+- _subtitleTextColor
+- dealloc
+- identifier
+- setIcon:
+- setSectionInfo:
+- secondaryTextColor
+@end

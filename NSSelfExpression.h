@@ -1,0 +1,6 @@
+@interface NSSelfExpression : NSExpression
+{
+
+}
+
+@end

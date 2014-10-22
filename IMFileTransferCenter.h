@@ -1,0 +1,100 @@
+@interface IMFileTransferCenter : NSObject
+{
+	id _guidToTransferMap;
+	id _guidToRemovedTransferMap;
+	id _accountIDToTransferGUIDsMap;
+	id _preauthorizedInfos;
+	id _preauthorizedGUIDs;
+	id _activeTransfers;
+	id _pendingTransfers;
+}
+
++ dealloc
++ acceptTransfer:
++ transferForGUID:
++ deleteTransfer:
++ registerGUID:forNewOutgoingTransferWithLocalURL:
++ assignTransfer:toMessage:account:
++ transfers
++ removeTransfer:
++ guidForNewOutgoingTransferWithLocalURL:
++ transfersForAccount:
++ stopTransfer:
++ _handleStandaloneFileTransferRegistered:
++ _handleFileTransfer:createdWithProperties:
++ _handleFileTransfer:updatedWithProperties:
++ _handleFileTransfer:updatedWithCurrentBytes:totalBytes:averageTransferRate:
++ _handleAllFileTransfers:
++ _removePendingTransfer:
++ _removeActiveTransfer:
++ _removeAllActiveTransfers
++ acknowledgeAllPendingTransfers
++ _addTransfer:toAccount:
++ _addPendingTransfer:
++ _addTransfer:
++ doesLocalURLRequireArchiving:toHandle:
++ transferForGUID:includeRemoved:
++ _addActiveTransfer:
++ acceptTransfer:withPath:autoRename:overwrite:
++ isFileTransfer:preauthorizedWithDictionary:
++ _clearTransfers
++ acceptFileTransferIfPreauthorzed:
++ hasPendingFileTransfers
++ acknowledgePendingTransfer:
++ hasActiveFileTransfers
++ assignTransfer:toHandle:
++ chatForTransfer:
++ sendTransfer:
++ retargetTransfer:toPath:
++ activeTransfers
++ activeTransferGUIDs
++ orderedTransfers
++ orderedTransfersGUIDs
++ clearFinishedTransfers
++ preauthorizeFileTransferFromOtherPerson:account:filename:saveToPath:
++ wasFileTransferPreauthorized:
+- dealloc
+- acceptTransfer:
+- transferForGUID:
+- deleteTransfer:
+- registerGUID:forNewOutgoingTransferWithLocalURL:
+- assignTransfer:toMessage:account:
+- transfers
+- removeTransfer:
+- guidForNewOutgoingTransferWithLocalURL:
+- transfersForAccount:
+- stopTransfer:
+- _handleStandaloneFileTransferRegistered:
+- _handleFileTransfer:createdWithProperties:
+- _handleFileTransfer:updatedWithProperties:
+- _handleFileTransfer:updatedWithCurrentBytes:totalBytes:averageTransferRate:
+- _handleAllFileTransfers:
+- _removePendingTransfer:
+- _removeActiveTransfer:
+- _removeAllActiveTransfers
+- acknowledgeAllPendingTransfers
+- _addTransfer:toAccount:
+- _addPendingTransfer:
+- _addTransfer:
+- doesLocalURLRequireArchiving:toHandle:
+- transferForGUID:includeRemoved:
+- _addActiveTransfer:
+- acceptTransfer:withPath:autoRename:overwrite:
+- isFileTransfer:preauthorizedWithDictionary:
+- _clearTransfers
+- acceptFileTransferIfPreauthorzed:
+- hasPendingFileTransfers
+- acknowledgePendingTransfer:
+- hasActiveFileTransfers
+- assignTransfer:toHandle:
+- chatForTransfer:
+- sendTransfer:
+- retargetTransfer:toPath:
+- activeTransfers
+- activeTransferGUIDs
+- orderedTransfers
+- orderedTransfersGUIDs
+- clearFinishedTransfers
+- preauthorizeFileTransferFromOtherPerson:account:filename:saveToPath:
+- wasFileTransferPreauthorized:
+@end

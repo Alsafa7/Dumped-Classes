@@ -1,0 +1,82 @@
+@interface ABMonogrammer : NSObject
+{
+	id _silhouetteMonogram;
+	id _questionMarkMonogram;
+	id _knockoutMaskMonogram;
+	double _innerBorderWidth;
+	id _silhouetteImageName;
+	long long _monogrammerStyle;
+	BOOL _textKnockout;
+	double _diameter;
+	id _backgroundColor;
+	id _font;
+	id _textColor;
+}
+
++ _clearMonogramCache
++ _initialsForPerson:
++ hasImageOrInitialsForPerson:
++ _copyMonogramWithImageData:
++ _copyMonogramWithInitials:
++ monogramForPerson:isPersonImage:
++ _initialsForFirstName:lastName:
++ _copyMonogramWithSilhouette
++ _copyMonogramWithKnockoutMask
++ knockoutMaskMonogram
++ monogramsAsFlatImages
++ setDiameter:
++ setTextKnockout:
++ innerBorderWidth
++ silhouetteImageName
++ hasMonogramForPerson:
++ maskForMonogram
++ defaultMonogram
++ diameter
++ textKnockout
++ questionMarkMonogram
++ monogramForPerson:
++ silhouetteMonogram
++ dealloc
++ setBackgroundColor:
++ backgroundColor
++ init
++ setFont:
++ font
++ setTextColor:
++ textColor
++ initWithStyle:diameter:
++ monogramForPersonWithFirstName:lastName:
+- _clearMonogramCache
+- _initialsForPerson:
+- hasImageOrInitialsForPerson:
+- _copyMonogramWithImageData:
+- _copyMonogramWithInitials:
+- monogramForPerson:isPersonImage:
+- _initialsForFirstName:lastName:
+- _copyMonogramWithSilhouette
+- _copyMonogramWithKnockoutMask
+- knockoutMaskMonogram
+- monogramsAsFlatImages
+- setDiameter:
+- setTextKnockout:
+- innerBorderWidth
+- silhouetteImageName
+- hasMonogramForPerson:
+- maskForMonogram
+- defaultMonogram
+- diameter
+- textKnockout
+- questionMarkMonogram
+- monogramForPerson:
+- silhouetteMonogram
+- dealloc
+- setBackgroundColor:
+- backgroundColor
+- init
+- setFont:
+- font
+- setTextColor:
+- textColor
+- initWithStyle:diameter:
+- monogramForPersonWithFirstName:lastName:
+@end

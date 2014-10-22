@@ -1,0 +1,154 @@
+@interface CKComposeRecipientView : MFComposeRecipientView
+{
+	id _preferredService;
+	id _sendBlock;
+	BOOL _autoSendUponResolving;
+	BOOL _atomizedForAutoSend;
+	BOOL _resolvedForAutoSend;
+	BOOL _canSend;
+	char _serviceError;
+	BOOL _alreadyShowedAlertForTooManyRecipientsError;
+	id _recipientAvailabilityTimeoutTimers;
+	id _actionSheet;
+	BOOL _forceMMS;
+	id _nextResponder;
+	id _IDSQueryUpdater;
+}
+
++ initWithFrame:
++ dealloc
++ nextResponder
++ alertView:clickedButtonAtIndex:
++ textFieldDidResignFirstResponder:
++ textFieldDidBecomeFirstResponder:
++ reset
++ peoplePickerNavigationControllerDidCancel:
++ peoplePickerNavigationController:shouldContinueAfterSelectingPerson:
++ peoplePickerNavigationController:shouldContinueAfterSelectingPerson:property:identifier:
++ customOverlayContainer
++ atomViewForRecipient:
++ canInsertMoreRecipients
++ selectComposeRecipientAtom:
++ setNextResponder:
++ stopCheckingRecipientAvailabilityAndRemoveAllTimers
++ updateRecipientLimit
++ finishedComposingRecipients
++ forceMMS
++ setForceMMS:
++ preferredService
++ showErrorAlertForTooManyRecipientsUponSendIfNecessary
++ atomizeAndInvokeBlock:
++ removeRecipients
++ batchAddRecipients:
++ actionSheet
++ setActionSheet:
++ handlePreferredServiceChangedNotification:
++ updateForPreferredServiceChange
++ setIDSQueryUpdater:
++ _showActionSheetForAtom:animated:
++ setCanSend:
++ setServiceError:
++ setPreferredService:
++ atomPresentationOptionsForRecipient:
++ hasPendingAtoms
++ _autoSendIfReady
++ updatePreferredServiceForRecipients:
++ _setTextColorForPreferredService:
++ _reflowAnimated:
++ _reallyAutoSendIfReady
++ hasFailedAtoms
++ _hasTimedOutAtoms
++ iMessageAvailabilityForRecipient:
++ serviceError
++ removeAvailabilityTimeoutTimerForRecipient:
++ _checkAvailabilityOfAlternateAddressesForMFComposeRecipient:
++ startAvailabilityTimeoutTimerForRecipient:
++ _showOneTimeErrorAlertForTooManyRecipientsUponAddIfNecessary
++ _dismissPicker:
++ shouldShowCardForPerson:
++ IDSQueryUpdater
++ _refreshActionSheet
++ _hasAddressWithAvailability:
++ _alternateAddressesForMFComposeRecipient:onlyIMessageAble:
++ handleRecipientAvailabilityTimeout:
++ _stopCheckingRecipientAvailability
++ _calculateRecipientLimit
++ _serviceErrorIsForTooManyRecipients
++ _recipientCausingTooManyRecipientsError
++ heightWithoutSeparator
++ windowDidResignKey:
++ _addable
++ addRecipient:atIndex:animate:
++ canSend
++ reflow
++ removeRecipient:
++ addRecipient:
+- initWithFrame:
+- dealloc
+- nextResponder
+- alertView:clickedButtonAtIndex:
+- textFieldDidResignFirstResponder:
+- textFieldDidBecomeFirstResponder:
+- reset
+- peoplePickerNavigationControllerDidCancel:
+- peoplePickerNavigationController:shouldContinueAfterSelectingPerson:
+- peoplePickerNavigationController:shouldContinueAfterSelectingPerson:property:identifier:
+- customOverlayContainer
+- atomViewForRecipient:
+- canInsertMoreRecipients
+- selectComposeRecipientAtom:
+- setNextResponder:
+- stopCheckingRecipientAvailabilityAndRemoveAllTimers
+- updateRecipientLimit
+- finishedComposingRecipients
+- forceMMS
+- setForceMMS:
+- preferredService
+- showErrorAlertForTooManyRecipientsUponSendIfNecessary
+- atomizeAndInvokeBlock:
+- removeRecipients
+- batchAddRecipients:
+- actionSheet
+- setActionSheet:
+- handlePreferredServiceChangedNotification:
+- updateForPreferredServiceChange
+- setIDSQueryUpdater:
+- _showActionSheetForAtom:animated:
+- setCanSend:
+- setServiceError:
+- setPreferredService:
+- atomPresentationOptionsForRecipient:
+- hasPendingAtoms
+- _autoSendIfReady
+- updatePreferredServiceForRecipients:
+- _setTextColorForPreferredService:
+- _reflowAnimated:
+- _reallyAutoSendIfReady
+- hasFailedAtoms
+- _hasTimedOutAtoms
+- iMessageAvailabilityForRecipient:
+- serviceError
+- removeAvailabilityTimeoutTimerForRecipient:
+- _checkAvailabilityOfAlternateAddressesForMFComposeRecipient:
+- startAvailabilityTimeoutTimerForRecipient:
+- _showOneTimeErrorAlertForTooManyRecipientsUponAddIfNecessary
+- _dismissPicker:
+- shouldShowCardForPerson:
+- IDSQueryUpdater
+- _refreshActionSheet
+- _hasAddressWithAvailability:
+- _alternateAddressesForMFComposeRecipient:onlyIMessageAble:
+- handleRecipientAvailabilityTimeout:
+- _stopCheckingRecipientAvailability
+- _calculateRecipientLimit
+- _serviceErrorIsForTooManyRecipients
+- _recipientCausingTooManyRecipientsError
+- heightWithoutSeparator
+- windowDidResignKey:
+- _addable
+- addRecipient:atIndex:animate:
+- canSend
+- reflow
+- removeRecipient:
+- addRecipient:
+@end

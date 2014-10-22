@@ -1,0 +1,6 @@
+@interface DOMHTMLDivElement : DOMHTMLElement
+{
+
+}
+
+@end

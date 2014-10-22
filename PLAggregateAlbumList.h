@@ -1,0 +1,62 @@
+@interface PLAggregateAlbumList : NSObject
+{
+	id _allAlbums;
+	id _childAlbumLists;
+	int _filter;
+}
+
++ dealloc
++ isEmpty
++ setFilter:
++ identifier
++ _typeDescription
++ managedObjectContext
++ albums
++ photoLibrary
++ albumsCount
++ _prettyDescription
++ containers
++ canEditContainers
++ containersRelationshipName
++ containersCount
++ albumListType
++ hasAtLeastOneAlbum
++ canEditAlbums
++ albumsSortingComparator
++ albumHasFixedOrder:
++ setNeedsReordering
++ needsReordering
++ updateAlbumsOrderIfNeeded
++ unreadAlbumsCount
++ assetContainerListDidChange:
++ initWithFilter:inPhotoLibrary:
++ _invalidateAllAlbums
++ filter
+- dealloc
+- isEmpty
+- setFilter:
+- identifier
+- _typeDescription
+- managedObjectContext
+- albums
+- photoLibrary
+- albumsCount
+- _prettyDescription
+- containers
+- canEditContainers
+- containersRelationshipName
+- containersCount
+- albumListType
+- hasAtLeastOneAlbum
+- canEditAlbums
+- albumsSortingComparator
+- albumHasFixedOrder:
+- setNeedsReordering
+- needsReordering
+- updateAlbumsOrderIfNeeded
+- unreadAlbumsCount
+- assetContainerListDidChange:
+- initWithFilter:inPhotoLibrary:
+- _invalidateAllAlbums
+- filter
+@end

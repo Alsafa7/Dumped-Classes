@@ -1,0 +1,69 @@
+@interface MCPayload : NSObject
+{
+	id _profile;
+	id _type;
+	id _payloadDescription;
+	id _displayName;
+	id _identifier;
+	id _organization;
+	id _UUID;
+	long long _version;
+	id _persistentResourceID;
+	BOOL _mustInstallNonInteractively;
+}
+
++ handlerWithProfileHandler:
++ initWithDictionary:profile:outError:
++ malformedPayloadErrorWithError:
++ stubDictionary
++ restrictions
++ description
++ type
++ UUID
++ title
++ identifier
++ displayName
++ version
++ friendlyName
++ subtitle1Label
++ subtitle1Description
++ installationWarnings
++ subtitle2Label
++ subtitle2Description
++ organization
++ persistentResourceID
++ mustInstallNonInteractively
++ setMustInstallNonInteractively:
++ setPersistentResourceID:
++ payloadDescription
++ setDisplayName:
++ .cxx_destruct
++ profile
+- handlerWithProfileHandler:
+- initWithDictionary:profile:outError:
+- malformedPayloadErrorWithError:
+- stubDictionary
+- restrictions
+- description
+- type
+- UUID
+- title
+- identifier
+- displayName
+- version
+- friendlyName
+- subtitle1Label
+- subtitle1Description
+- installationWarnings
+- subtitle2Label
+- subtitle2Description
+- organization
+- persistentResourceID
+- mustInstallNonInteractively
+- setMustInstallNonInteractively:
+- setPersistentResourceID:
+- payloadDescription
+- setDisplayName:
+- .cxx_destruct
+- profile
+@end

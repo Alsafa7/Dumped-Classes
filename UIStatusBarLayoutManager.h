@@ -1,0 +1,85 @@
+@interface UIStatusBarLayoutManager : NSObject
+{
+	id _foregroundView;
+	int _region;
+	Array _itemViews;
+	BOOL _persistentAnimationsEnabled;
+}
+
++ dealloc
++ _startPosition
++ initWithRegion:foregroundView:
++ setForegroundView:
++ prepareEnabledItems:withData:actions:
++ updateItemsWithData:actions:animated:
++ setVisibilityOfAllItems:
++ reflowWithVisibleItems:duration:
++ setVisibilityOfItem:visible:
++ positionInvisibleItems
++ removeDisabledItems:
++ makeVisibleItemsPerformPendedActions
++ rectForItems:
++ clearOverlapFromItems:
++ widthNeededForItems:
++ distributeOverlap:amongItems:
++ widthNeededForItem:
++ removeOverlap:fromItems:
++ itemIsVisible:
++ setPersistentAnimationsEnabled:
++ _prepareEnabledItemType:withEnabledItems:withData:actions:itemAppearing:itemDisappearing:
++ _positionNewItemViewsWithEnabledItems:
++ _itemViews
++ _updateItemView:withData:actions:animated:
++ foregroundView
++ _createViewForItem:withData:actions:
++ _itemViewsSortedForLayout
++ _frameForItemView:startPosition:
++ _positionAfterPlacingItemView:startPosition:
++ _repositionedNewFrame:widthDelta:
++ _processDelta:forView:
++ _viewForItem:
++ _widthNeededForItemView:
++ _itemSortSelector
++ prepareDoubleHeightItemWithEnabledItems:
++ updateDoubleHeightItem
++ itemView:widthChangedBy:
++ persistentAnimationsEnabled
+- dealloc
+- _startPosition
+- initWithRegion:foregroundView:
+- setForegroundView:
+- prepareEnabledItems:withData:actions:
+- updateItemsWithData:actions:animated:
+- setVisibilityOfAllItems:
+- reflowWithVisibleItems:duration:
+- setVisibilityOfItem:visible:
+- positionInvisibleItems
+- removeDisabledItems:
+- makeVisibleItemsPerformPendedActions
+- rectForItems:
+- clearOverlapFromItems:
+- widthNeededForItems:
+- distributeOverlap:amongItems:
+- widthNeededForItem:
+- removeOverlap:fromItems:
+- itemIsVisible:
+- setPersistentAnimationsEnabled:
+- _prepareEnabledItemType:withEnabledItems:withData:actions:itemAppearing:itemDisappearing:
+- _positionNewItemViewsWithEnabledItems:
+- _itemViews
+- _updateItemView:withData:actions:animated:
+- foregroundView
+- _createViewForItem:withData:actions:
+- _itemViewsSortedForLayout
+- _frameForItemView:startPosition:
+- _positionAfterPlacingItemView:startPosition:
+- _repositionedNewFrame:widthDelta:
+- _processDelta:forView:
+- _viewForItem:
+- _widthNeededForItemView:
+- _itemSortSelector
+- prepareDoubleHeightItemWithEnabledItems:
+- updateDoubleHeightItem
+- itemView:widthChangedBy:
+- persistentAnimationsEnabled
+@end

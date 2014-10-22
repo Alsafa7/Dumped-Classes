@@ -1,0 +1,76 @@
+@interface PLThumbnailManager : NSObject
+{
+	id _photoLibrary;
+	id _lock;
+	id _occupiedIndexes;
+	id _changedPhotosMap;
+	id _changedPhotos;
+	id _thumbManagersByFormat;
+	id _lastUsedThumbManager;
+	int _lastUsedThumbManagerFormat;
+	id _largeImageLoaderFullSize;
+	id _largeImageLoaderFullScreen;
+	id _largeImageLoaderFilledScreen;
+	id _largeImageLoaderFilledHalfScreen;
+	id _previouslyRequestedThumbnailFixOIDs;
+	id _requestedThumbnailFixAssets;
+	pointer _unicornContextPortrait;
+	pointer _unicornContextLandscape;
+	id _observerToken;
+}
+
++ dealloc
++ initWithWeakPhotoLibrary:
++ clearPhotoLibrary
++ photoLibrary
++ dataForPhoto:format:width:height:bytesPerRow:dataWidth:dataHeight:imageDataOffset:allowPlaceholder:
++ newImageForPhoto:withFormat:outImageProperties:allowPlaceholder:
++ _rebuildAssetThumbnailsWithLimit:error:
++ setObserverToken:
++ observerToken
++ setPhotoLibrary:
++ _thumbManagerForFormat:
++ _dataForAsset:format:width:height:bytesPerRow:dataWidth:dataHeight:imageDataOffset:imageDataFormat:
++ _unicorn_setThumbnailsForPhoto:withImage:
++ _horse_setThumbnailsForPhoto:withImage:
++ _anyImageTable
++ _dataForInFlightAsset:format:width:height:bytesPerRow:dataWidth:dataHeight:imageDataOffset:imageDataFormat:
++ setThumbnails:forPhoto:
++ placeholderThumbnailDataByFormatID
++ copyThumbnailsFromAsset:toAsset:
++ setThumbnailsForPhoto:withImage:
++ deleteThumbnailsWithIdentifier:orIndex:uuid:
++ preflightImageTableCompactionForPhotos:
++ compactImageTables
++ _tableDescriptions
++ preheatItemSourceForFormat:
++ thumbnailJPEGPathForPhoto:
++ thumbManagersByFormat
+- dealloc
+- initWithWeakPhotoLibrary:
+- clearPhotoLibrary
+- photoLibrary
+- dataForPhoto:format:width:height:bytesPerRow:dataWidth:dataHeight:imageDataOffset:allowPlaceholder:
+- newImageForPhoto:withFormat:outImageProperties:allowPlaceholder:
+- _rebuildAssetThumbnailsWithLimit:error:
+- setObserverToken:
+- observerToken
+- setPhotoLibrary:
+- _thumbManagerForFormat:
+- _dataForAsset:format:width:height:bytesPerRow:dataWidth:dataHeight:imageDataOffset:imageDataFormat:
+- _unicorn_setThumbnailsForPhoto:withImage:
+- _horse_setThumbnailsForPhoto:withImage:
+- _anyImageTable
+- _dataForInFlightAsset:format:width:height:bytesPerRow:dataWidth:dataHeight:imageDataOffset:imageDataFormat:
+- setThumbnails:forPhoto:
+- placeholderThumbnailDataByFormatID
+- copyThumbnailsFromAsset:toAsset:
+- setThumbnailsForPhoto:withImage:
+- deleteThumbnailsWithIdentifier:orIndex:uuid:
+- preflightImageTableCompactionForPhotos:
+- compactImageTables
+- _tableDescriptions
+- preheatItemSourceForFormat:
+- thumbnailJPEGPathForPhoto:
+- thumbManagersByFormat
+@end

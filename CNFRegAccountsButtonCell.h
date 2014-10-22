@@ -1,0 +1,6 @@
+@interface CNFRegAccountsButtonCell : PSTableCell
+{
+
+}
+
+@end

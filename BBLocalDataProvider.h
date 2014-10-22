@@ -1,0 +1,71 @@
+@interface BBLocalDataProvider : BBDataProvider
+{
+	id _localQueue;
+	id _remoteQueue;
+	id _dataProvider;
+	id _watchdogTimer;
+	BOOL _unresponsive;
+	BOOL _invalidated;
+}
+
++ dealloc
++ invalidate
++ setDataProvider:
++ dataProvider
++ clearedInfoForBulletins:lastClearedInfo:completion:
++ attachmentPNGDataForRecordID:sizeConstraints:completion:
++ attachmentAspectRatioForRecordID:completion:
++ deliverMessageWithName:userInfo:
++ bulletinsWithRequestParameters:lastCleared:completion:
++ updateClearedInfoWithClearedInfo:handler:completion:
++ updateSectionInfoWithSectionInfo:handler:completion:
++ deliverResponse:forBulletinRequest:
++ dataProviderDidLoad
++ bulletinsWithRequestParameters:lastCleared:
++ clearedInfoForBulletins:lastClearedInfo:
++ attachmentPNGDataForRecordID:sizeConstraints:
++ attachmentAspectRatioForRecordID:
++ migrateSectionInfo:oldSectionInfo:
++ noteSectionInfoDidChange:
++ startWatchdog
++ reloadIdentityWithCompletion:
++ canPerformMigration
++ initWithPrincipalClass:serverQueue:initializationCompletion:
++ initWithDataProvider:serverQueue:
++ _initWithDataProvider:sectionID:serverQueue:initializationCompletion:
++ _watchdogFired
++ _ping
++ _bulletinsWithRequestParameters:lastCleared:
++ _doSynchronousRemoteRequest:conditionalOn:
++ _doAsynchronousRemoteRequest:conditionalOn:completion:
+- dealloc
+- invalidate
+- setDataProvider:
+- dataProvider
+- clearedInfoForBulletins:lastClearedInfo:completion:
+- attachmentPNGDataForRecordID:sizeConstraints:completion:
+- attachmentAspectRatioForRecordID:completion:
+- deliverMessageWithName:userInfo:
+- bulletinsWithRequestParameters:lastCleared:completion:
+- updateClearedInfoWithClearedInfo:handler:completion:
+- updateSectionInfoWithSectionInfo:handler:completion:
+- deliverResponse:forBulletinRequest:
+- dataProviderDidLoad
+- bulletinsWithRequestParameters:lastCleared:
+- clearedInfoForBulletins:lastClearedInfo:
+- attachmentPNGDataForRecordID:sizeConstraints:
+- attachmentAspectRatioForRecordID:
+- migrateSectionInfo:oldSectionInfo:
+- noteSectionInfoDidChange:
+- startWatchdog
+- reloadIdentityWithCompletion:
+- canPerformMigration
+- initWithPrincipalClass:serverQueue:initializationCompletion:
+- initWithDataProvider:serverQueue:
+- _initWithDataProvider:sectionID:serverQueue:initializationCompletion:
+- _watchdogFired
+- _ping
+- _bulletinsWithRequestParameters:lastCleared:
+- _doSynchronousRemoteRequest:conditionalOn:
+- _doAsynchronousRemoteRequest:conditionalOn:completion:
+@end

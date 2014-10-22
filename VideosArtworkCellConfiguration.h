@@ -1,0 +1,6 @@
+@interface VideosArtworkCellConfiguration : MPUCollectionCellConfiguration
+{
+
+}
+
+@end

@@ -1,0 +1,61 @@
+@interface BKSAccelerometer : NSObject
+{
+	id _delegate;
+	pointer _accelerometerEventsSource;
+	pointer _accelerometerEventsRunLoop;
+	double _interval;
+	id _lock;
+	BOOL _orientationEventsEnabled;
+	int _orientationCheckToken;
+	int _orientationNotificationsToken;
+	id _orientationEventsThread;
+	float _xThreshold;
+	float _yThreshold;
+	float _zThreshold;
+}
+
++ dealloc
++ setDelegate:
++ init
++ delegate
++ setAccelerometerEventsEnabled:
++ accelerometerEventsEnabled
++ updateInterval
++ setUpdateInterval:
++ setXThreshold:
++ setYThreshold:
++ setZThreshold:
++ _checkIn
++ _checkOut
++ _orientationDidChange
++ xThreshold
++ yThreshold
++ zThreshold
++ _serverWasRestarted
++ orientationEventsEnabled
++ _orientationEventsThread
++ setOrientationEventsEnabled:
++ currentDeviceOrientation
+- dealloc
+- setDelegate:
+- init
+- delegate
+- setAccelerometerEventsEnabled:
+- accelerometerEventsEnabled
+- updateInterval
+- setUpdateInterval:
+- setXThreshold:
+- setYThreshold:
+- setZThreshold:
+- _checkIn
+- _checkOut
+- _orientationDidChange
+- xThreshold
+- yThreshold
+- zThreshold
+- _serverWasRestarted
+- orientationEventsEnabled
+- _orientationEventsThread
+- setOrientationEventsEnabled:
+- currentDeviceOrientation
+@end

@@ -1,0 +1,211 @@
+@interface MBServiceManager : MBManager
+{
+	int _serviceState;
+	id _stateQueue;
+	id _serviceGroup;
+	id _backupState;
+	id _restoreState;
+	id _engines;
+	id _enginesByContext;
+	BOOL _scheduled;
+	id _restoreSession;
+	id _restoreKeyBag;
+	id _lockManager;
+	int _obliterateToken;
+	id _reachabilityMonitor;
+	BOOL _notifyDisplayWifiTimerArmed;
+	id _userNotificationQueue;
+	pointer _warnTimerRef;
+	id _lowDiskSource;
+	BOOL _serverLoggingOverride;
+}
+
++ startBackupWithError:scheduled:
++ cancelEngineForContext:
++ accountChanged:
++ cancelRestoreForContext:
++ _loadBackupStateInfo
++ _loadRestoreSession
++ _cleanupStaleState
++ _obliterating
++ _cancelAllBackgroundRestoreEngines
++ _settingsContextForBackupUDID:
++ _encryptionManager
++ _notifyRestoreCompleted
++ _settingsContextForForegroundRestoreWithBackupUDID:snapshotID:
++ _runScanWithMode:context:
++ _service
++ _updateLockdownKeysForAccountState:
++ _finishedRestore
++ _setBackupDisabledIfMissingFromAccount
++ _runBackupWithContext:reason:
++ _runRestoreWithSettingsContext:delegateContext:
++ _settingsContextForBackgroundFileRestoreWithPath:
++ _startBackgroundRestoreWithSettingsContext:delegateContext:error:
++ _settingsContextForBackgroundAppRestoreWithBundleID:errorCode:
++ _debugContext
++ _finishRestore:
++ _clearRestoreSession
++ _disableHyperLogging
++ _domainInfoForName:cache:appManager:
++ _removeDomainName:service:error:
++ _deviceBackupFromCache
++ _saveFailedBackupShadowState
++ _coalesceSnapshotsWithService:error:
++ _notifyUserOfQuotaDepletionForContext:
++ _saveBackupStateInfo
++ _cleanupRestoreDirectory
++ _enableForegroundHyperLogging
++ _enableBackgroundHyperLogging
++ _prepareForBackgroundRestore
++ _finalizeRestoreDirectory
++ _alertUserOfIncompleteRestore
++ _notifyDisplayWifi
++ _performToolWithBackupUDID:snapshotID:block:
++ _shouldEnableHyperLogging
++ serviceDidHoldLock:
++ lockManagerDidReleaseLock:
++ lockManager:failedToReleaseLockWithError:
++ reachabilityMonitor:didDetectWifiStatusChange:
++ deviceBackup
++ serviceState
++ setLogLevel:
++ dealloc
++ init
++ description
++ restoreFilesForDomain:relativePath:pendingOnly:range:error:
++ setupBackupWithPasscode:error:
++ isBackupEnabled
++ setBackupEnabled:
++ syncBackupEnabled
++ backupState
++ getBackupListWithFiltering:error:
++ restoreFileExistsWithPath:
++ restoreDataExistsForApplicationWithBundleID:size:
++ prioritizeRestoreFileWithPath:
++ startRestoreForBackupUDID:snapshotID:error:
++ restoreFileWithPath:context:error:
++ restoreApplicationWithBundleID:failed:context:error:
++ cancelApplicationRestoreWithBundleID:error:
++ finishRestore
++ insufficientFreeSpaceToRestore
++ cancelRestore
++ deleteBackupUDID:error:
++ startScanWithError:
++ nextBackupSize
++ domainInfoForName:
++ domainInfoList
++ removeDomainName:error:
++ isBackupEnabledForDomainName:
++ setBackupEnabled:forDomainName:
++ extractItemFromBackupUDID:snapshotID:domainName:relativePath:toPath:error:
++ addFileToBackupUDID:snapshotID:domainName:relativePath:fromPath:error:
++ deleteItemFromBackupUDID:snapshotID:domainName:relativePath:error:
++ getAppleIDsForBackupUDID:snapshotID:error:
++ getLogLevel
++ setAllowiTunesBackup:
++ allowiTunesBackup
++ keyBagIsLocking
++ keyBagIsUnlocked
++ deleteAccountWithError:
++ deleteSnapshotID:fromBackupUDID:error:
++ acquireLockWithBackupUDID:owner:timeout:error:
++ releaseLockWithBackupUDID:owner:error:
++ repair
++ _account
++ restoreState
+- startBackupWithError:scheduled:
+- cancelEngineForContext:
+- accountChanged:
+- cancelRestoreForContext:
+- _loadBackupStateInfo
+- _loadRestoreSession
+- _cleanupStaleState
+- _obliterating
+- _cancelAllBackgroundRestoreEngines
+- _settingsContextForBackupUDID:
+- _encryptionManager
+- _notifyRestoreCompleted
+- _settingsContextForForegroundRestoreWithBackupUDID:snapshotID:
+- _runScanWithMode:context:
+- _service
+- _updateLockdownKeysForAccountState:
+- _finishedRestore
+- _setBackupDisabledIfMissingFromAccount
+- _runBackupWithContext:reason:
+- _runRestoreWithSettingsContext:delegateContext:
+- _settingsContextForBackgroundFileRestoreWithPath:
+- _startBackgroundRestoreWithSettingsContext:delegateContext:error:
+- _settingsContextForBackgroundAppRestoreWithBundleID:errorCode:
+- _debugContext
+- _finishRestore:
+- _clearRestoreSession
+- _disableHyperLogging
+- _domainInfoForName:cache:appManager:
+- _removeDomainName:service:error:
+- _deviceBackupFromCache
+- _saveFailedBackupShadowState
+- _coalesceSnapshotsWithService:error:
+- _notifyUserOfQuotaDepletionForContext:
+- _saveBackupStateInfo
+- _cleanupRestoreDirectory
+- _enableForegroundHyperLogging
+- _enableBackgroundHyperLogging
+- _prepareForBackgroundRestore
+- _finalizeRestoreDirectory
+- _alertUserOfIncompleteRestore
+- _notifyDisplayWifi
+- _performToolWithBackupUDID:snapshotID:block:
+- _shouldEnableHyperLogging
+- serviceDidHoldLock:
+- lockManagerDidReleaseLock:
+- lockManager:failedToReleaseLockWithError:
+- reachabilityMonitor:didDetectWifiStatusChange:
+- deviceBackup
+- serviceState
+- setLogLevel:
+- dealloc
+- init
+- description
+- restoreFilesForDomain:relativePath:pendingOnly:range:error:
+- setupBackupWithPasscode:error:
+- isBackupEnabled
+- setBackupEnabled:
+- syncBackupEnabled
+- backupState
+- getBackupListWithFiltering:error:
+- restoreFileExistsWithPath:
+- restoreDataExistsForApplicationWithBundleID:size:
+- prioritizeRestoreFileWithPath:
+- startRestoreForBackupUDID:snapshotID:error:
+- restoreFileWithPath:context:error:
+- restoreApplicationWithBundleID:failed:context:error:
+- cancelApplicationRestoreWithBundleID:error:
+- finishRestore
+- insufficientFreeSpaceToRestore
+- cancelRestore
+- deleteBackupUDID:error:
+- startScanWithError:
+- nextBackupSize
+- domainInfoForName:
+- domainInfoList
+- removeDomainName:error:
+- isBackupEnabledForDomainName:
+- setBackupEnabled:forDomainName:
+- extractItemFromBackupUDID:snapshotID:domainName:relativePath:toPath:error:
+- addFileToBackupUDID:snapshotID:domainName:relativePath:fromPath:error:
+- deleteItemFromBackupUDID:snapshotID:domainName:relativePath:error:
+- getAppleIDsForBackupUDID:snapshotID:error:
+- getLogLevel
+- setAllowiTunesBackup:
+- allowiTunesBackup
+- keyBagIsLocking
+- keyBagIsUnlocked
+- deleteAccountWithError:
+- deleteSnapshotID:fromBackupUDID:error:
+- acquireLockWithBackupUDID:owner:timeout:error:
+- releaseLockWithBackupUDID:owner:error:
+- repair
+- _account
+- restoreState
+@end

@@ -1,0 +1,75 @@
+@interface EKEventDescriptionGenerator : NSObject
+{
+	int _meCardID;
+	pointer _dateFormatter;
+	id _numberFormatter;
+	id _addressDetector;
+}
+
++ _addressBookDidChange:
++ _identifierForMeCard
++ _identifiersForAllCardsLinkedToMeCard
++ _nameForPersonWithIdentifier:
++ _firstNameForMeCard
++ _sharedNumberFormatter
++ _naturalLanguageDescriptionForEvent:isFirstInDay:
++ _sharedDateFormatter
++ _timeStringForEvent:forBeginningOfSentence:useExplicitTimes:followingComma:
++ _locationStringForEvent:
++ _attendeesForEvent:
++ _randomNumber
++ _eventIsAlreadyLate:
++ _prependBusyDayMessageToEventSummaryIfPossible:
++ _isDateInWeekend:
++ _arrayHasMorningEvents:
++ _prependFreeMorningMessageToEventSummaryIfPossible:
++ _arrayHasAfternoonEvents:
++ _appendFreeAfternoonMessageToEventSummaryIfPossible:
++ _doesEventStartEarly:
++ _prependEarlyStartMessageToEventSummaryIfPossible:
++ _prepareToUseMessageWithID:shouldAllowWeekendUsage:
++ _noonDateForEvents:
++ _adjustedMinutesTillEventStarts:
++ _startTimeRequiresSingularForEvent:withTimeString:
++ _addressDetector
++ _fetchIdentifierForMeCard
++ naturalLanguageDescriptionForBirthdayEvents:
++ naturalLanguageDescriptionForUpcomingEvents:firstInDay:
++ tomorrowSnippetForUpcomingEvents:withTodayEvents:
++ dealloc
++ init
++ .cxx_destruct
+- _addressBookDidChange:
+- _identifierForMeCard
+- _identifiersForAllCardsLinkedToMeCard
+- _nameForPersonWithIdentifier:
+- _firstNameForMeCard
+- _sharedNumberFormatter
+- _naturalLanguageDescriptionForEvent:isFirstInDay:
+- _sharedDateFormatter
+- _timeStringForEvent:forBeginningOfSentence:useExplicitTimes:followingComma:
+- _locationStringForEvent:
+- _attendeesForEvent:
+- _randomNumber
+- _eventIsAlreadyLate:
+- _prependBusyDayMessageToEventSummaryIfPossible:
+- _isDateInWeekend:
+- _arrayHasMorningEvents:
+- _prependFreeMorningMessageToEventSummaryIfPossible:
+- _arrayHasAfternoonEvents:
+- _appendFreeAfternoonMessageToEventSummaryIfPossible:
+- _doesEventStartEarly:
+- _prependEarlyStartMessageToEventSummaryIfPossible:
+- _prepareToUseMessageWithID:shouldAllowWeekendUsage:
+- _noonDateForEvents:
+- _adjustedMinutesTillEventStarts:
+- _startTimeRequiresSingularForEvent:withTimeString:
+- _addressDetector
+- _fetchIdentifierForMeCard
+- naturalLanguageDescriptionForBirthdayEvents:
+- naturalLanguageDescriptionForUpcomingEvents:firstInDay:
+- tomorrowSnippetForUpcomingEvents:withTodayEvents:
+- dealloc
+- init
+- .cxx_destruct
+@end

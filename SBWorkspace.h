@@ -1,0 +1,136 @@
+@interface SBWorkspace : NSObject
+{
+	id _bksWorkspace;
+	id _alertManager;
+	BOOL _alertManagerIsDeactivatingAlert;
+	id _screenTimeTrackingController;
+	id _currentTransaction;
+	id _eventQueueLock;
+	id _transactionWatchdog;
+	id _relaunchTimer;
+	id _applicationsToRelaunch;
+}
+
++ bksWorkspace
++ _applicationForBundleIdentifier:frontmost:
++ _selectTransactionForAppActivationToApp:activationHandler:
++ updateInterruptedByCallSettingsFrom:to:
++ alertManager
++ _selectTransactionForAppActivationUnderMainScreenLock:
++ _selectTransactionForReturningToTheLockScreenWithActivationHandler:
++ _memoryPressureRelieved:
++ _memoryPressureWarn:
++ _selectTransactionForReturningToTheLockScreenFromApp:forceToBuddy:withActivationHandler:
++ _selectTransactionForAppActivationToApp:activationHandler:canDeactivateAlerts:
++ _launchNextPendedAutoLaunchApp
++ _invalidateRelaunchTimer
++ _scheduleRelaunchTimerIfNecessary
++ _handleSetupExited:
++ _noteCurrentTransactionFailed:
++ _handleBuddyLaunchFinished
++ _selectTransactionForAppExited:
++ _applicationExited:withInfo:
++ _selectTransactionForAppRelaunch:
++ _updateStatusBarTimeItemEnabled
++ alertManager:topAlert:requestsWallpaperStyleChangeWithAnimationFactory:
++ starkScreenController:didChangeStateFromState:
++ alertManager:shouldDeactivateDismissedAlert:
++ alertManager:newAlertWindowForLockAlerts:
++ alertManager:willActivateAlert:overAlerts:
++ alertManager:didActivateAlert:overAlerts:
++ alertManager:willDeactivateAlert:top:
++ alertManager:didDeactivateAlert:top:
++ alertManagerDidChangeTopAlert:
++ alertManager:willTearDownAlertWindow:
++ alertManager:didTearDownAlertWindow:
++ alertManager:didRemoveAlert:fromWindow:
++ transactionGroup:childTransactionDidFinish:success:
++ transactionDidFinish:success:
++ starkScreenManagerWillChangeActiveController:
++ starkScreenManagerDidChangeActiveController:
++ dealloc
++ init
++ debugDescription
++ workspace:applicationWillBecomeReceiver:fromApplication:
++ workspaceWillSuspend:
++ workspace:applicationDidBecomeReceiver:fromApplication:
++ workspace:handleStatusBarReturnActionFromApplication:statusBarStyle:
++ workspace:applicationDidStartLaunching:
++ workspace:applicationDidFinishLaunching:withInfo:
++ workspace:applicationActivated:
++ workspace:applicationExited:withInfo:
++ workspace:applicationSuspended:withSettings:
++ workspace:applicationSuspensionSettingsUpdated:withSettings:
++ workspace:applicationFinishedBackgroundContentFetching:withInfo:
++ workspaceDidSuspend:
++ workspaceDidResume:
++ workspaceWillResume:
++ workspace:applicationDidFailToLaunch:
++ workspace:applicationDebugStateChanged:newState:
++ workspace:canOpenApplication:
++ workspace:handleOpenApplicationRequest:withOptions:origin:withResult:
++ workspace:handleOpenURLRequest:application:withOptions:origin:withResult:
++ currentTransaction
++ setCurrentTransaction:
+- bksWorkspace
+- _applicationForBundleIdentifier:frontmost:
+- _selectTransactionForAppActivationToApp:activationHandler:
+- updateInterruptedByCallSettingsFrom:to:
+- alertManager
+- _selectTransactionForAppActivationUnderMainScreenLock:
+- _selectTransactionForReturningToTheLockScreenWithActivationHandler:
+- _memoryPressureRelieved:
+- _memoryPressureWarn:
+- _selectTransactionForReturningToTheLockScreenFromApp:forceToBuddy:withActivationHandler:
+- _selectTransactionForAppActivationToApp:activationHandler:canDeactivateAlerts:
+- _launchNextPendedAutoLaunchApp
+- _invalidateRelaunchTimer
+- _scheduleRelaunchTimerIfNecessary
+- _handleSetupExited:
+- _noteCurrentTransactionFailed:
+- _handleBuddyLaunchFinished
+- _selectTransactionForAppExited:
+- _applicationExited:withInfo:
+- _selectTransactionForAppRelaunch:
+- _updateStatusBarTimeItemEnabled
+- alertManager:topAlert:requestsWallpaperStyleChangeWithAnimationFactory:
+- starkScreenController:didChangeStateFromState:
+- alertManager:shouldDeactivateDismissedAlert:
+- alertManager:newAlertWindowForLockAlerts:
+- alertManager:willActivateAlert:overAlerts:
+- alertManager:didActivateAlert:overAlerts:
+- alertManager:willDeactivateAlert:top:
+- alertManager:didDeactivateAlert:top:
+- alertManagerDidChangeTopAlert:
+- alertManager:willTearDownAlertWindow:
+- alertManager:didTearDownAlertWindow:
+- alertManager:didRemoveAlert:fromWindow:
+- transactionGroup:childTransactionDidFinish:success:
+- transactionDidFinish:success:
+- starkScreenManagerWillChangeActiveController:
+- starkScreenManagerDidChangeActiveController:
+- dealloc
+- init
+- debugDescription
+- workspace:applicationWillBecomeReceiver:fromApplication:
+- workspaceWillSuspend:
+- workspace:applicationDidBecomeReceiver:fromApplication:
+- workspace:handleStatusBarReturnActionFromApplication:statusBarStyle:
+- workspace:applicationDidStartLaunching:
+- workspace:applicationDidFinishLaunching:withInfo:
+- workspace:applicationActivated:
+- workspace:applicationExited:withInfo:
+- workspace:applicationSuspended:withSettings:
+- workspace:applicationSuspensionSettingsUpdated:withSettings:
+- workspace:applicationFinishedBackgroundContentFetching:withInfo:
+- workspaceDidSuspend:
+- workspaceDidResume:
+- workspaceWillResume:
+- workspace:applicationDidFailToLaunch:
+- workspace:applicationDebugStateChanged:newState:
+- workspace:canOpenApplication:
+- workspace:handleOpenApplicationRequest:withOptions:origin:withResult:
+- workspace:handleOpenURLRequest:application:withOptions:origin:withResult:
+- currentTransaction
+- setCurrentTransaction:
+@end

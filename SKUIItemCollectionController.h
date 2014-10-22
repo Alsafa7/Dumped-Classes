@@ -1,0 +1,119 @@
+@interface SKUIItemCollectionController : NSObject
+{
+	id _artworkContext;
+	id _artworkLoader;
+	id _clientContext;
+	id _delegate;
+	BOOL _delegateProvidesScreenshots;
+	id _iconArtworkRequestIDs;
+	id _iconDataConsumer;
+	id _items;
+	id _landscapeScreenshotDataConsumer;
+	id _landscapeScreenshotPlaceholderImage;
+	long long _numberOfItemsPerPage;
+	double _numberOfPagesToCacheAhead;
+	id _portraitScreenshotDataConsumer;
+	id _portraitScreenshotPlaceholderImage;
+	id _placeholderImage;
+	id _screenshotArtworkRequestIDs;
+}
+
++ dealloc
++ setDelegate:
++ init
++ scrollViewWillBeginDragging:
++ scrollViewWillEndDragging:withVelocity:targetContentOffset:
++ scrollViewDidEndDecelerating:
++ delegate
++ items
++ setItems:
++ itemStateCenter:itemStatesChanged:
++ itemStateCenterRestrictionsChanged:
++ artworkContext
++ artworkRequest:didLoadImage:
++ artworkLoaderDidIdle:
++ removeAllCachedResources
++ initWithClientContext:
++ configureCellLayout:forIndex:
++ setArtworkContext:
++ setNumberOfItemsPerPage:
++ setNumberOfPagesToCacheAhead:
++ setLandscapeScreenshotDataConsumer:
++ setPortraitScreenshotDataConsumer:
++ artworkLoader
++ iconDataConsumer
++ loadNextPageOfArtworkWithReason:
++ setIconDataConsumer:
++ precacheNextPageArtworkForOffset:direction:
++ performActionForItemAtIndex:
++ cancelArtworkLoadForItemIndex:
++ setArtworkLoader:
++ _initSKUIItemCollectionController
++ _iconArtworkRequestWithItem:
++ _placeholderImageForItem:
++ _reloadScreenshotForCellLayout:item:isRestricted:
++ _loadArtworkForItem:reason:
++ numberOfPagesToCacheAhead
++ _enumerateVisibleCellLayoutsWithBlock:
++ _reloadForItemStateChange:
++ _reloadForRestrictionsChange
++ _visibleItemRange
++ _screenshotArtworkRequestWithItem:
++ landscapeScreenshotDataConsumer
++ portraitScreenshotDataConsumer
++ _screenshotForItem:
++ _placeholderImageForScreenshot:
++ numberOfItemsPerPage
++ .cxx_destruct
++ _memoryWarningNotification:
++ _artworkLoader
+- dealloc
+- setDelegate:
+- init
+- scrollViewWillBeginDragging:
+- scrollViewWillEndDragging:withVelocity:targetContentOffset:
+- scrollViewDidEndDecelerating:
+- delegate
+- items
+- setItems:
+- itemStateCenter:itemStatesChanged:
+- itemStateCenterRestrictionsChanged:
+- artworkContext
+- artworkRequest:didLoadImage:
+- artworkLoaderDidIdle:
+- removeAllCachedResources
+- initWithClientContext:
+- configureCellLayout:forIndex:
+- setArtworkContext:
+- setNumberOfItemsPerPage:
+- setNumberOfPagesToCacheAhead:
+- setLandscapeScreenshotDataConsumer:
+- setPortraitScreenshotDataConsumer:
+- artworkLoader
+- iconDataConsumer
+- loadNextPageOfArtworkWithReason:
+- setIconDataConsumer:
+- precacheNextPageArtworkForOffset:direction:
+- performActionForItemAtIndex:
+- cancelArtworkLoadForItemIndex:
+- setArtworkLoader:
+- _initSKUIItemCollectionController
+- _iconArtworkRequestWithItem:
+- _placeholderImageForItem:
+- _reloadScreenshotForCellLayout:item:isRestricted:
+- _loadArtworkForItem:reason:
+- numberOfPagesToCacheAhead
+- _enumerateVisibleCellLayoutsWithBlock:
+- _reloadForItemStateChange:
+- _reloadForRestrictionsChange
+- _visibleItemRange
+- _screenshotArtworkRequestWithItem:
+- landscapeScreenshotDataConsumer
+- portraitScreenshotDataConsumer
+- _screenshotForItem:
+- _placeholderImageForScreenshot:
+- numberOfItemsPerPage
+- .cxx_destruct
+- _memoryWarningNotification:
+- _artworkLoader
+@end

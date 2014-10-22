@@ -1,0 +1,100 @@
+@interface ISSoftwareApplication : NSObject
+{
+	id _accountDSID;
+	id _accountIdentifier;
+	id _bundleIdentifier;
+	id _bundleShortVersionString;
+	id _bundleVersion;
+	id _containerPath;
+	id _contentRating;
+	id _deviceIdentifierForVendor;
+	id _itemIdentifier;
+	id _itemName;
+	BOOL _profileValidated;
+	id _softwareType;
+	id _storeFrontIdentifier;
+	id _versionIdentifier;
+	id _versionOrdering;
+	id _receiptExpirationDate;
+	usigned long long _vppStateFlags;
+}
+
++ bundleVersion
++ setAccountIdentifier:
++ dealloc
++ description
++ bundleIdentifier
++ deviceIdentifierForVendor
++ accountIdentifier
++ contentRating
++ setContentRating:
++ initWithXPCEncoding:
++ copyXPCEncoding
++ isProfileValidated
++ setProfileValidated:
++ setBundleShortVersionString:
++ setAccountDSID:
++ setContainerPath:
++ _loadMetadataFromContainer:
++ setItemName:
++ resetVPPStateFlags
++ vppStateFlags
++ containerPath
++ setDeviceIdentifierForVendor:
++ itemName
++ receiptExpirationDate
++ accountDSID
++ itemIdentifier
++ storeFrontIdentifier
++ setStoreFrontIdentifier:
++ bundleShortVersionString
++ softwareType
++ versionIdentifier
++ initWithMobileInstallationDictionary:
++ setItemIdentifier:
++ versionOrdering
++ setBundleIdentifier:
++ setBundleVersion:
++ setSoftwareType:
++ setVersionIdentifier:
++ setVersionOrdering:
+- bundleVersion
+- setAccountIdentifier:
+- dealloc
+- description
+- bundleIdentifier
+- deviceIdentifierForVendor
+- accountIdentifier
+- contentRating
+- setContentRating:
+- initWithXPCEncoding:
+- copyXPCEncoding
+- isProfileValidated
+- setProfileValidated:
+- setBundleShortVersionString:
+- setAccountDSID:
+- setContainerPath:
+- _loadMetadataFromContainer:
+- setItemName:
+- resetVPPStateFlags
+- vppStateFlags
+- containerPath
+- setDeviceIdentifierForVendor:
+- itemName
+- receiptExpirationDate
+- accountDSID
+- itemIdentifier
+- storeFrontIdentifier
+- setStoreFrontIdentifier:
+- bundleShortVersionString
+- softwareType
+- versionIdentifier
+- initWithMobileInstallationDictionary:
+- setItemIdentifier:
+- versionOrdering
+- setBundleIdentifier:
+- setBundleVersion:
+- setSoftwareType:
+- setVersionIdentifier:
+- setVersionOrdering:
+@end

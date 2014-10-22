@@ -1,0 +1,112 @@
+@interface SBAlertItemsController : NSObject
+{
+	id _lockedAlertItems;
+	id _unlockedAlertItems;
+	id _pendingAlertItems;
+	id _superModalAlertItems;
+	id _autoDismissTimer;
+	id _notificationCenter;
+	usigned long long _notificationClientCount;
+	BOOL _systemShuttingDown;
+	BOOL _lockedButNotSetupYet;
+	id _forceAlertsToPendReasons;
+	id _bbObserver;
+	id _observers;
+	id _settings;
+	id _testItem;
+	id _suppressionAssertions;
+}
+
++ hasVisibleAlert
++ noteSystemShuttingDown
++ noteVolumeOrLockPressedOverLockedAlerts
++ deactivateAlertItemsOfClass:
++ handleVolumeIncrease
++ handleVolumeDecrease
++ hasAlerts
++ canDeactivateAlertForMenuClickOrSystemGesture
++ deactivateAlertForMenuClickOrSystemGestureWithAnimation:
++ deactivateAlertItem:
++ deactivateAlertItemsForFullscreenAlertActivationAndPendMiniAlerts:
++ stopPendingAlertItemsForFullscreenAlert
++ setForceAlertsToPend:forReason:
++ visibleAlertItem
++ captureSuppressionAssertionWithPort:reason:
++ hasAlertOfClass:
++ deactivateAlertItem:reason:animated:
++ _notificationClientStarted:
++ _notificationClientEnded:
++ _buddyDidExit
++ _lockedButNotSetupYetChanged
++ autoDismissAlertItem:
++ _activateSuperModalAlertsIfNecessary
++ activatePendedAlertsIfNecessary
++ deactivateAlertItemsOfClass:reason:
++ deactivateAlertItemsOfClass:reason:animated:
++ alertItemsOfClass:
++ moveActiveAlertsToPendingWithAnimation:
++ _postAlertPresentedNotificationForType:sender:date:
++ assertionExpired:
++ hasVisibleSuperModalAlert
++ convertUnlockedAlertsToLockedAlerts
++ resetAutoDismissTimer
++ dontLockOverAlertItems
++ lockedAlertItems
++ activateAlertItem:
++ dealloc
++ init
++ description
++ removeObserver:
++ settings:changedValueForKey:
++ addObserver:
++ observer:addBulletin:forFeed:
++ notifySystemOfAlertItemActivation:
++ deactivateAlertItem:reason:
++ _notifyObservers:
+- hasVisibleAlert
+- noteSystemShuttingDown
+- noteVolumeOrLockPressedOverLockedAlerts
+- deactivateAlertItemsOfClass:
+- handleVolumeIncrease
+- handleVolumeDecrease
+- hasAlerts
+- canDeactivateAlertForMenuClickOrSystemGesture
+- deactivateAlertForMenuClickOrSystemGestureWithAnimation:
+- deactivateAlertItem:
+- deactivateAlertItemsForFullscreenAlertActivationAndPendMiniAlerts:
+- stopPendingAlertItemsForFullscreenAlert
+- setForceAlertsToPend:forReason:
+- visibleAlertItem
+- captureSuppressionAssertionWithPort:reason:
+- hasAlertOfClass:
+- deactivateAlertItem:reason:animated:
+- _notificationClientStarted:
+- _notificationClientEnded:
+- _buddyDidExit
+- _lockedButNotSetupYetChanged
+- autoDismissAlertItem:
+- _activateSuperModalAlertsIfNecessary
+- activatePendedAlertsIfNecessary
+- deactivateAlertItemsOfClass:reason:
+- deactivateAlertItemsOfClass:reason:animated:
+- alertItemsOfClass:
+- moveActiveAlertsToPendingWithAnimation:
+- _postAlertPresentedNotificationForType:sender:date:
+- assertionExpired:
+- hasVisibleSuperModalAlert
+- convertUnlockedAlertsToLockedAlerts
+- resetAutoDismissTimer
+- dontLockOverAlertItems
+- lockedAlertItems
+- activateAlertItem:
+- dealloc
+- init
+- description
+- removeObserver:
+- settings:changedValueForKey:
+- addObserver:
+- observer:addBulletin:forFeed:
+- notifySystemOfAlertItemActivation:
+- deactivateAlertItem:reason:
+- _notifyObservers:
+@end

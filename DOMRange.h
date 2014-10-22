@@ -1,0 +1,6 @@
+@interface DOMRange : DOMObject
+{
+
+}
+
+@end

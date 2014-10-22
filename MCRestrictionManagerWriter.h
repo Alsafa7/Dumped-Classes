@@ -1,0 +1,71 @@
+@interface MCRestrictionManagerWriter : MCRestrictionManager
+{
+	int _senderPID;
+	id _clientTypeLoaders;
+}
+
++ _init
++ setUserInfo:forClientUUID:
++ recomputeNagMetadata
++ memberQueueCommitRestrictionsToDisk
++ memberQueueRecomputeEffectiveUserSettingsPasscode:
++ memberQueueSetAllClientRestrictions:outRestrictionsChanged:outEffectiveSettingsChanged:outError:
++ memberQueueCommitClientRestrictionsToDisk
++ _liveClientUUIDsForClientType:
++ memberQueueCommitEffectiveUserSettingsToDiskOldEffectiveUserSettings:
++ memberQueueSetParametersForSettingsByType:passcode:
++ setProfileRestrictions:outRestrictionsChanged:outEffectiveSettingsChanged:outAppWhitelistSettingsChanged:outRecomputedNag:outError:
++ setAllClientRestrictions:outRestrictionsChanged:outEffectiveSettingsChanged:outRecomputedNag:outError:
++ setClientRestrictions:clientType:clientUUID:localizedClientDescription:localizedWarning:outRestrictionsChanged:outEffectiveSettingsChanged:outRecomputedNag:outError:
++ setShowNagMessage
++ notifyHaveSeenComplianceMessageWithLastLockDate:
++ setIntersectionValues:forSetting:
++ setUnionValues:forSetting:
++ recomputeEffectiveUserSettingsPasscode:
++ senderPID
++ setSenderPID:
++ clientTypeLoaders
++ removeOrphanedClientRestrictions
++ setParametersForSettingsByType:passcode:
++ setParametersForSettingsByType:
++ setBoolValue:forSetting:
++ setValue:forSetting:
++ removeBoolSetting:
++ removeValueSetting:
++ resetAllSettingsToDefaults
++ notifyClientsToRecomputeCompliance
++ memberQueueCommitUserSettingsToDisk
++ .cxx_destruct
+- _init
+- setUserInfo:forClientUUID:
+- recomputeNagMetadata
+- memberQueueCommitRestrictionsToDisk
+- memberQueueRecomputeEffectiveUserSettingsPasscode:
+- memberQueueSetAllClientRestrictions:outRestrictionsChanged:outEffectiveSettingsChanged:outError:
+- memberQueueCommitClientRestrictionsToDisk
+- _liveClientUUIDsForClientType:
+- memberQueueCommitEffectiveUserSettingsToDiskOldEffectiveUserSettings:
+- memberQueueSetParametersForSettingsByType:passcode:
+- setProfileRestrictions:outRestrictionsChanged:outEffectiveSettingsChanged:outAppWhitelistSettingsChanged:outRecomputedNag:outError:
+- setAllClientRestrictions:outRestrictionsChanged:outEffectiveSettingsChanged:outRecomputedNag:outError:
+- setClientRestrictions:clientType:clientUUID:localizedClientDescription:localizedWarning:outRestrictionsChanged:outEffectiveSettingsChanged:outRecomputedNag:outError:
+- setShowNagMessage
+- notifyHaveSeenComplianceMessageWithLastLockDate:
+- setIntersectionValues:forSetting:
+- setUnionValues:forSetting:
+- recomputeEffectiveUserSettingsPasscode:
+- senderPID
+- setSenderPID:
+- clientTypeLoaders
+- removeOrphanedClientRestrictions
+- setParametersForSettingsByType:passcode:
+- setParametersForSettingsByType:
+- setBoolValue:forSetting:
+- setValue:forSetting:
+- removeBoolSetting:
+- removeValueSetting:
+- resetAllSettingsToDefaults
+- notifyClientsToRecomputeCompliance
+- memberQueueCommitUserSettingsToDisk
+- .cxx_destruct
+@end

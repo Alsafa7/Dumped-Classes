@@ -1,0 +1,257 @@
+@interface UISlider : UIControl
+{
+	float _value;
+	float _minValue;
+	float _maxValue;
+	double _alpha;
+	pointer _contentLookup;
+	id _minValueImageView;
+	id _maxValueImageView;
+	id _thumbView;
+	id _minTrackView;
+	id _maxTrackView;
+	id _maxTrackClipView;
+	struct _sliderFlags;
+	double _hitOffset;
+	id _minTintColor;
+	id _maxTintColor;
+	id _thumbTintColor;
+	id _trackMaskLayer;
+	id _trackContainerView;
+	id _thumbViewNeue;
+	id _thumbViewNeueShape;
+	BOOL _useLookNeue;
+	BOOL _trackIsArtworkBased;
+	BOOL _thumbIsArtworkBased;
+	id _minTrackViewNeue;
+	id _maxTrackViewNeue;
+	id _maxTrackGradientLayer;
+	BOOL _maxColorIsValid;
+	id _innerThumbView;
+}
+
++ isAccessibilityElementByDefault
++ isElementAccessibilityExposedToInterfaceBuilder
++ scriptingInfoWithChildren
++ _scriptingInfo
++ _contentForState:
++ _setContent:forState:
++ _thumbImageForState:
++ _minimumTrackImageForState:
++ _maximumTrackImageForState:
++ _setThumbImage:forStates:
++ _setMinimumTrackImage:forStates:
++ _setMaximumTrackImage:forStates:
++ _setThumbTintColor:forStates:
++ _alwaysHandleScrollerMouseEvent
++ setMinimumTrackImage:forStates:
++ setMaximumTrackImage:forStates:
++ setThumbImage:forStates:
++ createThumbView
++ valueTextRectForBounds:
++ _thumbHitEdgeInsets
++ _minTrackView
++ _maxTrackView
++ isAnimatingValueChange
++ setShowValue:
++ _setTrackEnabled:
++ _trackEnabled
++ _setThumbEnabled:
++ _setMinimumTrackVisible:withDuration:
++ _isThumbEnabled
++ _setUseLookNeue:
++ _minValueView
++ _maxValueView
++ initWithFrame:
++ dealloc
++ initWithCoder:
++ _populateArchivedSubviews:
++ encodeWithCoder:
++ setAlpha:
++ didMoveToWindow
++ _intrinsicSizeWithinSize:
++ init
++ setFrame:
++ layoutSubviews
++ setBounds:
++ description
++ _contentHuggingDefault_isUsuallyFixedHeight
++ sizeThatFits:
++ gestureRecognizerShouldBegin:
++ alignmentRectInsets
++ setValue:
++ cancelTouchTracking
++ cancelMouseTracking
++ animationDidStop:finished:
++ value
++ tintColorDidChange
++ setEnabled:
++ setHighlighted:
++ setSelected:
++ beginTrackingWithTouch:withEvent:
++ _controlTouchBegan:withEvent:
++ continueTrackingWithTouch:withEvent:
++ _controlTouchMoved:withEvent:
++ endTrackingWithTouch:withEvent:
++ _controlTouchEnded:withEvent:
++ _sendDelayedActions
++ setMinimumTrackTintColor:
++ setMaximumTrackTintColor:
++ setThumbTintColor:
++ minimumValueImage
++ maximumValueImage
++ trackRectForBounds:
++ thumbRectForBounds:trackRect:value:
++ minimumTrackImageForState:
++ maximumTrackImageForState:
++ thumbImageForState:
++ _buildTrackArtwork
++ _buildTrackNeue
++ _roundedCornersBezierPathInRect:
++ _rebuildControlThumb:track:
++ _maskPathForBounds:edgeInset:andProgress:
++ _layoutSubviewsForBoundsChange:
++ minimumValueImageRectForBounds:
++ maximumValueImageRectForBounds:
++ minimumValue
++ maximumValue
++ currentThumbImage
++ _initImages
++ _initSubviews
++ currentMinimumTrackImage
++ currentMaximumTrackImage
++ _updateMaxTrackColor
++ _updateAppearanceForEnabled:
++ setValue:animated:
++ _sliderAnimationWillStart:context:
++ _sliderAnimationDidStop:finished:context:
++ _setValue:andSendAction:
++ _setValue:minValue:maxValue:andSendAction:
++ isContinuous
++ createThumbViewNeue
++ setThumbImage:forState:
++ setMinimumTrackImage:forState:
++ setMaximumTrackImage:forState:
++ setMinimumValueImage:
++ setMaximumValueImage:
++ _fillTrackMaskAnimated:
++ _emptyTrackMaskAnimated:
++ setContinuous:
++ setMinimumValue:
++ setMaximumValue:
++ minimumTrackTintColor
++ maximumTrackTintColor
++ thumbTintColor
+- isAccessibilityElementByDefault
+- isElementAccessibilityExposedToInterfaceBuilder
+- scriptingInfoWithChildren
+- _scriptingInfo
+- _contentForState:
+- _setContent:forState:
+- _thumbImageForState:
+- _minimumTrackImageForState:
+- _maximumTrackImageForState:
+- _setThumbImage:forStates:
+- _setMinimumTrackImage:forStates:
+- _setMaximumTrackImage:forStates:
+- _setThumbTintColor:forStates:
+- _alwaysHandleScrollerMouseEvent
+- setMinimumTrackImage:forStates:
+- setMaximumTrackImage:forStates:
+- setThumbImage:forStates:
+- createThumbView
+- valueTextRectForBounds:
+- _thumbHitEdgeInsets
+- _minTrackView
+- _maxTrackView
+- isAnimatingValueChange
+- setShowValue:
+- _setTrackEnabled:
+- _trackEnabled
+- _setThumbEnabled:
+- _setMinimumTrackVisible:withDuration:
+- _isThumbEnabled
+- _setUseLookNeue:
+- _minValueView
+- _maxValueView
+- initWithFrame:
+- dealloc
+- initWithCoder:
+- _populateArchivedSubviews:
+- encodeWithCoder:
+- setAlpha:
+- didMoveToWindow
+- _intrinsicSizeWithinSize:
+- init
+- setFrame:
+- layoutSubviews
+- setBounds:
+- description
+- _contentHuggingDefault_isUsuallyFixedHeight
+- sizeThatFits:
+- gestureRecognizerShouldBegin:
+- alignmentRectInsets
+- setValue:
+- cancelTouchTracking
+- cancelMouseTracking
+- animationDidStop:finished:
+- value
+- tintColorDidChange
+- setEnabled:
+- setHighlighted:
+- setSelected:
+- beginTrackingWithTouch:withEvent:
+- _controlTouchBegan:withEvent:
+- continueTrackingWithTouch:withEvent:
+- _controlTouchMoved:withEvent:
+- endTrackingWithTouch:withEvent:
+- _controlTouchEnded:withEvent:
+- _sendDelayedActions
+- setMinimumTrackTintColor:
+- setMaximumTrackTintColor:
+- setThumbTintColor:
+- minimumValueImage
+- maximumValueImage
+- trackRectForBounds:
+- thumbRectForBounds:trackRect:value:
+- minimumTrackImageForState:
+- maximumTrackImageForState:
+- thumbImageForState:
+- _buildTrackArtwork
+- _buildTrackNeue
+- _roundedCornersBezierPathInRect:
+- _rebuildControlThumb:track:
+- _maskPathForBounds:edgeInset:andProgress:
+- _layoutSubviewsForBoundsChange:
+- minimumValueImageRectForBounds:
+- maximumValueImageRectForBounds:
+- minimumValue
+- maximumValue
+- currentThumbImage
+- _initImages
+- _initSubviews
+- currentMinimumTrackImage
+- currentMaximumTrackImage
+- _updateMaxTrackColor
+- _updateAppearanceForEnabled:
+- setValue:animated:
+- _sliderAnimationWillStart:context:
+- _sliderAnimationDidStop:finished:context:
+- _setValue:andSendAction:
+- _setValue:minValue:maxValue:andSendAction:
+- isContinuous
+- createThumbViewNeue
+- setThumbImage:forState:
+- setMinimumTrackImage:forState:
+- setMaximumTrackImage:forState:
+- setMinimumValueImage:
+- setMaximumValueImage:
+- _fillTrackMaskAnimated:
+- _emptyTrackMaskAnimated:
+- setContinuous:
+- setMinimumValue:
+- setMaximumValue:
+- minimumTrackTintColor
+- maximumTrackTintColor
+- thumbTintColor
+@end

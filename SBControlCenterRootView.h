@@ -1,0 +1,6 @@
+@interface SBControlCenterRootView : UIView
+{
+
+}
+
+@end

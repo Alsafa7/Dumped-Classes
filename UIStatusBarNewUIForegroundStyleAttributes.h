@@ -1,0 +1,61 @@
+@interface UIStatusBarNewUIForegroundStyleAttributes : UIStatusBarForegroundStyleAttributes
+{
+	id _backgroundColor;
+	id _uniqueIdentifier;
+	BOOL _isTintColorBlack;
+	id _tintColor;
+}
+
++ dealloc
++ tintColor
++ textColorForStyle:
++ initWithHeight:legibilityStyle:
++ initWithHeight:legibilityStyle:tintColor:backgroundColor:
++ edgePadding
++ imageNamed:withLegibilityStyle:legibilityStrength:
++ textForNetworkType:
++ batteryAccessoryMargin
++ drawBatteryInsidesWithSize:capacity:charging:
++ drawBluetoothBatteryInsidesWithSize:capacity:
++ bluetoothBatteryExtraPadding
++ activityIndicatorStyleWithSyncActivity:
++ uniqueIdentifier
++ sizeForMoonMaskVisible:
++ positionForMoonMaskInBounds:
++ textOffsetForStyle:
++ expandedNameForImageName:
++ makeTextFontForStyle:
++ _batteryColorForCapacity:lowCapacity:charging:
++ edgeInsetsForBatteryInsides
++ _roundDimension:
++ _isForegroundColorSafe:
++ edgeInsetsForBluetoothBatteryInsides
++ _shouldUseBoldFontForStyle:
++ proportionalFontForFont:
+- dealloc
+- tintColor
+- textColorForStyle:
+- initWithHeight:legibilityStyle:
+- initWithHeight:legibilityStyle:tintColor:backgroundColor:
+- edgePadding
+- imageNamed:withLegibilityStyle:legibilityStrength:
+- textForNetworkType:
+- batteryAccessoryMargin
+- drawBatteryInsidesWithSize:capacity:charging:
+- drawBluetoothBatteryInsidesWithSize:capacity:
+- bluetoothBatteryExtraPadding
+- activityIndicatorStyleWithSyncActivity:
+- uniqueIdentifier
+- sizeForMoonMaskVisible:
+- positionForMoonMaskInBounds:
+- textOffsetForStyle:
+- expandedNameForImageName:
+- makeTextFontForStyle:
+- _batteryColorForCapacity:lowCapacity:charging:
+- edgeInsetsForBatteryInsides
+- _roundDimension:
+- _isForegroundColorSafe:
+- edgeInsetsForBluetoothBatteryInsides
+- _shouldUseBoldFontForStyle:
+- proportionalFontForFont:
+@end

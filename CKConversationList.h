@@ -1,0 +1,89 @@
+@interface CKConversationList : NSObject
+{
+	id _trackedConversations;
+	BOOL _loadingConversations;
+	BOOL _loadedConversations;
+	id _pendingConversation;
+}
+
++ dealloc
++ init
++ conversationForHandles:create:
++ conversations
++ conversationForExistingChat:
++ pendingConversation
++ resetCachesAndRegenerateThumbnails
++ unpendConversation
++ conversationForRecipients:create:
++ setPendingConversation:
++ _abChanged:
++ _handleRegistryDidRegisterChatNotification:
++ _handleRegistryWillUnregisterChatNotification:
++ _handleRegistryDidLoadChatNotification:
++ _handleMemoryWarning:
++ _alreadyTrackedConversationForChat:
++ beginTrackingConversation:forChat:
++ _beginTrackingConversationWithChat:
++ _conversationForChat:
++ _postConversationListChangedNotification
++ reloadStaleConversations
++ stopTrackingConversation:
++ _shouldFilterForParticipants:
++ conversationForExistingChatWithGroupID:
++ _beginTrackingAllExistingChatsIfNeeded
++ loadingConversations
++ resort
++ deleteConversationAtIndex:
++ conversationForExistingChatWithGUID:
++ _copyEntitiesForAddressStrings:
++ conversationForExistingChatWithAddresses:
++ firstUnreadFilteredConversationIgnoringMessages:
++ activeConversations
++ hasActiveConversations
++ unreadFilteredConversationCountIgnoringMessages:
++ unreadLastMessages
++ deleteConversation:
++ pendingConversationCreatingIfNecessary
++ unreadCount
++ resetCaches
+- dealloc
+- init
+- conversationForHandles:create:
+- conversations
+- conversationForExistingChat:
+- pendingConversation
+- resetCachesAndRegenerateThumbnails
+- unpendConversation
+- conversationForRecipients:create:
+- setPendingConversation:
+- _abChanged:
+- _handleRegistryDidRegisterChatNotification:
+- _handleRegistryWillUnregisterChatNotification:
+- _handleRegistryDidLoadChatNotification:
+- _handleMemoryWarning:
+- _alreadyTrackedConversationForChat:
+- beginTrackingConversation:forChat:
+- _beginTrackingConversationWithChat:
+- _conversationForChat:
+- _postConversationListChangedNotification
+- reloadStaleConversations
+- stopTrackingConversation:
+- _shouldFilterForParticipants:
+- conversationForExistingChatWithGroupID:
+- _beginTrackingAllExistingChatsIfNeeded
+- loadingConversations
+- resort
+- deleteConversationAtIndex:
+- conversationForExistingChatWithGUID:
+- _copyEntitiesForAddressStrings:
+- conversationForExistingChatWithAddresses:
+- firstUnreadFilteredConversationIgnoringMessages:
+- activeConversations
+- hasActiveConversations
+- unreadFilteredConversationCountIgnoringMessages:
+- unreadLastMessages
+- deleteConversation:
+- pendingConversationCreatingIfNecessary
+- unreadCount
+- resetCaches
+@end

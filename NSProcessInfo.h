@@ -1,0 +1,90 @@
+@interface NSProcessInfo : NSObject
+{
+	id environment;
+	id arguments;
+	id hostName;
+	id name;
+	long long automaticTerminationOptOutCounter;
+}
+
++ _disableAutomaticTerminationWithoutSettingRelaunchable:
++ _enableAutomaticTerminationWithoutSettingRelaunchable:
++ operatingSystem
++ performActivityWithOptions:reason:usingBlock:
++ setArguments:
++ hostName
++ setProcessName:
++ globallyUniqueString
++ userName
++ userFullName
++ operatingSystemName
++ operatingSystemVersionString
++ physicalMemory
++ isTranslated
++ systemUptime
++ disableSuddenTermination
++ enableSuddenTermination
++ _exitIfSuddenTerminationEnabledWithStatus:
++ _exitWhenSuddenTerminationEnabledWithStatus:
++ _suddenTerminationDisablingCount
++ disableAutomaticTermination:
++ enableAutomaticTermination:
++ setAutomaticTerminationSupportEnabled:
++ automaticTerminationSupportEnabled
++ _disableAutomaticTerminationOnly:
++ _enableAutomaticTerminationOnly:
++ beginSuspensionOfSystemBehaviors:reason:
++ endSystemBehaviorSuspension:
++ beginActivityWithOptions:reason:
++ endActivity:
++ performActivityWithOptions:reason:block:
++ dealloc
++ init
++ environment
++ userHomeDirectory
++ arguments
++ processName
++ processorCount
++ processIdentifier
++ activeProcessorCount
+- _disableAutomaticTerminationWithoutSettingRelaunchable:
+- _enableAutomaticTerminationWithoutSettingRelaunchable:
+- operatingSystem
+- performActivityWithOptions:reason:usingBlock:
+- setArguments:
+- hostName
+- setProcessName:
+- globallyUniqueString
+- userName
+- userFullName
+- operatingSystemName
+- operatingSystemVersionString
+- physicalMemory
+- isTranslated
+- systemUptime
+- disableSuddenTermination
+- enableSuddenTermination
+- _exitIfSuddenTerminationEnabledWithStatus:
+- _exitWhenSuddenTerminationEnabledWithStatus:
+- _suddenTerminationDisablingCount
+- disableAutomaticTermination:
+- enableAutomaticTermination:
+- setAutomaticTerminationSupportEnabled:
+- automaticTerminationSupportEnabled
+- _disableAutomaticTerminationOnly:
+- _enableAutomaticTerminationOnly:
+- beginSuspensionOfSystemBehaviors:reason:
+- endSystemBehaviorSuspension:
+- beginActivityWithOptions:reason:
+- endActivity:
+- performActivityWithOptions:reason:block:
+- dealloc
+- init
+- environment
+- userHomeDirectory
+- arguments
+- processName
+- processorCount
+- processIdentifier
+- activeProcessorCount
+@end

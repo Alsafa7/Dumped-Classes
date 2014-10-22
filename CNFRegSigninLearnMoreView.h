@@ -1,0 +1,83 @@
+@interface CNFRegSigninLearnMoreView : UIView
+{
+	long long _serviceType;
+	id _specifier;
+	id _learnMoreButton;
+	id _splashImageView;
+	id _titleLabel;
+	id _verbiageLabel;
+	id _userPassBox;
+	id _appleIDLabel;
+	id _usernameField;
+	id _passwordLabel;
+	id _passwordField;
+	id _signInButton;
+	id _signInSpinner;
+	id _forgotIDButton;
+	id _createNewButton;
+	id _controller;
+}
+
++ initWithSpecifier:
++ usernameField
++ passwordLabel
++ preferredHeightForWidth:
++ dealloc
++ layoutSubviews
++ titleLabel
++ passwordTextField
++ controller
++ setController:
++ passwordField
++ usernameTextField
++ setFieldsEnabled:
++ setSignInButtonTarget:selector:
++ setCreateNewButtonTarget:selector:
++ setForgotIDButtonTarget:selector:
++ _learnMorePressed:
++ signInSpinner
++ learnMoreButton
++ forgotIDButton
++ createNewButton
++ _updateSignInButton
++ _splashImage
++ splashImageView
++ verbiageLabel
++ userPassBox
++ appleIDLabel
++ setServiceType:
++ serviceType
++ signInButton
++ _textDidChange:
+- initWithSpecifier:
+- usernameField
+- passwordLabel
+- preferredHeightForWidth:
+- dealloc
+- layoutSubviews
+- titleLabel
+- passwordTextField
+- controller
+- setController:
+- passwordField
+- usernameTextField
+- setFieldsEnabled:
+- setSignInButtonTarget:selector:
+- setCreateNewButtonTarget:selector:
+- setForgotIDButtonTarget:selector:
+- _learnMorePressed:
+- signInSpinner
+- learnMoreButton
+- forgotIDButton
+- createNewButton
+- _updateSignInButton
+- _splashImage
+- splashImageView
+- verbiageLabel
+- userPassBox
+- appleIDLabel
+- setServiceType:
+- serviceType
+- signInButton
+- _textDidChange:
+@end

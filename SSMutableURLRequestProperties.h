@@ -1,0 +1,74 @@
+@interface SSMutableURLRequestProperties : SSURLRequestProperties
+{
+
+}
+
++ radio_mescalSignWithCompletionHandler:
++ setNetworkServiceType:
++ setCachePolicy:
++ setTimeoutInterval:
++ setValue:forHTTPHeaderField:
++ setHTTPMethod:
++ setHTTPBody:
++ setHTTPBodyStream:
++ setITunesStoreRequest:
++ setValue:forRequestParameter:
++ setURLBagKey:
++ setShouldProcessProtocol:
++ setShouldAddKBSyncData:
++ setRequestParameters:
++ copyWithZone:
++ setURL:
++ setURLs:
++ setShouldSendSecureToken:
++ setHTTPHeaders:
++ setExpectedContentLength:
++ setUserAgentComponents:
++ setShouldDisableCellular:
++ setShouldDisableCellularFallback:
++ setLargeDownload:
++ setMultiPartFormDataWithDictionary:
++ setRequiresExtendedValidationCertificates:
++ setShouldDecodeResponse:
++ setShouldSetCookies:
++ setClientAuditBundleIdentifier:
++ setClientAuditTokenData:
++ setURLBagURLBlock:
++ setClientIdentifier:
++ setURLBagType:
++ setAllowedRetryCount:
+- radio_mescalSignWithCompletionHandler:
+- setNetworkServiceType:
+- setCachePolicy:
+- setTimeoutInterval:
+- setValue:forHTTPHeaderField:
+- setHTTPMethod:
+- setHTTPBody:
+- setHTTPBodyStream:
+- setITunesStoreRequest:
+- setValue:forRequestParameter:
+- setURLBagKey:
+- setShouldProcessProtocol:
+- setShouldAddKBSyncData:
+- setRequestParameters:
+- copyWithZone:
+- setURL:
+- setURLs:
+- setShouldSendSecureToken:
+- setHTTPHeaders:
+- setExpectedContentLength:
+- setUserAgentComponents:
+- setShouldDisableCellular:
+- setShouldDisableCellularFallback:
+- setLargeDownload:
+- setMultiPartFormDataWithDictionary:
+- setRequiresExtendedValidationCertificates:
+- setShouldDecodeResponse:
+- setShouldSetCookies:
+- setClientAuditBundleIdentifier:
+- setClientAuditTokenData:
+- setURLBagURLBlock:
+- setClientIdentifier:
+- setURLBagType:
+- setAllowedRetryCount:
+@end

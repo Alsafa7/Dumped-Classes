@@ -1,0 +1,62 @@
+@interface BKSApplicationLaunchSettings : NSObject
+{
+	BOOL _waitForDebugger;
+	BOOL _disableASLR;
+	BOOL _checkForLeaks;
+	id _environment;
+	id _containerEnvironment;
+	id _containerPath;
+	id _arguments;
+	id _standardOut;
+	id _standardError;
+}
+
++ setArguments:
++ setEnvironment:
++ setStandardError:
++ standardError
++ dealloc
++ description
++ environment
++ arguments
++ copyWithZone:
++ encodeWithXPCDictionary:
++ initWithXPCDictionary:
++ containerEnvironment
++ waitForDebugger
++ disableASLR
++ checkForLeaks
++ standardOut
++ initWithSettings:zone:
++ setContainerEnvironment:
++ setWaitForDebugger:
++ setDisableASLR:
++ setCheckForLeaks:
++ setStandardOut:
++ setContainerPath:
++ containerPath
+- setArguments:
+- setEnvironment:
+- setStandardError:
+- standardError
+- dealloc
+- description
+- environment
+- arguments
+- copyWithZone:
+- encodeWithXPCDictionary:
+- initWithXPCDictionary:
+- containerEnvironment
+- waitForDebugger
+- disableASLR
+- checkForLeaks
+- standardOut
+- initWithSettings:zone:
+- setContainerEnvironment:
+- setWaitForDebugger:
+- setDisableASLR:
+- setCheckForLeaks:
+- setStandardOut:
+- setContainerPath:
+- containerPath
+@end

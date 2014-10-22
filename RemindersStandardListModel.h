@@ -1,0 +1,60 @@
+@interface RemindersStandardListModel : RemindersListModel
+{
+	BOOL _isToday;
+	id _completedReminders;
+	id _recentlyAddedReminders;
+}
+
++ invalidateMaintainedReminders
++ checkOrUncheckReminder:
++ numberOfReminders
++ numberOfIncompleteReminders
++ reminderAtIndex:
++ completedReminders
++ indexOfReminder:protected:
++ removeReminderFromModel:
++ addReminder:
++ willDisplayRemindersInRange:
++ faultReminder:
++ _compareReminder:toReminder:
++ _fetchCompletedRemindersInCalendars:
++ _fetchCountOfCompletedRemindersInCalendars:
++ _fetchRemindersForTodayCardWithDueDate:calendars:fetchedReminders:fetchedCompletedCount:
++ _fetchRemindersWithDueDate:calendars:fetchedReminders:fetchedCompletedCount:
++ storeProtectedData:rangeAlreadyFaulted:
++ protectedRemoveReminderAtIndex:
++ matchesReminder:
++ predicateForCountingReminders
++ fetchProtectedData
++ shouldInvalidateReminder:
++ propertiesToFetch
++ setDueDate:
++ description
++ .cxx_destruct
+- invalidateMaintainedReminders
+- checkOrUncheckReminder:
+- numberOfReminders
+- numberOfIncompleteReminders
+- reminderAtIndex:
+- completedReminders
+- indexOfReminder:protected:
+- removeReminderFromModel:
+- addReminder:
+- willDisplayRemindersInRange:
+- faultReminder:
+- _compareReminder:toReminder:
+- _fetchCompletedRemindersInCalendars:
+- _fetchCountOfCompletedRemindersInCalendars:
+- _fetchRemindersForTodayCardWithDueDate:calendars:fetchedReminders:fetchedCompletedCount:
+- _fetchRemindersWithDueDate:calendars:fetchedReminders:fetchedCompletedCount:
+- storeProtectedData:rangeAlreadyFaulted:
+- protectedRemoveReminderAtIndex:
+- matchesReminder:
+- predicateForCountingReminders
+- fetchProtectedData
+- shouldInvalidateReminder:
+- propertiesToFetch
+- setDueDate:
+- description
+- .cxx_destruct
+@end

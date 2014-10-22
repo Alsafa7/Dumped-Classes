@@ -1,0 +1,279 @@
+@interface ADSession : NSObject
+{
+	id _queue;
+	id _account;
+	id _pendingCommands;
+	id _limboIds;
+	id _sendBuffer;
+	id _serverConnection;
+	id _currentConnectionType;
+	int _state;
+	id _sessionInitCommandId;
+	pointer _commandMap;
+	id _pendingAssistantDataAnchor;
+	double _loadRetryStartTime;
+	id _authenticator;
+	id _networkManager;
+	id _sessionLoadTimerSource;
+	id _delegate;
+	BOOL _shouldSendAssistantData;
+	BOOL _isRegisteredForLanguageNotification;
+	id _cachedRestrictions;
+	id _cachedLockRestrictions;
+	unsigned int _ioConnect;
+	pointer _ioNotificationPortRef;
+	unsigned int _ioNotifier;
+	BOOL _usingCachedCertificateData;
+	BOOL _usingCachedValidationData;
+	BOOL _hasActiveRequest;
+	BOOL _checkForWiFiTransitionOnRequestEnd;
+	BOOL _prefersWWAN;
+	BOOL _isAttemptingRetry;
+	double _requestStartTime;
+	double _lastRetryTime;
+	id _aggregator;
+	id _activationLanguages;
+	id _activationLanguage;
+	id _cachedAssistantData;
+	id _assistantDataRefId;
+	id _languageCode;
+	id _currentConnectionURL;
+	id _dormantQueue;
+	BOOL _dormant;
+}
+
++ refreshActivation
++ initOnQueue:withAccount:
++ beginUpdatingAssistantData
++ sendCommand:
++ setDormant:
++ aggregator
++ lockRestrictions
++ handleCommand:
++ refreshValidationData
++ hasLoadedAssistant
++ cancelSynchronously
++ _saCommandFailed:
++ _saAssistantDestroyed:
++ _unregisterForLanguageNotification
++ _unregisterForSleepNotification
++ _connectionURL
++ _resetServerConnectionSynchronously:
++ _analyzeRequestFailureWithAceConnectionAnalysisInfo:
++ _analyzeFailureWithAceConnectionAnalysisInfo:
++ _languageCodeChanged:
++ _resetServerConnection
++ _clearActivationLanguages
++ _pendingCommands
++ _sendServerCommand:
++ _addLimboId:
++ _addPendingCommand:
++ _sendBuffer
++ _clearSendBuffer
++ _clearLimbo
++ _reallyRetryPreferringWWAN:
++ _cancelSessionLoadTimeout
++ _shouldRetry
++ _retryForFailedConnection:withType:
++ _analyzeFailureWithNonRetriedAceConnectionAnalysisInfo:error:
++ _informDelegateOfError:
++ _setSessionInitCommandId:
++ _languageCode
++ _saConnectionType
++ _scheduleSessionLoadTimeout
++ _setPendingAssistantDataAnchor:
++ _sessionInitCommandId
++ _setCachedValidationData:withDuration:
++ _authenticator
++ _continueSessionInitWithValidationData:
++ _setCachedServerCertificate:
++ _continueAuthWithCertificateData:
++ _continueAuthentication
++ _authDataToSign
++ _analyzeRetrySuccessWithAceConnectionAnalysisInfo:
++ _waitingForAssistantData
++ _shouldSendAssistantData
++ _sendAssistantDataChangedSinceAnchor:refId:
++ _refreshActivationForNextLanguage
++ _startSession
++ _assistantFailedForReason:error:
++ _refIdIsLimboId:
++ _removeLimboId:
++ _passObjectToDelegate:
++ _saGetSessionCertificateResponse:
++ _saCreateSessionInfoResponse:
++ _saSessionValidationFailed:
++ _saAssistantCreated:
++ _saAssistantLoaded:
++ _saAssistantNotFound:
++ _saAssistantNotReady:
++ _saSetActivationToken:
++ _saSetConnectionHeader:
++ _saGetAssistantData:
++ _saPing:
++ _sendLoadAssistantWithId:speechId:validationData:
++ _sendCreateAssistantWithValidationData:
++ _sendDestroyAssistant
++ _sendPendingCommands
++ _cachedServerCertificate
++ _sendGetSessionCertificateData
++ _sendCreateSessionInfoRequestWithData:
++ _authenticationDisabled
++ _cachedValidationData
++ _registerForLanguageNotification
++ _eagerAuthDidComplete
++ _startConnectionPreferringWWAN:
++ _registerForSleepNotification
++ _connectionOpened
++ _handleAceObject:
++ _connectionErrorIsRedirect:
++ _connectionErrorIsRetryable:
++ _connectionIsWWAN
++ _clearLockRestrictionsCache
++ _pendDormantCommand:
++ _sendLimboCommand:
++ _recheckForWiFiTransition
++ _sendPendingDormantCommands
++ siriConnectionDidOpen:withConnectionType:
++ siriConnection:didReceiveAceObject:
++ siriConnectionDidClose:
++ siriConnection:didEncounterError:analysisInfo:
++ assistantDataManager:didUpdateAssistantData:
++ networkManagerNonWWANDidBecomeAvailable:
++ networkManagerLostNonWWANConnectivity:
++ _powerChangedMessageType:notificationID:
++ _sendCommandFailedWithRefId:
++ _pendingAssistantDataAnchor
++ isDormant
++ profileConnectionDidReceiveEffectiveSettingsChangedNotification:userInfo:
++ dealloc
++ setDelegate:
++ delegate
++ cancel
++ preheat
++ _queue
++ setHasActiveRequest:
++ _serverConnection
++ destroyAssistant
++ _startConnection
++ _authenticationFailed
++ .cxx_destruct
++ _account
+- refreshActivation
+- initOnQueue:withAccount:
+- beginUpdatingAssistantData
+- sendCommand:
+- setDormant:
+- aggregator
+- lockRestrictions
+- handleCommand:
+- refreshValidationData
+- hasLoadedAssistant
+- cancelSynchronously
+- _saCommandFailed:
+- _saAssistantDestroyed:
+- _unregisterForLanguageNotification
+- _unregisterForSleepNotification
+- _connectionURL
+- _resetServerConnectionSynchronously:
+- _analyzeRequestFailureWithAceConnectionAnalysisInfo:
+- _analyzeFailureWithAceConnectionAnalysisInfo:
+- _languageCodeChanged:
+- _resetServerConnection
+- _clearActivationLanguages
+- _pendingCommands
+- _sendServerCommand:
+- _addLimboId:
+- _addPendingCommand:
+- _sendBuffer
+- _clearSendBuffer
+- _clearLimbo
+- _reallyRetryPreferringWWAN:
+- _cancelSessionLoadTimeout
+- _shouldRetry
+- _retryForFailedConnection:withType:
+- _analyzeFailureWithNonRetriedAceConnectionAnalysisInfo:error:
+- _informDelegateOfError:
+- _setSessionInitCommandId:
+- _languageCode
+- _saConnectionType
+- _scheduleSessionLoadTimeout
+- _setPendingAssistantDataAnchor:
+- _sessionInitCommandId
+- _setCachedValidationData:withDuration:
+- _authenticator
+- _continueSessionInitWithValidationData:
+- _setCachedServerCertificate:
+- _continueAuthWithCertificateData:
+- _continueAuthentication
+- _authDataToSign
+- _analyzeRetrySuccessWithAceConnectionAnalysisInfo:
+- _waitingForAssistantData
+- _shouldSendAssistantData
+- _sendAssistantDataChangedSinceAnchor:refId:
+- _refreshActivationForNextLanguage
+- _startSession
+- _assistantFailedForReason:error:
+- _refIdIsLimboId:
+- _removeLimboId:
+- _passObjectToDelegate:
+- _saGetSessionCertificateResponse:
+- _saCreateSessionInfoResponse:
+- _saSessionValidationFailed:
+- _saAssistantCreated:
+- _saAssistantLoaded:
+- _saAssistantNotFound:
+- _saAssistantNotReady:
+- _saSetActivationToken:
+- _saSetConnectionHeader:
+- _saGetAssistantData:
+- _saPing:
+- _sendLoadAssistantWithId:speechId:validationData:
+- _sendCreateAssistantWithValidationData:
+- _sendDestroyAssistant
+- _sendPendingCommands
+- _cachedServerCertificate
+- _sendGetSessionCertificateData
+- _sendCreateSessionInfoRequestWithData:
+- _authenticationDisabled
+- _cachedValidationData
+- _registerForLanguageNotification
+- _eagerAuthDidComplete
+- _startConnectionPreferringWWAN:
+- _registerForSleepNotification
+- _connectionOpened
+- _handleAceObject:
+- _connectionErrorIsRedirect:
+- _connectionErrorIsRetryable:
+- _connectionIsWWAN
+- _clearLockRestrictionsCache
+- _pendDormantCommand:
+- _sendLimboCommand:
+- _recheckForWiFiTransition
+- _sendPendingDormantCommands
+- siriConnectionDidOpen:withConnectionType:
+- siriConnection:didReceiveAceObject:
+- siriConnectionDidClose:
+- siriConnection:didEncounterError:analysisInfo:
+- assistantDataManager:didUpdateAssistantData:
+- networkManagerNonWWANDidBecomeAvailable:
+- networkManagerLostNonWWANConnectivity:
+- _powerChangedMessageType:notificationID:
+- _sendCommandFailedWithRefId:
+- _pendingAssistantDataAnchor
+- isDormant
+- profileConnectionDidReceiveEffectiveSettingsChangedNotification:userInfo:
+- dealloc
+- setDelegate:
+- delegate
+- cancel
+- preheat
+- _queue
+- setHasActiveRequest:
+- _serverConnection
+- destroyAssistant
+- _startConnection
+- _authenticationFailed
+- .cxx_destruct
+- _account
+@end

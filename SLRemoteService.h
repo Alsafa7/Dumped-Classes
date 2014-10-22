@@ -1,0 +1,157 @@
+@interface SLRemoteService : SLService
+{
+	long long _maximumVideoCount;
+	id _activityImage;
+	id _serviceBundle;
+	BOOL _serviceRegionTargetIsChina;
+	BOOL _addDeviceClassToRequest;
+	id _xpcServiceIdentifier;
+	id _serviceTypeIdentifier;
+	id _accountTypeIdentifier;
+	id _localizedServiceName;
+	id _activityViewIconResourceName;
+	long long _authenticationStyle;
+	long long _maximumURLCount;
+	long long _maximumImageCount;
+	long long _maximumImageDataSize;
+	long long _maximumVideoDataSize;
+	long long _maximumVideoTimeLimit;
+	id _supportedImageAssetURLSchemes;
+	id _supportedVideoAssetURLSchemes;
+	id _shareSheetHostingBundleIdentifier;
+	id _shareSheetClassName;
+	id _activityImageName;
+	id _serviceBundleURL;
+}
+
++ addExtraParameters:forRequest:
++ authenticationStyle
++ isFirstClassService
++ maximumVideoDataSize
++ maximumVideoTimeLimit
++ connectionName
++ shareSheetHostingBundleIdentifier
++ shareSheetClassName
++ supportsImageURL:
++ supportsVideoURL:
++ composeViewController
++ serviceBundle
++ infoDictHasRequiredKeys:
++ setServiceBundleURL:
++ setServiceTypeIdentifier:
++ setXpcServiceIdentifier:
++ setLocalizedServiceName:
++ setActivityViewIconResourceName:
++ setServiceRegionTargetIsChina:
++ setAccountTypeIdentifier:
++ _authenticationStyleFromAuthenticationStyleIdentifier:
++ setAuthenticationStyle:
++ setShareSheetHostingBundleIdentifier:
++ setShareSheetClassName:
++ setAddDeviceClassToRequest:
++ _setFromArrayWithKey:inDictionary:
++ setSupportedImageAssetURLSchemes:
++ setSupportedVideoAssetURLSchemes:
++ setActivityImageName:
++ integerPropertyKeyMappings
++ _requiredInfoDictKeys
++ _isValidAuthenicationStyleIdentifier:
++ _authenticationStyleIdentifierMappings
++ serviceTypeIdentifier
++ serviceBundleURL
++ serviceRegionTargetIsChina
++ addDeviceClassToRequest
++ supportedImageAssetURLSchemes
++ supportedVideoAssetURLSchemes
++ _encodableStringProperties
++ xpcServiceIdentifier
++ _isSupportedURL:withSupportedSchemes:
++ activityImageName
++ _activityImageForImageResourceName:inBundle:
++ localizedServiceName
++ initWithServiceBundle:socialInfoDictionary:
++ setMaximumVideoCount:
++ activityViewIconResourceName
++ setMaximumURLCount:
++ setMaximumImageCount:
++ setMaximumImageDataSize:
++ setMaximumVideoDataSize:
++ setMaximumVideoTimeLimit:
++ initWithCoder:
++ encodeWithCoder:
++ description
++ activityTitle
++ activityImage
++ maximumImageDataSize
++ maximumURLCount
++ maximumImageCount
++ maximumVideoCount
++ serviceType
++ accountTypeIdentifier
++ .cxx_destruct
+- addExtraParameters:forRequest:
+- authenticationStyle
+- isFirstClassService
+- maximumVideoDataSize
+- maximumVideoTimeLimit
+- connectionName
+- shareSheetHostingBundleIdentifier
+- shareSheetClassName
+- supportsImageURL:
+- supportsVideoURL:
+- composeViewController
+- serviceBundle
+- infoDictHasRequiredKeys:
+- setServiceBundleURL:
+- setServiceTypeIdentifier:
+- setXpcServiceIdentifier:
+- setLocalizedServiceName:
+- setActivityViewIconResourceName:
+- setServiceRegionTargetIsChina:
+- setAccountTypeIdentifier:
+- _authenticationStyleFromAuthenticationStyleIdentifier:
+- setAuthenticationStyle:
+- setShareSheetHostingBundleIdentifier:
+- setShareSheetClassName:
+- setAddDeviceClassToRequest:
+- _setFromArrayWithKey:inDictionary:
+- setSupportedImageAssetURLSchemes:
+- setSupportedVideoAssetURLSchemes:
+- setActivityImageName:
+- integerPropertyKeyMappings
+- _requiredInfoDictKeys
+- _isValidAuthenicationStyleIdentifier:
+- _authenticationStyleIdentifierMappings
+- serviceTypeIdentifier
+- serviceBundleURL
+- serviceRegionTargetIsChina
+- addDeviceClassToRequest
+- supportedImageAssetURLSchemes
+- supportedVideoAssetURLSchemes
+- _encodableStringProperties
+- xpcServiceIdentifier
+- _isSupportedURL:withSupportedSchemes:
+- activityImageName
+- _activityImageForImageResourceName:inBundle:
+- localizedServiceName
+- initWithServiceBundle:socialInfoDictionary:
+- setMaximumVideoCount:
+- activityViewIconResourceName
+- setMaximumURLCount:
+- setMaximumImageCount:
+- setMaximumImageDataSize:
+- setMaximumVideoDataSize:
+- setMaximumVideoTimeLimit:
+- initWithCoder:
+- encodeWithCoder:
+- description
+- activityTitle
+- activityImage
+- maximumImageDataSize
+- maximumURLCount
+- maximumImageCount
+- maximumVideoCount
+- serviceType
+- accountTypeIdentifier
+- .cxx_destruct
+@end

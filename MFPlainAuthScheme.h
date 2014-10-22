@@ -1,0 +1,6 @@
+@interface MFPlainAuthScheme : MFAuthScheme
+{
+
+}
+
+@end

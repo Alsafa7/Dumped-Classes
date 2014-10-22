@@ -1,0 +1,64 @@
+@interface GKBubbleControl : UIControl
+{
+	BOOL _animatingIn;
+	BOOL _animateOnTouch;
+	id _bubbleView;
+}
+
++ bouncing
++ bounceAfterDelay:fromZ:toZ:
++ screenFrame
++ setScreenFrame:
++ worldPosition
++ worldSize
++ screenPosition
++ worldPositionForScreenPosition:andScreenSize:
++ setWorldPosition:
++ setScreenPosition:andScreenSize:
++ isSharedBubble
++ worldPositionForScreenFrame:
++ setHidden:
++ screenSize
++ setBubbleType:
++ bubbleType
++ bubbleView
++ contentsWrapperView
++ setBubbleView:
++ setAnimateOnTouch:
++ didTouchDown
++ didTouchUp
++ pathForHitTesting
++ animateOnTouch
++ initWithFrame:
++ dealloc
++ pointInside:withEvent:
++ description
+- bouncing
+- bounceAfterDelay:fromZ:toZ:
+- screenFrame
+- setScreenFrame:
+- worldPosition
+- worldSize
+- screenPosition
+- worldPositionForScreenPosition:andScreenSize:
+- setWorldPosition:
+- setScreenPosition:andScreenSize:
+- isSharedBubble
+- worldPositionForScreenFrame:
+- setHidden:
+- screenSize
+- setBubbleType:
+- bubbleType
+- bubbleView
+- contentsWrapperView
+- setBubbleView:
+- setAnimateOnTouch:
+- didTouchDown
+- didTouchUp
+- pathForHitTesting
+- animateOnTouch
+- initWithFrame:
+- dealloc
+- pointInside:withEvent:
+- description
+@end

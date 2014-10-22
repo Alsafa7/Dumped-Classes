@@ -1,0 +1,160 @@
+@interface SBNotificationCenterController : NSObject
+{
+	id _viewController;
+	id _coveredContentSnapshot;
+	id _coveredApplication;
+	id _borrowedGrabberView;
+	id _borrowedGrabberWillPresentBlock;
+	id _borrowedGrabberHideBlock;
+	id _borrowedGrabberCompletionBlock;
+	id _dataProviders;
+	id _keyboardNotificationObserverToken;
+	id _unlockActionContext;
+	long long _presentationState;
+	id _settings;
+	struct _notificationCenterControllerFlags;
+}
+
++ publishSectionInfoIfNecessary
++ isGrabberVisible
++ reloadAllWidgets
++ setGrabberEnabled:
++ beginPresentationWithTouchLocation:
++ updateTransitionWithTouchLocation:velocity:
++ canShowHideGrabberView
++ endTransitionWithVelocity:completion:
++ cancelTransition
++ hideGrabberAnimated:completion:
++ beginDismissalWithTouchLocation:
++ showGrabberAnimated:
++ presentAnimated:
++ finishedScrollTest
++ dismissAnimated:completion:
++ presentAnimated:completion:
++ runScrollTest:iterations:delta:
++ handleActionForBulletin:
++ unlockActionContext
++ isAvailableWhileLocked
++ prepareLayoutForPresentationFromBanner
++ bulletinWindowWillRotateToOrientation:duration:
++ bulletinWindowIsAnimatingRotationToOrientation:duration:
++ bulletinWindowDidRotateFromOrientation:
++ dismissAnimated:withStepper:completion:fromCurrentState:
++ widget:requestsPresentationOfViewController:presentationStyle:context:completion:
++ widget:requestsLaunchOfURL:
++ biometricEventMonitorDidAuthenticate:
++ invalidateUnlockActionContext
++ unregisterSharedGrabberView
++ registerSharedGrabberView:withWillPresentBlock:hideBlock:andCompletion:
++ widgetViewControllerHostDelegate:
++ isTodayViewAvailableWhileLocked
++ isNotificationsViewAvailableWhileLocked
++ buddyCompleted:
++ _isNotificationCenterViewWithFeatureKeyAvailableWhileLocked:isLockedDownByRestrictions:
++ _isNotificationCenterViewAvailableWhileLockedWithProfileBlock:counterpartBlock:
++ isPresentingWidgetContent
++ dismissPresentedWidgetContentAnimated:
++ _updateCoveredContentSnapshot
++ _insertCoveredContentSnapshotIfNecessary:
++ isGrabberEnabled
++ _setupForViewPresentation
++ _removeCoveredContentSnapshot
++ _invalidateCoveredContentSnapshot
++ _setGrabberEnabled:
++ _setupForPresentationWithTouchLocation:
++ _setupForDismissalWithTouchLocation:
++ _cleanupAfterTransition:
++ endTransitionWithVelocity:additionalValueApplier:completion:
++ _present:stepper:
++ _present:withStandardAnimation:stepper:completion:fromCurrentState:
++ _updateForChangeInMessagePrivacy
++ _handleActionOrRequestWithDefaultAction:lockedAction:
++ _sectionForWidgetBundle:forCategory:
++ _copyDefaultEnabledWidgetIDs
++ _sectionWithIdentifier:forCategory:
++ _widgetSections
++ doesSectionWithIdentifierUpdateMessagePrivacyViaSectionParameters:
++ _shouldSelectViewControllerAtTouchLocation
++ dealloc
++ window
++ init
++ viewController
++ isVisible
++ settings:changedValueForKey:
++ settings
++ dismissAnimated:
++ blursBackground
++ setBlursBackground:
++ handleMenuButtonTap
+- publishSectionInfoIfNecessary
+- isGrabberVisible
+- reloadAllWidgets
+- setGrabberEnabled:
+- beginPresentationWithTouchLocation:
+- updateTransitionWithTouchLocation:velocity:
+- canShowHideGrabberView
+- endTransitionWithVelocity:completion:
+- cancelTransition
+- hideGrabberAnimated:completion:
+- beginDismissalWithTouchLocation:
+- showGrabberAnimated:
+- presentAnimated:
+- finishedScrollTest
+- dismissAnimated:completion:
+- presentAnimated:completion:
+- runScrollTest:iterations:delta:
+- handleActionForBulletin:
+- unlockActionContext
+- isAvailableWhileLocked
+- prepareLayoutForPresentationFromBanner
+- bulletinWindowWillRotateToOrientation:duration:
+- bulletinWindowIsAnimatingRotationToOrientation:duration:
+- bulletinWindowDidRotateFromOrientation:
+- dismissAnimated:withStepper:completion:fromCurrentState:
+- widget:requestsPresentationOfViewController:presentationStyle:context:completion:
+- widget:requestsLaunchOfURL:
+- biometricEventMonitorDidAuthenticate:
+- invalidateUnlockActionContext
+- unregisterSharedGrabberView
+- registerSharedGrabberView:withWillPresentBlock:hideBlock:andCompletion:
+- widgetViewControllerHostDelegate:
+- isTodayViewAvailableWhileLocked
+- isNotificationsViewAvailableWhileLocked
+- buddyCompleted:
+- _isNotificationCenterViewWithFeatureKeyAvailableWhileLocked:isLockedDownByRestrictions:
+- _isNotificationCenterViewAvailableWhileLockedWithProfileBlock:counterpartBlock:
+- isPresentingWidgetContent
+- dismissPresentedWidgetContentAnimated:
+- _updateCoveredContentSnapshot
+- _insertCoveredContentSnapshotIfNecessary:
+- isGrabberEnabled
+- _setupForViewPresentation
+- _removeCoveredContentSnapshot
+- _invalidateCoveredContentSnapshot
+- _setGrabberEnabled:
+- _setupForPresentationWithTouchLocation:
+- _setupForDismissalWithTouchLocation:
+- _cleanupAfterTransition:
+- endTransitionWithVelocity:additionalValueApplier:completion:
+- _present:stepper:
+- _present:withStandardAnimation:stepper:completion:fromCurrentState:
+- _updateForChangeInMessagePrivacy
+- _handleActionOrRequestWithDefaultAction:lockedAction:
+- _sectionForWidgetBundle:forCategory:
+- _copyDefaultEnabledWidgetIDs
+- _sectionWithIdentifier:forCategory:
+- _widgetSections
+- doesSectionWithIdentifierUpdateMessagePrivacyViaSectionParameters:
+- _shouldSelectViewControllerAtTouchLocation
+- dealloc
+- window
+- init
+- viewController
+- isVisible
+- settings:changedValueForKey:
+- settings
+- dismissAnimated:
+- blursBackground
+- setBlursBackground:
+- handleMenuButtonTap
+@end

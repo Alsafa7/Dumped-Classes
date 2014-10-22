@@ -1,0 +1,6 @@
+@interface SBSRemoteNotificationClient : NSObject
+{
+
+}
+
+@end

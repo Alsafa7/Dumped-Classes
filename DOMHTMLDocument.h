@@ -1,0 +1,6 @@
+@interface DOMHTMLDocument : DOMDocument
+{
+
+}
+
+@end

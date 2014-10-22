@@ -1,0 +1,105 @@
+@interface WebEvent : NSObject
+{
+	int _type;
+	double _timestamp;
+	struct _locationInWindow;
+	id _characters;
+	id _charactersIgnoringModifiers;
+	unsigned int _modifierFlags;
+	BOOL _keyRepeating;
+	BOOL _popupVariant;
+	usigned long long _keyboardFlags;
+	unsigned short _keyCode;
+	BOOL _tabKey;
+	int _characterSet;
+	float _deltaX;
+	float _deltaY;
+	unsigned int _touchCount;
+	id _touchLocations;
+	id _touchIdentifiers;
+	id _touchPhases;
+	BOOL _isGesture;
+	float _gestureScale;
+	float _gestureRotation;
+	BOOL _wasHandled;
+}
+
++ dealloc
++ description
++ timestamp
++ type
++ modifierFlags
++ initWithKeyEventType:timeStamp:characters:charactersIgnoringModifiers:modifiers:isRepeating:withFlags:keyCode:isTabKey:characterSet:
++ initWithMouseEventType:timeStamp:location:
++ wasHandled
++ initWithScrollWheelEventWithTimeStamp:location:deltaX:deltaY:
++ _typeDescription
++ .cxx_construct
++ locationInWindow
++ touchLocations
++ touchIdentifiers
++ touchPhases
++ characters
++ initWithTouchEventType:timeStamp:location:modifiers:touchCount:touchLocations:touchIdentifiers:touchPhases:isGesture:gestureScale:gestureRotation:
++ characterSet
++ keyCode
++ setWasHandled:
++ gestureScale
++ gestureRotation
++ isGesture
++ touchCount
++ charactersIgnoringModifiers
++ isKeyRepeating
++ deltaX
++ deltaY
++ _touchPhaseDescription:
++ _characterSetDescription
++ _touchLocationsDescription:
++ _touchIdentifiersDescription
++ _touchPhasesDescription
++ _eventDescription
++ initWithKeyEventType:timeStamp:characters:charactersIgnoringModifiers:modifiers:isRepeating:isPopupVariant:keyCode:isTabKey:characterSet:
++ _modiferFlagsDescription
++ isPopupVariant
++ keyboardFlags
++ isTabKey
+- dealloc
+- description
+- timestamp
+- type
+- modifierFlags
+- initWithKeyEventType:timeStamp:characters:charactersIgnoringModifiers:modifiers:isRepeating:withFlags:keyCode:isTabKey:characterSet:
+- initWithMouseEventType:timeStamp:location:
+- wasHandled
+- initWithScrollWheelEventWithTimeStamp:location:deltaX:deltaY:
+- _typeDescription
+- .cxx_construct
+- locationInWindow
+- touchLocations
+- touchIdentifiers
+- touchPhases
+- characters
+- initWithTouchEventType:timeStamp:location:modifiers:touchCount:touchLocations:touchIdentifiers:touchPhases:isGesture:gestureScale:gestureRotation:
+- characterSet
+- keyCode
+- setWasHandled:
+- gestureScale
+- gestureRotation
+- isGesture
+- touchCount
+- charactersIgnoringModifiers
+- isKeyRepeating
+- deltaX
+- deltaY
+- _touchPhaseDescription:
+- _characterSetDescription
+- _touchLocationsDescription:
+- _touchIdentifiersDescription
+- _touchPhasesDescription
+- _eventDescription
+- initWithKeyEventType:timeStamp:characters:charactersIgnoringModifiers:modifiers:isRepeating:isPopupVariant:keyCode:isTabKey:characterSet:
+- _modiferFlagsDescription
+- isPopupVariant
+- keyboardFlags
+- isTabKey
+@end

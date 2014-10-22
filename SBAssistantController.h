@@ -1,0 +1,139 @@
+@interface SBAssistantController : SBUIPluginHost
+{
+	id _operationQueue;
+	id _appDisplayIDBeingHosted;
+	id _assistantWindow;
+	BOOL _unlockedDevice;
+	BOOL _launchedInStark;
+	BOOL _isHidingOtherWindows;
+	int _activationEvent;
+	id _disableAssertion;
+	id _dismissingReasons;
+	long long _pendingDismissViewType;
+	id _observers;
+	id _mainScreenViewController;
+}
+
++ dismissAssistantViewIfNecessary:
++ pluginWantsActivationEvent:interval:
++ addActivationFlagsToDisplay:
++ dismissAssistantForAlertActivation:
++ isAssistantViewVisible:
++ _runActivateAssistantTest:
++ preparePluginForActivationEvent:afterInterval:
++ _activationFlags
++ dismissAssistantViewIfNecessaryWithFade:ofDuration:
++ dismissAssistantViewIfNecessaryWithFade:ofDuration:completion:
++ pluginWantsInterfaceOrientation:
++ pluginSuppressesNotifications
++ pluginWantsScreenDimInterval:
++ _isPluginLoaded
++ _activateSiriForPPT
++ _starkSiriWillAppear:
++ _starkSiriDidAppear:
++ _starkSiriWillDisappear:
++ _starkSiriDidDisappear:
++ _loadPlugin
++ _notePluginVisibilityDidChange
++ setUnlockedDevice:
++ dismissPluginForEvent:
++ _defaultAnimatedDismissDurationForMainScreen
++ _dismissForMainScreenAnimated:duration:completion:
++ _isDismissingAllViews
++ _cleanupContextHosting
++ _notifyObserversViewWillAppear:
++ _bioAuthenticated:
++ _notifyObserversViewDidAppear:
++ _notifyObserversViewWillDisappear:
++ _notifyObserversViewDidDisappear:
++ _viewWillAppearOnMainScreen
++ _viewController:willAnimateAppearanceWithContext:
++ _viewController:setShowsStatusBar:
++ _fakeStatusBarForOrientation:
++ _viewDidAppearOnMainScreen
++ _viewController:animateAppearanceWithContext:
++ _viewWillDisappearOnMainScreen
++ _viewController:willAnimateDisappearanceWithContext:
++ _viewDidDisappearOnMainScreen
++ _viewController:animateDisappearanceWithContext:
++ _presentForMainScreenAnimated:completion:
++ uiPluginAttemptDeviceUnlock:withPassword:lockViewOwner:
++ uiPlugin:launchApplicationWithBundleID:openURL:
++ uiPlugin:isNowRunning:
++ dismissAssistantViewIfNecessaryWithFade:
++ mainScreenView
++ transferOwnershipOfPasscodeLockDisableAssertion
++ _dismissUIPlugin:animated:
++ uiPluginWantsActivation:forEvent:completion:
++ uiPlugin:openURL:
++ uiPluginUserEventOccurred:
++ uiPlugin:forceUpdateToInterfaceOrientation:animated:
++ unlockedDevice
++ activateIgnoringTouches
++ dealloc
++ init
++ removeObserver:
++ addObserver:
++ shouldShowLockStatusBarTime
+- dismissAssistantViewIfNecessary:
+- pluginWantsActivationEvent:interval:
+- addActivationFlagsToDisplay:
+- dismissAssistantForAlertActivation:
+- isAssistantViewVisible:
+- _runActivateAssistantTest:
+- preparePluginForActivationEvent:afterInterval:
+- _activationFlags
+- dismissAssistantViewIfNecessaryWithFade:ofDuration:
+- dismissAssistantViewIfNecessaryWithFade:ofDuration:completion:
+- pluginWantsInterfaceOrientation:
+- pluginSuppressesNotifications
+- pluginWantsScreenDimInterval:
+- _isPluginLoaded
+- _activateSiriForPPT
+- _starkSiriWillAppear:
+- _starkSiriDidAppear:
+- _starkSiriWillDisappear:
+- _starkSiriDidDisappear:
+- _loadPlugin
+- _notePluginVisibilityDidChange
+- setUnlockedDevice:
+- dismissPluginForEvent:
+- _defaultAnimatedDismissDurationForMainScreen
+- _dismissForMainScreenAnimated:duration:completion:
+- _isDismissingAllViews
+- _cleanupContextHosting
+- _notifyObserversViewWillAppear:
+- _bioAuthenticated:
+- _notifyObserversViewDidAppear:
+- _notifyObserversViewWillDisappear:
+- _notifyObserversViewDidDisappear:
+- _viewWillAppearOnMainScreen
+- _viewController:willAnimateAppearanceWithContext:
+- _viewController:setShowsStatusBar:
+- _fakeStatusBarForOrientation:
+- _viewDidAppearOnMainScreen
+- _viewController:animateAppearanceWithContext:
+- _viewWillDisappearOnMainScreen
+- _viewController:willAnimateDisappearanceWithContext:
+- _viewDidDisappearOnMainScreen
+- _viewController:animateDisappearanceWithContext:
+- _presentForMainScreenAnimated:completion:
+- uiPluginAttemptDeviceUnlock:withPassword:lockViewOwner:
+- uiPlugin:launchApplicationWithBundleID:openURL:
+- uiPlugin:isNowRunning:
+- dismissAssistantViewIfNecessaryWithFade:
+- mainScreenView
+- transferOwnershipOfPasscodeLockDisableAssertion
+- _dismissUIPlugin:animated:
+- uiPluginWantsActivation:forEvent:completion:
+- uiPlugin:openURL:
+- uiPluginUserEventOccurred:
+- uiPlugin:forceUpdateToInterfaceOrientation:animated:
+- unlockedDevice
+- activateIgnoringTouches
+- dealloc
+- init
+- removeObserver:
+- addObserver:
+- shouldShowLockStatusBarTime
+@end

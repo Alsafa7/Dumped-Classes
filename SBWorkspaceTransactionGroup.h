@@ -1,0 +1,62 @@
+@interface SBWorkspaceTransactionGroup : SBWorkspaceTransaction
+{
+	id _transactions;
+}
+
++ canBeInterrupted
++ interruptWithReason:
++ _shouldBeWatchdogged:
++ addTransaction:
++ initWithTransactions:
++ applicationWillBecomeReceiver:fromApplication:
++ applicationDidBecomeReceiver:fromApplication:
++ workspaceWillSuspend
++ workspaceDidSuspend
++ workspaceWillResume
++ workspaceDidResume
++ applicationDidStartLaunching:withInfo:
++ applicationDidFinishLaunching:withInfo:
++ applicationActivated:
++ applicationLaunchDidFail:
++ alertWillActivate:overAlerts:
++ alertDidActivate:overAlerts:
++ alertWillDeactivate:
++ alertDidDeactivate:
++ transactionDidFinish:success:
++ addMilestones:
++ _doForAllTransactions:
++ transactions
++ dealloc
++ init
++ description
++ applicationExited:
++ commit
+- canBeInterrupted
+- interruptWithReason:
+- _shouldBeWatchdogged:
+- addTransaction:
+- initWithTransactions:
+- applicationWillBecomeReceiver:fromApplication:
+- applicationDidBecomeReceiver:fromApplication:
+- workspaceWillSuspend
+- workspaceDidSuspend
+- workspaceWillResume
+- workspaceDidResume
+- applicationDidStartLaunching:withInfo:
+- applicationDidFinishLaunching:withInfo:
+- applicationActivated:
+- applicationLaunchDidFail:
+- alertWillActivate:overAlerts:
+- alertDidActivate:overAlerts:
+- alertWillDeactivate:
+- alertDidDeactivate:
+- transactionDidFinish:success:
+- addMilestones:
+- _doForAllTransactions:
+- transactions
+- dealloc
+- init
+- description
+- applicationExited:
+- commit
+@end

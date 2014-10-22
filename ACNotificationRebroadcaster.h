@@ -1,0 +1,6 @@
+@interface ACNotificationRebroadcaster : NSObject
+{
+
+}
+
+@end

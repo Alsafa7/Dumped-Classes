@@ -1,0 +1,6 @@
+@interface SBCPlaybackPositionServiceProxy : SBCPlaybackPositionService
+{
+
+}
+
+@end

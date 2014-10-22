@@ -1,0 +1,196 @@
+@interface SBUserNotificationAlert : SBAlertItem
+{
+	unsigned int _replyPort;
+	id _portWatcher;
+	id _expirationTimer;
+	BOOL _cleanedUp;
+	int _token;
+	int _timeout;
+	usigned long long _requestFlags;
+	id _alertHeader;
+	id _alertMessage;
+	id _alertMessageDelimiter;
+	id _defaultButtonTitle;
+	id _alternateButtonTitle;
+	id _otherButtonTitle;
+	id _soundPath;
+	id _avControllerAttributes;
+	id _avItemAttributes;
+	double _soundRepeatDuration;
+	id _soundStopTimer;
+	id _keyboardTypes;
+	id _autocapitalizationTypes;
+	id _autocorrectionTypes;
+	id _textFieldButtonDisplayDefaultButtonURLs;
+	id _textFieldButtonImagePaths;
+	id _textFieldTitles;
+	id _textFieldValues;
+	id _textFieldButtonDisplayTitles;
+	id _textFieldButtonDisplayDefaultButtonTitles;
+	long long _currentTextFieldButtonDisplayIndex;
+	double _creationTime;
+	int _defaultButtonTag;
+	int _unlockActionButtonTag;
+	unsigned int _replyFlags;
+	long long _defaultButtonIndex;
+	long long _alternateButtonIndex;
+	long long _otherButtonIndex;
+	id _defaultResponseLaunchBundleID;
+	bit[1] _cancel;
+	bit[1] _isActivated;
+	bit[1] _aboveLock;
+	bit[1] _displayActionButtonOnLockScreen;
+	bit[1] _dismissOnLock;
+	bit[1] _dontDismissOnUnlock;
+	bit[1] _behavesSuperModally;
+	bit[1] _allowMenuButtonDismissal;
+	bit[1] _forcesModalAlertAppearance;
+	bit[1] _oneButtonPerLine;
+	bit[1] _groupsTextFields;
+	bit[1] _usesUndoStyle;
+	bit[1] _configuredLocked;
+	bit[1] _configuredNeedsPasscode;
+	bit[1] _defaultResponseAppLaunchWaitingForPasscode;
+	id _sound;
+	id _processAssertion;
+}
+
++ updateWithMessage:requestFlags:
++ initWithMessage:replyPort:requestFlags:auditToken:
++ _needsDismissalWithClickedButtonIndex:
++ setDefaultResponseLaunchBundleID:
++ setKeyboardTypes:
++ setAutocapitalizationTypes:
++ setAutocorrectionTypes:
++ setTextFieldButtonImagePaths:
++ setTextFieldButtonDisplayDefaultButtonURLs:
++ setSoundPath:
++ setAvControllerAttributes:
++ setAvItemAttributes:
++ _safeLocalizedValue:withBundle:
++ setAlertHeader:
++ setAlertMessage:
++ setAlertMessageDelimiter:
++ setDefaultButtonTitle:
++ setAlternateButtonTitle:
++ setOtherButtonTitle:
++ setTextFieldTitles:
++ setTextFieldValues:
++ setTextFieldButtonDisplayTitles:
++ setTextFieldButtonDisplayDefaultButtonTitles:
++ _textFieldButtonPressed:
++ _sendResponse:
++ _setSheetDefaultButtonTitle:
++ keyboardTypes
++ autocapitalizationTypes
++ autocorrectionTypes
++ textFieldButtonImagePaths
++ textFieldButtonDisplayDefaultButtonURLs
++ textFieldTitles
++ textFieldButtonDisplayTitles
++ textFieldButtonDisplayDefaultButtonTitles
++ soundPath
++ avControllerAttributes
++ avItemAttributes
++ alertHeader
++ alertMessage
++ alertMessageDelimiter
++ defaultButtonTitle
++ alternateButtonTitle
++ otherButtonTitle
++ defaultResponseLaunchBundleID
++ shouldShowInLockScreen
++ allowMenuButtonDismissal
++ forcesModalAlertAppearance
++ configure:requirePasscodeForActions:
++ dealloc
++ alertView:clickedButtonAtIndex:
++ cancel
++ _cleanup
++ alertView:shouldDismissForButtonAtIndex:
++ sound
++ token
++ alertSheetClass
++ performUnlockAction
++ willActivate
++ didFailToActivate
++ willDeactivateForReason:
++ didDeactivateForReason:
++ noteVolumeOrLockPressed
++ behavesSuperModally
++ reappearsAfterLock
++ reappearsAfterUnlock
++ displayActionButtonOnLockScreen
++ textFieldValues
++ dismissOnLock
++ _setActivated:
+- updateWithMessage:requestFlags:
+- initWithMessage:replyPort:requestFlags:auditToken:
+- _needsDismissalWithClickedButtonIndex:
+- setDefaultResponseLaunchBundleID:
+- setKeyboardTypes:
+- setAutocapitalizationTypes:
+- setAutocorrectionTypes:
+- setTextFieldButtonImagePaths:
+- setTextFieldButtonDisplayDefaultButtonURLs:
+- setSoundPath:
+- setAvControllerAttributes:
+- setAvItemAttributes:
+- _safeLocalizedValue:withBundle:
+- setAlertHeader:
+- setAlertMessage:
+- setAlertMessageDelimiter:
+- setDefaultButtonTitle:
+- setAlternateButtonTitle:
+- setOtherButtonTitle:
+- setTextFieldTitles:
+- setTextFieldValues:
+- setTextFieldButtonDisplayTitles:
+- setTextFieldButtonDisplayDefaultButtonTitles:
+- _textFieldButtonPressed:
+- _sendResponse:
+- _setSheetDefaultButtonTitle:
+- keyboardTypes
+- autocapitalizationTypes
+- autocorrectionTypes
+- textFieldButtonImagePaths
+- textFieldButtonDisplayDefaultButtonURLs
+- textFieldTitles
+- textFieldButtonDisplayTitles
+- textFieldButtonDisplayDefaultButtonTitles
+- soundPath
+- avControllerAttributes
+- avItemAttributes
+- alertHeader
+- alertMessage
+- alertMessageDelimiter
+- defaultButtonTitle
+- alternateButtonTitle
+- otherButtonTitle
+- defaultResponseLaunchBundleID
+- shouldShowInLockScreen
+- allowMenuButtonDismissal
+- forcesModalAlertAppearance
+- configure:requirePasscodeForActions:
+- dealloc
+- alertView:clickedButtonAtIndex:
+- cancel
+- _cleanup
+- alertView:shouldDismissForButtonAtIndex:
+- sound
+- token
+- alertSheetClass
+- performUnlockAction
+- willActivate
+- didFailToActivate
+- willDeactivateForReason:
+- didDeactivateForReason:
+- noteVolumeOrLockPressed
+- behavesSuperModally
+- reappearsAfterLock
+- reappearsAfterUnlock
+- displayActionButtonOnLockScreen
+- textFieldValues
+- dismissOnLock
+- _setActivated:
+@end

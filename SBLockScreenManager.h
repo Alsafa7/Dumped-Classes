@@ -1,0 +1,121 @@
+@interface SBLockScreenManager : NSObject
+{
+	id _lockScreenViewController;
+	BOOL _isUILocked;
+	BOOL _isWaitingToLockUI;
+	BOOL _appRequestedPasscodeEntry;
+	BOOL _uiHasBeenLockedOnce;
+	id _passcodeEntryController;
+	id _disablePasscodeLockWhileUIUnlockedAssertion;
+	id _disableLockScreenIfPossibleAssertions;
+	id _disableUnlockAssertions;
+	BOOL _isInLostMode;
+	BOOL _biometricEventStartedWithScreenOff;
+	usigned long long _biometricEventStartTime;
+	usigned long long _failedMesaUnlockAttempts;
+	BOOL _bioAuthenticatedWhileMenuButtonDown;
+}
+
++ androidlockAttemptUnlockWithUnlockActionContext:animatingPasscode:
++ androidlockAttemptUnlockWithUnlockActionContext:
++ androidlockIsLocked
++ androidlockIsEnabled
++ hasUIEverBeenLocked
++ lockScreenViewController
++ activateLostModeForRemoteLock:
++ unlockUIFromSource:withOptions:
++ lockUIFromSource:withOptions:
++ applicationRequestedDeviceUnlock
++ shouldLockUIAfterEndingCall
++ isInLostMode
++ remoteLock:
++ enableLostModePlugin
++ _addDisableUnlockAssertion:
++ _removeDisableUnlockAssertion:
++ cancelApplicationRequestedDeviceLockEntry
++ _bioAuthenticated:
++ bioAuthenticatedWhileMenuButtonDown
++ attemptUnlockWithPasscode:
++ exitLostModeIfNecessaryFromRemoteRequest:
++ updateSpringBoardStatusBarForLockScreenTeardown
++ addLockScreenDisableAssertion:
++ removeLockScreenDisableAssertion:
++ isWaitingToLockUI
++ startUIUnlockFromSource:withOptions:
++ _newLockScreenController
++ _setUILocked:
++ activationChanged:
++ _deviceLockedChanged:
++ _lockUI
++ _handleExternalUIUnlock:
++ _deviceBlockedChanged:
++ _resetOrRestoreStateChanged:
++ _lockScreenDimmed:
++ _frontmostDisplayChanged:
++ _shouldLockAfterTelephonyCall
++ _shouldLockAfterFaceTimeCall
++ _activateLockScreenAnimated:automatically:inScreenOffMode:dimInAnimation:dismissNotificationCenter:
++ _postLockCompletedNotification:
++ _sendUILockStateChangedNotification
++ _shouldAutoUnlockFromUnlockSource:
++ _finishUIUnlockFromSource:withOptions:
++ _lockFeaturesForRemoteLock:
++ _relockUIForButtonPress:afterCall:
++ init
++ handleKeyHIDEvent:
++ handleMenuButtonTap
++ biometricEventMonitor:handleBiometricEvent:
++ biometricEventMonitorShouldRelockAfterBioUnlock:
++ isUILocked
+- androidlockAttemptUnlockWithUnlockActionContext:animatingPasscode:
+- androidlockAttemptUnlockWithUnlockActionContext:
+- androidlockIsLocked
+- androidlockIsEnabled
+- hasUIEverBeenLocked
+- lockScreenViewController
+- activateLostModeForRemoteLock:
+- unlockUIFromSource:withOptions:
+- lockUIFromSource:withOptions:
+- applicationRequestedDeviceUnlock
+- shouldLockUIAfterEndingCall
+- isInLostMode
+- remoteLock:
+- enableLostModePlugin
+- _addDisableUnlockAssertion:
+- _removeDisableUnlockAssertion:
+- cancelApplicationRequestedDeviceLockEntry
+- _bioAuthenticated:
+- bioAuthenticatedWhileMenuButtonDown
+- attemptUnlockWithPasscode:
+- exitLostModeIfNecessaryFromRemoteRequest:
+- updateSpringBoardStatusBarForLockScreenTeardown
+- addLockScreenDisableAssertion:
+- removeLockScreenDisableAssertion:
+- isWaitingToLockUI
+- startUIUnlockFromSource:withOptions:
+- _newLockScreenController
+- _setUILocked:
+- activationChanged:
+- _deviceLockedChanged:
+- _lockUI
+- _handleExternalUIUnlock:
+- _deviceBlockedChanged:
+- _resetOrRestoreStateChanged:
+- _lockScreenDimmed:
+- _frontmostDisplayChanged:
+- _shouldLockAfterTelephonyCall
+- _shouldLockAfterFaceTimeCall
+- _activateLockScreenAnimated:automatically:inScreenOffMode:dimInAnimation:dismissNotificationCenter:
+- _postLockCompletedNotification:
+- _sendUILockStateChangedNotification
+- _shouldAutoUnlockFromUnlockSource:
+- _finishUIUnlockFromSource:withOptions:
+- _lockFeaturesForRemoteLock:
+- _relockUIForButtonPress:afterCall:
+- init
+- handleKeyHIDEvent:
+- handleMenuButtonTap
+- biometricEventMonitor:handleBiometricEvent:
+- biometricEventMonitorShouldRelockAfterBioUnlock:
+- isUILocked
+@end

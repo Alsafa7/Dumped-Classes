@@ -1,0 +1,101 @@
+@interface NSStringDrawingContext : NSObject
+{
+	double _minimumScaleFactor;
+	double _minimumTrackingAdjustment;
+	double _actualScaleFactor;
+	double _actualTrackingAdjustment;
+	struct _totalBounds;
+	id _linkAttributes;
+	usigned long long _numberOfLineFragments;
+	usigned long long _maximumNumberOfLines;
+	double _baselineOffset;
+	double _scaledBaselineOffset;
+	double _scaledLineHeight;
+	id _layout;
+	struct _sdcFlags;
+	BOOL _wantsNumberOfLineFragments;
+}
+
++ dealloc
++ description
++ copyWithZone:
++ setMaximumNumberOfLines:
++ totalBounds
++ setWrapsForTruncationMode:
++ setMinimumScaleFactor:
++ layout
++ actualScaleFactor
++ setActualScaleFactor:
++ baselineOffset
++ setBaselineOffset:
++ scaledBaselineOffset
++ setScaledBaselineOffset:
++ scaledLineHeight
++ setScaledLineHeight:
++ minimumScaleFactor
++ setMinimumTrackingAdjustment:
++ setDrawsDebugBaselines:
++ setCachesLayout:
++ setLayout:
++ setUsesSimpleTextEffects:
++ setWantsBaselineOffset:
++ setWantsScaledBaselineOffset:
++ setWantsScaledLineHeight:
++ setWantsNumberOfLineFragments:
++ actualTrackingAdjustment
++ cachesLayout
++ numberOfLineFragments
++ maximumNumberOfLines
++ minimumTrackingAdjustment
++ wantsNumberOfLineFragments
++ wrapsForTruncationMode
++ wantsBaselineOffset
++ wantsScaledBaselineOffset
++ wantsScaledLineHeight
++ drawsDebugBaselines
++ usesSimpleTextEffects
++ setActualTrackingAdjustment:
++ setTotalBounds:
++ setNumberOfLineFragments:
+- dealloc
+- description
+- copyWithZone:
+- setMaximumNumberOfLines:
+- totalBounds
+- setWrapsForTruncationMode:
+- setMinimumScaleFactor:
+- layout
+- actualScaleFactor
+- setActualScaleFactor:
+- baselineOffset
+- setBaselineOffset:
+- scaledBaselineOffset
+- setScaledBaselineOffset:
+- scaledLineHeight
+- setScaledLineHeight:
+- minimumScaleFactor
+- setMinimumTrackingAdjustment:
+- setDrawsDebugBaselines:
+- setCachesLayout:
+- setLayout:
+- setUsesSimpleTextEffects:
+- setWantsBaselineOffset:
+- setWantsScaledBaselineOffset:
+- setWantsScaledLineHeight:
+- setWantsNumberOfLineFragments:
+- actualTrackingAdjustment
+- cachesLayout
+- numberOfLineFragments
+- maximumNumberOfLines
+- minimumTrackingAdjustment
+- wantsNumberOfLineFragments
+- wrapsForTruncationMode
+- wantsBaselineOffset
+- wantsScaledBaselineOffset
+- wantsScaledLineHeight
+- drawsDebugBaselines
+- usesSimpleTextEffects
+- setActualTrackingAdjustment:
+- setTotalBounds:
+- setNumberOfLineFragments:
+@end

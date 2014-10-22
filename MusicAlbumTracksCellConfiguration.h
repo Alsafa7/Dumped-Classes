@@ -1,0 +1,6 @@
+@interface MusicAlbumTracksCellConfiguration : MusicSongCellConfiguration
+{
+
+}
+
+@end

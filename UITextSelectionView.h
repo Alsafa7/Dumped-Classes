@@ -1,0 +1,169 @@
+@interface UITextSelectionView : UIView
+{
+	id m_interactionAssistant;
+	id m_selection;
+	id m_caretTimer;
+	id m_caretView;
+	id m_rangeView;
+	BOOL m_caretBlinks;
+	BOOL m_caretShowingNow;
+	BOOL m_visible;
+	BOOL m_activated;
+	BOOL m_wasShowingCommands;
+	BOOL m_delayShowingCommands;
+	BOOL m_dictationReplacementsMode;
+	int m_showingCommandsCounter;
+	id m_replacements;
+	BOOL m_deferSelectionCommands;
+	pointer m_observer;
+}
+
++ dealloc
++ hitTest:withEvent:
++ removeFromSuperview
++ invalidate
++ interactionAssistant
++ deferredUpdateSelectionRects
++ selection
++ updateSelectionWithDocumentPoint:
++ updateSelectionRects
++ setVisible:
++ deactivate
++ detach
++ setCaretBlinks:
++ activate
++ selectionChanged
++ caretBlinks
++ visible
++ startCaretBlinkIfNeeded
++ layoutChangedByScrolling:
++ scrollView
++ initWithInteractionAssistant:
++ configureForHighlightMode
++ hideSelectionCommands
++ showSelectionCommands
++ configureForSelectionMode
++ cancelDelayedCommandRequests
++ updateBaseIsStartWithDocumentPoint:
++ rangeView
++ updateSelectionDots
++ showSelectionCommandsAfterDelay:
++ selectionCommandsShowing
++ showReplacementsWithGenerator:forDictation:afterDelay:
++ selectionBoundingBox
++ textSelectionViewActivated:
++ selectionWillScroll:
++ selectionDidScroll:
++ scaleWillChange:
++ scaleDidChange:
++ willRotate:
++ didRotate:
++ windowDidResignOrBecomeKey
++ inputViewWillMove
++ inputViewDidMove
++ inputViewWillAnimate
++ inputViewDidAnimate
++ viewAnimate:
++ appearOrFadeIfNecessary
++ affectedByScrollerNotification:
++ showCalloutBarAfterDelay:
++ hideSelectionCommandsAfterDelay:
++ inputViewWillChange
++ inputViewDidChange
++ shouldBeVisible
++ clearCaret
++ clearCaretBlinkTimer
++ clearRange
++ installIfNecessary
++ caretView
++ showCaret:
++ touchCaretBlinkTimer
++ showCommandsWithReplacements:
++ clippedTargetRect:
++ updateCalloutBarRects:effectsWindow:
++ setReplacements:
++ replacements
++ deferredUpdateSelectionCommands
++ calculateAndShowReplacements:
++ hideCaret:
++ caretBlinkTimerFired:
++ updateSelectionCommands
++ prepareForMagnification
++ doneMagnifying
++ updateSelectionRectsIfNeeded
++ configureForReplacementMode
+- dealloc
+- hitTest:withEvent:
+- removeFromSuperview
+- invalidate
+- interactionAssistant
+- deferredUpdateSelectionRects
+- selection
+- updateSelectionWithDocumentPoint:
+- updateSelectionRects
+- setVisible:
+- deactivate
+- detach
+- setCaretBlinks:
+- activate
+- selectionChanged
+- caretBlinks
+- visible
+- startCaretBlinkIfNeeded
+- layoutChangedByScrolling:
+- scrollView
+- initWithInteractionAssistant:
+- configureForHighlightMode
+- hideSelectionCommands
+- showSelectionCommands
+- configureForSelectionMode
+- cancelDelayedCommandRequests
+- updateBaseIsStartWithDocumentPoint:
+- rangeView
+- updateSelectionDots
+- showSelectionCommandsAfterDelay:
+- selectionCommandsShowing
+- showReplacementsWithGenerator:forDictation:afterDelay:
+- selectionBoundingBox
+- textSelectionViewActivated:
+- selectionWillScroll:
+- selectionDidScroll:
+- scaleWillChange:
+- scaleDidChange:
+- willRotate:
+- didRotate:
+- windowDidResignOrBecomeKey
+- inputViewWillMove
+- inputViewDidMove
+- inputViewWillAnimate
+- inputViewDidAnimate
+- viewAnimate:
+- appearOrFadeIfNecessary
+- affectedByScrollerNotification:
+- showCalloutBarAfterDelay:
+- hideSelectionCommandsAfterDelay:
+- inputViewWillChange
+- inputViewDidChange
+- shouldBeVisible
+- clearCaret
+- clearCaretBlinkTimer
+- clearRange
+- installIfNecessary
+- caretView
+- showCaret:
+- touchCaretBlinkTimer
+- showCommandsWithReplacements:
+- clippedTargetRect:
+- updateCalloutBarRects:effectsWindow:
+- setReplacements:
+- replacements
+- deferredUpdateSelectionCommands
+- calculateAndShowReplacements:
+- hideCaret:
+- caretBlinkTimerFired:
+- updateSelectionCommands
+- prepareForMagnification
+- doneMagnifying
+- updateSelectionRectsIfNeeded
+- configureForReplacementMode
+@end

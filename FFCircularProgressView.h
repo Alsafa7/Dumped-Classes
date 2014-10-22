@@ -1,0 +1,84 @@
+@interface FFCircularProgressView : UIView
+{
+	BOOL _hideProgressIcons;
+	BOOL _isSpinning;
+	double _progress;
+	double _lineWidth;
+	id _tintColor;
+	id _tickColor;
+	id _iconView;
+	id _iconPath;
+	id _progressBackgroundLayer;
+	id _progressLayer;
+	id _iconLayer;
+}
+
++ setIconPath:
++ iconPath
++ setProgressBackgroundLayer:
++ setProgressLayer:
++ setIconLayer:
++ drawBackgroundCircle:
++ drawTick
++ drawStop
++ drawArrow
++ tickColor
++ animateProgressBackgroundLayerFillColor
++ setIsSpinning:
++ setTickColor:
++ startSpinProgressBackgroundLayer
++ stopSpinProgressBackgroundLayer
++ hideProgressIcons
++ setHideProgressIcons:
++ progressBackgroundLayer
++ progressLayer
++ iconLayer
++ iconView
++ setIconView:
++ initWithFrame:
++ drawRect:
++ initWithCoder:
++ lineWidth
++ setLineWidth:
++ tintColor
++ setTintColor:
++ setProgress:
++ progress
++ setup
++ isSpinning
++ .cxx_destruct
+- setIconPath:
+- iconPath
+- setProgressBackgroundLayer:
+- setProgressLayer:
+- setIconLayer:
+- drawBackgroundCircle:
+- drawTick
+- drawStop
+- drawArrow
+- tickColor
+- animateProgressBackgroundLayerFillColor
+- setIsSpinning:
+- setTickColor:
+- startSpinProgressBackgroundLayer
+- stopSpinProgressBackgroundLayer
+- hideProgressIcons
+- setHideProgressIcons:
+- progressBackgroundLayer
+- progressLayer
+- iconLayer
+- iconView
+- setIconView:
+- initWithFrame:
+- drawRect:
+- initWithCoder:
+- lineWidth
+- setLineWidth:
+- tintColor
+- setTintColor:
+- setProgress:
+- progress
+- setup
+- isSpinning
+- .cxx_destruct
+@end

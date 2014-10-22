@@ -1,0 +1,139 @@
+@interface MPQueueFeeder : NSObject
+{
+	id _avController;
+	pointer _itemsWithReferencesToClear;
+	usigned long long _repeatType;
+	usigned long long _shuffleType;
+	pointer _nextStartTimes;
+	id _representedObject;
+	BOOL _fullScreenPlaybackQueue;
+	BOOL _isSourceChangeInProgress;
+	BOOL _deallocating;
+	usigned long long _activeShuffleType;
+}
+
++ station
++ nonRepeatingItemCount
++ canSkipItem:
++ activeShuffleType
++ itemCount
++ copyRawItemAtIndex:
++ playbackInfoAtIndex:
++ clearReferencesToItem:
++ localizedAttributedPositionInPlaylistStringForItem:withRegularTextAttributes:emphasizedTextAttributes:
++ localizedPositionInPlaylistString:
++ reloadWithDataSource:keepPlayingCurrentItemIfPossible:
++ setIsSourceChangeInProgress:
++ invalidateQueueCaches
++ itemClass
++ repeatType
++ shuffleType
++ addReferenceToItem:
++ hasValidItemAtIndex:
++ _fixNextStartTimesByRemovingRange:
++ contentsDidChangeByRemovingRange:
++ isSourceChangeInProgress
++ contentInvalidatedWithCurrentItemMovedToIndex:
++ contentInvalidated
++ _canPurgeNextStartTimes
++ restoreAVControllerPlaybackQueue:fromUnarchiver:
++ assumeOwnershipOfItems:
++ hasItemForIndex:
++ itemForIndex:
++ shouldReloadForChangeFromNetworkType:toNetworkType:
++ initialPlaybackQueueDepth
++ _fixNextStartTimesByInsertingRange:
++ setNextStartTime:forIndex:
++ setSubsequenceFocused:currentItemIndex:
++ shuffleItemsWithAnchor:
++ reloadWithDataSource:
++ beginSourceChange
++ commitSourceChangeWithStartQueueIndex:
++ errorResolverForItem:
++ shouldBeginPlaybackOfItem:error:
++ canSkipToPreviousItem
++ itemTypeForIndex:
++ playerPreparesItemsForPlaybackAsynchronously
++ trackChangesCanEndPlayback
++ userCanChangeShuffleAndRepeatType
++ realRepeatType
++ realShuffleType
++ controller:willChangePlaybackIndexBy:deltaType:ignoreElapsedTime:allowSkippingAds:
++ archiveAVControllerPlaybackQueue:toArchiver:
++ AVController
++ setAVController:
++ setRepeatType:
++ setShuffleType:
++ setActiveShuffleType:
++ fullScreenPlaybackQueue
++ setFullScreenPlaybackQueue:
++ dealloc
++ preferredLanguages
++ representedObject
++ setRepresentedObject:
++ pathAtIndex:
++ canSeek
++ .cxx_destruct
+- station
+- nonRepeatingItemCount
+- canSkipItem:
+- activeShuffleType
+- itemCount
+- copyRawItemAtIndex:
+- playbackInfoAtIndex:
+- clearReferencesToItem:
+- localizedAttributedPositionInPlaylistStringForItem:withRegularTextAttributes:emphasizedTextAttributes:
+- localizedPositionInPlaylistString:
+- reloadWithDataSource:keepPlayingCurrentItemIfPossible:
+- setIsSourceChangeInProgress:
+- invalidateQueueCaches
+- itemClass
+- repeatType
+- shuffleType
+- addReferenceToItem:
+- hasValidItemAtIndex:
+- _fixNextStartTimesByRemovingRange:
+- contentsDidChangeByRemovingRange:
+- isSourceChangeInProgress
+- contentInvalidatedWithCurrentItemMovedToIndex:
+- contentInvalidated
+- _canPurgeNextStartTimes
+- restoreAVControllerPlaybackQueue:fromUnarchiver:
+- assumeOwnershipOfItems:
+- hasItemForIndex:
+- itemForIndex:
+- shouldReloadForChangeFromNetworkType:toNetworkType:
+- initialPlaybackQueueDepth
+- _fixNextStartTimesByInsertingRange:
+- setNextStartTime:forIndex:
+- setSubsequenceFocused:currentItemIndex:
+- shuffleItemsWithAnchor:
+- reloadWithDataSource:
+- beginSourceChange
+- commitSourceChangeWithStartQueueIndex:
+- errorResolverForItem:
+- shouldBeginPlaybackOfItem:error:
+- canSkipToPreviousItem
+- itemTypeForIndex:
+- playerPreparesItemsForPlaybackAsynchronously
+- trackChangesCanEndPlayback
+- userCanChangeShuffleAndRepeatType
+- realRepeatType
+- realShuffleType
+- controller:willChangePlaybackIndexBy:deltaType:ignoreElapsedTime:allowSkippingAds:
+- archiveAVControllerPlaybackQueue:toArchiver:
+- AVController
+- setAVController:
+- setRepeatType:
+- setShuffleType:
+- setActiveShuffleType:
+- fullScreenPlaybackQueue
+- setFullScreenPlaybackQueue:
+- dealloc
+- preferredLanguages
+- representedObject
+- setRepresentedObject:
+- pathAtIndex:
+- canSeek
+- .cxx_destruct
+@end

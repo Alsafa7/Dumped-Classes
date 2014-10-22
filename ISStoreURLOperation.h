@@ -1,0 +1,88 @@
+@interface ISStoreURLOperation : ISURLOperation
+{
+	id _authenticatedDSID;
+	BOOL _canSendGUIDParameter;
+	BOOL _ignorePreexistingSecureToken;
+	BOOL _needsAuthentication;
+	BOOL _needsURLBag;
+	BOOL _performsMachineDataActions;
+	BOOL _shouldSendXTokenHeader;
+	BOOL _urlKnownToBeTrusted;
+	BOOL _useUserSpecificURLBag;
+}
+
++ dealloc
++ init
++ run
++ handleResponse:
++ _setStoreFrontIdentifier:isTransient:
++ _copyAuthenticationContext
++ shouldFollowRedirectWithRequest:returningError:
++ handleRedirectFromDataProvider:error:
++ setNeedsURLBag:
++ _canSendTokenToURL:
++ _copyURLBagContext
++ canSendGUIDParameter
++ shouldSendXTokenHeader
++ _account
++ _copyAuthenticationContextForAttemptNumber:
++ _authenticateWithContext:error:
++ _runURLOperation
++ _isErrorTokenError:
++ setIgnorePreexistingSecureToken:
++ urlKnownToBeTrusted
++ useUserSpecificURLBag
++ needsURLBag
++ _resolvedURLInBagContext:URLBag:
++ _addStandardQueryParametersForURL:
++ ignorePreexistingSecureToken
++ performsMachineDataActions
++ setCanSendGUIDParameter:
++ setPerformsMachineDataActions:
++ setShouldSendXTokenHeader:
++ setUseUserSpecificURLBag:
++ authenticatedAccountDSID
++ needsAuthentication
++ setNeedsAuthentication:
++ setUrlKnownToBeTrusted:
++ newRequestWithURL:
++ authenticatedDSID
++ setAuthenticatedDSID:
+- dealloc
+- init
+- run
+- handleResponse:
+- _setStoreFrontIdentifier:isTransient:
+- _copyAuthenticationContext
+- shouldFollowRedirectWithRequest:returningError:
+- handleRedirectFromDataProvider:error:
+- setNeedsURLBag:
+- _canSendTokenToURL:
+- _copyURLBagContext
+- canSendGUIDParameter
+- shouldSendXTokenHeader
+- _account
+- _copyAuthenticationContextForAttemptNumber:
+- _authenticateWithContext:error:
+- _runURLOperation
+- _isErrorTokenError:
+- setIgnorePreexistingSecureToken:
+- urlKnownToBeTrusted
+- useUserSpecificURLBag
+- needsURLBag
+- _resolvedURLInBagContext:URLBag:
+- _addStandardQueryParametersForURL:
+- ignorePreexistingSecureToken
+- performsMachineDataActions
+- setCanSendGUIDParameter:
+- setPerformsMachineDataActions:
+- setShouldSendXTokenHeader:
+- setUseUserSpecificURLBag:
+- authenticatedAccountDSID
+- needsAuthentication
+- setNeedsAuthentication:
+- setUrlKnownToBeTrusted:
+- newRequestWithURL:
+- authenticatedDSID
+- setAuthenticatedDSID:
+@end

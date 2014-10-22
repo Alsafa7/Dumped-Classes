@@ -1,0 +1,121 @@
+@interface MPVolumeSlider : UISlider
+{
+	id _volumeController;
+	id _commitTimer;
+	id _routeNameLabel;
+	long long _style;
+	id _thumbImageView;
+	id _thumbMaskImageView;
+	BOOL _isOffScreen;
+	BOOL _thumbIsDefault;
+	id _volumeWarningView;
+	BOOL _volumeWarningBlinking;
+	id _volumeWarningTrackImage;
+	id _audioDeviceController;
+}
+
++ _isExternalPlaybackActiveDidChangeNotification:
++ _applicationDidEnterBackgroundNotification:
++ _applicationWillEnterForegroundNotification:
++ _resetThumbImageForState:
++ _minTrackImageForStyle:
++ _maxTrackImageForStyle:
++ _endBlinkingWarningView
++ _layoutVolumeWarningView
++ _commitVolumeChange
++ _endTracking
++ _layoutMaskForThumb
++ _layoutForAvailableRoutes
++ _availableRoutesDidChangeNotification:
++ volumeAudioCategory
++ setVolumeAudioCategory:
++ _beginBlinkingWarningView
++ _thumbImageForStyle:
++ _routeNameLabelAnimationDidEnd
++ _newVolumeWarningView
++ _blinkWarningView
++ volumeController:volumeValueDidChange:
++ volumeController:EUVolumeLimitDidChange:
++ volumeController:EUVolumeLimitEnforcedDidChange:
++ setVolumeWarningTrackImage:
++ _setIsOffScreen:
++ _isOffScreen
++ volumeWarningTrackImage
++ initWithFrame:
++ setUserInteractionEnabled:
++ dealloc
++ pointInside:withEvent:
++ setHidden:
++ setAlpha:
++ didMoveToWindow
++ setFrame:
++ layoutSubviews
++ sizeThatFits:
++ style
++ didMoveToSuperview
++ initWithFrame:style:
++ cancelTrackingWithEvent:
++ beginTrackingWithTouch:withEvent:
++ endTrackingWithTouch:withEvent:
++ thumbRectForBounds:trackRect:value:
++ createThumbView
++ minimumValue
++ maximumValue
++ setValue:animated:
++ setThumbImage:forState:
++ .cxx_destruct
++ player
++ setPlayer:
+- _isExternalPlaybackActiveDidChangeNotification:
+- _applicationDidEnterBackgroundNotification:
+- _applicationWillEnterForegroundNotification:
+- _resetThumbImageForState:
+- _minTrackImageForStyle:
+- _maxTrackImageForStyle:
+- _endBlinkingWarningView
+- _layoutVolumeWarningView
+- _commitVolumeChange
+- _endTracking
+- _layoutMaskForThumb
+- _layoutForAvailableRoutes
+- _availableRoutesDidChangeNotification:
+- volumeAudioCategory
+- setVolumeAudioCategory:
+- _beginBlinkingWarningView
+- _thumbImageForStyle:
+- _routeNameLabelAnimationDidEnd
+- _newVolumeWarningView
+- _blinkWarningView
+- volumeController:volumeValueDidChange:
+- volumeController:EUVolumeLimitDidChange:
+- volumeController:EUVolumeLimitEnforcedDidChange:
+- setVolumeWarningTrackImage:
+- _setIsOffScreen:
+- _isOffScreen
+- volumeWarningTrackImage
+- initWithFrame:
+- setUserInteractionEnabled:
+- dealloc
+- pointInside:withEvent:
+- setHidden:
+- setAlpha:
+- didMoveToWindow
+- setFrame:
+- layoutSubviews
+- sizeThatFits:
+- style
+- didMoveToSuperview
+- initWithFrame:style:
+- cancelTrackingWithEvent:
+- beginTrackingWithTouch:withEvent:
+- endTrackingWithTouch:withEvent:
+- thumbRectForBounds:trackRect:value:
+- createThumbView
+- minimumValue
+- maximumValue
+- setValue:animated:
+- setThumbImage:forState:
+- .cxx_destruct
+- player
+- setPlayer:
+@end

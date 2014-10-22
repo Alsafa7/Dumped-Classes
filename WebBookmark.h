@@ -1,0 +1,225 @@
+@interface WebBookmark : NSObject
+{
+	BOOL _folder;
+	id _title;
+	id _url;
+	id _UUID;
+	id _serverID;
+	id _syncKey;
+	id _syncData;
+	BOOL _editable;
+	BOOL _deletable;
+	BOOL _hidden;
+	BOOL _syncable;
+	BOOL _fetchedIconData;
+	id _iconData;
+	BOOL _locallyAdded;
+	int _archiveStatus;
+	int _webFilterStatus;
+	id _extraAttributes;
+	id _localAttributes;
+	unsigned int _id;
+	unsigned int _parentID;
+	unsigned int _specialID;
+	unsigned int _orderIndex;
+	BOOL _inserted;
+	BOOL _needsSyncUpdate;
+}
+
++ _readingListPropertyNamed:
++ _modifyExtraReadingListAttributes:
++ _modifyLocalReadingListAttributes:
++ archiveSize
++ clearArchiveSynchronously
++ clearArchive
++ fullArchiveAvailable
++ _suggestedFileNameForWebView:
++ _sizeForFileOrDirectory:withAttributes:
++ _removeDirectoryAtPath:
++ webarchivePathInReaderForm:fileExists:
++ webarchivePathForNextPageURL:
++ writeOfflineWebView:asArchive:inReaderForm:
++ shouldReattemptArchive
++ previewText
++ dateAdded
++ setDateAdded:
++ cleanupRedundantPreviewText
++ isReadingListItem
++ archiveStatus
++ setArchiveStatus:
++ setWebFilterStatus:
++ dateLastViewed
++ setDateLastArchived:
++ locallyAdded
++ webFilterStatus
++ initReadingListBookmarkWithTitle:address:previewText:
++ localPreviewText
++ setPreviewText:
++ setLocallyAdded:
++ dateLastArchived
++ setDateLastViewed:
++ dateLastFetched
++ setDateLastFetched:
++ sourceLocalizedAppName
++ setSourceLocalizedAppName:
++ sourceBundleID
++ setSourceBundleID:
++ setTitle:previewText:dateLastFetched:
++ setNextPageURLs:
++ nextPageURLs
++ siteName
++ setSiteName:
++ setLocalPreviewText:
++ _setUUID:
++ setServerID:
++ serverID
++ setSyncKey:
++ syncKey
++ _markSpecial:
++ syncData
++ setSyncData:
++ _orderIndex
++ _setParentID:
++ _initWithSqliteRow:
++ _setOrderIndex:
++ _setID:
++ _setInserted:
++ _setHidden:
++ _setSyncable:
++ setAddress:
++ parentID
++ dealloc
++ isHidden
++ init
++ setTitle:
++ description
++ isEditable
++ UUID
++ title
++ identifier
++ localizedTitle
++ iconData
++ setExtraAttributes:
++ extraAttributes
++ isInserted
++ address
++ isDeletable
++ initWithTitle:address:
++ initFolderWithParentID:
++ specialID
++ isReadingListFolder
++ isFolder
++ localAttributes
++ setLocalAttributes:
++ initBuiltinDeviceBookmarkWithTitle:address:
++ shortTypeDescription
++ initCarrierBookmarkWithTitle:address:
++ initWhiteListBookmarkWithTitle:address:
++ isBookmarksBarFolder
++ isBookmarksMenuFolder
++ isWebFilterWhiteListFolder
++ isSyncable
++ needsSyncUpdate
++ setNeedsSyncUpdate:
++ fetchedIconData
++ setFetchedIconData:
++ setIconData:
+- _readingListPropertyNamed:
+- _modifyExtraReadingListAttributes:
+- _modifyLocalReadingListAttributes:
+- archiveSize
+- clearArchiveSynchronously
+- clearArchive
+- fullArchiveAvailable
+- _suggestedFileNameForWebView:
+- _sizeForFileOrDirectory:withAttributes:
+- _removeDirectoryAtPath:
+- webarchivePathInReaderForm:fileExists:
+- webarchivePathForNextPageURL:
+- writeOfflineWebView:asArchive:inReaderForm:
+- shouldReattemptArchive
+- previewText
+- dateAdded
+- setDateAdded:
+- cleanupRedundantPreviewText
+- isReadingListItem
+- archiveStatus
+- setArchiveStatus:
+- setWebFilterStatus:
+- dateLastViewed
+- setDateLastArchived:
+- locallyAdded
+- webFilterStatus
+- initReadingListBookmarkWithTitle:address:previewText:
+- localPreviewText
+- setPreviewText:
+- setLocallyAdded:
+- dateLastArchived
+- setDateLastViewed:
+- dateLastFetched
+- setDateLastFetched:
+- sourceLocalizedAppName
+- setSourceLocalizedAppName:
+- sourceBundleID
+- setSourceBundleID:
+- setTitle:previewText:dateLastFetched:
+- setNextPageURLs:
+- nextPageURLs
+- siteName
+- setSiteName:
+- setLocalPreviewText:
+- _setUUID:
+- setServerID:
+- serverID
+- setSyncKey:
+- syncKey
+- _markSpecial:
+- syncData
+- setSyncData:
+- _orderIndex
+- _setParentID:
+- _initWithSqliteRow:
+- _setOrderIndex:
+- _setID:
+- _setInserted:
+- _setHidden:
+- _setSyncable:
+- setAddress:
+- parentID
+- dealloc
+- isHidden
+- init
+- setTitle:
+- description
+- isEditable
+- UUID
+- title
+- identifier
+- localizedTitle
+- iconData
+- setExtraAttributes:
+- extraAttributes
+- isInserted
+- address
+- isDeletable
+- initWithTitle:address:
+- initFolderWithParentID:
+- specialID
+- isReadingListFolder
+- isFolder
+- localAttributes
+- setLocalAttributes:
+- initBuiltinDeviceBookmarkWithTitle:address:
+- shortTypeDescription
+- initCarrierBookmarkWithTitle:address:
+- initWhiteListBookmarkWithTitle:address:
+- isBookmarksBarFolder
+- isBookmarksMenuFolder
+- isWebFilterWhiteListFolder
+- isSyncable
+- needsSyncUpdate
+- setNeedsSyncUpdate:
+- fetchedIconData
+- setFetchedIconData:
+- setIconData:
+@end

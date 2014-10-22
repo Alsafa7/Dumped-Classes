@@ -1,0 +1,122 @@
+@interface GKLeaderboardScoresDataSource : GKCollectionViewDataSource
+{
+	id _leaderboard;
+	id _player;
+	SEL _showcaseSelector;
+	SEL _showMoreSelector;
+	id _showcaseView;
+	id _compareShowcaseView;
+	usigned long long _pageSize;
+	id _game;
+	id _loadedPages;
+	usigned long long _loadedAndReadyScores;
+	struct _preloadedRange;
+}
+
++ setShowMoreSelector:
++ needShowcaseCell:withMaxRank:
++ needCompareShowcaseCell:withMaxRank:
++ bottomShowcaseScore
++ textOffsetForIdiom:withMaxRank:
++ loadNextPageWithCompletionHandler:
++ initWithLeaderboard:game:player:
++ pageForItemIndex:
++ loadedPages
++ setLoadedPages:
++ initialPageCount
++ markCell:
++ topShowcaseScore
++ preloadImagesStartingAtIndex:
++ notifyWithLeaderboardUpdate:error:updateNotifier:
++ loadScoresForPages:withCompletionHandler:
++ sectionTitleFormatter
++ showcaseSelector
++ setShowcaseView:
++ setCompareShowcaseView:
++ showMoreSelector
++ replaceLeaderboard:
++ needShowcaseCell:
++ needCompareShowcaseCell:
++ configureCell:withScoreAtIndex:
++ setShowcaseSelector:
++ showcaseView
++ compareShowcaseView
++ loadedAndReadyScores
++ setLoadedAndReadyScores:
++ setLeaderboard:
++ game
++ setGame:
++ playerScope
++ timeScope
++ setTimeScope:
++ setPlayerScope:
++ refreshContentsForDataType:userInfo:updateNotifier:
++ configureCollectionView:
++ itemAtIndexPath:
++ indexPathsForItem:
++ setPageSize:
++ setPreloadedRange:
++ preloadedRange
++ leaderboard
++ dealloc
++ collectionView:numberOfItemsInSection:
++ collectionView:cellForItemAtIndexPath:
++ numberOfSectionsInCollectionView:
++ collectionView:viewForSupplementaryElementOfKind:atIndexPath:
++ pageSize
++ player
++ setPlayer:
+- setShowMoreSelector:
+- needShowcaseCell:withMaxRank:
+- needCompareShowcaseCell:withMaxRank:
+- bottomShowcaseScore
+- textOffsetForIdiom:withMaxRank:
+- loadNextPageWithCompletionHandler:
+- initWithLeaderboard:game:player:
+- pageForItemIndex:
+- loadedPages
+- setLoadedPages:
+- initialPageCount
+- markCell:
+- topShowcaseScore
+- preloadImagesStartingAtIndex:
+- notifyWithLeaderboardUpdate:error:updateNotifier:
+- loadScoresForPages:withCompletionHandler:
+- sectionTitleFormatter
+- showcaseSelector
+- setShowcaseView:
+- setCompareShowcaseView:
+- showMoreSelector
+- replaceLeaderboard:
+- needShowcaseCell:
+- needCompareShowcaseCell:
+- configureCell:withScoreAtIndex:
+- setShowcaseSelector:
+- showcaseView
+- compareShowcaseView
+- loadedAndReadyScores
+- setLoadedAndReadyScores:
+- setLeaderboard:
+- game
+- setGame:
+- playerScope
+- timeScope
+- setTimeScope:
+- setPlayerScope:
+- refreshContentsForDataType:userInfo:updateNotifier:
+- configureCollectionView:
+- itemAtIndexPath:
+- indexPathsForItem:
+- setPageSize:
+- setPreloadedRange:
+- preloadedRange
+- leaderboard
+- dealloc
+- collectionView:numberOfItemsInSection:
+- collectionView:cellForItemAtIndexPath:
+- numberOfSectionsInCollectionView:
+- collectionView:viewForSupplementaryElementOfKind:atIndexPath:
+- pageSize
+- player
+- setPlayer:
+@end

@@ -1,0 +1,103 @@
+@interface UITextSelection : NSObject
+{
+	id _document;
+	long long _granularity;
+	id _selectedRange;
+	id _base;
+	id _initialExtent;
+	BOOL _isCommitting;
+}
+
++ dealloc
++ invalidate
++ selectedRange
++ setSelectionWithPoint:
++ commit
++ setSelectedRange:
++ selectAll
++ selectionChanged
++ selectedText
++ collapseSelection
++ caretRect
++ clearSelection
++ hasEditableSelection
++ granularity
++ caretRectAtEndOfDocument
++ caretRectAtBeginOfDocument
++ selectionRects
++ alterSelection:granularity:
++ setGranularity:
++ setRangedSelectionBaseToCurrentSelection
++ clearRangedSelectionInitialExtent
++ setRangedSelectionWithExtentPoint:
++ moveCaretToBoundaryOfWhitespaceOrLine
++ wordContainingCaretSelection
++ _domRange
++ pointAtEndOfLine:
++ setSelectionWithFirstPoint:secondPoint:
++ setRangedSelectionExtentPoint:baseIsStart:
++ smartExtendRangedSelection:downstream:
++ setRangedSelectionBaseToCurrentSelectionStart
++ setRangedSelectionInitialExtentToCurrentSelectionEnd
++ setRangedSelectionBaseToCurrentSelectionEnd
++ setRangedSelectionInitialExtentToCurrentSelectionStart
++ aggressivelyExpandSelectionToWordContainingCaretSelection
++ setRangedSelectionExtentPoint:baseIsStart:allowFlipping:
++ isCommitting
++ document
++ initWithDocument:
++ clipPoint:inRect:
++ base
++ setBase:
++ setInitialExtent:
++ initialExtent
++ closestCaretRectForPoint:inSelection:
++ offsetInMarkedText
++ pointAtStartOfLine:
+- dealloc
+- invalidate
+- selectedRange
+- setSelectionWithPoint:
+- commit
+- setSelectedRange:
+- selectAll
+- selectionChanged
+- selectedText
+- collapseSelection
+- caretRect
+- clearSelection
+- hasEditableSelection
+- granularity
+- caretRectAtEndOfDocument
+- caretRectAtBeginOfDocument
+- selectionRects
+- alterSelection:granularity:
+- setGranularity:
+- setRangedSelectionBaseToCurrentSelection
+- clearRangedSelectionInitialExtent
+- setRangedSelectionWithExtentPoint:
+- moveCaretToBoundaryOfWhitespaceOrLine
+- wordContainingCaretSelection
+- _domRange
+- pointAtEndOfLine:
+- setSelectionWithFirstPoint:secondPoint:
+- setRangedSelectionExtentPoint:baseIsStart:
+- smartExtendRangedSelection:downstream:
+- setRangedSelectionBaseToCurrentSelectionStart
+- setRangedSelectionInitialExtentToCurrentSelectionEnd
+- setRangedSelectionBaseToCurrentSelectionEnd
+- setRangedSelectionInitialExtentToCurrentSelectionStart
+- aggressivelyExpandSelectionToWordContainingCaretSelection
+- setRangedSelectionExtentPoint:baseIsStart:allowFlipping:
+- isCommitting
+- document
+- initWithDocument:
+- clipPoint:inRect:
+- base
+- setBase:
+- setInitialExtent:
+- initialExtent
+- closestCaretRectForPoint:inSelection:
+- offsetInMarkedText
+- pointAtStartOfLine:
+@end

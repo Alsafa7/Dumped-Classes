@@ -1,0 +1,81 @@
+@interface SBActivationContext : NSObject
+{
+	id _displayValues;
+	id _activationValues;
+	id _deactivationValues;
+	id _displayFlags;
+	id _activationFlags;
+	id _deactivationFlags;
+}
+
++ setActivationSetting:flag:
++ clearActivationSettings
++ setActivationSetting:value:
++ displayFlag:
++ setDeactivationSetting:flag:
++ displayValue:
++ activationFlag:
++ activationValue:
++ deactivationFlag:
++ setDeactivationSetting:value:
++ clearDeactivationSettings
++ deactivationValue:
++ activationValues
++ deactivationValues
++ activationFlags
++ deactivationFlags
++ displayValues
++ setDisplayValues:
++ setDisplayFlags:
++ setActivationValues:
++ setActivationFlags:
++ setDeactivationValues:
++ setDeactivationFlags:
++ _displaySettingsDescription
++ _activationSettingsDescription
++ _deactivationSettingsDescription
++ _descriptionForDisplaySetting:
++ _descriptionForActivationSetting:
++ _descriptionForDeactivationSetting:
++ dealloc
++ isEqual:
++ description
++ copyWithZone:
++ initWithDisplay:
++ displayFlags
+- setActivationSetting:flag:
+- clearActivationSettings
+- setActivationSetting:value:
+- displayFlag:
+- setDeactivationSetting:flag:
+- displayValue:
+- activationFlag:
+- activationValue:
+- deactivationFlag:
+- setDeactivationSetting:value:
+- clearDeactivationSettings
+- deactivationValue:
+- activationValues
+- deactivationValues
+- activationFlags
+- deactivationFlags
+- displayValues
+- setDisplayValues:
+- setDisplayFlags:
+- setActivationValues:
+- setActivationFlags:
+- setDeactivationValues:
+- setDeactivationFlags:
+- _displaySettingsDescription
+- _activationSettingsDescription
+- _deactivationSettingsDescription
+- _descriptionForDisplaySetting:
+- _descriptionForActivationSetting:
+- _descriptionForDeactivationSetting:
+- dealloc
+- isEqual:
+- description
+- copyWithZone:
+- initWithDisplay:
+- displayFlags
+@end

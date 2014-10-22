@@ -1,0 +1,70 @@
+@interface RLNDataProvider : NSObject
+{
+	id _sectionID;
+	id _publisherBulletinIDs;
+	id _defaultSectionInfo;
+	id _displayName;
+	usigned long long _pushSettings;
+	id _proxy;
+	id _queue;
+}
+
++ pushStoreNotificationsDidChange
++ pushStoreClearedNotifications
++ pushStoreUserAcceptedDelivery
++ pushStoreUserDeclinedDelivery
++ pushStoreUpdatedPushSettings
++ _publisherBulletinIDForNotification:
++ rebuildDefaultSectionInfoForPushSettings:
++ _bulletinForNotification:
++ _cleanupMigrationFromBrightonWithLastClearedDate:
++ _allBulletinsWithLimit:
++ _saveUpdatedSectionInfo
++ initWithSectionID:displayName:queue:
++ _latestBulletinInSet:
++ dealloc
++ invalidate
++ sectionIdentifier
++ syncsBulletinDismissal
++ sectionParameters
++ sectionDisplayName
++ _isPushDataProvider
++ bulletinsFilteredBy:count:lastCleared:
++ clearedInfoForBulletins:lastClearedInfo:
++ clearedInfoAndBulletinsForClearingAllBulletinsWithLimit:lastClearedInfo:
++ defaultSectionInfo
++ noteSectionInfoDidChange:
++ _sortKey
++ proxy
++ setProxy:
++ sortDescriptors
+- pushStoreNotificationsDidChange
+- pushStoreClearedNotifications
+- pushStoreUserAcceptedDelivery
+- pushStoreUserDeclinedDelivery
+- pushStoreUpdatedPushSettings
+- _publisherBulletinIDForNotification:
+- rebuildDefaultSectionInfoForPushSettings:
+- _bulletinForNotification:
+- _cleanupMigrationFromBrightonWithLastClearedDate:
+- _allBulletinsWithLimit:
+- _saveUpdatedSectionInfo
+- initWithSectionID:displayName:queue:
+- _latestBulletinInSet:
+- dealloc
+- invalidate
+- sectionIdentifier
+- syncsBulletinDismissal
+- sectionParameters
+- sectionDisplayName
+- _isPushDataProvider
+- bulletinsFilteredBy:count:lastCleared:
+- clearedInfoForBulletins:lastClearedInfo:
+- clearedInfoAndBulletinsForClearingAllBulletinsWithLimit:lastClearedInfo:
+- defaultSectionInfo
+- noteSectionInfoDidChange:
+- _sortKey
+- proxy
+- setProxy:
+- sortDescriptors
+@end

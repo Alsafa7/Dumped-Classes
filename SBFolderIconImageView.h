@@ -1,0 +1,102 @@
+@interface SBFolderIconImageView : SBIconImageView
+{
+	id _backgroundView;
+	id _pageGridContainer;
+	id _leftWrapperView;
+	id _rightWrapperView;
+	id _pageElements;
+	usigned long long _currentPageIndex;
+	id _crossfadeFolderView;
+	id _crossfadeScalingView;
+	BOOL _animating;
+}
+
++ darkeningOverlayImage
++ _generateSquareContentsImage
++ folderIcon:didUpdateGridImage:forListIndex:forContainedIconImageUpdate:
++ _iconGridImageClass
++ frameForMiniIconAtIndex:
++ scrollToFirstGapAnimated:
++ _folderIcon
++ firstVisibleMiniIconIndex
++ _updateRasterization
++ _setPageElements:
++ scrollToTopOfFirstPageAnimated:
++ setBackgroundAndIconGridImageAlpha:
++ setBackgroundScale:
++ _interiorGridSizeClipRect
++ _interPageSpacing
++ scrollToTopOfPage:animated:
++ _performScrollingMovingToLeft:movingToRight:targetPageIndex:targetPageScrollRow:newLeftElement:newRightElement:animated:
++ _currentPageElement
++ visibleMiniIconCount
++ frameForMiniIconAtIndexPath:
++ setWallpaperRelativeCenter:
++ setFloatyFolderCrossfadeFraction:
++ _showLeftMinigrid
++ _showRightMinigrid
++ updateImageAnimated:
++ _setupGridViewsInDefaultConfiguration
++ blurryBackgroundViewDidChangeWhetherBlurring:
++ scrollToGapOrTopIfFullOfPage:animated:
++ visibleMiniIconListIndex
++ centerVisibleMiniIconIndex
++ lastVisibleMiniIconIndex
++ visibleImageRelativeFrameForMiniIconAtIndex:
++ setIconGridImageAlpha:
++ setSuppressesBlurryBackgroundChanges:
++ prepareToCrossfadeWithFloatyFolderView:allowFolderInteraction:
++ cleanupAfterFloatyFolderCrossfade
++ initWithFrame:
++ dealloc
++ layoutSubviews
++ snapshot
++ _setAnimating:
++ prepareForReuse
++ backgroundView
++ contentsImage
+- darkeningOverlayImage
+- _generateSquareContentsImage
+- folderIcon:didUpdateGridImage:forListIndex:forContainedIconImageUpdate:
+- _iconGridImageClass
+- frameForMiniIconAtIndex:
+- scrollToFirstGapAnimated:
+- _folderIcon
+- firstVisibleMiniIconIndex
+- _updateRasterization
+- _setPageElements:
+- scrollToTopOfFirstPageAnimated:
+- setBackgroundAndIconGridImageAlpha:
+- setBackgroundScale:
+- _interiorGridSizeClipRect
+- _interPageSpacing
+- scrollToTopOfPage:animated:
+- _performScrollingMovingToLeft:movingToRight:targetPageIndex:targetPageScrollRow:newLeftElement:newRightElement:animated:
+- _currentPageElement
+- visibleMiniIconCount
+- frameForMiniIconAtIndexPath:
+- setWallpaperRelativeCenter:
+- setFloatyFolderCrossfadeFraction:
+- _showLeftMinigrid
+- _showRightMinigrid
+- updateImageAnimated:
+- _setupGridViewsInDefaultConfiguration
+- blurryBackgroundViewDidChangeWhetherBlurring:
+- scrollToGapOrTopIfFullOfPage:animated:
+- visibleMiniIconListIndex
+- centerVisibleMiniIconIndex
+- lastVisibleMiniIconIndex
+- visibleImageRelativeFrameForMiniIconAtIndex:
+- setIconGridImageAlpha:
+- setSuppressesBlurryBackgroundChanges:
+- prepareToCrossfadeWithFloatyFolderView:allowFolderInteraction:
+- cleanupAfterFloatyFolderCrossfade
+- initWithFrame:
+- dealloc
+- layoutSubviews
+- snapshot
+- _setAnimating:
+- prepareForReuse
+- backgroundView
+- contentsImage
+@end

@@ -1,0 +1,79 @@
+@interface WebPluginController : NSObject
+{
+	id _documentView;
+	id _dataSource;
+	id _views;
+	BOOL _started;
+	id _checksInProgress;
+	id _viewsNotInDocument;
+}
+
++ dealloc
++ setDataSource:
++ webView
++ webFrame
++ initWithDocumentView:
++ pluginViewCreated:
++ pluginView:receivedResponse:
++ pluginView:receivedData:
++ pluginView:receivedError:
++ pluginViewFinishedLoading:
++ destroyAllPlugins
++ stopAllPlugins
++ startAllPlugins
++ addPlugin:
++ _webPluginContainerCancelCheckIfAllowedToLoadRequest:
++ stopOnePlugin:
++ stopOnePluginForPageCache:
++ destroyOnePlugin:
++ _cancelOutstandingChecks
++ webPlugInContainerShowStatus:
++ plugInsAreRunning
++ superlayerForPluginView:
++ stopPluginsForPageCache
++ restorePluginsFromCache
++ destroyPlugin:
++ processingUserGesture
++ _webPluginContainerCheckIfAllowedToLoadRequest:inFrame:resultObject:selector:
++ webPlugInContainerLoadRequest:inFrame:
++ webPlugInContainerWillShowFullScreenForView:
++ webPlugInContainerDidHideFullScreenForView:
++ showStatus:
++ URLPolicyCheckReferrer
++ _webPluginContainerSetMediaPlayerProxy:forElement:
++ _webPluginContainerPostMediaPlayerNotification:forElement:
+- dealloc
+- setDataSource:
+- webView
+- webFrame
+- initWithDocumentView:
+- pluginViewCreated:
+- pluginView:receivedResponse:
+- pluginView:receivedData:
+- pluginView:receivedError:
+- pluginViewFinishedLoading:
+- destroyAllPlugins
+- stopAllPlugins
+- startAllPlugins
+- addPlugin:
+- _webPluginContainerCancelCheckIfAllowedToLoadRequest:
+- stopOnePlugin:
+- stopOnePluginForPageCache:
+- destroyOnePlugin:
+- _cancelOutstandingChecks
+- webPlugInContainerShowStatus:
+- plugInsAreRunning
+- superlayerForPluginView:
+- stopPluginsForPageCache
+- restorePluginsFromCache
+- destroyPlugin:
+- processingUserGesture
+- _webPluginContainerCheckIfAllowedToLoadRequest:inFrame:resultObject:selector:
+- webPlugInContainerLoadRequest:inFrame:
+- webPlugInContainerWillShowFullScreenForView:
+- webPlugInContainerDidHideFullScreenForView:
+- showStatus:
+- URLPolicyCheckReferrer
+- _webPluginContainerSetMediaPlayerProxy:forElement:
+- _webPluginContainerPostMediaPlayerNotification:forElement:
+@end

@@ -1,0 +1,103 @@
+@interface SBFLockScreenDateView : UIView
+{
+	id _timeLabel;
+	id _dateLabel;
+	BOOL _useLegibilityLabels;
+	id _legibilityTimeLabel;
+	id _legibilityDateLabel;
+	double _timeAlpha;
+	double _dateAlpha;
+	id _date;
+	id _formatter;
+	id _legibilitySettings;
+	double _timeStrength;
+	double _dateStrength;
+	id _textColor;
+	double _dateAlphaPercentage;
+}
+
++ activatorSwipeDownRecognized:
++ activatorSwipeLeftRecognized:
++ activatorSwipeRightRecognized:
++ activatorDoubleTapRecognized:
++ activatorLongPressRecognized:
++ gestureRecognizer:shouldRecognizeSimultaneouslyWithGestureRecognizer:
++ setUserInteractionEnabled:
++ initWithFrame:
++ dealloc
++ layoutSubviews
++ date
++ setTextColor:
++ textColor
++ setDate:
++ legibilitySettings
++ setLegibilitySettings:
++ setFormatter:
++ timeBaselineOffsetFromOrigin
++ updateFormat
++ _addLabels
++ _useLegibilityLabels:
++ _updateLabels
++ _updateLegibilityLabels
++ _setDateAlpha:
++ _timeFont
++ _dateFont
++ _updateLabelAlpha
++ _effectiveDateAlpha
++ dateAlphaPercentage
++ _layoutTimeLabel
++ _layoutDateLabel
++ _dateBaselineOffsetFromTime
++ setDateStrength:
++ setTimeStrength:
++ setDateAlphaPercentage:
++ isDateHidden
++ setDateHidden:
++ setContentAlpha:withDateVisible:
++ dateBaselineOffsetFromOrigin
++ formatter
++ timeStrength
++ dateStrength
+- activatorSwipeDownRecognized:
+- activatorSwipeLeftRecognized:
+- activatorSwipeRightRecognized:
+- activatorDoubleTapRecognized:
+- activatorLongPressRecognized:
+- gestureRecognizer:shouldRecognizeSimultaneouslyWithGestureRecognizer:
+- setUserInteractionEnabled:
+- initWithFrame:
+- dealloc
+- layoutSubviews
+- date
+- setTextColor:
+- textColor
+- setDate:
+- legibilitySettings
+- setLegibilitySettings:
+- setFormatter:
+- timeBaselineOffsetFromOrigin
+- updateFormat
+- _addLabels
+- _useLegibilityLabels:
+- _updateLabels
+- _updateLegibilityLabels
+- _setDateAlpha:
+- _timeFont
+- _dateFont
+- _updateLabelAlpha
+- _effectiveDateAlpha
+- dateAlphaPercentage
+- _layoutTimeLabel
+- _layoutDateLabel
+- _dateBaselineOffsetFromTime
+- setDateStrength:
+- setTimeStrength:
+- setDateAlphaPercentage:
+- isDateHidden
+- setDateHidden:
+- setContentAlpha:withDateVisible:
+- dateBaselineOffsetFromOrigin
+- formatter
+- timeStrength
+- dateStrength
+@end

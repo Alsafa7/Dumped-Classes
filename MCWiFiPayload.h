@@ -1,0 +1,181 @@
+@interface MCWiFiPayload : MCPayload
+{
+	BOOL _isHidden;
+	BOOL _isWEP;
+	BOOL _isWPA;
+	BOOL _passwordRequired;
+	BOOL _usernameRequired;
+	BOOL _autoJoin;
+	BOOL _proxyPACFallbackAllowed;
+	BOOL _isHotspot;
+	BOOL _serviceProviderRoamingEnabled;
+	int _proxyType;
+	id _ssid;
+	id _encryptionType;
+	id _eapClientConfig;
+	id _password;
+	id _username;
+	id _certificateUUID;
+	id _payloadCertificateAnchorUUID;
+	id _proxyServer;
+	id _proxyServerPort;
+	id _proxyUsername;
+	id _proxyPassword;
+	id _proxyPACURLString;
+	id _credentialUUID;
+	id _priority;
+	id _domainName;
+	id _HESSID;
+	id _roamingConsortiumOIs;
+	id _NAIRealmNames;
+	id _MCCAndMNCs;
+	id _displayedOperatorName;
+}
+
++ handlerWithProfileHandler:
++ password
++ setPassword:
++ proxyType
++ isHidden
++ description
++ setIsHidden:
++ priority
++ setPriority:
++ setEncryptionType:
++ encryptionType
++ initWithDictionary:profile:outError:
++ stubDictionary
++ subtitle1Label
++ subtitle1Description
++ subtitle2Label
++ subtitle2Description
++ proxyServer
++ setProxyServer:
++ _eapConfigIsValid:error:
++ _eapUsernameFromConfig:isRequired:
++ _eapPasswordFromConfig:isRequired:
++ _isEAPSIMConfig:
++ setEapClientConfig:
++ setProxyType:
++ ssid
++ isHotspot
++ roamingConsortiumOIs
++ setRoamingConsortiumOIs:
++ NAIRealmNames
++ setNAIRealmNames:
++ MCCAndMNCs
++ setMCCAndMNCs:
++ HESSID
++ isServiceProviderRoamingEnabled
++ displayedOperatorName
++ eapClientConfig
++ proxyServerPort
++ proxyUsername
++ proxyPassword
++ proxyPACURLString
++ proxyPACFallbackAllowed
++ setSsid:
++ isWEP
++ setIsWEP:
++ isWPA
++ setIsWPA:
++ passwordRequired
++ setPasswordRequired:
++ usernameRequired
++ setUsernameRequired:
++ autoJoin
++ setAutoJoin:
++ certificateUUID
++ setCertificateUUID:
++ payloadCertificateAnchorUUID
++ setPayloadCertificateAnchorUUID:
++ setProxyServerPort:
++ setProxyUsername:
++ setProxyPassword:
++ setProxyPACURLString:
++ setProxyPACFallbackAllowed:
++ credentialUUID
++ setCredentialUUID:
++ setIsHotspot:
++ setHESSID:
++ setServiceProviderRoamingEnabled:
++ setDisplayedOperatorName:
++ setUsername:
++ domainName
++ setDomainName:
++ username
++ .cxx_destruct
+- handlerWithProfileHandler:
+- password
+- setPassword:
+- proxyType
+- isHidden
+- description
+- setIsHidden:
+- priority
+- setPriority:
+- setEncryptionType:
+- encryptionType
+- initWithDictionary:profile:outError:
+- stubDictionary
+- subtitle1Label
+- subtitle1Description
+- subtitle2Label
+- subtitle2Description
+- proxyServer
+- setProxyServer:
+- _eapConfigIsValid:error:
+- _eapUsernameFromConfig:isRequired:
+- _eapPasswordFromConfig:isRequired:
+- _isEAPSIMConfig:
+- setEapClientConfig:
+- setProxyType:
+- ssid
+- isHotspot
+- roamingConsortiumOIs
+- setRoamingConsortiumOIs:
+- NAIRealmNames
+- setNAIRealmNames:
+- MCCAndMNCs
+- setMCCAndMNCs:
+- HESSID
+- isServiceProviderRoamingEnabled
+- displayedOperatorName
+- eapClientConfig
+- proxyServerPort
+- proxyUsername
+- proxyPassword
+- proxyPACURLString
+- proxyPACFallbackAllowed
+- setSsid:
+- isWEP
+- setIsWEP:
+- isWPA
+- setIsWPA:
+- passwordRequired
+- setPasswordRequired:
+- usernameRequired
+- setUsernameRequired:
+- autoJoin
+- setAutoJoin:
+- certificateUUID
+- setCertificateUUID:
+- payloadCertificateAnchorUUID
+- setPayloadCertificateAnchorUUID:
+- setProxyServerPort:
+- setProxyUsername:
+- setProxyPassword:
+- setProxyPACURLString:
+- setProxyPACFallbackAllowed:
+- credentialUUID
+- setCredentialUUID:
+- setIsHotspot:
+- setHESSID:
+- setServiceProviderRoamingEnabled:
+- setDisplayedOperatorName:
+- setUsername:
+- domainName
+- setDomainName:
+- username
+- .cxx_destruct
+@end

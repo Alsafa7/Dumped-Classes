@@ -1,0 +1,6 @@
+@interface SUScriptPurchaseManager : SUScriptObject
+{
+
+}
+
+@end

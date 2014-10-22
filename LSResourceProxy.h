@@ -1,0 +1,81 @@
+@interface LSResourceProxy : NSObject
+{
+	id _localizedName;
+	id _boundApplicationIdentifier;
+	id _boundContainerURL;
+	id _boundResourcesDirURL;
+	id _boundIconsDictionary;
+	id _boundIconCacheKey;
+	id _boundIconFileNames;
+	id _typeOwner;
+	BOOL _boundIconIsPrerendered;
+	BOOL _boundIconIsBadge;
+}
+
++ _iconDefinitionForSize:style:
++ _iconVariantDefinitions:
++ _largestImageSize:
++ _defaultStyleSize:
++ _iconForStyle:size:
++ _iconForStyle:
++ setBoundApplicationIdentifier:
++ setBoundContainerURL:
++ setBoundResourcesDirectoryURL:
++ setBoundIconsDictionary:
++ setBoundIconCacheKey:
++ setBoundIconFileNames:
++ setTypeOwner:
++ setBoundIconIsPrerendered:
++ setBoundIconIsBadge:
++ _initWithLocalizedName:boundApplicationIdentifier:boundContainerURL:boundResourcesDirectoryURL:boundIconsDictionary:boundIconCacheKey:boundIconFileNames:typeOwner:boundIconIsPrerendered:boundIconIsBadge:
++ boundIconsDictionary
++ typeOwner
++ boundResourcesDirectoryURL
++ boundApplicationIdentifier
++ boundContainerURL
++ iconStyleDomain
++ boundIconCacheKey
++ boundIconIsPrerendered
++ boundIconFileNames
++ _initWithLocalizedName:
++ iconsDictionary
++ dealloc
++ iconDataForVariant:
++ localizedName
++ boundIconIsBadge
++ iconDataForStyle:width:height:options:
++ setLocalizedName:
+- _iconDefinitionForSize:style:
+- _iconVariantDefinitions:
+- _largestImageSize:
+- _defaultStyleSize:
+- _iconForStyle:size:
+- _iconForStyle:
+- setBoundApplicationIdentifier:
+- setBoundContainerURL:
+- setBoundResourcesDirectoryURL:
+- setBoundIconsDictionary:
+- setBoundIconCacheKey:
+- setBoundIconFileNames:
+- setTypeOwner:
+- setBoundIconIsPrerendered:
+- setBoundIconIsBadge:
+- _initWithLocalizedName:boundApplicationIdentifier:boundContainerURL:boundResourcesDirectoryURL:boundIconsDictionary:boundIconCacheKey:boundIconFileNames:typeOwner:boundIconIsPrerendered:boundIconIsBadge:
+- boundIconsDictionary
+- typeOwner
+- boundResourcesDirectoryURL
+- boundApplicationIdentifier
+- boundContainerURL
+- iconStyleDomain
+- boundIconCacheKey
+- boundIconIsPrerendered
+- boundIconFileNames
+- _initWithLocalizedName:
+- iconsDictionary
+- dealloc
+- iconDataForVariant:
+- localizedName
+- boundIconIsBadge
+- iconDataForStyle:width:height:options:
+- setLocalizedName:
+@end

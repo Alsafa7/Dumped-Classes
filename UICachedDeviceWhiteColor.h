@@ -1,0 +1,6 @@
+@interface UICachedDeviceWhiteColor : UIDeviceWhiteColor
+{
+
+}
+
+@end

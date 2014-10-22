@@ -1,0 +1,126 @@
+@interface _UIFlowLayoutSection : NSObject
+{
+	id _items;
+	id _rows;
+	struct _sectionMagins;
+	double _verticalInterstice;
+	double _horizontalInterstice;
+	struct _headerFrame;
+	struct _footerFrame;
+	double _headerDimension;
+	double _footerDimension;
+	id _layoutInfo;
+	BOOL _isValid;
+	struct _frame;
+	id _rowAlignmentOptions;
+	BOOL _fixedItemSize;
+	struct _itemSize;
+	double _otherMargin;
+	double _beginMargin;
+	double _endMargin;
+	double _actualGap;
+	double _lastRowBeginMargin;
+	double _lastRowEndMargin;
+	double _lastRowActualGap;
+	BOOL _lastRowIncomplete;
+	long long _itemsCount;
+	long long _itemsByRowCount;
+	long long _indexOfImcompleteRow;
+	struct _sectionMargins;
+}
+
++ dealloc
++ init
++ setFrame:
++ frame
++ invalidate
++ snapshot
++ items
++ rows
++ headerDimension
++ footerDimension
++ fixedItemSize
++ itemsByRowCount
++ itemSize
++ rowAlignmentOptions
++ lastRowIncomplete
++ indexOfImcompleteRow
++ lastRowBeginMargin
++ lastRowActualGap
++ beginMargin
++ actualGap
++ otherMargin
++ verticalInterstice
++ itemsCount
++ layoutInfo
++ endMargin
++ setItemSize:
++ setItemsCount:
++ addItem
++ setFixedItemSize:
++ setSectionMargins:
++ setHorizontalInterstice:
++ setVerticalInterstice:
++ setRowAlignmentOptions:
++ setHeaderDimension:
++ setFooterDimension:
++ computeLayout
++ headerFrame
++ footerFrame
++ horizontalInterstice
++ sectionMargins
++ addRow
++ setLayoutInfo:
++ recomputeFromIndex:
++ copyFromLayoutInfo:
++ setHeaderFrame:
++ setFooterFrame:
++ lastRowEndMargin
+- dealloc
+- init
+- setFrame:
+- frame
+- invalidate
+- snapshot
+- items
+- rows
+- headerDimension
+- footerDimension
+- fixedItemSize
+- itemsByRowCount
+- itemSize
+- rowAlignmentOptions
+- lastRowIncomplete
+- indexOfImcompleteRow
+- lastRowBeginMargin
+- lastRowActualGap
+- beginMargin
+- actualGap
+- otherMargin
+- verticalInterstice
+- itemsCount
+- layoutInfo
+- endMargin
+- setItemSize:
+- setItemsCount:
+- addItem
+- setFixedItemSize:
+- setSectionMargins:
+- setHorizontalInterstice:
+- setVerticalInterstice:
+- setRowAlignmentOptions:
+- setHeaderDimension:
+- setFooterDimension:
+- computeLayout
+- headerFrame
+- footerFrame
+- horizontalInterstice
+- sectionMargins
+- addRow
+- setLayoutInfo:
+- recomputeFromIndex:
+- copyFromLayoutInfo:
+- setHeaderFrame:
+- setFooterFrame:
+- lastRowEndMargin
+@end

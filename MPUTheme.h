@@ -1,0 +1,6 @@
+@interface MPUTheme : NSObject
+{
+
+}
+
+@end

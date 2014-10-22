@@ -1,0 +1,69 @@
+@interface PCWWANUsabilityMonitor : NSObject
+{
+	pointer _delegateQueue;
+	pointer _ivarQueue;
+	pointer _monitorDelegateQueue;
+	id _delegateReference;
+	BOOL _isInCall;
+	BOOL _isInHighPowerState;
+	BOOL _trackUsability;
+	usigned long long _thresholdOffTransitionCount;
+	double _trackedTimeInterval;
+	id _interfaceName;
+	id _interfaceMonitor;
+	pointer _currentRAT;
+	int _powerlogCDRXToken;
+	pointer _telephonyServer;
+	int _wwanContextID;
+	pointer _ctServerQueue;
+}
+
++ dealloc
++ setDelegate:
++ delegate
++ isInterfaceUsable
++ isPoorLinkQuality
++ isInternetReachable
++ linkQualityString
++ isInterfaceHistoricallyUsable
++ interfaceLinkQualityChanged:previousLinkQuality:
++ interfaceReachabilityChanged:
++ _callDelegateOnIvarQueueWithBlock:
++ setTrackedTimeInterval:
++ setThresholdOffTransitionCount:
++ setTrackUsability:
++ isRadioHot
++ interfaceIdentifier
++ currentRAT
++ isLTEWithCDRX
++ _forwardConfigurationOnIvarQueue
++ initWithDelegateQueue:
++ _setupWWANMonitor
++ _adjustInterfaceNameForWWANContextID:
++ _handleTelephonyNotificationWithName:userInfo:
++ linkQuality
+- dealloc
+- setDelegate:
+- delegate
+- isInterfaceUsable
+- isPoorLinkQuality
+- isInternetReachable
+- linkQualityString
+- isInterfaceHistoricallyUsable
+- interfaceLinkQualityChanged:previousLinkQuality:
+- interfaceReachabilityChanged:
+- _callDelegateOnIvarQueueWithBlock:
+- setTrackedTimeInterval:
+- setThresholdOffTransitionCount:
+- setTrackUsability:
+- isRadioHot
+- interfaceIdentifier
+- currentRAT
+- isLTEWithCDRX
+- _forwardConfigurationOnIvarQueue
+- initWithDelegateQueue:
+- _setupWWANMonitor
+- _adjustInterfaceNameForWWANContextID:
+- _handleTelephonyNotificationWithName:userInfo:
+- linkQuality
+@end

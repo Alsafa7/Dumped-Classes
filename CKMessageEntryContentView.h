@@ -1,0 +1,114 @@
+@interface CKMessageEntryContentView : UIScrollView
+{
+	BOOL _shouldShowSubject;
+	BOOL _needsTextLayout;
+	BOOL _needsEnsureSelectionVisible;
+	id _composition;
+	id _subjectView;
+	id _textView;
+	id _activeView;
+	double _placeholderHeight;
+	id _dividerLine;
+	struct _textAlignmentInsets;
+	struct _subjectAlignmentInsets;
+}
+
++ dealloc
++ setFrame:
++ layoutSubviews
++ setBounds:
++ sizeThatFits:
++ isActive
++ setTextView:
++ textViewDidBeginEditing:
++ textViewDidEndEditing:
++ textViewShouldBeginEditing:
++ hasContent
++ textViewDidChange:
++ textView
++ calculateTextMetrics
++ contentTextAlignmentInsets
++ isSingleLine
++ placeholderHeight
++ setShouldShowSubject:
++ initWithFrame:shouldShowSubject:
++ setComposition:
++ clearMessage
++ shouldShowSubject
++ setTextAlignmentInsets:
++ textAlignmentInsets
++ isShowingDictationPlaceholder
++ setBalloonColor:
++ activeView
++ subjectView
++ insertMessagePart:
++ setMessageParts:
++ makeActive
++ messageEntryRichTextView:shouldPasteMediaObjects:
++ balloonColor
++ needsTextLayout
++ dividerLine
++ ensureSelectionVisibleIfNeeded
++ setNeedsTextLayout:
++ setSubjectView:
++ setDividerLine:
++ invalidateComposition
++ subjectAlignmentInsets
++ setNeedsEnsureSelectionVisible:
++ setActiveView:
++ needsEnsureSelectionVisible
++ setPlaceholderHeight:
++ setSubjectAlignmentInsets:
++ composition
++ placeholderText
++ setPlaceholderText:
+- dealloc
+- setFrame:
+- layoutSubviews
+- setBounds:
+- sizeThatFits:
+- isActive
+- setTextView:
+- textViewDidBeginEditing:
+- textViewDidEndEditing:
+- textViewShouldBeginEditing:
+- hasContent
+- textViewDidChange:
+- textView
+- calculateTextMetrics
+- contentTextAlignmentInsets
+- isSingleLine
+- placeholderHeight
+- setShouldShowSubject:
+- initWithFrame:shouldShowSubject:
+- setComposition:
+- clearMessage
+- shouldShowSubject
+- setTextAlignmentInsets:
+- textAlignmentInsets
+- isShowingDictationPlaceholder
+- setBalloonColor:
+- activeView
+- subjectView
+- insertMessagePart:
+- setMessageParts:
+- makeActive
+- messageEntryRichTextView:shouldPasteMediaObjects:
+- balloonColor
+- needsTextLayout
+- dividerLine
+- ensureSelectionVisibleIfNeeded
+- setNeedsTextLayout:
+- setSubjectView:
+- setDividerLine:
+- invalidateComposition
+- subjectAlignmentInsets
+- setNeedsEnsureSelectionVisible:
+- setActiveView:
+- needsEnsureSelectionVisible
+- setPlaceholderHeight:
+- setSubjectAlignmentInsets:
+- composition
+- placeholderText
+- setPlaceholderText:
+@end

@@ -1,0 +1,77 @@
+@interface SBSyncController : NSObject
+{
+	int _restoreState;
+	int _resetState;
+	int _restoreTimerState;
+	id _restoreTimer;
+	id _progressTimer;
+	BOOL _showingResetUI;
+	BOOL _appsChangedDuringSync;
+	int _restoreStartedNotifyToken;
+	int _restoreEndedNotifyToken;
+	id _disableDeviceLockAssertion;
+}
+
++ isResetting
++ _rebootNow
++ finishedTerminatingApplications
++ beginRestoring
++ didEndRestoring:
++ _resetStarted:
++ _resetEnded:
++ _wirelessSyncEnded:
++ syncSessionDidEnd
++ _setRestoreState:
++ _setupRestoreTimer
++ _killApplications
++ _notifyRestoreCanProceed
++ _invalidateRestoreTimer
++ finishEndRestoring
++ _delayedQuitApplications
++ _delayedBeginReset
++ didEndResetting
++ _isBackupAgentRunning
++ _restoreTimerFired:
++ cancelRestoring
++ beginResetting:
++ _appInstallationNotification
++ _updateProgress
++ startObserving
++ dealloc
++ isRestoring
++ resetState
++ isInUse
++ stopObserving
++ restoreState
+- isResetting
+- _rebootNow
+- finishedTerminatingApplications
+- beginRestoring
+- didEndRestoring:
+- _resetStarted:
+- _resetEnded:
+- _wirelessSyncEnded:
+- syncSessionDidEnd
+- _setRestoreState:
+- _setupRestoreTimer
+- _killApplications
+- _notifyRestoreCanProceed
+- _invalidateRestoreTimer
+- finishEndRestoring
+- _delayedQuitApplications
+- _delayedBeginReset
+- didEndResetting
+- _isBackupAgentRunning
+- _restoreTimerFired:
+- cancelRestoring
+- beginResetting:
+- _appInstallationNotification
+- _updateProgress
+- startObserving
+- dealloc
+- isRestoring
+- resetState
+- isInUse
+- stopObserving
+- restoreState
+@end

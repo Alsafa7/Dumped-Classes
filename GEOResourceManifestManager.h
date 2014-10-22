@@ -1,0 +1,107 @@
+@interface GEOResourceManifestManager : NSObject
+{
+	id _serverProxy;
+	id _serverProxyObservers;
+	id _activeTileGroup;
+	id _activeTileGroupLock;
+	id _resourceNamesToPaths;
+	id _tileGroupObservers;
+	id _tileGroupObserversLock;
+	id _localizationRegionsInfo;
+	id _networkActivityHandlers;
+	BOOL _isUpdatingManifest;
+	BOOL _isLoadingResources;
+	id _resourceNamesToPathsLock;
+}
+
++ authToken
++ dealloc
++ init
++ multiTileURLStringForTileKey:useStatusCodes:
++ serverProxy
++ forceUpdate
++ localizationURLStringIfNecessaryForTileKey:
++ languageForTileKey:
++ startObservingDevResources
++ stopObservingDevResources
++ serverProxyDidChangeActiveTileGroup:finishedCallback:
++ mapMatchingTileSetStyle
++ timeToLiveForTileKey:
++ isAvailableForTileKey:
++ supportsTileStyle:size:scale:
++ _buildResourceNamesToPaths
++ serverProxyWillStartUpdatingResourceManifest
++ serverProxyDidStopUpdatingResourceManifest
++ serverProxyWillStartLoadingResources
++ serverProxyDidStopLoadingResources
++ setManifestToken:completionHandler:
++ hasResourceManifest
++ getResourceManifestWithHandler:
++ setActiveTileGroupIdentifier:
++ resetActiveTileGroup
++ _notifyObserversOfResourcesChange
++ addServerProxyObserver:
++ removeServerProxyObserver:
++ mapMatchingZoomLevel
++ _activeTileSetForKey:
++ addNetworkActivityHandler:
++ activeTileGroupIdentifier
++ devResourcesFolderDidChange
++ _localeChanged:
++ openServerConnection
++ closeServerConnection
++ detailedDescription
++ activeTileGroup
++ hasActiveTileGroup
++ addTileGroupObserver:queue:
++ removeTileGroupObserver:
++ allResourceNames
++ versionForTileKey:
++ baseURLStringForTileKey:
++ pathForResourceWithName:
+- authToken
+- dealloc
+- init
+- multiTileURLStringForTileKey:useStatusCodes:
+- serverProxy
+- forceUpdate
+- localizationURLStringIfNecessaryForTileKey:
+- languageForTileKey:
+- startObservingDevResources
+- stopObservingDevResources
+- serverProxyDidChangeActiveTileGroup:finishedCallback:
+- mapMatchingTileSetStyle
+- timeToLiveForTileKey:
+- isAvailableForTileKey:
+- supportsTileStyle:size:scale:
+- _buildResourceNamesToPaths
+- serverProxyWillStartUpdatingResourceManifest
+- serverProxyDidStopUpdatingResourceManifest
+- serverProxyWillStartLoadingResources
+- serverProxyDidStopLoadingResources
+- setManifestToken:completionHandler:
+- hasResourceManifest
+- getResourceManifestWithHandler:
+- setActiveTileGroupIdentifier:
+- resetActiveTileGroup
+- _notifyObserversOfResourcesChange
+- addServerProxyObserver:
+- removeServerProxyObserver:
+- mapMatchingZoomLevel
+- _activeTileSetForKey:
+- addNetworkActivityHandler:
+- activeTileGroupIdentifier
+- devResourcesFolderDidChange
+- _localeChanged:
+- openServerConnection
+- closeServerConnection
+- detailedDescription
+- activeTileGroup
+- hasActiveTileGroup
+- addTileGroupObserver:queue:
+- removeTileGroupObserver:
+- allResourceNames
+- versionForTileKey:
+- baseURLStringForTileKey:
+- pathForResourceWithName:
+@end

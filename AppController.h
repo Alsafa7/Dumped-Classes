@@ -1,0 +1,79 @@
+@interface AppController : UIApplication
+{
+	BOOL _initializationPerformed;
+	id _userPreferencesCommitTimer;
+	id _window;
+	id _tabBarController;
+	id _alarmViewController;
+	id _stopwatchViewController;
+	id _timerViewController;
+	id _worldClockViewController;
+	id _currentTestName;
+	long long _iterations;
+}
+
++ _selectViewController:
++ _spinMainRunLoop
++ _runRotationTest
++ _didEnterFullScreenClock:
++ _didExitFullScreenClock:
++ _didPageWorldClock:
++ _didPageFullScreenWorldClock:
++ _runScrollTest:
++ finishedTest:extraResults:
++ startedTest:
++ runTest:options:
++ _windowDidRotate:
++ resetInvalidAlarmsLogging
++ copyInvalidAlarmsLog
++ invalidAlarmsDetected
++ handleUserPreferencesChangedWithScheduledLocalNotificationsRefresh:
++ handleLocalNotificationsChangedWithFullReload:
++ initWindowAndViewControllers
++ scheduleUserPreferencesCommit
++ cancelScheduledUserPreferencesCommit
++ commitUserPreferences
++ containerViewController
++ dealloc
++ application:openURL:sourceApplication:annotation:
++ applicationWillTerminate:
++ applicationDidBecomeActive:
++ applicationWillResignActive:
++ applicationDidEnterBackground:
++ applicationWillEnterForeground:
++ applicationDidFinishLaunching:
++ application:didReceiveLocalNotification:
++ application:didSnoozeLocalNotification:
+- _selectViewController:
+- _spinMainRunLoop
+- _runRotationTest
+- _didEnterFullScreenClock:
+- _didExitFullScreenClock:
+- _didPageWorldClock:
+- _didPageFullScreenWorldClock:
+- _runScrollTest:
+- finishedTest:extraResults:
+- startedTest:
+- runTest:options:
+- _windowDidRotate:
+- resetInvalidAlarmsLogging
+- copyInvalidAlarmsLog
+- invalidAlarmsDetected
+- handleUserPreferencesChangedWithScheduledLocalNotificationsRefresh:
+- handleLocalNotificationsChangedWithFullReload:
+- initWindowAndViewControllers
+- scheduleUserPreferencesCommit
+- cancelScheduledUserPreferencesCommit
+- commitUserPreferences
+- containerViewController
+- dealloc
+- application:openURL:sourceApplication:annotation:
+- applicationWillTerminate:
+- applicationDidBecomeActive:
+- applicationWillResignActive:
+- applicationDidEnterBackground:
+- applicationWillEnterForeground:
+- applicationDidFinishLaunching:
+- application:didReceiveLocalNotification:
+- application:didSnoozeLocalNotification:
+@end

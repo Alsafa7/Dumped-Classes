@@ -1,0 +1,75 @@
+@interface IMAVTelephonyManager : NSObject
+{
+	id _callCenter;
+	pointer _ctServerConnection;
+	id _currentCallDictionary;
+	BOOL _isDesignatedAudioServiceProvider;
+	BOOL _isDesignatedVideoServiceProvider;
+	pointer _ctServerMachPort;
+	pointer _ctAudioToken;
+	pointer _ctVideoToken;
+}
+
++ callState
++ dealloc
++ init
++ _notifyMissedCallForInviteFromID:isVideo:
++ _isOnCallToID:
++ _breakCSCallsIfNecessary
++ _handleCallEvent:
++ startWatchingForCTRequests
++ _chatStateChanged:
++ __handleCallEvent:
++ _cleanupMachInfo
++ _registerCTRequestService
++ _setupCTServerConnection
++ _unregisterCTRequestService
++ _callRefForChat:
++ _dialRequested:
++ _answerCall:
++ _hangUpCall:
++ _disconnectCTServerConnection
++ _reconnectCTServerConnectionIfNecessary
++ notifyCallStartedForChat:
++ _setCurrentCallStatus:forChat:
++ _setCallRef:forChat:
++ notifyMissedCallForChat:
++ notifyCallConnectingForChat:
++ notifyCallConnectedForChat:
++ notifyCallEndedForChat:
++ _wantsBreakBeforeMake
++ _handleCTServiceRequestName:userInfo:contextInfo:
++ _disconnectCSCallWithID:
++ stopWatchingForCTRequests
+- callState
+- dealloc
+- init
+- _notifyMissedCallForInviteFromID:isVideo:
+- _isOnCallToID:
+- _breakCSCallsIfNecessary
+- _handleCallEvent:
+- startWatchingForCTRequests
+- _chatStateChanged:
+- __handleCallEvent:
+- _cleanupMachInfo
+- _registerCTRequestService
+- _setupCTServerConnection
+- _unregisterCTRequestService
+- _callRefForChat:
+- _dialRequested:
+- _answerCall:
+- _hangUpCall:
+- _disconnectCTServerConnection
+- _reconnectCTServerConnectionIfNecessary
+- notifyCallStartedForChat:
+- _setCurrentCallStatus:forChat:
+- _setCallRef:forChat:
+- notifyMissedCallForChat:
+- notifyCallConnectingForChat:
+- notifyCallConnectedForChat:
+- notifyCallEndedForChat:
+- _wantsBreakBeforeMake
+- _handleCTServiceRequestName:userInfo:contextInfo:
+- _disconnectCSCallWithID:
+- stopWatchingForCTRequests
+@end

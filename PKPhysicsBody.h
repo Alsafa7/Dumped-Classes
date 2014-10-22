@@ -1,0 +1,206 @@
+@interface PKPhysicsBody : NSObject
+{
+	id _representedObject;
+	struct _bodyDef;
+	pointer _body;
+	int _dynamicType;
+	struct _fixtureDef;
+	pointer _fixture;
+	id _world;
+	id _joints;
+	BOOL _inUse;
+	int _shapeType;
+	pointer _path;
+	struct _p0;
+	struct _p1;
+	struct _size;
+	double _radius;
+	pointer _mask;
+	id _postStepBlock;
+}
+
++ _descriptionClassName
++ node
++ _inUse
++ active
++ _world
++ setActive:
++ _bodyDef
++ _fixtureDef
++ _fixture
++ _joints
++ setIsSensor:
++ isSensor
++ set_fixture:
++ set_fixtureDef:
++ set_world:
++ set_joints:
++ set_inUse:
++ set_bodyDef:
++ set_body:
++ _body
++ _descriptionClassName
++ applyForce:
++ applyForce:atPoint:
++ applyTorque:
++ applyImpulse:atPoint:
++ applyAngularImpulse:
++ allContactedBodies
++ contactTestBitMask
++ joints
++ dealloc
++ initWithCoder:
++ encodeWithCoder:
++ init
++ copy
++ description
++ setVelocity:
++ setMass:
++ copyWithZone:
++ setPosition:
++ position
++ setResting:
++ setDynamic:
++ setCollisionBitMask:
++ setCategoryBitMask:
++ setRestitution:
++ friction
++ setFriction:
++ density
++ setLinearDamping:
++ setAngularDamping:
++ allowsRotation
++ setAllowsRotation:
++ velocity
++ setRotation:
++ rotation
++ angularVelocity
++ setAngularVelocity:
++ restitution
++ linearDamping
++ angularDamping
++ mass
++ applyImpulse:
++ setDensity:
++ .cxx_construct
++ representedObject
++ setRepresentedObject:
++ setAffectedByGravity:
++ setContactTestBitMask:
++ setPostStepBlock:
++ setUsesPreciseCollisionDetection:
++ collisionBitMask
++ categoryBitMask
++ applyUnscaledImpulse:atPoint:
++ applyUnscaledForce:atPoint:
++ applyUnscaledImpulse:
++ applyUnscaledForce:
++ initWithCircleOfRadius:
++ initWithRectangleOfSize:
++ initWithEdgeFromPoint:toPoint:
++ initWithPolygonFromPath:
++ initWithEdgeChainFromPath:
++ initWithEdgeLoopFromPath:
++ set_allowSleep:
++ isDynamic
++ usesPreciseCollisionDetection
++ isResting
++ affectedByGravity
++ area
++ _descriptionFormat
++ _allowSleep
++ postStepBlock
++ .cxx_destruct
+- _descriptionClassName
+- node
+- _inUse
+- active
+- _world
+- setActive:
+- _bodyDef
+- _fixtureDef
+- _fixture
+- _joints
+- setIsSensor:
+- isSensor
+- set_fixture:
+- set_fixtureDef:
+- set_world:
+- set_joints:
+- set_inUse:
+- set_bodyDef:
+- set_body:
+- _body
+- _descriptionClassName
+- applyForce:
+- applyForce:atPoint:
+- applyTorque:
+- applyImpulse:atPoint:
+- applyAngularImpulse:
+- allContactedBodies
+- contactTestBitMask
+- joints
+- dealloc
+- initWithCoder:
+- encodeWithCoder:
+- init
+- copy
+- description
+- setVelocity:
+- setMass:
+- copyWithZone:
+- setPosition:
+- position
+- setResting:
+- setDynamic:
+- setCollisionBitMask:
+- setCategoryBitMask:
+- setRestitution:
+- friction
+- setFriction:
+- density
+- setLinearDamping:
+- setAngularDamping:
+- allowsRotation
+- setAllowsRotation:
+- velocity
+- setRotation:
+- rotation
+- angularVelocity
+- setAngularVelocity:
+- restitution
+- linearDamping
+- angularDamping
+- mass
+- applyImpulse:
+- setDensity:
+- .cxx_construct
+- representedObject
+- setRepresentedObject:
+- setAffectedByGravity:
+- setContactTestBitMask:
+- setPostStepBlock:
+- setUsesPreciseCollisionDetection:
+- collisionBitMask
+- categoryBitMask
+- applyUnscaledImpulse:atPoint:
+- applyUnscaledForce:atPoint:
+- applyUnscaledImpulse:
+- applyUnscaledForce:
+- initWithCircleOfRadius:
+- initWithRectangleOfSize:
+- initWithEdgeFromPoint:toPoint:
+- initWithPolygonFromPath:
+- initWithEdgeChainFromPath:
+- initWithEdgeLoopFromPath:
+- set_allowSleep:
+- isDynamic
+- usesPreciseCollisionDetection
+- isResting
+- affectedByGravity
+- area
+- _descriptionFormat
+- _allowSleep
+- postStepBlock
+- .cxx_destruct
+@end

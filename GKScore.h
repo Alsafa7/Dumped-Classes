@@ -1,0 +1,84 @@
+@interface GKScore : NSObject
+{
+	BOOL _shouldSetDefaultLeaderboard;
+	id _internal;
+	id _game;
+}
+
++ issueChallengeForGame:toPlayers:message:
++ challengeComposeControllerWithPlayers:message:completionHandler:
++ issueChallengeToPlayers:message:
++ canBeShared
++ _gkSharingInfo
++ _gkSetSharingInfo:
++ fetchSharingInfo
++ activityViewControllerPlaceholderItems:
++ activityViewController:thumbnailForActivityType:
++ activityViewController:attachmentULRTypeForActivityType:
++ activityViewControllerSubject:
++ activityViewController:itemsForActivityType:
++ activityViewControllerOperation:
++ setInternal:
++ initWithLeaderboardIdentifier:forPlayer:
++ shouldSetDefaultLeaderboard
++ initWithCategory:
++ reportScoreWithCompletionHandler:
++ setShouldSetDefaultLeaderboard:
++ initWithLeaderboardIdentifier:
++ game
++ setGame:
++ internal
++ initWithInternalRepresentation:
++ dealloc
++ initWithCoder:
++ encodeWithCoder:
++ respondsToSelector:
++ init
++ isEqual:
++ hash
++ description
++ methodSignatureForSelector:
++ copyWithZone:
++ forwardingTargetForSelector:
++ valueForUndefinedKey:
++ setValue:forUndefinedKey:
++ player
+- issueChallengeForGame:toPlayers:message:
+- challengeComposeControllerWithPlayers:message:completionHandler:
+- issueChallengeToPlayers:message:
+- canBeShared
+- _gkSharingInfo
+- _gkSetSharingInfo:
+- fetchSharingInfo
+- activityViewControllerPlaceholderItems:
+- activityViewController:thumbnailForActivityType:
+- activityViewController:attachmentULRTypeForActivityType:
+- activityViewControllerSubject:
+- activityViewController:itemsForActivityType:
+- activityViewControllerOperation:
+- setInternal:
+- initWithLeaderboardIdentifier:forPlayer:
+- shouldSetDefaultLeaderboard
+- initWithCategory:
+- reportScoreWithCompletionHandler:
+- setShouldSetDefaultLeaderboard:
+- initWithLeaderboardIdentifier:
+- game
+- setGame:
+- internal
+- initWithInternalRepresentation:
+- dealloc
+- initWithCoder:
+- encodeWithCoder:
+- respondsToSelector:
+- init
+- isEqual:
+- hash
+- description
+- methodSignatureForSelector:
+- copyWithZone:
+- forwardingTargetForSelector:
+- valueForUndefinedKey:
+- setValue:forUndefinedKey:
+- player
+@end

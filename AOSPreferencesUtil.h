@@ -1,0 +1,6 @@
+@interface AOSPreferencesUtil : NSObject
+{
+
+}
+
+@end

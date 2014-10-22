@@ -1,0 +1,109 @@
+@interface RUTrackDownloadView : UIView
+{
+	id _downloadObserver;
+	BOOL _isInAppPurchaseAllowed;
+	BOOL _isProfileInAppPurchaseAllowed;
+	BOOL _isProfileiTunesAllowed;
+	id _itemOfferButton;
+	id _mediaItem;
+	BOOL _showingConfirmation;
+	long long _buyButtonTitleStyle;
+	id _delegate;
+	id _baseOriginator;
+	long long _overrideState;
+	id _overrideTitleText;
+	id _radioTrack;
+	long long _state;
+	id _stationHash;
+	long long _stationID;
+	id _viewControllerForPresenting;
+	struct _overrideSize;
+}
+
++ productViewControllerDidFinish:
++ stationID
++ stationHash
++ radioTrack
++ downloadManager:didAddDownloads:removeDownloads:
++ downloadManager:downloadDidFinish:
++ downloadManager:downloadPurchaseDidFinish:
++ profileConnectionDidReceiveRestrictionChangedNotification:userInfo:
++ profileConnectionDidReceiveEffectiveSettingsChangedNotification:userInfo:
++ _isExplicitTracksEnabledDidChangeNotification:
++ _radioModelDidChangeNotification:
++ initWithFrame:
++ dealloc
++ setDelegate:
++ sizeThatFits:
++ delegate
++ state
++ setViewControllerForPresenting:
++ setBaseOriginator:
++ setBuyButtonTitleStyle:
++ setRadioTrack:
++ setOverrideTitleText:
++ setOverrideSize:
++ setOverrideState:
++ setStationID:
++ setStationHash:
++ _updateIsInAppPurchaseAllowedForProfileConnection:updateState:
++ _itemOfferCancelConfirmationAction:
++ _itemOfferShowConfirmationAction:
++ _updateStateAndInternalViewsAnimated:
++ _sizeToFitAndNotifyDelegate
++ _updateStateAndInternalViewsIfNeededForDownloads:
++ _downloadStoreID
++ _isAlbumOnlyRadioTrack:
++ buyButtonTitleStyle
++ baseOriginator
++ overrideSize
++ overrideState
++ overrideTitleText
++ viewControllerForPresenting
++ itemOfferButtonWillAnimateTransition:
++ _itemOfferButtonAction:
++ .cxx_destruct
+- productViewControllerDidFinish:
+- stationID
+- stationHash
+- radioTrack
+- downloadManager:didAddDownloads:removeDownloads:
+- downloadManager:downloadDidFinish:
+- downloadManager:downloadPurchaseDidFinish:
+- profileConnectionDidReceiveRestrictionChangedNotification:userInfo:
+- profileConnectionDidReceiveEffectiveSettingsChangedNotification:userInfo:
+- _isExplicitTracksEnabledDidChangeNotification:
+- _radioModelDidChangeNotification:
+- initWithFrame:
+- dealloc
+- setDelegate:
+- sizeThatFits:
+- delegate
+- state
+- setViewControllerForPresenting:
+- setBaseOriginator:
+- setBuyButtonTitleStyle:
+- setRadioTrack:
+- setOverrideTitleText:
+- setOverrideSize:
+- setOverrideState:
+- setStationID:
+- setStationHash:
+- _updateIsInAppPurchaseAllowedForProfileConnection:updateState:
+- _itemOfferCancelConfirmationAction:
+- _itemOfferShowConfirmationAction:
+- _updateStateAndInternalViewsAnimated:
+- _sizeToFitAndNotifyDelegate
+- _updateStateAndInternalViewsIfNeededForDownloads:
+- _downloadStoreID
+- _isAlbumOnlyRadioTrack:
+- buyButtonTitleStyle
+- baseOriginator
+- overrideSize
+- overrideState
+- overrideTitleText
+- viewControllerForPresenting
+- itemOfferButtonWillAnimateTransition:
+- _itemOfferButtonAction:
+- .cxx_destruct
+@end

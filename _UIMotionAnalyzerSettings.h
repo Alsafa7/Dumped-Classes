@@ -1,0 +1,86 @@
+@interface _UIMotionAnalyzerSettings : _UISettings
+{
+	BOOL _showIdleIndicator;
+	BOOL _jumpEnabled;
+	BOOL _playJumpSound;
+	BOOL _directionalLockEnabled;
+	BOOL _showDirectionalLockIndicators;
+	BOOL _referenceShiftEnabled;
+	double _inputSmoothingFactor;
+	double _referenceShiftSpeed;
+	double _idleLeeway;
+	double _delayBeforeIdle;
+	double _jumpThreshold;
+	double _directionalLockThreshold;
+	double _directionalLockStickiness;
+	double _directionalLockSharpness;
+	double _referenceShiftDistanceDependence;
+}
+
++ isEqual:
++ hash
++ setDirectionalLockEnabled:
++ setDefaultValues
++ setInputSmoothingFactor:
++ setReferenceShiftEnabled:
++ setReferenceShiftSpeed:
++ setReferenceShiftDistanceDependence:
++ setIdleLeeway:
++ setDelayBeforeIdle:
++ setShowIdleIndicator:
++ setJumpEnabled:
++ setJumpThreshold:
++ setPlayJumpSound:
++ setDirectionalLockThreshold:
++ setDirectionalLockStickiness:
++ setDirectionalLockSharpness:
++ setShowDirectionalLockIndicators:
++ inputSmoothingFactor
++ referenceShiftEnabled
++ referenceShiftSpeed
++ referenceShiftDistanceDependence
++ idleLeeway
++ delayBeforeIdle
++ showIdleIndicator
++ jumpEnabled
++ jumpThreshold
++ playJumpSound
++ directionalLockEnabled
++ directionalLockThreshold
++ directionalLockStickiness
++ directionalLockSharpness
++ showDirectionalLockIndicators
+- isEqual:
+- hash
+- setDirectionalLockEnabled:
+- setDefaultValues
+- setInputSmoothingFactor:
+- setReferenceShiftEnabled:
+- setReferenceShiftSpeed:
+- setReferenceShiftDistanceDependence:
+- setIdleLeeway:
+- setDelayBeforeIdle:
+- setShowIdleIndicator:
+- setJumpEnabled:
+- setJumpThreshold:
+- setPlayJumpSound:
+- setDirectionalLockThreshold:
+- setDirectionalLockStickiness:
+- setDirectionalLockSharpness:
+- setShowDirectionalLockIndicators:
+- inputSmoothingFactor
+- referenceShiftEnabled
+- referenceShiftSpeed
+- referenceShiftDistanceDependence
+- idleLeeway
+- delayBeforeIdle
+- showIdleIndicator
+- jumpEnabled
+- jumpThreshold
+- playJumpSound
+- directionalLockEnabled
+- directionalLockThreshold
+- directionalLockStickiness
+- directionalLockSharpness
+- showDirectionalLockIndicators
+@end

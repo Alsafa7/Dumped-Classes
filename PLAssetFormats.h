@@ -1,0 +1,6 @@
+@interface PLAssetFormats : NSObject
+{
+
+}
+
+@end

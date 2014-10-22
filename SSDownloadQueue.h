@@ -1,0 +1,78 @@
+@interface SSDownloadQueue : NSObject
+{
+	BOOL _autoFinishDownloads;
+	id _downloadManager;
+	pointer _observers;
+}
+
++ getDownloadsUsingBlock:
++ downloadManager:downloadStatesDidChange:
++ downloadManagerDownloadsDidChange:
++ downloadManagerNetworkUsageDidChange:
++ downloads
++ downloadManager:downloadsDidChange:
++ dealloc
++ init
++ removeObserver:
++ addObserver:
++ _handleDownloadsDidChange:
++ initWithDownloadKinds:
++ _initWithDownloadManagerOptions:
++ _sendDownloadStatusChangedAtIndex:
++ _handleDownloadsRemoved:
++ _sendQueueNetworkUsageChanged
++ _messageObserversWithFunction:context:
++ _sendQueueChangedWithRemovals:
++ initWithDownloadManagerOptions:
++ addDownload:
++ addPlaceholderDownloads:
++ downloadForItemIdentifier:
++ placeholderDownloads
++ preorders
++ removePlaceholderDownload:
++ startPreOrderDownload:
++ _sendQueuePreOrdersChanged
++ shouldAutomaticallyFinishDownloads
++ setShouldAutomaticallyFinishDownloads:
++ cancelDownload:
++ isUsingNetwork
++ downloadKinds
++ downloadManager
++ reloadFromServer
++ canCancelDownload:
+- getDownloadsUsingBlock:
+- downloadManager:downloadStatesDidChange:
+- downloadManagerDownloadsDidChange:
+- downloadManagerNetworkUsageDidChange:
+- downloads
+- downloadManager:downloadsDidChange:
+- dealloc
+- init
+- removeObserver:
+- addObserver:
+- _handleDownloadsDidChange:
+- initWithDownloadKinds:
+- _initWithDownloadManagerOptions:
+- _sendDownloadStatusChangedAtIndex:
+- _handleDownloadsRemoved:
+- _sendQueueNetworkUsageChanged
+- _messageObserversWithFunction:context:
+- _sendQueueChangedWithRemovals:
+- initWithDownloadManagerOptions:
+- addDownload:
+- addPlaceholderDownloads:
+- downloadForItemIdentifier:
+- placeholderDownloads
+- preorders
+- removePlaceholderDownload:
+- startPreOrderDownload:
+- _sendQueuePreOrdersChanged
+- shouldAutomaticallyFinishDownloads
+- setShouldAutomaticallyFinishDownloads:
+- cancelDownload:
+- isUsingNetwork
+- downloadKinds
+- downloadManager
+- reloadFromServer
+- canCancelDownload:
+@end

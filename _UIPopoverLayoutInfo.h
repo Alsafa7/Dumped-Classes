@@ -1,0 +1,83 @@
+@interface _UIPopoverLayoutInfo : NSObject
+{
+	struct _contentInset;
+	double _arrowHeight;
+	struct _preferredContentSize;
+	usigned long long _preferredArrowDirections;
+	struct _containingFrame;
+	struct _containingFrameInsets;
+	struct _targetRect;
+	BOOL _constrainToTargetRect;
+	struct _frame;
+	double _offset;
+	usigned long long _arrowDirection;
+	BOOL _preferLandscapeOrientations;
+	BOOL _updatesEnabled;
+	id _candidates;
+}
+
++ dealloc
++ init
++ frame
++ description
++ copyWithZone:
++ contentInset
++ setContentInset:
++ preferredContentSize
++ setPreferredContentSize:
++ offset
++ candidates
++ observeValueForKeyPath:ofObject:change:context:
++ targetRect
++ setTargetRect:
++ arrowDirection
++ _setUpdatesEnabled:
++ setArrowHeight:
++ setPreferredArrowDirections:
++ setContainingFrame:
++ setContainingFrameInsets:
++ setConstrainToTargetRect:
++ setPreferLandscapeOrientations:
++ _updateOutputs
++ preferredArrowDirections
++ containingFrame
++ containingFrameInsets
++ constrainToTargetRect
++ preferLandscapeOrientations
++ _popoverViewSizeForContentSize:arrowDirection:
++ setProperties:
++ arrowHeight
++ _updatesEnabled
+- dealloc
+- init
+- frame
+- description
+- copyWithZone:
+- contentInset
+- setContentInset:
+- preferredContentSize
+- setPreferredContentSize:
+- offset
+- candidates
+- observeValueForKeyPath:ofObject:change:context:
+- targetRect
+- setTargetRect:
+- arrowDirection
+- _setUpdatesEnabled:
+- setArrowHeight:
+- setPreferredArrowDirections:
+- setContainingFrame:
+- setContainingFrameInsets:
+- setConstrainToTargetRect:
+- setPreferLandscapeOrientations:
+- _updateOutputs
+- preferredArrowDirections
+- containingFrame
+- containingFrameInsets
+- constrainToTargetRect
+- preferLandscapeOrientations
+- _popoverViewSizeForContentSize:arrowDirection:
+- setProperties:
+- arrowHeight
+- _updatesEnabled
+@end

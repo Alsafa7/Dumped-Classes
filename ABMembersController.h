@@ -1,0 +1,170 @@
+@interface ABMembersController : ABContentController
+{
+	id _membersDataSource;
+	id _searchDataSource;
+	id _styleProvider;
+	usigned long long _cellsCreated;
+	usigned long long _memberCount;
+	id _tableView;
+	id _searchBar;
+	id _searchController;
+	id _parentViewController;
+	usigned long long _searchSequenceNumber;
+	id _operationQueue;
+	id _membersControllerDelegate;
+	BOOL _showingCardFromSearch;
+	BOOL _shouldDeactivateSearch;
+	id _selectedIndexPath;
+	BOOL _searchEnabled;
+	BOOL _needToClearOldResults;
+	id _searchCompletionDelegate;
+	id _searchPalette;
+}
+
++ searchCurrentContactsGroupForWords:animated:
++ initWithAddressBook:
++ styleProvider
++ setStyleProvider:
++ deselectAllRowsWithAnimation:
++ _reloadFontSizes
++ _applyStylesToTableView:
++ membersControllerDelegate
++ contactsFilter
++ _updateRowsHeights
++ membersDataSource
++ searchDataSource
++ isSearching
++ globalIndexOfMember:
++ tableViewPathToMember:
++ _reselectLastSelectedCellIfNeeded
++ _updateEmptyTableViewAnimated:
++ searchPalette
++ setSearchPalette:
++ currentTableView
++ shouldShowGroups
++ cancelSearchingAnimated:
++ _cancelGALSearch
++ isServerSearchGroup
++ _localizedStringForError:
++ _searchForWords:
++ _selectedPerson
++ selectAndScrollMemberVisible:
++ _updateCountString
++ showCardForPerson:withMemberCell:animate:
++ _updateNoContactsViewAnimated:
++ abDataSource:selectedPerson:atIndexPath:withMemberCell:animate:
++ abDataSourceAllowsShowingPersonsCards:
++ abDataSource:shouldAllowSelectingPersonWithRecordID:
++ setMembersControllerDelegate:
++ stopScrolling
++ cellsCreated
++ setCellsCreated:
++ selectedCell
++ resetStateForDisplayedFilterChange
++ cancelSearching:
++ __searchBar
++ __searchController
++ makeMainTableViewVisible
++ setBannerTitle:value:
++ displayedMembersListChanged
++ _deselectAllRowsWithAnimation
++ isSearchEnabled
++ setSearchEnabled:
++ searchCompletionDelegate
++ setSearchCompletionDelegate:
++ searchOperation:didFindMatches:moreComing:
++ operationQueue
++ currentSearchText
++ dealloc
++ reload
++ contentView
++ viewWillAppear:
++ setParentViewController:
++ viewDidAppear:
++ viewWillDisappear:
++ willAnimateRotationToInterfaceOrientation:duration:
++ shouldShowIndex
++ tableView
++ searchBarCancelButtonClicked:
++ searchDisplayController:willShowSearchResultsTableView:
++ searchDisplayControllerDidEndSearch:
++ searchDisplayControllerWillBeginSearch:
++ searchDisplayControllerWillEndSearch:
++ _shouldDeactivateOnCancelButtonClicked
++ searchDisplayController:shouldReloadTableForSearchString:
++ _setSelectedIndexPath:
++ setAddressBook:
+- searchCurrentContactsGroupForWords:animated:
+- initWithAddressBook:
+- styleProvider
+- setStyleProvider:
+- deselectAllRowsWithAnimation:
+- _reloadFontSizes
+- _applyStylesToTableView:
+- membersControllerDelegate
+- contactsFilter
+- _updateRowsHeights
+- membersDataSource
+- searchDataSource
+- isSearching
+- globalIndexOfMember:
+- tableViewPathToMember:
+- _reselectLastSelectedCellIfNeeded
+- _updateEmptyTableViewAnimated:
+- searchPalette
+- setSearchPalette:
+- currentTableView
+- shouldShowGroups
+- cancelSearchingAnimated:
+- _cancelGALSearch
+- isServerSearchGroup
+- _localizedStringForError:
+- _searchForWords:
+- _selectedPerson
+- selectAndScrollMemberVisible:
+- _updateCountString
+- showCardForPerson:withMemberCell:animate:
+- _updateNoContactsViewAnimated:
+- abDataSource:selectedPerson:atIndexPath:withMemberCell:animate:
+- abDataSourceAllowsShowingPersonsCards:
+- abDataSource:shouldAllowSelectingPersonWithRecordID:
+- setMembersControllerDelegate:
+- stopScrolling
+- cellsCreated
+- setCellsCreated:
+- selectedCell
+- resetStateForDisplayedFilterChange
+- cancelSearching:
+- __searchBar
+- __searchController
+- makeMainTableViewVisible
+- setBannerTitle:value:
+- displayedMembersListChanged
+- _deselectAllRowsWithAnimation
+- isSearchEnabled
+- setSearchEnabled:
+- searchCompletionDelegate
+- setSearchCompletionDelegate:
+- searchOperation:didFindMatches:moreComing:
+- operationQueue
+- currentSearchText
+- dealloc
+- reload
+- contentView
+- viewWillAppear:
+- setParentViewController:
+- viewDidAppear:
+- viewWillDisappear:
+- willAnimateRotationToInterfaceOrientation:duration:
+- shouldShowIndex
+- tableView
+- searchBarCancelButtonClicked:
+- searchDisplayController:willShowSearchResultsTableView:
+- searchDisplayControllerDidEndSearch:
+- searchDisplayControllerWillBeginSearch:
+- searchDisplayControllerWillEndSearch:
+- _shouldDeactivateOnCancelButtonClicked
+- searchDisplayController:shouldReloadTableForSearchString:
+- _setSelectedIndexPath:
+- setAddressBook:
+@end

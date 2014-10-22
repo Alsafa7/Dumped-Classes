@@ -1,0 +1,68 @@
+@interface SBBulletinBannerController : NSObject
+{
+	id _bulletinQueue;
+	id _observer;
+	id _sectionIDsToPend;
+	BOOL _quietModeEnabled;
+	id _bannerTarget;
+}
+
++ handleVolumeIncrease
++ handleVolumeDecrease
++ _reloadVolumePressBanditPreference
++ newBannerViewForContext:
++ _removeBulletin:
++ _showTestBanner:
++ _indexOfQueuedBulletinID:
++ _removeNextBulletinIfNecessary
++ _syncLockScreenDismissalsForSeedBulletin:additionalBulletins:
++ _replaceBulletin:
++ _queueBulletin:
++ _dismissWithdrawnBannerIfNecessaryFromBulletinIDs:
++ dealloc
++ init
++ observer:addBulletin:forFeed:
++ observer:modifyBulletin:
++ observer:removeBulletin:
++ observer:updateSectionInfo:
++ observerShouldFetchAttachmentImageBeforeBulletinDelivery:
++ observer:thumbnailSizeConstraintsForAttachmentType:
++ observer:composedAttachmentImageForType:thumbnailData:key:
++ observer:noteAlertBehaviorOverridesChanged:
++ observer:noteInvalidatedBulletinIDs:
++ observer:noteServerConnectionStateChanged:
++ observer:noteServerReceivedResponseForBulletin:
++ bannerTargetManager:didAddTarget:
++ bannerTargetManager:didRemoveTarget:
++ peekNextBannerItemForTarget:
++ dequeueNextBannerItemForTarget:
+- handleVolumeIncrease
+- handleVolumeDecrease
+- _reloadVolumePressBanditPreference
+- newBannerViewForContext:
+- _removeBulletin:
+- _showTestBanner:
+- _indexOfQueuedBulletinID:
+- _removeNextBulletinIfNecessary
+- _syncLockScreenDismissalsForSeedBulletin:additionalBulletins:
+- _replaceBulletin:
+- _queueBulletin:
+- _dismissWithdrawnBannerIfNecessaryFromBulletinIDs:
+- dealloc
+- init
+- observer:addBulletin:forFeed:
+- observer:modifyBulletin:
+- observer:removeBulletin:
+- observer:updateSectionInfo:
+- observerShouldFetchAttachmentImageBeforeBulletinDelivery:
+- observer:thumbnailSizeConstraintsForAttachmentType:
+- observer:composedAttachmentImageForType:thumbnailData:key:
+- observer:noteAlertBehaviorOverridesChanged:
+- observer:noteInvalidatedBulletinIDs:
+- observer:noteServerConnectionStateChanged:
+- observer:noteServerReceivedResponseForBulletin:
+- bannerTargetManager:didAddTarget:
+- bannerTargetManager:didRemoveTarget:
+- peekNextBannerItemForTarget:
+- dequeueNextBannerItemForTarget:
+@end

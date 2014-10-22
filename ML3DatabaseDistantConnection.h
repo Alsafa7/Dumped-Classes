@@ -1,0 +1,65 @@
+@interface ML3DatabaseDistantConnection : ML3DatabaseConnection
+{
+	id _mediaLibraryService;
+	BOOL _connectionOpen;
+	id _distantDelegate;
+	id _currentTransactionID;
+}
+
++ isOpen
++ dealloc
++ close
++ openBlobInTable:column:row:readOnly:
++ _sqliteHandle
++ currentTransactionID
++ initWithDatabasePath:
++ registerFunctionName:argumentCount:functionPointer:userData:
++ registerFunctionName:argumentCount:block:
++ setProfilingLevel:
++ _openWithFlags:isRetry:
++ _internalExecuteQuery:withParameters:limitProperty:limitValue:
++ _internalExecuteUpdate:withParameters:error:
++ _internalBeginTransactionWithBehaviorType:
++ _internalEndTransactionAndCommit:
++ _finalizeStatement:
++ checkpointDatabase
++ registerModuleName:moduleMethods:
++ setModuleContext:forModuleName:contextReleaseBlock:
++ moduleContextForModuleName:
++ _serviceTerminatedTransactionNotification:
++ _internalBeginTransactionWithBehaviorType:isRetry:
++ shouldCacheStatements
++ distantDelegate
++ setDistantDelegate:
++ isReadOnly
++ .cxx_destruct
++ setReadOnly:
+- isOpen
+- dealloc
+- close
+- openBlobInTable:column:row:readOnly:
+- _sqliteHandle
+- currentTransactionID
+- initWithDatabasePath:
+- registerFunctionName:argumentCount:functionPointer:userData:
+- registerFunctionName:argumentCount:block:
+- setProfilingLevel:
+- _openWithFlags:isRetry:
+- _internalExecuteQuery:withParameters:limitProperty:limitValue:
+- _internalExecuteUpdate:withParameters:error:
+- _internalBeginTransactionWithBehaviorType:
+- _internalEndTransactionAndCommit:
+- _finalizeStatement:
+- checkpointDatabase
+- registerModuleName:moduleMethods:
+- setModuleContext:forModuleName:contextReleaseBlock:
+- moduleContextForModuleName:
+- _serviceTerminatedTransactionNotification:
+- _internalBeginTransactionWithBehaviorType:isRetry:
+- shouldCacheStatements
+- distantDelegate
+- setDistantDelegate:
+- isReadOnly
+- .cxx_destruct
+- setReadOnly:
+@end

@@ -1,0 +1,126 @@
+@interface HSCloudClient : NSObject
+{
+	BOOL _active;
+	id _configuration;
+	id _connection;
+	id _connectionQueue;
+	usigned long long _daemonConfiguration;
+	id _knownArtworkIDs;
+	id _knownArtworkIDsQueue;
+	id _pendingArtworkRequests;
+	id _pendingArtworkRequestsQueue;
+	long long _preferredVideoQuality;
+	id _updateInProgressChangedHandler;
+}
+
++ authenticateWithCompletionHandler:
++ resignActive
++ isCellularDataRestricted
++ setItemProperties:forSagaID:
++ setItemProperties:forPurchaseHistoryID:
++ canShowCloudMusic
++ canShowCloudVideo
++ hasProperNetworkConditionsToPlayMedia
++ loadGeniusItemsForSagaID:completionHandler:
++ loadArtworkDataForSagaID:
++ loadArtworkDataForPurchaseHistoryID:
++ shouldProhibitActionsForCurrentNetworkConditions
++ canShowCloudDownloadButtons
++ addPlaylistWithName:completionHandler:
++ addGeniusPlaylistWithName:seedItemSagaIDs:itemSagaIDs:completionHandler:
++ becomeActive
++ deauthenticateWithCompletionHandler:
++ isExpiredWithCompletionHandler:
++ isAuthenticatedWithCompletionHandler:
++ incrementItemProperty:forSagaID:
++ loadUpdateProgressWithCompletionHandler:
++ removePlaylistWithSagaID:completionHandler:
++ updatePlaylistWithSagaID:itemSagaIDs:queue:completionHandler:
++ updateInProgressChangedHandler
++ loadIsUpdateInProgressWithCompletionHandler:
++ setUpdateInProgressChangedHandler:
++ dealloc
++ init
++ initWithConfiguration:
++ setPreferredVideoQuality:
++ updateSagaLibraryWithCompletionHandler:
++ updateJaliscoLibraryWithReason:completionHandler:
++ updateArtistImagesWithCompletionHandler:
++ _sendConfigurationToDaemon
++ _performBlockOnMainThread:
++ isAuthenticatedWithQueue:completionHandler:
++ loadArtworkDataForSagaID:completionHandler:
++ loadArtworkDataForPurchaseHistoryID:completionHandler:
++ loadArtworkDataForPurchaseHistoryIDs:completionHandler:
++ removeJaliscoLibrary
++ updateJaliscoLibraryWithCompletionHandler:
++ updateJaliscoAppsLibraryWithReason:completionHandler:
++ searchJaliscoAppsLibrary:searchMethod:completionHandler:
++ jaliscoAppsImageDataForStoreID:completionHandler:
++ redownloadPurchaseAppWithStoreID:completionHandler:
++ setHidden:purchasedAppWithStoreID:completionHandler:
++ unhideAllPurchasedApps:
++ downloadGeniusDataWithCompletionHandler:
++ loadArtworkInfoForPurchaseHistoryIDs:completionHandler:
++ loadArtworkInfoForSagaIDs:completionHandler:
++ resetConfiguration:
++ setDaemonConfiguration:
++ uploadItemProperties
++ _serverDidLaunch
++ _serverUpdateInProgressDidChange
+- authenticateWithCompletionHandler:
+- resignActive
+- isCellularDataRestricted
+- setItemProperties:forSagaID:
+- setItemProperties:forPurchaseHistoryID:
+- canShowCloudMusic
+- canShowCloudVideo
+- hasProperNetworkConditionsToPlayMedia
+- loadGeniusItemsForSagaID:completionHandler:
+- loadArtworkDataForSagaID:
+- loadArtworkDataForPurchaseHistoryID:
+- shouldProhibitActionsForCurrentNetworkConditions
+- canShowCloudDownloadButtons
+- addPlaylistWithName:completionHandler:
+- addGeniusPlaylistWithName:seedItemSagaIDs:itemSagaIDs:completionHandler:
+- becomeActive
+- deauthenticateWithCompletionHandler:
+- isExpiredWithCompletionHandler:
+- isAuthenticatedWithCompletionHandler:
+- incrementItemProperty:forSagaID:
+- loadUpdateProgressWithCompletionHandler:
+- removePlaylistWithSagaID:completionHandler:
+- updatePlaylistWithSagaID:itemSagaIDs:queue:completionHandler:
+- updateInProgressChangedHandler
+- loadIsUpdateInProgressWithCompletionHandler:
+- setUpdateInProgressChangedHandler:
+- dealloc
+- init
+- initWithConfiguration:
+- setPreferredVideoQuality:
+- updateSagaLibraryWithCompletionHandler:
+- updateJaliscoLibraryWithReason:completionHandler:
+- updateArtistImagesWithCompletionHandler:
+- _sendConfigurationToDaemon
+- _performBlockOnMainThread:
+- isAuthenticatedWithQueue:completionHandler:
+- loadArtworkDataForSagaID:completionHandler:
+- loadArtworkDataForPurchaseHistoryID:completionHandler:
+- loadArtworkDataForPurchaseHistoryIDs:completionHandler:
+- removeJaliscoLibrary
+- updateJaliscoLibraryWithCompletionHandler:
+- updateJaliscoAppsLibraryWithReason:completionHandler:
+- searchJaliscoAppsLibrary:searchMethod:completionHandler:
+- jaliscoAppsImageDataForStoreID:completionHandler:
+- redownloadPurchaseAppWithStoreID:completionHandler:
+- setHidden:purchasedAppWithStoreID:completionHandler:
+- unhideAllPurchasedApps:
+- downloadGeniusDataWithCompletionHandler:
+- loadArtworkInfoForPurchaseHistoryIDs:completionHandler:
+- loadArtworkInfoForSagaIDs:completionHandler:
+- resetConfiguration:
+- setDaemonConfiguration:
+- uploadItemProperties
+- _serverDidLaunch
+- _serverUpdateInProgressDidChange
+@end

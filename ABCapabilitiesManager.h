@@ -1,0 +1,64 @@
+@interface ABCapabilitiesManager : NSObject
+{
+	BOOL _isListeningToIDSServiceAvailability;
+}
+
++ hasCellularTelephonyCapability
++ isConferencingAvailable
++ conferenceURLForPhoneNumber:
++ conferenceURLForDestinationID:
++ hasSMSCapability
++ isMadridConfigured
++ isMMSConfigured
++ _startListeningToIDSServiceAvailabilityIfNecessary
++ isConferencingEverGonnaBeAvailable
++ _isAppAvailable:
++ isSensitiveUIAllowed
++ hasTelephonyCapability
++ hasCellularDataCapability
++ hasVibratorCapability
++ hasSiriCapability
++ hasCameraCapability
++ isEmailConfigured
++ hasPreviouslyConferencedWithID:
++ addIDSServiceAvailabilityListener:selector:
++ removeIDSServiceAvailabilityListener:
++ hasAdditionalTextTones
++ isTwitterServiceAvailable
++ isWeiboServiceAvailable
++ isFaceTimeAudioAvailable
++ isPhoneAppAvailable
++ isMailAppAvailable
++ isMessagesAppAvailable
++ isFaceTimeAppAvailable
++ dealloc
+- hasCellularTelephonyCapability
+- isConferencingAvailable
+- conferenceURLForPhoneNumber:
+- conferenceURLForDestinationID:
+- hasSMSCapability
+- isMadridConfigured
+- isMMSConfigured
+- _startListeningToIDSServiceAvailabilityIfNecessary
+- isConferencingEverGonnaBeAvailable
+- _isAppAvailable:
+- isSensitiveUIAllowed
+- hasTelephonyCapability
+- hasCellularDataCapability
+- hasVibratorCapability
+- hasSiriCapability
+- hasCameraCapability
+- isEmailConfigured
+- hasPreviouslyConferencedWithID:
+- addIDSServiceAvailabilityListener:selector:
+- removeIDSServiceAvailabilityListener:
+- hasAdditionalTextTones
+- isTwitterServiceAvailable
+- isWeiboServiceAvailable
+- isFaceTimeAudioAvailable
+- isPhoneAppAvailable
+- isMailAppAvailable
+- isMessagesAppAvailable
+- isFaceTimeAppAvailable
+- dealloc
+@end

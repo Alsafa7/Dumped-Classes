@@ -1,0 +1,64 @@
+@interface CKTextBalloonView : CKColoredBalloonView
+{
+	BOOL _centerTextWhenSkinny;
+	id _textView;
+	id _attributedText;
+}
+
++ configureForMessagePart:
++ initWithFrame:
++ dealloc
++ layoutSubviews
++ description
++ setAttributedText:
++ attributedText
++ prepareForReuse
++ setTextView:
++ isInteractingWithLink
++ textView
++ prepareForDisplay
++ tap:forEvent:
++ doubleTap:forEvent:
++ longPress:forEvent:
++ touchDown:forEvent:
++ sizeThatFits:textAlignmentInsets:
++ setContainsHyperlink:
++ containsHyperlink
++ setCenterTextWhenSkinny:
++ textViewWidthForWidth:
++ textViewOffsetBetweenNormalAndSkinny:
++ touchUpOutside:forEvent:
++ touchUpInside:forEvent:
++ touchDraggedInside:forEvent:
++ touchCanceled:
++ centerTextWhenSkinny
++ _textFrameForBounds:forceSkinny:
+- configureForMessagePart:
+- initWithFrame:
+- dealloc
+- layoutSubviews
+- description
+- setAttributedText:
+- attributedText
+- prepareForReuse
+- setTextView:
+- isInteractingWithLink
+- textView
+- prepareForDisplay
+- tap:forEvent:
+- doubleTap:forEvent:
+- longPress:forEvent:
+- touchDown:forEvent:
+- sizeThatFits:textAlignmentInsets:
+- setContainsHyperlink:
+- containsHyperlink
+- setCenterTextWhenSkinny:
+- textViewWidthForWidth:
+- textViewOffsetBetweenNormalAndSkinny:
+- touchUpOutside:forEvent:
+- touchUpInside:forEvent:
+- touchDraggedInside:forEvent:
+- touchCanceled:
+- centerTextWhenSkinny
+- _textFrameForBounds:forceSkinny:
+@end

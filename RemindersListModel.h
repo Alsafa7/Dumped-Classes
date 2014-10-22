@@ -1,0 +1,174 @@
+@interface RemindersListModel : NSObject
+{
+	id _eventStore;
+	id _remindersToSave;
+	id _recentlyCheckedReminders;
+	id _recentlyUncheckedReminders;
+	id _recentlyUncheckedDates;
+	id _dataLock;
+	id _reminders;
+	BOOL _hasPerformedFirstReload;
+	BOOL _showsCompletedReminders;
+	id _alreadyFaultedIndexes;
+	id _indexesForFaulting;
+	struct _lastSeenReminderRange;
+	usigned long long _reloadCount;
+	BOOL _isPaused;
+	BOOL _needsReloadOnResume;
+	BOOL _isPausedByForce;
+	BOOL _isReloadInProgress;
+	BOOL _isListEmpty;
+	BOOL _isListEmptyIsValid;
+	long long _numberOfIncompleteReminders;
+	BOOL _needsReload;
+	id _calendar;
+	id _dueDate;
+	id _delegate;
+	long long _numberOfCompletedReminders;
+	long long _displayedNumberOfCompletedReminders;
+	id _recentlyAddedReminders;
+}
+
++ displayedNumberOfIncompleteReminders
++ setNeedsReload:
++ needsReloadForChangedObjectIDs:
++ hasPerformedFirstReload
++ invalidateMaintainedReminders
++ setPausedByForce:
++ hasRequestedFirstReload
++ saveUnsavedReminders
++ deleteReminder:
++ needsReload
++ checkOrUncheckReminder:
++ numberOfReminders
++ numberOfIncompleteReminders
++ moveReminderAtIndex:toIndex:
++ showsCompletedReminders
++ recentlyAddedReminders
++ reminderAtIndex:
++ canAccessPropertiesOfReminderAtIndex:
++ indexOfReminder:protected:
++ numberOfCompletedReminders
++ setShowsCompletedReminders:
++ clearRecentlyAddedReminders
++ displayedNumberOfCompletedReminders
++ saveReminderImmediately:
++ addReminder:
++ willDisplayRemindersInRange:
++ faultReminder:
++ setNumberOfCompletedReminders:
++ storeProtectedData:rangeAlreadyFaulted:
++ protectedCanReminderBeInserted:
++ protectedRemoveReminderAtIndex:
++ matchesReminder:
++ predicateForCountingReminders
++ fetchProtectedData
++ shouldInvalidateReminder:
++ _hasBeenCanceled:
++ _fetchPropertiesForReminders:
++ hasBeenCanceled:
++ _faultStartingChunk:
++ loadRemindersInRange:reloadNumber:
++ _protectedNeedsLoadAheadForRange:inForwardDirection:
++ _protectedLoadAheadForRange:reloadNumber:inForwardDirection:
++ _protectedWillDisplayRemindersInRange:
++ _scheduleSaveForReminder:
++ _protectedInsertReminder:atIndex:
++ addRecentlyAddedReminder:
++ _attemptToResumeReloads
++ removeRecentlyAddedReminder:
++ _adjustOrderOnReminders:boundaryOrder:reverse:
++ _adjustOrderOnReminders:reverse:
++ _reorderReminder:betweenEarlier:later:
++ isListEmpty
++ reminderWasSavedAtIndex:
++ setDisplayedNumberOfCompletedReminders:
++ setRecentlyAddedReminders:
++ recentlyCheckedReminders
++ recentlyUncheckedReminders
++ propertiesToFetch
++ initWithEventStore:
++ dueDate
++ setDueDate:
++ setDelegate:
++ init
++ reload
++ delegate
++ resume
++ setCalendar:
++ timeZone
++ calendar
++ pause
++ .cxx_destruct
+- displayedNumberOfIncompleteReminders
+- setNeedsReload:
+- needsReloadForChangedObjectIDs:
+- hasPerformedFirstReload
+- invalidateMaintainedReminders
+- setPausedByForce:
+- hasRequestedFirstReload
+- saveUnsavedReminders
+- deleteReminder:
+- needsReload
+- checkOrUncheckReminder:
+- numberOfReminders
+- numberOfIncompleteReminders
+- moveReminderAtIndex:toIndex:
+- showsCompletedReminders
+- recentlyAddedReminders
+- reminderAtIndex:
+- canAccessPropertiesOfReminderAtIndex:
+- indexOfReminder:protected:
+- numberOfCompletedReminders
+- setShowsCompletedReminders:
+- clearRecentlyAddedReminders
+- displayedNumberOfCompletedReminders
+- saveReminderImmediately:
+- addReminder:
+- willDisplayRemindersInRange:
+- faultReminder:
+- setNumberOfCompletedReminders:
+- storeProtectedData:rangeAlreadyFaulted:
+- protectedCanReminderBeInserted:
+- protectedRemoveReminderAtIndex:
+- matchesReminder:
+- predicateForCountingReminders
+- fetchProtectedData
+- shouldInvalidateReminder:
+- _hasBeenCanceled:
+- _fetchPropertiesForReminders:
+- hasBeenCanceled:
+- _faultStartingChunk:
+- loadRemindersInRange:reloadNumber:
+- _protectedNeedsLoadAheadForRange:inForwardDirection:
+- _protectedLoadAheadForRange:reloadNumber:inForwardDirection:
+- _protectedWillDisplayRemindersInRange:
+- _scheduleSaveForReminder:
+- _protectedInsertReminder:atIndex:
+- addRecentlyAddedReminder:
+- _attemptToResumeReloads
+- removeRecentlyAddedReminder:
+- _adjustOrderOnReminders:boundaryOrder:reverse:
+- _adjustOrderOnReminders:reverse:
+- _reorderReminder:betweenEarlier:later:
+- isListEmpty
+- reminderWasSavedAtIndex:
+- setDisplayedNumberOfCompletedReminders:
+- setRecentlyAddedReminders:
+- recentlyCheckedReminders
+- recentlyUncheckedReminders
+- propertiesToFetch
+- initWithEventStore:
+- dueDate
+- setDueDate:
+- setDelegate:
+- init
+- reload
+- delegate
+- resume
+- setCalendar:
+- timeZone
+- calendar
+- pause
+- .cxx_destruct
+@end

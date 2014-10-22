@@ -1,0 +1,6 @@
+@interface SSUpdatesDatabaseSchema : NSObject
+{
+
+}
+
+@end

@@ -1,0 +1,6 @@
+@interface ABSpacerGroupItem : ABCardGroupItem
+{
+
+}
+
+@end

@@ -1,0 +1,169 @@
+@interface IMDaemonListener : NSObject
+{
+	id _properties;
+	id _persistentProperties;
+	id _deferredChatMessages;
+	id _handlers;
+	id _protocol;
+	id _services;
+	id _myIdleSince;
+	id _myPicture;
+	id _contexts;
+	id _myStatusMessage;
+	id _myNowPlayingString;
+	usigned long long _myStatus;
+	usigned long long _vcCapabilities;
+	BOOL _setupComplete;
+	BOOL _postedSetupComplete;
+	BOOL _holdingChatMessages;
+	BOOL _hidingDisconnect;
+	BOOL _hasPendingProcessChange;
+}
+
++ dealloc
++ init
++ methodSignatureForSelector:
++ forwardInvocation:
++ properties
++ allServices
++ serviceWithName:
++ myIdleTime
++ myStatus
++ myStatusMessage
++ setupComplete:info:
++ vcCapabilitiesChanged:
++ defaultsChanged:forService:
++ activeAccountsChanged:forService:
++ account:defaults:blockList:allowList:blockingMode:blockIdleStatus:status:capabilities:serviceLoginStatus:loginStatusMessage:
++ account:loginStatusChanged:message:reason:properties:
++ account:defaultsChanged:
++ account:capabilitiesChanged:
++ accountAdded:defaults:service:
++ accountRemoved:
++ account:buddyPropertiesChanged:
++ account:blockListChanged:
++ account:allowListChanged:
++ account:blockingModeChanged:
++ account:blockIdleStatusChanged:
++ account:buddyPictureChanged:imageData:imageHash:
++ account:groupsChanged:error:
++ account:buddyProperties:buddyPictures:
++ account:handleSubscriptionRequestFrom:withMessage:
++ account:buddyInfo:commandReceived:properties:
++ account:buddyInfo:commandDelivered:properties:
++ account:chat:style:chatProperties:invitationReceived:
++ account:chat:style:chatProperties:messageReceived:
++ standaloneFileTransferRegistered:
++ fileTransfer:createdWithProperties:
++ fileTransfer:updatedWithProperties:
++ fileTransfer:updatedWithCurrentBytes:totalBytes:averageTransferRate:
++ property:changedTo:from:
++ persistentProperty:changedTo:from:
++ account:statusChanged:
++ account:postedError:
++ databaseUpdated:
++ databaseFull
++ databaseNoLongerFull
++ _reallyProcessMyStatusChanged
++ isHoldingChatMessages
++ _processDeferredInvitationDictionary:
++ _processMyStatusChanged
++ shouldHoldChatMessages
++ _deferNotification:
++ _cacheValue:forProperty:
++ _cacheValue:forPersistentProperty:
++ account:status:capabilities:serviceLoginStatus:loginStatusMessage:
++ services:properties:persistentProperties:
++ service:properties:defaults:defaultAccountSettings:allAccounts:activeAccounts:
++ _setStamp:forContext:
++ _deferredSetup:
++ _hidingDisconnect
++ _noteDisconnected
++ addHandler:
++ removeHandler:
++ holdChatMessages
++ releaseHeldChatMessages
++ _stampForContext:
++ valueOfProperty:
++ valueOfPersistentProperty:
++ _contexts
++ _setHidingDisconnect:
++ handlers
++ isSetupComplete
++ vcCapabilities
++ hasPostedSetupComplete
++ persistentProperties
+- dealloc
+- init
+- methodSignatureForSelector:
+- forwardInvocation:
+- properties
+- allServices
+- serviceWithName:
+- myIdleTime
+- myStatus
+- myStatusMessage
+- setupComplete:info:
+- vcCapabilitiesChanged:
+- defaultsChanged:forService:
+- activeAccountsChanged:forService:
+- account:defaults:blockList:allowList:blockingMode:blockIdleStatus:status:capabilities:serviceLoginStatus:loginStatusMessage:
+- account:loginStatusChanged:message:reason:properties:
+- account:defaultsChanged:
+- account:capabilitiesChanged:
+- accountAdded:defaults:service:
+- accountRemoved:
+- account:buddyPropertiesChanged:
+- account:blockListChanged:
+- account:allowListChanged:
+- account:blockingModeChanged:
+- account:blockIdleStatusChanged:
+- account:buddyPictureChanged:imageData:imageHash:
+- account:groupsChanged:error:
+- account:buddyProperties:buddyPictures:
+- account:handleSubscriptionRequestFrom:withMessage:
+- account:buddyInfo:commandReceived:properties:
+- account:buddyInfo:commandDelivered:properties:
+- account:chat:style:chatProperties:invitationReceived:
+- account:chat:style:chatProperties:messageReceived:
+- standaloneFileTransferRegistered:
+- fileTransfer:createdWithProperties:
+- fileTransfer:updatedWithProperties:
+- fileTransfer:updatedWithCurrentBytes:totalBytes:averageTransferRate:
+- property:changedTo:from:
+- persistentProperty:changedTo:from:
+- account:statusChanged:
+- account:postedError:
+- databaseUpdated:
+- databaseFull
+- databaseNoLongerFull
+- _reallyProcessMyStatusChanged
+- isHoldingChatMessages
+- _processDeferredInvitationDictionary:
+- _processMyStatusChanged
+- shouldHoldChatMessages
+- _deferNotification:
+- _cacheValue:forProperty:
+- _cacheValue:forPersistentProperty:
+- account:status:capabilities:serviceLoginStatus:loginStatusMessage:
+- services:properties:persistentProperties:
+- service:properties:defaults:defaultAccountSettings:allAccounts:activeAccounts:
+- _setStamp:forContext:
+- _deferredSetup:
+- _hidingDisconnect
+- _noteDisconnected
+- addHandler:
+- removeHandler:
+- holdChatMessages
+- releaseHeldChatMessages
+- _stampForContext:
+- valueOfProperty:
+- valueOfPersistentProperty:
+- _contexts
+- _setHidingDisconnect:
+- handlers
+- isSetupComplete
+- vcCapabilities
+- hasPostedSetupComplete
+- persistentProperties
+@end

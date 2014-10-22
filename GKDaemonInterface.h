@@ -1,0 +1,6 @@
+@interface GKDaemonInterface : NSXPCInterface
+{
+
+}
+
+@end

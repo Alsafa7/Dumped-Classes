@@ -1,0 +1,90 @@
+@interface CKMessagePart : NSObject
+{
+	char _color;
+	id _guid;
+	id _displayText;
+	id _parentMessage;
+	long long _partID;
+}
+
++ balloonViewClass
++ composeImages
++ __ck_displayGUIDWithMessage:
++ __ck_displayCellClass
++ __ck_displayCellIdentifier
++ __ck_prewarmForDisplay
++ __ck_displayContactImage
++ __ck_displayContentAlignmentInsets
++ __ck_displayTranscriptOrientation
++ __ck_transcriptUsesTextAlignmentInsets
++ __ck_displayDuringSend
++ __ck_wantsDrawerLayout
++ __ck_displaySize:
++ contentSizeCategoryDidChange:
++ displayText
++ dealloc
++ init
++ isEqual:
++ description
++ type
++ image
++ text
++ color
++ setColor:
++ detachedCopy
++ mediaObject
++ isOutgoing
++ previewText
++ setPartID:
++ partID
++ parentMessage
++ isSeparateSubjectPart
++ highlightData
++ previewImage
++ imageFilename
++ pasteboardItems
++ compositionRepresentation
++ setParentMessage:
++ guid
++ imageData
+- balloonViewClass
+- composeImages
+- __ck_displayGUIDWithMessage:
+- __ck_displayCellClass
+- __ck_displayCellIdentifier
+- __ck_prewarmForDisplay
+- __ck_displayContactImage
+- __ck_displayContentAlignmentInsets
+- __ck_displayTranscriptOrientation
+- __ck_transcriptUsesTextAlignmentInsets
+- __ck_displayDuringSend
+- __ck_wantsDrawerLayout
+- __ck_displaySize:
+- contentSizeCategoryDidChange:
+- displayText
+- dealloc
+- init
+- isEqual:
+- description
+- type
+- image
+- text
+- color
+- setColor:
+- detachedCopy
+- mediaObject
+- isOutgoing
+- previewText
+- setPartID:
+- partID
+- parentMessage
+- isSeparateSubjectPart
+- highlightData
+- previewImage
+- imageFilename
+- pasteboardItems
+- compositionRepresentation
+- setParentMessage:
+- guid
+- imageData
+@end

@@ -1,0 +1,64 @@
+@interface CMMotionManagerInternal : NSObject
+{
+	int fSampleLock;
+	pointer fAccelerometerDispatcher;
+	double fAccelerometerUpdateInterval;
+	id fAccelerometerHandler;
+	id fAccelerometerQueue;
+	double fLastAccelerometerNotificationTimestamp;
+	struct fLatestAccelerometerSample;
+	pointer fGyroDispatcher;
+	double fGyroUpdateInterval;
+	id fGyroHandler;
+	id fGyroQueue;
+	double fLastGyroNotificationTimestamp;
+	struct fLatestGyroSample;
+	pointer fDeviceMotionDispatcher;
+	double fDeviceMotionUpdateInterval;
+	id fDeviceMotionHandler;
+	id fDeviceMotionQueue;
+	double fLastDeviceMotionNotificationTimestamp;
+	struct fLatestDeviceMotionSample;
+	int fAttitudeReferenceFrame;
+	BOOL fCompassCalibrationHud;
+	BOOL fShowCompassCalibrationHudOnResume;
+	BOOL fHaveSentDeviceRequiresMovementError;
+	struct fGeomagneticModelProviderClient;
+	struct fGeomagneticModel;
+	BOOL fHaveSentTrueNorthUnavailableError;
+	double fDeviceMotionStartTimestamp;
+	pointer fMagnetometerDispatcher;
+	double fMagnetometerUpdateInterval;
+	id fMagnetometerHandler;
+	id fMagnetometerQueue;
+	double fLastMagnetometerNotificationTimestamp;
+	struct fLatestMagnetometerSample;
+	BOOL fShowsDeviceMovementDisplay;
+	pointer fPrivateAccelerometerDataDispatcher;
+	pointer fPrivateAccelerometerDataCallback;
+	pointer fPrivateAccelerometerDataCallbackInfo;
+	pointer fPrivateGyroDataDispatcher;
+	pointer fPrivateGyroDataCallback;
+	pointer fPrivateGyroDataCallbackInfo;
+	pointer fPrivateDeviceMotionDispatcher;
+	pointer fPrivateDeviceMotionCallback;
+	pointer fPrivateDeviceMotionCallbackInfo;
+	BOOL fPrivateDeviceMotionUse9Axis;
+	BOOL fPrivateUseAccelerometer;
+	BOOL fPrivateWantsPowerConservativeDeviceMotion;
+	pointer fPrivateNotificationCallback;
+	pointer fPrivateNotificationCallbackInfo;
+	pointer fPrivateDeviceMotionSensorStatusDispatcher;
+	pointer fPrivateDeviceMotionAlgorithmDidResetDispatcher;
+	BOOL fInactive;
+}
+
++ initWithInfo:
++ dealloc
++ .cxx_construct
++ .cxx_destruct
+- initWithInfo:
+- dealloc
+- .cxx_construct
+- .cxx_destruct
+@end

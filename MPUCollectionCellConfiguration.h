@@ -1,0 +1,6 @@
+@interface MPUCollectionCellConfiguration : NSObject
+{
+
+}
+
+@end

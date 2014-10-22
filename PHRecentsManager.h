@@ -1,0 +1,68 @@
+@interface PHRecentsManager : NSObject
+{
+	BOOL _showsFaceTimeCalls;
+	BOOL _showsFaceTimeAudioCalls;
+	BOOL _showsTelephonyCalls;
+	id calls;
+	id callsLock;
+}
+
++ showsTelephonyCalls
++ setShowsTelephonyCalls:
++ setShowsFaceTimeAudioCalls:
++ setShowsFaceTimeCalls:
++ recentCalls
++ dialRecentCall:
++ deleteCall:
++ deleteAllCalls
++ setCallsLock:
++ faceTimeAvailabilityChangedNotification:
++ homeCountryCodeChangedNotification:
++ phoneApplicationAddressBookChangedNotification:
++ phoneApplicationLocaleChangedNotification:
++ applicationDidReceiveMemoryWarningNotification:
++ reloadCallsArrayIfNecessary
++ reloadCallsArray
++ showsFaceTimeCalls
++ showsFaceTimeAudioCalls
++ copyDisplayableCTCalls
++ recentsArray:representsCTCallsArray:
++ copyRecentCallsArrayWithCTCalls:
++ callsLock
++ callHistoryRecordAddedNotification:
++ callHistorySignificantChangeNotification
++ markRepresentedCallsAsSeen
++ dealloc
++ init
++ calls
++ setCalls:
+- showsTelephonyCalls
+- setShowsTelephonyCalls:
+- setShowsFaceTimeAudioCalls:
+- setShowsFaceTimeCalls:
+- recentCalls
+- dialRecentCall:
+- deleteCall:
+- deleteAllCalls
+- setCallsLock:
+- faceTimeAvailabilityChangedNotification:
+- homeCountryCodeChangedNotification:
+- phoneApplicationAddressBookChangedNotification:
+- phoneApplicationLocaleChangedNotification:
+- applicationDidReceiveMemoryWarningNotification:
+- reloadCallsArrayIfNecessary
+- reloadCallsArray
+- showsFaceTimeCalls
+- showsFaceTimeAudioCalls
+- copyDisplayableCTCalls
+- recentsArray:representsCTCallsArray:
+- copyRecentCallsArrayWithCTCalls:
+- callsLock
+- callHistoryRecordAddedNotification:
+- callHistorySignificantChangeNotification
+- markRepresentedCallsAsSeen
+- dealloc
+- init
+- calls
+- setCalls:
+@end

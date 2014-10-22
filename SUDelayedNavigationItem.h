@@ -1,0 +1,67 @@
+@interface SUDelayedNavigationItem : SUNavigationItem
+{
+	id _delayedBackButtonTitle;
+	id _delayedLeftBarButtonItems;
+	id _delayedLeftItemsSupplementBackButton;
+	id _delayedTitle;
+	id _delayedTitleView;
+	id _delayedRightBarButtonItems;
+	BOOL _shouldDelayChanges;
+	id _wrappedNavigationItem;
+}
+
++ dealloc
++ setTitle:
++ navigationBar
++ leftBarButtonItems
++ leftItemsSupplementBackButton
++ title
++ backButtonTitle
++ rightBarButtonItems
++ titleView
++ initWithNavigationItem:
++ setLeftBarButtonItem:animated:
++ setRightBarButtonItem:animated:
++ setLeftBarButtonItems:animated:
++ setRightBarButtonItems:animated:
++ setTitleView:
++ leftBarButtonItem
++ rightBarButtonItem
++ setBackButtonTitle:
++ setLeftItemsSupplementBackButton:
++ setTitleView:animated:
++ setShouldDelayChanges:
++ setWrappedNavigationItem:
++ commitDelayedChanges
++ _prepareButtonItemForDisplay:
++ shouldDelayChanges
++ _scheduleCommit
++ wrappedNavigationItem
+- dealloc
+- setTitle:
+- navigationBar
+- leftBarButtonItems
+- leftItemsSupplementBackButton
+- title
+- backButtonTitle
+- rightBarButtonItems
+- titleView
+- initWithNavigationItem:
+- setLeftBarButtonItem:animated:
+- setRightBarButtonItem:animated:
+- setLeftBarButtonItems:animated:
+- setRightBarButtonItems:animated:
+- setTitleView:
+- leftBarButtonItem
+- rightBarButtonItem
+- setBackButtonTitle:
+- setLeftItemsSupplementBackButton:
+- setTitleView:animated:
+- setShouldDelayChanges:
+- setWrappedNavigationItem:
+- commitDelayedChanges
+- _prepareButtonItemForDisplay:
+- shouldDelayChanges
+- _scheduleCommit
+- wrappedNavigationItem
+@end

@@ -1,0 +1,6 @@
+@interface SUScriptNavigationItem : SUScriptObject
+{
+
+}
+
+@end

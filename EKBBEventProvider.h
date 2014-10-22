@@ -1,0 +1,73 @@
+@interface EKBBEventProvider : EKBBDataProvider
+{
+	id _notificationMonitor;
+	id _notifications;
+	id _invitesQueue;
+	id _loaderQueue;
+	BOOL _needsLoad;
+	id _dateFormatter;
+}
+
++ _notifications
++ entityScheme
++ emptyModalTitle
++ _resourceChangeURIFromBulletin:
++ _addNotification:replace:
++ _loadNotifications
++ databaseChanged:
++ actionButtonTitleForAlertInfo:
++ _setPropertiesOnBulletinRequest:fromResourceChange:
++ _bulletinRequestWithCalendarNotification:
++ _expirationDateForEventInvitation:
++ _expirationDateForResourceChange:
++ deviceUnlocked
++ _notificationCountChanged:
++ _unalertedNotificationsReceived:
++ allowedEntityTypes
++ _timeZoneChanged:
++ _calendarNotificationSettingChanged
++ _reloadIfNeeded
++ dealloc
++ init
++ _dateFormatter
++ sectionIdentifier
++ sectionParameters
++ dataProviderDidLoad
++ bulletinsFilteredBy:count:lastCleared:
++ clearedInfoForBulletins:lastClearedInfo:
++ defaultSectionInfo
++ sortDescriptors
++ _reload
++ .cxx_destruct
+- _notifications
+- entityScheme
+- emptyModalTitle
+- _resourceChangeURIFromBulletin:
+- _addNotification:replace:
+- _loadNotifications
+- databaseChanged:
+- actionButtonTitleForAlertInfo:
+- _setPropertiesOnBulletinRequest:fromResourceChange:
+- _bulletinRequestWithCalendarNotification:
+- _expirationDateForEventInvitation:
+- _expirationDateForResourceChange:
+- deviceUnlocked
+- _notificationCountChanged:
+- _unalertedNotificationsReceived:
+- allowedEntityTypes
+- _timeZoneChanged:
+- _calendarNotificationSettingChanged
+- _reloadIfNeeded
+- dealloc
+- init
+- _dateFormatter
+- sectionIdentifier
+- sectionParameters
+- dataProviderDidLoad
+- bulletinsFilteredBy:count:lastCleared:
+- clearedInfoForBulletins:lastClearedInfo:
+- defaultSectionInfo
+- sortDescriptors
+- _reload
+- .cxx_destruct
+@end

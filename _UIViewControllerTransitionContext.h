@@ -1,0 +1,151 @@
+@interface _UIViewControllerTransitionContext : NSObject
+{
+	double _previousPercentComplete;
+	id _disabledViews;
+	struct _transitionContextFlags;
+	BOOL _initiallyInteractive;
+	BOOL _isCurrentlyInteractive;
+	BOOL _isAnimated;
+	BOOL __isPresentation;
+	id __containerViews;
+	double __percentOffset;
+	id __animator;
+	id __interactor;
+	id _containerView;
+	id __willCompleteHandler;
+	id __completionHandler;
+	double __completionVelocity;
+	long long __completionCurve;
+	id __auxContext;
+	double __duration;
+	long long __state;
+	id __interactiveUpdateHandler;
+	id __postInteractiveCompletionHandler;
+	long long _presentationStyle;
+}
+
++ dealloc
++ init
++ containerView
++ viewControllerForKey:
++ initialFrameForViewController:
++ finalFrameForViewController:
++ _completionCurve
++ isInteractive
++ transitionWasCancelled
++ completeTransition:
++ cancelInteractiveTransition
++ finishInteractiveTransition
++ updateInteractiveTransition:
++ _duration
++ _enableInteractionForDisabledViews
++ _state
++ _transitionCoordinator
++ _isPresentation
++ _willCompleteHandler
++ _setWillCompleteHandler:
++ _auxContext
++ _setDuration:
++ _completionVelocity
++ _postInteractiveCompletionHandler
++ _setPostInteractiveCompletionHandler:
++ _setTransitionIsInFlight:
++ _setInteractor:
++ _setAnimator:
++ _setCompletionHandler:
++ _setInteractiveUpdateHandler:
++ _setTransitionIsCompleting:
++ __runAlongsideAnimations
++ _setIsAnimated:
++ _setContainerView:
++ _setCompletionCurve:
++ _animator
++ _disableInteractionForViews:
++ _interactor
++ initiallyInteractive
++ _setState:
++ _completionHandler
++ _setPresentationStyle:
++ _setIsPresentation:
++ presentationStyle
++ _containerViews
++ isAnimated
++ _setAuxContext:
++ _setInitiallyInteractive:
++ _setIsCurrentlyInteractive:
++ isCurrentlyInteractive
++ _interactiveUpdateHandler
++ _percentOffset
++ _interactivityDidChange:
++ _runAlongsideCompletions
++ _setContainerViews:
++ _setPercentOffset:
++ _previousPercentComplete
++ _setPreviousPercentComplete:
++ _updateInteractiveTransitionWithoutTrackingPercentComplete:
++ _transitionIsInFlight
++ _transitionIsCompleting
++ _setCompletionVelocity:
+- dealloc
+- init
+- containerView
+- viewControllerForKey:
+- initialFrameForViewController:
+- finalFrameForViewController:
+- _completionCurve
+- isInteractive
+- transitionWasCancelled
+- completeTransition:
+- cancelInteractiveTransition
+- finishInteractiveTransition
+- updateInteractiveTransition:
+- _duration
+- _enableInteractionForDisabledViews
+- _state
+- _transitionCoordinator
+- _isPresentation
+- _willCompleteHandler
+- _setWillCompleteHandler:
+- _auxContext
+- _setDuration:
+- _completionVelocity
+- _postInteractiveCompletionHandler
+- _setPostInteractiveCompletionHandler:
+- _setTransitionIsInFlight:
+- _setInteractor:
+- _setAnimator:
+- _setCompletionHandler:
+- _setInteractiveUpdateHandler:
+- _setTransitionIsCompleting:
+- __runAlongsideAnimations
+- _setIsAnimated:
+- _setContainerView:
+- _setCompletionCurve:
+- _animator
+- _disableInteractionForViews:
+- _interactor
+- initiallyInteractive
+- _setState:
+- _completionHandler
+- _setPresentationStyle:
+- _setIsPresentation:
+- presentationStyle
+- _containerViews
+- isAnimated
+- _setAuxContext:
+- _setInitiallyInteractive:
+- _setIsCurrentlyInteractive:
+- isCurrentlyInteractive
+- _interactiveUpdateHandler
+- _percentOffset
+- _interactivityDidChange:
+- _runAlongsideCompletions
+- _setContainerViews:
+- _setPercentOffset:
+- _previousPercentComplete
+- _setPreviousPercentComplete:
+- _updateInteractiveTransitionWithoutTrackingPercentComplete:
+- _transitionIsInFlight
+- _transitionIsCompleting
+- _setCompletionVelocity:
+@end

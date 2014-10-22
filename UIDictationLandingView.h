@@ -1,0 +1,60 @@
+@interface UIDictationLandingView : UIView
+{
+	id _range;
+	id _placeholder;
+	BOOL _didHaveText;
+	BOOL _willInsertResult;
+	double _angle;
+	double _diameter;
+	id _displayLink;
+	double _startTime;
+	double _shrinkStartTime;
+	BOOL _shrinking;
+	id _afterShrinkCompletionInvocation;
+}
+
++ initWithFrame:
++ dealloc
++ drawRect:
++ _basicAnimationForView:withKeyPath:
++ _timingFunctionForAnimation
++ delegateWasEmpty
++ fadeOutDuration
++ updatePosition
++ startLandingIfNecessary
++ stopLandingForError
++ stopLanding
++ setWillInsertResult:
++ shrinkWithCompletionInvocation:
++ clearRotation
++ rotateBy:
++ advanceLanding:
++ startDisplayLinkIfNecessary
++ hideCursor
++ showCursor
++ errorShrinkDidFinish
++ errorShakeDidFinish
++ willInsertResult
+- initWithFrame:
+- dealloc
+- drawRect:
+- _basicAnimationForView:withKeyPath:
+- _timingFunctionForAnimation
+- delegateWasEmpty
+- fadeOutDuration
+- updatePosition
+- startLandingIfNecessary
+- stopLandingForError
+- stopLanding
+- setWillInsertResult:
+- shrinkWithCompletionInvocation:
+- clearRotation
+- rotateBy:
+- advanceLanding:
+- startDisplayLinkIfNecessary
+- hideCursor
+- showCursor
+- errorShrinkDidFinish
+- errorShakeDidFinish
+- willInsertResult
+@end

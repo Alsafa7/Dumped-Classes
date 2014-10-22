@@ -1,0 +1,6 @@
+@interface SBFEqualsBuilder : NSObject
+{
+
+}
+
+@end

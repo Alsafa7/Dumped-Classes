@@ -1,0 +1,122 @@
+@interface EAAccessoryManager : NSObject
+{
+	id _connectedAccessories;
+	id _discoveredWirelessAccessories;
+	id _sequesteredAccessories;
+	id _selectedBluetoothAddress;
+	id _picker;
+	id _pickerCompletion;
+	BOOL _sequesterNewAccessories;
+	id _pickerTimer;
+	id _connectionQueue;
+}
+
++ _externalAccessoryConnected:
++ _externalAccessoryUpdated:
++ _externalAccessoryDisconnected:
++ _wirelessAccessoryAvailable:
++ _wirelessAccessoryNotAvailable:
++ _wirelessAccessoryDidConnect:
++ _wirelessAccessoryDisconnected:
++ _externalAccessoryPortPropertyChanged:
++ _iapServerDied:
++ _externalAccessoryReconnected:
++ _timeSyncInfoUpdated:
++ _vehicleDataUpdated:
++ _initFromSingletonCreationMethod
++ unregisterForLocalNotifications
++ _externalAccessoryIPodOutOptionsChanged:
++ _locationNmeaDataAvailable:
++ _locationPointDataAvailable:
++ _ephemerisURLAvailable:
++ _nmeaFilteringSupportChanged:
++ _gpsTimeRequested:
++ _removeAllAccessoriesFromArray:notifyClients:
++ _cleanUpForTaskSuspend
++ _notifyObserversThatAccessoryDisconnectedWithUserInfo:
++ _integrateSequesteredAccessories
++ _handleAccessoryNotificationTimeout:
++ devicePicker:didSelectAddress:errorCode:
++ showBluetoothAccessoryPickerWithNameFilter:completion:
++ connectedAccessories
++ registerForLocalNotifications
++ wakeAccessoryWithToken:
++ appDeclaresProtocol:
++ _connectedAccessories
++ shouldAllowInternalProtocols
++ setShouldAllowInternalProtocols:
++ shouldAllowCppRuntime
++ setShouldAllowCppRuntime:
++ areLocationAccessoriesEnabled
++ setAreLocationAccessoriesEnabled:
++ pointOfInterestSelection:
++ initiateConnectionToWirelessAccessory:
++ disconnectWirelessAccessory:
++ startWirelessAccessoryDiscovery
++ stopWirelessAccessoryDiscovery
++ dealloc
++ init
++ _applicationDidEnterBackground:
++ _applicationWillEnterForeground:
++ openCompleteForSession:connectionID:
++ endSession:forConnectionID:
++ accessibilityContextChange:
++ accessibilityAction:
++ accessibilityItemPropertyRequest:
++ accessibilitySystemPropertyChange:
++ accessibilitySystemPropertyRequest:
+- _externalAccessoryConnected:
+- _externalAccessoryUpdated:
+- _externalAccessoryDisconnected:
+- _wirelessAccessoryAvailable:
+- _wirelessAccessoryNotAvailable:
+- _wirelessAccessoryDidConnect:
+- _wirelessAccessoryDisconnected:
+- _externalAccessoryPortPropertyChanged:
+- _iapServerDied:
+- _externalAccessoryReconnected:
+- _timeSyncInfoUpdated:
+- _vehicleDataUpdated:
+- _initFromSingletonCreationMethod
+- unregisterForLocalNotifications
+- _externalAccessoryIPodOutOptionsChanged:
+- _locationNmeaDataAvailable:
+- _locationPointDataAvailable:
+- _ephemerisURLAvailable:
+- _nmeaFilteringSupportChanged:
+- _gpsTimeRequested:
+- _removeAllAccessoriesFromArray:notifyClients:
+- _cleanUpForTaskSuspend
+- _notifyObserversThatAccessoryDisconnectedWithUserInfo:
+- _integrateSequesteredAccessories
+- _handleAccessoryNotificationTimeout:
+- devicePicker:didSelectAddress:errorCode:
+- showBluetoothAccessoryPickerWithNameFilter:completion:
+- connectedAccessories
+- registerForLocalNotifications
+- wakeAccessoryWithToken:
+- appDeclaresProtocol:
+- _connectedAccessories
+- shouldAllowInternalProtocols
+- setShouldAllowInternalProtocols:
+- shouldAllowCppRuntime
+- setShouldAllowCppRuntime:
+- areLocationAccessoriesEnabled
+- setAreLocationAccessoriesEnabled:
+- pointOfInterestSelection:
+- initiateConnectionToWirelessAccessory:
+- disconnectWirelessAccessory:
+- startWirelessAccessoryDiscovery
+- stopWirelessAccessoryDiscovery
+- dealloc
+- init
+- _applicationDidEnterBackground:
+- _applicationWillEnterForeground:
+- openCompleteForSession:connectionID:
+- endSession:forConnectionID:
+- accessibilityContextChange:
+- accessibilityAction:
+- accessibilityItemPropertyRequest:
+- accessibilitySystemPropertyChange:
+- accessibilitySystemPropertyRequest:
+@end

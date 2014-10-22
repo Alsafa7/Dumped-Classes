@@ -1,0 +1,6 @@
+@interface prefListController : PSListController
+{
+
+}
+
+@end

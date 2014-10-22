@@ -1,0 +1,81 @@
+@interface MPHomeSharingML3DataProvider : MPMediaLibraryDataProviderML3
+{
+	id _homeSharingLibrary;
+	id _tokenDataForDSIDs;
+	id _loadedContainerPIDs;
+	id _blocksForLoadingContainerPIDs;
+	id _containerFillQueue;
+	bit[1] _updateCheckEnabled;
+}
+
++ _willEnterForegroundNotification:
++ _didEnterBackgroundNotification:
++ connectWithAuthenticationData:completionBlock:progressHandler:
++ hasGeniusMixes
++ requiresAuthentication
++ itemResultSetForQueryCriteria:
++ loadQueryCriteria:hasItemsWithCompletionBlock:
++ loadQueryCriteria:hasCollectionsWithCompletionBlock:
++ loadQueryCriteria:countOfItemsWithCompletionBlock:
++ loadQueryCriteria:countOfCollectionsWithCompletionBlock:
++ protectedContentSupportStorageURL
++ errorResolverForMediaItem:
++ hasArtworkImageForItemWithIdentifier:
++ shouldAsynchrounouslyLoadArtworkForItemWithIdentifier:artworkFormat:artworkCacheID:
++ shouldAsynchrounouslyLoadArtworkForItemWithIdentifier:artworkSize:artworkCacheID:
++ loadArtworkImageForFormat:ofItemWithIdentifier:completionBlock:
++ loadBestArtworkImageDataForSize:ofItemWithIdentifier:atPlaybackTime:completionBlock:
++ adjustedValueForMPProperty:ofEntity:withDefaultValue:
++ initWithHomeSharingLibrary:
++ homeSharingLibrary
++ _homeSharingGroupIDDidChangeNotification:
++ isSupportedSharingVersion
++ _scheduleUpdateCheck
++ _fetchTokensForAuthorizedDSIDs
++ _fillContainerForQueryCriteria:completionBlock:
++ _cachedImagePathHomeSharingID:pixelSize:
++ _tokenDataForMediaItem:
++ setTokenData:forAuthorizedDSID:
++ setValue:forProperty:ofItemWithIdentifier:
++ setRentalPlaybackStartDateForItemID:
++ dealloc
++ name
++ uniqueIdentifier
++ disconnect
++ .cxx_destruct
+- _willEnterForegroundNotification:
+- _didEnterBackgroundNotification:
+- connectWithAuthenticationData:completionBlock:progressHandler:
+- hasGeniusMixes
+- requiresAuthentication
+- itemResultSetForQueryCriteria:
+- loadQueryCriteria:hasItemsWithCompletionBlock:
+- loadQueryCriteria:hasCollectionsWithCompletionBlock:
+- loadQueryCriteria:countOfItemsWithCompletionBlock:
+- loadQueryCriteria:countOfCollectionsWithCompletionBlock:
+- protectedContentSupportStorageURL
+- errorResolverForMediaItem:
+- hasArtworkImageForItemWithIdentifier:
+- shouldAsynchrounouslyLoadArtworkForItemWithIdentifier:artworkFormat:artworkCacheID:
+- shouldAsynchrounouslyLoadArtworkForItemWithIdentifier:artworkSize:artworkCacheID:
+- loadArtworkImageForFormat:ofItemWithIdentifier:completionBlock:
+- loadBestArtworkImageDataForSize:ofItemWithIdentifier:atPlaybackTime:completionBlock:
+- adjustedValueForMPProperty:ofEntity:withDefaultValue:
+- initWithHomeSharingLibrary:
+- homeSharingLibrary
+- _homeSharingGroupIDDidChangeNotification:
+- isSupportedSharingVersion
+- _scheduleUpdateCheck
+- _fetchTokensForAuthorizedDSIDs
+- _fillContainerForQueryCriteria:completionBlock:
+- _cachedImagePathHomeSharingID:pixelSize:
+- _tokenDataForMediaItem:
+- setTokenData:forAuthorizedDSID:
+- setValue:forProperty:ofItemWithIdentifier:
+- setRentalPlaybackStartDateForItemID:
+- dealloc
+- name
+- uniqueIdentifier
+- disconnect
+- .cxx_destruct
+@end

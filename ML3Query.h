@@ -1,0 +1,126 @@
+@interface ML3Query : NSObject
+{
+	id _library;
+	Class _entityClass;
+	id _predicate;
+	id _orderingTerms;
+	id _propertyToCount;
+	id _nonDirectAggregateQuery;
+	BOOL _usingSections;
+	BOOL _ignoreSystemFilterPredicates;
+	BOOL _filtersOnDynamicProperties;
+}
+
++ loadNamesFromLibrary:onConnection:forPredicate:loadAllNames:cancelHandler:
++ nameOrderPropertyForProperty:
++ initWithCoder:
++ encodeWithCoder:
++ isEqual:
++ description
++ sections
++ predicate
++ library
++ hasEntities
++ enumeratePersistentIDsUsingBlock:
++ countOfEntities
++ entityClass
++ enumeratePersistentIDsAndProperties:usingBlock:
++ ignoreSystemFilterPredicates
++ initWithLibrary:entityClass:predicate:orderingTerms:usingSections:nonDirectAggregateQuery:propertyToCount:
++ setIgnoreSystemFilterPredicates:
++ orderingTerms
++ nonDirectAggregateQuery
++ propertyToCount
++ usingSections
++ selectSQLWithColumns:orderingTerms:limit:
++ persistentIDParameters
++ hasRowForColumn:
++ selectSQLWithColumns:orderingTerms:
++ countOfDistinctRowsForColumn:
++ enumerateSectionsUsingBlock:
++ deleteAllEntitiesFromLibraryWithDeletionType:
++ selectSectionsSQL
++ sectionProperty
++ sectionsParameters
++ enumeratePersistentIDsAndProperties:ordered:cancelBlock:usingBlock:
++ selectPersistentIDsSQLAndProperties:ordered:
++ enumerationDatabaseResultForSQL:onConnection:withParameters:
++ selectSQLWithColumns:groupBy:orderingTerms:directionality:usingLowerBound:distinct:limit:
++ predicateIncludingSystemwidePredicates
++ persistentIDProperty
++ selectSQLWithColumns:groupBy:orderingTerms:
++ selectPersistentIDsSQLAndProperties:ordered:distinct:
++ selectSQLWithColumns:groupBy:distinct:
++ selectSQLWithColumns:orderingTerms:distinct:
++ anyEntityPersistentID
++ deleteAllEntitiesFromLibrary
++ deleteAllEntitiesFromLibraryWithDeletionType:usingConnection:
++ enumeratePersistentIDsAndProperties:ordered:usingBlock:
++ valueForAggregateFunction:onEntitiesForProperty:
++ selectSQLWithColumns:groupBy:
++ selectSQLWithColumns:orderingTerms:directionality:
++ selectSQLWithColumns:groupBy:orderingTerms:directionality:usingLowerBound:
++ lowerBoundParametersForOrderingTerms:lowerBoundPersistentID:
++ selectUnorderedPersistentIDsSQL
++ selectPersistentIDsSQL
++ selectCountSQL
++ countStatementParameters
++ filtersOnDynamicProperties
++ .cxx_destruct
+- loadNamesFromLibrary:onConnection:forPredicate:loadAllNames:cancelHandler:
+- nameOrderPropertyForProperty:
+- initWithCoder:
+- encodeWithCoder:
+- isEqual:
+- description
+- sections
+- predicate
+- library
+- hasEntities
+- enumeratePersistentIDsUsingBlock:
+- countOfEntities
+- entityClass
+- enumeratePersistentIDsAndProperties:usingBlock:
+- ignoreSystemFilterPredicates
+- initWithLibrary:entityClass:predicate:orderingTerms:usingSections:nonDirectAggregateQuery:propertyToCount:
+- setIgnoreSystemFilterPredicates:
+- orderingTerms
+- nonDirectAggregateQuery
+- propertyToCount
+- usingSections
+- selectSQLWithColumns:orderingTerms:limit:
+- persistentIDParameters
+- hasRowForColumn:
+- selectSQLWithColumns:orderingTerms:
+- countOfDistinctRowsForColumn:
+- enumerateSectionsUsingBlock:
+- deleteAllEntitiesFromLibraryWithDeletionType:
+- selectSectionsSQL
+- sectionProperty
+- sectionsParameters
+- enumeratePersistentIDsAndProperties:ordered:cancelBlock:usingBlock:
+- selectPersistentIDsSQLAndProperties:ordered:
+- enumerationDatabaseResultForSQL:onConnection:withParameters:
+- selectSQLWithColumns:groupBy:orderingTerms:directionality:usingLowerBound:distinct:limit:
+- predicateIncludingSystemwidePredicates
+- persistentIDProperty
+- selectSQLWithColumns:groupBy:orderingTerms:
+- selectPersistentIDsSQLAndProperties:ordered:distinct:
+- selectSQLWithColumns:groupBy:distinct:
+- selectSQLWithColumns:orderingTerms:distinct:
+- anyEntityPersistentID
+- deleteAllEntitiesFromLibrary
+- deleteAllEntitiesFromLibraryWithDeletionType:usingConnection:
+- enumeratePersistentIDsAndProperties:ordered:usingBlock:
+- valueForAggregateFunction:onEntitiesForProperty:
+- selectSQLWithColumns:groupBy:
+- selectSQLWithColumns:orderingTerms:directionality:
+- selectSQLWithColumns:groupBy:orderingTerms:directionality:usingLowerBound:
+- lowerBoundParametersForOrderingTerms:lowerBoundPersistentID:
+- selectUnorderedPersistentIDsSQL
+- selectPersistentIDsSQL
+- selectCountSQL
+- countStatementParameters
+- filtersOnDynamicProperties
+- .cxx_destruct
+@end

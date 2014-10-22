@@ -1,0 +1,85 @@
+@interface UISwipeGestureRecognizer : UIGestureRecognizer
+{
+	double _maximumDuration;
+	double _minimumPrimaryMovement;
+	double _maximumPrimaryMovement;
+	double _minimumSecondaryMovement;
+	double _maximumSecondaryMovement;
+	double _rateOfMinimumMovementDecay;
+	double _rateOfMaximumMovementDecay;
+	usigned long long _numberOfTouchesRequired;
+	id _touches;
+	usigned long long _direction;
+	struct _startLocation;
+	pointer _startLocations;
+	double _startTime;
+	bit[1] _failed;
+}
+
++ dealloc
++ initWithCoder:
++ encodeWithCoder:
++ initWithTarget:action:
++ locationInView:
++ touchesCancelled:withEvent:
++ touchesBegan:withEvent:
++ touchesMoved:withEvent:
++ touchesEnded:withEvent:
++ setDirection:
++ numberOfTouches
++ locationOfTouch:inView:
++ direction
++ setMaximumDuration:
++ startPoint
++ numberOfTouchesRequired
++ setNumberOfTouchesRequired:
++ _resetGestureRecognizer
++ setMinimumPrimaryMovement:
++ _appendSubclassDescription:
++ _checkForSwipeWithDelta:time:
++ maximumDuration
++ minimumPrimaryMovement
++ maximumPrimaryMovement
++ setMaximumPrimaryMovement:
++ minimumSecondaryMovement
++ setMinimumSecondaryMovement:
++ maximumSecondaryMovement
++ setMaximumSecondaryMovement:
++ rateOfMinimumMovementDecay
++ setRateOfMinimumMovementDecay:
++ rateOfMaximumMovementDecay
++ setRateOfMaximumMovementDecay:
+- dealloc
+- initWithCoder:
+- encodeWithCoder:
+- initWithTarget:action:
+- locationInView:
+- touchesCancelled:withEvent:
+- touchesBegan:withEvent:
+- touchesMoved:withEvent:
+- touchesEnded:withEvent:
+- setDirection:
+- numberOfTouches
+- locationOfTouch:inView:
+- direction
+- setMaximumDuration:
+- startPoint
+- numberOfTouchesRequired
+- setNumberOfTouchesRequired:
+- _resetGestureRecognizer
+- setMinimumPrimaryMovement:
+- _appendSubclassDescription:
+- _checkForSwipeWithDelta:time:
+- maximumDuration
+- minimumPrimaryMovement
+- maximumPrimaryMovement
+- setMaximumPrimaryMovement:
+- minimumSecondaryMovement
+- setMinimumSecondaryMovement:
+- maximumSecondaryMovement
+- setMaximumSecondaryMovement:
+- rateOfMinimumMovementDecay
+- setRateOfMinimumMovementDecay:
+- rateOfMaximumMovementDecay
+- setRateOfMaximumMovementDecay:
+@end

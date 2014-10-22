@@ -1,0 +1,231 @@
+@interface NoteContext : NSObject
+{
+	id _managedObjectModel;
+	id _managedObjectContext;
+	id _persistentStoreCoordinator;
+	id _searchPredicate;
+	id _localStore;
+	id _localAccount;
+	pointer __SharedNoteStoreSearchIndex;
+	id __SharedNoteStoreSearchIndexLock;
+	int __SharedNoteStoreSearchIndexCount;
+	BOOL _isIndexing;
+	id _nextIdContext;
+	id _nextIdLock;
+	id _nextId;
+	id _objectCreationLock;
+	usigned long long _notificationCount;
+	BOOL _logChanges;
+	BOOL _indexInBatches;
+	BOOL _hasPriorityInSaveConflicts;
+	BOOL _inMigrator;
+	id _testingFilePrefix;
+	id _testingFilePath;
+	id _notePropertyObjectsRealized;
+}
+
++ clearCaches
++ storeOptions
++ setPropertyValue:forKey:
++ rootDirectory
++ propertyValueForKey:
++ dealloc
++ init
++ invalidate
++ managedObjectModel
++ managedObjectContext
++ save:
++ storeForObjectID:
++ newlyAddedStore
++ deleteStore:
++ allVisibleNotesInCollection:
++ newlyAddedNote
++ deleteNoteRegardlessOfConstraints:
++ notesForIntegerIds:
++ allNotesWithoutBodiesInCollection:
++ localAccount
++ deleteAccount:
++ allAccounts
++ accountForAccountId:
++ newlyAddedAccount
++ enableChangeLogging:
++ saveOutsideApp:
++ deleteChanges:
++ deleteNote:
++ countOfNotesInCollection:
++ allNotesInCollection:
++ forceDeleteAccount:
++ _createLocalAccount:andStore:
++ urlForPersistentStore
++ setUpUniqueObjects
++ setUpLocalAccountAndStore
++ setUpLastIndexTid
++ saveSilently:
++ pathForPersistentStore
++ pathForIndex
++ removeSqliteAndIdxFiles
++ removeConflictingSqliteAndIdxFiles
++ handleMigration
++ updateSearchIndex:
++ trackChanges:
++ initWithTestingFilePrefix:atPath:inMigrator:
++ initWithTestingFilePrefix:inMigrator:
++ setUpCoreDataStack
++ initWithTestingFilePrefix:
++ tearDownCoreDataStack
++ newFetchRequestForNotes
++ visibleNotesPredicate
++ nextIndex
++ allVisibleNotesMatchingPredicate:
++ countOfVisibleNotesMatchingPredicate:
++ allNotesMatchingPredicate:
++ countOfNotesMatchingPredicate:
++ liveNotesNeedingBodiesPredicate
++ forceSetUpUniqueObjects
++ localStore
++ countOfStores
++ _notePropertyObjectForKey:
++ getNextIdObject
++ notesToResumeIndexing
++ saveNotesToResumeIndexing:
++ indexNotes:
++ destroySearchIndex
++ shouldResumeIndexing
++ searchIndex:
++ cleanUpLocks
++ noteChangeWithType:store:
++ copyNotesForSearch:predicate:complete:
++ newSearchContextWithText:
++ allNotes
++ initForMigrator
++ newFRCForCollection:delegate:
++ sortNotes:
++ collectionForObjectID:
++ allVisibleNotes
++ countOfVisibleNotes
++ countOfVisibleNotesInCollection:
++ visibleNoteForObjectID:
++ visibleNotesForIntegerIds:
++ countOfNotes
++ noteForObjectID:
++ collectionForInfo:
++ allStores
++ defaultStoreForNewNote
++ shouldDisableLocalStore
++ hasMultipleEnabledStores
++ setHasPriorityInSaveConflicts:
++ wrapUpIndexing
++ resumeIndexing
++ indexInBatches:
++ receiveDarwinNotificationWithChangeLogging:
++ resetNotificationCount
++ copyNotesForSearch:complete:
++ findNotesWithText:betweenDate:andDate:
++ noteIsSafeToAccess:
++ deleteIndexFile
++ isIndexing
++ persistentStoreCoordinator
++ .cxx_destruct
+- clearCaches
+- storeOptions
+- setPropertyValue:forKey:
+- rootDirectory
+- propertyValueForKey:
+- dealloc
+- init
+- invalidate
+- managedObjectModel
+- managedObjectContext
+- save:
+- storeForObjectID:
+- newlyAddedStore
+- deleteStore:
+- allVisibleNotesInCollection:
+- newlyAddedNote
+- deleteNoteRegardlessOfConstraints:
+- notesForIntegerIds:
+- allNotesWithoutBodiesInCollection:
+- localAccount
+- deleteAccount:
+- allAccounts
+- accountForAccountId:
+- newlyAddedAccount
+- enableChangeLogging:
+- saveOutsideApp:
+- deleteChanges:
+- deleteNote:
+- countOfNotesInCollection:
+- allNotesInCollection:
+- forceDeleteAccount:
+- _createLocalAccount:andStore:
+- urlForPersistentStore
+- setUpUniqueObjects
+- setUpLocalAccountAndStore
+- setUpLastIndexTid
+- saveSilently:
+- pathForPersistentStore
+- pathForIndex
+- removeSqliteAndIdxFiles
+- removeConflictingSqliteAndIdxFiles
+- handleMigration
+- updateSearchIndex:
+- trackChanges:
+- initWithTestingFilePrefix:atPath:inMigrator:
+- initWithTestingFilePrefix:inMigrator:
+- setUpCoreDataStack
+- initWithTestingFilePrefix:
+- tearDownCoreDataStack
+- newFetchRequestForNotes
+- visibleNotesPredicate
+- nextIndex
+- allVisibleNotesMatchingPredicate:
+- countOfVisibleNotesMatchingPredicate:
+- allNotesMatchingPredicate:
+- countOfNotesMatchingPredicate:
+- liveNotesNeedingBodiesPredicate
+- forceSetUpUniqueObjects
+- localStore
+- countOfStores
+- _notePropertyObjectForKey:
+- getNextIdObject
+- notesToResumeIndexing
+- saveNotesToResumeIndexing:
+- indexNotes:
+- destroySearchIndex
+- shouldResumeIndexing
+- searchIndex:
+- cleanUpLocks
+- noteChangeWithType:store:
+- copyNotesForSearch:predicate:complete:
+- newSearchContextWithText:
+- allNotes
+- initForMigrator
+- newFRCForCollection:delegate:
+- sortNotes:
+- collectionForObjectID:
+- allVisibleNotes
+- countOfVisibleNotes
+- countOfVisibleNotesInCollection:
+- visibleNoteForObjectID:
+- visibleNotesForIntegerIds:
+- countOfNotes
+- noteForObjectID:
+- collectionForInfo:
+- allStores
+- defaultStoreForNewNote
+- shouldDisableLocalStore
+- hasMultipleEnabledStores
+- setHasPriorityInSaveConflicts:
+- wrapUpIndexing
+- resumeIndexing
+- indexInBatches:
+- receiveDarwinNotificationWithChangeLogging:
+- resetNotificationCount
+- copyNotesForSearch:complete:
+- findNotesWithText:betweenDate:andDate:
+- noteIsSafeToAccess:
+- deleteIndexFile
+- isIndexing
+- persistentStoreCoordinator
+- .cxx_destruct
+@end

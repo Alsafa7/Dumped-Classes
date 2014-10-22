@@ -1,0 +1,82 @@
+@interface NSNetService : NSObject
+{
+	id _netService;
+	id _delegate;
+	id _reserved;
+}
+
++ scheduleInRunLoop:forMode:
++ removeFromRunLoop:forMode:
++ addresses
++ _monitors
++ hostName
++ _internalNetService
++ _scheduleInDefaultRunLoopForMode:
++ initWithDomain:type:name:port:
++ normalizedType
++ includesPeerToPeer
++ _internal_publishWithOptions:
++ publishWithServer:
++ publishWithOptions:
++ resolveWithTimeout:
++ initWithCFNetService:
++ initWithDomain:type:name:
++ setIncludesPeerToPeer:
++ publish
++ _dispatchCallBackWithError:
++ getInputStream:outputStream:
++ resolve
++ startMonitoring
++ stopMonitoring
++ setTXTRecordData:
++ TXTRecordData
++ dealloc
++ setDelegate:
++ isEqual:
++ hash
++ description
++ delegate
++ type
++ domain
++ name
++ stop
++ finalize
++ port
+- scheduleInRunLoop:forMode:
+- removeFromRunLoop:forMode:
+- addresses
+- _monitors
+- hostName
+- _internalNetService
+- _scheduleInDefaultRunLoopForMode:
+- initWithDomain:type:name:port:
+- normalizedType
+- includesPeerToPeer
+- _internal_publishWithOptions:
+- publishWithServer:
+- publishWithOptions:
+- resolveWithTimeout:
+- initWithCFNetService:
+- initWithDomain:type:name:
+- setIncludesPeerToPeer:
+- publish
+- _dispatchCallBackWithError:
+- getInputStream:outputStream:
+- resolve
+- startMonitoring
+- stopMonitoring
+- setTXTRecordData:
+- TXTRecordData
+- dealloc
+- setDelegate:
+- isEqual:
+- hash
+- description
+- delegate
+- type
+- domain
+- name
+- stop
+- finalize
+- port
+@end

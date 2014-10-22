@@ -1,0 +1,6 @@
+@interface SBCPlaybackPositionServiceInterface : NSObject
+{
+
+}
+
+@end

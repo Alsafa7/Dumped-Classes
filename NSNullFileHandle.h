@@ -1,0 +1,6 @@
+@interface NSNullFileHandle : NSFileHandle
+{
+
+}
+
+@end

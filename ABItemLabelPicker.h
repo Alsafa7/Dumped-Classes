@@ -1,0 +1,117 @@
+@interface ABItemLabelPicker : UIView
+{
+	id _delegate;
+	id _editedItem;
+	id _savedLabel;
+	id _selectedLabel;
+	id _selectedPath;
+	id _tableView;
+	id _additionalLabels;
+	pointer _sortedCustomItemLabelInfos;
+	pointer _sortedDefaultItemLabelInfos;
+	pointer _sortedCustomItemLabelInfosMemory;
+	pointer _sortedDefaultItemLabelInfosMemory;
+	id _propertyGroup;
+	int _property;
+	long long _itemIndex;
+	pointer _addressBook;
+	BOOL _addLabelDisabled;
+	BOOL _didCreateNewLabel;
+	id _styleProvider;
+}
+
++ styleProvider
++ setStyleProvider:
++ buildUI
++ resetLabelCaches
++ _setSelectedLabel:
++ _setSelectedPath:
++ _matchSelectedPathWithSelectedLabel
++ allowsCustomLabels
++ selectedLabel
++ setSelectedLabel:
++ reloadItemLabels
++ setIsEditing:animate:
++ setDidCreateNewLabel:
++ _didEndPickingAndConfirmed:animate:
++ createNewCustomLabel
++ _setSelectedLabel:atPath:
++ simpleTextInputViewController:didCompleteWithValue:
++ simpleTextInputViewControllerShouldDismissKeyboard:
++ setPropertyGroup:itemIndex:
++ setAdditionalLabels:
++ setSavedLabel:
++ savedLabel
++ toggleEditing
++ shouldPopItem
++ isAddLabelDisabled
++ setAddLabelDisabled:
++ didCreateNewLabel
++ initWithFrame:
++ dealloc
++ setBackgroundColor:
++ setDelegate:
++ reloadData
++ tableView:willDisplayCell:forRowAtIndexPath:
++ tableView:willSelectRowAtIndexPath:
++ tableView:didSelectRowAtIndexPath:
++ tableView:editingStyleForRowAtIndexPath:
++ tableView:numberOfRowsInSection:
++ tableView:cellForRowAtIndexPath:
++ numberOfSectionsInTableView:
++ tableView:canEditRowAtIndexPath:
++ tableView:commitEditingStyle:forRowAtIndexPath:
++ isEditing
++ displayScrollerIndicators
++ tableView
++ canEdit
++ addressBook
++ setAddressBook:
+- styleProvider
+- setStyleProvider:
+- buildUI
+- resetLabelCaches
+- _setSelectedLabel:
+- _setSelectedPath:
+- _matchSelectedPathWithSelectedLabel
+- allowsCustomLabels
+- selectedLabel
+- setSelectedLabel:
+- reloadItemLabels
+- setIsEditing:animate:
+- setDidCreateNewLabel:
+- _didEndPickingAndConfirmed:animate:
+- createNewCustomLabel
+- _setSelectedLabel:atPath:
+- simpleTextInputViewController:didCompleteWithValue:
+- simpleTextInputViewControllerShouldDismissKeyboard:
+- setPropertyGroup:itemIndex:
+- setAdditionalLabels:
+- setSavedLabel:
+- savedLabel
+- toggleEditing
+- shouldPopItem
+- isAddLabelDisabled
+- setAddLabelDisabled:
+- didCreateNewLabel
+- initWithFrame:
+- dealloc
+- setBackgroundColor:
+- setDelegate:
+- reloadData
+- tableView:willDisplayCell:forRowAtIndexPath:
+- tableView:willSelectRowAtIndexPath:
+- tableView:didSelectRowAtIndexPath:
+- tableView:editingStyleForRowAtIndexPath:
+- tableView:numberOfRowsInSection:
+- tableView:cellForRowAtIndexPath:
+- numberOfSectionsInTableView:
+- tableView:canEditRowAtIndexPath:
+- tableView:commitEditingStyle:forRowAtIndexPath:
+- isEditing
+- displayScrollerIndicators
+- tableView
+- canEdit
+- addressBook
+- setAddressBook:
+@end

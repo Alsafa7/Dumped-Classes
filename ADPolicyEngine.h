@@ -1,0 +1,190 @@
+@interface ADPolicyEngine : NSObject
+{
+	BOOL _visuallyEngaged;
+	BOOL _enabled;
+	BOOL _sharedInterstitialAdIsInUse;
+	BOOL _sharedMediaPlayerVideoAdClaimed;
+	id _queuedCommands;
+	id _heartbeatToken;
+	id _heartbeatTokenError;
+	double _heartbeatTokenExpiration;
+	id _policyEngineBanners;
+	double _lastEventTime;
+	id _eventResponseHandler;
+	double _lastStoryboardDismissalTime;
+	double _lastPrerollPlaybackTime;
+	id _sharedInterstitialAd;
+	id _sharedInterstitialSection;
+	id _sharedInterstitialServerURL;
+	id _sharedInterstitialAuthenticationUserName;
+	id _sharedMediaPlayerVideoAd;
+	id _lastSharedMediaPlayerVideoAdError;
+	id _currentStationData;
+	id _currentStationDataInitialTrackBlobs;
+	id _currentSongData;
+	id _currentSponsoredStationIDs;
+}
+
++ heartbeatToken:
++ optimalTransmissionWindowDidOpen
++ reportListeningPresenceEvent:
++ songBeganWithTags:
++ songStopped
++ setStationData:withInitialTrackBlobs:
++ enablePolicyEngine
++ disablePolicyEngine
++ songSkipped
++ setVisuallyEngaged:
++ bannerViewWillLoadAd:
++ bannerViewDidLoadAd:
++ bannerView:didFailToReceiveAdWithError:
++ bannerViewActionShouldBegin:willLeaveApplication:
++ bannerViewActionDidFinish:
++ init
++ setEnabled:
++ enabled
++ interstitialAdDidUnload:
++ interstitialAdDidLoad:
++ interstitialAd:didFailWithError:
++ _adSheetConnectionBootstrapped
++ setHeartbeatToken:expirationDate:error:
++ setLastStoryboardDismissalTime:
++ finishedPresentingSharedInterstitialAd
++ _enablePolicyEngineWithReason:
++ queuedCommands
++ visuallyEngaged
++ currentStationData
++ currentStationDataInitialTrackBlobs
++ currentSponsoredStationIDs
++ setSponsoredStationIDs:
++ currentSongData
++ lastEventTime
++ setHeartbeatToken:
++ setHeartbeatTokenError:
++ setHeartbeatTokenExpiration:
++ heartbeatTokenError
++ heartbeatToken
++ heartbeatTokenExpiration
++ _performWhenAdSheetConnectionEstablished:
++ policyEngineBanners
++ setCurrentSongData:
++ setCurrentStationData:
++ setCurrentStationDataInitialTrackBlobs:
++ setLastEventTime:
++ setEventResponseHandler:
++ _bannerViewForCreativeType:
++ setPolicyEngineBanners:
++ _policyEngineBannerViewWithIdentifier:
++ eventResponseHandler
++ setCurrentSponsoredStationIDs:
++ sharedInterstitialServerURL
++ sharedInterstitialSection
++ sharedInterstitialAuthenticationUserName
++ sharedInterstitialAd
++ sharedInterstitialAdIsInUse
++ lastStoryboardDismissalTime
++ setSharedInterstitialAdIsInUse:
++ setSharedMediaPlayerVideoAd:
++ sharedMediaPlayerVideoAd
++ sharedMediaPlayerVideoAdClaimed
++ lastSharedMediaPlayerVideoAdError
++ lastPrerollPlaybackTime
++ setSharedMediaPlayerVideoAdClaimed:
++ setLastSharedMediaPlayerVideoAdError:
++ sharedMediaPlayerVideoAdWillLoad
++ sharedMediaPlayerVideoAdDidLoad
++ sharedMediaPlayerVideoAdDidFailToReceiveAdWithError:
++ sharedMediaPlayerVideoAdActionDidFinish
++ recordPolicyEvent:trackTags:
++ reportStationTileImpression:
++ removeRecordForAccountWithIdentifier:
++ setSharedInterstitialSection:
++ setSharedInterstitialServerURL:
++ setSharedInterstitialAuthenticationUserName:
++ canPresentSharedInterstitialAdWithResultMessage:
++ claimSharedMediaPlayerVideoAdWithError:
++ relinquishSharedMediaPlayerVideoAd
++ setLastPrerollPlaybackTime:
++ setSharedInterstitialAd:
+- heartbeatToken:
+- optimalTransmissionWindowDidOpen
+- reportListeningPresenceEvent:
+- songBeganWithTags:
+- songStopped
+- setStationData:withInitialTrackBlobs:
+- enablePolicyEngine
+- disablePolicyEngine
+- songSkipped
+- setVisuallyEngaged:
+- bannerViewWillLoadAd:
+- bannerViewDidLoadAd:
+- bannerView:didFailToReceiveAdWithError:
+- bannerViewActionShouldBegin:willLeaveApplication:
+- bannerViewActionDidFinish:
+- init
+- setEnabled:
+- enabled
+- interstitialAdDidUnload:
+- interstitialAdDidLoad:
+- interstitialAd:didFailWithError:
+- _adSheetConnectionBootstrapped
+- setHeartbeatToken:expirationDate:error:
+- setLastStoryboardDismissalTime:
+- finishedPresentingSharedInterstitialAd
+- _enablePolicyEngineWithReason:
+- queuedCommands
+- visuallyEngaged
+- currentStationData
+- currentStationDataInitialTrackBlobs
+- currentSponsoredStationIDs
+- setSponsoredStationIDs:
+- currentSongData
+- lastEventTime
+- setHeartbeatToken:
+- setHeartbeatTokenError:
+- setHeartbeatTokenExpiration:
+- heartbeatTokenError
+- heartbeatToken
+- heartbeatTokenExpiration
+- _performWhenAdSheetConnectionEstablished:
+- policyEngineBanners
+- setCurrentSongData:
+- setCurrentStationData:
+- setCurrentStationDataInitialTrackBlobs:
+- setLastEventTime:
+- setEventResponseHandler:
+- _bannerViewForCreativeType:
+- setPolicyEngineBanners:
+- _policyEngineBannerViewWithIdentifier:
+- eventResponseHandler
+- setCurrentSponsoredStationIDs:
+- sharedInterstitialServerURL
+- sharedInterstitialSection
+- sharedInterstitialAuthenticationUserName
+- sharedInterstitialAd
+- sharedInterstitialAdIsInUse
+- lastStoryboardDismissalTime
+- setSharedInterstitialAdIsInUse:
+- setSharedMediaPlayerVideoAd:
+- sharedMediaPlayerVideoAd
+- sharedMediaPlayerVideoAdClaimed
+- lastSharedMediaPlayerVideoAdError
+- lastPrerollPlaybackTime
+- setSharedMediaPlayerVideoAdClaimed:
+- setLastSharedMediaPlayerVideoAdError:
+- sharedMediaPlayerVideoAdWillLoad
+- sharedMediaPlayerVideoAdDidLoad
+- sharedMediaPlayerVideoAdDidFailToReceiveAdWithError:
+- sharedMediaPlayerVideoAdActionDidFinish
+- recordPolicyEvent:trackTags:
+- reportStationTileImpression:
+- removeRecordForAccountWithIdentifier:
+- setSharedInterstitialSection:
+- setSharedInterstitialServerURL:
+- setSharedInterstitialAuthenticationUserName:
+- canPresentSharedInterstitialAdWithResultMessage:
+- claimSharedMediaPlayerVideoAdWithError:
+- relinquishSharedMediaPlayerVideoAd
+- setLastPrerollPlaybackTime:
+- setSharedInterstitialAd:
+@end

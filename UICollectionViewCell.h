@@ -1,0 +1,86 @@
+@interface UICollectionViewCell : UICollectionReusableView
+{
+	id _contentView;
+	id _backgroundView;
+	id _selectedBackgroundView;
+	id _menuGesture;
+	id _selectionSegueTemplate;
+	id _highlightingSupport;
+	struct _collectionCellFlags;
+	BOOL _selected;
+	BOOL _highlighted;
+}
+
++ initWithFrame:
++ dealloc
++ initWithCoder:
++ encodeWithCoder:
++ canPerformAction:withSender:
++ contentView
++ _descendent:willMoveFromSuperview:toSuperview:
++ _descendent:didMoveFromSuperview:toSuperview:
++ _gestureRecognizerShouldBegin:
++ setHighlighted:
++ isHighlighted
++ _updateBackgroundView
++ isSelected
++ setBackgroundView:
++ prepareForReuse
++ setSelected:
++ _setOpaque:forSubview:
++ backgroundView
++ cut:
++ copy:
++ paste:
++ _menuDismissed:
++ _performAction:sender:
++ _updateHighlightColorsForAnimationHalfwayPoint
++ setSelectedBackgroundView:
++ selectedBackgroundView
++ _shouldSaveOpaqueStateForView:
++ _isUsingOldStyleMultiselection
++ _selectionSegueTemplate
++ _setSelected:animated:
++ _setHighlighted:animated:
++ _updateHighlightColorsForView:highlight:
++ _setupHighlightingSupport
++ _teardownHighlightingSupportIfReady
++ _handleMenuGesture:
++ _setSelectionSegueTemplate:
+- initWithFrame:
+- dealloc
+- initWithCoder:
+- encodeWithCoder:
+- canPerformAction:withSender:
+- contentView
+- _descendent:willMoveFromSuperview:toSuperview:
+- _descendent:didMoveFromSuperview:toSuperview:
+- _gestureRecognizerShouldBegin:
+- setHighlighted:
+- isHighlighted
+- _updateBackgroundView
+- isSelected
+- setBackgroundView:
+- prepareForReuse
+- setSelected:
+- _setOpaque:forSubview:
+- backgroundView
+- cut:
+- copy:
+- paste:
+- _menuDismissed:
+- _performAction:sender:
+- _updateHighlightColorsForAnimationHalfwayPoint
+- setSelectedBackgroundView:
+- selectedBackgroundView
+- _shouldSaveOpaqueStateForView:
+- _isUsingOldStyleMultiselection
+- _selectionSegueTemplate
+- _setSelected:animated:
+- _setHighlighted:animated:
+- _updateHighlightColorsForView:highlight:
+- _setupHighlightingSupport
+- _teardownHighlightingSupportIfReady
+- _handleMenuGesture:
+- _setSelectionSegueTemplate:
+@end

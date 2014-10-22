@@ -1,0 +1,203 @@
+@interface UINavigationButton : UIButton
+{
+	id _possibleTitles;
+	int _style;
+	long long _barStyle;
+	id _navigationBarTintColor;
+	struct _boundsAdjustment;
+	id _appearanceStorage;
+	id _possibleSystemItems;
+	bit[2] _size;
+	bit[1] _wantsLetterpressTitle;
+	BOOL _isFontScaleInvalid;
+	double _minimumWidth;
+	double _maximumWidth;
+	long long _buttonItemStyle;
+	id _stylesForSizingTitles;
+	double _fontScaleAdjustment;
+	Class _appearanceGuideClass;
+}
+
++ _prepareToAppearInNavigationItemOnLeft:
++ dealloc
++ setImage:
++ _intrinsicSizeWithinSize:
++ setFrame:
++ layoutSubviews
++ setTitle:
++ _contentHuggingDefault_isUsuallyFixedHeight
++ sizeThatFits:
++ setStyle:
++ initWithImage:
++ image
++ style
++ _canHandleStatusBarTouchAtLocation:
++ _appearanceGuideClass
++ setEnabled:
++ _scriptingInfo
++ _setFontScaleAdjustment:
++ _updateStyle
++ initWithTitle:
++ _appearanceStorage
++ _applyBarButtonAppearanceStorage:withTaggedSelectors:
++ title
++ _fontScaleAdjustment
++ setControlSize:
++ setBarStyle:
++ setNavigationBarTintColor:
++ _UIAppearance_setTintColor:
++ barStyle
++ contentsEqualTo:withStyle:
++ _setTintColor:
++ _hasBaselineAlignedAbsoluteVerticalPosition:withinNavBar:forSize:
++ _backgroundVerticalPositionAdjustmentForBarMetrics:
++ _defaultTitleShadowOffsetForState:
++ _updateTitleForLetterpress
++ _defaultTitleColorForState:
++ _defaultTitleShadowColorForState:
++ _updateShadowOffsetWithAttributes:forState:
++ _barButtonItemStyle
++ _tintColor
++ _buttonTitleEdgeInsets
++ _updateContentInsets
++ _adjustedDefaultTitleFont
++ _updateTitleColorsForState:
++ _setTitleFrozen:
++ initWithValue:width:style:barStyle:possibleTitles:possibleSystemItems:tintColor:applyBezel:forButtonItemStyle:
++ initWithValue:width:style:barStyle:possibleTitles:tintColor:
++ setHighlighted:
++ _adjustBounds
++ controlSize
++ _setBackgroundImage:forState:style:barMetrics:
++ _UIAppearance_setBackgroundImage:forState:style:barMetrics:
++ _UIAppearance_setBackgroundImage:forState:barMetrics:
++ _UIAppearance_setTitleTextAttributes:forState:
++ _UIAppearance_setBackgroundVerticalPositionAdjustment:forBarMetrics:
++ _UIAppearance_setTitlePositionAdjustment:forBarMetrics:
++ _setTitleTextAttributes:forState:
++ _setTitlePositionAdjustment:forBarMetrics:
++ _setBackgroundVerticalPositionAdjustment:forBarMetrics:
++ setMinimumWidth:
++ setMaximumWidth:
++ _setWantsLetterpressTitle
++ _sendSetNeedsLayoutToSuperviewOnTitleAnimationCompletionIfNecessary
++ _pathTitleEdgeInsets
++ _pathImageEdgeInsets
++ initWithTitle:style:
++ initWithTitle:possibleTitles:style:
++ initWithImage:width:style:applyBezel:forBarStyle:buttonItemStyle:
++ initWithImage:width:style:
++ initWithImage:style:
++ _isModernButton
++ _setBoundsAdjustment:
++ _setBackgroundImage:forState:barMetrics:
++ _backgroundImageForState:barMetrics:
++ _titleTextAttributesForState:
++ _UIAppearance_setBackButtonBackgroundImage:forState:barMetrics:
++ _setBackButtonBackgroundImage:forState:barMetrics:
++ _titlePositionAdjustmentForBarMetrics:
++ _UIAppearance_setBackButtonTitlePositionAdjustment:forBarMetrics:
++ _setBackButtonTitlePositionAdjustment:forBarMetrics:
++ _UIAppearance_setBackButtonBackgroundVerticalPositionAdjustment:forBarMetrics:
++ _setBackButtonBackgroundVerticalPositionAdjustment:forBarMetrics:
++ minimumWidth
++ maximumWidth
++ _buttonItemStyle
++ _setButtonItemStyle:
++ _stylesForSizingTitles
++ _setStylesForSizingTitles:
++ _isFontScaleInvalid
++ _setFontScaleInvalid:
++ _setAppearanceGuideClass:
+- _prepareToAppearInNavigationItemOnLeft:
+- dealloc
+- setImage:
+- _intrinsicSizeWithinSize:
+- setFrame:
+- layoutSubviews
+- setTitle:
+- _contentHuggingDefault_isUsuallyFixedHeight
+- sizeThatFits:
+- setStyle:
+- initWithImage:
+- image
+- style
+- _canHandleStatusBarTouchAtLocation:
+- _appearanceGuideClass
+- setEnabled:
+- _scriptingInfo
+- _setFontScaleAdjustment:
+- _updateStyle
+- initWithTitle:
+- _appearanceStorage
+- _applyBarButtonAppearanceStorage:withTaggedSelectors:
+- title
+- _fontScaleAdjustment
+- setControlSize:
+- setBarStyle:
+- setNavigationBarTintColor:
+- _UIAppearance_setTintColor:
+- barStyle
+- contentsEqualTo:withStyle:
+- _setTintColor:
+- _hasBaselineAlignedAbsoluteVerticalPosition:withinNavBar:forSize:
+- _backgroundVerticalPositionAdjustmentForBarMetrics:
+- _defaultTitleShadowOffsetForState:
+- _updateTitleForLetterpress
+- _defaultTitleColorForState:
+- _defaultTitleShadowColorForState:
+- _updateShadowOffsetWithAttributes:forState:
+- _barButtonItemStyle
+- _tintColor
+- _buttonTitleEdgeInsets
+- _updateContentInsets
+- _adjustedDefaultTitleFont
+- _updateTitleColorsForState:
+- _setTitleFrozen:
+- initWithValue:width:style:barStyle:possibleTitles:possibleSystemItems:tintColor:applyBezel:forButtonItemStyle:
+- initWithValue:width:style:barStyle:possibleTitles:tintColor:
+- setHighlighted:
+- _adjustBounds
+- controlSize
+- _setBackgroundImage:forState:style:barMetrics:
+- _UIAppearance_setBackgroundImage:forState:style:barMetrics:
+- _UIAppearance_setBackgroundImage:forState:barMetrics:
+- _UIAppearance_setTitleTextAttributes:forState:
+- _UIAppearance_setBackgroundVerticalPositionAdjustment:forBarMetrics:
+- _UIAppearance_setTitlePositionAdjustment:forBarMetrics:
+- _setTitleTextAttributes:forState:
+- _setTitlePositionAdjustment:forBarMetrics:
+- _setBackgroundVerticalPositionAdjustment:forBarMetrics:
+- setMinimumWidth:
+- setMaximumWidth:
+- _setWantsLetterpressTitle
+- _sendSetNeedsLayoutToSuperviewOnTitleAnimationCompletionIfNecessary
+- _pathTitleEdgeInsets
+- _pathImageEdgeInsets
+- initWithTitle:style:
+- initWithTitle:possibleTitles:style:
+- initWithImage:width:style:applyBezel:forBarStyle:buttonItemStyle:
+- initWithImage:width:style:
+- initWithImage:style:
+- _isModernButton
+- _setBoundsAdjustment:
+- _setBackgroundImage:forState:barMetrics:
+- _backgroundImageForState:barMetrics:
+- _titleTextAttributesForState:
+- _UIAppearance_setBackButtonBackgroundImage:forState:barMetrics:
+- _setBackButtonBackgroundImage:forState:barMetrics:
+- _titlePositionAdjustmentForBarMetrics:
+- _UIAppearance_setBackButtonTitlePositionAdjustment:forBarMetrics:
+- _setBackButtonTitlePositionAdjustment:forBarMetrics:
+- _UIAppearance_setBackButtonBackgroundVerticalPositionAdjustment:forBarMetrics:
+- _setBackButtonBackgroundVerticalPositionAdjustment:forBarMetrics:
+- minimumWidth
+- maximumWidth
+- _buttonItemStyle
+- _setButtonItemStyle:
+- _stylesForSizingTitles
+- _setStylesForSizingTitles:
+- _isFontScaleInvalid
+- _setFontScaleInvalid:
+- _setAppearanceGuideClass:
+@end

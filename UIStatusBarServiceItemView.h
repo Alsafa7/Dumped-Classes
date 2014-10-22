@@ -1,0 +1,70 @@
+@interface UIStatusBarServiceItemView : UIStatusBarItemView
+{
+	id _serviceString;
+	id _crossfadeString;
+	usigned long long _crossfadeStep;
+	double _maxWidth;
+	double _serviceWidth;
+	double _crossfadeWidth;
+	int _contentType;
+	BOOL _loopingNecessaryForString;
+	BOOL _loopNowIfNecessary;
+	BOOL _loopingNow;
+	double _letterSpacing;
+}
+
++ zp_cacheImage:named:
++ zp_imageNamed:
++ isEnabled
++ shouldTint
++ extraLeftPadding
++ dealloc
++ updateForNewData:actions:
++ contentsImage
++ legibilityStyle
++ updateContentsAndWidth
++ standardPadding
++ setVisible:frame:duration:
++ extraRightPadding
++ resetContentOverlap
++ addContentOverlap:
++ animatesDataChange
++ performPendedActions
++ updateForContentType:serviceString:serviceCrossfadeString:maxWidth:actions:
++ _cachedContentImageForString:withWidth:letterSpacing:
++ _crossfadeStepAnimation
++ _crossfaded
++ _loopingNecessary
++ _contentsImageFromString:withWidth:letterSpacing:
++ _crossfadeContentsImage
++ _serviceContentsImage
++ _loopAnimationDidStop:finished:context:
++ _finalAnimationDidStop:finished:context:
+- zp_cacheImage:named:
+- zp_imageNamed:
+- isEnabled
+- shouldTint
+- extraLeftPadding
+- dealloc
+- updateForNewData:actions:
+- contentsImage
+- legibilityStyle
+- updateContentsAndWidth
+- standardPadding
+- setVisible:frame:duration:
+- extraRightPadding
+- resetContentOverlap
+- addContentOverlap:
+- animatesDataChange
+- performPendedActions
+- updateForContentType:serviceString:serviceCrossfadeString:maxWidth:actions:
+- _cachedContentImageForString:withWidth:letterSpacing:
+- _crossfadeStepAnimation
+- _crossfaded
+- _loopingNecessary
+- _contentsImageFromString:withWidth:letterSpacing:
+- _crossfadeContentsImage
+- _serviceContentsImage
+- _loopAnimationDidStop:finished:context:
+- _finalAnimationDidStop:finished:context:
+@end

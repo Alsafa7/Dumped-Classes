@@ -1,0 +1,6 @@
+@interface SSAppPurchaseHistoryEntry : SSSQLiteEntity
+{
+
+}
+
+@end

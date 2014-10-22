@@ -1,0 +1,103 @@
+@interface _UIPopoverStandardChromeView : UIPopoverBackgroundView
+{
+	id _arrowView;
+	id _leftCapView;
+	id _rightCapView;
+	id _blurView;
+	id _dimmingViews;
+	id _popoverBackgroundColor;
+	double _arrowOffset;
+	usigned long long _arrowDirection;
+	long long _backgroundStyle;
+	BOOL _arrowVisible;
+	BOOL useShortMode;
+	BOOL _debugMode;
+}
+
++ initWithFrame:
++ dealloc
++ didMoveToWindow
++ layoutSubviews
++ touchesCancelled:withEvent:
++ motionEnded:withEvent:
++ touchesBegan:withEvent:
++ touchesMoved:withEvent:
++ touchesEnded:withEvent:
++ isPinned
++ motionBegan:withEvent:
++ motionCancelled:withEvent:
++ _shadowOffset
++ arrowDirection
++ setArrowDirection:
++ _shadowRadius
++ _loadNecessaryViews
++ minNonPinnedOffset
++ maxNonPinnedOffset
++ isRightArrowPinnedToTop
++ isRightArrowPinnedToBottom
++ useShortMode
++ _layoutArrowViewsUpOrDown
++ _layoutArrowViewsLeftOrRight
++ _layoutArrowViewsNone
++ _shadowInsets
++ _shadowOpacity
++ _shadowPath
++ hasComponentViews
++ wouldPinForOffset:
++ setBackgroundStyle:
++ setArrowOffset:
++ arrowOffset
++ backgroundStyle
++ setBackgroundStyle:animated:
++ popoverBackgroundColor
++ setPopoverBackgroundColor:
++ isArrowVisible
++ setArrowVisible:
++ setArrowVisible:animated:
++ setUseShortMode:
++ isDebugModeEnabled
++ setDebugModeEnabled:
+- initWithFrame:
+- dealloc
+- didMoveToWindow
+- layoutSubviews
+- touchesCancelled:withEvent:
+- motionEnded:withEvent:
+- touchesBegan:withEvent:
+- touchesMoved:withEvent:
+- touchesEnded:withEvent:
+- isPinned
+- motionBegan:withEvent:
+- motionCancelled:withEvent:
+- _shadowOffset
+- arrowDirection
+- setArrowDirection:
+- _shadowRadius
+- _loadNecessaryViews
+- minNonPinnedOffset
+- maxNonPinnedOffset
+- isRightArrowPinnedToTop
+- isRightArrowPinnedToBottom
+- useShortMode
+- _layoutArrowViewsUpOrDown
+- _layoutArrowViewsLeftOrRight
+- _layoutArrowViewsNone
+- _shadowInsets
+- _shadowOpacity
+- _shadowPath
+- hasComponentViews
+- wouldPinForOffset:
+- setBackgroundStyle:
+- setArrowOffset:
+- arrowOffset
+- backgroundStyle
+- setBackgroundStyle:animated:
+- popoverBackgroundColor
+- setPopoverBackgroundColor:
+- isArrowVisible
+- setArrowVisible:
+- setArrowVisible:animated:
+- setUseShortMode:
+- isDebugModeEnabled
+- setDebugModeEnabled:
+@end

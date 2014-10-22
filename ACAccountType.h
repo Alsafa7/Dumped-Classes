@@ -1,0 +1,77 @@
+@interface ACAccountType : NSObject
+{
+	id _accountTypeDescription;
+	id _identifier;
+	id _credentialType;
+	id _objectID;
+	int _visibility;
+	id _credentialProtectionPolicy;
+	id _accountStore;
+	int _supportsAuthentication;
+	BOOL _supportsMultipleAccounts;
+	id _supportedDataclasses;
+	id _syncableDataclasses;
+	id _accessKeys;
+}
+
++ setAccountStore:
++ accountStore
++ setObjectID:
++ credentialType
++ initWithCoder:
++ encodeWithCoder:
++ description
++ copyWithZone:
++ identifier
++ setIdentifier:
++ credentialProtectionPolicy
++ setAccountTypeDescription:
++ setSupportsAuthentication:
++ setSupportsMultipleAccounts:
++ setCredentialProtectionPolicy:
++ supportsAuthentication
++ syncableDataclasses
++ initWithManagedAccountType:accountStore:
++ supportsMultipleAccounts
++ accessKeys
++ initWithManagedAccountType:
++ initWithIdentifier:description:
++ supportedDataclasses
++ setCredentialType:
++ objectID
++ .cxx_destruct
++ visibility
++ setVisibility:
++ accessGranted
++ accountTypeDescription
+- setAccountStore:
+- accountStore
+- setObjectID:
+- credentialType
+- initWithCoder:
+- encodeWithCoder:
+- description
+- copyWithZone:
+- identifier
+- setIdentifier:
+- credentialProtectionPolicy
+- setAccountTypeDescription:
+- setSupportsAuthentication:
+- setSupportsMultipleAccounts:
+- setCredentialProtectionPolicy:
+- supportsAuthentication
+- syncableDataclasses
+- initWithManagedAccountType:accountStore:
+- supportsMultipleAccounts
+- accessKeys
+- initWithManagedAccountType:
+- initWithIdentifier:description:
+- supportedDataclasses
+- setCredentialType:
+- objectID
+- .cxx_destruct
+- visibility
+- setVisibility:
+- accessGranted
+- accountTypeDescription
+@end

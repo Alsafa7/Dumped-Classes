@@ -1,0 +1,110 @@
+@interface PLImageTable : NSObject
+{
+	int _format;
+	id _path;
+	struct _thumbnailSize;
+	int _imageRowBytes;
+	int _imageLength;
+	int _entryLength;
+	BOOL _readOnly;
+	BOOL _dying;
+	int _fid;
+	long long _fileLength;
+	long long _entryCount;
+	usigned long long _segmentLength;
+	usigned long long _segmentCount;
+	id _allSegments;
+	id _preheatIndexes;
+	id _preheatIndexIsolation;
+	id _preheatQueue;
+}
+
++ dealloc
++ path
++ imageSize
++ _fileDescriptor
++ initWithPath:imageFormat:readOnly:
++ _releaseSegmentAtIndex:
++ _segmentAtIndex:
++ _reloadSegmentAtIndex:
++ _addEntriesIfNecessaryForIndex:
++ _updateSegmentCount
++ _setEntryCount:
++ _flushEntryAtAddress:count:
++ dataForEntryAtIndex:createIfNeeded:
++ _flushEntryAtAddress:
++ _compactWithOccupiedIndexes:outPhotoUUIDToIndexMap:
++ _verifyThumbnailDataForIndex:uuid:
++ imageLength
++ imageFormat
++ imageWidth
++ imageHeight
++ imageRowBytes
++ _getAndClearPreheatIndexes
++ _adviseWillNeedEntriesInRange:
++ _doPreheat
++ imageDataWithIdentifier:orIndex:width:height:bytesPerRow:dataWidth:dataHeight:dataOffset:
++ setImageForEntry:withIdentifier:orIndex:videoDuration:photoUUID:
++ setImageDataForEntry:withIdentifier:orIndex:asset:
++ copyEntryFromOriginalAsset:toAsset:
++ usesThumbIdentifiers
++ _debugDescription
++ deleteEntryWithIdentifier:orIndex:uuid:
++ preheatImageDataAtIndex:
++ preheatImageDataAtIndexes:
++ entryCount
++ isReadOnly
++ preheatItemForAsset:options:
++ imageDataAtIndex:width:height:bytesPerRow:dataWidth:dataHeight:dataOffset:
++ initWithPath:imageFormat:
++ _segmentLength
++ _releaseSegment:
++ photoUUIDToIndexMap
++ preflightCompactionWithOccupiedIndexes:
++ compactWithOccupiedIndexes:
++ finishUnicornEntryAtIndex:withImageData:imageSize:asset:
+- dealloc
+- path
+- imageSize
+- _fileDescriptor
+- initWithPath:imageFormat:readOnly:
+- _releaseSegmentAtIndex:
+- _segmentAtIndex:
+- _reloadSegmentAtIndex:
+- _addEntriesIfNecessaryForIndex:
+- _updateSegmentCount
+- _setEntryCount:
+- _flushEntryAtAddress:count:
+- dataForEntryAtIndex:createIfNeeded:
+- _flushEntryAtAddress:
+- _compactWithOccupiedIndexes:outPhotoUUIDToIndexMap:
+- _verifyThumbnailDataForIndex:uuid:
+- imageLength
+- imageFormat
+- imageWidth
+- imageHeight
+- imageRowBytes
+- _getAndClearPreheatIndexes
+- _adviseWillNeedEntriesInRange:
+- _doPreheat
+- imageDataWithIdentifier:orIndex:width:height:bytesPerRow:dataWidth:dataHeight:dataOffset:
+- setImageForEntry:withIdentifier:orIndex:videoDuration:photoUUID:
+- setImageDataForEntry:withIdentifier:orIndex:asset:
+- copyEntryFromOriginalAsset:toAsset:
+- usesThumbIdentifiers
+- _debugDescription
+- deleteEntryWithIdentifier:orIndex:uuid:
+- preheatImageDataAtIndex:
+- preheatImageDataAtIndexes:
+- entryCount
+- isReadOnly
+- preheatItemForAsset:options:
+- imageDataAtIndex:width:height:bytesPerRow:dataWidth:dataHeight:dataOffset:
+- initWithPath:imageFormat:
+- _segmentLength
+- _releaseSegment:
+- photoUUIDToIndexMap
+- preflightCompactionWithOccupiedIndexes:
+- compactWithOccupiedIndexes:
+- finishUnicornEntryAtIndex:withImageData:imageSize:asset:
+@end

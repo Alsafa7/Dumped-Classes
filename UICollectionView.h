@@ -1,0 +1,383 @@
+@interface UICollectionView : UIScrollView
+{
+	id _layout;
+	id _dataSource;
+	id _backgroundView;
+	id _indexPathsForSelectedItems;
+	id _cellReuseQueues;
+	id _supplementaryViewReuseQueues;
+	id _indexPathsForHighlightedItems;
+	long long _reloadingSuspendedCount;
+	long long _updateAnimationCount;
+	id _firstResponderView;
+	id _newContentView;
+	long long _firstResponderViewType;
+	id _firstResponderViewKind;
+	id _firstResponderIndexPath;
+	id _allVisibleViewsDict;
+	id _clonedViewsDict;
+	id _pendingSelectionIndexPath;
+	id _pendingDeselectionIndexPaths;
+	id _collectionViewData;
+	id _currentUpdate;
+	struct _visibleBounds;
+	struct _preRotationBounds;
+	struct _rotationBoundsOffset;
+	long long _rotationAnimationCount;
+	long long _updateCount;
+	id _insertItems;
+	id _deleteItems;
+	id _reloadItems;
+	id _moveItems;
+	id _originalInsertItems;
+	id _originalDeleteItems;
+	id _currentTouch;
+	id _updateCompletionHandler;
+	id _cellClassDict;
+	id _cellNibDict;
+	id _supplementaryViewClassDict;
+	id _supplementaryViewNibDict;
+	id _cellNibExternalObjectsTables;
+	id _supplementaryViewNibExternalObjectsTables;
+	id _transitionLayoutAttributes;
+	BOOL _isInInteractiveTransition;
+	BOOL _shouldAccumulateTrackedLayoutValues;
+	id _interactiveTransitionInfos;
+	id _interactiveCompletionHandler;
+	double _currentInteractiveTransitionTimeStamp;
+	double _previousInteractiveTransitionTimeStamp;
+	double _startTimeStamp;
+	struct _currentCenterOffset;
+	struct _previousCenterOffset;
+	double _currentInteractiveTransitionProgress;
+	double _previousInteractiveTransitionProgress;
+	id _endInteractiveTransitionAnimationGroup;
+	id _nextLayoutForInteractiveTranstion;
+	id _interactiveTransitionValueTrackingDict;
+	id _trackedValuesKeys;
+	struct _collectionViewFlags;
+	struct _lastLayoutOffset;
+	id _navigationCompletion;
+}
+
++ encodeRestorableStateWithCoder:
++ decodeRestorableStateWithCoder:
++ _indexPathIsValid:
++ __ck_contentSize
++ __ck_indexPathForLastItem
++ initWithFrame:
++ dealloc
++ initWithCoder:
++ encodeWithCoder:
++ setDataSource:
++ setDelegate:
++ didMoveToWindow
++ reloadData
++ setFrame:
++ layoutSubviews
++ setAllowsMultipleSelection:
++ setBounds:
++ description
++ allowsMultipleSelection
++ dataSource
++ cancelInteractiveTransition
++ finishInteractiveTransition
++ _physicalButtonsBegan:withEvent:
++ touchesCancelled:withEvent:
++ _physicalButtonsEnded:withEvent:
++ _physicalButtonsCancelled:withEvent:
++ touchesBegan:withEvent:
++ touchesMoved:withEvent:
++ touchesEnded:withEvent:
++ canBecomeFirstResponder
++ _setIsAncestorOfFirstResponder:
++ _viewControllerToNotifyOnLayoutSubviews
++ setContentSize:
++ setContentOffset:animated:
++ _scrollViewWillEndDraggingWithVelocity:targetContentOffset:
++ _scrollViewDidEndDraggingWithDeceleration:
++ setContentInset:
++ _ensureViewsAreLoadedInRect:
++ numberOfSections
++ _updateVisibleCellsNow:
++ _suspendReloads
++ _arrayForUpdateAction:
++ _resumeReloads
++ _visibleBounds
++ indexPathForCell:
++ _updateAnimationDidStop:finished:context:
++ _updateBackgroundView
++ visibleCells
++ setAllowsSelection:
++ _setupCellAnimations
++ allowsSelection
++ _reloadDataIfNeeded
++ setBackgroundView:
++ moveSection:toSection:
++ backgroundView
++ _setExternalObjectTable:forNibLoadingOfCellWithReuseIdentifier:
++ _moveWithEvent:
++ _shouldShowMenuForCell:
++ _canPerformAction:forCell:sender:
++ _performAction:forCell:sender:
++ _currentTouch
++ scrollToItemAtIndexPath:atScrollPosition:animated:
++ dequeueReusableCellWithReuseIdentifier:forIndexPath:
++ indexPathsForSelectedItems
++ indexPathsForVisibleItems
++ cellForItemAtIndexPath:
++ initWithFrame:collectionViewLayout:
++ registerClass:forCellWithReuseIdentifier:
++ numberOfItemsInSection:
++ insertItemsAtIndexPaths:
++ collectionViewLayout
++ registerClass:forSupplementaryViewOfKind:withReuseIdentifier:
++ layoutAttributesForItemAtIndexPath:
++ dequeueReusableSupplementaryViewOfKind:withReuseIdentifier:forIndexPath:
++ selectItemAtIndexPath:animated:scrollPosition:
++ _visibleSupplementaryViewsOfKind:
++ _visible
++ deleteItemsAtIndexPaths:
++ performBatchUpdates:completion:
++ indexPathForItemAtPoint:
++ _setObject:inDictionary:forKind:indexPath:
++ _addEntriesFromDictionary:inDictionary:andSet:
++ _visibleDecorationViewOfKind:atIndexPath:
++ _visibleSupplementaryViewOfKind:atIndexPath:
++ _invalidateLayoutIfNecessary
++ _deselectAllAnimated:notifyDelegate:
++ _selectItemAtIndexPath:animated:scrollPosition:notifyDelegate:
++ _deselectItemAtIndexPath:animated:notifyDelegate:
++ deselectItemAtIndexPath:animated:
++ _reuseCell:
++ _reuseSupplementaryView:
++ _setNeedsVisibleCellsUpdate:withLayoutAttributes:
++ indexPathForSupplementaryView:
++ _contentOffsetForNewFrame:oldFrame:newContentSize:andOldContentSize:
++ _addControlledSubview:atZIndex:
++ _dequeueReusableViewOfKind:withIdentifier:forIndexPath:
++ _createPreparedCellForItemAtIndexPath:withLayoutAttributes:applyAttributes:
++ _createPreparedSupplementaryViewForElementOfKind:atIndexPath:withLayoutAttributes:applyAttributes:
++ layoutAttributesForSupplementaryElementOfKind:atIndexPath:
++ _doubleSidedAnimationsForView:withStartingLayoutAttributes:startingLayout:endingLayoutAttributes:endingLayout:withAnimationSetup:animationCompletion:enableCustomAnimations:customAnimationsType:
++ _setCollectionViewLayout:animated:isInteractive:completion:
++ _setNavigationCompletion:
++ setCollectionViewLayout:
++ _cleanUpAfterInteractiveTransitionDidFinish:
++ _updateTransitionWithProgress:
++ _updateTrackedLayoutValuesWith:
++ _dynamicAnimationsForTrackValues
++ _finishInteractiveTransitionShouldFinish:finalAnimation:
++ _indexPathForView:ofType:
++ _visibleSupplementaryViewsOfKind:isDecorationView:
++ _indexPathsForVisibleSupplementaryViewsOfKind:isDecorationView:
++ _endItemAnimations
++ _updateSections:updateAction:
++ _updateRowsAtIndexPaths:updateAction:
++ _updateWithItems:
++ _visibleSupplementaryViewOfKind:atIndexPath:isDecorationView:
++ _prepareLayoutForUpdates
++ _viewAnimationsForCurrentUpdate
++ _beginUpdates
++ _endUpdates
++ _unhighlightItemAtIndexPath:animated:notifyDelegate:
++ _setCurrentTouch:
++ _selectableIndexPathForItemContainingHitView:
++ _unhighlightAllItems
++ _highlightItemAtIndexPath:animated:scrollPosition:notifyDelegate:
++ _userSelectItemAtIndexPath:
++ _selectAllSelectedItems
++ _cancelTouches
++ maximumGlobalItemIndex
++ highlightedGlobalItem
++ _objectInDictionary:forKind:indexPath:
++ _addEntriesFromDictionary:inDictionary:
++ _keysForObject:inDictionary:
++ _dataSourceImplementsNumberOfSections
++ _layoutAttributesForItemsInRect:
++ _collectionViewData
++ _visibleViewsDict
++ setCollectionViewLayout:animated:
++ setCollectionViewLayout:animated:completion:
++ startInteractiveTransitionToCollectionViewLayout:completion:
++ _finishInteractiveTransitionWithFinalAnimation:
++ _cancelInteractiveTransitionWithFinalAnimation:
++ _pivotForTransitionFromLayout:toLayout:
++ _visibleDecorationViewsOfKind:
++ _indexPathsForVisibleSupplementaryViewsOfKind:
++ _indexPathsForVisibleDecorationViewsOfKind:
++ registerNib:forCellWithReuseIdentifier:
++ registerNib:forSupplementaryViewOfKind:withReuseIdentifier:
++ _setExternalObjectTable:forNibLoadingOfSupplementaryViewOfKind:withReuseIdentifier:
++ _currentUpdate
++ insertSections:
++ deleteSections:
++ reloadSections:
++ reloadItemsAtIndexPaths:
++ moveItemAtIndexPath:toIndexPath:
++ _invalidateLayoutWithContext:
++ _cellMenuDismissed
++ _trackLayoutValue:forKey:
++ _trackedLayoutValueForKey:
++ _navigationCompletion
+- encodeRestorableStateWithCoder:
+- decodeRestorableStateWithCoder:
+- _indexPathIsValid:
+- __ck_contentSize
+- __ck_indexPathForLastItem
+- initWithFrame:
+- dealloc
+- initWithCoder:
+- encodeWithCoder:
+- setDataSource:
+- setDelegate:
+- didMoveToWindow
+- reloadData
+- setFrame:
+- layoutSubviews
+- setAllowsMultipleSelection:
+- setBounds:
+- description
+- allowsMultipleSelection
+- dataSource
+- cancelInteractiveTransition
+- finishInteractiveTransition
+- _physicalButtonsBegan:withEvent:
+- touchesCancelled:withEvent:
+- _physicalButtonsEnded:withEvent:
+- _physicalButtonsCancelled:withEvent:
+- touchesBegan:withEvent:
+- touchesMoved:withEvent:
+- touchesEnded:withEvent:
+- canBecomeFirstResponder
+- _setIsAncestorOfFirstResponder:
+- _viewControllerToNotifyOnLayoutSubviews
+- setContentSize:
+- setContentOffset:animated:
+- _scrollViewWillEndDraggingWithVelocity:targetContentOffset:
+- _scrollViewDidEndDraggingWithDeceleration:
+- setContentInset:
+- _ensureViewsAreLoadedInRect:
+- numberOfSections
+- _updateVisibleCellsNow:
+- _suspendReloads
+- _arrayForUpdateAction:
+- _resumeReloads
+- _visibleBounds
+- indexPathForCell:
+- _updateAnimationDidStop:finished:context:
+- _updateBackgroundView
+- visibleCells
+- setAllowsSelection:
+- _setupCellAnimations
+- allowsSelection
+- _reloadDataIfNeeded
+- setBackgroundView:
+- moveSection:toSection:
+- backgroundView
+- _setExternalObjectTable:forNibLoadingOfCellWithReuseIdentifier:
+- _moveWithEvent:
+- _shouldShowMenuForCell:
+- _canPerformAction:forCell:sender:
+- _performAction:forCell:sender:
+- _currentTouch
+- scrollToItemAtIndexPath:atScrollPosition:animated:
+- dequeueReusableCellWithReuseIdentifier:forIndexPath:
+- indexPathsForSelectedItems
+- indexPathsForVisibleItems
+- cellForItemAtIndexPath:
+- initWithFrame:collectionViewLayout:
+- registerClass:forCellWithReuseIdentifier:
+- numberOfItemsInSection:
+- insertItemsAtIndexPaths:
+- collectionViewLayout
+- registerClass:forSupplementaryViewOfKind:withReuseIdentifier:
+- layoutAttributesForItemAtIndexPath:
+- dequeueReusableSupplementaryViewOfKind:withReuseIdentifier:forIndexPath:
+- selectItemAtIndexPath:animated:scrollPosition:
+- _visibleSupplementaryViewsOfKind:
+- _visible
+- deleteItemsAtIndexPaths:
+- performBatchUpdates:completion:
+- indexPathForItemAtPoint:
+- _setObject:inDictionary:forKind:indexPath:
+- _addEntriesFromDictionary:inDictionary:andSet:
+- _visibleDecorationViewOfKind:atIndexPath:
+- _visibleSupplementaryViewOfKind:atIndexPath:
+- _invalidateLayoutIfNecessary
+- _deselectAllAnimated:notifyDelegate:
+- _selectItemAtIndexPath:animated:scrollPosition:notifyDelegate:
+- _deselectItemAtIndexPath:animated:notifyDelegate:
+- deselectItemAtIndexPath:animated:
+- _reuseCell:
+- _reuseSupplementaryView:
+- _setNeedsVisibleCellsUpdate:withLayoutAttributes:
+- indexPathForSupplementaryView:
+- _contentOffsetForNewFrame:oldFrame:newContentSize:andOldContentSize:
+- _addControlledSubview:atZIndex:
+- _dequeueReusableViewOfKind:withIdentifier:forIndexPath:
+- _createPreparedCellForItemAtIndexPath:withLayoutAttributes:applyAttributes:
+- _createPreparedSupplementaryViewForElementOfKind:atIndexPath:withLayoutAttributes:applyAttributes:
+- layoutAttributesForSupplementaryElementOfKind:atIndexPath:
+- _doubleSidedAnimationsForView:withStartingLayoutAttributes:startingLayout:endingLayoutAttributes:endingLayout:withAnimationSetup:animationCompletion:enableCustomAnimations:customAnimationsType:
+- _setCollectionViewLayout:animated:isInteractive:completion:
+- _setNavigationCompletion:
+- setCollectionViewLayout:
+- _cleanUpAfterInteractiveTransitionDidFinish:
+- _updateTransitionWithProgress:
+- _updateTrackedLayoutValuesWith:
+- _dynamicAnimationsForTrackValues
+- _finishInteractiveTransitionShouldFinish:finalAnimation:
+- _indexPathForView:ofType:
+- _visibleSupplementaryViewsOfKind:isDecorationView:
+- _indexPathsForVisibleSupplementaryViewsOfKind:isDecorationView:
+- _endItemAnimations
+- _updateSections:updateAction:
+- _updateRowsAtIndexPaths:updateAction:
+- _updateWithItems:
+- _visibleSupplementaryViewOfKind:atIndexPath:isDecorationView:
+- _prepareLayoutForUpdates
+- _viewAnimationsForCurrentUpdate
+- _beginUpdates
+- _endUpdates
+- _unhighlightItemAtIndexPath:animated:notifyDelegate:
+- _setCurrentTouch:
+- _selectableIndexPathForItemContainingHitView:
+- _unhighlightAllItems
+- _highlightItemAtIndexPath:animated:scrollPosition:notifyDelegate:
+- _userSelectItemAtIndexPath:
+- _selectAllSelectedItems
+- _cancelTouches
+- maximumGlobalItemIndex
+- highlightedGlobalItem
+- _objectInDictionary:forKind:indexPath:
+- _addEntriesFromDictionary:inDictionary:
+- _keysForObject:inDictionary:
+- _dataSourceImplementsNumberOfSections
+- _layoutAttributesForItemsInRect:
+- _collectionViewData
+- _visibleViewsDict
+- setCollectionViewLayout:animated:
+- setCollectionViewLayout:animated:completion:
+- startInteractiveTransitionToCollectionViewLayout:completion:
+- _finishInteractiveTransitionWithFinalAnimation:
+- _cancelInteractiveTransitionWithFinalAnimation:
+- _pivotForTransitionFromLayout:toLayout:
+- _visibleDecorationViewsOfKind:
+- _indexPathsForVisibleSupplementaryViewsOfKind:
+- _indexPathsForVisibleDecorationViewsOfKind:
+- registerNib:forCellWithReuseIdentifier:
+- registerNib:forSupplementaryViewOfKind:withReuseIdentifier:
+- _setExternalObjectTable:forNibLoadingOfSupplementaryViewOfKind:withReuseIdentifier:
+- _currentUpdate
+- insertSections:
+- deleteSections:
+- reloadSections:
+- reloadItemsAtIndexPaths:
+- moveItemAtIndexPath:toIndexPath:
+- _invalidateLayoutWithContext:
+- _cellMenuDismissed
+- _trackLayoutValue:forKey:
+- _trackedLayoutValueForKey:
+- _navigationCompletion
+@end

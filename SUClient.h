@@ -1,0 +1,93 @@
+@interface SUClient : NSObject
+{
+	pointer _assetTypes;
+	id _clientInterface;
+	id _delegate;
+	BOOL _dontSaveNavigationPath;
+	id _imageCache;
+	id _imagePool;
+	id _lock;
+	id _scriptExecutionContext;
+}
+
++ imageCache
++ _applicationDidEnterBackgroundNotification:
++ dealloc
++ setDelegate:
++ init
++ delegate
++ clientInterface
++ scriptExecutionContext
++ initWithClientInterface:
++ viewControllerFactory
++ clientIdentifier
++ setClientIdentifier:
++ enterAccountFlowWithViewController:animated:
++ imagePool
++ setImageCache:
++ setImagePool:
++ sendActionForDialog:button:
++ queueSessionManager
++ setQueueSessionManager:
++ _bagDidLoadNotification:
++ composeReviewWithViewController:animated:
++ _memoryWarningNotification:
++ dismissTopViewControllerAnimated:
++ _newComposeReviewViewControllerForButtonAction:
++ _newAccountViewControllerForButtonAction:
++ openInternalURL:
++ setViewControllerFactory:
++ _purgeCaches
++ _reloadScriptExecutionContext
++ assetTypes
++ openExternalURL:
++ openURL:inClientApplication:
++ searchHintsURLBagKey
++ searchURLBagKey
++ setAssetTypes:
++ setSearchHintsURLBagKey:
++ setSearchURLBagKey:
++ _presentModalViewController:animated:
++ dontSaveNavigationPath
++ setDontSaveNavigationPath:
+- imageCache
+- _applicationDidEnterBackgroundNotification:
+- dealloc
+- setDelegate:
+- init
+- delegate
+- clientInterface
+- scriptExecutionContext
+- initWithClientInterface:
+- viewControllerFactory
+- clientIdentifier
+- setClientIdentifier:
+- enterAccountFlowWithViewController:animated:
+- imagePool
+- setImageCache:
+- setImagePool:
+- sendActionForDialog:button:
+- queueSessionManager
+- setQueueSessionManager:
+- _bagDidLoadNotification:
+- composeReviewWithViewController:animated:
+- _memoryWarningNotification:
+- dismissTopViewControllerAnimated:
+- _newComposeReviewViewControllerForButtonAction:
+- _newAccountViewControllerForButtonAction:
+- openInternalURL:
+- setViewControllerFactory:
+- _purgeCaches
+- _reloadScriptExecutionContext
+- assetTypes
+- openExternalURL:
+- openURL:inClientApplication:
+- searchHintsURLBagKey
+- searchURLBagKey
+- setAssetTypes:
+- setSearchHintsURLBagKey:
+- setSearchURLBagKey:
+- _presentModalViewController:animated:
+- dontSaveNavigationPath
+- setDontSaveNavigationPath:
+@end

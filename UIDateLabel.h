@@ -1,0 +1,93 @@
+@interface UIDateLabel : UILabel
+{
+	BOOL _forceTimeOnly;
+	id _date;
+	BOOL _boldForAllLocales;
+	id _yesterday;
+	id _today;
+	id _noon;
+	id _tomorrow;
+	id _previousWeek;
+	id _timeDesignatorFont;
+	id _calendar;
+	BOOL _shouldRecomputeText;
+	double _paddingFromTimeToDesignator;
+}
+
++ initWithFrame:
++ dealloc
++ drawRect:
++ _intrinsicSizeWithinSize:
++ sizeThatFits:
++ invalidate
++ date
++ text
++ font
++ _stringDrawingContext
++ drawTextInRect:
++ setShouldRecomputeText:
++ _recomputeTextIfNecessary
++ timeDesignatorSize
++ timeDesignator
++ timeDesignatorAppearsBeforeTime
++ timeDesignatorFont
++ _calendar
++ _todayDate
++ _dateWithDayDiffFromToday:
++ setDate:
++ shouldRecomputeText
++ _dateString
++ boldForAllLocales
++ _didUpdateDate
++ timeInterval
++ _today
++ _tomorrow
++ _yesterday
++ _lastWeek
++ use24HourTime
++ _noon
++ setForceTimeOnly:
++ setBoldForAllLocales:
++ setTimeInterval:
++ forceTimeOnly
++ paddingFromTimeToDesignator
++ setPaddingFromTimeToDesignator:
+- initWithFrame:
+- dealloc
+- drawRect:
+- _intrinsicSizeWithinSize:
+- sizeThatFits:
+- invalidate
+- date
+- text
+- font
+- _stringDrawingContext
+- drawTextInRect:
+- setShouldRecomputeText:
+- _recomputeTextIfNecessary
+- timeDesignatorSize
+- timeDesignator
+- timeDesignatorAppearsBeforeTime
+- timeDesignatorFont
+- _calendar
+- _todayDate
+- _dateWithDayDiffFromToday:
+- setDate:
+- shouldRecomputeText
+- _dateString
+- boldForAllLocales
+- _didUpdateDate
+- timeInterval
+- _today
+- _tomorrow
+- _yesterday
+- _lastWeek
+- use24HourTime
+- _noon
+- setForceTimeOnly:
+- setBoldForAllLocales:
+- setTimeInterval:
+- forceTimeOnly
+- paddingFromTimeToDesignator
+- setPaddingFromTimeToDesignator:
+@end

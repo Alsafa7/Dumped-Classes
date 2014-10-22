@@ -1,0 +1,136 @@
+@interface VSSpeechSynthesizer : NSObject
+{
+	id _keepAlive;
+	id _inactiveKeepAlive;
+	long long _footprint;
+	BOOL _useCustomVoice;
+	long long _gender;
+	BOOL _useSharedSession;
+	BOOL _audioSessionIDIsValid;
+	unsigned int _audioSessionID;
+	unsigned int _audioQueueFlags;
+	id _queue;
+	id _speechConnection;
+	struct _synthesizerFlags;
+	float _rate;
+	float _pitch;
+	float _volume;
+	id _delegate;
+	id _voice;
+}
+
++ dealloc
++ setDelegate:
++ init
++ delegate
++ _setDelegate:
++ rate
++ useCustomVoice
++ footprint
++ gender
++ setFootprint:
++ setUseCustomVoice:
++ setGender:
++ _startSpeakingString:orAttributedString:toURL:withLanguageCode:request:error:
++ _stopSpeakingRequest:atNextBoundary:synchronously:error:
++ startSpeakingString:toURL:withLanguageCode:error:
++ stopSpeakingAtNextBoundary:synchronously:error:
++ pauseSpeakingAtNextBoundary:synchronously:error:
++ _pauseSpeakingRequest:atNextBoundary:synchronously:error:
++ _continueSpeakingRequest:withError:
++ connection:speechRequestDidStart:
++ connection:speechRequestDidPause:
++ connection:speechRequestDidContinue:
++ connection:speechRequest:didStopAtEnd:phonemesSpoken:error:
++ connection:speechRequest:willSpeakMark:inRange:
++ startSpeakingAttributedString:toURL:withLanguageCode:error:
++ startSpeakingString:error:
++ startSpeakingString:toURL:error:
++ startSpeakingString:withLanguageCode:error:
++ stopSpeakingAtNextBoundary:error:
++ pauseSpeakingAtNextBoundary:error:
++ continueSpeakingWithError:
++ isSpeaking
++ speechString
++ minimumRate
++ maximumRate
++ voice
++ useSharedAudioSession:
++ useSpecificAudioSession:
++ useAudioQueueFlags:
++ startSpeakingString:request:error:
++ startSpeakingString:toURL:request:error:
++ startSpeakingString:withLanguageCode:request:error:
++ stopSpeakingRequest:atNextBoundary:error:
++ stopSpeakingRequest:atNextBoundary:synchronously:error:
++ pauseSpeakingRequest:atNextBoundary:error:
++ pauseSpeakingRequest:atNextBoundary:synchronously:error:
++ continueSpeakingRequest:withError:
++ initForInputFeedback
++ setMaintainPersistentConnection:
++ setMaintainInactivePersistentConnection:
++ .cxx_destruct
++ pitch
++ setPitch:
++ volume
++ setVolume:
++ setRate:
++ setVoice:
+- dealloc
+- setDelegate:
+- init
+- delegate
+- _setDelegate:
+- rate
+- useCustomVoice
+- footprint
+- gender
+- setFootprint:
+- setUseCustomVoice:
+- setGender:
+- _startSpeakingString:orAttributedString:toURL:withLanguageCode:request:error:
+- _stopSpeakingRequest:atNextBoundary:synchronously:error:
+- startSpeakingString:toURL:withLanguageCode:error:
+- stopSpeakingAtNextBoundary:synchronously:error:
+- pauseSpeakingAtNextBoundary:synchronously:error:
+- _pauseSpeakingRequest:atNextBoundary:synchronously:error:
+- _continueSpeakingRequest:withError:
+- connection:speechRequestDidStart:
+- connection:speechRequestDidPause:
+- connection:speechRequestDidContinue:
+- connection:speechRequest:didStopAtEnd:phonemesSpoken:error:
+- connection:speechRequest:willSpeakMark:inRange:
+- startSpeakingAttributedString:toURL:withLanguageCode:error:
+- startSpeakingString:error:
+- startSpeakingString:toURL:error:
+- startSpeakingString:withLanguageCode:error:
+- stopSpeakingAtNextBoundary:error:
+- pauseSpeakingAtNextBoundary:error:
+- continueSpeakingWithError:
+- isSpeaking
+- speechString
+- minimumRate
+- maximumRate
+- voice
+- useSharedAudioSession:
+- useSpecificAudioSession:
+- useAudioQueueFlags:
+- startSpeakingString:request:error:
+- startSpeakingString:toURL:request:error:
+- startSpeakingString:withLanguageCode:request:error:
+- stopSpeakingRequest:atNextBoundary:error:
+- stopSpeakingRequest:atNextBoundary:synchronously:error:
+- pauseSpeakingRequest:atNextBoundary:error:
+- pauseSpeakingRequest:atNextBoundary:synchronously:error:
+- continueSpeakingRequest:withError:
+- initForInputFeedback
+- setMaintainPersistentConnection:
+- setMaintainInactivePersistentConnection:
+- .cxx_destruct
+- pitch
+- setPitch:
+- volume
+- setVolume:
+- setRate:
+- setVoice:
+@end

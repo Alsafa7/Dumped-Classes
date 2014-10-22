@@ -1,0 +1,6 @@
+@interface PLLocalizedListController : PLCustomListController
+{
+
+}
+
+@end

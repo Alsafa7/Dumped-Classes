@@ -1,0 +1,105 @@
+@interface SBBacklightController : NSObject
+{
+	double _minimumLockIdleTime;
+	id _autoLockTimer;
+	double _lastTimeIdleCausedDim;
+	double _nextLockDurationAfterDim;
+	bit[1] _disableAutoDimming;
+	bit[1] _lockScreenCameraWantsIdleTimerDisabled;
+	id _idleTimerDisabledReasons;
+	id _spuriousScreenUndimmingAssertions;
+	BOOL _isPendingScreenUnblankAfterCACommit;
+	BOOL _undimmedForBulletinSinceLastUserEvent;
+}
+
++ autoLockPrefsChanged
++ setBacklightFactor:source:
++ cancelLockScreenIdleTimer
++ screenIsOff
++ resetLockScreenIdleTimer
++ preventIdleSleepForNumberOfSeconds:
++ setBacklightFactorToZeroForProx
++ restoreBacklightFactorForProx
++ setIdleTimerDisabled:forReason:
++ idleTimerDisabledReasons
++ isPendingScreenUnblankAfterCACommit
++ defaultLockScreenDimInterval
++ resetIdleTimerAndUndimForBulletin
++ clearIdleTimer
++ animateBacklightToFactor:duration:source:completion:
++ defaultLockScreenDimIntervalWhenNotificationsPresent
++ addSpuriousScreenUndimmingAssertion:
++ removeSpuriousScreenUndimmingAssertion:
++ _deferredScreenUnblankDone
++ _setBacklightFactorToZeroForProx
++ _cancelSetBacklightFactorToZeroAfterDelay
++ _resetIdleTimerAndUndim:source:
++ _clearAutoLockTimer
++ _lockScreenWantsUserEventNotifications
++ _undimFromSource:
++ _nextLockTimeDuration
++ _nextIdleTimeDuration
++ _currentLockScreenIdleTimerInterval
++ _resetLockScreenIdleTimerWithDuration:mode:
++ preventIdleSleep
++ _startFadeOutAnimationIfNecessary
++ _autoLockTimerFired:
++ _lockScreenDimTimerFired
++ _didIdle
++ _userEventsDidIdle
++ allowIdleSleep
++ turnOnScreenFullyWithBacklightSource:
++ setBacklightFactorPending:
++ _userEventOccurred
++ _userEventPresenceTimerExpired
++ _requestedUserEventNotificationOccurred
++ resetLockScreenIdleTimerWithDuration:
++ init
++ setIdleTimerDisabled:
++ resetIdleTimerAndUndim:
+- autoLockPrefsChanged
+- setBacklightFactor:source:
+- cancelLockScreenIdleTimer
+- screenIsOff
+- resetLockScreenIdleTimer
+- preventIdleSleepForNumberOfSeconds:
+- setBacklightFactorToZeroForProx
+- restoreBacklightFactorForProx
+- setIdleTimerDisabled:forReason:
+- idleTimerDisabledReasons
+- isPendingScreenUnblankAfterCACommit
+- defaultLockScreenDimInterval
+- resetIdleTimerAndUndimForBulletin
+- clearIdleTimer
+- animateBacklightToFactor:duration:source:completion:
+- defaultLockScreenDimIntervalWhenNotificationsPresent
+- addSpuriousScreenUndimmingAssertion:
+- removeSpuriousScreenUndimmingAssertion:
+- _deferredScreenUnblankDone
+- _setBacklightFactorToZeroForProx
+- _cancelSetBacklightFactorToZeroAfterDelay
+- _resetIdleTimerAndUndim:source:
+- _clearAutoLockTimer
+- _lockScreenWantsUserEventNotifications
+- _undimFromSource:
+- _nextLockTimeDuration
+- _nextIdleTimeDuration
+- _currentLockScreenIdleTimerInterval
+- _resetLockScreenIdleTimerWithDuration:mode:
+- preventIdleSleep
+- _startFadeOutAnimationIfNecessary
+- _autoLockTimerFired:
+- _lockScreenDimTimerFired
+- _didIdle
+- _userEventsDidIdle
+- allowIdleSleep
+- turnOnScreenFullyWithBacklightSource:
+- setBacklightFactorPending:
+- _userEventOccurred
+- _userEventPresenceTimerExpired
+- _requestedUserEventNotificationOccurred
+- resetLockScreenIdleTimerWithDuration:
+- init
+- setIdleTimerDisabled:
+- resetIdleTimerAndUndim:
+@end

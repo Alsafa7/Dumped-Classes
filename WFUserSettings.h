@@ -1,0 +1,98 @@
+@interface WFUserSettings : NSObject
+{
+	id _userSettings;
+	id _userName;
+	id _contentFilterOverriddenWhiteListedSitesBuffer;
+	id _contentFilterOverriddenBlackListedSitesBuffer;
+	id _whiteListedSitesBuffer;
+}
+
++ userName
++ dealloc
++ setUserName:
++ contentFilterListsAllowURL:
++ contentFilterOverridesEnabled
++ whiteListEnabled
++ initWithUserName:
++ restrictionType
++ whiteListAllowedSites
++ alwaysAllowHTTPS
++ setAlwaysAllowHTTPS:
++ overridesAllowed
++ contentFilterOverriddenBlackListContainsURL:
++ contentFilterOverriddenWhiteListContainsURL:
++ autoWhitelistContainsURL:
++ contentFilterEnabled
++ whiteListContainsURL:
++ _managedDefaultsPath
++ _setManagedDefaults:
++ _userSettingsForUser:
++ _addManagedDefaults:
++ setRestrictionType:
++ contentFilterOverriddenWhiteListedSites
++ contentFilterOverriddenBlackListedSites
++ contentFilterOverriddenWhiteListedSitesBuffer
++ contentFilterOverriddenList:containsURL:
++ contentFilterOverriddenBlackListedSitesBuffer
++ whiteListedSitesBuffer
++ canEditRestrictionType
++ contentFilterOverriddenSites
++ setContentFilterOverriddenWhiteListedSites:
++ canEditContentFilterOverriddenWhiteListedSites
++ setContentFilterOverriddenBlackListedSites:
++ canEditContentFilterOverriddenBlackListedSites
++ setWhiteListAllowedSites:
++ canEditWhiteListAllowedSites
++ setOverridesAllowed:
++ canEditOverridesAllowed
++ canEditAlwaysAllowHTTPS
++ restrictWebEnabled
++ setRestrictWebEnabled:
++ setContentFilterEnabled:
++ setContentFilterOverridesEnabled:
++ setWhiteListEnabled:
+- userName
+- dealloc
+- setUserName:
+- contentFilterListsAllowURL:
+- contentFilterOverridesEnabled
+- whiteListEnabled
+- initWithUserName:
+- restrictionType
+- whiteListAllowedSites
+- alwaysAllowHTTPS
+- setAlwaysAllowHTTPS:
+- overridesAllowed
+- contentFilterOverriddenBlackListContainsURL:
+- contentFilterOverriddenWhiteListContainsURL:
+- autoWhitelistContainsURL:
+- contentFilterEnabled
+- whiteListContainsURL:
+- _managedDefaultsPath
+- _setManagedDefaults:
+- _userSettingsForUser:
+- _addManagedDefaults:
+- setRestrictionType:
+- contentFilterOverriddenWhiteListedSites
+- contentFilterOverriddenBlackListedSites
+- contentFilterOverriddenWhiteListedSitesBuffer
+- contentFilterOverriddenList:containsURL:
+- contentFilterOverriddenBlackListedSitesBuffer
+- whiteListedSitesBuffer
+- canEditRestrictionType
+- contentFilterOverriddenSites
+- setContentFilterOverriddenWhiteListedSites:
+- canEditContentFilterOverriddenWhiteListedSites
+- setContentFilterOverriddenBlackListedSites:
+- canEditContentFilterOverriddenBlackListedSites
+- setWhiteListAllowedSites:
+- canEditWhiteListAllowedSites
+- setOverridesAllowed:
+- canEditOverridesAllowed
+- canEditAlwaysAllowHTTPS
+- restrictWebEnabled
+- setRestrictWebEnabled:
+- setContentFilterEnabled:
+- setContentFilterOverridesEnabled:
+- setWhiteListEnabled:
+@end

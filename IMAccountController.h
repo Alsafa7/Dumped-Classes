@@ -1,0 +1,156 @@
+@interface IMAccountController : NSObject
+{
+	id _accounts;
+	id _accountMap;
+	BOOL _isReadOnly;
+	BOOL _cachesEnabled;
+	id _operationalAccountsCache;
+	id _serviceToActiveAccountsMap;
+	id _serviceToAccountsMap;
+	id _serviceToConnectedAccountsMap;
+	id _serviceToOperationalAccountsMap;
+}
+
++ __ck_defaultAccountForService:
++ __ck_bestAccountForAddresses:
++ __ck_bestAccountForAddress:
++ __ck_operationalPhoneAccountForService:
++ __iCloudSystemAccountForService:
++ _bestOperationalAccountForSendingForService:
++ numberOfAccounts
++ dealloc
++ init
++ readOnly
++ accountsForService:
++ operationalAccountsForService:
++ accountForUniqueID:
++ accounts
++ activeAccountsForService:
++ connectedAccountsForService:
++ accountsWithCapability:
++ connectedAccountsWithCapability:
++ operationalAccountsWithCapability:
++ autoLogin
++ bestAccountForStatus
++ connectedAccounts
++ activateAccount:locally:
++ _deactivateAccount:
++ addAccount:locally:
++ deleteAccount:locally:
++ deactivateAccount:withDisable:
++ activateAccounts:
++ deactivateAccounts:
++ _activeAccountChanged:
++ _accountRegistrationStatusChanged:
++ accountActive:
++ operationalAccounts
++ _rebuildOperationalAccountsCache:
++ deactivateAccount:
++ deactivateAccounts:withDisable:
++ _deactivateAccounts:
++ canActivateAccounts:
++ activateAccounts:force:locally:
++ activateAccount:force:locally:
++ activateAndHandleReconnectAccounts:
++ canActivateAccount:
++ bestConnectedAccountForService:withLogin:
++ bestOperationalAccountForService:withLogin:
++ bestActiveAccountForService:withLogin:
++ bestAccountForService:withLogin:
++ bestActiveAccountForService:
++ bestAccountForService:
++ accountAtIndex:
++ _accounts
++ canDeleteAccount:
++ addAccount:atIndex:
++ addAccount:atIndex:locally:
++ activateAccount:
++ activateAccount:force:
++ activateAndHandleReconnectAccount:
++ accountConnecting:
++ accountConnected:
++ bestAccountForService:login:guid:
++ bestOperationalAccountForService:
++ bestConnectedAccountForService:
++ bestAccountWithCapability:
++ mostLoggedInAccount
++ aimAccount
++ jabberAccount
++ _enableCache
++ _disableCache
++ activeAccounts
++ deleteAccount:
++ setReadOnly:
++ addAccount:
+- __ck_defaultAccountForService:
+- __ck_bestAccountForAddresses:
+- __ck_bestAccountForAddress:
+- __ck_operationalPhoneAccountForService:
+- __iCloudSystemAccountForService:
+- _bestOperationalAccountForSendingForService:
+- numberOfAccounts
+- dealloc
+- init
+- readOnly
+- accountsForService:
+- operationalAccountsForService:
+- accountForUniqueID:
+- accounts
+- activeAccountsForService:
+- connectedAccountsForService:
+- accountsWithCapability:
+- connectedAccountsWithCapability:
+- operationalAccountsWithCapability:
+- autoLogin
+- bestAccountForStatus
+- connectedAccounts
+- activateAccount:locally:
+- _deactivateAccount:
+- addAccount:locally:
+- deleteAccount:locally:
+- deactivateAccount:withDisable:
+- activateAccounts:
+- deactivateAccounts:
+- _activeAccountChanged:
+- _accountRegistrationStatusChanged:
+- accountActive:
+- operationalAccounts
+- _rebuildOperationalAccountsCache:
+- deactivateAccount:
+- deactivateAccounts:withDisable:
+- _deactivateAccounts:
+- canActivateAccounts:
+- activateAccounts:force:locally:
+- activateAccount:force:locally:
+- activateAndHandleReconnectAccounts:
+- canActivateAccount:
+- bestConnectedAccountForService:withLogin:
+- bestOperationalAccountForService:withLogin:
+- bestActiveAccountForService:withLogin:
+- bestAccountForService:withLogin:
+- bestActiveAccountForService:
+- bestAccountForService:
+- accountAtIndex:
+- _accounts
+- canDeleteAccount:
+- addAccount:atIndex:
+- addAccount:atIndex:locally:
+- activateAccount:
+- activateAccount:force:
+- activateAndHandleReconnectAccount:
+- accountConnecting:
+- accountConnected:
+- bestAccountForService:login:guid:
+- bestOperationalAccountForService:
+- bestConnectedAccountForService:
+- bestAccountWithCapability:
+- mostLoggedInAccount
+- aimAccount
+- jabberAccount
+- _enableCache
+- _disableCache
+- activeAccounts
+- deleteAccount:
+- setReadOnly:
+- addAccount:
+@end

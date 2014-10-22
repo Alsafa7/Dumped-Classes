@@ -1,0 +1,154 @@
+@interface UITouch : NSObject
+{
+	double _movementMagnitudeSquared;
+	double _timestamp;
+	long long _phase;
+	long long _savedPhase;
+	usigned long long _tapCount;
+	long long _edgeType;
+	id _window;
+	id _view;
+	id _warpedIntoView;
+	id _gestureRecognizers;
+	id _forwardingRecord;
+	struct _locationInWindow;
+	struct _previousLocationInWindow;
+	unsigned char _pathIndex;
+	unsigned char _pathIdentity;
+	float _pathMajorRadius;
+	struct _touchFlags;
+	BOOL _eaten;
+	struct _displacement;
+}
+
++ locationInNode:
++ previousLocationInNode:
++ _distanceFrom:inView:
++ description
++ setWindow:
++ setIsTap:
++ setTapCount:
++ setPhase:
++ setTimestamp:
++ _responder
++ _setResponder:
++ setView:
++ warpedIntoView
++ setWarpedIntoView:
++ _setLocationInWindow:resetPrevious:
++ _setIsFirstTouchForView:
++ _updateMovementMagnitudeForLocation:
++ _clearGestureRecognizers
++ _addGestureRecognizer:
++ _gestureRecognizers
++ _forwardingRecord
++ _responderSelectorForPhase:
++ _wantsForwardingFromResponder:toNextResponder:withEvent:
++ _removeGestureRecognizer:
++ _isFirstTouchForView
++ _isAbandoningForwardingRecord
++ _mutableForwardingRecord
++ _abandonForwardingRecord
++ _phaseDescription
++ _pushPhase:
++ _popPhase
++ _locationInWindow:
++ _previousLocationInWindow:
++ _compareIndex:
++ _isStationaryRelativeToTouches:
++ dealloc
++ window
++ view
++ timestamp
++ locationInView:
++ phase
++ isTap
++ _isEaten
++ _setEaten:
++ gestureRecognizers
++ _setForwardablePhase:
++ sentTouchesEnded
++ _displacement
++ _setPathIndex:
++ _setPathIdentity:
++ _setPathMajorRadius:
++ _pathIndex
++ _setDisplacement:
++ _setEdgeType:
++ setSentTouchesEnded:
++ _edgeType
++ isDelayed
++ previousLocationInView:
++ tapCount
++ info
++ _forwardablePhase
++ setIsDelayed:
++ _loadStateFromTouch:
++ _pathIdentity
++ _pathMajorRadius
+- locationInNode:
+- previousLocationInNode:
+- _distanceFrom:inView:
+- description
+- setWindow:
+- setIsTap:
+- setTapCount:
+- setPhase:
+- setTimestamp:
+- _responder
+- _setResponder:
+- setView:
+- warpedIntoView
+- setWarpedIntoView:
+- _setLocationInWindow:resetPrevious:
+- _setIsFirstTouchForView:
+- _updateMovementMagnitudeForLocation:
+- _clearGestureRecognizers
+- _addGestureRecognizer:
+- _gestureRecognizers
+- _forwardingRecord
+- _responderSelectorForPhase:
+- _wantsForwardingFromResponder:toNextResponder:withEvent:
+- _removeGestureRecognizer:
+- _isFirstTouchForView
+- _isAbandoningForwardingRecord
+- _mutableForwardingRecord
+- _abandonForwardingRecord
+- _phaseDescription
+- _pushPhase:
+- _popPhase
+- _locationInWindow:
+- _previousLocationInWindow:
+- _compareIndex:
+- _isStationaryRelativeToTouches:
+- dealloc
+- window
+- view
+- timestamp
+- locationInView:
+- phase
+- isTap
+- _isEaten
+- _setEaten:
+- gestureRecognizers
+- _setForwardablePhase:
+- sentTouchesEnded
+- _displacement
+- _setPathIndex:
+- _setPathIdentity:
+- _setPathMajorRadius:
+- _pathIndex
+- _setDisplacement:
+- _setEdgeType:
+- setSentTouchesEnded:
+- _edgeType
+- isDelayed
+- previousLocationInView:
+- tapCount
+- info
+- _forwardablePhase
+- setIsDelayed:
+- _loadStateFromTouch:
+- _pathIdentity
+- _pathMajorRadius
+@end

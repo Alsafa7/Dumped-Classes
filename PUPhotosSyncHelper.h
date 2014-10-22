@@ -1,0 +1,6 @@
+@interface PUPhotosSyncHelper : NSObject
+{
+
+}
+
+@end

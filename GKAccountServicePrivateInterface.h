@@ -1,0 +1,6 @@
+@interface GKAccountServicePrivateInterface : GKServiceInterface
+{
+
+}
+
+@end

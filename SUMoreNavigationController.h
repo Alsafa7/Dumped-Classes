@@ -1,0 +1,6 @@
+@interface SUMoreNavigationController : UIMoreNavigationController
+{
+
+}
+
+@end

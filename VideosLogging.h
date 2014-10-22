@@ -1,0 +1,6 @@
+@interface VideosLogging : NSObject
+{
+
+}
+
+@end

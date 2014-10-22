@@ -1,0 +1,71 @@
+@interface BBSectionParameters : NSObject
+{
+	id _lock;
+	BOOL _showsSubtitle;
+	BOOL _usesVariableLayout;
+	BOOL _orderSectionUsingRecencyDate;
+	BOOL _showsDateInFloatingLockScreenAlert;
+	BOOL _displaysCriticalBulletins;
+	usigned long long _messageNumberOfLines;
+	id _defaultSubtypeParameters;
+	id _allSubtypeParameters;
+	id _displayName;
+	id _icon;
+	id _uniqueIdentifier;
+}
+
++ icon
++ dealloc
++ initWithCoder:
++ encodeWithCoder:
++ init
++ setIcon:
++ displayName
++ uniqueIdentifier
++ setUniqueIdentifier:
++ displaysCriticalBulletins
++ setDisplaysCriticalBulletins:
++ setMessageNumberOfLines:
++ setDefaultSubtypeParameters:
++ setAllSubtypeParameters:
++ setShowsSubtitle:
++ setUsesVariableLayout:
++ setOrderSectionUsingRecencyDate:
++ setShowsDateInFloatingLockScreenAlert:
++ defaultSubtypeParameters
++ allSubtypeParameters
++ showsSubtitle
++ messageNumberOfLines
++ usesVariableLayout
++ orderSectionUsingRecencyDate
++ showsDateInFloatingLockScreenAlert
++ parametersForSubtype:
++ setDisplayName:
+- icon
+- dealloc
+- initWithCoder:
+- encodeWithCoder:
+- init
+- setIcon:
+- displayName
+- uniqueIdentifier
+- setUniqueIdentifier:
+- displaysCriticalBulletins
+- setDisplaysCriticalBulletins:
+- setMessageNumberOfLines:
+- setDefaultSubtypeParameters:
+- setAllSubtypeParameters:
+- setShowsSubtitle:
+- setUsesVariableLayout:
+- setOrderSectionUsingRecencyDate:
+- setShowsDateInFloatingLockScreenAlert:
+- defaultSubtypeParameters
+- allSubtypeParameters
+- showsSubtitle
+- messageNumberOfLines
+- usesVariableLayout
+- orderSectionUsingRecencyDate
+- showsDateInFloatingLockScreenAlert
+- parametersForSubtype:
+- setDisplayName:
+@end

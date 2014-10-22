@@ -1,0 +1,166 @@
+@interface IMDaemonController : NSObject
+{
+	id _delegate;
+	id _remoteObject;
+	id _listenerMap;
+	id _localObject;
+	id _daemonListener;
+	id _services;
+	id _protocol;
+	id _listenerID;
+	id _listenerLockQueue;
+	id _remoteDaemonLockQueue;
+	id _localObjectLockQueue;
+	id _remoteMessageQueue;
+	id _connectionLock;
+	id _servicesToAllow;
+	id _servicesToDeny;
+	pointer _runLoopSource;
+	id _blockingLock;
+	BOOL _hasCheckedForDaemon;
+	BOOL _preventReconnect;
+	BOOL _inBlockingConnect;
+	BOOL _acquiringDaemonConnection;
+	BOOL _autoReconnect;
+	BOOL _blocksConnectionAtResume;
+	BOOL _hasBeenSuspended;
+	unsigned int _gMyFZListenerCapabilities;
+	unsigned int _cachedCapabilities;
+	unsigned int _lastUpdatedCapabilities;
+}
+
++ isConnected
++ isConnecting
++ dealloc
++ setDelegate:
++ init
++ delegate
++ methodSignatureForSelector:
++ forwardInvocation:
++ _capabilities
++ connectToDaemon
++ listener
++ systemApplicationDidEnterBackground
++ systemApplicationWillEnterForeground
++ systemApplicationDidSuspend
++ systemApplicationDidResume
++ blockUntilConnected
++ connectToDaemonWithLaunch:
++ _setCapabilities:
++ capabilitiesForListenerID:
++ sendABInformationToDaemon
++ _servicesToAllow
++ _servicesToDeny
++ _noteSetupComplete
++ _setAutoReconnect:
++ _addressBookChanged:
++ __setCapabilities:
++ _localObjectCleanup
++ _remoteObjectCleanup
++ disconnectFromDaemonWithForce:
++ _blocksConnectionAtResume
++ __isLocalObjectValidOnQueue:
++ __isRemoteObjectValidOnQueue:
++ remoteObjectExists
++ remoteObjectDiedNotification:
++ localObjectDiedNotification:
++ _blockUntilSendQueueIsEmpty
++ localObjectExists
++ _autoReconnect
++ _makeConnectionWithLaunch:completionBlock:
++ _connectToDaemonWithLaunch:capabilities:
++ connectToDaemonWithLaunch:capabilities:blockUntilConnected:
++ disconnectFromDaemon
++ hasListenerForID:
++ setCapabilities:forListenerID:
++ _listenerSetUpdated
++ setMyStatus:message:forAccount:
++ _agentDidLaunchNotification:
++ _handleDaemonException:
++ addListenerID:capabilities:
++ removeListenerID:
++ _remoteObject
++ setMyPicture:smallPictureData:
++ setMyProfile:
++ setMyStatus:message:
++ _setBlocksConnectionAtResume:
++ _acquiringDaemonConnection
++ listener:setListenerCapabilities:
++ listener:setValue:ofProperty:
++ listener:setValue:ofPersistentProperty:
++ setDaemonTerminatesWithoutListeners:
++ setDaemonLogsOutWithoutStatusListeners:
++ _listenerID
++ _setListenerID:
++ _setServicesToAllow:
++ _setServicesToDeny:
++ _remoteMessageQueue
++ capabilities
+- isConnected
+- isConnecting
+- dealloc
+- setDelegate:
+- init
+- delegate
+- methodSignatureForSelector:
+- forwardInvocation:
+- _capabilities
+- connectToDaemon
+- listener
+- systemApplicationDidEnterBackground
+- systemApplicationWillEnterForeground
+- systemApplicationDidSuspend
+- systemApplicationDidResume
+- blockUntilConnected
+- connectToDaemonWithLaunch:
+- _setCapabilities:
+- capabilitiesForListenerID:
+- sendABInformationToDaemon
+- _servicesToAllow
+- _servicesToDeny
+- _noteSetupComplete
+- _setAutoReconnect:
+- _addressBookChanged:
+- __setCapabilities:
+- _localObjectCleanup
+- _remoteObjectCleanup
+- disconnectFromDaemonWithForce:
+- _blocksConnectionAtResume
+- __isLocalObjectValidOnQueue:
+- __isRemoteObjectValidOnQueue:
+- remoteObjectExists
+- remoteObjectDiedNotification:
+- localObjectDiedNotification:
+- _blockUntilSendQueueIsEmpty
+- localObjectExists
+- _autoReconnect
+- _makeConnectionWithLaunch:completionBlock:
+- _connectToDaemonWithLaunch:capabilities:
+- connectToDaemonWithLaunch:capabilities:blockUntilConnected:
+- disconnectFromDaemon
+- hasListenerForID:
+- setCapabilities:forListenerID:
+- _listenerSetUpdated
+- setMyStatus:message:forAccount:
+- _agentDidLaunchNotification:
+- _handleDaemonException:
+- addListenerID:capabilities:
+- removeListenerID:
+- _remoteObject
+- setMyPicture:smallPictureData:
+- setMyProfile:
+- setMyStatus:message:
+- _setBlocksConnectionAtResume:
+- _acquiringDaemonConnection
+- listener:setListenerCapabilities:
+- listener:setValue:ofProperty:
+- listener:setValue:ofPersistentProperty:
+- setDaemonTerminatesWithoutListeners:
+- setDaemonLogsOutWithoutStatusListeners:
+- _listenerID
+- _setListenerID:
+- _setServicesToAllow:
+- _setServicesToDeny:
+- _remoteMessageQueue
+- capabilities
+@end

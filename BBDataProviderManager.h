@@ -1,0 +1,72 @@
+@interface BBDataProviderManager : NSObject
+{
+	id _delegate;
+	id _dataProvidersBySectionID;
+	id _localDataProviders;
+	id _remoteDataProviders;
+	id _dataProviderConnections;
+	id _onlineDataProvidersByService;
+	id _offlineDataProvidersByService;
+	id _dataProviderFactoriesByClass;
+	id _connection;
+	id _queue;
+	BOOL _allowConnections;
+}
+
++ initWithQueue:
++ dealloc
++ setDelegate:
++ delegate
++ dataProviderForSectionID:
++ noteSettingsChanged:forSectionID:
++ loadAllDataProviders
++ dataProviders
++ reloadIdentityForSectionID:withCompletion:
++ rebuildSectionInfo:forSectionID:
++ factory:addDataProvider:
++ factory:removeDataProvider:
++ dataProviderOperational:
++ dataProviderConnection:addDataProviderWithSectionID:
++ dataProviderConnection:removeDataProviderWithSectionID:
++ dataProviderConnection:connectionStateDidChange:
++ _configureSectionInfo:forDataProvider:
++ _loadAllDataProviderPluginBundles
++ getSectionInfoForSectionID:
++ _addDataProviderPlugin:forFactory:factoryInfo:
++ _removeDataProvider:
++ _loadDataProviderPluginBundle:
++ _addDataProviderClass:
++ _defaultSectionInfoForSection:
++ _updateSectionInfo:withDefaultInfo:
++ _removeDataProviderSectionID:
++ _addDataProvider:forFactory:factoryInfo:
++ _configureDataProvider:
+- initWithQueue:
+- dealloc
+- setDelegate:
+- delegate
+- dataProviderForSectionID:
+- noteSettingsChanged:forSectionID:
+- loadAllDataProviders
+- dataProviders
+- reloadIdentityForSectionID:withCompletion:
+- rebuildSectionInfo:forSectionID:
+- factory:addDataProvider:
+- factory:removeDataProvider:
+- dataProviderOperational:
+- dataProviderConnection:addDataProviderWithSectionID:
+- dataProviderConnection:removeDataProviderWithSectionID:
+- dataProviderConnection:connectionStateDidChange:
+- _configureSectionInfo:forDataProvider:
+- _loadAllDataProviderPluginBundles
+- getSectionInfoForSectionID:
+- _addDataProviderPlugin:forFactory:factoryInfo:
+- _removeDataProvider:
+- _loadDataProviderPluginBundle:
+- _addDataProviderClass:
+- _defaultSectionInfoForSection:
+- _updateSectionInfo:withDefaultInfo:
+- _removeDataProviderSectionID:
+- _addDataProvider:forFactory:factoryInfo:
+- _configureDataProvider:
+@end

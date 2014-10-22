@@ -1,0 +1,65 @@
+@interface UITransitionView : UIView
+{
+	id _fromView;
+	id _toView;
+	id _frozenSubviews;
+	id _firstResponderToRemember;
+	id _delegate;
+	id _originalWindow;
+	struct _transitionViewFlags;
+	double _curlUpRevealedHeight;
+}
+
++ _curlUpRevealedHeight
++ initWithFrame:
++ dealloc
++ initWithCoder:
++ encodeWithCoder:
++ setDelegate:
++ delegate
++ setIgnoresInteractionEvents:
++ ignoresInteractionEvents
++ durationForTransition:
++ shouldNotifyDidCompleteImmediately
++ notifyDidCompleteTransition:
++ transition:fromView:toView:
++ transition:fromView:toView:removeFromView:
++ _didStartTransition
++ rasterizesOnTransition
++ _startTransition:withDuration:
++ _didCompleteTransition:
++ isTransitioning
++ _transitionDidStop:finished:
++ setShouldNotifyDidCompleteImmediately:
++ transition:toView:
++ fromView
++ toView
++ _isTransitioningFromFromView:
++ setRasterizesOnTransition:
+- _curlUpRevealedHeight
+- initWithFrame:
+- dealloc
+- initWithCoder:
+- encodeWithCoder:
+- setDelegate:
+- delegate
+- setIgnoresInteractionEvents:
+- ignoresInteractionEvents
+- durationForTransition:
+- shouldNotifyDidCompleteImmediately
+- notifyDidCompleteTransition:
+- transition:fromView:toView:
+- transition:fromView:toView:removeFromView:
+- _didStartTransition
+- rasterizesOnTransition
+- _startTransition:withDuration:
+- _didCompleteTransition:
+- isTransitioning
+- _transitionDidStop:finished:
+- setShouldNotifyDidCompleteImmediately:
+- transition:toView:
+- fromView
+- toView
+- _isTransitioningFromFromView:
+- setRasterizesOnTransition:
+@end

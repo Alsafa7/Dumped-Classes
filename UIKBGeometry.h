@@ -1,0 +1,85 @@
+@interface UIKBGeometry : NSObject
+{
+	id m_name;
+	struct m_x;
+	struct m_y;
+	struct m_w;
+	struct m_h;
+	struct m_paddingTop;
+	struct m_paddingLeft;
+	struct m_paddingBottom;
+	struct m_paddingRight;
+	BOOL m_explicitlySpecified;
+}
+
++ dealloc
++ initWithCoder:
++ encodeWithCoder:
++ init
++ frame
++ isEqual:
++ description
++ copyWithZone:
++ setName:
++ name
++ x
++ setX:
++ y
++ setY:
++ paddingTop
++ setPaddingTop:
++ setPaddingLeft:
++ paddingLeft
++ paddingRight
++ shortDescription
++ setPaddingBottom:
++ setPaddingRight:
++ setExplicitlySpecified:
++ paddedFrameWithResolvedFrame:
++ setW:
++ setH:
++ w
++ h
++ paddingBottom
++ explicitlySpecified
++ frameWithContainingFrame:
++ initWithName:rect:padding:
++ paddedFrameWithContainingFrame:
++ overrideGeometry:
++ usesPercentages
+- dealloc
+- initWithCoder:
+- encodeWithCoder:
+- init
+- frame
+- isEqual:
+- description
+- copyWithZone:
+- setName:
+- name
+- x
+- setX:
+- y
+- setY:
+- paddingTop
+- setPaddingTop:
+- setPaddingLeft:
+- paddingLeft
+- paddingRight
+- shortDescription
+- setPaddingBottom:
+- setPaddingRight:
+- setExplicitlySpecified:
+- paddedFrameWithResolvedFrame:
+- setW:
+- setH:
+- w
+- h
+- paddingBottom
+- explicitlySpecified
+- frameWithContainingFrame:
+- initWithName:rect:padding:
+- paddedFrameWithContainingFrame:
+- overrideGeometry:
+- usesPercentages
+@end

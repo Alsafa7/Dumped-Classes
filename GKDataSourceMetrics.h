@@ -1,0 +1,63 @@
+@interface GKDataSourceMetrics : GKGridLayoutMetrics
+{
+	id _sectionToMetrics;
+	id _childMetrics;
+	id _dataSource;
+	id _cachedKey;
+	struct _globalSectionRange;
+	struct _localSectionRange;
+}
+
++ computeGlobalSectionRangesWithBaseIndex:
++ accumulateSections:layout:
++ applyDataSourceMetricsToSections:withParent:layout:
++ generateMetricDataForLayout:
++ prepareLayout:
++ setMetrics:forSection:
++ _gkDescriptionWithChildren:
++ setLocalSectionRange:
++ metricsForSection:
++ initWithMetrics:dataSource:
++ setGlobalSectionRange:
++ sectionToMetrics
++ setChildMetrics:
++ setCachedKey:
++ globalLayoutKey
++ globalLayoutKeyForSection:
++ globalSectionRange
++ localSectionRange
++ setSectionToMetrics:
++ childMetrics
++ cachedKey
++ dealloc
++ setDataSource:
++ description
++ dataSource
++ copyWithZone:
+- computeGlobalSectionRangesWithBaseIndex:
+- accumulateSections:layout:
+- applyDataSourceMetricsToSections:withParent:layout:
+- generateMetricDataForLayout:
+- prepareLayout:
+- setMetrics:forSection:
+- _gkDescriptionWithChildren:
+- setLocalSectionRange:
+- metricsForSection:
+- initWithMetrics:dataSource:
+- setGlobalSectionRange:
+- sectionToMetrics
+- setChildMetrics:
+- setCachedKey:
+- globalLayoutKey
+- globalLayoutKeyForSection:
+- globalSectionRange
+- localSectionRange
+- setSectionToMetrics:
+- childMetrics
+- cachedKey
+- dealloc
+- setDataSource:
+- description
+- dataSource
+- copyWithZone:
+@end

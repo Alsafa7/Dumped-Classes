@@ -1,0 +1,80 @@
+@interface SKUIReviewsHistogramView : UIView
+{
+	id _appSupportButton;
+	id _clientContext;
+	id _colorScheme;
+	id _countLabel;
+	long long _numberOfUserRatings;
+	id _ratings;
+	id _segmentedControl;
+	id _starRatingControl;
+	id _starRatingControlLabel;
+	id _titleLabel;
+	double _userRating;
+	id _userRatingStarsView;
+	id _versionString;
+	id _writeAReviewButton;
+	id _bottomSeparatorView;
+	id _histogramImageView;
+	id _histogramValues;
+}
+
++ setBackgroundColor:
++ layoutSubviews
++ setTitle:
++ sizeThatFits:
++ title
++ setSelectedSegmentIndex:
++ selectedSegmentIndex
++ segmentedControl
++ versionString
++ userRating
++ setUserRating:
++ colorScheme
++ setColorScheme:
++ initWithClientContext:
++ appSupportButton
++ starRatingControl
++ writeAReviewButton
++ personalStarRating
++ setSegmentedControlTitles:
++ setVersionString:
++ setPersonalStarRating:
++ _histogramImageForValues:
++ _countLabelString
++ segmentedControlTitles
++ setHistogramValues:
++ histogramValues
++ .cxx_destruct
++ numberOfUserRatings
++ setNumberOfUserRatings:
+- setBackgroundColor:
+- layoutSubviews
+- setTitle:
+- sizeThatFits:
+- title
+- setSelectedSegmentIndex:
+- selectedSegmentIndex
+- segmentedControl
+- versionString
+- userRating
+- setUserRating:
+- colorScheme
+- setColorScheme:
+- initWithClientContext:
+- appSupportButton
+- starRatingControl
+- writeAReviewButton
+- personalStarRating
+- setSegmentedControlTitles:
+- setVersionString:
+- setPersonalStarRating:
+- _histogramImageForValues:
+- _countLabelString
+- segmentedControlTitles
+- setHistogramValues:
+- histogramValues
+- .cxx_destruct
+- numberOfUserRatings
+- setNumberOfUserRatings:
+@end

@@ -1,0 +1,62 @@
+@interface AppLaunchStatsStateHandlerQueue : NSObject
+{
+	id bgDataReadHandlerQueue;
+	id dataReadHandlerQueue;
+	id dataBudgetHandlerQueue;
+	id powerFetchBudgetHandlerQueue;
+	id powerPushBudgetHandlerQueue;
+	id bgNDISCDataReadHandlerQueue;
+	id appForecastHandlerQueue;
+	id dataForecastHandlerQueue;
+	id powerForecastHandlerQueue;
+	id queryHandlerQueue;
+	id trendHandlerQueue;
+	id ok2LaunchHandlerQueue;
+	id scoreHandlerQueue;
+	id databaseAgeHandlerQueue;
+	id noprewarmListHandlerQueue;
+}
+
++ init
++ logAll:withMsg:withLevel:
++ logLight:withMsg:withLevel:
++ databaseAgeHandlerQueue
++ deQueue:
++ noprewarmListHandlerQueue
++ scoreHandlerQueue
++ ok2LaunchHandlerQueue
++ queryHandlerQueue
++ dataForecastHandlerQueue
++ appForecastHandlerQueue
++ powerForecastHandlerQueue
++ dataReadHandlerQueue
++ powerFetchBudgetHandlerQueue
++ powerPushBudgetHandlerQueue
++ bgDataReadHandlerQueue
++ bgNDISCDataReadHandlerQueue
++ dataBudgetHandlerQueue
++ trendHandlerQueue
++ enQueue:withQueue:
++ .cxx_destruct
+- init
+- logAll:withMsg:withLevel:
+- logLight:withMsg:withLevel:
+- databaseAgeHandlerQueue
+- deQueue:
+- noprewarmListHandlerQueue
+- scoreHandlerQueue
+- ok2LaunchHandlerQueue
+- queryHandlerQueue
+- dataForecastHandlerQueue
+- appForecastHandlerQueue
+- powerForecastHandlerQueue
+- dataReadHandlerQueue
+- powerFetchBudgetHandlerQueue
+- powerPushBudgetHandlerQueue
+- bgDataReadHandlerQueue
+- bgNDISCDataReadHandlerQueue
+- dataBudgetHandlerQueue
+- trendHandlerQueue
+- enQueue:withQueue:
+- .cxx_destruct
+@end

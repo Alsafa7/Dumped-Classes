@@ -1,0 +1,6 @@
+@interface SBAppSliderWindow : SBWindow
+{
+
+}
+
+@end

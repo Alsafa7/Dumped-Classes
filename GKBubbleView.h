@@ -1,0 +1,114 @@
+@interface GKBubbleView : UIView
+{
+	Array _animationScale;
+	Array _animationReversed;
+	BOOL _animating;
+	BOOL _touchAnimationRunning;
+	BOOL _touchAnimationCanEnd;
+	long long _bubbleType;
+	id _imageView;
+	id _highlightView;
+	long long _numVertices;
+	long long _numFaces;
+	double _animationAngle;
+	double _animationRadiansPerSecond;
+	double _touchAnimationElapsed;
+	double _touchAnimationAngle;
+	double _moveAnimationAngle;
+	double _moveAnimationRadiansPerSecond;
+	double _moveAnimationScale;
+}
+
++ setBubbleType:
++ bubbleType
++ randomFloatBetweenMin:andMax:
++ choosePointAnimations
++ randomBOOL
++ chooseMoveAnimation
++ setupVerticesAndFacesAnimated:
++ applyAnimationToVertices:
++ animationAngle
++ animationRadiansPerSecond
++ moveAnimationAngle
++ moveAnimationRadiansPerSecond
++ moveAnimationScale
++ offsetForVertexAtIndex:
++ animationScaleForCurrentZ
++ setAnimationStateBasedOnBubble:
++ touchBegan
++ touchEnded
++ highlightView
++ setHighlightView:
++ numVertices
++ setNumVertices:
++ numFaces
++ setNumFaces:
++ setAnimationAngle:
++ setAnimationRadiansPerSecond:
++ touchAnimationRunning
++ setTouchAnimationRunning:
++ touchAnimationCanEnd
++ setTouchAnimationCanEnd:
++ touchAnimationElapsed
++ setTouchAnimationElapsed:
++ touchAnimationAngle
++ setTouchAnimationAngle:
++ setMoveAnimationAngle:
++ setMoveAnimationRadiansPerSecond:
++ setMoveAnimationScale:
++ initWithFrame:
++ dealloc
++ willMoveToWindow:
++ intrinsicContentSize
++ imageView
++ setAnimating:
++ animating
++ update:
++ setImageView:
+- setBubbleType:
+- bubbleType
+- randomFloatBetweenMin:andMax:
+- choosePointAnimations
+- randomBOOL
+- chooseMoveAnimation
+- setupVerticesAndFacesAnimated:
+- applyAnimationToVertices:
+- animationAngle
+- animationRadiansPerSecond
+- moveAnimationAngle
+- moveAnimationRadiansPerSecond
+- moveAnimationScale
+- offsetForVertexAtIndex:
+- animationScaleForCurrentZ
+- setAnimationStateBasedOnBubble:
+- touchBegan
+- touchEnded
+- highlightView
+- setHighlightView:
+- numVertices
+- setNumVertices:
+- numFaces
+- setNumFaces:
+- setAnimationAngle:
+- setAnimationRadiansPerSecond:
+- touchAnimationRunning
+- setTouchAnimationRunning:
+- touchAnimationCanEnd
+- setTouchAnimationCanEnd:
+- touchAnimationElapsed
+- setTouchAnimationElapsed:
+- touchAnimationAngle
+- setTouchAnimationAngle:
+- setMoveAnimationAngle:
+- setMoveAnimationRadiansPerSecond:
+- setMoveAnimationScale:
+- initWithFrame:
+- dealloc
+- willMoveToWindow:
+- intrinsicContentSize
+- imageView
+- setAnimating:
+- animating
+- update:
+- setImageView:
+@end

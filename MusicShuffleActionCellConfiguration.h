@@ -1,0 +1,6 @@
+@interface MusicShuffleActionCellConfiguration : MusicCellConfiguration
+{
+
+}
+
+@end

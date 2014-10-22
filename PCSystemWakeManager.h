@@ -1,0 +1,6 @@
+@interface PCSystemWakeManager : NSObject
+{
+
+}
+
+@end

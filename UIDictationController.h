@@ -1,0 +1,197 @@
+@interface UIDictationController : NSObject
+{
+	id _connection;
+	id _options;
+	id _preferences;
+	id _availableLanguages;
+	id _recordingLimitTimer;
+	pointer _callCenterFrameworkFileHandle;
+	id _callCenter;
+	pointer _facetimeCallFrameworkFileHandle;
+	id _facetimeCallManager;
+	BOOL _wasDisabledDueToTelephonyActivity;
+	id _dictationAvailableSoonAlert;
+	BOOL _connectionWasAlreadyAliveForStatisticsLogging;
+	id _dictationDebuggingOperations;
+	id _language;
+	BOOL cancelledByWaitingForLocalResults;
+	BOOL dictationStartedFromGesture;
+	BOOL _performTestOperationForEditing;
+	BOOL _discardNextHypothesis;
+	BOOL _hasPreheated;
+	id _previousHypothesis;
+	id _inputModeThatInvokedDictation;
+	struct _insertionRange;
+}
+
++ dealloc
++ init
++ state
++ proximityStateChanged:
++ setState:
++ cancelDictation
++ stopDictation
++ startDictation
++ switchToDictationInputMode
++ supportsInputMode:error:
++ startDictationForFileAtURL:forInputModeIdentifier:
++ startConnectionForFileAtURL:forInputModeIdentifier:
++ inputModeThatInvokedDictation
++ setPerformTestOperationForEditing:
++ delayedTelephonyCheckingSetup
++ disabledDueToTelephonyActivity
++ language
++ dictationEnabled
++ assistantCompatibleLanguageCodeForInputMode:
++ connection
++ connectionForStatisticsLogging
++ releaseConnectionAfterStatisticsLogging
++ disableAutorotation
++ setInputModeThatInvokedDictation:
++ reenableAutorotation
++ dictationStartedFromGesture
++ startDictationForReason:
++ setDictationStartedFromGesture:
++ setDictationInputmode
++ enableProximity
++ debuggingDictationOperations
++ releaseConnection
++ startDictationForStark
++ performTestOperationForEditing
++ _restartDictation
++ setDiscardNextHypothesis:
++ _shouldDeleteBackwardInInputDelegate:
++ _shouldInsertText:inInputDelegate:
++ wasDisabledDueToTelephonyActivity
++ supportedDictationLanguages:
++ fieldIdentifierInputDelegate:
++ prefixTextForInputDelegate:
++ postfixTextForInputDelegate:
++ selectedTextForInputDelegate:
++ setupConnectionOptions
++ setupForDictationStartForReason:
++ endSessionIfNecessaryForTransitionFromState:toState:
++ releaseConnectionAfterDictationRequest
++ isInDebuggingMode
++ cancelRecordingLimitTimer
++ _connection
++ setPreviousHypothesis:
++ setInsertionRange:
++ languageCodeForAssistantLanguageCode:
++ setLanguage:
++ startRecordingLimitTimer
++ setupForStreamingDictationStart
++ startConnectionForReason:
++ dictationPhraseArrayFromDictationResult:
++ needsTrailingSpaceForPhrases:
++ needsLeadingSpaceForPhrases:
++ resultTransformForLanguageModel:
++ resultWithTrailingSpace:
++ insertSerializedDictationResult:withCorrectionIdentifier:
++ finishDictationRecognition:
++ previousHypothesis
++ insertionRange
++ discardNextHypothesis
++ setupToInsertResultForNewHypothesis:
++ hasPreheated
++ setHasPreheated:
++ audioLevel
++ errorAnimationDidFinish
++ dismissDictationView:
++ restartDictationForTypeAndTalk
++ dictationConnection:didRecognizePhrases:languageModel:correctionIdentifier:
++ dictationConnection:didHypothesizePhrases:languageModel:
++ dictationConnectionSpeechRecordingWillBegin:
++ dictationConnectionSpeechRecordingDidBegin:
++ dictationConnectionSpeechRecordingDidEnd:
++ dictationConnectionSpeechRecordingDidCancel:
++ dictationConnection:speechRecordingDidFail:
++ dictationConnection:speechRecognitionDidFail:
++ dictationConnnectionDidChangeAvailability:
++ preheatIfNecessary
+- dealloc
+- init
+- state
+- proximityStateChanged:
+- setState:
+- cancelDictation
+- stopDictation
+- startDictation
+- switchToDictationInputMode
+- supportsInputMode:error:
+- startDictationForFileAtURL:forInputModeIdentifier:
+- startConnectionForFileAtURL:forInputModeIdentifier:
+- inputModeThatInvokedDictation
+- setPerformTestOperationForEditing:
+- delayedTelephonyCheckingSetup
+- disabledDueToTelephonyActivity
+- language
+- dictationEnabled
+- assistantCompatibleLanguageCodeForInputMode:
+- connection
+- connectionForStatisticsLogging
+- releaseConnectionAfterStatisticsLogging
+- disableAutorotation
+- setInputModeThatInvokedDictation:
+- reenableAutorotation
+- dictationStartedFromGesture
+- startDictationForReason:
+- setDictationStartedFromGesture:
+- setDictationInputmode
+- enableProximity
+- debuggingDictationOperations
+- releaseConnection
+- startDictationForStark
+- performTestOperationForEditing
+- _restartDictation
+- setDiscardNextHypothesis:
+- _shouldDeleteBackwardInInputDelegate:
+- _shouldInsertText:inInputDelegate:
+- wasDisabledDueToTelephonyActivity
+- supportedDictationLanguages:
+- fieldIdentifierInputDelegate:
+- prefixTextForInputDelegate:
+- postfixTextForInputDelegate:
+- selectedTextForInputDelegate:
+- setupConnectionOptions
+- setupForDictationStartForReason:
+- endSessionIfNecessaryForTransitionFromState:toState:
+- releaseConnectionAfterDictationRequest
+- isInDebuggingMode
+- cancelRecordingLimitTimer
+- _connection
+- setPreviousHypothesis:
+- setInsertionRange:
+- languageCodeForAssistantLanguageCode:
+- setLanguage:
+- startRecordingLimitTimer
+- setupForStreamingDictationStart
+- startConnectionForReason:
+- dictationPhraseArrayFromDictationResult:
+- needsTrailingSpaceForPhrases:
+- needsLeadingSpaceForPhrases:
+- resultTransformForLanguageModel:
+- resultWithTrailingSpace:
+- insertSerializedDictationResult:withCorrectionIdentifier:
+- finishDictationRecognition:
+- previousHypothesis
+- insertionRange
+- discardNextHypothesis
+- setupToInsertResultForNewHypothesis:
+- hasPreheated
+- setHasPreheated:
+- audioLevel
+- errorAnimationDidFinish
+- dismissDictationView:
+- restartDictationForTypeAndTalk
+- dictationConnection:didRecognizePhrases:languageModel:correctionIdentifier:
+- dictationConnection:didHypothesizePhrases:languageModel:
+- dictationConnectionSpeechRecordingWillBegin:
+- dictationConnectionSpeechRecordingDidBegin:
+- dictationConnectionSpeechRecordingDidEnd:
+- dictationConnectionSpeechRecordingDidCancel:
+- dictationConnection:speechRecordingDidFail:
+- dictationConnection:speechRecognitionDidFail:
+- dictationConnnectionDidChangeAvailability:
+- preheatIfNecessary
+@end

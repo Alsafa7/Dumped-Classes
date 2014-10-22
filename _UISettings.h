@@ -1,0 +1,112 @@
+@interface _UISettings : NSObject
+{
+	id _internal_keyObservers;
+	id _internal_keyPathObservers;
+	id _internal_childKeys;
+	id _internal_leafKeys;
+	id _internal_keyClasses;
+	id _internal_keyStructs;
+	BOOL _internal_isObservingPropertiesAndChildren;
+}
+
++ settingsResetByHUD
++ settingsHUDConfiguration
++ isSimilarToSettings:
++ settingsHUDInfoLabelString
++ dealloc
++ init
++ copyWithZone:
++ setValuesFromModel:
++ _startInit
++ _continueInitBySettingDefaultValues
++ _completeInitByApplyingArchiveDictionary:
++ _introspectKeys
++ setDefaultValues
++ applyArchiveValue:forKey:
++ _initWithArchiveDictionary:
++ _stopObservingPropertiesAndChildren
++ _allKeys
++ archiveValueForKey:
++ _addInternalEntriesToArchiveDictionary:
++ archiveDictionary
++ _startOrStopObservingPropertiesAndChildren
++ _colorForKey:fromDictionary:
++ _fontForKey:fromDictionary:
++ _structValueForKey:ofType:fromDictionary:
++ _dictionaryForColorKey:
++ _dictionaryForFontKey:
++ _dictionaryForStructKey:ofType:
++ _startObservingChild:
++ _stopObservingChild:
++ _hasObservers
++ _startObservingPropertiesAndChildren
++ addKeyPathObserver:
++ removeKeyPathObserver:
++ _sendKeyChanged:
++ _sendKeyPathChanged:
++ _keyForChild:
++ _handleChildGroupChange:
++ settings:changedValueForKeyPath:
++ settingsGroup:didInsertSettings:atIndex:
++ settingsGroup:didRemoveSettings:atIndex:
++ settingsGroup:didMoveSettings:fromIndex:toIndex:
++ initWithDefaultValues
++ archiveToFile:error:
++ restoreDefaultValues
++ restoreFromArchiveDictionary:
++ restoreFromArchiveFile:error:
++ addKeyObserver:
++ removeKeyObserver:
++ _isObservingPropertiesAndChildren
++ observeValueForKeyPath:ofObject:change:context:
+- settingsResetByHUD
+- settingsHUDConfiguration
+- isSimilarToSettings:
+- settingsHUDInfoLabelString
+- dealloc
+- init
+- copyWithZone:
+- setValuesFromModel:
+- _startInit
+- _continueInitBySettingDefaultValues
+- _completeInitByApplyingArchiveDictionary:
+- _introspectKeys
+- setDefaultValues
+- applyArchiveValue:forKey:
+- _initWithArchiveDictionary:
+- _stopObservingPropertiesAndChildren
+- _allKeys
+- archiveValueForKey:
+- _addInternalEntriesToArchiveDictionary:
+- archiveDictionary
+- _startOrStopObservingPropertiesAndChildren
+- _colorForKey:fromDictionary:
+- _fontForKey:fromDictionary:
+- _structValueForKey:ofType:fromDictionary:
+- _dictionaryForColorKey:
+- _dictionaryForFontKey:
+- _dictionaryForStructKey:ofType:
+- _startObservingChild:
+- _stopObservingChild:
+- _hasObservers
+- _startObservingPropertiesAndChildren
+- addKeyPathObserver:
+- removeKeyPathObserver:
+- _sendKeyChanged:
+- _sendKeyPathChanged:
+- _keyForChild:
+- _handleChildGroupChange:
+- settings:changedValueForKeyPath:
+- settingsGroup:didInsertSettings:atIndex:
+- settingsGroup:didRemoveSettings:atIndex:
+- settingsGroup:didMoveSettings:fromIndex:toIndex:
+- initWithDefaultValues
+- archiveToFile:error:
+- restoreDefaultValues
+- restoreFromArchiveDictionary:
+- restoreFromArchiveFile:error:
+- addKeyObserver:
+- removeKeyObserver:
+- _isObservingPropertiesAndChildren
+- observeValueForKeyPath:ofObject:change:context:
+@end

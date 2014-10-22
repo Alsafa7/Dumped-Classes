@@ -1,0 +1,95 @@
+@interface BBDataProviderProxy : NSObject
+{
+	id _sectionID;
+	id _dataProvider;
+	id _queue;
+	id _clientQueue;
+	BOOL _dataProviderDidLoad;
+	id _identity;
+	id _connection;
+	id _pendingRequests;
+}
+
++ identity
++ dealloc
++ description
++ invalidate
++ resume
++ proxy:detailedSignatureForSelector:
++ setDataProvider:
++ dataProvider
++ setConnection:
++ sectionID
++ setSectionID:
++ connection:connectionStateDidChange:
++ ping:
++ clearedInfoAndBulletinsForClearingAllBulletinsWithLimit:lastClearedInfo:completion:
++ clearedInfoForBulletins:lastClearedInfo:completion:
++ attachmentPNGDataForRecordID:sizeConstraints:completion:
++ attachmentAspectRatioForRecordID:completion:
++ deliverMessageWithName:userInfo:
++ bulletinsWithRequestParameters:lastCleared:completion:
++ dataProviderDidLoad
++ noteSectionInfoDidChange:
++ initWithDataProvider:identity:queue:dataProviderQueue:
++ invalidateBulletins
++ addBulletin:forDestinations:
++ modifyBulletin:
++ withdrawBulletinsWithRecordID:
++ withdrawBulletinWithPublisherBulletinID:
++ _makeClientRequest:
++ _processPendingRequests
++ _serverProxy
++ _queue_makeServerRequest:
++ _makeServerRequest:
++ _updateIdentity:
++ sectionIdentityWithCompletion:
++ deliverBulletinActionResponse:
++ addBulletin:interrupt:
++ reloadSectionParameters
++ reloadDefaultSectionInfo
++ updateClearedInfoWithHandler:
++ updateSectionInfoWithHandler:
++ setIdentity:
+- identity
+- dealloc
+- description
+- invalidate
+- resume
+- proxy:detailedSignatureForSelector:
+- setDataProvider:
+- dataProvider
+- setConnection:
+- sectionID
+- setSectionID:
+- connection:connectionStateDidChange:
+- ping:
+- clearedInfoAndBulletinsForClearingAllBulletinsWithLimit:lastClearedInfo:completion:
+- clearedInfoForBulletins:lastClearedInfo:completion:
+- attachmentPNGDataForRecordID:sizeConstraints:completion:
+- attachmentAspectRatioForRecordID:completion:
+- deliverMessageWithName:userInfo:
+- bulletinsWithRequestParameters:lastCleared:completion:
+- dataProviderDidLoad
+- noteSectionInfoDidChange:
+- initWithDataProvider:identity:queue:dataProviderQueue:
+- invalidateBulletins
+- addBulletin:forDestinations:
+- modifyBulletin:
+- withdrawBulletinsWithRecordID:
+- withdrawBulletinWithPublisherBulletinID:
+- _makeClientRequest:
+- _processPendingRequests
+- _serverProxy
+- _queue_makeServerRequest:
+- _makeServerRequest:
+- _updateIdentity:
+- sectionIdentityWithCompletion:
+- deliverBulletinActionResponse:
+- addBulletin:interrupt:
+- reloadSectionParameters
+- reloadDefaultSectionInfo
+- updateClearedInfoWithHandler:
+- updateSectionInfoWithHandler:
+- setIdentity:
+@end

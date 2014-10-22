@@ -1,0 +1,97 @@
+@interface EKBBDataProvider : NSObject
+{
+	id _alertQueue;
+	id _databaseQueue;
+	id _alerts;
+	id _syncTimer;
+	BOOL _pendingChanges;
+	id _eventStoreQueue;
+	id _eventStore;
+	id _eventStoreIdleTimerSource;
+}
+
++ removeAlerts:
++ clearAlerts
++ entityScheme
++ supportsAlerts
++ _alarmsDidFire:
++ emptyModalTitle
++ bulletinClosed:
++ alarmsDidFire:
++ acknowledgeAlerts:
++ _killEventStoreIdleTimer
++ databaseChanged:
++ _resetEventStoreIdleTimer
++ eventStoreWillClose
++ modalTitleForAlertInfo:
++ modalMessageForAlertInfo:
++ _withdrawAlertBulletin:
++ messageStringForAlert:
++ expirationDateForAlertInfo:
++ _addAlertModalContent:bulletin:
++ actionButtonTitleForAlertInfo:
++ defaultURLForAlertInfo:
++ _bulletinRequestWithAlertInfo:
++ _bulletinRequestAcknowledged:alertInfo:performActions:
++ _findAlarmForCalendarItem:matchingExternalID:
++ _databaseChanged
++ eventStore
++ allowedEntityTypes
++ _killSyncTimer
++ _timeZoneChanged:
++ _syncTimerFired:
++ _syncDidEnd
++ _resetSyncTimer
++ _syncDidStart
++ dealloc
++ init
++ sectionIdentifier
++ syncsBulletinDismissal
++ dataProviderDidLoad
++ bulletinsFilteredBy:count:lastCleared:
++ sortDescriptors
++ alerts
++ .cxx_destruct
+- removeAlerts:
+- clearAlerts
+- entityScheme
+- supportsAlerts
+- _alarmsDidFire:
+- emptyModalTitle
+- bulletinClosed:
+- alarmsDidFire:
+- acknowledgeAlerts:
+- _killEventStoreIdleTimer
+- databaseChanged:
+- _resetEventStoreIdleTimer
+- eventStoreWillClose
+- modalTitleForAlertInfo:
+- modalMessageForAlertInfo:
+- _withdrawAlertBulletin:
+- messageStringForAlert:
+- expirationDateForAlertInfo:
+- _addAlertModalContent:bulletin:
+- actionButtonTitleForAlertInfo:
+- defaultURLForAlertInfo:
+- _bulletinRequestWithAlertInfo:
+- _bulletinRequestAcknowledged:alertInfo:performActions:
+- _findAlarmForCalendarItem:matchingExternalID:
+- _databaseChanged
+- eventStore
+- allowedEntityTypes
+- _killSyncTimer
+- _timeZoneChanged:
+- _syncTimerFired:
+- _syncDidEnd
+- _resetSyncTimer
+- _syncDidStart
+- dealloc
+- init
+- sectionIdentifier
+- syncsBulletinDismissal
+- dataProviderDidLoad
+- bulletinsFilteredBy:count:lastCleared:
+- sortDescriptors
+- alerts
+- .cxx_destruct
+@end

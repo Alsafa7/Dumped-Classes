@@ -1,0 +1,6 @@
+@interface SUClientDispatch : NSObject
+{
+
+}
+
+@end

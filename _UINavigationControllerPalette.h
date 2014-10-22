@@ -1,0 +1,129 @@
+@interface _UINavigationControllerPalette : UIView
+{
+	struct _paletteFlags;
+	BOOL __paletteOverridesPinningBar;
+	BOOL _paletteIsAboveBar;
+	BOOL _visibleWhenPinningBarIsHidden;
+	BOOL __palettePinningBarHidden;
+	id __backgroundView;
+	id _navController;
+	usigned long long _boundaryEdge;
+	id __unpinnedController;
+	id __pinningBar;
+	id __constraints;
+	id __backgroundConstraints;
+	struct __size;
+	struct _preferredContentInsets;
+}
+
++ __ck_setPaletteFrame:
++ dealloc
++ setFrame:
++ _backgroundView
++ _setVisualAltitude:
++ _setVisualAltitudeBias:
++ didMoveToSuperview
++ _setBackgroundView:
++ _size
++ _paletteOverridesPinningBar
++ paletteShadowIsHidden
++ _updateBackgroundView
++ isAttached
++ isVisibleWhenPinningBarIsHidden
++ _isPalettePinningBarHidden
++ boundaryEdge
++ paletteIsHidden
++ _setTopConstraintConstant:
++ setFrame:isAnimating:
++ _setLeftConstraintConstant:
++ _setPalettePinningBarHidden:
++ isPinned
++ _resetConstraintConstants:
++ _restartPaletteTransitionIfNecessary
++ preferredContentInsets
++ _initWithNavigationController:forEdge:
++ _setSize:
++ _setPinningBar:
++ _setAttached:didComplete:
++ setPinned:
++ pinningBarShadowIsHidden
++ _pinningBar
++ _setRestartPaletteTransitionIfNecessary:
++ _attachmentIsChanging
++ setVisibleWhenPinningBarIsHidden:
++ _setBackgroundConstraints:
++ _setConstraints:
++ _disableConstraints
++ _enableConstraints
++ _resetHeightConstraintConstant
++ _configureConstraintsForBackground:
++ _setupBackgroundViewIfNecessary
++ _configurePaletteConstraintsForBoundary
++ _setAttachmentIsChanging:
++ setPinningBarShadowIsHidden:
++ setPaletteShadowIsHidden:
++ _setPaletteOverridesPinningBar:
++ navController
++ paletteIsAboveBar
++ setPaletteIsAboveBar:
++ setPreferredContentInsets:
++ _unpinnedController
++ set_unpinnedController:
++ _constraints
++ _backgroundConstraints
+- __ck_setPaletteFrame:
+- dealloc
+- setFrame:
+- _backgroundView
+- _setVisualAltitude:
+- _setVisualAltitudeBias:
+- didMoveToSuperview
+- _setBackgroundView:
+- _size
+- _paletteOverridesPinningBar
+- paletteShadowIsHidden
+- _updateBackgroundView
+- isAttached
+- isVisibleWhenPinningBarIsHidden
+- _isPalettePinningBarHidden
+- boundaryEdge
+- paletteIsHidden
+- _setTopConstraintConstant:
+- setFrame:isAnimating:
+- _setLeftConstraintConstant:
+- _setPalettePinningBarHidden:
+- isPinned
+- _resetConstraintConstants:
+- _restartPaletteTransitionIfNecessary
+- preferredContentInsets
+- _initWithNavigationController:forEdge:
+- _setSize:
+- _setPinningBar:
+- _setAttached:didComplete:
+- setPinned:
+- pinningBarShadowIsHidden
+- _pinningBar
+- _setRestartPaletteTransitionIfNecessary:
+- _attachmentIsChanging
+- setVisibleWhenPinningBarIsHidden:
+- _setBackgroundConstraints:
+- _setConstraints:
+- _disableConstraints
+- _enableConstraints
+- _resetHeightConstraintConstant
+- _configureConstraintsForBackground:
+- _setupBackgroundViewIfNecessary
+- _configurePaletteConstraintsForBoundary
+- _setAttachmentIsChanging:
+- setPinningBarShadowIsHidden:
+- setPaletteShadowIsHidden:
+- _setPaletteOverridesPinningBar:
+- navController
+- paletteIsAboveBar
+- setPaletteIsAboveBar:
+- setPreferredContentInsets:
+- _unpinnedController
+- set_unpinnedController:
+- _constraints
+- _backgroundConstraints
+@end

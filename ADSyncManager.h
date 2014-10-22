@@ -1,0 +1,92 @@
+@interface ADSyncManager : NSObject
+{
+	id _account;
+	id _serviceManager;
+	id _anchorsRequestId;
+	id _anchorsToSync;
+	id _syncedAnchors;
+	id _currentAnchor;
+	id _currentSyncService;
+	id _delegate;
+	id _continueBlock;
+	BOOL _currentSyncShouldCancel;
+	BOOL _syncNeededOverride;
+	BOOL _isAggressivelySyncing;
+	id _queuedAnchors;
+	BOOL _forceResetOnNextSync;
+	id _targetQueue;
+}
+
++ initWithAccount:serviceManager:
++ setAnchorsRequestId:
++ isAggressivelySyncing
++ isSyncing
++ continueSync
++ anchorsRequestId
++ anchorKeysNeedingSync
++ setQueuedAnchors:
++ prepareSyncWithAnchors:delegate:
++ cancelSyncForAnchor:
++ setSyncNeeded
++ beginAggressiveSyncWithAnchors:delegate:
++ queuedAnchors
++ _setForceResetOnNextSync:
++ aggressiveSyncKeys
++ _postSyncFinishedNotification
++ _setCurrentAnchor:
++ _setContinueBlock:
++ _currentAnchorFinishedWithSuccess:
++ _setCurrentAnchorToNext
++ _syncFinishedForService:
++ _syncingService:receivedChunkWithPreAnchor:post:anchorValidity:toAdd:toRemove:continueBlock:
++ _finishSync
++ _currentAnchor
++ _continueSync
++ _preferredSyncKeyOrder
++ _needsSync
++ _sortedAnchorsFromAnchors:
++ _setAnchorsToSync:
++ _whitelistedAggressiveSyncKeys
++ _invokeContinueBlockWithKeepGoingArgument:
++ _forceResetOnNextSync
++ _continueBlock
++ targetQueue
++ setTargetQueue:
++ .cxx_destruct
+- initWithAccount:serviceManager:
+- setAnchorsRequestId:
+- isAggressivelySyncing
+- isSyncing
+- continueSync
+- anchorsRequestId
+- anchorKeysNeedingSync
+- setQueuedAnchors:
+- prepareSyncWithAnchors:delegate:
+- cancelSyncForAnchor:
+- setSyncNeeded
+- beginAggressiveSyncWithAnchors:delegate:
+- queuedAnchors
+- _setForceResetOnNextSync:
+- aggressiveSyncKeys
+- _postSyncFinishedNotification
+- _setCurrentAnchor:
+- _setContinueBlock:
+- _currentAnchorFinishedWithSuccess:
+- _setCurrentAnchorToNext
+- _syncFinishedForService:
+- _syncingService:receivedChunkWithPreAnchor:post:anchorValidity:toAdd:toRemove:continueBlock:
+- _finishSync
+- _currentAnchor
+- _continueSync
+- _preferredSyncKeyOrder
+- _needsSync
+- _sortedAnchorsFromAnchors:
+- _setAnchorsToSync:
+- _whitelistedAggressiveSyncKeys
+- _invokeContinueBlockWithKeepGoingArgument:
+- _forceResetOnNextSync
+- _continueBlock
+- targetQueue
+- setTargetQueue:
+- .cxx_destruct
+@end

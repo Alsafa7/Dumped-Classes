@@ -1,0 +1,373 @@
+@interface MPAVItem : NSObject
+{
+	id _asset;
+	id _assetQueue;
+	id _avPlayerItem;
+	BOOL _isAssetLoaded;
+	id _feeder;
+	id _player;
+	float _soundCheckVolumeNormalization;
+	id _chapterTimeMarkers;
+	id _artworkTimeMarkers;
+	id _urlTimeMarkers;
+	id _closedCaptionTimeMarkers;
+	id _alternateTracks;
+	double _cachedDuration;
+	double _cachedPlayableDuration;
+	id _cachedSeekableTimeRanges;
+	double _seekableTimeRangesCacheTime;
+	usigned long long _type;
+	float _defaultPlaybackRate;
+	usigned long long _indexInQueueFeeder;
+	bit[1] _advancedDuringPlayback;
+	bit[1] _handledFinishTime;
+	bit[1] _hasPlayedThisSession;
+	bit[1] _wasCountedAsSkipped;
+	bit[2] _isStreamable;
+	bit[1] _watchingAttributes;
+	bit[1] _lyricsAvailable;
+	bit[1] _timeMarkersNeedLoading;
+	BOOL _hasPostedNaturalSizeChange;
+	BOOL _limitReadAhead;
+	BOOL _didAttemptToLoadAsset;
+	float _loudnessInfoVolumeNormalization;
+	id _mediaItem;
+}
+
++ MPSPWD_prioritizeDownloadSession
++ audioClip
++ isStreamingQuality
++ wasDownloadedThisSession
++ adTrack
++ radioTrack
++ isRadioItem
++ addDerivedStationForArtist:withCompletionHandler:
++ _plistKeyForMPMediaItemProperty:
++ assetFlavor
++ feeder
++ indexInQueueFeeder
++ mainTitle
++ artist
++ composer
++ genre
++ albumTrackNumber
++ albumTrackCount
++ discNumber
++ discCount
++ supportsRewindAndFastForward15Seconds
++ isExplicitTrack
++ isAd
++ artworkImageData
++ artworkMIMEType
++ chapterTimeMarkers
++ chapterTimeMarkerForTime:
++ durationIfAvailable
++ defaultPlaybackRate
++ playableDuration
++ setDefaultPlaybackRate:
++ timeOfSeekableEnd
++ timeOfSeekableStart
++ playerItem
++ alternateTracks
++ limitReadAhead
++ setLimitReadAhead:
++ setVideoID:
++ isAssetLoaded
++ setAlternateAudioTrackID:
++ selectedAlternateTextTrack
++ setSelectedAlternateTextTrack:
++ setOverrideDuration:
++ videoID
++ setPlayerItem:
++ _loadAssetProperties
++ _releaseAllTimeMarkers
++ loadAssetAndPlayerItem
++ setIsAssetLoaded:
++ _updateSoundCheckVolumeNormalizationForPlayerItem
++ _loadAssetAndPlayerItem
++ _checkAllowsBlockingDurationCall
++ _durationInSeconds
++ displayableText
++ lyrics
++ forwardPlaybackEndTime
++ setForwardPlaybackEndTime:
++ useEmbeddedChapterData
++ imageCacheRequestWithSize:time:usePlaceholderAsFallback:
++ artworkTimeMarkerForTime:
++ setChapterTimeMarkers:
++ setArtworkTimeMarkers:
++ setUrlTimeMarkers:
++ _loadTimeMarkersBlocking
++ _loadTimeMarkersAsync
++ _timeMarkerFromMarkers:forTime:
++ artworkTimeMarkers
++ urlTimeMarkers
++ closedCaptionTimeMarkers
++ countForQueueFeeder
++ durationFromExternalMetadata
++ _seekableTimeRanges
++ _durationFromExternalMetadataIfAvailable
++ _playableDurationForLoadedTimeRanges:
++ hasDisplayableText
++ setSoundCheckVolumeNormalization:
++ customAVEQPreset
++ allowsEQ
++ _itemAttributeAvailableKey:
++ _imageChapterTrackIDsForAsset:
++ isSupportedDefaultPlaybackSpeed:
++ flushNowPlayingCaches
++ resetBookkeeping
++ setPlaybackStoppedTime:
++ notePlaybackFinishedByHittingEnd
++ playbackCheckpointCurrentTime
++ setPlaybackCheckpointCurrentTime:
++ setPlaybackFinishedTime:
++ setRating:
++ subtitleTrackID
++ setSubtitleTrackID:
++ setUserAdvancedDuringPlayback:
++ setUserSkippedPlayback:
++ userSkippedPlayback
++ durationInSeconds
++ albumArtist
++ canSeedGenius
++ isValidPlayerSubstituteForItem:
++ isPlaceholderForItem:
++ isAssetURLValid
++ currentTimeDisplayOverride
++ displayableTextLoaded
++ hasAlternatesForTypes:
++ alternatesCountForTypes:
++ hasDataForItemArtwork
++ hasPlayedThisSession
++ inBandAlternateTextTracks
++ isAlwaysLive
++ isStreamable
++ podcastURL
++ playbackRateForLevel:direction:paused:
++ replaceOutOfBandAlternateTextTracksWithArray:
++ scanIntervalForLevel:paused:
++ setHasPlayedThisSession:
++ supportsAddStation
++ supportsHistory
++ supportsLikeOrBan
++ supportsSkip
++ supportsShare
++ supportsTrackInfo
++ _realoadEmbeddedTimeMarkers
++ imageCache
++ imageCacheRequestWithSize:time:
++ timedMetadataIfAvailable
++ titlesForTime:
++ setClosedCaptionTimeMarkers:
++ urlTimeMarkerForTime:
++ closedCaptionTimeMarkerForTime:
++ localizedAttributedPositionInPlaylistStringWithRegularTextAttributes:emphasizedTextAttributes:
++ localizedPositionInPlaylistString
++ durationIsValid
++ playableDurationIfAvailable
++ _captionAppearanceSettingsChanged
++ blockForDirectAVControllerNotificationReferencingItem:
++ _clearAsset
++ setupEQPresetWithDefaultPreset:
++ setupPlaybackInfo
++ localeForAssetTrack:
++ reevaluateType
++ replacePlayerItemWithPlayerItem:
++ setFeeder:
++ setIndexInQueueFeeder:
++ soundCheckVolumeNormalization
++ didAttemptToLoadAsset
++ mediaItem
++ loudnessInfoVolumeNormalization
++ setLoudnessInfoVolumeNormalization:
++ dealloc
++ init
++ duration
++ type
++ path
++ observeValueForKeyPath:ofObject:change:context:
++ initWithURL:
++ _applicationDidBecomeActive:
++ url
++ initWithAsset:
++ asset
++ naturalSize
++ status
++ presentationSize
++ initWithURL:options:
++ persistentID
++ userRating
++ album
++ .cxx_destruct
++ player
++ setPlayer:
+- MPSPWD_prioritizeDownloadSession
+- audioClip
+- isStreamingQuality
+- wasDownloadedThisSession
+- adTrack
+- radioTrack
+- isRadioItem
+- addDerivedStationForArtist:withCompletionHandler:
+- _plistKeyForMPMediaItemProperty:
+- assetFlavor
+- feeder
+- indexInQueueFeeder
+- mainTitle
+- artist
+- composer
+- genre
+- albumTrackNumber
+- albumTrackCount
+- discNumber
+- discCount
+- supportsRewindAndFastForward15Seconds
+- isExplicitTrack
+- isAd
+- artworkImageData
+- artworkMIMEType
+- chapterTimeMarkers
+- chapterTimeMarkerForTime:
+- durationIfAvailable
+- defaultPlaybackRate
+- playableDuration
+- setDefaultPlaybackRate:
+- timeOfSeekableEnd
+- timeOfSeekableStart
+- playerItem
+- alternateTracks
+- limitReadAhead
+- setLimitReadAhead:
+- setVideoID:
+- isAssetLoaded
+- setAlternateAudioTrackID:
+- selectedAlternateTextTrack
+- setSelectedAlternateTextTrack:
+- setOverrideDuration:
+- videoID
+- setPlayerItem:
+- _loadAssetProperties
+- _releaseAllTimeMarkers
+- loadAssetAndPlayerItem
+- setIsAssetLoaded:
+- _updateSoundCheckVolumeNormalizationForPlayerItem
+- _loadAssetAndPlayerItem
+- _checkAllowsBlockingDurationCall
+- _durationInSeconds
+- displayableText
+- lyrics
+- forwardPlaybackEndTime
+- setForwardPlaybackEndTime:
+- useEmbeddedChapterData
+- imageCacheRequestWithSize:time:usePlaceholderAsFallback:
+- artworkTimeMarkerForTime:
+- setChapterTimeMarkers:
+- setArtworkTimeMarkers:
+- setUrlTimeMarkers:
+- _loadTimeMarkersBlocking
+- _loadTimeMarkersAsync
+- _timeMarkerFromMarkers:forTime:
+- artworkTimeMarkers
+- urlTimeMarkers
+- closedCaptionTimeMarkers
+- countForQueueFeeder
+- durationFromExternalMetadata
+- _seekableTimeRanges
+- _durationFromExternalMetadataIfAvailable
+- _playableDurationForLoadedTimeRanges:
+- hasDisplayableText
+- setSoundCheckVolumeNormalization:
+- customAVEQPreset
+- allowsEQ
+- _itemAttributeAvailableKey:
+- _imageChapterTrackIDsForAsset:
+- isSupportedDefaultPlaybackSpeed:
+- flushNowPlayingCaches
+- resetBookkeeping
+- setPlaybackStoppedTime:
+- notePlaybackFinishedByHittingEnd
+- playbackCheckpointCurrentTime
+- setPlaybackCheckpointCurrentTime:
+- setPlaybackFinishedTime:
+- setRating:
+- subtitleTrackID
+- setSubtitleTrackID:
+- setUserAdvancedDuringPlayback:
+- setUserSkippedPlayback:
+- userSkippedPlayback
+- durationInSeconds
+- albumArtist
+- canSeedGenius
+- isValidPlayerSubstituteForItem:
+- isPlaceholderForItem:
+- isAssetURLValid
+- currentTimeDisplayOverride
+- displayableTextLoaded
+- hasAlternatesForTypes:
+- alternatesCountForTypes:
+- hasDataForItemArtwork
+- hasPlayedThisSession
+- inBandAlternateTextTracks
+- isAlwaysLive
+- isStreamable
+- podcastURL
+- playbackRateForLevel:direction:paused:
+- replaceOutOfBandAlternateTextTracksWithArray:
+- scanIntervalForLevel:paused:
+- setHasPlayedThisSession:
+- supportsAddStation
+- supportsHistory
+- supportsLikeOrBan
+- supportsSkip
+- supportsShare
+- supportsTrackInfo
+- _realoadEmbeddedTimeMarkers
+- imageCache
+- imageCacheRequestWithSize:time:
+- timedMetadataIfAvailable
+- titlesForTime:
+- setClosedCaptionTimeMarkers:
+- urlTimeMarkerForTime:
+- closedCaptionTimeMarkerForTime:
+- localizedAttributedPositionInPlaylistStringWithRegularTextAttributes:emphasizedTextAttributes:
+- localizedPositionInPlaylistString
+- durationIsValid
+- playableDurationIfAvailable
+- _captionAppearanceSettingsChanged
+- blockForDirectAVControllerNotificationReferencingItem:
+- _clearAsset
+- setupEQPresetWithDefaultPreset:
+- setupPlaybackInfo
+- localeForAssetTrack:
+- reevaluateType
+- replacePlayerItemWithPlayerItem:
+- setFeeder:
+- setIndexInQueueFeeder:
+- soundCheckVolumeNormalization
+- didAttemptToLoadAsset
+- mediaItem
+- loudnessInfoVolumeNormalization
+- setLoudnessInfoVolumeNormalization:
+- dealloc
+- init
+- duration
+- type
+- path
+- observeValueForKeyPath:ofObject:change:context:
+- initWithURL:
+- _applicationDidBecomeActive:
+- url
+- initWithAsset:
+- asset
+- naturalSize
+- status
+- presentationSize
+- initWithURL:options:
+- persistentID
+- userRating
+- album
+- .cxx_destruct
+- player
+- setPlayer:
+@end

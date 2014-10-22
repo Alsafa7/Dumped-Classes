@@ -1,0 +1,148 @@
+@interface IDSDaemonController : NSObject
+{
+	id _delegate;
+	id _remoteObject;
+	id _localObject;
+	id _daemonListener;
+	id _protocol;
+	id _listenerID;
+	id _listenerServices;
+	id _services;
+	id _cachedServices;
+	id _servicesLockQueue;
+	id _listenerCommands;
+	id _commands;
+	id _cachedCommands;
+	id _commandsLockQueue;
+	id _listenerCapabilities;
+	unsigned int _cachedCapabilities;
+	unsigned int _lastUpdateCaps;
+	id _capLockQueue;
+	id _connectionLock;
+	id _listenerLockQueue;
+	id _remoteDaemonLockQueue;
+	id _remoteMessageQueue;
+	id _localObjectLockQueue;
+	pointer _runLoopSource;
+	BOOL _hasCheckedForDaemon;
+	BOOL _preventReconnect;
+	BOOL _acquiringDaemonConnection;
+	BOOL _autoReconnect;
+	BOOL _hasBeenSuspended;
+}
+
++ isConnected
++ isConnecting
++ dealloc
++ setDelegate:
++ init
++ delegate
++ methodSignatureForSelector:
++ forwardInvocation:
++ connectToDaemon
++ commands
++ listener
++ _setServices:
++ _setCommands:
++ _connectToDaemonWithLaunch:services:commands:capabilities:
++ connectToDaemonWithLaunch:services:commands:capabilities:
++ setServices:forListenerID:
++ setCommands:forListenerID:
++ addListenerID:services:commands:
++ servicesForListenerID:
++ commandsForListenerID:
++ addListenerID:services:
++ systemApplicationDidEnterBackground
++ systemApplicationWillEnterForeground
++ systemApplicationDidSuspend
++ systemApplicationDidResume
++ services
++ connectToDaemonWithLaunch:
++ _setCapabilities:
++ capabilitiesForListenerID:
++ _noteSetupComplete
++ _setAutoReconnect:
++ _localObjectCleanup
++ _remoteObjectCleanup
++ disconnectFromDaemonWithForce:
++ __isLocalObjectValidOnQueue:
++ __isRemoteObjectValidOnQueue:
++ remoteObjectExists
++ remoteObjectDiedNotification:
++ localObjectDiedNotification:
++ _blockUntilSendQueueIsEmpty
++ localObjectExists
++ _autoReconnect
++ _makeConnectionWithLaunch:completionBlock:
++ disconnectFromDaemon
++ hasListenerForID:
++ setCapabilities:forListenerID:
++ _listenerSetUpdated
++ _agentDidLaunchNotification:
++ _handleDaemonException:
++ removeListenerID:
++ _remoteObject
++ _acquiringDaemonConnection
++ _listenerID
++ _setListenerID:
++ _remoteMessageQueue
++ localObject
++ capabilities
+- isConnected
+- isConnecting
+- dealloc
+- setDelegate:
+- init
+- delegate
+- methodSignatureForSelector:
+- forwardInvocation:
+- connectToDaemon
+- commands
+- listener
+- _setServices:
+- _setCommands:
+- _connectToDaemonWithLaunch:services:commands:capabilities:
+- connectToDaemonWithLaunch:services:commands:capabilities:
+- setServices:forListenerID:
+- setCommands:forListenerID:
+- addListenerID:services:commands:
+- servicesForListenerID:
+- commandsForListenerID:
+- addListenerID:services:
+- systemApplicationDidEnterBackground
+- systemApplicationWillEnterForeground
+- systemApplicationDidSuspend
+- systemApplicationDidResume
+- services
+- connectToDaemonWithLaunch:
+- _setCapabilities:
+- capabilitiesForListenerID:
+- _noteSetupComplete
+- _setAutoReconnect:
+- _localObjectCleanup
+- _remoteObjectCleanup
+- disconnectFromDaemonWithForce:
+- __isLocalObjectValidOnQueue:
+- __isRemoteObjectValidOnQueue:
+- remoteObjectExists
+- remoteObjectDiedNotification:
+- localObjectDiedNotification:
+- _blockUntilSendQueueIsEmpty
+- localObjectExists
+- _autoReconnect
+- _makeConnectionWithLaunch:completionBlock:
+- disconnectFromDaemon
+- hasListenerForID:
+- setCapabilities:forListenerID:
+- _listenerSetUpdated
+- _agentDidLaunchNotification:
+- _handleDaemonException:
+- removeListenerID:
+- _remoteObject
+- _acquiringDaemonConnection
+- _listenerID
+- _setListenerID:
+- _remoteMessageQueue
+- localObject
+- capabilities
+@end

@@ -1,0 +1,62 @@
+@interface NSConcreteTextStorage : NSTextStorage
+{
+	id _contents;
+	struct _lock;
+	struct _pFlags;
+}
+
++ dealloc
++ init
++ length
++ string
++ classForCoder
++ initWithString:attributes:
++ addAttribute:value:range:
++ removeAttribute:range:
++ initWithString:
++ attribute:atIndex:effectiveRange:
++ setAttributes:range:
++ addAttributes:range:
++ initWithAttributedString:
++ attribute:atIndex:longestEffectiveRange:inRange:
++ replaceCharactersInRange:withString:
++ attributesAtIndex:effectiveRange:
++ attributesAtIndex:longestEffectiveRange:inRange:
++ replaceCharactersInRange:withAttributedString:
++ _lockForReading
++ _unlock
++ _setForceFixAttributes:
++ _attributeFixingInProgress
++ _setAttributeFixingInProgress:
++ _lockForWritingWithExceptionHandler:
++ fixesAttributesLazily
++ _forceFixAttributes
++ _initLocks
+- dealloc
+- init
+- length
+- string
+- classForCoder
+- initWithString:attributes:
+- addAttribute:value:range:
+- removeAttribute:range:
+- initWithString:
+- attribute:atIndex:effectiveRange:
+- setAttributes:range:
+- addAttributes:range:
+- initWithAttributedString:
+- attribute:atIndex:longestEffectiveRange:inRange:
+- replaceCharactersInRange:withString:
+- attributesAtIndex:effectiveRange:
+- attributesAtIndex:longestEffectiveRange:inRange:
+- replaceCharactersInRange:withAttributedString:
+- _lockForReading
+- _unlock
+- _setForceFixAttributes:
+- _attributeFixingInProgress
+- _setAttributeFixingInProgress:
+- _lockForWritingWithExceptionHandler:
+- fixesAttributesLazily
+- _forceFixAttributes
+- _initLocks
+@end

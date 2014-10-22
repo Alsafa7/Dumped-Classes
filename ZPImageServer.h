@@ -1,0 +1,84 @@
+@interface ZPImageServer : NSObject
+{
+	BOOL enabled;
+	BOOL noLogo;
+	BOOL shouldTint;
+	BOOL shouldUseOldMethod;
+	BOOL _shouldUseLegacyImages;
+	id themeName;
+	id packName;
+	id _settings;
+	id carrierText;
+}
+
++ set_settings:
++ _settings
++ setNoLogo:
++ setShouldUseOldMethod:
++ setCarrierText:
++ setShouldTint:
++ setShouldUseLegacyImages:
++ currentThemeDirectory
++ currentSilverName
++ currentBlackName
++ currentEtchedName
++ currentLogoName
++ currentDarkName
++ currentLightName
++ setPackName:
++ currentSilverPath
++ currentBlackPath
++ currentEtchedPath
++ currentLogoPath
++ currentDarkPath
++ currentLightPath
++ noLogo
++ shouldTint
++ packName
++ shouldUseOldMethod
++ carrierText
++ shouldUseLegacyImages
++ dealloc
++ init
++ isEnabled
++ setEnabled:
++ setSettings:
++ settings
++ themeName
++ setThemeName:
+- set_settings:
+- _settings
+- setNoLogo:
+- setShouldUseOldMethod:
+- setCarrierText:
+- setShouldTint:
+- setShouldUseLegacyImages:
+- currentThemeDirectory
+- currentSilverName
+- currentBlackName
+- currentEtchedName
+- currentLogoName
+- currentDarkName
+- currentLightName
+- setPackName:
+- currentSilverPath
+- currentBlackPath
+- currentEtchedPath
+- currentLogoPath
+- currentDarkPath
+- currentLightPath
+- noLogo
+- shouldTint
+- packName
+- shouldUseOldMethod
+- carrierText
+- shouldUseLegacyImages
+- dealloc
+- init
+- isEnabled
+- setEnabled:
+- setSettings:
+- settings
+- themeName
+- setThemeName:
+@end

@@ -1,0 +1,6 @@
+@interface TKPickerTableViewCell : UITableViewCell
+{
+
+}
+
+@end

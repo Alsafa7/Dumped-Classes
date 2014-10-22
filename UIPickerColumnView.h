@@ -1,0 +1,99 @@
+@interface UIPickerColumnView : UIView
+{
+	id _topTable;
+	id _middleTable;
+	id _bottomTable;
+	id _topContainerView;
+	id _middleContainerView;
+	id _bottomContainerView;
+	double _middleBarHeight;
+	double _rowHeight;
+	id _pickerView;
+	struct _tableFrame;
+	struct _perspectiveTransform;
+	id __textColor;
+}
+
++ dealloc
++ _allVisibleCells
++ reloadData
++ initWithFrame:tableFrame:middleBarHeight:rowHeight:pickerView:transform:
++ _setTextColor:
++ setRowHeight:
++ numberOfRowsInSection:
++ cellForRowAtIndexPath:
++ selectionBarRow
++ clearDataSourceAndDelegate
++ setAllowsMultipleSelection:
++ rowHeight
++ setSelectionBarRect:
++ selectRow:animated:notify:
++ beginUpdates
++ endUpdates
++ _scrollRowAtIndexPathToSelectionBar:animated:
++ _visibleGlobalRows
++ _containsTable:
++ _preferredTable
++ _tableFrame
++ _sendSelectionChangedFromTable:
++ isRowChecked:
++ _textColor
++ _sendCheckedRow:inTableView:checked:
++ _soundsEnabled
++ _usesCheckSelection
++ _pickerTableViewDidChangeContentOffset:
++ pickerTableView:didChangeSelectionBarRowFrom:to:
++ tableView:numberOfRowsInSection:
++ tableView:cellForRowAtIndexPath:
++ selectionBarRect
++ _createContainerViewWithFrame:
++ _createTableViewWithFrame:containingFrame:
++ _centerTableInContainer:
++ _horizontalBiasForEndTables
++ _transformForTableWithPerspectiveTranslationX:
++ _transformForTableWithTranslationX:
++ _moveTableViewIfNecessary:toContentOffset:
++ perspectiveTransform
++ setPerspectiveTransform:
+- dealloc
+- _allVisibleCells
+- reloadData
+- initWithFrame:tableFrame:middleBarHeight:rowHeight:pickerView:transform:
+- _setTextColor:
+- setRowHeight:
+- numberOfRowsInSection:
+- cellForRowAtIndexPath:
+- selectionBarRow
+- clearDataSourceAndDelegate
+- setAllowsMultipleSelection:
+- rowHeight
+- setSelectionBarRect:
+- selectRow:animated:notify:
+- beginUpdates
+- endUpdates
+- _scrollRowAtIndexPathToSelectionBar:animated:
+- _visibleGlobalRows
+- _containsTable:
+- _preferredTable
+- _tableFrame
+- _sendSelectionChangedFromTable:
+- isRowChecked:
+- _textColor
+- _sendCheckedRow:inTableView:checked:
+- _soundsEnabled
+- _usesCheckSelection
+- _pickerTableViewDidChangeContentOffset:
+- pickerTableView:didChangeSelectionBarRowFrom:to:
+- tableView:numberOfRowsInSection:
+- tableView:cellForRowAtIndexPath:
+- selectionBarRect
+- _createContainerViewWithFrame:
+- _createTableViewWithFrame:containingFrame:
+- _centerTableInContainer:
+- _horizontalBiasForEndTables
+- _transformForTableWithPerspectiveTranslationX:
+- _transformForTableWithTranslationX:
+- _moveTableViewIfNecessary:toContentOffset:
+- perspectiveTransform
+- setPerspectiveTransform:
+@end

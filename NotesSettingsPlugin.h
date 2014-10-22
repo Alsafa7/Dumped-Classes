@@ -1,0 +1,6 @@
+@interface NotesSettingsPlugin : PSListController
+{
+
+}
+
+@end

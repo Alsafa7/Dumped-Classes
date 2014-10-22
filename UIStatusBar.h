@@ -1,0 +1,273 @@
+@interface UIStatusBar : _UIScrollsToTopInitiatorView
+{
+	id _statusBarWindow;
+	id _statusBarServer;
+	id _inProcessProvider;
+	BOOL _showsForeground;
+	id _backgroundView;
+	id _foregroundView;
+	id _doubleHeightLabel;
+	id _currentDoubleHeightText;
+	struct _currentRawData;
+	id _interruptedAnimationCompositeViews;
+	id _newStyleBackgroundView;
+	id _newStyleForegroundView;
+	id _slidingStatusBar;
+	long long _requestedStyle;
+	int _styleOverrides;
+	id _styleAttributes;
+	long long _orientation;
+	BOOL _hidden;
+	BOOL _suppressesHiddenSideEffects;
+	BOOL _foreground;
+	BOOL _registered;
+	BOOL _waitingOnCallbackAfterChangingStyleOverridesLocally;
+	BOOL _suppressGlow;
+	double _translucentBackgroundAlpha;
+	BOOL _showOnlyCenterItems;
+	pointer _localDataOverrides;
+	id _tintColor;
+	id _lastUsedBackgroundColor;
+	id _nextTintTransition;
+	id _overrideHeight;
+	id _disableRasterizationReasons;
+	BOOL _persistentAnimationsEnabled;
+	BOOL _simulatesLegacyAppearance;
+	BOOL _serverUpdatesDisabled;
+	BOOL _homeItemsDisabled;
+	id _styleDelegate;
+	id _foregroundColor;
+	long long _legibilityStyle;
+}
+
++ touchesCancelled:withEvent:
++ touchesMoved:withEvent:
++ touchesBegan:withEvent:
++ initWithFrame:
++ dealloc
++ pointInside:withEvent:
++ isHidden
++ setHidden:
++ layoutSubviews
++ _backgroundView
++ forceUpdateDoubleHeightStatus
++ setStyleDelegate:
++ requestStyle:animated:
++ _setVisualAltitude:
++ _setVisualAltitudeBias:
++ requestStyle:animationParameters:
++ setHidden:animationParameters:
++ noteStyleOverridesChangedLocally
++ setTintColor:withDuration:
++ isTranslucent
++ currentStyle
++ heightForOrientation:
++ currentHeight
++ statusBarWindow
++ touchesEnded:withEvent:
++ setTintColor:
++ didMoveToSuperview
++ _standardHeight
++ _isTransparent
++ isDoubleHeight
++ legibilityStyle
++ setOrientation:
++ foregroundColor
++ setSuppressesGlow:
++ setPersistentAnimationsEnabled:
++ persistentAnimationsEnabled
++ styleOverrides
++ statusBarServer:didReceiveStatusBarData:withActions:
++ statusBarServer:didReceiveStyleOverrides:
++ statusBarServer:didReceiveGlowAnimationState:forStyle:
++ statusBarServer:didReceiveDoubleHeightStatusString:forStyle:
++ setStatusBarWindow:
++ _hiddenTransformForHideAnimationParameters:
++ _didEnterBackground:
++ _willEnterForeground:
++ _itemViewPerformButtonAction:
++ _itemViewShouldBeginDisablingRasterization:
++ _itemViewShouldEndDisablingRasterization:
++ _styleOverridesDidChange:
++ _evaluateServerRegistration
++ _updateShouldRasterize
++ initWithFrame:showForegroundView:inProcessStateProvider:
++ initWithFrame:showForegroundView:
++ forceUpdateToData:animated:
++ _currentComposedData
++ _setDoubleHeightStatusString:
++ _adjustDoubleHeightTextVisibility
++ frameForOrientation:
++ forceUpdateStyleOverrides:
++ _currentStyleAttributes
++ styleRequest
++ _styleAttributesForRequest:
++ styleForRequestedStyle:
++ currentStyleRequestForStyle:
++ _requestStyleAttributes:animationParameters:
++ activeTintColor
++ _prepareToSetStyle:animation:
++ _endDisablingRasterizationForReason:
++ _beginDisablingRasterizationForReason:
++ _setStyle:animation:
++ _finishedSettingStyleWithOldHeight:newHeight:animation:
++ _updateBackgroundFrame
++ _backgroundFrameForAttributes:
++ _prepareInterruptedAnimationCompositeViewIncludingForeground:
++ _updatePersistentAnimationsEnabledForForegroundView:
++ _currentComposedDataForStyle:
++ _slideTransform
++ _setFrameForStyle:
++ _swapToNewBackgroundView
++ _crossfadeToNewForegroundViewWithAlpha:
++ _setStyle:
++ _swapToNewForegroundView
++ _crossfadeToNewBackgroundView
++ _hiddenAlphaForHideAnimationParameters:
++ setHidden:animated:
++ _touchShouldProduceReturnEvent
++ serverUpdatesDisabled
++ forceUpdateData:
++ forceUpdateGlowAnimation
++ forgetEitherSideHistory
++ styleDelegate
++ setForegroundColor:animationParameters:
++ setLegibilityStyle:animationParameters:
++ simulatesLegacyAppearance
++ setStyleRequest:animationParameters:
++ homeItemsDisabled
++ statusBarStateProvider:didPostStatusBarData:withActions:
++ setBackgroundAlpha:
++ setShowsOnlyCenterItems:
++ setLocalDataOverrides:
++ currentFrame
++ requestStyle:
++ requestStyle:animation:startTime:duration:curve:
++ currentDoubleHeightLabelText
++ setSuppressesHiddenSideEffects:
++ _shouldSeekHigherPriorityTouchTarget
++ crossfadeTime:duration:
++ setSimulatesLegacyAppearance:
++ setForegroundColor:
++ setLegibilityStyle:
++ setStyleRequest:
++ setServerUpdatesDisabled:
++ _setOverrideHeight:
++ _clearOverrideHeight
++ setHomeItemsDisabled:
+- touchesCancelled:withEvent:
+- touchesMoved:withEvent:
+- touchesBegan:withEvent:
+- initWithFrame:
+- dealloc
+- pointInside:withEvent:
+- isHidden
+- setHidden:
+- layoutSubviews
+- _backgroundView
+- forceUpdateDoubleHeightStatus
+- setStyleDelegate:
+- requestStyle:animated:
+- _setVisualAltitude:
+- _setVisualAltitudeBias:
+- requestStyle:animationParameters:
+- setHidden:animationParameters:
+- noteStyleOverridesChangedLocally
+- setTintColor:withDuration:
+- isTranslucent
+- currentStyle
+- heightForOrientation:
+- currentHeight
+- statusBarWindow
+- touchesEnded:withEvent:
+- setTintColor:
+- didMoveToSuperview
+- _standardHeight
+- _isTransparent
+- isDoubleHeight
+- legibilityStyle
+- setOrientation:
+- foregroundColor
+- setSuppressesGlow:
+- setPersistentAnimationsEnabled:
+- persistentAnimationsEnabled
+- styleOverrides
+- statusBarServer:didReceiveStatusBarData:withActions:
+- statusBarServer:didReceiveStyleOverrides:
+- statusBarServer:didReceiveGlowAnimationState:forStyle:
+- statusBarServer:didReceiveDoubleHeightStatusString:forStyle:
+- setStatusBarWindow:
+- _hiddenTransformForHideAnimationParameters:
+- _didEnterBackground:
+- _willEnterForeground:
+- _itemViewPerformButtonAction:
+- _itemViewShouldBeginDisablingRasterization:
+- _itemViewShouldEndDisablingRasterization:
+- _styleOverridesDidChange:
+- _evaluateServerRegistration
+- _updateShouldRasterize
+- initWithFrame:showForegroundView:inProcessStateProvider:
+- initWithFrame:showForegroundView:
+- forceUpdateToData:animated:
+- _currentComposedData
+- _setDoubleHeightStatusString:
+- _adjustDoubleHeightTextVisibility
+- frameForOrientation:
+- forceUpdateStyleOverrides:
+- _currentStyleAttributes
+- styleRequest
+- _styleAttributesForRequest:
+- styleForRequestedStyle:
+- currentStyleRequestForStyle:
+- _requestStyleAttributes:animationParameters:
+- activeTintColor
+- _prepareToSetStyle:animation:
+- _endDisablingRasterizationForReason:
+- _beginDisablingRasterizationForReason:
+- _setStyle:animation:
+- _finishedSettingStyleWithOldHeight:newHeight:animation:
+- _updateBackgroundFrame
+- _backgroundFrameForAttributes:
+- _prepareInterruptedAnimationCompositeViewIncludingForeground:
+- _updatePersistentAnimationsEnabledForForegroundView:
+- _currentComposedDataForStyle:
+- _slideTransform
+- _setFrameForStyle:
+- _swapToNewBackgroundView
+- _crossfadeToNewForegroundViewWithAlpha:
+- _setStyle:
+- _swapToNewForegroundView
+- _crossfadeToNewBackgroundView
+- _hiddenAlphaForHideAnimationParameters:
+- setHidden:animated:
+- _touchShouldProduceReturnEvent
+- serverUpdatesDisabled
+- forceUpdateData:
+- forceUpdateGlowAnimation
+- forgetEitherSideHistory
+- styleDelegate
+- setForegroundColor:animationParameters:
+- setLegibilityStyle:animationParameters:
+- simulatesLegacyAppearance
+- setStyleRequest:animationParameters:
+- homeItemsDisabled
+- statusBarStateProvider:didPostStatusBarData:withActions:
+- setBackgroundAlpha:
+- setShowsOnlyCenterItems:
+- setLocalDataOverrides:
+- currentFrame
+- requestStyle:
+- requestStyle:animation:startTime:duration:curve:
+- currentDoubleHeightLabelText
+- setSuppressesHiddenSideEffects:
+- _shouldSeekHigherPriorityTouchTarget
+- crossfadeTime:duration:
+- setSimulatesLegacyAppearance:
+- setForegroundColor:
+- setLegibilityStyle:
+- setStyleRequest:
+- setServerUpdatesDisabled:
+- _setOverrideHeight:
+- _clearOverrideHeight
+- setHomeItemsDisabled:
+@end

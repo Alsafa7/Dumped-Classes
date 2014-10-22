@@ -1,0 +1,143 @@
+@interface ISDialog : NSObject
+{
+	BOOL _allowsBioAuthorization;
+	BOOL _allowDuplicates;
+	id _authenticationContext;
+	BOOL _authorizationIsForced;
+	id _buttons;
+	long long _defaultButtonIndex;
+	id _displayCountKey;
+	BOOL _dismissOnHomeButton;
+	BOOL _dismissOnLock;
+	BOOL _expectsResponse;
+	BOOL _groupsTextFields;
+	long long _kind;
+	id _lock;
+	long long _maxDisplayCount;
+	id _message;
+	BOOL _oneButtonPerLine;
+	BOOL _shouldDismissAfterUnlock;
+	BOOL _shouldDisplayAsTopMost;
+	BOOL _shouldPendInSetupIfNotAllowed;
+	id _textFields;
+	id _title;
+	long long _unlockActionButtonIndex;
+	id _userInfo;
+	pointer _userNotificationValues;
+}
+
++ initWithAuthenticationChallege:
++ initWithTitle:message:
++ dealloc
++ init
++ setTitle:
++ isEqual:
++ title
++ message
++ defaultButtonIndex
++ setMessage:
++ setDefaultButtonIndex:
++ buttons
++ groupsTextFields
++ setGroupsTextFields:
++ kind
++ setKind:
++ allowsBioAuthorization
++ setAllowDuplicates:
++ setExpectsResponse:
++ copyUserNotification
++ allowDuplicates
++ setAuthorizationIsForced:
++ _kindForString:
++ unlockActionButtonIndex
++ dismissOnHomeButton
++ dismissOnLock
++ oneButtonPerLine
++ shouldDisplayAsTopMost
++ shouldDismissAfterUnlock
++ shouldPendInSetupIfNotAllowed
++ initWithOfferDeviceError:
++ copyValueForCFUserNotificationKey:
++ displayCountKey
++ maximumDisplayCount
++ setDisplayCountKey:
++ setMaximumDisplayCount:
++ setValue:forUserInfoKey:
++ setValue:forCFUserNotificationKey:
++ valueForUserInfoKey:
++ authorizationIsForced
++ setDismissOnHomeButton:
++ setDismissOnLock:
++ expectsResponse
++ setOneButtonPerLine:
++ setShouldDismissAfterUnlock:
++ setShouldDisplayAsTopMost:
++ setShouldPendInSetupIfNotAllowed:
++ setUnlockActionButtonIndex:
++ initWithDialogDictionary:
++ setTextFields:
++ setButtons:
++ authenticationContext
++ setAuthenticationContext:
++ initWithError:
++ isDisplayable
++ incrementDisplayCount
++ textFields
+- initWithAuthenticationChallege:
+- initWithTitle:message:
+- dealloc
+- init
+- setTitle:
+- isEqual:
+- title
+- message
+- defaultButtonIndex
+- setMessage:
+- setDefaultButtonIndex:
+- buttons
+- groupsTextFields
+- setGroupsTextFields:
+- kind
+- setKind:
+- allowsBioAuthorization
+- setAllowDuplicates:
+- setExpectsResponse:
+- copyUserNotification
+- allowDuplicates
+- setAuthorizationIsForced:
+- _kindForString:
+- unlockActionButtonIndex
+- dismissOnHomeButton
+- dismissOnLock
+- oneButtonPerLine
+- shouldDisplayAsTopMost
+- shouldDismissAfterUnlock
+- shouldPendInSetupIfNotAllowed
+- initWithOfferDeviceError:
+- copyValueForCFUserNotificationKey:
+- displayCountKey
+- maximumDisplayCount
+- setDisplayCountKey:
+- setMaximumDisplayCount:
+- setValue:forUserInfoKey:
+- setValue:forCFUserNotificationKey:
+- valueForUserInfoKey:
+- authorizationIsForced
+- setDismissOnHomeButton:
+- setDismissOnLock:
+- expectsResponse
+- setOneButtonPerLine:
+- setShouldDismissAfterUnlock:
+- setShouldDisplayAsTopMost:
+- setShouldPendInSetupIfNotAllowed:
+- setUnlockActionButtonIndex:
+- initWithDialogDictionary:
+- setTextFields:
+- setButtons:
+- authenticationContext
+- setAuthenticationContext:
+- initWithError:
+- isDisplayable
+- incrementDisplayCount
+- textFields
+@end

@@ -1,0 +1,87 @@
+@interface UITableViewIndex : UIControl
+{
+	id _titles;
+	id _font;
+	long long _selectedSection;
+	BOOL _pastTop;
+	BOOL _pastBottom;
+	struct _cachedSize;
+	struct _cachedSizeToFit;
+	id _indexColor;
+	id _indexBackgroundColor;
+	id _indexTrackingBackgroundColor;
+	double _topPadding;
+	double _bottomPadding;
+	double _verticalTextHeightEstimate;
+	id _entries;
+}
+
++ initWithFrame:
++ dealloc
++ drawRect:
++ pointInside:withEvent:
++ setFrame:
++ sizeThatFits:
++ tintColorDidChange
++ _willChangeToIdiom:onScreen:
++ setFont:
++ font
++ setTitles:
++ setIndexColor:
++ setIndexBackgroundColor:
++ setIndexTrackingBackgroundColor:
++ selectedSection
++ pastTop
++ pastBottom
++ selectedSectionTitle
++ maximumNumberOfTitlesWithoutTruncationForHeight:
++ cancelTrackingWithEvent:
++ beginTrackingWithTouch:withEvent:
++ continueTrackingWithTouch:withEvent:
++ endTrackingWithTouch:withEvent:
++ titles
++ _fontForIdiom:
++ _idiom
++ _minLineSpacingForIdiom:
++ _displayTitles
++ _cacheAndMeasureTitles
++ _visibleBoundsForRect:stride:
++ indexColor
++ _selectSectionForTouch:withEvent:
++ indexTrackingBackgroundColor
++ indexBackgroundColor
+- initWithFrame:
+- dealloc
+- drawRect:
+- pointInside:withEvent:
+- setFrame:
+- sizeThatFits:
+- tintColorDidChange
+- _willChangeToIdiom:onScreen:
+- setFont:
+- font
+- setTitles:
+- setIndexColor:
+- setIndexBackgroundColor:
+- setIndexTrackingBackgroundColor:
+- selectedSection
+- pastTop
+- pastBottom
+- selectedSectionTitle
+- maximumNumberOfTitlesWithoutTruncationForHeight:
+- cancelTrackingWithEvent:
+- beginTrackingWithTouch:withEvent:
+- continueTrackingWithTouch:withEvent:
+- endTrackingWithTouch:withEvent:
+- titles
+- _fontForIdiom:
+- _idiom
+- _minLineSpacingForIdiom:
+- _displayTitles
+- _cacheAndMeasureTitles
+- _visibleBoundsForRect:stride:
+- indexColor
+- _selectSectionForTouch:withEvent:
+- indexTrackingBackgroundColor
+- indexBackgroundColor
+@end

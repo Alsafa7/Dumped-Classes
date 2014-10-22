@@ -1,0 +1,6 @@
+@interface DOMHTMLAnchorElement : DOMHTMLElement
+{
+
+}
+
+@end

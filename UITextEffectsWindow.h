@@ -1,0 +1,118 @@
+@interface UITextEffectsWindow : UIAutoRotatingWindow
+{
+	unsigned int _activeEffectsCount;
+	BOOL _inDealloc;
+	BOOL _nonServiceHosted;
+	double _defaultWindowLevel;
+	struct _hostedWindowOffset;
+	int _bgCount;
+	usigned long long _activeRemoteViewCount;
+	usigned long long _windowLevelCount;
+	Array _windowLevelStack;
+}
+
++ _initWithScreen:options:
++ _matchingOptions:
++ _intendedScreen
++ initWithFrame:
++ dealloc
++ convertPoint:fromView:
++ bringSubviewToFront:
++ sendSubviewToBack:
++ _isTextEffectsWindow
++ _shouldTintStatusBar
++ interfaceOrientation
++ _canActAsKeyWindowForScreen:
++ _isWindowServerHostingManaged
++ convertPoint:fromWindow:
++ convertRect:toView:
++ _usesWindowServerHitTesting
++ _canAffectStatusBarAppearance
++ isInternalWindow
++ _updateTransformLayerForClassicPresentation
++ convertPoint:toWindow:
++ convertRect:toWindow:
++ setTransform:
++ handleStatusBarChangeFromHeight:toHeight:
++ convertRect:fromWindow:
++ convertRect:fromView:
++ _disableViewScaling
++ setKeepContextInBackground:
++ convertPoint:toView:
++ didAddSubview:
++ _didRemoveSubview:
++ nonServiceHosted
++ matchDeviceOrientation
++ aboveStatusBar
++ setDefaultWindowLevel:
++ defaultWindowLevel
++ _applicationDidFinishLaunching:
++ hostedWindowOffset
++ _adjustPointForHostedDisplay:hasTarget:inset:
++ delayHideWindow
++ sortSubviews
++ updateForOrientation:
++ updateForOrientation:forceResetTransform:
++ contextID
++ _setWindowLevel:
++ _restoreWindowLevel
++ hostedFrame
++ classicWindowPointForPoint:
++ magnifierScreenPointForPoint:targetWindow:
++ resetTransform
++ updateSubviewOrdering
++ setNonServiceHosted:
++ setHostedWindowOffset:
+- _initWithScreen:options:
+- _matchingOptions:
+- _intendedScreen
+- initWithFrame:
+- dealloc
+- convertPoint:fromView:
+- bringSubviewToFront:
+- sendSubviewToBack:
+- _isTextEffectsWindow
+- _shouldTintStatusBar
+- interfaceOrientation
+- _canActAsKeyWindowForScreen:
+- _isWindowServerHostingManaged
+- convertPoint:fromWindow:
+- convertRect:toView:
+- _usesWindowServerHitTesting
+- _canAffectStatusBarAppearance
+- isInternalWindow
+- _updateTransformLayerForClassicPresentation
+- convertPoint:toWindow:
+- convertRect:toWindow:
+- setTransform:
+- handleStatusBarChangeFromHeight:toHeight:
+- convertRect:fromWindow:
+- convertRect:fromView:
+- _disableViewScaling
+- setKeepContextInBackground:
+- convertPoint:toView:
+- didAddSubview:
+- _didRemoveSubview:
+- nonServiceHosted
+- matchDeviceOrientation
+- aboveStatusBar
+- setDefaultWindowLevel:
+- defaultWindowLevel
+- _applicationDidFinishLaunching:
+- hostedWindowOffset
+- _adjustPointForHostedDisplay:hasTarget:inset:
+- delayHideWindow
+- sortSubviews
+- updateForOrientation:
+- updateForOrientation:forceResetTransform:
+- contextID
+- _setWindowLevel:
+- _restoreWindowLevel
+- hostedFrame
+- classicWindowPointForPoint:
+- magnifierScreenPointForPoint:targetWindow:
+- resetTransform
+- updateSubviewOrdering
+- setNonServiceHosted:
+- setHostedWindowOffset:
+@end

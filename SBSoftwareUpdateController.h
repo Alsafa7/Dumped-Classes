@@ -1,0 +1,103 @@
+@interface SBSoftwareUpdateController : NSObject
+{
+	id _client;
+	id _updateToInstall;
+	int _currentNetworkType;
+	int _iCloudRestoreToken;
+	BOOL _showOrScheduleForcedInstallAlertAfterNextUnlock;
+	BOOL _scheduleForcedInstallAlertAfterNextUnlock;
+	BOOL _scheduleForcedInstallAlertWhenAble;
+	BOOL _settingsResetPrefsBadgedFlag;
+}
+
++ _prepareMigrationForSettingsReset
++ _completeMigrationForSettingsReset
++ _lockStateChanged:
++ _iCloudStatusChanged
++ _migrateForNewOSVersionIfNecessary
++ _registerForInstallRelatedNotifications
++ _setUpdateToInstall:
++ _forceInstallAfterDownload
++ _showOrScheduleNextForcedInstallAlert
++ _unregisterForInstallRelatedNotifications
++ _resetAndCancelExistingScheduledForcedInstallAlerts
++ _handleInstallError:
++ _scheduleForcedInstallRepeatAlert:
++ _isSettingsBadgedForSoftwareUpdate
++ _savePreferencesBadgeFlag:
++ _stringForCurrentVersionPreference
++ _saveLastKnownVersionPreference:
++ delayForcedInstallUntilAble
++ _autoDownloadUnknownToUserFailedForDescriptor:error:
++ _postDownloadStateChangeNotification:
++ _showOrScheduleNextForcedInstallAlertWithReasons:
++ _toggleSettingsBadge:
++ _isUpdateInstallable:
++ _callCountChanged:
++ _syncWillStart:
++ _syncDidEnd:
++ _iTunesRestoreStateChanged:
++ _showForcedInstallAlert
++ _clearLegacyBadgeIfNecessary:
++ installUpdate
++ delayForcedInstallWithDefaultDurationFromNow
++ delayForcedInstallWithDefaultDurationAfterNextUnlock
++ _isSettingsActive
++ _resetState
++ dealloc
++ init
++ isDownloading:
++ client:automaticDownloadDidFailToStartForNewUpdateAvailable:withError:
++ client:downloadDidStart:
++ client:downloadDidFail:withError:
++ client:downloadDidFinish:
++ client:downloadWasInvalidatedForNewUpdateAvailable:
++ client:installDidStart:
++ client:installDidFail:withError:
++ client:installDidFinish:
+- _prepareMigrationForSettingsReset
+- _completeMigrationForSettingsReset
+- _lockStateChanged:
+- _iCloudStatusChanged
+- _migrateForNewOSVersionIfNecessary
+- _registerForInstallRelatedNotifications
+- _setUpdateToInstall:
+- _forceInstallAfterDownload
+- _showOrScheduleNextForcedInstallAlert
+- _unregisterForInstallRelatedNotifications
+- _resetAndCancelExistingScheduledForcedInstallAlerts
+- _handleInstallError:
+- _scheduleForcedInstallRepeatAlert:
+- _isSettingsBadgedForSoftwareUpdate
+- _savePreferencesBadgeFlag:
+- _stringForCurrentVersionPreference
+- _saveLastKnownVersionPreference:
+- delayForcedInstallUntilAble
+- _autoDownloadUnknownToUserFailedForDescriptor:error:
+- _postDownloadStateChangeNotification:
+- _showOrScheduleNextForcedInstallAlertWithReasons:
+- _toggleSettingsBadge:
+- _isUpdateInstallable:
+- _callCountChanged:
+- _syncWillStart:
+- _syncDidEnd:
+- _iTunesRestoreStateChanged:
+- _showForcedInstallAlert
+- _clearLegacyBadgeIfNecessary:
+- installUpdate
+- delayForcedInstallWithDefaultDurationFromNow
+- delayForcedInstallWithDefaultDurationAfterNextUnlock
+- _isSettingsActive
+- _resetState
+- dealloc
+- init
+- isDownloading:
+- client:automaticDownloadDidFailToStartForNewUpdateAvailable:withError:
+- client:downloadDidStart:
+- client:downloadDidFail:withError:
+- client:downloadDidFinish:
+- client:downloadWasInvalidatedForNewUpdateAvailable:
+- client:installDidStart:
+- client:installDidFail:withError:
+- client:installDidFinish:
+@end

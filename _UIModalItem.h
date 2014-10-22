@@ -1,0 +1,253 @@
+@interface _UIModalItem : NSObject
+{
+	id _title;
+	id _message;
+	id _cancelButtonTitle;
+	id _defaultButtonTitle;
+	id _titleAttributedString;
+	id _messageAttributedString;
+	id _subtitleString;
+	long long _titleMaxLineNumber;
+	long long _messageMaxLineNumber;
+	long long _numberOfButtonsRows;
+	BOOL _useUndoStyle;
+	BOOL _useWifiPickerLayout;
+	BOOL _textFieldsHidden;
+	BOOL _dontUpdateFrameForKBChanges;
+	id _otherButtonsTitles;
+	long long _itemType;
+	id _delegate;
+	id _completionBlock;
+	long long _modalItemInputStyle;
+	id _popoverTargetView;
+	struct _popoverTargetRect;
+	id _contentViewController;
+	struct _contentViewControllerSize;
+	long long _presentAnimationType;
+	long long _dismissAnimationType;
+	BOOL _isPresented;
+	BOOL _isVisible;
+	BOOL _isBeingDismissed;
+	BOOL _isHidden;
+	id _viewController;
+	id _hostingViewController;
+	id _anchorViewController;
+	long long _defaultButtonIndex;
+	long long _cancelButtonIndex;
+	id _contentView;
+	id _backgroundView;
+	id _representedView;
+	id _loginString;
+	id _passwordString;
+	id _loginPlaceholderString;
+	id _passwordPlaceholderString;
+	id _passwordTraits;
+	id _loginTraits;
+	BOOL _enableFirstOtherButton;
+	BOOL _forceVerticalLayout;
+	long long _dismissIndex;
+	long long cancelButtonIndex;
+	id _buttonTitles;
+}
+
++ dealloc
++ setDelegate:
++ isHidden
++ _contentView
++ setTitle:
++ delegate
++ _backgroundView
++ cancelButtonIndex
++ addButtonWithTitle:
++ setCancelButtonIndex:
++ setType:
++ type
++ contentView
++ setContentView:
++ title
++ setBackgroundView:
++ backgroundView
++ subtitleString
++ message
++ modalItemInputStyle
++ _cancelButtonTitle
++ _otherButtonsTitles
++ contentViewController
++ defaultButtonIndex
++ textFieldAtIndex:
++ _passwordTraits
++ passwordPlaceholderString
++ _maxWidth
++ _maxHeight
++ _passwordFieldTextDidChange
++ _loginFieldTextDidChange
++ enableFirstOtherButton
++ setEnableFirstOtherButton:
++ titleAttributedString
++ numberOfButtonsRows
++ forceVerticalLayout
++ useUndoStyle
++ useWifiPickerLayout
++ titleMaxLineNumber
++ messageMaxLineNumber
++ contentViewControllerSize
++ textFieldsHidden
++ setDontUpdateFrameForKBChanges:
++ _viewController
++ viewController
++ isBeingDismissed
++ dontUpdateFrameForKBChanges
++ _representedView
++ _setRepresentedView:
++ presentAnimationType
++ setIsHidden:
++ setMessage:
++ setDefaultButtonIndex:
++ initWithTitle:message:otherButtonTitles:completion:delegate:
++ _updateContentView
++ setPasswordString:
++ setLoginString:
++ buttonTitleAtIndex
++ _popoverBackgroundView
++ _setViewController:
++ _hostingViewController
++ _setHostingViewController:
++ _anchorViewController
++ _setAnchorViewController:
++ _typeKey
++ _defaultButtonTitle
++ setSubtitleString:
++ refreshButtonTitle
++ setTextFieldsHidden:
++ _loginTraits
++ setModalItemInputStyle:
++ isPresented
++ setIsBeingDismissed:
++ dismissIndex
++ setDismissIndex:
++ targetView
++ setTargetView:
++ targetRect
++ setTargetRect:
++ setPresentAnimationType:
++ dismissAnimationType
++ setDismissAnimationType:
++ loginString
++ passwordString
++ loginPlaceholderString
++ setLoginPlaceholderString:
++ setPasswordPlaceholderString:
++ setContentViewControllerSize:
++ setTitleAttributedString:
++ messageAttributedString
++ setMessageAttributedString:
++ setTitleMaxLineNumber:
++ setMessageMaxLineNumber:
++ setNumberOfButtonsRows:
++ setUseUndoStyle:
++ setUseWifiPickerLayout:
++ setContentViewController:
++ buttonTitles
++ setButtonTitles:
++ setForceVerticalLayout:
+- dealloc
+- setDelegate:
+- isHidden
+- _contentView
+- setTitle:
+- delegate
+- _backgroundView
+- cancelButtonIndex
+- addButtonWithTitle:
+- setCancelButtonIndex:
+- setType:
+- type
+- contentView
+- setContentView:
+- title
+- setBackgroundView:
+- backgroundView
+- subtitleString
+- message
+- modalItemInputStyle
+- _cancelButtonTitle
+- _otherButtonsTitles
+- contentViewController
+- defaultButtonIndex
+- textFieldAtIndex:
+- _passwordTraits
+- passwordPlaceholderString
+- _maxWidth
+- _maxHeight
+- _passwordFieldTextDidChange
+- _loginFieldTextDidChange
+- enableFirstOtherButton
+- setEnableFirstOtherButton:
+- titleAttributedString
+- numberOfButtonsRows
+- forceVerticalLayout
+- useUndoStyle
+- useWifiPickerLayout
+- titleMaxLineNumber
+- messageMaxLineNumber
+- contentViewControllerSize
+- textFieldsHidden
+- setDontUpdateFrameForKBChanges:
+- _viewController
+- viewController
+- isBeingDismissed
+- dontUpdateFrameForKBChanges
+- _representedView
+- _setRepresentedView:
+- presentAnimationType
+- setIsHidden:
+- setMessage:
+- setDefaultButtonIndex:
+- initWithTitle:message:otherButtonTitles:completion:delegate:
+- _updateContentView
+- setPasswordString:
+- setLoginString:
+- buttonTitleAtIndex
+- _popoverBackgroundView
+- _setViewController:
+- _hostingViewController
+- _setHostingViewController:
+- _anchorViewController
+- _setAnchorViewController:
+- _typeKey
+- _defaultButtonTitle
+- setSubtitleString:
+- refreshButtonTitle
+- setTextFieldsHidden:
+- _loginTraits
+- setModalItemInputStyle:
+- isPresented
+- setIsBeingDismissed:
+- dismissIndex
+- setDismissIndex:
+- targetView
+- setTargetView:
+- targetRect
+- setTargetRect:
+- setPresentAnimationType:
+- dismissAnimationType
+- setDismissAnimationType:
+- loginString
+- passwordString
+- loginPlaceholderString
+- setLoginPlaceholderString:
+- setPasswordPlaceholderString:
+- setContentViewControllerSize:
+- setTitleAttributedString:
+- messageAttributedString
+- setMessageAttributedString:
+- setTitleMaxLineNumber:
+- setMessageMaxLineNumber:
+- setNumberOfButtonsRows:
+- setUseUndoStyle:
+- setUseWifiPickerLayout:
+- setContentViewController:
+- buttonTitles
+- setButtonTitles:
+- setForceVerticalLayout:
+@end

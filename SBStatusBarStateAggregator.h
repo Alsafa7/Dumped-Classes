@@ -1,0 +1,139 @@
+@interface SBStatusBarStateAggregator : NSObject
+{
+	usigned long long _coalescentBlockDepth;
+	BOOL _hasPostedOnce;
+	Array _itemPostState;
+	BOOL _nonItemDataChanged;
+	struct _data;
+	int _actions;
+	id _postObservers;
+	BOOL _notifyingPostObservers;
+	id _timeItemDateFormatter;
+	id _timeItemTimer;
+	id _timeItemTimeString;
+	id _operatorName;
+	id _serviceString;
+	id _serviceCrossfadeString;
+	id _countryCodesShowingEmergencyOnlyStatus;
+	BOOL _showsActivityIndicatorOnHomeScreen;
+	long long _activityIndicatorEverywhereCount;
+	BOOL _showsActivityIndicatorForNewsstand;
+	long long _syncActivityIndicatorCount;
+	id _activityDisplayIdentifier;
+	BOOL _showingNotChargingItem;
+	id _batteryDetailString;
+	BOOL _alarmEnabled;
+	BOOL _applyingAssistantStyle;
+}
+
++ forceUpdate
++ updateLocalIP
++ refreshMemory
++ beginCoalescentBlock
++ endCoalescentBlock
++ updateStatusBarItem:
++ setShowsActivityIndicatorOnHomeScreen:
++ setAlarmEnabled:
++ setShowsActivityIndicatorEverywhere:
++ setShowsSyncActivityIndicator:
++ _stopTimeItemTimer
++ _requestActions:
++ _resetTimeItemFormatter
++ _notifyItemChanged:
++ _updateTetheringState
++ _updateBatteryItems
++ _restartTimeItemTimer
++ _noteNotChargingStatusChanged
++ _noteAirplaneModeChanged
++ _setItem:enabled:
++ _displayStringForSIMStatus:
++ _sbCarrierNameForOperator:
++ _displayStringForRegistrationStatus:
++ _shouldShowEmergencyOnlyStatus
++ _simStatusMeansLocked:
++ _shouldShowNotChargingItem
++ _notifyNonItemDataChanged
++ _updateTimeItems
++ _updateQuietModeItem
++ _updateAirplaneMode
++ _updateSignalStrengthItem
++ _updateServiceItem
++ _updateDataNetworkItem
++ _updateBluetoothBatteryItem
++ _updateBluetoothItem
++ _updateTTYItem
++ _updateAlarmItem
++ _updateLocationItem
++ _updateRotationLockItem
++ _updateAirplayItem
++ _updateAssistantItem
++ _updateVPNItem
++ _updateCallForwardingItem
++ _updateActivityItem
++ _updateThermalColorItem
++ _postItem:withState:
++ _setShowingNotChargingItem
++ setShowsActivityIndicatorForNewsstand:
++ sendStatusBarActions:
++ addPostingObserver:
++ removePostingObserver:
++ _registerForNotifications
++ dealloc
++ init
++ operatorName
+- forceUpdate
+- updateLocalIP
+- refreshMemory
+- beginCoalescentBlock
+- endCoalescentBlock
+- updateStatusBarItem:
+- setShowsActivityIndicatorOnHomeScreen:
+- setAlarmEnabled:
+- setShowsActivityIndicatorEverywhere:
+- setShowsSyncActivityIndicator:
+- _stopTimeItemTimer
+- _requestActions:
+- _resetTimeItemFormatter
+- _notifyItemChanged:
+- _updateTetheringState
+- _updateBatteryItems
+- _restartTimeItemTimer
+- _noteNotChargingStatusChanged
+- _noteAirplaneModeChanged
+- _setItem:enabled:
+- _displayStringForSIMStatus:
+- _sbCarrierNameForOperator:
+- _displayStringForRegistrationStatus:
+- _shouldShowEmergencyOnlyStatus
+- _simStatusMeansLocked:
+- _shouldShowNotChargingItem
+- _notifyNonItemDataChanged
+- _updateTimeItems
+- _updateQuietModeItem
+- _updateAirplaneMode
+- _updateSignalStrengthItem
+- _updateServiceItem
+- _updateDataNetworkItem
+- _updateBluetoothBatteryItem
+- _updateBluetoothItem
+- _updateTTYItem
+- _updateAlarmItem
+- _updateLocationItem
+- _updateRotationLockItem
+- _updateAirplayItem
+- _updateAssistantItem
+- _updateVPNItem
+- _updateCallForwardingItem
+- _updateActivityItem
+- _updateThermalColorItem
+- _postItem:withState:
+- _setShowingNotChargingItem
+- setShowsActivityIndicatorForNewsstand:
+- sendStatusBarActions:
+- addPostingObserver:
+- removePostingObserver:
+- _registerForNotifications
+- dealloc
+- init
+- operatorName
+@end

@@ -1,0 +1,466 @@
+@interface IMChat : NSObject
+{
+	id _guid;
+	id _typingGUID;
+	id _currentQuery;
+	id _identifier;
+	id _account;
+	id _displayName;
+	id _roomName;
+	id _roomNameWithoutSuffix;
+	id _dateCreated;
+	id _dateModified;
+	id _chatItems;
+	id _unfinishedChatItemMap;
+	id _participants;
+	id _participantStates;
+	id _typingIndicatorTimer;
+	id _invitationForPendingParticipants;
+	id _messagesPendingJoin;
+	id _guids;
+	id _chatItemsChanged;
+	id _messageMap;
+	id _chatProperties;
+	id _participantProperties;
+	id _timingCollection;
+	long long _joinState;
+	unsigned char _style;
+	usigned long long _numberOfMessagesToKeepLoaded;
+	usigned long long _chatItemChangeCount;
+	usigned long long _cachedUnreadCount;
+	id _cachedReadMessages;
+	usigned long long _cachedFailureCount;
+	usigned long long _dbFailedCount;
+	usigned long long _dbUnreadCount;
+	pointer _context;
+	bit[1] _hasBeenConfigured;
+	bit[1] _isRefreshing;
+	bit[1] _isFirstMessageInvitation;
+	bit[1] _wasInvitationHandled;
+	bit[1] _didSendAFinishedMessage;
+	bit[1] _shouldPostIndividualItemChanges;
+	bit[1] _shouldPostWillChangeNotification;
+	bit[1] _shouldPostJoinStatusChangeNotifications;
+	bit[1] _didPostWillChangeNotification;
+	bit[1] _hasPendingMarkRead;
+}
+
++ __ck_placeholderDate
++ __ck_clearDowngradeMarkers
++ __ck_previousAccountForService:
++ __ck_setPreviousAccount:forService:
++ __ck_setAndIncrementDowngradeMarkersForManual:
++ __ck_accountIsOperational:forService:
++ __ck_hasDowngradeMarkers
++ __ck_hasValidAccountForService:
++ _setSearchResultChatItems:
++ _insertLegacyHistory:
++ _beginLegacyHistoryLoading
++ _endLegacyHistoryLoading
++ _updateTypingIndicatorTimeout
++ _clearIncomingTypingIndicators
++ _clearTypingIndicatorTimeout
++ _setTypingIndicatorTimeout
++ _typingIndicatorTimedOut:
++ sendDowngradeNotificationTo:
++ _handleIncomingCommand:
++ _handleDeliveredCommand:
++ setNumberOfMessagesToKeepLoaded:
++ loadMessagesBeforeDate:limit:loadImmediately:
++ _trimMessagesAsNeeded
++ numberOfMessagesToKeepLoaded
++ _trimMessagesLeavingNumber:
++ loadMessagesUpToGUID:date:limit:loadImmediately:
++ _buildLoadQueryForSynchronize
++ loadMessagesUpToGUID:limit:
++ loadMessagesBeforeDate:limit:
++ _copyChat
++ _privateInitWithAccount:style:roomName:chatItems:participants:
++ participants
++ dealloc
++ init
++ description
++ displayName
++ clear
++ markAllMessagesAsRead
++ lastFinishedMessage
++ unreadMessageCount
++ lastMessage
++ markMessageAsRead:
++ updateMessage:
++ messageCount
++ messageForGUID:
++ chatItems
++ setValue:forChatProperty:
++ valueForChatProperty:
++ chatStyle
++ leave
++ deleteAllHistory
++ chatItemForMessage:
++ deleteChatItems:
++ deleteChatItem:
++ localUserIsTyping
++ localTypingMessageGUID
++ setLocalUserIsTyping:
++ _setAccount:
++ _hasCommunicatedOnService:
++ setContextInfo:
++ contextInfo
++ sendMessage:
++ cancelMessage:
++ _updateFailedCount
++ _accountLoggedOut:
++ _daemonDied:
++ _daemonAlive:
++ _accountControllerUpdated:
++ canHaveMultipleParticipants
++ _watchHandleStatusChangedForHandle:
++ chatIdentifier
++ _buildInitialChatItems:
++ _updateUnreadCount
++ _initialize
++ _initWithGUID:account:style:roomName:displayName:chatItems:participants:
++ _postNotification:userInfo:
++ messageFailureCount
++ _recalculateCachedUnreadCount
++ _recalculateCachedFailedCount
++ _postWillChangeIfNecessary
++ _beginChatItemChanges
++ _unmapChatItem:
++ processChatItem:
++ _dateStampForChatItem:atIndex:
++ _postChatItem:atIndex:
++ _timeStampForChatItem:atIndex:
++ _mapChatItem:
++ _endChatItemChanges
++ shouldInsertChatItem:atIndex:
++ _replaceChatItem:withChatItem:
++ _removeChatItem:andTimestamp:
++ _replaceChatItem:andTimestamp:withChatItem:
++ _newHeaderChatItemWithDate:account:
++ _shouldDisplayInitialTypingIndicator
++ _newInitialTypingIndicatorChatItem
++ _appendChatItem:
++ _removeInitialTypingIndicator
++ _fixLastStatusMessageIfNecessary
++ _insertHistoricalChatItems:queryID:isRefresh:isHistoryQuery:limit:
++ _checkMessageOrderingWithItems:
++ _fixMessageOrderingWithItems:
++ canDeleteChatItem:
++ _cleanupTimestamps
++ roomName
++ _buildChatItemForDisconnectOrLogout
++ stateForParticipant:
++ _buildChatItemForParticipantState:handle:
++ _chatItemForGUID:
++ _isDuplicate:
++ _setJoinState:quietly:
++ _sendMessage:adjustingSender:
++ _setParticipantState:forHandle:quietly:
++ _buildChatItemForErrorMessage:
++ _buildChatItemForOverallChatStatusFrom:to:
++ _clearCachedIdentifier
++ _setDisplayName:
++ joinState
++ _setJoinState:
++ _updateHeaderChatItem
++ _setLocalUserIsTyping:suppliedGUID:
++ canSendTransfer:
++ __clearReadMessageCache
++ _cacheReadMessageGUID:
++ _setTimerForReadMessageCache
++ _handleIncomingMessage:
++ _markMessagesAsRead:
++ _messageChatItems
++ _clearUnreadCount
++ allPropertiesOfParticipant:
++ _setAccount:locally:
++ setRecipient:locally:
++ _addParticipant:
++ _remapHandle:toHandle:
++ _buildChatItemForNewRecipient:oldRecipient:date:atIndex:
++ _unwatchHandleStatusChangedForHandle:
++ canAddParticipant:
++ participantsWithState:
++ _pendingParticipants
++ invitationForPendingParticipants
++ _inviteParticipants:reason:
++ setInvitationForPendingParticipants:
++ _sanityCheckAccounts
++ _isRefreshing
++ _setIsRefreshing:
++ _shouldPostIndividualItemChanges
++ _setShouldPostIndividualItemChanges:
++ _shouldPostWillChangeNotification
++ _setShouldPostWillChangeNotification:
++ _shouldPostJoinStatusChangeNotifications
++ _setShouldPostJoinStatusChangeNotifications:
++ _setupObservation
++ _shouldRegisterChat
++ _setDBUnreadCount:
++ _setDBFailedCount:
++ _IMUnfinishedMapSenderGUIDToRemove:requireFinished:
++ _shouldAnnouncePeopleJoin
++ _insertChatItem:atIndex:
++ _removeChatItem:
++ _buildChatItemForDecidingHandleWentOffline:
++ _fixHeader
++ _fixLastReceipientMessage
++ _insertHistoricalChatItems:queryID:isRefresh:isHistoryQuery:
++ _doesChatItemContainTimestamp:
++ shouldAppendTimestampAfterChatItem:andBeforeChatItem:
++ shouldAppendDatestampAfterChatItem:andBeforeChatItem:
++ rowIDOfMostRecentFailedMessage
++ lastIncomingMessage
++ lastIncomingFinishedMessage
++ deleteMessageParts:forMessage:
++ mark
++ _recomputeOverallChatStatusQuietly:
++ _handleHandleStatusChanged:
++ _timingCollection
++ _startTiming:
++ _endTiming
++ _handleMessageGUIDDeletions:
++ _participant:statusChanged:
++ _showErrorMessage:
++ overallChatStatus
++ setRoomName:
++ roomNameWithoutSuffix
++ hasUnhandledInvitation
++ acceptInvitation
++ declineInvitation
++ canSendMessage:
++ updateMessage:flags:
++ markMessagesAsRead:
++ _lastMessageChatItem
++ _setChatProperties:
++ allChatProperties
++ valueForProperty:ofParticipant:
++ setValue:forProperty:ofParticipant:
++ canAddParticipants:
++ _invitePendingParticipants
++ inviteParticipants:reason:
++ removeParticipants:reason:
++ addPendingParticipants:
++ _initWithDictionaryRepresentation:initialItems:participantsHint:accountHint:
++ _guids
++ _setGUIDs:
++ dateModified
++ guid
++ account
++ persistentID
++ setDisplayName:
++ join
++ dateCreated
++ recipient
++ setRecipient:
+- __ck_placeholderDate
+- __ck_clearDowngradeMarkers
+- __ck_previousAccountForService:
+- __ck_setPreviousAccount:forService:
+- __ck_setAndIncrementDowngradeMarkersForManual:
+- __ck_accountIsOperational:forService:
+- __ck_hasDowngradeMarkers
+- __ck_hasValidAccountForService:
+- _setSearchResultChatItems:
+- _insertLegacyHistory:
+- _beginLegacyHistoryLoading
+- _endLegacyHistoryLoading
+- _updateTypingIndicatorTimeout
+- _clearIncomingTypingIndicators
+- _clearTypingIndicatorTimeout
+- _setTypingIndicatorTimeout
+- _typingIndicatorTimedOut:
+- sendDowngradeNotificationTo:
+- _handleIncomingCommand:
+- _handleDeliveredCommand:
+- setNumberOfMessagesToKeepLoaded:
+- loadMessagesBeforeDate:limit:loadImmediately:
+- _trimMessagesAsNeeded
+- numberOfMessagesToKeepLoaded
+- _trimMessagesLeavingNumber:
+- loadMessagesUpToGUID:date:limit:loadImmediately:
+- _buildLoadQueryForSynchronize
+- loadMessagesUpToGUID:limit:
+- loadMessagesBeforeDate:limit:
+- _copyChat
+- _privateInitWithAccount:style:roomName:chatItems:participants:
+- participants
+- dealloc
+- init
+- description
+- displayName
+- clear
+- markAllMessagesAsRead
+- lastFinishedMessage
+- unreadMessageCount
+- lastMessage
+- markMessageAsRead:
+- updateMessage:
+- messageCount
+- messageForGUID:
+- chatItems
+- setValue:forChatProperty:
+- valueForChatProperty:
+- chatStyle
+- leave
+- deleteAllHistory
+- chatItemForMessage:
+- deleteChatItems:
+- deleteChatItem:
+- localUserIsTyping
+- localTypingMessageGUID
+- setLocalUserIsTyping:
+- _setAccount:
+- _hasCommunicatedOnService:
+- setContextInfo:
+- contextInfo
+- sendMessage:
+- cancelMessage:
+- _updateFailedCount
+- _accountLoggedOut:
+- _daemonDied:
+- _daemonAlive:
+- _accountControllerUpdated:
+- canHaveMultipleParticipants
+- _watchHandleStatusChangedForHandle:
+- chatIdentifier
+- _buildInitialChatItems:
+- _updateUnreadCount
+- _initialize
+- _initWithGUID:account:style:roomName:displayName:chatItems:participants:
+- _postNotification:userInfo:
+- messageFailureCount
+- _recalculateCachedUnreadCount
+- _recalculateCachedFailedCount
+- _postWillChangeIfNecessary
+- _beginChatItemChanges
+- _unmapChatItem:
+- processChatItem:
+- _dateStampForChatItem:atIndex:
+- _postChatItem:atIndex:
+- _timeStampForChatItem:atIndex:
+- _mapChatItem:
+- _endChatItemChanges
+- shouldInsertChatItem:atIndex:
+- _replaceChatItem:withChatItem:
+- _removeChatItem:andTimestamp:
+- _replaceChatItem:andTimestamp:withChatItem:
+- _newHeaderChatItemWithDate:account:
+- _shouldDisplayInitialTypingIndicator
+- _newInitialTypingIndicatorChatItem
+- _appendChatItem:
+- _removeInitialTypingIndicator
+- _fixLastStatusMessageIfNecessary
+- _insertHistoricalChatItems:queryID:isRefresh:isHistoryQuery:limit:
+- _checkMessageOrderingWithItems:
+- _fixMessageOrderingWithItems:
+- canDeleteChatItem:
+- _cleanupTimestamps
+- roomName
+- _buildChatItemForDisconnectOrLogout
+- stateForParticipant:
+- _buildChatItemForParticipantState:handle:
+- _chatItemForGUID:
+- _isDuplicate:
+- _setJoinState:quietly:
+- _sendMessage:adjustingSender:
+- _setParticipantState:forHandle:quietly:
+- _buildChatItemForErrorMessage:
+- _buildChatItemForOverallChatStatusFrom:to:
+- _clearCachedIdentifier
+- _setDisplayName:
+- joinState
+- _setJoinState:
+- _updateHeaderChatItem
+- _setLocalUserIsTyping:suppliedGUID:
+- canSendTransfer:
+- __clearReadMessageCache
+- _cacheReadMessageGUID:
+- _setTimerForReadMessageCache
+- _handleIncomingMessage:
+- _markMessagesAsRead:
+- _messageChatItems
+- _clearUnreadCount
+- allPropertiesOfParticipant:
+- _setAccount:locally:
+- setRecipient:locally:
+- _addParticipant:
+- _remapHandle:toHandle:
+- _buildChatItemForNewRecipient:oldRecipient:date:atIndex:
+- _unwatchHandleStatusChangedForHandle:
+- canAddParticipant:
+- participantsWithState:
+- _pendingParticipants
+- invitationForPendingParticipants
+- _inviteParticipants:reason:
+- setInvitationForPendingParticipants:
+- _sanityCheckAccounts
+- _isRefreshing
+- _setIsRefreshing:
+- _shouldPostIndividualItemChanges
+- _setShouldPostIndividualItemChanges:
+- _shouldPostWillChangeNotification
+- _setShouldPostWillChangeNotification:
+- _shouldPostJoinStatusChangeNotifications
+- _setShouldPostJoinStatusChangeNotifications:
+- _setupObservation
+- _shouldRegisterChat
+- _setDBUnreadCount:
+- _setDBFailedCount:
+- _IMUnfinishedMapSenderGUIDToRemove:requireFinished:
+- _shouldAnnouncePeopleJoin
+- _insertChatItem:atIndex:
+- _removeChatItem:
+- _buildChatItemForDecidingHandleWentOffline:
+- _fixHeader
+- _fixLastReceipientMessage
+- _insertHistoricalChatItems:queryID:isRefresh:isHistoryQuery:
+- _doesChatItemContainTimestamp:
+- shouldAppendTimestampAfterChatItem:andBeforeChatItem:
+- shouldAppendDatestampAfterChatItem:andBeforeChatItem:
+- rowIDOfMostRecentFailedMessage
+- lastIncomingMessage
+- lastIncomingFinishedMessage
+- deleteMessageParts:forMessage:
+- mark
+- _recomputeOverallChatStatusQuietly:
+- _handleHandleStatusChanged:
+- _timingCollection
+- _startTiming:
+- _endTiming
+- _handleMessageGUIDDeletions:
+- _participant:statusChanged:
+- _showErrorMessage:
+- overallChatStatus
+- setRoomName:
+- roomNameWithoutSuffix
+- hasUnhandledInvitation
+- acceptInvitation
+- declineInvitation
+- canSendMessage:
+- updateMessage:flags:
+- markMessagesAsRead:
+- _lastMessageChatItem
+- _setChatProperties:
+- allChatProperties
+- valueForProperty:ofParticipant:
+- setValue:forProperty:ofParticipant:
+- canAddParticipants:
+- _invitePendingParticipants
+- inviteParticipants:reason:
+- removeParticipants:reason:
+- addPendingParticipants:
+- _initWithDictionaryRepresentation:initialItems:participantsHint:accountHint:
+- _guids
+- _setGUIDs:
+- dateModified
+- guid
+- account
+- persistentID
+- setDisplayName:
+- join
+- dateCreated
+- recipient
+- setRecipient:
+@end

@@ -1,0 +1,77 @@
+@interface MPUQueryDataSource : MPUDataSource
+{
+	id _entities;
+	BOOL _invalidateWhenEnteringForeground;
+	id _sectionInfo;
+	id _query;
+}
+
++ initWithEntityType:
++ _mediaLibraryDynamicPropertiesDidChangeNotification:
++ _applicationWillEnterForegroundNotification:
++ _mediaLibraryDisplayValuesDidChangeNotification:
++ _defaultMediaLibraryDidChangeNotification:
++ _mediaLibraryDidChangeNotification:
++ dealloc
++ initWithCoder:
++ encodeWithCoder:
++ count
++ query
++ isEmpty
++ numberOfSections
++ dataSourceFromEntityAtIndex:entityType:
++ indexOfSectionForSectionTitleAtIndex:
++ titleForGlobalHeader
++ _sectionInfo
++ _postInvalidationNotification
++ bestStoreURL
++ _isCloudEnabledDidChangeNotification:
++ _deleteHidesFromCloudForIndex:hidesAll:
++ localizedSectionIndexTitles
++ initWithQuery:entityType:
++ invalidateCalculatedEntities
++ editingTypeForEntityAtIndex:
++ showsEntityCountFooter
++ showsIndexBar
++ canEditEntityAtIndex:
++ deleteEntityAtIndex:
++ rangeOfSectionAtIndex:
++ canSelectEntityAtIndex:
++ localizedSectionTitleAtIndex:
++ .cxx_destruct
++ entities
+- initWithEntityType:
+- _mediaLibraryDynamicPropertiesDidChangeNotification:
+- _applicationWillEnterForegroundNotification:
+- _mediaLibraryDisplayValuesDidChangeNotification:
+- _defaultMediaLibraryDidChangeNotification:
+- _mediaLibraryDidChangeNotification:
+- dealloc
+- initWithCoder:
+- encodeWithCoder:
+- count
+- query
+- isEmpty
+- numberOfSections
+- dataSourceFromEntityAtIndex:entityType:
+- indexOfSectionForSectionTitleAtIndex:
+- titleForGlobalHeader
+- _sectionInfo
+- _postInvalidationNotification
+- bestStoreURL
+- _isCloudEnabledDidChangeNotification:
+- _deleteHidesFromCloudForIndex:hidesAll:
+- localizedSectionIndexTitles
+- initWithQuery:entityType:
+- invalidateCalculatedEntities
+- editingTypeForEntityAtIndex:
+- showsEntityCountFooter
+- showsIndexBar
+- canEditEntityAtIndex:
+- deleteEntityAtIndex:
+- rangeOfSectionAtIndex:
+- canSelectEntityAtIndex:
+- localizedSectionTitleAtIndex:
+- .cxx_destruct
+- entities
+@end

@@ -1,0 +1,127 @@
+@interface SUSegmentedControl : UIControl
+{
+	BOOL _autosizesText;
+	id _cancelButtonTitle;
+	id _clientInterface;
+	BOOL _hidingPopoverForRotation;
+	id _items;
+	long long _maximumNumberOfItems;
+	double _maximumWidth;
+	id _menuViewController;
+	id _moreListTitle;
+	id _popoverController;
+	id _segmentedControl;
+	long long _selectionIndex;
+	BOOL _showsMoreListAutomatically;
+	long long _tintStyle;
+}
+
++ initWithFrame:
++ dealloc
++ layoutSubviews
++ sizeThatFits:
++ tintColor
++ setTintColor:
++ setTitleTextAttributes:forState:
++ items
++ setItems:
++ setBackgroundImage:forState:barMetrics:
++ setMaximumWidth:
++ maximumWidth
++ setSegmentedControlStyle:
++ segmentedControlStyle
++ setTitle:forSegmentAtIndex:
++ setImage:forSegmentAtIndex:
++ selectedSegmentIndex
++ backgroundImageForState:barMetrics:
++ setDividerImage:forLeftSegmentState:rightSegmentState:barMetrics:
++ dividerImageForLeftSegmentState:rightSegmentState:barMetrics:
++ titleTextAttributesForState:
++ _reloadData
++ popoverControllerDidDismissPopover:
++ clientInterface
++ setCancelButtonTitle:
++ selectedItemIndex
++ setSelectedItemIndex:
++ maximumNumberOfItems
++ setClientInterface:
++ setMoreListTitle:
++ moreListTitle
++ tintStyle
++ setTintStyle:
++ sizeToFitUserInterfaceIdiom
++ menuViewController:didSelectItemAtIndex:
++ menuViewControllerDidCancel:
++ sizeToFitWithMinimumSegmentWidth:maximumTotalWidth:
++ _windowDidRotateNotification:
++ _windowWillRotateNotification:
++ cancelButtonTitle
++ showMoreList:animated:
++ showPopover:fromSegmentIndex:animated:
++ setMaximumNumberOfItems:
++ setShowsMoreListAutomatically:
++ showsMoreListAutomatically
++ _valueChangedEvent:
++ _applyStyling
++ _setValue:forSegmentAtIndex:
++ _showMoreList:
++ _destroyMenuViewController
++ _destroyPopoverController
++ numberOfVisibleSegments
++ _presentPopoverAnimated:
++ _titlesForMoreList
+- initWithFrame:
+- dealloc
+- layoutSubviews
+- sizeThatFits:
+- tintColor
+- setTintColor:
+- setTitleTextAttributes:forState:
+- items
+- setItems:
+- setBackgroundImage:forState:barMetrics:
+- setMaximumWidth:
+- maximumWidth
+- setSegmentedControlStyle:
+- segmentedControlStyle
+- setTitle:forSegmentAtIndex:
+- setImage:forSegmentAtIndex:
+- selectedSegmentIndex
+- backgroundImageForState:barMetrics:
+- setDividerImage:forLeftSegmentState:rightSegmentState:barMetrics:
+- dividerImageForLeftSegmentState:rightSegmentState:barMetrics:
+- titleTextAttributesForState:
+- _reloadData
+- popoverControllerDidDismissPopover:
+- clientInterface
+- setCancelButtonTitle:
+- selectedItemIndex
+- setSelectedItemIndex:
+- maximumNumberOfItems
+- setClientInterface:
+- setMoreListTitle:
+- moreListTitle
+- tintStyle
+- setTintStyle:
+- sizeToFitUserInterfaceIdiom
+- menuViewController:didSelectItemAtIndex:
+- menuViewControllerDidCancel:
+- sizeToFitWithMinimumSegmentWidth:maximumTotalWidth:
+- _windowDidRotateNotification:
+- _windowWillRotateNotification:
+- cancelButtonTitle
+- showMoreList:animated:
+- showPopover:fromSegmentIndex:animated:
+- setMaximumNumberOfItems:
+- setShowsMoreListAutomatically:
+- showsMoreListAutomatically
+- _valueChangedEvent:
+- _applyStyling
+- _setValue:forSegmentAtIndex:
+- _showMoreList:
+- _destroyMenuViewController
+- _destroyPopoverController
+- numberOfVisibleSegments
+- _presentPopoverAnimated:
+- _titlesForMoreList
+@end

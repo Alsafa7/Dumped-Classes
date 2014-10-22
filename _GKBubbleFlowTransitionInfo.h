@@ -1,0 +1,182 @@
+@interface _GKBubbleFlowTransitionInfo : NSObject
+{
+	id _toVC;
+	id _fromVC;
+	id _toWrapperVC;
+	id _fromWrapperVC;
+	id _containingViewController;
+	struct _toFlags;
+	struct _fromFlags;
+	id _fromBubbles;
+	id _toBubbles;
+	long long _toFocusBubbleType;
+	long long _fromFocusBubbleType;
+	long long _transitionType;
+	long long _transitionPhase;
+	double _startTime;
+	double _duration;
+	double _fadeOutDuration;
+	double _crossfadeDuration;
+	double _fadeInDuration;
+	double _relativeDuration;
+	double _relativeStartTime;
+	double _relativeFadeOutDuration;
+	double _relativeCrossfadeDuration;
+	double _relativeFadeInDuration;
+	id _toPathAnimator;
+	id _fromPathAnimator;
+	id _onlyPathAnimator;
+	id _toPathTransitionInfo;
+	id _fromPathTransitionInfo;
+	id _onlyPathTransitionInfo;
+	BOOL _fadedOutRealFromView;
+	BOOL _disableInteractionDuringTransition;
+}
+
++ toVC
++ toWrapperVC
++ fromVC
++ fromWrapperVC
++ containingViewController
++ transitionType
++ transitionPhase
++ crossfadeDuration
++ relativeFadeOutDuration
++ relativeCrossfadeDuration
++ relativeFadeInDuration
++ toPathAnimator
++ fromPathAnimator
++ onlyPathAnimator
++ recalculateDurationsAfterAdjustment
++ realFromVC
++ realToVC
++ hasNonFallbackPathAnimator
++ adjustDuration:
++ copyForPhase:
++ setToVC:
++ setFromVC:
++ setToWrapperVC:
++ setFromWrapperVC:
++ setContainingViewController:
++ toFlags
++ setToFlags:
++ fromFlags
++ setFromFlags:
++ fromBubbles
++ setFromBubbles:
++ toBubbles
++ setToBubbles:
++ toFocusBubbleType
++ setToFocusBubbleType:
++ fromFocusBubbleType
++ setFromFocusBubbleType:
++ setTransitionType:
++ setTransitionPhase:
++ setCrossfadeDuration:
++ relativeStartTime
++ setRelativeStartTime:
++ relativeDuration
++ setRelativeDuration:
++ setRelativeFadeOutDuration:
++ setRelativeCrossfadeDuration:
++ setRelativeFadeInDuration:
++ setToPathAnimator:
++ setFromPathAnimator:
++ setOnlyPathAnimator:
++ toPathTransitionInfo
++ setToPathTransitionInfo:
++ fromPathTransitionInfo
++ setFromPathTransitionInfo:
++ onlyPathTransitionInfo
++ setOnlyPathTransitionInfo:
++ fadedOutRealFromView
++ setFadedOutRealFromView:
++ disableInteractionDuringTransition
++ setDisableInteractionDuringTransition:
++ dealloc
++ init
++ description
++ duration
++ setDuration:
++ setStartTime:
++ copyWithZone:
++ animated
++ startTime
++ fadeOutDuration
++ setFadeInDuration:
++ setFadeOutDuration:
++ fadeInDuration
+- toVC
+- toWrapperVC
+- fromVC
+- fromWrapperVC
+- containingViewController
+- transitionType
+- transitionPhase
+- crossfadeDuration
+- relativeFadeOutDuration
+- relativeCrossfadeDuration
+- relativeFadeInDuration
+- toPathAnimator
+- fromPathAnimator
+- onlyPathAnimator
+- recalculateDurationsAfterAdjustment
+- realFromVC
+- realToVC
+- hasNonFallbackPathAnimator
+- adjustDuration:
+- copyForPhase:
+- setToVC:
+- setFromVC:
+- setToWrapperVC:
+- setFromWrapperVC:
+- setContainingViewController:
+- toFlags
+- setToFlags:
+- fromFlags
+- setFromFlags:
+- fromBubbles
+- setFromBubbles:
+- toBubbles
+- setToBubbles:
+- toFocusBubbleType
+- setToFocusBubbleType:
+- fromFocusBubbleType
+- setFromFocusBubbleType:
+- setTransitionType:
+- setTransitionPhase:
+- setCrossfadeDuration:
+- relativeStartTime
+- setRelativeStartTime:
+- relativeDuration
+- setRelativeDuration:
+- setRelativeFadeOutDuration:
+- setRelativeCrossfadeDuration:
+- setRelativeFadeInDuration:
+- setToPathAnimator:
+- setFromPathAnimator:
+- setOnlyPathAnimator:
+- toPathTransitionInfo
+- setToPathTransitionInfo:
+- fromPathTransitionInfo
+- setFromPathTransitionInfo:
+- onlyPathTransitionInfo
+- setOnlyPathTransitionInfo:
+- fadedOutRealFromView
+- setFadedOutRealFromView:
+- disableInteractionDuringTransition
+- setDisableInteractionDuringTransition:
+- dealloc
+- init
+- description
+- duration
+- setDuration:
+- setStartTime:
+- copyWithZone:
+- animated
+- startTime
+- fadeOutDuration
+- setFadeInDuration:
+- setFadeOutDuration:
+- fadeInDuration
+@end

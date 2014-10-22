@@ -1,0 +1,74 @@
+@interface MPCloudController : NSObject
+{
+	id _cloudClient;
+	id _cloudAvailabilityController;
+	BOOL _isUpdateInProgress;
+	int _preferencesChangedNotifyToken;
+	BOOL _preferencesChangedNotifyTokenIsValid;
+	BOOL _isInitialImport;
+	BOOL _isCloudEnabled;
+}
+
++ resignActive
++ isGeniusEnabled
++ isCellularDataRestricted
++ isCloudEnabled
++ setItemProperties:forSagaID:
++ hasPurchaseHistoryAccount
++ setItemProperties:forPurchaseHistoryID:
++ canShowCloudMusic
++ canShowCloudVideo
++ hasProperNetworkConditionsToPlayMedia
++ loadGeniusItemsForSagaID:completionHandler:
++ canShowCloudDownloadButtonsDidChangeNotification:
++ canShowCloudTracksDidChangeNotification:
++ isCellularDataRestrictedDidChangeNotification:
++ shouldProhibitActionsForCurrentNetworkConditions
++ canShowCloudDownloadButtons
++ addPlaylistWithName:completionHandler:
++ addGeniusPlaylistWithName:seedItemSagaIDs:itemSagaIDs:completionHandler:
++ becomeActive
++ _initializeUpdateInProgressState
++ incrementItemProperty:forSagaID:
++ loadUpdateProgressWithCompletionHandler:
++ removePlaylistWithSagaID:completionHandler:
++ canDefaultMediaLibraryShowCloudContent
++ hasCloudLockerAccount
++ isInitialImport
++ isUpdateInProgress
++ updatePlaylistWithSagaID:itemSagaIDs:completionHandler:
++ dealloc
++ init
++ .cxx_destruct
+- resignActive
+- isGeniusEnabled
+- isCellularDataRestricted
+- isCloudEnabled
+- setItemProperties:forSagaID:
+- hasPurchaseHistoryAccount
+- setItemProperties:forPurchaseHistoryID:
+- canShowCloudMusic
+- canShowCloudVideo
+- hasProperNetworkConditionsToPlayMedia
+- loadGeniusItemsForSagaID:completionHandler:
+- canShowCloudDownloadButtonsDidChangeNotification:
+- canShowCloudTracksDidChangeNotification:
+- isCellularDataRestrictedDidChangeNotification:
+- shouldProhibitActionsForCurrentNetworkConditions
+- canShowCloudDownloadButtons
+- addPlaylistWithName:completionHandler:
+- addGeniusPlaylistWithName:seedItemSagaIDs:itemSagaIDs:completionHandler:
+- becomeActive
+- _initializeUpdateInProgressState
+- incrementItemProperty:forSagaID:
+- loadUpdateProgressWithCompletionHandler:
+- removePlaylistWithSagaID:completionHandler:
+- canDefaultMediaLibraryShowCloudContent
+- hasCloudLockerAccount
+- isInitialImport
+- isUpdateInProgress
+- updatePlaylistWithSagaID:itemSagaIDs:completionHandler:
+- dealloc
+- init
+- .cxx_destruct
+@end

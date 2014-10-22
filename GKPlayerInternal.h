@@ -1,0 +1,155 @@
+@interface GKPlayerInternal : GKInternalRepresentation
+{
+	id _playerID;
+	id _alias;
+	id _photos;
+	unsigned short _numberOfFriends;
+	unsigned short _numberOfGames;
+	unsigned short _numberOfFriendsInCommon;
+	unsigned short _numberOfGamesInCommon;
+	unsigned int _numberOfAchievements;
+	unsigned int _numberOfAchievementPoints;
+	union _flags;
+	BOOL _isAnonymousPlayer;
+	BOOL _isUnknownPlayer;
+}
+
++ serverRepresentation
++ numberOfAchievements
++ numberOfChallenges
++ setNumberOfChallenges:
++ setPurpleBuddyAccount:
++ setFriends:
++ numberOfFriends
++ setNumberOfFriends:
++ numberOfFriendsInCommon
++ numberOfGames
++ numberOfGamesInCommon
++ numberOfAchievementPoints
++ numberOfRequests
++ numberOfTurns
++ setNumberOfAchievements:
++ setCompositeName:
++ setLastPlayedGame:
++ facebookUserID
++ setFacebookUserID:
++ iCloudUserID
++ setICloudUserID:
++ setUnderage:
++ isFindable
++ setFindable:
++ isPhotoPending
++ setPhotoPending:
++ allowNearbyMultiplayer
++ setAllowNearbyMultiplayer:
++ setNumberOfRequests:
++ setNumberOfTurns:
++ setNumberOfFriendsInCommon:
++ setNumberOfGames:
++ setNumberOfGamesInCommon:
++ setNumberOfAchievementPoints:
++ isAnonymousPlayer
++ isUnknownPlayer
++ setPlayerID:
++ playerID
++ displayNameWithOptions:
++ lastPlayedGame
++ isFriend
++ isLocalPlayer
++ alias
++ photos
++ isUnderage
++ setAlias:
++ isPurpleBuddyAccount
++ isAutomatchPlayer
++ friends
++ setPhotos:
++ lastPlayedDate
++ setLastPlayedDate:
++ dealloc
++ isEqual:
++ hash
++ isLoaded
++ status
++ setStatus:
++ setAccountName:
++ accountName
++ compositeName
++ flags
++ emailAddresses
++ setEmailAddresses:
++ setFlags:
++ firstName
++ lastName
++ setFirstName:
++ setLastName:
+- serverRepresentation
+- numberOfAchievements
+- numberOfChallenges
+- setNumberOfChallenges:
+- setPurpleBuddyAccount:
+- setFriends:
+- numberOfFriends
+- setNumberOfFriends:
+- numberOfFriendsInCommon
+- numberOfGames
+- numberOfGamesInCommon
+- numberOfAchievementPoints
+- numberOfRequests
+- numberOfTurns
+- setNumberOfAchievements:
+- setCompositeName:
+- setLastPlayedGame:
+- facebookUserID
+- setFacebookUserID:
+- iCloudUserID
+- setICloudUserID:
+- setUnderage:
+- isFindable
+- setFindable:
+- isPhotoPending
+- setPhotoPending:
+- allowNearbyMultiplayer
+- setAllowNearbyMultiplayer:
+- setNumberOfRequests:
+- setNumberOfTurns:
+- setNumberOfFriendsInCommon:
+- setNumberOfGames:
+- setNumberOfGamesInCommon:
+- setNumberOfAchievementPoints:
+- isAnonymousPlayer
+- isUnknownPlayer
+- setPlayerID:
+- playerID
+- displayNameWithOptions:
+- lastPlayedGame
+- isFriend
+- isLocalPlayer
+- alias
+- photos
+- isUnderage
+- setAlias:
+- isPurpleBuddyAccount
+- isAutomatchPlayer
+- friends
+- setPhotos:
+- lastPlayedDate
+- setLastPlayedDate:
+- dealloc
+- isEqual:
+- hash
+- isLoaded
+- status
+- setStatus:
+- setAccountName:
+- accountName
+- compositeName
+- flags
+- emailAddresses
+- setEmailAddresses:
+- setFlags:
+- firstName
+- lastName
+- setFirstName:
+- setLastName:
+@end

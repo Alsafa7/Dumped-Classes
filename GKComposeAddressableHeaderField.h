@@ -1,0 +1,68 @@
+@interface GKComposeAddressableHeaderField : GKComposeHeaderField
+{
+	id _textEntryField;
+	id _addContactButton;
+	id _addressListView;
+}
+
++ commitTextEntry
++ addContactButton
++ textDidChangeInEntryField:
++ didChangeAtomLayout
++ atomizeTextInRange:
++ selectComposeRecipient:
++ selectNextRecipient:
++ selectPreviousRecipient:
++ setAddContactButton:
++ addressListView
++ setAddressListView:
++ metricsForConstraints
++ viewsForConstraints
++ initWithFrame:
++ dealloc
++ resignFirstResponder
++ _handleKeyUIEvent:
++ becomeFirstResponder
++ canBecomeFirstResponder
++ isFirstResponder
++ keyboardInputShouldDelete:
++ textFieldDidEndEditing:
++ textFieldShouldReturn:
++ canResignFirstResponder
++ setTextEntryField:
++ textEntryField
++ addRecipients:
++ removeRecipients:
++ recipients
++ setRecipients:
+- commitTextEntry
+- addContactButton
+- textDidChangeInEntryField:
+- didChangeAtomLayout
+- atomizeTextInRange:
+- selectComposeRecipient:
+- selectNextRecipient:
+- selectPreviousRecipient:
+- setAddContactButton:
+- addressListView
+- setAddressListView:
+- metricsForConstraints
+- viewsForConstraints
+- initWithFrame:
+- dealloc
+- resignFirstResponder
+- _handleKeyUIEvent:
+- becomeFirstResponder
+- canBecomeFirstResponder
+- isFirstResponder
+- keyboardInputShouldDelete:
+- textFieldDidEndEditing:
+- textFieldShouldReturn:
+- canResignFirstResponder
+- setTextEntryField:
+- textEntryField
+- addRecipients:
+- removeRecipients:
+- recipients
+- setRecipients:
+@end

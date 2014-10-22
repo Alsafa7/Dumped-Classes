@@ -1,0 +1,79 @@
+@interface UIWindowController : NSObject
+{
+	id _transitionView;
+	id _window;
+	int _currentTransition;
+	id _target;
+	SEL _didEndSelector;
+	id _fromViewController;
+	id _toViewController;
+	struct _beginOriginForToView;
+	struct _endOriginForToView;
+	BOOL _presenting;
+	long long _toModalStyle;
+	BOOL _needsDidAppear;
+	BOOL _needsDidDisappear;
+	BOOL __interactiveTransition;
+	id _transitionController;
+	id _interactionController;
+}
+
++ dealloc
++ window
++ _interactionController
++ setWindow:
++ durationForTransition:
++ transitionViewDidStart:
++ transitionViewShouldUseViewControllerCallbacks
++ transitionViewDidComplete:fromView:toView:removeFromView:
++ transitionView:endOriginForToView:forTransition:defaultOrigin:
++ transitionView:beginOriginForToView:forTransition:defaultOrigin:
++ transitionView:endOriginForFromView:forTransition:defaultOrigin:
++ transitionView:startCustomTransitionWithDuration:
++ _transitionController
++ setPresenting:
++ _setTransitionController:
++ _setInteractionController:
++ transition:fromViewController:toViewController:target:didEndSelector:animation:
++ transitionView
++ _flipSize:
++ _transplantView:toSuperview:atIndex:
++ _originForViewController:orientation:actualStatusBarHeight:fullScreenLayout:inWindow:
++ _boundsForViewController:transition:orientation:fullScreenLayout:inWindow:
++ _setInteractiveTransition:
++ transitionViewDidCancel:fromView:toView:
++ _prepareKeyboardForTransition:fromView:
++ _isInteractiveTransition
++ _adjustOrigin:givenOtherOrigin:forTransition:
++ transition:fromViewController:toViewController:target:didEndSelector:
++ presenting
+- dealloc
+- window
+- _interactionController
+- setWindow:
+- durationForTransition:
+- transitionViewDidStart:
+- transitionViewShouldUseViewControllerCallbacks
+- transitionViewDidComplete:fromView:toView:removeFromView:
+- transitionView:endOriginForToView:forTransition:defaultOrigin:
+- transitionView:beginOriginForToView:forTransition:defaultOrigin:
+- transitionView:endOriginForFromView:forTransition:defaultOrigin:
+- transitionView:startCustomTransitionWithDuration:
+- _transitionController
+- setPresenting:
+- _setTransitionController:
+- _setInteractionController:
+- transition:fromViewController:toViewController:target:didEndSelector:animation:
+- transitionView
+- _flipSize:
+- _transplantView:toSuperview:atIndex:
+- _originForViewController:orientation:actualStatusBarHeight:fullScreenLayout:inWindow:
+- _boundsForViewController:transition:orientation:fullScreenLayout:inWindow:
+- _setInteractiveTransition:
+- transitionViewDidCancel:fromView:toView:
+- _prepareKeyboardForTransition:fromView:
+- _isInteractiveTransition
+- _adjustOrigin:givenOtherOrigin:forTransition:
+- transition:fromViewController:toViewController:target:didEndSelector:
+- presenting
+@end

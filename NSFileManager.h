@@ -1,0 +1,6 @@
+@interface NSFileManager : NSObject
+{
+
+}
+
+@end

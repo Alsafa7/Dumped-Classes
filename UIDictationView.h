@@ -1,0 +1,60 @@
+@interface UIDictationView : UIView
+{
+	id _background;
+	id _endpointButton;
+	id _endpointButtonLandscape;
+	id _waveTapEndpointButton;
+	int _state;
+	BOOL _keyboardInTransition;
+	BOOL _automaticAppearanceWasEnabled;
+	id _waveyView;
+	id _meterView;
+}
+
++ initWithFrame:
++ dealloc
++ layoutSubviews
++ show
++ setState:
++ contentOffset
++ keyboardDidShow:
++ visible
++ applicationWillResignActive
++ finishReturnToKeyboard
++ endpointButtonImageWithRect:pressed:
++ prepareForReturnToKeyboard
++ isShowing
++ returnToKeyboard
++ drawsOwnBackground
++ endpointButtonPressed
++ createEndpointButtonWithRect:action:
++ backgroundOffset
++ endpointButton
++ audioLevelForWaveyView:
++ currentScreenSize
++ applicationEnteredBackground
++ positionForShow
+- initWithFrame:
+- dealloc
+- layoutSubviews
+- show
+- setState:
+- contentOffset
+- keyboardDidShow:
+- visible
+- applicationWillResignActive
+- finishReturnToKeyboard
+- endpointButtonImageWithRect:pressed:
+- prepareForReturnToKeyboard
+- isShowing
+- returnToKeyboard
+- drawsOwnBackground
+- endpointButtonPressed
+- createEndpointButtonWithRect:action:
+- backgroundOffset
+- endpointButton
+- audioLevelForWaveyView:
+- currentScreenSize
+- applicationEnteredBackground
+- positionForShow
+@end

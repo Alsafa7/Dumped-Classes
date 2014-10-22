@@ -1,0 +1,83 @@
+@interface SUDownloadMetadata : NSObject
+{
+	BOOL _autoDownload;
+	BOOL _enabledFor2G;
+	BOOL _enabledFor3G;
+	BOOL _enabledFor4G;
+	BOOL _enabledForCellularRoaming;
+	BOOL _enabledForWifi;
+	BOOL _enabledOnBatteryPower;
+	BOOL _enforceWifiOnlyOverride;
+	int _activeDownloadPolicyType;
+	int _downloadFeeAgreementStatus;
+}
+
++ dealloc
++ initWithCoder:
++ encodeWithCoder:
++ init
++ isEqual:
++ hash
++ description
++ copyWithZone:
++ isEnabledForWifi
++ isEnabledFor2G
++ isEnabledFor3G
++ isEnabledFor4G
++ isEnabledOnBatteryPower
++ isEnabledForCellularRoaming
++ setActiveDownloadPolicyType:
++ setAutoDownload:
++ setEnabledFor2G:
++ setEnabledFor3G:
++ setEnabledFor4G:
++ setEnabledForWifi:
++ setEnabledOnBatteryPower:
++ setEnforceWifiOnlyOverride:
++ setDownloadFeeAgreementStatus:
++ setEnabledForCellularRoaming:
++ downloadFeeAgreementStatus
++ enforceWifiOnlyOverride
++ activeDownloadPolicy:
++ isAutoDownload
++ _stringForBool:
++ activeDownloadPolicyType
++ applyDownloadPolicy:
++ availableDownloadPolicyIfDifferentFromActive:
++ matchesDownloadPolicy:
++ isEnabledForNetworkType:
+- dealloc
+- initWithCoder:
+- encodeWithCoder:
+- init
+- isEqual:
+- hash
+- description
+- copyWithZone:
+- isEnabledForWifi
+- isEnabledFor2G
+- isEnabledFor3G
+- isEnabledFor4G
+- isEnabledOnBatteryPower
+- isEnabledForCellularRoaming
+- setActiveDownloadPolicyType:
+- setAutoDownload:
+- setEnabledFor2G:
+- setEnabledFor3G:
+- setEnabledFor4G:
+- setEnabledForWifi:
+- setEnabledOnBatteryPower:
+- setEnforceWifiOnlyOverride:
+- setDownloadFeeAgreementStatus:
+- setEnabledForCellularRoaming:
+- downloadFeeAgreementStatus
+- enforceWifiOnlyOverride
+- activeDownloadPolicy:
+- isAutoDownload
+- _stringForBool:
+- activeDownloadPolicyType
+- applyDownloadPolicy:
+- availableDownloadPolicyIfDifferentFromActive:
+- matchesDownloadPolicy:
+- isEnabledForNetworkType:
+@end

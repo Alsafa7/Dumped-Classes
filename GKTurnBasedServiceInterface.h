@@ -1,0 +1,6 @@
+@interface GKTurnBasedServiceInterface : GKServiceInterface
+{
+
+}
+
+@end

@@ -1,0 +1,6 @@
+@interface NSTruePredicate : NSPredicate
+{
+
+}
+
+@end

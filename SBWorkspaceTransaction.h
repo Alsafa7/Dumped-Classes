@@ -1,0 +1,146 @@
+@interface SBWorkspaceTransaction : NSObject
+{
+	BOOL _didCommit;
+	id _delegate;
+	int _milestones;
+	id _workspace;
+	id _alertManager;
+	BOOL _completed;
+	BOOL _interrupted;
+	id _startTime;
+	id _keepAliveReasons;
+}
+
++ alertManager
++ hasCompleted
++ canBeInterrupted
++ interruptWithReason:
++ _enableWatchdog
++ _watchdogInterval
++ _shouldBeWatchdogged:
++ applicationWillBecomeReceiver:fromApplication:
++ applicationDidBecomeReceiver:fromApplication:
++ workspaceWillSuspend
++ workspaceDidSuspend
++ workspaceWillResume
++ workspaceDidResume
++ applicationDidStartLaunching:withInfo:
++ applicationDidFinishLaunching:withInfo:
++ applicationActivated:
++ applicationLaunchDidFail:
++ alertWillActivate:overAlerts:
++ alertDidActivate:overAlerts:
++ alertWillDeactivate:
++ alertDidDeactivate:
++ removeMilestonesAndCheckForCompletion:
++ workspace
++ addMilestones:
++ _transactionComplete
++ selfApplicationDidBecomeReceiver:fromApplication:
++ initWithWorkspace:alertManager:
++ selfAlertWillActivate:overAlerts:
++ selfAlertDidActivate:overAlerts:
++ _stringForMilestones:
++ milestonesMet
++ _checkAndReportIfMilestonesMet
++ _canBeInterrupted
++ _stringForInterruptReason:
++ _interruptWithReason:
++ waitingForMilestone:
++ removeMilestones:
++ _notifyDelegateOfCompletion:
++ _checkAndRemoveMilestone:
++ _stringForMilestone:
++ _enumerateMilestones:usingBlock:
++ _hasKeepAliveReason:
++ _keepAliveForReason:
++ _endKeepAliveForReason:
++ selfWorkspaceWillSuspend
++ selfWorkspaceDidSuspend
++ selfWorkspaceWillResume
++ selfWorkspaceDidResume
++ selfApplicationWillBecomeReceiver:fromApplication:
++ selfApplicationDidStartLaunching:withInfo:
++ selfApplicationDidFinishLaunching:withInfo:
++ selfApplicationActivated:
++ selfApplicationLaunchDidFail:
++ selfApplicationExited:
++ selfAlertWillDeactivate:
++ selfAlertDidDeactivate:
++ _keepalive_async:
++ milestones
++ _commit
++ interrupt
++ dealloc
++ setDelegate:
++ description
++ delegate
++ applicationExited:
++ commit
+- alertManager
+- hasCompleted
+- canBeInterrupted
+- interruptWithReason:
+- _enableWatchdog
+- _watchdogInterval
+- _shouldBeWatchdogged:
+- applicationWillBecomeReceiver:fromApplication:
+- applicationDidBecomeReceiver:fromApplication:
+- workspaceWillSuspend
+- workspaceDidSuspend
+- workspaceWillResume
+- workspaceDidResume
+- applicationDidStartLaunching:withInfo:
+- applicationDidFinishLaunching:withInfo:
+- applicationActivated:
+- applicationLaunchDidFail:
+- alertWillActivate:overAlerts:
+- alertDidActivate:overAlerts:
+- alertWillDeactivate:
+- alertDidDeactivate:
+- removeMilestonesAndCheckForCompletion:
+- workspace
+- addMilestones:
+- _transactionComplete
+- selfApplicationDidBecomeReceiver:fromApplication:
+- initWithWorkspace:alertManager:
+- selfAlertWillActivate:overAlerts:
+- selfAlertDidActivate:overAlerts:
+- _stringForMilestones:
+- milestonesMet
+- _checkAndReportIfMilestonesMet
+- _canBeInterrupted
+- _stringForInterruptReason:
+- _interruptWithReason:
+- waitingForMilestone:
+- removeMilestones:
+- _notifyDelegateOfCompletion:
+- _checkAndRemoveMilestone:
+- _stringForMilestone:
+- _enumerateMilestones:usingBlock:
+- _hasKeepAliveReason:
+- _keepAliveForReason:
+- _endKeepAliveForReason:
+- selfWorkspaceWillSuspend
+- selfWorkspaceDidSuspend
+- selfWorkspaceWillResume
+- selfWorkspaceDidResume
+- selfApplicationWillBecomeReceiver:fromApplication:
+- selfApplicationDidStartLaunching:withInfo:
+- selfApplicationDidFinishLaunching:withInfo:
+- selfApplicationActivated:
+- selfApplicationLaunchDidFail:
+- selfApplicationExited:
+- selfAlertWillDeactivate:
+- selfAlertDidDeactivate:
+- _keepalive_async:
+- milestones
+- _commit
+- interrupt
+- dealloc
+- setDelegate:
+- description
+- delegate
+- applicationExited:
+- commit
+@end

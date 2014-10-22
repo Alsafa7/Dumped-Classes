@@ -1,0 +1,6 @@
+@interface VideosRentalCellConfiguration : VideosArtworkCellConfiguration
+{
+
+}
+
+@end

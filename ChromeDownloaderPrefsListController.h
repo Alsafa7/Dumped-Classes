@@ -1,0 +1,6 @@
+@interface ChromeDownloaderPrefsListController : PSListController
+{
+
+}
+
+@end

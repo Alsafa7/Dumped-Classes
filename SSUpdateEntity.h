@@ -1,0 +1,6 @@
+@interface SSUpdateEntity : SSSQLiteEntity
+{
+
+}
+
+@end

@@ -1,0 +1,138 @@
+@interface GEOActiveTileSet : PBCodable
+{
+	pointer _availableTiles;
+	usigned long long _availableTilesCount;
+	usigned long long _availableTilesSpace;
+	id _baseURL;
+	id _localizationURL;
+	id _multiTileURL;
+	int _scale;
+	id _sentinelTiles;
+	int _size;
+	int _style;
+	id _supportedLanguages;
+	unsigned int _timeToLiveSeconds;
+	unsigned int _version;
+	BOOL _multiTileURLUsesStatusCodes;
+	struct _has;
+}
+
++ isAvailableForTileKey:
++ bestLanguage
++ _resetBestLanguage
++ dataForGenericTileType:
++ minimumZoomLevelInRect:
++ maximumZoomLevelInRect:
++ largestZoomLevelLEQ:inRect:
++ dealloc
++ size
++ isEqual:
++ hash
++ description
++ setStyle:
++ scale
++ copyWithZone:
++ style
++ setSize:
++ setScale:
++ dictionaryRepresentation
++ baseURL
++ setVersion:
++ version
++ setBaseURL:
++ setMultiTileURL:
++ setLocalizationURL:
++ setSupportedLanguages:
++ addSupportedLanguage:
++ hasBaseURL
++ hasMultiTileURL
++ multiTileURL
++ hasLocalizationURL
++ localizationURL
++ supportedLanguagesCount
++ clearSupportedLanguages
++ supportedLanguageAtIndex:
++ hasMultiTileURLUsesStatusCodes
++ multiTileURLUsesStatusCodes
++ setMultiTileURLUsesStatusCodes:
++ setHasMultiTileURLUsesStatusCodes:
++ supportedLanguages
++ clearAvailableTiles
++ availableTilesCount
++ availableTilesAtIndex:
++ addAvailableTiles:
++ hasTimeToLiveSeconds
++ setTimeToLiveSeconds:
++ availableTiles
++ setAvailableTiles:count:
++ setHasTimeToLiveSeconds:
++ sentinelTiles
++ addSentinelTile:
++ setSentinelTiles:
++ sentinelTilesCount
++ clearSentinelTiles
++ sentinelTileAtIndex:
++ readFrom:
++ writeTo:
++ copyTo:
++ timeToLiveSeconds
+- isAvailableForTileKey:
+- bestLanguage
+- _resetBestLanguage
+- dataForGenericTileType:
+- minimumZoomLevelInRect:
+- maximumZoomLevelInRect:
+- largestZoomLevelLEQ:inRect:
+- dealloc
+- size
+- isEqual:
+- hash
+- description
+- setStyle:
+- scale
+- copyWithZone:
+- style
+- setSize:
+- setScale:
+- dictionaryRepresentation
+- baseURL
+- setVersion:
+- version
+- setBaseURL:
+- setMultiTileURL:
+- setLocalizationURL:
+- setSupportedLanguages:
+- addSupportedLanguage:
+- hasBaseURL
+- hasMultiTileURL
+- multiTileURL
+- hasLocalizationURL
+- localizationURL
+- supportedLanguagesCount
+- clearSupportedLanguages
+- supportedLanguageAtIndex:
+- hasMultiTileURLUsesStatusCodes
+- multiTileURLUsesStatusCodes
+- setMultiTileURLUsesStatusCodes:
+- setHasMultiTileURLUsesStatusCodes:
+- supportedLanguages
+- clearAvailableTiles
+- availableTilesCount
+- availableTilesAtIndex:
+- addAvailableTiles:
+- hasTimeToLiveSeconds
+- setTimeToLiveSeconds:
+- availableTiles
+- setAvailableTiles:count:
+- setHasTimeToLiveSeconds:
+- sentinelTiles
+- addSentinelTile:
+- setSentinelTiles:
+- sentinelTilesCount
+- clearSentinelTiles
+- sentinelTileAtIndex:
+- readFrom:
+- writeTo:
+- copyTo:
+- timeToLiveSeconds
+@end

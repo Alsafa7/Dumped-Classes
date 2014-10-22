@@ -1,0 +1,65 @@
+@interface GKBubbleFlowOverlayView : UIView
+{
+	id _gamesBubble;
+	id _friendsBubble;
+	id _requestsBubble;
+	id _challengesBubble;
+	id _turnsBubble;
+	id _bubbles;
+}
+
++ defaultRectForBubbleOfType:
++ orientationChanged:
++ _updateBubblesForOrientation:evenIfBubblesAreVisible:
++ anyVisibleBubbles
++ defaultPositionForBubbleOfType:
++ defaultSizeForBubbleOfType:
++ willBeginTransition
++ bubbleForType:
++ gamesBubble
++ setGamesBubble:
++ friendsBubble
++ setFriendsBubble:
++ requestsBubble
++ setRequestsBubble:
++ challengesBubble
++ setChallengesBubble:
++ turnsBubble
++ setTurnsBubble:
++ setBubbles:
++ initWithFrame:
++ dealloc
++ hitTest:withEvent:
++ didMoveToWindow
++ setFrame:
++ willMoveToWindow:
++ hitTest:forEvent:
++ bubbles
+- defaultRectForBubbleOfType:
+- orientationChanged:
+- _updateBubblesForOrientation:evenIfBubblesAreVisible:
+- anyVisibleBubbles
+- defaultPositionForBubbleOfType:
+- defaultSizeForBubbleOfType:
+- willBeginTransition
+- bubbleForType:
+- gamesBubble
+- setGamesBubble:
+- friendsBubble
+- setFriendsBubble:
+- requestsBubble
+- setRequestsBubble:
+- challengesBubble
+- setChallengesBubble:
+- turnsBubble
+- setTurnsBubble:
+- setBubbles:
+- initWithFrame:
+- dealloc
+- hitTest:withEvent:
+- didMoveToWindow
+- setFrame:
+- willMoveToWindow:
+- hitTest:forEvent:
+- bubbles
+@end

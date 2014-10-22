@@ -1,0 +1,114 @@
+@interface SKUIProductPageHeaderView : UIView
+{
+	id _ageBandLabel;
+	id _artistButton;
+	id _clientContext;
+	id _contentRatingName;
+	id _colorScheme;
+	id _facebookFriendsLabel;
+	id _facebookLogoImageView;
+	double _headerImageHeight;
+	id _headerImageView;
+	id _iconImageView;
+	id _inAppPurchasesLabel;
+	id _itemOffer;
+	id _itemOfferButton;
+	id _itemState;
+	long long _numberOfUserRatings;
+	BOOL _restricted;
+	id _shareButton;
+	id _titleLabel;
+	double _userRating;
+	id _userRatingLabel;
+	id _userRatingStarsView;
+}
+
++ dealloc
++ setBackgroundColor:
++ layoutSubviews
++ setTitle:
++ sizeToFit
++ title
++ iconImage
++ artistName
++ setArtistName:
++ userRating
++ setUserRating:
++ colorScheme
++ setColorScheme:
++ setIconImage:
++ setItemState:
++ setItemOffer:
++ itemOffer
++ itemState
++ headerImage
++ setHeaderImage:
++ setItemState:animated:
++ initWithClientContext:
++ setRestricted:
++ _reloadItemOfferButton:
++ itemOfferButtonWillAnimateTransition:
++ ageBandString
++ _cancelConfirmationAction:
++ _showConfirmationAction:
++ contentRatingName
++ facebookFriendsString
++ inAppPurchasesString
++ setAgeBandString:
++ setContentRatingName:
++ setFacebookFriendsString:
++ setHeaderImageHeight:
++ setInAppPurchasesString:
++ artistButton
++ headerImageHeight
++ shareButton
++ .cxx_destruct
++ isRestricted
++ itemOfferButton
++ numberOfUserRatings
++ setNumberOfUserRatings:
+- dealloc
+- setBackgroundColor:
+- layoutSubviews
+- setTitle:
+- sizeToFit
+- title
+- iconImage
+- artistName
+- setArtistName:
+- userRating
+- setUserRating:
+- colorScheme
+- setColorScheme:
+- setIconImage:
+- setItemState:
+- setItemOffer:
+- itemOffer
+- itemState
+- headerImage
+- setHeaderImage:
+- setItemState:animated:
+- initWithClientContext:
+- setRestricted:
+- _reloadItemOfferButton:
+- itemOfferButtonWillAnimateTransition:
+- ageBandString
+- _cancelConfirmationAction:
+- _showConfirmationAction:
+- contentRatingName
+- facebookFriendsString
+- inAppPurchasesString
+- setAgeBandString:
+- setContentRatingName:
+- setFacebookFriendsString:
+- setHeaderImageHeight:
+- setInAppPurchasesString:
+- artistButton
+- headerImageHeight
+- shareButton
+- .cxx_destruct
+- isRestricted
+- itemOfferButton
+- numberOfUserRatings
+- setNumberOfUserRatings:
+@end

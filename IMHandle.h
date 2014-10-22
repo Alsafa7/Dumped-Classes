@@ -1,0 +1,479 @@
+@interface IMHandle : IMDirectlyObservableObject
+{
+	id _guid;
+	id _account;
+	id _id;
+	id _uncanonicalID;
+	id _countryCode;
+	id _otherServiceIDs;
+	id _idleSince;
+	id _feedUpdatedDate;
+	id _extraProps;
+	id _certs;
+	id _groups;
+	id _person;
+	id _abFirstName;
+	id _abLastName;
+	id _abFullName;
+	id _abNickname;
+	id _displayID;
+	id _firstName;
+	id _lastName;
+	id _fullName;
+	id _nickname;
+	id _emails;
+	id _normalizedFormOfID;
+	id _IDWithoutResource;
+	id _IDWithTrimmedServer;
+	id _uniqueName;
+	id _pictureData;
+	id _statusMsg;
+	id _processedStatusMsg;
+	id _richStatusMsg;
+	id _whenWentOffline;
+	id _whenStatusChanged;
+	id _prevStatusMsg;
+	id _notificationNameQueue;
+	id _notificationQueue;
+	id _statusURL;
+	pointer _phoneNumberRef;
+	id _formattedNumber;
+	BOOL _hasCheckedPhoneNumber;
+	usigned long long _status;
+	usigned long long _prevStatus;
+	usigned long long _capabilities;
+	unsigned int _authRequestStatus;
+	usigned long long _resourceIndex;
+	long long _IDStatus;
+	BOOL _isRetainingAccount;
+	BOOL _blockNotifications;
+	BOOL _hasTemporaryWatch;
+	BOOL _isMobile;
+	BOOL _isBot;
+	BOOL _isAnonymous;
+	BOOL _beingTornDown;
+	BOOL _hasCheckedCardMap;
+	BOOL _isRegistered;
+	long long _priority;
+	int _addressBookIdentifier;
+	int _notificationQueueCount;
+	id _statusMessageURL;
+}
+
++ hasNoConferencingCaps
++ imHandleRegistrarGUID
++ _sendRemoteLogDumpRequest:
++ _sendRemoteLogDumpRequest
++ publicAPIPropertiesDictionary
++ beginNotificationQueue
++ releaseNotificationQueue
++ shouldQueueNotifications
++ groups
++ isBlocked
++ service
++ _postNotificationName:userInfo:
++ _registerForNotifications
++ release
++ dealloc
++ initWithCoder:
++ encodeWithCoder:
++ init
++ hash
++ description
++ server
++ copyWithZone:
++ name
++ priority
++ uniqueName
++ setPriority:
++ status
++ person
++ isAccountSiblingOf:
++ compareIDs:
++ matchesIMHandle:
++ imHandleForOtherAccount:
++ addressBookIdentifier
++ originalID
++ displayNameForChat:
++ _displayNameWithAbbreviation
++ IDStatus
++ requestIDStatus
++ nameAndID
++ setEmail:
++ ID
++ bestAccountSibling
++ _removeAccountReference:
++ compareAccountNames:
++ authRequestStatus
++ isBuddy
++ setCustomPictureData:key:
++ _stopRetainingAccount:
++ postNotificationName:
++ propertiesChanged:
++ _updateOriginalID:
++ _setOriginalID:
++ initWithAccount:ID:alreadyCanonical:knownIDStatus:
++ _setCapabilities:
++ initWithAccount:ID:alreadyCanonical:
++ resource
++ otherServiceIDs
++ watchingIMHandle
++ setHasTemporaryWatch:
++ resetABPerson
++ _cachedPerson
++ setIMPerson:
++ statusChanged:message:
++ isLoginIMHandle
++ statusChanged:
++ compareStatus:
++ _setCountryCode:
++ _setOriginalID:updateSiblings:
++ existingChatSiblingsArray
++ setAnonymous:
++ isAnonymous
++ groupsArray
++ bestIMHandleForService:
++ _postNotification:
++ existingIMHandleWithoutResource
++ areABPropertiesRecent
++ resetABProperties
++ _clearABProperties
++ resetUniqueName
++ sendNotificationABPersonChanged
++ _hasABName
++ _hasServiceNameProperties
++ _formattedPhoneNumber
++ hasServer
++ _IDWithTrimmedServer
++ _nameUsingUnique:
++ _abPersonCreateIfNeeded
++ setFirstName:lastName:
++ _setABPersonFirstName:lastName:
++ _setBaseFirstName:lastName:fullName:
++ setEmails:andUpdateABPerson:
++ setFirstName:lastName:fullName:andUpdateABPerson:
++ setEmail:andUpdateABPerson:
++ extraProperties
++ hasResource
++ IDWithoutResource
++ accountSiblingsArray
++ _createPhoneNumberRefIfNeeded
++ isMobile
++ supportsARDMuxing
++ timeSinceWentOffline
++ bestIMHandleForAccount:onService:inGroup:otherThan:
++ existingAccountSiblingsArray
++ isBetterThanIMHandle:
++ siblings
++ setCapabilities:
++ _setExtraProperties:
++ _isMyIDInList:
++ imHandleWithoutResource
++ setStatus:message:richMessage:
++ _updateStatusBasedOnAuthRequestStatus
++ timeSinceStatusChanged
++ idleTime
++ _filterStatusMessage
++ _clearStatusMessageURLCache
++ _nameForComparisonPreferFirst:
++ normalizedID
++ chatSiblingsArray
++ _chatSiblingsArray
++ hasVideo
++ pictureData
++ customPictureDataChanged:key:
++ _unregisterFromIMPersonPictureChanges
++ _registerForIMPersonPictureChanges
++ initWithAccount:ID:
++ _handleInfo
++ _setOriginalID:countryCode:updateSiblings:
++ nameAndEmail
++ clearABPerson
++ _clearABPersonLookup
++ setLocalNickname:
++ canBeAdded
++ isSystemUser
++ setIsMobile:
++ setIsBot:
++ mobileDeviceName
++ isLoginIMHandleForAnyAccount
++ phoneNumberRef
++ requestValueOfProperty:
++ setValue:ofExtraProperty:
++ bestIMHandleForAccount:
++ bestSibling
++ isVisiblyBlocked
++ setBlocked:
++ sortOrderInGroup:
++ accountTypeName
++ dependentIMHandles
++ setAuthRequestStatus:
++ setPersonStatus:
++ statusMessageChanged:
++ nameOfStatus
++ _setIDStatus:
++ setIdleSince:
++ setFeedUpdatedDate:
++ setStatusURLFromString:
++ offlineString
++ idleString
++ compareFirstNames:
++ compareLastNames:
++ compareNormalizedIDs:
++ hasOtherSiblings
++ siblingsArray
++ isSiblingOf:
++ _isChatSiblingOf:
++ _chatSiblings
++ _bestChatSibling
++ hasConferencing
++ isConferenceAvailable
++ hasMultiwayVideo
++ hasMultiwayAudio
++ _sendAutomationData:properties:
++ _sendCommand:properties:
++ _imPersonPictureChanged:
++ customPictureData
++ setCustomPictureData:
++ _isRegisteredWithRegistrar
++ _setIsRegisteredWithRegistrar:
++ statusURL
++ previousStatus
++ feedUpdatedDate
++ previousStatusMessage
++ richStatusMessage
++ setOtherServiceIDs:
++ isBot
++ setIDStatus:
++ statusMessageAsURL
++ setStatusMessageAsURL:
++ guid
++ account
++ canBeDeleted
++ capabilities
++ statusMessage
++ setImageData:
++ setUniqueName:
++ countryCode
++ firstName
++ lastName
++ fullName
++ email
++ emails
++ setEmails:
++ hasName
++ hasLocation
++ displayID
++ finalize
++ hasAudio
++ hasCapability:
++ nickname
+- hasNoConferencingCaps
+- imHandleRegistrarGUID
+- _sendRemoteLogDumpRequest:
+- _sendRemoteLogDumpRequest
+- publicAPIPropertiesDictionary
+- beginNotificationQueue
+- releaseNotificationQueue
+- shouldQueueNotifications
+- groups
+- isBlocked
+- service
+- _postNotificationName:userInfo:
+- _registerForNotifications
+- release
+- dealloc
+- initWithCoder:
+- encodeWithCoder:
+- init
+- hash
+- description
+- server
+- copyWithZone:
+- name
+- priority
+- uniqueName
+- setPriority:
+- status
+- person
+- isAccountSiblingOf:
+- compareIDs:
+- matchesIMHandle:
+- imHandleForOtherAccount:
+- addressBookIdentifier
+- originalID
+- displayNameForChat:
+- _displayNameWithAbbreviation
+- IDStatus
+- requestIDStatus
+- nameAndID
+- setEmail:
+- ID
+- bestAccountSibling
+- _removeAccountReference:
+- compareAccountNames:
+- authRequestStatus
+- isBuddy
+- setCustomPictureData:key:
+- _stopRetainingAccount:
+- postNotificationName:
+- propertiesChanged:
+- _updateOriginalID:
+- _setOriginalID:
+- initWithAccount:ID:alreadyCanonical:knownIDStatus:
+- _setCapabilities:
+- initWithAccount:ID:alreadyCanonical:
+- resource
+- otherServiceIDs
+- watchingIMHandle
+- setHasTemporaryWatch:
+- resetABPerson
+- _cachedPerson
+- setIMPerson:
+- statusChanged:message:
+- isLoginIMHandle
+- statusChanged:
+- compareStatus:
+- _setCountryCode:
+- _setOriginalID:updateSiblings:
+- existingChatSiblingsArray
+- setAnonymous:
+- isAnonymous
+- groupsArray
+- bestIMHandleForService:
+- _postNotification:
+- existingIMHandleWithoutResource
+- areABPropertiesRecent
+- resetABProperties
+- _clearABProperties
+- resetUniqueName
+- sendNotificationABPersonChanged
+- _hasABName
+- _hasServiceNameProperties
+- _formattedPhoneNumber
+- hasServer
+- _IDWithTrimmedServer
+- _nameUsingUnique:
+- _abPersonCreateIfNeeded
+- setFirstName:lastName:
+- _setABPersonFirstName:lastName:
+- _setBaseFirstName:lastName:fullName:
+- setEmails:andUpdateABPerson:
+- setFirstName:lastName:fullName:andUpdateABPerson:
+- setEmail:andUpdateABPerson:
+- extraProperties
+- hasResource
+- IDWithoutResource
+- accountSiblingsArray
+- _createPhoneNumberRefIfNeeded
+- isMobile
+- supportsARDMuxing
+- timeSinceWentOffline
+- bestIMHandleForAccount:onService:inGroup:otherThan:
+- existingAccountSiblingsArray
+- isBetterThanIMHandle:
+- siblings
+- setCapabilities:
+- _setExtraProperties:
+- _isMyIDInList:
+- imHandleWithoutResource
+- setStatus:message:richMessage:
+- _updateStatusBasedOnAuthRequestStatus
+- timeSinceStatusChanged
+- idleTime
+- _filterStatusMessage
+- _clearStatusMessageURLCache
+- _nameForComparisonPreferFirst:
+- normalizedID
+- chatSiblingsArray
+- _chatSiblingsArray
+- hasVideo
+- pictureData
+- customPictureDataChanged:key:
+- _unregisterFromIMPersonPictureChanges
+- _registerForIMPersonPictureChanges
+- initWithAccount:ID:
+- _handleInfo
+- _setOriginalID:countryCode:updateSiblings:
+- nameAndEmail
+- clearABPerson
+- _clearABPersonLookup
+- setLocalNickname:
+- canBeAdded
+- isSystemUser
+- setIsMobile:
+- setIsBot:
+- mobileDeviceName
+- isLoginIMHandleForAnyAccount
+- phoneNumberRef
+- requestValueOfProperty:
+- setValue:ofExtraProperty:
+- bestIMHandleForAccount:
+- bestSibling
+- isVisiblyBlocked
+- setBlocked:
+- sortOrderInGroup:
+- accountTypeName
+- dependentIMHandles
+- setAuthRequestStatus:
+- setPersonStatus:
+- statusMessageChanged:
+- nameOfStatus
+- _setIDStatus:
+- setIdleSince:
+- setFeedUpdatedDate:
+- setStatusURLFromString:
+- offlineString
+- idleString
+- compareFirstNames:
+- compareLastNames:
+- compareNormalizedIDs:
+- hasOtherSiblings
+- siblingsArray
+- isSiblingOf:
+- _isChatSiblingOf:
+- _chatSiblings
+- _bestChatSibling
+- hasConferencing
+- isConferenceAvailable
+- hasMultiwayVideo
+- hasMultiwayAudio
+- _sendAutomationData:properties:
+- _sendCommand:properties:
+- _imPersonPictureChanged:
+- customPictureData
+- setCustomPictureData:
+- _isRegisteredWithRegistrar
+- _setIsRegisteredWithRegistrar:
+- statusURL
+- previousStatus
+- feedUpdatedDate
+- previousStatusMessage
+- richStatusMessage
+- setOtherServiceIDs:
+- isBot
+- setIDStatus:
+- statusMessageAsURL
+- setStatusMessageAsURL:
+- guid
+- account
+- canBeDeleted
+- capabilities
+- statusMessage
+- setImageData:
+- setUniqueName:
+- countryCode
+- firstName
+- lastName
+- fullName
+- email
+- emails
+- setEmails:
+- hasName
+- hasLocation
+- displayID
+- finalize
+- hasAudio
+- hasCapability:
+- nickname
+@end

@@ -1,0 +1,168 @@
+@interface WAKWindow : WAKResponder
+{
+	id _hostLayer;
+	pointer _tileCache;
+	struct _frozenVisibleRect;
+	id _rootLayer;
+	struct _screenSize;
+	struct _availableScreenSize;
+	double _screenScale;
+	struct _frame;
+	id _contentView;
+	id _responderView;
+	id _nextResponder;
+	BOOL _visible;
+	BOOL _useOrientationDependentFontAntialiasing;
+	struct _exposedScrollViewRectLock;
+	struct _exposedScrollViewRect;
+}
+
++ initWithFrame:
++ dealloc
++ setNeedsDisplay
++ frame
++ description
++ firstResponder
++ sendEvent:
++ isKeyWindow
++ makeKeyWindow
++ contentView
++ setContentView:
++ setNeedsDisplayInRect:
++ recursiveDescription
++ setVisible:
++ visibleRect
++ layoutTilesNow
++ willRotate
++ didRotate
++ isVisible
++ close
++ setContentRect:
++ setCurrentTileScale:
++ setZoomedOutTileScale:
++ removeAllNonVisibleTiles
++ setTilesOpaque:
++ removeAllTiles
++ setUseOrientationDependentFontAntialiasing:
++ setTilingDirection:
++ setExposedScrollViewRect:
++ displayRect:
++ removeForegroundTiles
++ makeFirstResponder:
++ setAcceleratedDrawingEnabled:
++ exposedScrollViewRect
++ sendEventSynchronously:
++ sendMouseMoveEvent:contentChange:
++ .cxx_construct
++ setRootLayer:
++ setScreenSize:
++ setAvailableScreenSize:
++ screenScale
++ setScreenScale:
++ initWithLayer:
++ layoutTilesNowForRect:
++ setContentReplacementImage:
++ layoutTiles
++ rootLayer
++ setTilingMode:
++ tilesOpaque
++ setKeepsZoomedOutTiles:
++ keepsZoomedOutTiles
++ dumpTiles
++ zoomedOutTileScale
++ screenSize
++ availableScreenSize
++ tileCache
++ convertBaseToScreen:
++ convertScreenToBase:
++ hostLayer
++ extendedVisibleRect
++ useOrientationDependentFontAntialiasing
++ _visibleRectRespectingMasksToBounds:
++ freezeVisibleRect
++ unfreezeVisibleRect
++ _newFirstResponderAfterResigning
++ keyViewSelectionDirection
++ setFrame:display:
++ tilingMode
++ tilingDirection
++ currentTileScale
++ hasPendingDraw
++ contentReplacementImage
++ setTileBordersVisible:
++ setTilePaintCountsVisible:
+- initWithFrame:
+- dealloc
+- setNeedsDisplay
+- frame
+- description
+- firstResponder
+- sendEvent:
+- isKeyWindow
+- makeKeyWindow
+- contentView
+- setContentView:
+- setNeedsDisplayInRect:
+- recursiveDescription
+- setVisible:
+- visibleRect
+- layoutTilesNow
+- willRotate
+- didRotate
+- isVisible
+- close
+- setContentRect:
+- setCurrentTileScale:
+- setZoomedOutTileScale:
+- removeAllNonVisibleTiles
+- setTilesOpaque:
+- removeAllTiles
+- setUseOrientationDependentFontAntialiasing:
+- setTilingDirection:
+- setExposedScrollViewRect:
+- displayRect:
+- removeForegroundTiles
+- makeFirstResponder:
+- setAcceleratedDrawingEnabled:
+- exposedScrollViewRect
+- sendEventSynchronously:
+- sendMouseMoveEvent:contentChange:
+- .cxx_construct
+- setRootLayer:
+- setScreenSize:
+- setAvailableScreenSize:
+- screenScale
+- setScreenScale:
+- initWithLayer:
+- layoutTilesNowForRect:
+- setContentReplacementImage:
+- layoutTiles
+- rootLayer
+- setTilingMode:
+- tilesOpaque
+- setKeepsZoomedOutTiles:
+- keepsZoomedOutTiles
+- dumpTiles
+- zoomedOutTileScale
+- screenSize
+- availableScreenSize
+- tileCache
+- convertBaseToScreen:
+- convertScreenToBase:
+- hostLayer
+- extendedVisibleRect
+- useOrientationDependentFontAntialiasing
+- _visibleRectRespectingMasksToBounds:
+- freezeVisibleRect
+- unfreezeVisibleRect
+- _newFirstResponderAfterResigning
+- keyViewSelectionDirection
+- setFrame:display:
+- tilingMode
+- tilingDirection
+- currentTileScale
+- hasPendingDraw
+- contentReplacementImage
+- setTileBordersVisible:
+- setTilePaintCountsVisible:
+@end

@@ -1,0 +1,6 @@
+@interface GADMAdNetworkAdapter : NSObject
+{
+
+}
+
+@end

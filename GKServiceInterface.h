@@ -1,0 +1,6 @@
+@interface GKServiceInterface : NSObject
+{
+
+}
+
+@end

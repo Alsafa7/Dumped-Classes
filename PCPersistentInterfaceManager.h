@@ -1,0 +1,146 @@
+@interface PCPersistentInterfaceManager : NSObject
+{
+	id _lock;
+	pointer _delegatesAndRunLoops;
+	pointer _WiFiAutoAssociationDelegates;
+	id _WiFiAutoAssociationDisableTimer;
+	pointer _wakeOnWiFiDelegates;
+	id _wakeOnWiFiDisableTimer;
+	pointer _ctServerConnection;
+	pointer _interfaceAssertion;
+	pointer _wifiManager;
+	int _WWANContextIdentifier;
+	id _WWANInterfaceName;
+	BOOL _isWWANInterfaceUp;
+	id _inCallWWANOverrideTimer;
+	BOOL _isWWANInterfaceDataActive;
+	BOOL _ctIsWWANInHomeCountry;
+	BOOL _hasWWANStatusIndicator;
+	BOOL _isPowerStateDetectionSupported;
+	BOOL _isWWANInterfaceInProlongedHighPowerState;
+	BOOL _isWWANInterfaceActivationPermitted;
+	double _lastActivationTime;
+	int _wwanRSSI;
+	BOOL _isInCall;
+	BOOL _isWakeOnWiFiSupported;
+	BOOL _isWakeOnWiFiEnabled;
+	BOOL _shouldOverrideOnCallBehavior;
+}
+
++ handleMachMessage:
++ dealloc
++ init
++ _createWiFiManager
++ _adjustWiFiAutoAssociation
++ _adjustWiFiAutoAssociationLocked
++ _createCTConnection
++ _updateWWANInterfaceUpStateLocked
++ _serverCallbackLocked:info:
++ _mainThreadDelayedInvalidation
++ _ctConnectionWasInvalidated
++ _updateWWANInterfaceAssertionsLocked
++ _updateWWANInterfaceUpState
++ _scheduleCalloutsForSelector:
++ _updateCTIsWWANInHomeCountry:isWWANInterfaceDataActive:
++ _wantsWWANInterfaceAssertion
++ _clearInCallWWANOverrideTimerLocked
++ _inCallWWANOverrideTimerFired
++ isInternetReachable
++ _isWWANInHomeCountryLocked
++ _performCalloutsForSelectorValue:
++ _isInternetReachableLocked
++ _populateWakeOnWiFiCapabilityLocked
++ _adjustWakeOnWiFiLocked
++ _wantsWakeOnWiFiEnabled
++ _adjustWakeOnWiFi
++ doesWWANInterfaceExist
++ isWWANInterfaceActivationPermitted
++ isInCall
++ _isWiFiUsable
++ _allowBindingToWWAN
++ bindCFStream:toWWANInterface:
++ urlConnectionBoundToWWANInterface:withRequest:delegate:usesCache:maxContentLength:startImmediately:connectionProperties:
++ interfaceLinkQualityChanged:previousLinkQuality:
++ interfaceReachabilityChanged:
++ addDelegate:callbackRunLoop:
++ _serverCallback:info:
++ currentLinkQualityString
++ _wwanIsPoorLinkQuality
++ _wifiIsPoorLinkQuality
++ isWWANBetterThanWiFi
++ isWWANInterfaceUp
++ WWANInterfaceName
++ isPowerStateDetectionSupported
++ isWWANInterfaceInProlongedHighPowerState
++ isWWANInHomeCountry
++ isInternetReachableViaWiFi
++ isWakeOnWiFiSupported
++ areAllNetworkInterfacesDisabled
++ _updateWWANInterfaceAssertions
++ _populateWakeOnWiFiCapability
++ enableWiFiAutoAssociation:forDelegate:
++ enableWakeOnWiFi:forDelegate:
++ dhcpT1RenewalDate
++ dhcpHalfLeaseExpirationDate
++ bindCFStreamToWWANInterface:
++ urlConnectionBoundToWWANInterfaceWithRequest:delegate:usesCache:maxContentLength:startImmediately:connectionProperties:
++ removeDelegate:
+- handleMachMessage:
+- dealloc
+- init
+- _createWiFiManager
+- _adjustWiFiAutoAssociation
+- _adjustWiFiAutoAssociationLocked
+- _createCTConnection
+- _updateWWANInterfaceUpStateLocked
+- _serverCallbackLocked:info:
+- _mainThreadDelayedInvalidation
+- _ctConnectionWasInvalidated
+- _updateWWANInterfaceAssertionsLocked
+- _updateWWANInterfaceUpState
+- _scheduleCalloutsForSelector:
+- _updateCTIsWWANInHomeCountry:isWWANInterfaceDataActive:
+- _wantsWWANInterfaceAssertion
+- _clearInCallWWANOverrideTimerLocked
+- _inCallWWANOverrideTimerFired
+- isInternetReachable
+- _isWWANInHomeCountryLocked
+- _performCalloutsForSelectorValue:
+- _isInternetReachableLocked
+- _populateWakeOnWiFiCapabilityLocked
+- _adjustWakeOnWiFiLocked
+- _wantsWakeOnWiFiEnabled
+- _adjustWakeOnWiFi
+- doesWWANInterfaceExist
+- isWWANInterfaceActivationPermitted
+- isInCall
+- _isWiFiUsable
+- _allowBindingToWWAN
+- bindCFStream:toWWANInterface:
+- urlConnectionBoundToWWANInterface:withRequest:delegate:usesCache:maxContentLength:startImmediately:connectionProperties:
+- interfaceLinkQualityChanged:previousLinkQuality:
+- interfaceReachabilityChanged:
+- addDelegate:callbackRunLoop:
+- _serverCallback:info:
+- currentLinkQualityString
+- _wwanIsPoorLinkQuality
+- _wifiIsPoorLinkQuality
+- isWWANBetterThanWiFi
+- isWWANInterfaceUp
+- WWANInterfaceName
+- isPowerStateDetectionSupported
+- isWWANInterfaceInProlongedHighPowerState
+- isWWANInHomeCountry
+- isInternetReachableViaWiFi
+- isWakeOnWiFiSupported
+- areAllNetworkInterfacesDisabled
+- _updateWWANInterfaceAssertions
+- _populateWakeOnWiFiCapability
+- enableWiFiAutoAssociation:forDelegate:
+- enableWakeOnWiFi:forDelegate:
+- dhcpT1RenewalDate
+- dhcpHalfLeaseExpirationDate
+- bindCFStreamToWWANInterface:
+- urlConnectionBoundToWWANInterfaceWithRequest:delegate:usesCache:maxContentLength:startImmediately:connectionProperties:
+- removeDelegate:
+@end

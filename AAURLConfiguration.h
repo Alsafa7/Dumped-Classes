@@ -1,0 +1,66 @@
+@interface AAURLConfiguration : NSObject
+{
+	id _urlDictionary;
+}
+
++ iForgotUIURL
++ initWithDictionary:
++ signingSessionCertURL
++ signingSessionURL
++ authenticateURL
++ existingAppleIDTermsUIURL
++ loginDelegatesURL
++ genericTermsURL
++ ckAppLoginURL
++ accountCreationUIURL
++ updateAccountUIURL
++ addEmailURL
++ signInURL
++ fetchAccountSettingsURL
++ initiateValidateEmailURL
++ completeValidateEmailURL
++ mobileMeOfferAlertURL
++ emailLookupURL
++ fmipAuthenticate
++ finishProvisioningURL
++ syncMachineURL
++ accountCreationURL
++ updateAccountURL
++ registerURL
++ validateURL
++ ckAppLoginCheckURL
++ deviceListURL
++ sendCodeURL
++ verifyCodeURL
++ .cxx_destruct
+- iForgotUIURL
+- initWithDictionary:
+- signingSessionCertURL
+- signingSessionURL
+- authenticateURL
+- existingAppleIDTermsUIURL
+- loginDelegatesURL
+- genericTermsURL
+- ckAppLoginURL
+- accountCreationUIURL
+- updateAccountUIURL
+- addEmailURL
+- signInURL
+- fetchAccountSettingsURL
+- initiateValidateEmailURL
+- completeValidateEmailURL
+- mobileMeOfferAlertURL
+- emailLookupURL
+- fmipAuthenticate
+- finishProvisioningURL
+- syncMachineURL
+- accountCreationURL
+- updateAccountURL
+- registerURL
+- validateURL
+- ckAppLoginCheckURL
+- deviceListURL
+- sendCodeURL
+- verifyCodeURL
+- .cxx_destruct
+@end

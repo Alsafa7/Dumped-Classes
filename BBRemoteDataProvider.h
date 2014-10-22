@@ -1,0 +1,92 @@
+@interface BBRemoteDataProvider : BBDataProvider
+{
+	id _sectionID;
+	id _appBundleID;
+	id _connection;
+	id _queue;
+	id _pendingRequests;
+	id _delegate;
+	BOOL _operational;
+}
+
++ dealloc
++ description
++ invalidate
++ resume
++ _invalidate
++ proxy:detailedSignatureForSelector:
++ sectionIdentifier
++ connection:connectionStateDidChange:
++ getSectionInfoWithCompletion:
++ ping:
++ clearedInfoAndBulletinsForClearingAllBulletinsWithLimit:lastClearedInfo:completion:
++ clearedInfoForBulletins:lastClearedInfo:completion:
++ attachmentPNGDataForRecordID:sizeConstraints:completion:
++ attachmentAspectRatioForRecordID:completion:
++ deliverMessageWithName:userInfo:
++ bulletinsWithRequestParameters:lastCleared:completion:
++ updateClearedInfoWithClearedInfo:handler:completion:
++ updateSectionInfoWithSectionInfo:handler:completion:
++ deliverResponse:forBulletinRequest:
++ dataProviderDidLoad
++ migrateSectionInfo:oldSectionInfo:
++ noteSectionInfoDidChange:
++ startWatchdog
++ reloadIdentityWithCompletion:
++ canPerformMigration
++ invalidateBulletins
++ addBulletin:forDestinations:
++ modifyBulletin:
++ withdrawBulletinsWithRecordID:
++ withdrawBulletinWithPublisherBulletinID:
++ reloadSectionParameters:
++ reloadDefaultSectionInfo:
++ getClearedInfoWithCompletion:
++ setClearedInfo:
++ setSectionInfo:
++ _processPendingRequests
++ _prependAndSendRequest:
++ _sendRequest:
++ _logDoesNotRespond:
++ initWithSectionID:serviceName:appBundleID:delegate:onQueue:
+- dealloc
+- description
+- invalidate
+- resume
+- _invalidate
+- proxy:detailedSignatureForSelector:
+- sectionIdentifier
+- connection:connectionStateDidChange:
+- getSectionInfoWithCompletion:
+- ping:
+- clearedInfoAndBulletinsForClearingAllBulletinsWithLimit:lastClearedInfo:completion:
+- clearedInfoForBulletins:lastClearedInfo:completion:
+- attachmentPNGDataForRecordID:sizeConstraints:completion:
+- attachmentAspectRatioForRecordID:completion:
+- deliverMessageWithName:userInfo:
+- bulletinsWithRequestParameters:lastCleared:completion:
+- updateClearedInfoWithClearedInfo:handler:completion:
+- updateSectionInfoWithSectionInfo:handler:completion:
+- deliverResponse:forBulletinRequest:
+- dataProviderDidLoad
+- migrateSectionInfo:oldSectionInfo:
+- noteSectionInfoDidChange:
+- startWatchdog
+- reloadIdentityWithCompletion:
+- canPerformMigration
+- invalidateBulletins
+- addBulletin:forDestinations:
+- modifyBulletin:
+- withdrawBulletinsWithRecordID:
+- withdrawBulletinWithPublisherBulletinID:
+- reloadSectionParameters:
+- reloadDefaultSectionInfo:
+- getClearedInfoWithCompletion:
+- setClearedInfo:
+- setSectionInfo:
+- _processPendingRequests
+- _prependAndSendRequest:
+- _sendRequest:
+- _logDoesNotRespond:
+- initWithSectionID:serviceName:appBundleID:delegate:onQueue:
+@end

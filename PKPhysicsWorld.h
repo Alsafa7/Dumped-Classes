@@ -1,0 +1,98 @@
+@interface PKPhysicsWorld : NSObject
+{
+	pointer _world;
+	struct _gravity;
+	BOOL _doSleep;
+	double _accumulatedDt;
+	struct _contactListener;
+	float _speed;
+	id _bodies;
+	id _joints;
+	id _postStepBlocks;
+}
+
++ _world
++ set_world:
++ _gravity
++ set_gravity:
++ _runBlockOutsideOfTimeStep:
++ _doSleep
++ _bodies
++ set_bodies:
++ set_doSleep:
++ setVelocityThreshold:
++ hasBodies
++ removeAllBodies
++ removeAllJoints
++ enumerateBodiesAtPoint:usingBlock:
++ enumerateBodiesAlongRayStart:end:usingBlock:
++ bodyAtPoint:
++ bodyInRect:
++ bodyAlongRayStart:end:
++ dealloc
++ initWithCoder:
++ encodeWithCoder:
++ init
++ copy
++ setSpeed:
++ copyWithZone:
++ speed
++ removeJoint:
++ addJoint:
++ addBody:
++ removeBody:
++ .cxx_construct
++ contactDelegate
++ setContactDelegate:
++ collisionDelegate
++ enumerateBodiesInRect:usingBlock:
++ stepWithTime:velocityIterations:positionIterations:
++ gravity
++ setGravity:
++ bodies
++ setCollisionDelegate:
++ velocityThreshold
++ .cxx_destruct
+- _world
+- set_world:
+- _gravity
+- set_gravity:
+- _runBlockOutsideOfTimeStep:
+- _doSleep
+- _bodies
+- set_bodies:
+- set_doSleep:
+- setVelocityThreshold:
+- hasBodies
+- removeAllBodies
+- removeAllJoints
+- enumerateBodiesAtPoint:usingBlock:
+- enumerateBodiesAlongRayStart:end:usingBlock:
+- bodyAtPoint:
+- bodyInRect:
+- bodyAlongRayStart:end:
+- dealloc
+- initWithCoder:
+- encodeWithCoder:
+- init
+- copy
+- setSpeed:
+- copyWithZone:
+- speed
+- removeJoint:
+- addJoint:
+- addBody:
+- removeBody:
+- .cxx_construct
+- contactDelegate
+- setContactDelegate:
+- collisionDelegate
+- enumerateBodiesInRect:usingBlock:
+- stepWithTime:velocityIterations:positionIterations:
+- gravity
+- setGravity:
+- bodies
+- setCollisionDelegate:
+- velocityThreshold
+- .cxx_destruct
+@end

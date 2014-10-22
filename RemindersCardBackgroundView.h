@@ -1,0 +1,75 @@
+@interface RemindersCardBackgroundView : UIView
+{
+	id _scrollingTextureView;
+	id _maskingView;
+	id _dimmingView;
+	id _cardLayer;
+	id _widthConstraint;
+	id _heightConstraint;
+	id _scrollingTextureMaskConstraints;
+	id _panGestureRecognizer;
+	id _longPressGestureRecognizer;
+	BOOL _canPan;
+	id _horizontalMotionEffect;
+	id _verticalMotionEffect;
+	id _cardControllerID;
+	id _delegate;
+	double _verticalMotionRelativeValue;
+	double _horizontalMotionRelativeValue;
+}
+
++ useScrollingTexture:
++ setHeight:animated:
++ cardControllerID
++ setCardControllerID:
++ _handleLongPress:
++ setDimmer:animated:
++ setHorizontalMotionRelativeValue:
++ setVerticalMotionRelativeValue:
++ setHorizontalMotionEnabled:
++ setVerticalMotionEnabled:
++ _addPanAndLongPressGestureRecognizers
++ _removePanAndLongPressGestureRecognizers
++ verticalMotionRelativeValue
++ horizontalMotionRelativeValue
++ initWithFrame:
++ setDelegate:
++ pointInside:withEvent:
++ setFrame:
++ delegate
++ gestureRecognizerShouldBegin:
++ gestureRecognizer:shouldRecognizeSimultaneouslyWithGestureRecognizer:
++ gestureRecognizer:shouldReceiveTouch:
++ touchesEnded:withEvent:
++ setContentOffset:
++ contentRect
++ _handlePanGesture:
++ .cxx_destruct
+- useScrollingTexture:
+- setHeight:animated:
+- cardControllerID
+- setCardControllerID:
+- _handleLongPress:
+- setDimmer:animated:
+- setHorizontalMotionRelativeValue:
+- setVerticalMotionRelativeValue:
+- setHorizontalMotionEnabled:
+- setVerticalMotionEnabled:
+- _addPanAndLongPressGestureRecognizers
+- _removePanAndLongPressGestureRecognizers
+- verticalMotionRelativeValue
+- horizontalMotionRelativeValue
+- initWithFrame:
+- setDelegate:
+- pointInside:withEvent:
+- setFrame:
+- delegate
+- gestureRecognizerShouldBegin:
+- gestureRecognizer:shouldRecognizeSimultaneouslyWithGestureRecognizer:
+- gestureRecognizer:shouldReceiveTouch:
+- touchesEnded:withEvent:
+- setContentOffset:
+- contentRect
+- _handlePanGesture:
+- .cxx_destruct
+@end

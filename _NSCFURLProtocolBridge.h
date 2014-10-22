@@ -1,0 +1,70 @@
+@interface _NSCFURLProtocolBridge : NSObject
+{
+	id _nsProt;
+	pointer _cfProt;
+	pointer _cfChallenge;
+	id _nsChallenge;
+	BOOL _loading;
+}
+
++ URLProtocol:didReceiveResponse:cacheStoragePolicy:
++ URLProtocolDidFinishLoading:
++ URLProtocol:didFailWithError:
++ URLProtocol:didLoadData:lengthReceived:
++ URLProtocol:didLoadData:
++ URLProtocol:cachedResponseIsValid:
++ URLProtocol:wasRedirectedToRequest:redirectResponse:
++ initWithCFURLProtocol:request:protocolClass:
++ schedule:mode:
++ unschedule:mode:
++ pushEvent:from:
++ wasRedirectedToRequest:redirectResponse:
++ cachedResponseIsValid:
++ didReceiveResponse:
++ didLoadData:lengthReceived:
++ didFinishLoading
++ didFailWithError:
++ didReceiveAuthenticationChallenge:
++ URLProtocol:didReceiveAuthenticationChallenge:
++ URLProtocol:didCancelAuthenticationChallenge:
++ halt
++ _forgetClient
++ useCredential:forChallenge:
++ bridgeRetain
++ bridgeRelease
++ dealloc
++ description
++ start
++ resume
++ stop
+- URLProtocol:didReceiveResponse:cacheStoragePolicy:
+- URLProtocolDidFinishLoading:
+- URLProtocol:didFailWithError:
+- URLProtocol:didLoadData:lengthReceived:
+- URLProtocol:didLoadData:
+- URLProtocol:cachedResponseIsValid:
+- URLProtocol:wasRedirectedToRequest:redirectResponse:
+- initWithCFURLProtocol:request:protocolClass:
+- schedule:mode:
+- unschedule:mode:
+- pushEvent:from:
+- wasRedirectedToRequest:redirectResponse:
+- cachedResponseIsValid:
+- didReceiveResponse:
+- didLoadData:lengthReceived:
+- didFinishLoading
+- didFailWithError:
+- didReceiveAuthenticationChallenge:
+- URLProtocol:didReceiveAuthenticationChallenge:
+- URLProtocol:didCancelAuthenticationChallenge:
+- halt
+- _forgetClient
+- useCredential:forChallenge:
+- bridgeRetain
+- bridgeRelease
+- dealloc
+- description
+- start
+- resume
+- stop
+@end

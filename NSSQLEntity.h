@@ -1,0 +1,184 @@
+@interface NSSQLEntity : NSStoreMapping
+{
+	id _model;
+	id _entityDescription;
+	id _tableName;
+	id _properties;
+	id _propertyAllCache;
+	id _propertiesAllToManysCache;
+	id _propertyManyToManyCache;
+	id _columnsToFetch;
+	id _ekColumns;
+	id _fkColumns;
+	id _fokColumns;
+	id _attrColumns;
+	id _virtualFKs;
+	id _primaryKey;
+	id _entityKey;
+	id _optLockKey;
+	id _subentities;
+	id _superentity;
+	id _rootEntity;
+	id _mappingGenerator;
+	unsigned int _entityID;
+	unsigned int _subentityMaxID;
+	struct _toOneRange;
+	long long _maxPK;
+	id _insertStatementCache;
+	id _deletionStatementCache;
+	id _faultingStatementCache;
+	id _toManyRelationshipStatementCache;
+	pointer _fetch_entity_plan;
+	id _propertyMapping;
+	pointer _odiousHashHackStorage;
+	unsigned int _pkCount;
+	struct _sqlentityFlags;
+}
+
++ externalName
++ attributes
++ tableName
++ subentityKey
++ primaryKey
++ columnsToFetch
++ hasInheritance
++ propertyNamed:
++ foreignKeyColumns
++ foreignEntityKeyColumns
++ foreignOrderKeyColumns
++ attributeColumns
++ optLockKey
++ hasSubentities
++ isRootEntity
++ entityID
++ subentityMaxID
++ _propertySearchMapping
++ setSubentities:
++ _addSubentity:
++ _odiousHashHack
++ columnsToCreate
++ mappingGenerator
++ copyValuesForReadOnlyFetch:
++ manyToManyRelationships
++ entityDescription
++ propertyMapping
++ toManyRelationships
++ hasAttributesWithExternalDataReferences
++ attributeNamed:
++ _pkCount
++ _setMaxPK:
++ _resetPKCount
++ addInsertedObject:toArray:
++ nextPrimaryKey64
++ relationshipNamed:
++ faultingStatement
++ cacheFaultingStatement:
++ preparedFaultingCachesForRelationship:
++ cacheFaultingStatement:andFetchRequest:forRelationship:
++ _toOneRange
++ clearCachedStatements
++ _doPostModelGenerationCleanup
++ rootEntity
++ _addRootColumnToFetch:
++ _addColumnToFetch:
++ _addForeignOrderKeyForToOne:entity:
++ _addVirtualToOneForToMany:withInheritedProperty:
++ _generateProperties
++ setSuperentity:
++ _generateIDWithSuperEntity:nextID:
++ _collectFKSlots:error:
++ cacheInsertStatement:
++ cacheDeletionStatement:
++ initWithModel:entityDescription:
++ fetchIndexForKey:
++ virtualForeignKeyColumns
++ isKindOfSQLEntity:
++ _sqlPropertyWithRenamingIdentifier:
++ _generateInverseRelationshipsAndMore
++ _entityIsBroken:
++ insertStatement
++ deletionStatement
++ addPropertiesForReadOnlyFetch:keys:context:
++ dealloc
++ description
++ name
++ model
++ properties
++ superentity
++ subentities
++ propertiesByName
++ finalize
+- externalName
+- attributes
+- tableName
+- subentityKey
+- primaryKey
+- columnsToFetch
+- hasInheritance
+- propertyNamed:
+- foreignKeyColumns
+- foreignEntityKeyColumns
+- foreignOrderKeyColumns
+- attributeColumns
+- optLockKey
+- hasSubentities
+- isRootEntity
+- entityID
+- subentityMaxID
+- _propertySearchMapping
+- setSubentities:
+- _addSubentity:
+- _odiousHashHack
+- columnsToCreate
+- mappingGenerator
+- copyValuesForReadOnlyFetch:
+- manyToManyRelationships
+- entityDescription
+- propertyMapping
+- toManyRelationships
+- hasAttributesWithExternalDataReferences
+- attributeNamed:
+- _pkCount
+- _setMaxPK:
+- _resetPKCount
+- addInsertedObject:toArray:
+- nextPrimaryKey64
+- relationshipNamed:
+- faultingStatement
+- cacheFaultingStatement:
+- preparedFaultingCachesForRelationship:
+- cacheFaultingStatement:andFetchRequest:forRelationship:
+- _toOneRange
+- clearCachedStatements
+- _doPostModelGenerationCleanup
+- rootEntity
+- _addRootColumnToFetch:
+- _addColumnToFetch:
+- _addForeignOrderKeyForToOne:entity:
+- _addVirtualToOneForToMany:withInheritedProperty:
+- _generateProperties
+- setSuperentity:
+- _generateIDWithSuperEntity:nextID:
+- _collectFKSlots:error:
+- cacheInsertStatement:
+- cacheDeletionStatement:
+- initWithModel:entityDescription:
+- fetchIndexForKey:
+- virtualForeignKeyColumns
+- isKindOfSQLEntity:
+- _sqlPropertyWithRenamingIdentifier:
+- _generateInverseRelationshipsAndMore
+- _entityIsBroken:
+- insertStatement
+- deletionStatement
+- addPropertiesForReadOnlyFetch:keys:context:
+- dealloc
+- description
+- name
+- model
+- properties
+- superentity
+- subentities
+- propertiesByName
+- finalize
+@end

@@ -1,0 +1,6 @@
+@interface ACDAccountStoreInterface : NSObject
+{
+
+}
+
+@end

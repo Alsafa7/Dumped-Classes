@@ -1,0 +1,223 @@
+@interface AndroidLockView : UIView
+{
+	id delegate;
+	id expectedPattern;
+	id drawnPattern;
+	BOOL persistentPatternAfterUnlock;
+	id customBackgroundColor;
+	double backgroundAlpha;
+	int maxAttempts;
+	int noPatternRequiredPeriod;
+	BOOL forceRequirePatternFirstTime;
+	BOOL loggingEnabled;
+	id themePath;
+	BOOL errorOnWrongPattern;
+	BOOL skipPatternOnWiFi;
+	id networkNameToSkipPattern;
+	BOOL skipPatternOnBluetooth;
+	id bluetoothDeviceNameToSkipPattern;
+	BOOL showOuterCircles;
+	BOOL showInnerDots;
+	BOOL showSelection;
+	BOOL showLine;
+	BOOL showArrows;
+	id tooManyErrorsText;
+	Array patternDots;
+	int patternDotsCount;
+	int lastTouchedDot;
+	BOOL isBlockedForTooManyAttempts;
+	BOOL isShowingPatternAfterUnlock;
+	int attemptsCount;
+	int touchedControlsCount;
+	id lockDate;
+	BOOL neverUnlocked;
+	BOOL enteredPatternIsCorrect;
+	id lineColor;
+	id lineColorUnlocked;
+	id lineColorWrong;
+	float lineWidth;
+	int lineJoin;
+	int lineCap;
+	id textColor;
+	id imgBackground;
+	id imgOver;
+	id imgActive;
+	id imgsDirection;
+	Array imgPartsActive;
+	Array imgPartsDirection;
+	BOOL allowDiagonalSegments;
+	BOOL applyDirectionOverlayInActiveDot;
+	BOOL keepShowingLastDotAsActive;
+	id backgroundColorLayer;
+	id backgroundLayer;
+	id lineLayer;
+	id gammaLayer;
+	id overLayer;
+	id activeLayer;
+	id directionLayer;
+	id drawer;
+	id activeSublayers;
+	id directionSublayers;
+	float minimizedHeight;
+	id blockTimer;
+	id persistentPatternTimer;
+	id messageLabel;
+	id networkNamesToSkipPattern;
+	id bluetoothDeviceNamesToSkipPattern;
+	id strTooManyAttempts;
+	id strLogTooManyAttempts;
+	Array dotsCenters;
+	Array dotsRects;
+}
+
++ prepareLocalizedStrings
++ setMaxAttempts:
++ setNoPatternRequiredPeriod:
++ setExpectedPattern:
++ setThemePath:
++ setErrorOnWrongPattern:
++ setSkipPatternOnWiFi:
++ setNetworkNameToSkipPattern:
++ setSkipPatternOnBluetooth:
++ setBluetoothDeviceNameToSkipPattern:
++ setShowOuterCircles:
++ setShowInnerDots:
++ setShowSelection:
++ setShowLine:
++ setShowArrows:
++ setTooManyErrorsText:
++ setPersistentPatternAfterUnlock:
++ setForceRequirePatternFirstTime:
++ isPatternRequired
++ handleControlTouchDown
++ checkTouch:
++ handleControlTouchUp
++ setDrawnPattern:
++ logTooManyAttempts
++ persistentPatternTimerFired:
++ updateActiveLayer
++ updateDirectionLayer
++ getTouchedDotFromTouch:
++ getIntermediateDotBetweenDot:andDot:
++ isSegmentAllowedFromDot:toDot:
++ getDirectionFromDot:toDot:
++ blockTimerFired:
++ loadTheme
++ loadThemeDefaults
++ colorFromHexColor:
++ loadThemeImage:
++ rectForDot:
++ markUnlocked
++ centerForDot:
++ expectedPattern
++ drawnPattern
++ persistentPatternAfterUnlock
++ maxAttempts
++ noPatternRequiredPeriod
++ forceRequirePatternFirstTime
++ themePath
++ errorOnWrongPattern
++ skipPatternOnWiFi
++ networkNameToSkipPattern
++ skipPatternOnBluetooth
++ bluetoothDeviceNameToSkipPattern
++ showOuterCircles
++ showInnerDots
++ showLine
++ showArrows
++ tooManyErrorsText
++ unblock
++ dealloc
++ setDelegate:
++ init
++ delegate
++ touchesCancelled:withEvent:
++ touchesBegan:withEvent:
++ touchesMoved:withEvent:
++ touchesEnded:withEvent:
++ lock
++ .cxx_construct
++ setBackgroundAlpha:
++ customBackgroundColor
++ showSelection
++ block
++ backgroundAlpha
++ setCustomBackgroundColor:
++ loggingEnabled
++ setLoggingEnabled:
+- prepareLocalizedStrings
+- setMaxAttempts:
+- setNoPatternRequiredPeriod:
+- setExpectedPattern:
+- setThemePath:
+- setErrorOnWrongPattern:
+- setSkipPatternOnWiFi:
+- setNetworkNameToSkipPattern:
+- setSkipPatternOnBluetooth:
+- setBluetoothDeviceNameToSkipPattern:
+- setShowOuterCircles:
+- setShowInnerDots:
+- setShowSelection:
+- setShowLine:
+- setShowArrows:
+- setTooManyErrorsText:
+- setPersistentPatternAfterUnlock:
+- setForceRequirePatternFirstTime:
+- isPatternRequired
+- handleControlTouchDown
+- checkTouch:
+- handleControlTouchUp
+- setDrawnPattern:
+- logTooManyAttempts
+- persistentPatternTimerFired:
+- updateActiveLayer
+- updateDirectionLayer
+- getTouchedDotFromTouch:
+- getIntermediateDotBetweenDot:andDot:
+- isSegmentAllowedFromDot:toDot:
+- getDirectionFromDot:toDot:
+- blockTimerFired:
+- loadTheme
+- loadThemeDefaults
+- colorFromHexColor:
+- loadThemeImage:
+- rectForDot:
+- markUnlocked
+- centerForDot:
+- expectedPattern
+- drawnPattern
+- persistentPatternAfterUnlock
+- maxAttempts
+- noPatternRequiredPeriod
+- forceRequirePatternFirstTime
+- themePath
+- errorOnWrongPattern
+- skipPatternOnWiFi
+- networkNameToSkipPattern
+- skipPatternOnBluetooth
+- bluetoothDeviceNameToSkipPattern
+- showOuterCircles
+- showInnerDots
+- showLine
+- showArrows
+- tooManyErrorsText
+- unblock
+- dealloc
+- setDelegate:
+- init
+- delegate
+- touchesCancelled:withEvent:
+- touchesBegan:withEvent:
+- touchesMoved:withEvent:
+- touchesEnded:withEvent:
+- lock
+- .cxx_construct
+- setBackgroundAlpha:
+- customBackgroundColor
+- showSelection
+- block
+- backgroundAlpha
+- setCustomBackgroundColor:
+- loggingEnabled
+- setLoggingEnabled:
+@end

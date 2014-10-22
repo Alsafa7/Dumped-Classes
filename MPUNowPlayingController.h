@@ -1,0 +1,69 @@
+@interface MPUNowPlayingController : NSObject
+{
+	id _timeInformationTimer;
+	id _currentNowPlayingInfo;
+	double _currentElapsed;
+	double _currentDuration;
+	long long _isPlaying;
+	int _currentNowPlayingAppPID;
+	int _nowPlayingPIDForCachedDisplayID;
+	id _cachedNowPlayingAppDisplayID;
+	BOOL _isRegisteredForNowPlayingNotifications;
+	BOOL _isUpdatingNowPlayingInfo;
+	BOOL _isUpdatingPlaybackState;
+	BOOL _isUpdatingNowPlayingApp;
+	id _cachedNowPlayingArtwork;
+	BOOL _cachedArtworkDirty;
+	id _delegate;
+	double _timeInformationUpdateInterval;
+}
+
++ _unregisterForNotifications
++ isPlaying
++ _registerForNotifications
++ dealloc
++ setDelegate:
++ init
++ delegate
++ update
++ stopUpdating
++ _updateCurrentNowPlaying
++ currentNowPlayingInfo
++ _updatePlaybackState
++ _updateNowPlayingApp
++ _updateTimeInformation
++ _stopUpdatingTimeInformation
++ _startUpdatingTimeInformation
++ nowPlayingAppDisplayID
++ currentNowPlayingArtwork
++ currentDuration
++ setTimeInformationUpdateInterval:
++ currentElapsed
++ timeInformationUpdateInterval
++ .cxx_destruct
++ startUpdating
+- _unregisterForNotifications
+- isPlaying
+- _registerForNotifications
+- dealloc
+- setDelegate:
+- init
+- delegate
+- update
+- stopUpdating
+- _updateCurrentNowPlaying
+- currentNowPlayingInfo
+- _updatePlaybackState
+- _updateNowPlayingApp
+- _updateTimeInformation
+- _stopUpdatingTimeInformation
+- _startUpdatingTimeInformation
+- nowPlayingAppDisplayID
+- currentNowPlayingArtwork
+- currentDuration
+- setTimeInformationUpdateInterval:
+- currentElapsed
+- timeInformationUpdateInterval
+- .cxx_destruct
+- startUpdating
+@end

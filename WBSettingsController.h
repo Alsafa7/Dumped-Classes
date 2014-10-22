@@ -1,0 +1,6 @@
+@interface WBSettingsController : PSListController
+{
+
+}
+
+@end

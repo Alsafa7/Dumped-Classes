@@ -1,0 +1,81 @@
+@interface SKUISwooshPageComponent : SKUIPageComponent
+{
+	id _bricks;
+	id _lockups;
+	struct _lockupStyle;
+	id _mediaComponents;
+	long long _missingDataCount;
+	id _seeAllTitle;
+	id _seeAllURL;
+	BOOL _showsItemTitles;
+	long long _swooshType;
+	id _title;
+}
+
++ title
++ initWithCustomPageContext:
++ componentType
++ valueForMetricsField:
++ enumerateMissingItemIdentifiersFromIndex:usingBlock:
++ isMissingItemData
++ metricsElementName
++ swooshType
++ initWithRoomContext:
++ lockupStyle
++ seeAllURL
++ bricks
++ _updateBricksWithItems:
++ showsBrickTitles
++ seeAllTitle
++ lockups
++ initWithItemList:
++ _updateLockupItemsWithLookupResponse:
++ _updateLockupItemsWithItems:
++ initWithRelatedContentContext:
++ mediaComponents
++ showsMediaTitles
++ _setSeeAllValuesWithLinkInfo:
++ _brickItemsWithChildren:customPageContext:
++ _lockupsWithChildren:context:
++ _mediaComponentsWithChildren:context:
++ _reloadMissingDataCount
++ _brickItemsWithChildren:featuredPageContext:
++ _lockupsWithChildren:featuredPageContext:
++ _isBrickAvailable:withPageContext:
++ _lockupWithItemIdentifier:context:
++ .cxx_destruct
++ initWithFeaturedContentContext:kind:
+- title
+- initWithCustomPageContext:
+- componentType
+- valueForMetricsField:
+- enumerateMissingItemIdentifiersFromIndex:usingBlock:
+- isMissingItemData
+- metricsElementName
+- swooshType
+- initWithRoomContext:
+- lockupStyle
+- seeAllURL
+- bricks
+- _updateBricksWithItems:
+- showsBrickTitles
+- seeAllTitle
+- lockups
+- initWithItemList:
+- _updateLockupItemsWithLookupResponse:
+- _updateLockupItemsWithItems:
+- initWithRelatedContentContext:
+- mediaComponents
+- showsMediaTitles
+- _setSeeAllValuesWithLinkInfo:
+- _brickItemsWithChildren:customPageContext:
+- _lockupsWithChildren:context:
+- _mediaComponentsWithChildren:context:
+- _reloadMissingDataCount
+- _brickItemsWithChildren:featuredPageContext:
+- _lockupsWithChildren:featuredPageContext:
+- _isBrickAvailable:withPageContext:
+- _lockupWithItemIdentifier:context:
+- .cxx_destruct
+- initWithFeaturedContentContext:kind:
+@end

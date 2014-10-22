@@ -1,0 +1,110 @@
+@interface UIStatusBarItemView : UIView
+{
+	double _currentOverlap;
+	pointer _imageContext;
+	double _imageContextScale;
+	id _legibilityView;
+	BOOL _visible;
+	BOOL _allowsUpdates;
+	id _item;
+	id _layoutManager;
+	id _foregroundStyle;
+}
+
++ dealloc
++ description
++ setContentMode:
++ _shouldAnimatePropertyWithKey:
++ willMoveToWindow:
++ layoutManager
++ setVisible:
++ textAlignment
++ item
++ imageWithShadowNamed:
++ foregroundStyle
++ beginImageContextWithMinimumWidth:
++ imageFromImageContextClippedToWidth:
++ endImageContext
++ updateForNewData:actions:
++ contentsImage
++ setLayoutManager:
++ legibilityStyle
++ isVisible
++ setPersistentAnimationsEnabled:
++ initWithItem:data:actions:style:
++ setAllowsUpdates:
++ updateContentsAndWidth
++ allowsUpdates
++ legibilityStrength
++ setLayerContentsImage:
++ textStyle
++ standardPadding
++ shadowPadding
++ cachesImage
++ endDisablingRasterization
++ setVisible:frame:duration:
++ setCurrentOverlap:
++ currentOverlap
++ currentLeftOverlap
++ currentRightOverlap
++ setStatusBarData:actions:
++ drawText:forWidth:lineBreakMode:letterSpacing:textSize:
++ textFont
++ extraLeftPadding
++ extraRightPadding
++ resetContentOverlap
++ addContentOverlap:
++ maximumOverlap
++ animatesDataChange
++ performPendedActions
++ imageWithText:
++ beginDisablingRasterization
+- dealloc
+- description
+- setContentMode:
+- _shouldAnimatePropertyWithKey:
+- willMoveToWindow:
+- layoutManager
+- setVisible:
+- textAlignment
+- item
+- imageWithShadowNamed:
+- foregroundStyle
+- beginImageContextWithMinimumWidth:
+- imageFromImageContextClippedToWidth:
+- endImageContext
+- updateForNewData:actions:
+- contentsImage
+- setLayoutManager:
+- legibilityStyle
+- isVisible
+- setPersistentAnimationsEnabled:
+- initWithItem:data:actions:style:
+- setAllowsUpdates:
+- updateContentsAndWidth
+- allowsUpdates
+- legibilityStrength
+- setLayerContentsImage:
+- textStyle
+- standardPadding
+- shadowPadding
+- cachesImage
+- endDisablingRasterization
+- setVisible:frame:duration:
+- setCurrentOverlap:
+- currentOverlap
+- currentLeftOverlap
+- currentRightOverlap
+- setStatusBarData:actions:
+- drawText:forWidth:lineBreakMode:letterSpacing:textSize:
+- textFont
+- extraLeftPadding
+- extraRightPadding
+- resetContentOverlap
+- addContentOverlap:
+- maximumOverlap
+- animatesDataChange
+- performPendedActions
+- imageWithText:
+- beginDisablingRasterization
+@end

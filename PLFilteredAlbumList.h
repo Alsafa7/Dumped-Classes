@@ -1,0 +1,120 @@
+@interface PLFilteredAlbumList : NSObject
+{
+	id _indexMapper;
+	id _filteredIndexes;
+	id _weak_albums;
+	Array _derivedAlbumLists;
+	int filter;
+	id backingAlbumList;
+	id predicate;
+}
+
++ dealloc
++ description
++ isEmpty
++ setFilter:
++ identifier
++ _typeDescription
++ setPredicate:
++ managedObjectContext
++ predicate
++ albums
++ photoLibrary
++ albumsCount
++ _prettyDescription
++ unregisterAllDerivedAlbums
++ filteredIndexes
++ shouldIncludeObjectAtIndex:
++ mappedDataSourceChanged:remoteNotificationData:
++ derivedChangeNotificationClass
++ cachedIndexMapState
++ indexMapper
++ containers
++ canEditContainers
++ containersRelationshipName
++ containersCount
++ albumListType
++ hasAtLeastOneAlbum
++ canEditAlbums
++ albumsSortingComparator
++ enumerateDerivedAlbumLists:
++ albumHasFixedOrder:
++ setNeedsReordering
++ needsReordering
++ updateAlbumsOrderIfNeeded
++ unreadAlbumsCount
++ registerDerivedAlbumList:
++ initWithBackingAlbumList:filter:
++ setBackingAlbumList:
++ backingAlbumList
++ _backingContextDidChange:
++ _invalidateFilteredIndexes
++ _albums
++ set_albums:
++ countOfFilteredAlbums
++ indexInFilteredAlbumsOfObject:
++ objectInFilteredAlbumsAtIndex:
++ filteredAlbumsAtIndexes:
++ getFilteredAlbums:range:
++ insertObject:inFilteredAlbumsAtIndex:
++ removeObjectFromFilteredAlbumsAtIndex:
++ insertFilteredAlbums:atIndexes:
++ removeFilteredAlbumsAtIndexes:
++ replaceObjectInFilteredAlbumsAtIndex:withObject:
++ replaceFilteredAlbumsAtIndexes:withFilteredValues:
++ filter
+- dealloc
+- description
+- isEmpty
+- setFilter:
+- identifier
+- _typeDescription
+- setPredicate:
+- managedObjectContext
+- predicate
+- albums
+- photoLibrary
+- albumsCount
+- _prettyDescription
+- unregisterAllDerivedAlbums
+- filteredIndexes
+- shouldIncludeObjectAtIndex:
+- mappedDataSourceChanged:remoteNotificationData:
+- derivedChangeNotificationClass
+- cachedIndexMapState
+- indexMapper
+- containers
+- canEditContainers
+- containersRelationshipName
+- containersCount
+- albumListType
+- hasAtLeastOneAlbum
+- canEditAlbums
+- albumsSortingComparator
+- enumerateDerivedAlbumLists:
+- albumHasFixedOrder:
+- setNeedsReordering
+- needsReordering
+- updateAlbumsOrderIfNeeded
+- unreadAlbumsCount
+- registerDerivedAlbumList:
+- initWithBackingAlbumList:filter:
+- setBackingAlbumList:
+- backingAlbumList
+- _backingContextDidChange:
+- _invalidateFilteredIndexes
+- _albums
+- set_albums:
+- countOfFilteredAlbums
+- indexInFilteredAlbumsOfObject:
+- objectInFilteredAlbumsAtIndex:
+- filteredAlbumsAtIndexes:
+- getFilteredAlbums:range:
+- insertObject:inFilteredAlbumsAtIndex:
+- removeObjectFromFilteredAlbumsAtIndex:
+- insertFilteredAlbums:atIndexes:
+- removeFilteredAlbumsAtIndexes:
+- replaceObjectInFilteredAlbumsAtIndex:withObject:
+- replaceFilteredAlbumsAtIndexes:withFilteredValues:
+- filter
+@end

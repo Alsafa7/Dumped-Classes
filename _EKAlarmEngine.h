@@ -1,0 +1,97 @@
+@interface _EKAlarmEngine : NSObject
+{
+	int _lastDBSequence;
+	id _dispatchQueue;
+	id _nextFireDate;
+	double _lastCheckpoint;
+	id _timer;
+	BOOL _populating;
+	double _populateStart;
+	id _syncTimer;
+	BOOL _pendingChanges;
+	BOOL _shouldUpdateWithForceForAlarmTable;
+	BOOL _shouldUpdateWithForceForFences;
+	BOOL _abortedLastAttemptToAdjustFences;
+	id _dateFormatter;
+	id _locationManager;
+	double _defaultRadius;
+	id _tomorrow;
+}
+
++ _databaseChanged
++ _protectedDataWillBecomeUnavailable
++ _protectedDataDidBecomeAvailable
++ _killSyncTimer
++ _timeZoneChanged:
++ _removeAllFences
++ _updateWithForceForAlarmTable:forFences:
++ _killTimer
++ _rescheduleTimer
++ _updateWithForce:
++ _isDataProtected
++ _haveAlarmsChanged:
++ _populateAlarmTable:
++ _adjustFences:
++ _storeAlarms:nextScheduleLimit:eventStore:
++ _populateFinished
++ _timerFired:
++ _notifyAlarmsFired:
++ _syncTimerFired:
++ _syncDidEnd
++ _resetSyncTimer
++ _stringForAuthorizationStatus:
++ _shouldAdjustFencesWithStatus:
++ _proximityAlertTriggered:entered:
++ reschedule
++ _syncDidStart
++ _timeDidChangeSignificantly
++ _calendarNotificationSettingChanged
++ _locationDaemonDidLaunch
++ dealloc
++ _dateFormatter
++ start
++ stop
++ locationManager:didEnterRegion:
++ locationManager:didExitRegion:
++ locationManager:didFailWithError:
++ locationManager:monitoringDidFailForRegion:withError:
++ locationManager:didChangeAuthorizationStatus:
+- _databaseChanged
+- _protectedDataWillBecomeUnavailable
+- _protectedDataDidBecomeAvailable
+- _killSyncTimer
+- _timeZoneChanged:
+- _removeAllFences
+- _updateWithForceForAlarmTable:forFences:
+- _killTimer
+- _rescheduleTimer
+- _updateWithForce:
+- _isDataProtected
+- _haveAlarmsChanged:
+- _populateAlarmTable:
+- _adjustFences:
+- _storeAlarms:nextScheduleLimit:eventStore:
+- _populateFinished
+- _timerFired:
+- _notifyAlarmsFired:
+- _syncTimerFired:
+- _syncDidEnd
+- _resetSyncTimer
+- _stringForAuthorizationStatus:
+- _shouldAdjustFencesWithStatus:
+- _proximityAlertTriggered:entered:
+- reschedule
+- _syncDidStart
+- _timeDidChangeSignificantly
+- _calendarNotificationSettingChanged
+- _locationDaemonDidLaunch
+- dealloc
+- _dateFormatter
+- start
+- stop
+- locationManager:didEnterRegion:
+- locationManager:didExitRegion:
+- locationManager:didFailWithError:
+- locationManager:monitoringDidFailForRegion:withError:
+- locationManager:didChangeAuthorizationStatus:
+@end

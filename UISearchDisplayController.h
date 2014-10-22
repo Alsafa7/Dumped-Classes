@@ -1,0 +1,274 @@
+@interface UISearchDisplayController : NSObject
+{
+	id _viewController;
+	id _tableView;
+	id _dimmingView;
+	id _searchBar;
+	id _noResultsLabel;
+	id _noResultsMessage;
+	id _resultsTitle;
+	id _delegate;
+	id _tableViewDataSource;
+	id _tableViewDelegate;
+	pointer _containingScrollViews;
+	double _lastKeyboardAdjustment;
+	double _lastFooterAdjustment;
+	id _popoverController;
+	long long _searchResultsTableViewStyle;
+	id _navigationControllerBookkeeper;
+	id _savedSelectedCellsWhenViewWillAppear;
+	id _savedContainingScrollView;
+	id _containerView;
+	usigned long long _savedSearchBarResizingMask;
+	id _navigationItem;
+	struct _containingScrollViewContentOffset;
+	struct _searchFieldInNavigationBarFrame;
+	id _attachedNavigationPalette;
+	id _animatingAppearanceNavigationButton;
+	double _animatingAppearanceNavigationSearchBarWidth;
+	id _dimmingOverlayColor;
+	id _tableViewBackgroundHeaderView;
+	long long _unactivatedBarPosition;
+	id _didScrollDelegate;
+	struct _searchDisplayControllerFlags;
+	BOOL _displaysSearchBarInNavigationBar;
+	usigned long long _navigationBarSearchFieldSizing;
+	double __activationGapHeight;
+	double __additionalNonCollapsingHeightAboveSearchBar;
+}
+
++ dealloc
++ initWithCoder:
++ encodeWithCoder:
++ setDelegate:
++ init
++ delegate
++ navigationItem
++ isActive
++ _updateBackdropMaskViewsInScrollView:
++ _didScroll
++ _clearViewController
++ hidNavigationBar
++ displaysSearchBarInNavigationBar
++ _keyboardWillShow:
++ _keyboardWillHide:
++ searchBar
++ _containerView
++ setActive:
++ _dimmingViewColor
++ _topShadowView
++ searchContentsController
++ _updateSearchBarMaskIfNecessary
++ _searchBarSuperviewWillChange
++ _searchBarSuperviewChanged
++ searchBar:textDidChange:
++ navigationBarSearchFieldSizing
++ searchBar:selectedScopeButtonIndexDidChange:
++ _animateNavigationBarSearchBarAppearance:
++ _searchBarShouldScrollToVisible:
++ searchBarCancelButtonClicked:
++ searchBarResultsListButtonClicked:
++ searchBarTextDidBeginEditing:
++ searchBarSearchButtonClicked:
++ _managedTableViewDidScroll
++ _updateNoSearchResultsMessageVisiblity
++ initWithSearchBar:contentsController:
++ initWithSearchBar:contentsController:searchResultsTableViewStyle:
++ _configureNewSearchBar
++ _destroyManagedTableView
++ _containingTableView
++ _updateTableHeaderBackgroundViewInTableView:amountScrolledUnder:
++ _updateSearchBarForTableViewIndexBar:
++ _indexBarFrameChanged:
++ _watchContainingTableViewForScrolling:
++ _areSearchContentsSplitViewMaster
++ windowWillAnimateRotation:
++ windowDidRotate:
++ _configureSearchBarForTableView
++ noResultsMessage
++ isNavigationBarHidingEnabled
++ _containingViewOfClass:
++ setActive:animated:
++ searchResultsTableView
++ searchResultsTitle
++ _popoverClearButtonPressed:
++ _searchBarInNavigationControllerComponent
++ _shouldAccountForStatusBarHeight
++ _statusBarHeight
++ _tableViewContentInsets
++ _additionalNonCollapsingHeightAboveSearchBar
++ _isSearchBarInBar
++ _adjustTableViewContentInsetsAndOffsetsIgnoringCurrent:
++ _createPopoverController
++ dimTableViewOnEmptySearchString
++ _cleanUpSearchBar
++ navigationControllerWillShowViewController:
++ _dimmingOverlayColor
++ _showsResultsForEmptyField
++ _hoistSearchBar
++ _setTableViewVisible:inView:
++ _sendDelegateDidBeginDidEndSearch
++ _popoverKeyboardDidShow:
++ _popoverKeyboardDidHide:
++ navigationControllerDidShowViewController:
++ navigationControllerDidCancelShowingViewController:
++ _hideVisibleRefreshControl
++ _disableParentScrollViews
++ _enableParentScrollViews
++ _dimmingViewAlpha
++ set_additionalNonCollapsingHeightAboveSearchBar:
++ showHideAnimationDidFinish
++ _updatePinnedSearchBar
++ _updateNavigationPalette
++ _clearSavedSelectedCellsWeUsedWhenHedgingOurBets
++ _saveSelectedRowsInCaseViewDoesNotReallyAppear
++ _restoreSelectedCellsInCaseViewDidNotReallyAppear
++ _setupNoResultsLabelIfNecessary
++ _configureContainerView
++ setSearchBar:
++ setSearchContentsController:
++ popoverController:animationCompleted:
++ popoverControllerShouldDismissPopover:
++ setSearchResultsDataSource:
++ setSearchResultsDelegate:
++ setNoResultsMessageVisible:
++ noResultsMessageVisible
++ setAutomaticallyShowsNoResultsMessage:
++ automaticallyShowsNoResultsMessage
++ setNoResultsMessage:
++ setNavigationBarHidingEnabled:
++ _setAllowDisablingNavigationBarHiding:
++ _allowDisablingNavigationBarHiding
++ _setAdjustsSearchBarContentInsetForIndexBar:
++ _adjustsSearchBarContentInsetForIndexBar
++ setDimTableViewOnEmptySearchString:
++ _isCancelButtonManagementDisabled
++ _setCancelButtonManagementDisabled:
++ _noResultsMessageLabel
++ _setShowsResultsForEmptyField:
++ setNavigationBarSearchFieldSizing:
++ _setDimmingOverlayColor:
++ searchResultsDataSource
++ searchResultsDelegate
++ setSearchResultsTitle:
++ setDisplaysSearchBarInNavigationBar:
++ _activationGapHeight
++ set_activationGapHeight:
+- dealloc
+- initWithCoder:
+- encodeWithCoder:
+- setDelegate:
+- init
+- delegate
+- navigationItem
+- isActive
+- _updateBackdropMaskViewsInScrollView:
+- _didScroll
+- _clearViewController
+- hidNavigationBar
+- displaysSearchBarInNavigationBar
+- _keyboardWillShow:
+- _keyboardWillHide:
+- searchBar
+- _containerView
+- setActive:
+- _dimmingViewColor
+- _topShadowView
+- searchContentsController
+- _updateSearchBarMaskIfNecessary
+- _searchBarSuperviewWillChange
+- _searchBarSuperviewChanged
+- searchBar:textDidChange:
+- navigationBarSearchFieldSizing
+- searchBar:selectedScopeButtonIndexDidChange:
+- _animateNavigationBarSearchBarAppearance:
+- _searchBarShouldScrollToVisible:
+- searchBarCancelButtonClicked:
+- searchBarResultsListButtonClicked:
+- searchBarTextDidBeginEditing:
+- searchBarSearchButtonClicked:
+- _managedTableViewDidScroll
+- _updateNoSearchResultsMessageVisiblity
+- initWithSearchBar:contentsController:
+- initWithSearchBar:contentsController:searchResultsTableViewStyle:
+- _configureNewSearchBar
+- _destroyManagedTableView
+- _containingTableView
+- _updateTableHeaderBackgroundViewInTableView:amountScrolledUnder:
+- _updateSearchBarForTableViewIndexBar:
+- _indexBarFrameChanged:
+- _watchContainingTableViewForScrolling:
+- _areSearchContentsSplitViewMaster
+- windowWillAnimateRotation:
+- windowDidRotate:
+- _configureSearchBarForTableView
+- noResultsMessage
+- isNavigationBarHidingEnabled
+- _containingViewOfClass:
+- setActive:animated:
+- searchResultsTableView
+- searchResultsTitle
+- _popoverClearButtonPressed:
+- _searchBarInNavigationControllerComponent
+- _shouldAccountForStatusBarHeight
+- _statusBarHeight
+- _tableViewContentInsets
+- _additionalNonCollapsingHeightAboveSearchBar
+- _isSearchBarInBar
+- _adjustTableViewContentInsetsAndOffsetsIgnoringCurrent:
+- _createPopoverController
+- dimTableViewOnEmptySearchString
+- _cleanUpSearchBar
+- navigationControllerWillShowViewController:
+- _dimmingOverlayColor
+- _showsResultsForEmptyField
+- _hoistSearchBar
+- _setTableViewVisible:inView:
+- _sendDelegateDidBeginDidEndSearch
+- _popoverKeyboardDidShow:
+- _popoverKeyboardDidHide:
+- navigationControllerDidShowViewController:
+- navigationControllerDidCancelShowingViewController:
+- _hideVisibleRefreshControl
+- _disableParentScrollViews
+- _enableParentScrollViews
+- _dimmingViewAlpha
+- set_additionalNonCollapsingHeightAboveSearchBar:
+- showHideAnimationDidFinish
+- _updatePinnedSearchBar
+- _updateNavigationPalette
+- _clearSavedSelectedCellsWeUsedWhenHedgingOurBets
+- _saveSelectedRowsInCaseViewDoesNotReallyAppear
+- _restoreSelectedCellsInCaseViewDidNotReallyAppear
+- _setupNoResultsLabelIfNecessary
+- _configureContainerView
+- setSearchBar:
+- setSearchContentsController:
+- popoverController:animationCompleted:
+- popoverControllerShouldDismissPopover:
+- setSearchResultsDataSource:
+- setSearchResultsDelegate:
+- setNoResultsMessageVisible:
+- noResultsMessageVisible
+- setAutomaticallyShowsNoResultsMessage:
+- automaticallyShowsNoResultsMessage
+- setNoResultsMessage:
+- setNavigationBarHidingEnabled:
+- _setAllowDisablingNavigationBarHiding:
+- _allowDisablingNavigationBarHiding
+- _setAdjustsSearchBarContentInsetForIndexBar:
+- _adjustsSearchBarContentInsetForIndexBar
+- setDimTableViewOnEmptySearchString:
+- _isCancelButtonManagementDisabled
+- _setCancelButtonManagementDisabled:
+- _noResultsMessageLabel
+- _setShowsResultsForEmptyField:
+- setNavigationBarSearchFieldSizing:
+- _setDimmingOverlayColor:
+- searchResultsDataSource
+- searchResultsDelegate
+- setSearchResultsTitle:
+- setDisplaysSearchBarInNavigationBar:
+- _activationGapHeight
+- set_activationGapHeight:
+@end

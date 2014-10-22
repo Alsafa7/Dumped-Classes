@@ -1,0 +1,6 @@
+@interface MusicAlbumsViewController : MusicTableViewController
+{
+
+}
+
+@end

@@ -1,0 +1,6 @@
+@interface DOMHTMLMetaElement : DOMHTMLElement
+{
+
+}
+
+@end

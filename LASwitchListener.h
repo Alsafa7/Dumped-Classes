@@ -1,0 +1,6 @@
+@interface LASwitchListener : NSObject
+{
+
+}
+
+@end

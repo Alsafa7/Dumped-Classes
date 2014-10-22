@@ -1,0 +1,6 @@
+@interface PCPersistentIdentifiers : NSObject
+{
+
+}
+
+@end

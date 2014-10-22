@@ -1,0 +1,122 @@
+@interface BKSApplicationActivationSettings : NSObject
+{
+	BOOL _animated;
+	BOOL _suspended;
+	BOOL _suspendedEventsOnly;
+	BOOL _safe;
+	BOOL _firstLaunchAfterBoot;
+	BOOL _enableTests;
+	BOOL _forRemoteNotification;
+	BOOL _forLocalNotification;
+	BOOL _flip;
+	BOOL _statusBarHidden;
+	BOOL _classic;
+	BOOL _zoomInClassic;
+	BOOL _forBackgroundContentFetching;
+	BOOL _forBackgroundURLSession;
+	int _interfaceOrientation;
+	int _statusBarStyle;
+	id _launchSettings;
+	id _openURL;
+	id _payload;
+	double _userLaunchEventTime;
+	double _watchdogExtension;
+}
+
++ suspended
++ dealloc
++ description
++ interfaceOrientation
++ statusBarStyle
++ firstLaunchAfterBoot
++ setStatusBarStyle:
++ setStatusBarHidden:
++ copyWithZone:
++ animated
++ setInterfaceOrientation:
++ setAnimated:
++ flip
++ setSuspended:
++ encodeWithXPCDictionary:
++ initWithXPCDictionary:
++ initWithSettings:zone:
++ launchSettings
++ suspendedEventsOnly
++ openURL
++ safe
++ enableTests
++ userLaunchEventTime
++ watchdogExtension
++ forRemoteNotification
++ forLocalNotification
++ classic
++ zoomInClassic
++ forBackgroundContentFetching
++ forBackgroundURLSession
++ setLaunchSettings:
++ setSuspendedEventsOnly:
++ setOpenURL:
++ setSafe:
++ setFirstLaunchAfterBoot:
++ setEnableTests:
++ setUserLaunchEventTime:
++ setWatchdogExtension:
++ setForRemoteNotification:
++ setForLocalNotification:
++ setFlip:
++ setClassic:
++ setZoomInClassic:
++ setForBackgroundContentFetching:
++ setForBackgroundURLSession:
++ payload
++ setPayload:
++ statusBarHidden
+- suspended
+- dealloc
+- description
+- interfaceOrientation
+- statusBarStyle
+- firstLaunchAfterBoot
+- setStatusBarStyle:
+- setStatusBarHidden:
+- copyWithZone:
+- animated
+- setInterfaceOrientation:
+- setAnimated:
+- flip
+- setSuspended:
+- encodeWithXPCDictionary:
+- initWithXPCDictionary:
+- initWithSettings:zone:
+- launchSettings
+- suspendedEventsOnly
+- openURL
+- safe
+- enableTests
+- userLaunchEventTime
+- watchdogExtension
+- forRemoteNotification
+- forLocalNotification
+- classic
+- zoomInClassic
+- forBackgroundContentFetching
+- forBackgroundURLSession
+- setLaunchSettings:
+- setSuspendedEventsOnly:
+- setOpenURL:
+- setSafe:
+- setFirstLaunchAfterBoot:
+- setEnableTests:
+- setUserLaunchEventTime:
+- setWatchdogExtension:
+- setForRemoteNotification:
+- setForLocalNotification:
+- setFlip:
+- setClassic:
+- setZoomInClassic:
+- setForBackgroundContentFetching:
+- setForBackgroundURLSession:
+- payload
+- setPayload:
+- statusBarHidden
+@end

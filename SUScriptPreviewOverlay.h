@@ -1,0 +1,6 @@
+@interface SUScriptPreviewOverlay : SUScriptObject
+{
+
+}
+
+@end

@@ -1,0 +1,6 @@
+@interface PSSplitViewController : UISplitViewController
+{
+
+}
+
+@end

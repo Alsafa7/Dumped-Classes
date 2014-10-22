@@ -1,0 +1,6 @@
+@interface EKNotifiableEventsPredicate : NSPredicate
+{
+
+}
+
+@end

@@ -1,0 +1,6 @@
+@interface UIAccessibilitySafeCategory : NSObject
+{
+
+}
+
+@end

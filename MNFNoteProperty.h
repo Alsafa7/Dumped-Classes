@@ -1,0 +1,6 @@
+@interface MNFNoteProperty : NSManagedObject
+{
+
+}
+
+@end

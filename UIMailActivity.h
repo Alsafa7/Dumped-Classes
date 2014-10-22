@@ -1,0 +1,75 @@
+@interface UIMailActivity : UIActivity
+{
+	BOOL _keyboardVisible;
+	BOOL _sourceIsManaged;
+	BOOL _hasAnyAccount;
+	BOOL _hasFilteredAccount;
+	id _autosaveIdentifier;
+	id _mailComposeViewController;
+}
+
++ dealloc
++ init
++ encodeRestorableStateWithCoder:
++ decodeRestorableStateWithCoder:
++ _activityImage
++ activityTitle
++ activityType
++ canPerformWithActivityItems:
++ _cleanup
++ sourceIsManaged
++ setSubject:
++ activityViewController
++ setSourceIsManaged:
++ prepareWithActivityItems:
++ _setSubject:
++ autosaveWithHandler:
++ setKeyboardVisible:
++ setAutosaveIdentifier:
++ _mailDraftRestorationURL
++ _deleteMailDraftIdentifierRestorationArchive:
++ _stateRestorationDraftIsAvailable
++ mailComposeViewController
++ setHasAnyAccount:
++ setHasFilteredAccount:
++ hasAnyAccount
++ hasFilteredAccount
++ keyboardVisible
++ autosaveIdentifier
++ _restoreDraft
++ setMailComposeViewController:
++ _saveDraft:
++ mailComposeController:didFinishWithResult:error:
+- dealloc
+- init
+- encodeRestorableStateWithCoder:
+- decodeRestorableStateWithCoder:
+- _activityImage
+- activityTitle
+- activityType
+- canPerformWithActivityItems:
+- _cleanup
+- sourceIsManaged
+- setSubject:
+- activityViewController
+- setSourceIsManaged:
+- prepareWithActivityItems:
+- _setSubject:
+- autosaveWithHandler:
+- setKeyboardVisible:
+- setAutosaveIdentifier:
+- _mailDraftRestorationURL
+- _deleteMailDraftIdentifierRestorationArchive:
+- _stateRestorationDraftIsAvailable
+- mailComposeViewController
+- setHasAnyAccount:
+- setHasFilteredAccount:
+- hasAnyAccount
+- hasFilteredAccount
+- keyboardVisible
+- autosaveIdentifier
+- _restoreDraft
+- setMailComposeViewController:
+- _saveDraft:
+- mailComposeController:didFinishWithResult:error:
+@end

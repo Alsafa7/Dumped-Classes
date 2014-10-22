@@ -1,0 +1,100 @@
+@interface UIInputViewSet : NSObject
+{
+	id _inputView;
+	id _inputAccessoryView;
+	BOOL _isKeyboard;
+	BOOL _supportsSplit;
+	BOOL _isSplit;
+	double _splitHeightDelta;
+	id _restorableResponder;
+}
+
++ dealloc
++ isEqual:
++ description
++ isEmpty
++ containsView:
++ inputView
++ inputAccessoryView
++ setInputView:
++ setInputAccessoryView:
++ _setRenderConfig:
++ isSplit
++ supportsSplit
++ refreshPresentation
++ visible
++ keyboard
++ _themableInputAccessoryView
++ keyboardOrientation:
++ inputViewKeyboardCanSplit
++ _inputViewIsSplit
++ splitHeightDelta
++ _accessorySuppressesShadow
++ layeringView
++ inputViewBounds
++ _leftInputViewSetFrame
++ _rightInputViewSetFrame
++ __isCKAccessoryView
++ _splittableInputAccessoryView
++ inputAccessoryViewBounds
++ inSyncWithOrientation:forKeyboard:
++ _beginSplitTransitionIfNeeded
++ _setSplitProgress:
++ setSplitHeightDelta:
++ _endSplitTransitionIfNeeded
++ isStrictSupersetOfViewSet:
++ containsResponder:
++ canAnimateToInputViewSet:
++ usesKeyClicks
++ setRestorableResponder:
++ restorableResponder
++ _inputViewSetSupportsSplit
++ initWithInputView:accessoryView:isKeyboard:
++ _inputViewIsVisible
++ _inputViewSupportsSplit
++ _inputAccessoryViewSupportsSplit
+- dealloc
+- isEqual:
+- description
+- isEmpty
+- containsView:
+- inputView
+- inputAccessoryView
+- setInputView:
+- setInputAccessoryView:
+- _setRenderConfig:
+- isSplit
+- supportsSplit
+- refreshPresentation
+- visible
+- keyboard
+- _themableInputAccessoryView
+- keyboardOrientation:
+- inputViewKeyboardCanSplit
+- _inputViewIsSplit
+- splitHeightDelta
+- _accessorySuppressesShadow
+- layeringView
+- inputViewBounds
+- _leftInputViewSetFrame
+- _rightInputViewSetFrame
+- __isCKAccessoryView
+- _splittableInputAccessoryView
+- inputAccessoryViewBounds
+- inSyncWithOrientation:forKeyboard:
+- _beginSplitTransitionIfNeeded
+- _setSplitProgress:
+- setSplitHeightDelta:
+- _endSplitTransitionIfNeeded
+- isStrictSupersetOfViewSet:
+- containsResponder:
+- canAnimateToInputViewSet:
+- usesKeyClicks
+- setRestorableResponder:
+- restorableResponder
+- _inputViewSetSupportsSplit
+- initWithInputView:accessoryView:isKeyboard:
+- _inputViewIsVisible
+- _inputViewSupportsSplit
+- _inputAccessoryViewSupportsSplit
+@end

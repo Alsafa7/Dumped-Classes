@@ -1,0 +1,81 @@
+@interface EKPersistentRecurrenceRule : EKPersistentObject
+{
+	id _helper;
+	id _recurrenceEnd;
+}
+
++ validate:
++ gregorianUnits
++ setDaysOfTheWeek:
++ setDaysOfTheMonth:
++ setSetPositions:
++ setMonthsOfTheYear:
++ setDaysOfTheYear:
++ setWeeksOfTheYear:
++ daysOfTheWeek
++ daysOfTheMonth
++ setPositions
++ monthsOfTheYear
++ daysOfTheYear
++ weeksOfTheYear
++ setFirstDayOfTheWeek:
++ cachedEndDate
++ shouldPinMonthDays
++ firstDayOfTheWeek
++ _helper
++ entityType
++ dealloc
++ count
++ init
++ description
++ copyWithZone:
++ UUID
++ setCount:
++ frequency
++ setFrequency:
++ calendarIdentifier
++ setInterval:
++ interval
++ owner
++ endDate
++ setEndDate:
++ isDirty
++ setOwner:
+- validate:
+- gregorianUnits
+- setDaysOfTheWeek:
+- setDaysOfTheMonth:
+- setSetPositions:
+- setMonthsOfTheYear:
+- setDaysOfTheYear:
+- setWeeksOfTheYear:
+- daysOfTheWeek
+- daysOfTheMonth
+- setPositions
+- monthsOfTheYear
+- daysOfTheYear
+- weeksOfTheYear
+- setFirstDayOfTheWeek:
+- cachedEndDate
+- shouldPinMonthDays
+- firstDayOfTheWeek
+- _helper
+- entityType
+- dealloc
+- count
+- init
+- description
+- copyWithZone:
+- UUID
+- setCount:
+- frequency
+- setFrequency:
+- calendarIdentifier
+- setInterval:
+- interval
+- owner
+- endDate
+- setEndDate:
+- isDirty
+- setOwner:
+@end

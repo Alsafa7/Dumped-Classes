@@ -1,0 +1,84 @@
+@interface UIWebTouchEventsGestureRecognizer : UIGestureRecognizer
+{
+	id _touchTarget;
+	SEL _touchAction;
+	id _webTouchDelegate;
+	bit[1] _passedHitTest;
+	bit[1] _defaultPrevented;
+	bit[1] _inJavaScriptGesture;
+	bit[2] _type;
+	double _originalGestureDistance;
+	double _originalGestureAngle;
+	struct _locationInWindow;
+	id _touchLocations;
+	id _touchIdentifiers;
+	id _touchPhases;
+	double _scale;
+	double _rotation;
+}
+
++ dealloc
++ description
++ scale
++ type
++ touchesCancelled:withEvent:
++ touchesBegan:withEvent:
++ touchesMoved:withEvent:
++ touchesEnded:withEvent:
++ canBePreventedByGestureRecognizer:
++ rotation
++ setTouchLocations:
++ setTouchIdentifiers:
++ setTouchPhases:
++ _phaseDescription:
++ _typeDescription
++ _locationsDescription
++ _identifiersDescription
++ _phasesDescription
++ _reset
++ _resetGestureRecognizer
++ _getNextTouchIdentifier
++ _recordTouches:type:
++ _processTouches:withEvent:type:
++ initWithTarget:action:touchDelegate:
++ .cxx_construct
++ isDefaultPrevented
++ setDefaultPrevented:
++ locationInWindow
++ touchLocations
++ touchIdentifiers
++ touchPhases
++ inJavaScriptGesture
+- dealloc
+- description
+- scale
+- type
+- touchesCancelled:withEvent:
+- touchesBegan:withEvent:
+- touchesMoved:withEvent:
+- touchesEnded:withEvent:
+- canBePreventedByGestureRecognizer:
+- rotation
+- setTouchLocations:
+- setTouchIdentifiers:
+- setTouchPhases:
+- _phaseDescription:
+- _typeDescription
+- _locationsDescription
+- _identifiersDescription
+- _phasesDescription
+- _reset
+- _resetGestureRecognizer
+- _getNextTouchIdentifier
+- _recordTouches:type:
+- _processTouches:withEvent:type:
+- initWithTarget:action:touchDelegate:
+- .cxx_construct
+- isDefaultPrevented
+- setDefaultPrevented:
+- locationInWindow
+- touchLocations
+- touchIdentifiers
+- touchPhases
+- inJavaScriptGesture
+@end

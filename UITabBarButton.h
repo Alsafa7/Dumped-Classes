@@ -1,0 +1,125 @@
+@interface UITabBarButton : UIControl
+{
+	struct _hitRect;
+	id _info;
+	id _label;
+	id _badge;
+	id _selectedIndicator;
+	BOOL _selected;
+	BOOL _barHeight;
+	BOOL _badgeAnimated;
+	struct _infoInsets;
+	struct _selectedInfoOffset;
+	struct _infoOffset;
+	id _customSelectedIndicatorImage;
+	id _labelOffsetValue;
+	BOOL _selectedImageColoringIsStale;
+	BOOL _centerAllContents;
+	double _templateImageWidth;
+	Class _appearanceGuideClass;
+	id _unselectedTintColor;
+}
+
++ _scriptingInfo
++ dealloc
++ setImage:
++ pointInside:withEvent:
++ setFrame:
++ layoutSubviews
++ sizeThatFits:
++ _appearanceGuideClass
++ tintColorDidChange
++ pointInside:forEvent:
++ setEnabled:
++ _UIAppearance_setTitleTextAttributes:forState:
++ _setTitleTextAttributes:forState:
++ _setAppearanceGuideClass:
++ _isSelected
++ _positionBadge
++ _badgeAnimationDidStop:finished:
++ _setBadgeValue:
++ _setBadgeAnimated:
++ _setBarHeight:
++ _useBarHeight
++ _setUnselectedTintColor:
++ _UIAppearance_setTitlePositionAdjustment:
++ _setTitlePositionAdjustment:
++ _applyTabBarButtonAppearanceStorage:withTaggedSelectors:
++ _unselectedTintColor
++ _setSelected:
++ _updateToMatchCurrentState
++ _setUnselectedTintColor:forceLabelToConform:
++ _frameForSelectedIndicator
++ _updateInfoFrame
++ _showSelectedIndicator:changeSelection:
++ tabBarButtonLabel
++ _selectedIndicatorView
++ initWithImage:selectedImage:label:withInsets:
++ _setTabBarHitRect:
++ _tabBarHitRect
++ _swappableImageView
++ _setSelectedInfoOffset:
++ _setInfoOffset:
++ _setCustomSelectedIndicatorImage:
++ _setLabelHidden:
++ _titlePositionAdjustment
++ labelOffsetValue
++ setLabelOffsetValue:
++ _templateImageWidth
++ _setTemplateImageWidth:
++ _selectedImageColoringIsStale
++ _setSelectedImageColoringIsStale:
++ _centerAllContents
++ _setCenterAllContents:
+- _scriptingInfo
+- dealloc
+- setImage:
+- pointInside:withEvent:
+- setFrame:
+- layoutSubviews
+- sizeThatFits:
+- _appearanceGuideClass
+- tintColorDidChange
+- pointInside:forEvent:
+- setEnabled:
+- _UIAppearance_setTitleTextAttributes:forState:
+- _setTitleTextAttributes:forState:
+- _setAppearanceGuideClass:
+- _isSelected
+- _positionBadge
+- _badgeAnimationDidStop:finished:
+- _setBadgeValue:
+- _setBadgeAnimated:
+- _setBarHeight:
+- _useBarHeight
+- _setUnselectedTintColor:
+- _UIAppearance_setTitlePositionAdjustment:
+- _setTitlePositionAdjustment:
+- _applyTabBarButtonAppearanceStorage:withTaggedSelectors:
+- _unselectedTintColor
+- _setSelected:
+- _updateToMatchCurrentState
+- _setUnselectedTintColor:forceLabelToConform:
+- _frameForSelectedIndicator
+- _updateInfoFrame
+- _showSelectedIndicator:changeSelection:
+- tabBarButtonLabel
+- _selectedIndicatorView
+- initWithImage:selectedImage:label:withInsets:
+- _setTabBarHitRect:
+- _tabBarHitRect
+- _swappableImageView
+- _setSelectedInfoOffset:
+- _setInfoOffset:
+- _setCustomSelectedIndicatorImage:
+- _setLabelHidden:
+- _titlePositionAdjustment
+- labelOffsetValue
+- setLabelOffsetValue:
+- _templateImageWidth
+- _setTemplateImageWidth:
+- _selectedImageColoringIsStale
+- _setSelectedImageColoringIsStale:
+- _centerAllContents
+- _setCenterAllContents:
+@end

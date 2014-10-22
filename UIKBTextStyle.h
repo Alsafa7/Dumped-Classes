@@ -1,0 +1,70 @@
+@interface UIKBTextStyle : NSObject
+{
+	id _fontName;
+	double _fontSize;
+	double _minFontSize;
+	double _kerning;
+	double _textOpacity;
+	id _textColor;
+	id _etchColor;
+	double _pathWeight;
+	long long _selector;
+	struct _textOffset;
+	struct _etchOffset;
+}
+
++ dealloc
++ init
++ description
++ setSelector:
++ copyWithZone:
++ setTextColor:
++ textColor
++ selector
++ fontName
++ setMinFontSize:
++ minFontSize
++ setFontSize:
++ setTextOffset:
++ textOffset
++ setFontName:
++ setKerning:
++ setTextOpacity:
++ fontSize
++ kerning
++ textOpacity
++ etchColor
++ etchOffset
++ pathWeight
++ setEtchColor:
++ setEtchOffset:
++ setPathWeight:
++ overlayWithStyle:
+- dealloc
+- init
+- description
+- setSelector:
+- copyWithZone:
+- setTextColor:
+- textColor
+- selector
+- fontName
+- setMinFontSize:
+- minFontSize
+- setFontSize:
+- setTextOffset:
+- textOffset
+- setFontName:
+- setKerning:
+- setTextOpacity:
+- fontSize
+- kerning
+- textOpacity
+- etchColor
+- etchOffset
+- pathWeight
+- setEtchColor:
+- setEtchOffset:
+- setPathWeight:
+- overlayWithStyle:
+@end

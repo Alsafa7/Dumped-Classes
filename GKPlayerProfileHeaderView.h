@@ -1,0 +1,65 @@
+@interface GKPlayerProfileHeaderView : UICollectionReusableView
+{
+	id _player;
+	id _statusView;
+	id _nameIsLabel;
+	id _aliasLabel;
+	id _pointsLabel;
+	id _textContainerView;
+	id _topMarginConstraint;
+	id _replaceableConstraints;
+}
+
++ nameIsLabel
++ aliasLabel
++ setTopMarginConstraint:
++ updatePlayerStatus
++ updatePlayerName
++ updatePlayerPhoto
++ setNameIsLabel:
++ setAliasLabel:
++ topMarginConstraint
++ didUpdateModel
++ setTextContainerView:
++ textContainerView
++ pointsLabel
++ setPointsLabel:
++ replaceableConstraints
++ setReplaceableConstraints:
++ initWithFrame:
++ dealloc
++ intrinsicContentSize
++ prepareForReuse
++ updateConstraints
++ metrics
++ statusView
++ setStatusView:
++ player
++ setPlayer:
+- nameIsLabel
+- aliasLabel
+- setTopMarginConstraint:
+- updatePlayerStatus
+- updatePlayerName
+- updatePlayerPhoto
+- setNameIsLabel:
+- setAliasLabel:
+- topMarginConstraint
+- didUpdateModel
+- setTextContainerView:
+- textContainerView
+- pointsLabel
+- setPointsLabel:
+- replaceableConstraints
+- setReplaceableConstraints:
+- initWithFrame:
+- dealloc
+- intrinsicContentSize
+- prepareForReuse
+- updateConstraints
+- metrics
+- statusView
+- setStatusView:
+- player
+- setPlayer:
+@end

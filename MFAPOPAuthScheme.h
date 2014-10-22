@@ -1,0 +1,6 @@
+@interface MFAPOPAuthScheme : MFAuthScheme
+{
+
+}
+
+@end

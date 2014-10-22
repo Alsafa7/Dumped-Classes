@@ -1,0 +1,123 @@
+@interface UIBezierPath : NSObject
+{
+	pointer _path;
+	pointer _lineDashPattern;
+	usigned long long _lineDashPatternCount;
+	double _lineWidth;
+	double _miterLimit;
+	double _flatness;
+	double _lineDashPhase;
+	int _lineCapStyle;
+	int _lineJoinStyle;
+	BOOL _usesEvenOddFillRule;
+	pointer _immutablePath;
+	BOOL _immutablePathIsValid;
+}
+
++ dealloc
++ bounds
++ initWithCoder:
++ encodeWithCoder:
++ init
++ description
++ _initWithCGMutablePath:
++ _createMutablePathByDecodingData:
++ _mutablePath
++ moveToPoint:
++ closePath
++ addLineToPoint:
++ addQuadCurveToPoint:controlPoint:
++ addCurveToPoint:controlPoint1:controlPoint2:
++ CGPath
++ addClip
++ copyWithZone:
++ addArcWithCenter:radius:startAngle:endAngle:clockwise:
++ appendPath:
++ applyTransform:
++ removeAllPoints
++ bezierPathByReversingPath
++ setCGPath:
++ isEmpty
++ currentPoint
++ containsPoint:
++ setLineDash:count:phase:
++ getLineDash:count:phase:
++ fill
++ stroke
++ fillWithBlendMode:alpha:
++ strokeWithBlendMode:alpha:
++ _addRoundedCornerWithTrueCorner:radius:corner:clockwise:
++ _pathRef
++ lineToPoint:
++ clip
++ appendBezierPath:
++ appendBezierPathWithRect:
++ appendBezierPathWithOvalInRect:
++ appendBezierPathWithOvalInRect:transform:
++ appendBezierPathWithArcWithCenter:radius:startAngle:endAngle:clockwise:
++ lineWidth
++ setLineWidth:
++ lineCapStyle
++ setLineCapStyle:
++ lineJoinStyle
++ setLineJoinStyle:
++ miterLimit
++ setMiterLimit:
++ flatness
++ setFlatness:
++ usesEvenOddFillRule
++ setUsesEvenOddFillRule:
+- dealloc
+- bounds
+- initWithCoder:
+- encodeWithCoder:
+- init
+- description
+- _initWithCGMutablePath:
+- _createMutablePathByDecodingData:
+- _mutablePath
+- moveToPoint:
+- closePath
+- addLineToPoint:
+- addQuadCurveToPoint:controlPoint:
+- addCurveToPoint:controlPoint1:controlPoint2:
+- CGPath
+- addClip
+- copyWithZone:
+- addArcWithCenter:radius:startAngle:endAngle:clockwise:
+- appendPath:
+- applyTransform:
+- removeAllPoints
+- bezierPathByReversingPath
+- setCGPath:
+- isEmpty
+- currentPoint
+- containsPoint:
+- setLineDash:count:phase:
+- getLineDash:count:phase:
+- fill
+- stroke
+- fillWithBlendMode:alpha:
+- strokeWithBlendMode:alpha:
+- _addRoundedCornerWithTrueCorner:radius:corner:clockwise:
+- _pathRef
+- lineToPoint:
+- clip
+- appendBezierPath:
+- appendBezierPathWithRect:
+- appendBezierPathWithOvalInRect:
+- appendBezierPathWithOvalInRect:transform:
+- appendBezierPathWithArcWithCenter:radius:startAngle:endAngle:clockwise:
+- lineWidth
+- setLineWidth:
+- lineCapStyle
+- setLineCapStyle:
+- lineJoinStyle
+- setLineJoinStyle:
+- miterLimit
+- setMiterLimit:
+- flatness
+- setFlatness:
+- usesEvenOddFillRule
+- setUsesEvenOddFillRule:
+@end

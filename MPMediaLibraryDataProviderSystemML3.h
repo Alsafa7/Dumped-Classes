@@ -1,0 +1,63 @@
+@interface MPMediaLibraryDataProviderSystemML3 : MPMediaLibraryDataProviderML3
+{
+	long long _currentRevision;
+	id _queue;
+}
+
++ isArtworkImageIdenticalForItemWithIdentifier:otherItemWithIdentifier:compareRepresentativeItemArtwork:missingAlwaysComparesEqual:
++ isGeniusEnabled
++ errorResolverForMediaItem:
++ hasArtworkImageForItemWithIdentifier:
++ shouldAsynchrounouslyLoadArtworkForItemWithIdentifier:artworkFormat:artworkCacheID:
++ shouldAsynchrounouslyLoadArtworkForItemWithIdentifier:artworkSize:artworkCacheID:
++ loadArtworkImageForFormat:ofItemWithArtworkCacheID:canUseSurfaceBackedImage:completionBlock:
++ loadArtworkImageForFormat:ofItemWithIdentifier:completionBlock:
++ loadBestArtworkImageForSize:forArtworkCacheID:completionBlock:
++ loadBestArtworkImageDataForSize:ofItemWithIdentifier:atPlaybackTime:completionBlock:
++ artworkCacheIDForItemWithIdentifier:atPlaybackTime:
++ seedPlaylistWithIdentifier:withItemWithIdentifier:completionBlock:
++ releaseGeniusClusterPlaylist:
++ createGeniusClusterPlaylistWithSeedItemIdentifiers:count:error:
++ generateItemIdentifiersForGeniusClusterPlaylist:count:error:
++ updateEntitesToCurrentRevision
++ supportsEntityChangeTrackingForMediaEntityType:collectionGroupingType:dataProviderClass:
++ _initInstanceVariableOnce
++ _seedCloudPlaylistWithTrack:container:completionBlock:
++ _formatCanUsePipeline:
++ _formatShouldUseNativeSize:
++ _itemArtworkCacheIDForItemIdentifier:atPlaybackTime:
++ _loadArtworkImageDataForMLArtworkFormatID:artworkCacheID:completionBlock:
++ _itemArtworkCacheIDForItemIdentifier:
++ _loadArtworkImageForMLArtworkFormatID:artworkCacheID:canUseSurfaceBackedImage:completionBlock:
++ _screenshotCacheIDForItemIdentifier:
++ initWithLibrary:
++ .cxx_destruct
+- isArtworkImageIdenticalForItemWithIdentifier:otherItemWithIdentifier:compareRepresentativeItemArtwork:missingAlwaysComparesEqual:
+- isGeniusEnabled
+- errorResolverForMediaItem:
+- hasArtworkImageForItemWithIdentifier:
+- shouldAsynchrounouslyLoadArtworkForItemWithIdentifier:artworkFormat:artworkCacheID:
+- shouldAsynchrounouslyLoadArtworkForItemWithIdentifier:artworkSize:artworkCacheID:
+- loadArtworkImageForFormat:ofItemWithArtworkCacheID:canUseSurfaceBackedImage:completionBlock:
+- loadArtworkImageForFormat:ofItemWithIdentifier:completionBlock:
+- loadBestArtworkImageForSize:forArtworkCacheID:completionBlock:
+- loadBestArtworkImageDataForSize:ofItemWithIdentifier:atPlaybackTime:completionBlock:
+- artworkCacheIDForItemWithIdentifier:atPlaybackTime:
+- seedPlaylistWithIdentifier:withItemWithIdentifier:completionBlock:
+- releaseGeniusClusterPlaylist:
+- createGeniusClusterPlaylistWithSeedItemIdentifiers:count:error:
+- generateItemIdentifiersForGeniusClusterPlaylist:count:error:
+- updateEntitesToCurrentRevision
+- supportsEntityChangeTrackingForMediaEntityType:collectionGroupingType:dataProviderClass:
+- _initInstanceVariableOnce
+- _seedCloudPlaylistWithTrack:container:completionBlock:
+- _formatCanUsePipeline:
+- _formatShouldUseNativeSize:
+- _itemArtworkCacheIDForItemIdentifier:atPlaybackTime:
+- _loadArtworkImageDataForMLArtworkFormatID:artworkCacheID:completionBlock:
+- _itemArtworkCacheIDForItemIdentifier:
+- _loadArtworkImageForMLArtworkFormatID:artworkCacheID:canUseSurfaceBackedImage:completionBlock:
+- _screenshotCacheIDForItemIdentifier:
+- initWithLibrary:
+- .cxx_destruct
+@end

@@ -1,0 +1,110 @@
+@interface UIKBKeyplaneView : UIKBSplitImageView
+{
+	id _keyplane;
+	id _defaultKeyplane;
+	id _cacheToken;
+	id _candidateGapView;
+	id _subviewIndex;
+	id _activeViewIndex;
+	id _renderedKeyViews;
+	id _delayedDeactivationKeys;
+	id _activatedTimer;
+	BOOL _performingDeactivation;
+	BOOL _shouldDrawRect;
+	id _renderConfig;
+	id _keyBorders;
+	id _keyBackgrounds;
+	id _keyCaps;
+}
+
++ dealloc
++ drawRect:
++ hitTest:withEvent:
++ layoutSubviews
++ removeFromSuperview
++ renderConfig
++ setRenderConfig:
++ displayLayer:
++ setKeyplane:
++ keyplane
++ cacheKey
++ cachedWidth
++ cacheKeysForRenderFlags:
++ drawContentsOfRenderers:
++ cacheDeferable
++ keepNonPersistent
++ purgeSubviews
++ purgeKeyViews
++ setState:forKey:
++ stateForKey:
++ validForKeyplane:withVisualStyle:
++ initWithFrame:keyplane:
++ setDefaultKeyplane:
++ setCacheToken:
++ updateDecorationViewsIfNeeded
++ deactivateKeys
++ viewForKey:
++ deactivateAdaptiveKey:
++ addKeyToDelayedDeactivationSet:
++ dimKeyCaps:duration:
++ cacheToken
++ defaultKeyplane
++ cornerMaskForKey:recursive:
++ _shouldDrawLowResBackground
++ cancelDelayedDeactivation
++ performDelayedDeactivation:
++ scheduleDelayedDeactivation
++ removeKeyFromDelayedDeactivationSet:
++ deactivateKey:previousState:
++ containingViewForKey:withState:
++ cacheIdentifierForKey:withState:
++ classForKey:
++ cacheIdentifierForKey:
++ viewForKey:state:
++ activateKeys
+- dealloc
+- drawRect:
+- hitTest:withEvent:
+- layoutSubviews
+- removeFromSuperview
+- renderConfig
+- setRenderConfig:
+- displayLayer:
+- setKeyplane:
+- keyplane
+- cacheKey
+- cachedWidth
+- cacheKeysForRenderFlags:
+- drawContentsOfRenderers:
+- cacheDeferable
+- keepNonPersistent
+- purgeSubviews
+- purgeKeyViews
+- setState:forKey:
+- stateForKey:
+- validForKeyplane:withVisualStyle:
+- initWithFrame:keyplane:
+- setDefaultKeyplane:
+- setCacheToken:
+- updateDecorationViewsIfNeeded
+- deactivateKeys
+- viewForKey:
+- deactivateAdaptiveKey:
+- addKeyToDelayedDeactivationSet:
+- dimKeyCaps:duration:
+- cacheToken
+- defaultKeyplane
+- cornerMaskForKey:recursive:
+- _shouldDrawLowResBackground
+- cancelDelayedDeactivation
+- performDelayedDeactivation:
+- scheduleDelayedDeactivation
+- removeKeyFromDelayedDeactivationSet:
+- deactivateKey:previousState:
+- containingViewForKey:withState:
+- cacheIdentifierForKey:withState:
+- classForKey:
+- cacheIdentifierForKey:
+- viewForKey:state:
+- activateKeys
+@end

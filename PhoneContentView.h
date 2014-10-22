@@ -1,0 +1,6 @@
+@interface PhoneContentView : UIView
+{
+
+}
+
+@end

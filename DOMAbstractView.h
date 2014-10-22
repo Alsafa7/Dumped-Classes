@@ -1,0 +1,6 @@
+@interface DOMAbstractView : DOMObject
+{
+
+}
+
+@end

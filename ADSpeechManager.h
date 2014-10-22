@@ -1,0 +1,107 @@
+@interface ADSpeechManager : NSObject
+{
+	id _queue;
+	int _speechState;
+	BOOL _shouldTalkToDelegate;
+	id _recordingError;
+	BOOL _isCapturingForDictation;
+	BOOL _isInitialRequest;
+	double _requestStartTimestamp;
+	id _dictationLanguage;
+	id _dictationOptions;
+	id _speechRecorder;
+	id _delegate;
+	id _targetQueue;
+	id _recordStartedCompletion;
+	id _recordStoppedCompletion;
+	id _speechLog;
+	id _context;
+}
+
++ setDelegate:andTargetQueue:
++ isCapturing
++ cancelSpeechCaptureSuppressingAlert:
++ stopSpeechCaptureForEvent:deviceIdentifier:
++ dictationLanguage
++ dictationOptions
++ prepareAudioSystemForEvent:deviceIdentifier:
++ setSpeechEvent:deviceIdentifier:
++ startSpeechCaptureForRequestWithOptions:
++ startSpeechCaptureWithURL:isNarrowBand:isDictation:
++ setDictationLanguage:
++ setDictationOptions:
++ startSpeechCaptureForDictationUseAutomaticEndpointing:
++ _currentSpeechCaptureSource
++ _cleanUpDelegateInfo
++ _setRecordingError:
++ _tellDelegateSpeechFailedWithError:
++ _tellDelegateSpeechCanceled
++ _tellDelegateSpeechFinishedWithPacketCount:endpointMode:
++ _recordStoppedCompletion
++ _setRecordStoppedCompletion:
++ _tellDelegateSpeechStartedForDictation:withCodec:source:avRecordRoute:deviceId:modelName:
++ _cancelRecordingWithError:
++ _recordStartedCompletion
++ _setRecordStartedCompletion:
++ _recordingError
++ _recordingStoppedWithError:endpointMode:totalPacketCount:
++ _tellDelegateAboutSpeechPackets:count:
++ _tellDelegateAboutAveragePower:peak:
++ _startCaptureForMode:useAutomaticEndpointing:
++ _tellDelegateSpeechWillBeginWithTimestamp:
++ _releaseSession
++ speechCapturingDidStartRecordingSuccessfully:codec:source:avRecordRoute:deviceId:modelName:
++ speechCapturingDidStopRecordingWithError:endpointMode:totalPacketCount:
++ speechCapturingDidDetectEndpointAfterStartPoint:
++ speechCapturingDidRecordSpeechPackets:totalPacketCount:
++ speechCapturingDidUpdateAveragePower:peakPower:
++ init
++ context
++ setContext:
++ endSession
++ preheat
++ .cxx_destruct
+- setDelegate:andTargetQueue:
+- isCapturing
+- cancelSpeechCaptureSuppressingAlert:
+- stopSpeechCaptureForEvent:deviceIdentifier:
+- dictationLanguage
+- dictationOptions
+- prepareAudioSystemForEvent:deviceIdentifier:
+- setSpeechEvent:deviceIdentifier:
+- startSpeechCaptureForRequestWithOptions:
+- startSpeechCaptureWithURL:isNarrowBand:isDictation:
+- setDictationLanguage:
+- setDictationOptions:
+- startSpeechCaptureForDictationUseAutomaticEndpointing:
+- _currentSpeechCaptureSource
+- _cleanUpDelegateInfo
+- _setRecordingError:
+- _tellDelegateSpeechFailedWithError:
+- _tellDelegateSpeechCanceled
+- _tellDelegateSpeechFinishedWithPacketCount:endpointMode:
+- _recordStoppedCompletion
+- _setRecordStoppedCompletion:
+- _tellDelegateSpeechStartedForDictation:withCodec:source:avRecordRoute:deviceId:modelName:
+- _cancelRecordingWithError:
+- _recordStartedCompletion
+- _setRecordStartedCompletion:
+- _recordingError
+- _recordingStoppedWithError:endpointMode:totalPacketCount:
+- _tellDelegateAboutSpeechPackets:count:
+- _tellDelegateAboutAveragePower:peak:
+- _startCaptureForMode:useAutomaticEndpointing:
+- _tellDelegateSpeechWillBeginWithTimestamp:
+- _releaseSession
+- speechCapturingDidStartRecordingSuccessfully:codec:source:avRecordRoute:deviceId:modelName:
+- speechCapturingDidStopRecordingWithError:endpointMode:totalPacketCount:
+- speechCapturingDidDetectEndpointAfterStartPoint:
+- speechCapturingDidRecordSpeechPackets:totalPacketCount:
+- speechCapturingDidUpdateAveragePower:peakPower:
+- init
+- context
+- setContext:
+- endSession
+- preheat
+- .cxx_destruct
+@end

@@ -1,0 +1,163 @@
+@interface TIKeyboardInputManagerState : NSObject
+{
+	id _keyboardBehaviors;
+	union _mask;
+	BOOL _shouldAddModifierSymbolsToWordCharacters;
+	id _autocorrectionRecordForInputString;
+	id _wordSeparator;
+	usigned long long _inputCount;
+	usigned long long _inputIndex;
+	id _inputString;
+	id _keyEventMap;
+	id _replacementForDoubleSpace;
+	id _shadowTyping;
+	usigned long long _initialCandidateBatchCount;
+	id _wordCharacters;
+	id _shortcutCompletions;
+	id _inputsPreventingAcceptSelectedCandidate;
+	id _inputsToReject;
+	id _terminatorsPreventingAutocorrection;
+	id _searchStringForMarkedText;
+}
+
++ dealloc
++ initWithCoder:
++ encodeWithCoder:
++ copyWithZone:
++ usesCandidateSelection
++ setUsesCandidateSelection:
++ keyboardBehaviors
++ supportsNumberKeySelection
++ setSupportsNumberKeySelection:
++ usesAutoDeleteWord
++ inputCount
++ setSearchStringForMarkedText:
++ supportsSetPhraseBoundary
++ searchStringForMarkedText
++ inputString
++ shouldExtendPriorWord
++ inputIndex
++ nextInputWouldStartSentence
++ suppressCompletionsForFieldEditor
++ suppliesCompletions
++ acceptInputString:
++ stringEndsWord:
++ wordSeparator
++ replacementForDoubleSpace
++ shouldSuppressAutocorrectionWithTerminator:
++ inputStringAcceptsCurrentCandidateIfSelected:
++ inputStringIsExemptFromChecker
++ shadowTyping
++ commitsAcceptedCandidate
++ autocorrectionRecordForInputString
++ initialCandidateBatchCount
++ suppressPlaceholderCandidate
++ keyEventMap
++ ignoresDeadKeys
++ canHandleKeyHitTest
++ needsKeyHitTestResults
++ inputsPreventingAcceptSelectedCandidate
++ shortcutCompletions
++ setInputsPreventingAcceptSelectedCandidate:
++ setInputStringIsExemptFromChecker:
++ setAutocorrectionRecordForInputString:
++ setInputIndex:
++ shouldAddModifierSymbolsToWordCharacters
++ wordCharacters
++ terminatorsPreventingAutocorrection
++ setCanHandleKeyHitTest:
++ setIgnoresDeadKeys:
++ setNeedsKeyHitTestResults:
++ setShouldExtendPriorWord:
++ setSuppliesCompletions:
++ setSupportsSetPhraseBoundary:
++ setSuppressCompletionsForFieldEditor:
++ setUsesAutoDeleteWord:
++ setCommitsAcceptedCandidate:
++ setInitialCandidateBatchCount:
++ setWordSeparator:
++ setShouldAddModifierSymbolsToWordCharacters:
++ setWordCharacters:
++ setTerminatorsPreventingAutocorrection:
++ setKeyboardBehaviors:
++ setInputString:
++ setInputCount:
++ setNextInputWouldStartSentence:
++ setShadowTyping:
++ setKeyEventMap:
++ setReplacementForDoubleSpace:
++ setShortcutCompletions:
++ inputsToReject
++ setInputsToReject:
++ setSuppressPlaceholderCandidate:
+- dealloc
+- initWithCoder:
+- encodeWithCoder:
+- copyWithZone:
+- usesCandidateSelection
+- setUsesCandidateSelection:
+- keyboardBehaviors
+- supportsNumberKeySelection
+- setSupportsNumberKeySelection:
+- usesAutoDeleteWord
+- inputCount
+- setSearchStringForMarkedText:
+- supportsSetPhraseBoundary
+- searchStringForMarkedText
+- inputString
+- shouldExtendPriorWord
+- inputIndex
+- nextInputWouldStartSentence
+- suppressCompletionsForFieldEditor
+- suppliesCompletions
+- acceptInputString:
+- stringEndsWord:
+- wordSeparator
+- replacementForDoubleSpace
+- shouldSuppressAutocorrectionWithTerminator:
+- inputStringAcceptsCurrentCandidateIfSelected:
+- inputStringIsExemptFromChecker
+- shadowTyping
+- commitsAcceptedCandidate
+- autocorrectionRecordForInputString
+- initialCandidateBatchCount
+- suppressPlaceholderCandidate
+- keyEventMap
+- ignoresDeadKeys
+- canHandleKeyHitTest
+- needsKeyHitTestResults
+- inputsPreventingAcceptSelectedCandidate
+- shortcutCompletions
+- setInputsPreventingAcceptSelectedCandidate:
+- setInputStringIsExemptFromChecker:
+- setAutocorrectionRecordForInputString:
+- setInputIndex:
+- shouldAddModifierSymbolsToWordCharacters
+- wordCharacters
+- terminatorsPreventingAutocorrection
+- setCanHandleKeyHitTest:
+- setIgnoresDeadKeys:
+- setNeedsKeyHitTestResults:
+- setShouldExtendPriorWord:
+- setSuppliesCompletions:
+- setSupportsSetPhraseBoundary:
+- setSuppressCompletionsForFieldEditor:
+- setUsesAutoDeleteWord:
+- setCommitsAcceptedCandidate:
+- setInitialCandidateBatchCount:
+- setWordSeparator:
+- setShouldAddModifierSymbolsToWordCharacters:
+- setWordCharacters:
+- setTerminatorsPreventingAutocorrection:
+- setKeyboardBehaviors:
+- setInputString:
+- setInputCount:
+- setNextInputWouldStartSentence:
+- setShadowTyping:
+- setKeyEventMap:
+- setReplacementForDoubleSpace:
+- setShortcutCompletions:
+- inputsToReject
+- setInputsToReject:
+- setSuppressPlaceholderCandidate:
+@end

@@ -1,0 +1,6 @@
+@interface LASwitchOnListener : LASwitchListener
+{
+
+}
+
+@end

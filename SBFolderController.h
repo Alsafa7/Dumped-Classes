@@ -1,0 +1,251 @@
+@interface SBFolderController : NSObject
+{
+	id _contentView;
+	BOOL _didAutoScroll;
+	id _autoScrollTimer;
+	struct _dragPausePoint;
+	id _dragPauseTimer;
+	id _closeFolderTimer;
+	BOOL _grabbedIconHasEverEnteredFolderView;
+	id _editingContextsByFolder;
+	id _iconAnimator;
+	BOOL _isOpen;
+	BOOL _isEditing;
+	BOOL _isAnimating;
+	BOOL _active;
+	BOOL _rotating;
+	id _delegate;
+	id _folder;
+	long long _orientation;
+	id _legibilitySettings;
+	id _outerFolderController;
+	id _innerFolderController;
+	id _grabbedIcon;
+	id _lastContext;
+}
+
++ unscatterAnimated:afterDelay:withCompletion:
++ grabbedIcon
++ scatterAnimated:withCompletion:
++ initWithFolder:orientation:
++ innerFolderController
++ setCurrentPageIndex:animated:
++ isDisplayingIcon:
++ dockListView
++ setDockOffscreenFraction:
++ setDockVerticalStretch:
++ _listIndexIsVisible:
++ _contentViewClass
++ _depth
++ hasDock
++ deepestFolderController
++ iconListViewAtIndex:
++ prepareToTearDown
++ popToIndexPath:
++ layoutIconLists:domino:forceRelayout:
++ folderControllerForFolder:
++ iconListViews
++ addEmptyListView
++ setGrabbedIcon:
++ noteGrabbedIconDidChange:
++ currentIconListView
++ iconListViewForTouch:
++ noteGrabbedIcon:locationDidChangeWithTouch:
++ noteUserIsInteractingWithIcons
++ folderController:draggedIconDidPauseAtLocation:inListView:
++ folderController:draggedIconDidMoveFromListView:toListView:
++ folderController:draggedIconMightDropFromListView:
++ folderController:draggedIconShouldDropFromListView:
++ folderControllerShouldClose:
++ folderControllerShouldBeginEditing:
++ folderControllerDidEndScrolling:
++ setCurrentPageIndexToListContainingIcon:animated:
++ fadeContentForMagnificationFraction:
++ folder:didAddList:
++ folder:didRemoveLists:atIndexes:
++ pushFolder:animated:completion:
++ popFolderAnimated:completion:
++ willAnimate
++ didAnimate
++ outerFolderController
++ doesPageContainIconListView:
++ folderViewShouldClose:
++ folderViewShouldBeginEditing:
++ fadeContentForMinificationFraction:
++ folderViewWillBeginScrolling:
++ folderViewDidEndScrolling:
++ folderView:currentPageIndexDidChange:
++ _resetIconLists
++ setOuterFolderController:
++ _cancelAllInteractionTimers
++ _updateAssociatedControllerStateAnimated:
++ _addEmptyListForce:
++ _compactFolder
++ _restoreFromContext:
++ lastContext
++ setLastContext:
++ iconListViewContainingIcon:
++ _cancelAutoScroll
++ _cancelDragPauseTimer
++ _cancelCloseFolderTimer
++ _closeFolderTimerFired
++ _setCloseFolderTimerIfNecessary
++ _dragPauseTimerFired:
++ _canDropIconInListView:
++ _resetDragPauseTimerForPoint:inIconListView:
++ _doAutoScrollByPageCount:
++ _updateAutoScrollForTouch:
++ _scrollLeft:
++ _scrollRight:
++ _allowUserInteraction
++ _updateDragPauseForTouch:
++ _updateCloseFolderForTouch:
++ _clearIconAnimator
++ _newAnimatorForZoomUp:
++ _animateNewsstandFolderOpen:settings:completion:
++ _animateFloatyFolderOpen:settings:completion:
++ _iconAppearsOnCurrentPage:
++ setInnerFolderController:
++ _setInnerFolderOpen:animated:completion:
++ _noteFolderListsDidChange
++ _indexOfIconListForIcon:
++ isOpen
++ dealloc
++ setDelegate:
++ delegate
++ isActive
++ orientation
++ isRotating
++ _createContext
++ contentView
++ willRotateToInterfaceOrientation:
++ willAnimateRotationToInterfaceOrientation:
++ isEditing
++ setEditing:animated:
++ didRotateFromInterfaceOrientation:
++ isAnimating
++ setAnimating:
++ setActive:
++ setOrientation:
++ _invalidate
++ setRotating:
++ isScrolling
++ currentPageIndex
++ setFolder:
++ folder
++ legibilitySettings
++ setLegibilitySettings:
++ setOpen:
+- unscatterAnimated:afterDelay:withCompletion:
+- grabbedIcon
+- scatterAnimated:withCompletion:
+- initWithFolder:orientation:
+- innerFolderController
+- setCurrentPageIndex:animated:
+- isDisplayingIcon:
+- dockListView
+- setDockOffscreenFraction:
+- setDockVerticalStretch:
+- _listIndexIsVisible:
+- _contentViewClass
+- _depth
+- hasDock
+- deepestFolderController
+- iconListViewAtIndex:
+- prepareToTearDown
+- popToIndexPath:
+- layoutIconLists:domino:forceRelayout:
+- folderControllerForFolder:
+- iconListViews
+- addEmptyListView
+- setGrabbedIcon:
+- noteGrabbedIconDidChange:
+- currentIconListView
+- iconListViewForTouch:
+- noteGrabbedIcon:locationDidChangeWithTouch:
+- noteUserIsInteractingWithIcons
+- folderController:draggedIconDidPauseAtLocation:inListView:
+- folderController:draggedIconDidMoveFromListView:toListView:
+- folderController:draggedIconMightDropFromListView:
+- folderController:draggedIconShouldDropFromListView:
+- folderControllerShouldClose:
+- folderControllerShouldBeginEditing:
+- folderControllerDidEndScrolling:
+- setCurrentPageIndexToListContainingIcon:animated:
+- fadeContentForMagnificationFraction:
+- folder:didAddList:
+- folder:didRemoveLists:atIndexes:
+- pushFolder:animated:completion:
+- popFolderAnimated:completion:
+- willAnimate
+- didAnimate
+- outerFolderController
+- doesPageContainIconListView:
+- folderViewShouldClose:
+- folderViewShouldBeginEditing:
+- fadeContentForMinificationFraction:
+- folderViewWillBeginScrolling:
+- folderViewDidEndScrolling:
+- folderView:currentPageIndexDidChange:
+- _resetIconLists
+- setOuterFolderController:
+- _cancelAllInteractionTimers
+- _updateAssociatedControllerStateAnimated:
+- _addEmptyListForce:
+- _compactFolder
+- _restoreFromContext:
+- lastContext
+- setLastContext:
+- iconListViewContainingIcon:
+- _cancelAutoScroll
+- _cancelDragPauseTimer
+- _cancelCloseFolderTimer
+- _closeFolderTimerFired
+- _setCloseFolderTimerIfNecessary
+- _dragPauseTimerFired:
+- _canDropIconInListView:
+- _resetDragPauseTimerForPoint:inIconListView:
+- _doAutoScrollByPageCount:
+- _updateAutoScrollForTouch:
+- _scrollLeft:
+- _scrollRight:
+- _allowUserInteraction
+- _updateDragPauseForTouch:
+- _updateCloseFolderForTouch:
+- _clearIconAnimator
+- _newAnimatorForZoomUp:
+- _animateNewsstandFolderOpen:settings:completion:
+- _animateFloatyFolderOpen:settings:completion:
+- _iconAppearsOnCurrentPage:
+- setInnerFolderController:
+- _setInnerFolderOpen:animated:completion:
+- _noteFolderListsDidChange
+- _indexOfIconListForIcon:
+- isOpen
+- dealloc
+- setDelegate:
+- delegate
+- isActive
+- orientation
+- isRotating
+- _createContext
+- contentView
+- willRotateToInterfaceOrientation:
+- willAnimateRotationToInterfaceOrientation:
+- isEditing
+- setEditing:animated:
+- didRotateFromInterfaceOrientation:
+- isAnimating
+- setAnimating:
+- setActive:
+- setOrientation:
+- _invalidate
+- setRotating:
+- isScrolling
+- currentPageIndex
+- setFolder:
+- folder
+- legibilitySettings
+- setLegibilitySettings:
+- setOpen:
+@end

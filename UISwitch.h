@@ -1,0 +1,134 @@
+@interface UISwitch : UIControl
+{
+	id _pressGesture;
+	id _panGesture;
+	id _control;
+	BOOL _onStateChangedByLongPressGestureRecognizer;
+	BOOL _onStateChangedByPanGestureRecognizer;
+	BOOL _on;
+	double _enabledAlpha;
+}
+
++ defaultAccessibilityTraits
++ isAccessibilityElementByDefault
++ isElementAccessibilityExposedToInterfaceBuilder
++ _scriptingInfo
++ setAlternateColors:
++ _setPressed:on:animated:completion:
++ _knobBounceDuration
++ _setKnobBounceDuration:
++ _knobBounceDamping
++ _setKnobBounceDamping:
++ _knobBounceStiffness
++ _setKnobBounceStiffness:
++ _knobBounceMass
++ _setKnobBounceMass:
++ initWithFrame:
++ dealloc
++ initWithCoder:
++ _populateArchivedSubviews:
++ encodeWithCoder:
++ setAlpha:
++ _intrinsicSizeWithinSize:
++ init
++ setFrame:
++ _contentHuggingDefault_isUsuallyFixedHeight
++ _contentHuggingDefault_isUsuallyFixedWidth
++ sizeThatFits:
++ alignmentRectInsets
++ _encodeFrameWithCoder:
++ tintColor
++ setTintColor:
++ setEnabled:
++ _gestureRecognizer:shouldRecognizeSimultaneouslyWithGestureRecognizer:
++ setThumbTintColor:
++ thumbTintColor
++ _setOnTintColor:
++ _onAnimationDidStop:finished:context:
++ onTintColor
++ setOnTintColor:
++ onImage
++ setOnImage:
++ offImage
++ setOffImage:
++ setOn:
++ _onTintColor
++ setEnabledAlpha:
++ _handlePanNL:
++ _handleTapNL:
++ _handleLongPressNL:
++ _handleTranslationInPanGestureRecognizer:
++ _animateToOn:withDuration:sendAction:
++ _useOldSize
++ _commonInitNewLook
++ _commonInitNewLookNeue1
++ _shouldAlterCodedFrame
++ isOn
++ setOn:animated:
++ _setOnColor:
++ _onColor
++ _setAlwaysShowsOnOffLabel:
++ _alwaysShowOnOffLabel
++ enabledAlpha
+- defaultAccessibilityTraits
+- isAccessibilityElementByDefault
+- isElementAccessibilityExposedToInterfaceBuilder
+- _scriptingInfo
+- setAlternateColors:
+- _setPressed:on:animated:completion:
+- _knobBounceDuration
+- _setKnobBounceDuration:
+- _knobBounceDamping
+- _setKnobBounceDamping:
+- _knobBounceStiffness
+- _setKnobBounceStiffness:
+- _knobBounceMass
+- _setKnobBounceMass:
+- initWithFrame:
+- dealloc
+- initWithCoder:
+- _populateArchivedSubviews:
+- encodeWithCoder:
+- setAlpha:
+- _intrinsicSizeWithinSize:
+- init
+- setFrame:
+- _contentHuggingDefault_isUsuallyFixedHeight
+- _contentHuggingDefault_isUsuallyFixedWidth
+- sizeThatFits:
+- alignmentRectInsets
+- _encodeFrameWithCoder:
+- tintColor
+- setTintColor:
+- setEnabled:
+- _gestureRecognizer:shouldRecognizeSimultaneouslyWithGestureRecognizer:
+- setThumbTintColor:
+- thumbTintColor
+- _setOnTintColor:
+- _onAnimationDidStop:finished:context:
+- onTintColor
+- setOnTintColor:
+- onImage
+- setOnImage:
+- offImage
+- setOffImage:
+- setOn:
+- _onTintColor
+- setEnabledAlpha:
+- _handlePanNL:
+- _handleTapNL:
+- _handleLongPressNL:
+- _handleTranslationInPanGestureRecognizer:
+- _animateToOn:withDuration:sendAction:
+- _useOldSize
+- _commonInitNewLook
+- _commonInitNewLookNeue1
+- _shouldAlterCodedFrame
+- isOn
+- setOn:animated:
+- _setOnColor:
+- _onColor
+- _setAlwaysShowsOnOffLabel:
+- _alwaysShowOnOffLabel
+- enabledAlpha
+@end

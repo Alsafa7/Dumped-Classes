@@ -1,0 +1,70 @@
+@interface _UILegibilitySettings : NSObject
+{
+	long long _style;
+	id _contentColor;
+	id _primaryColor;
+	id _secondaryColor;
+	id _shadowColor;
+	double _shadowRadius;
+	double _shadowAlpha;
+	double _imageOutset;
+	id _shadowCompositingFilterName;
+}
+
++ sb_styleString
++ sb_description
++ dealloc
++ isEqual:
++ setStyle:
++ style
++ setShadowColor:
++ shadowColor
++ initWithStyle:
++ setShadowRadius:
++ setContentColor:
++ contentColor
++ initWithStyle:contentColor:
++ setPropertiesForStyle:
++ setPrimaryColor:
++ setSecondaryColor:
++ setShadowAlpha:
++ setImageOutset:
++ setShadowCompositingFilterName:
++ shadowRadius
++ primaryColor
++ initWithContentColor:
++ initWithContentColor:contrast:
++ initWithStyle:primaryColor:secondaryColor:shadowColor:
++ secondaryColor
++ shadowAlpha
++ imageOutset
++ shadowCompositingFilterName
+- sb_styleString
+- sb_description
+- dealloc
+- isEqual:
+- setStyle:
+- style
+- setShadowColor:
+- shadowColor
+- initWithStyle:
+- setShadowRadius:
+- setContentColor:
+- contentColor
+- initWithStyle:contentColor:
+- setPropertiesForStyle:
+- setPrimaryColor:
+- setSecondaryColor:
+- setShadowAlpha:
+- setImageOutset:
+- setShadowCompositingFilterName:
+- shadowRadius
+- primaryColor
+- initWithContentColor:
+- initWithContentColor:contrast:
+- initWithStyle:primaryColor:secondaryColor:shadowColor:
+- secondaryColor
+- shadowAlpha
+- imageOutset
+- shadowCompositingFilterName
+@end

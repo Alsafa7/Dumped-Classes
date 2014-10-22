@@ -1,0 +1,76 @@
+@interface SUSectionsResponse : NSObject
+{
+	BOOL _cacheable;
+	id _clientInterface;
+	id _moreListImage;
+	id _moreListSelectedImage;
+	id _rawResponseDictionary;
+	long long _responseType;
+	id _sectionsCache;
+	id _shouldResetUserOrdering;
+	id _sections;
+}
+
++ dealloc
++ init
++ moreListImage
++ moreListSelectedImage
++ sections
++ versionString
++ moreListTitle
++ setMoreListImage:
++ initWithClientInterface:cacheDirectory:
++ setShouldResetUserOrdering:
++ shouldResetUserOrdering
++ storeFrontIdentifier
++ allSections
++ isCacheable
++ writeToCacheDirectory:error:
++ initWithClientInterface:sectionsDictionary:responseType:
++ setCacheable:
++ setStoreFrontIdentifier:
++ moreListImageCollection
++ setMoreListSelectedImage:
++ responseType
++ _loadArtworkFromCacheDirectory:
++ _newSectionsFromDictionary:
++ sectionsDictionary
++ _writeImage:toCachePath:forIdentifier:variant:
++ _writeButtonImagesForSection:buttons:cachePath:
++ _newImageForIdentifier:variant:cacheDirectory:
++ _loadButtonArtworkForSection:buttons:cachePath:
++ _newVariantStringForButton:
++ _applyDefaultSearchFieldConfigurationsToSections:
++ rawResponseDictionary
+- dealloc
+- init
+- moreListImage
+- moreListSelectedImage
+- sections
+- versionString
+- moreListTitle
+- setMoreListImage:
+- initWithClientInterface:cacheDirectory:
+- setShouldResetUserOrdering:
+- shouldResetUserOrdering
+- storeFrontIdentifier
+- allSections
+- isCacheable
+- writeToCacheDirectory:error:
+- initWithClientInterface:sectionsDictionary:responseType:
+- setCacheable:
+- setStoreFrontIdentifier:
+- moreListImageCollection
+- setMoreListSelectedImage:
+- responseType
+- _loadArtworkFromCacheDirectory:
+- _newSectionsFromDictionary:
+- sectionsDictionary
+- _writeImage:toCachePath:forIdentifier:variant:
+- _writeButtonImagesForSection:buttons:cachePath:
+- _newImageForIdentifier:variant:cacheDirectory:
+- _loadButtonArtworkForSection:buttons:cachePath:
+- _newVariantStringForButton:
+- _applyDefaultSearchFieldConfigurationsToSections:
+- rawResponseDictionary
+@end

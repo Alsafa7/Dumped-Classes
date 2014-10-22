@@ -1,0 +1,532 @@
+@interface UIKeyboardLayoutStar : UIKeyboardLayout
+{
+	id _keyboard;
+	id _keyplane;
+	id _keyboardName;
+	id _keyplaneName;
+	long long _appearance;
+	id _activeKey;
+	id _keyplaneView;
+	id _backgroundView;
+	double _prevTouchUpTime;
+	double _prevTouchDownTime;
+	int _prevUpActions;
+	id _keyboards;
+	id _allKeyplaneViews;
+	id _allKeyplaneKeycaps;
+	id _validInputStrings;
+	id _localizedInputKey;
+	pointer _extendedTouchInfoMap;
+	int _preferredTrackingChangeCount;
+	int _shiftTrackingChangeCount;
+	id _accentInfo;
+	id _hasAccents;
+	id _spaceTarget;
+	SEL _spaceAction;
+	SEL _spaceLongAction;
+	id _returnTarget;
+	SEL _returnAction;
+	SEL _returnLongAction;
+	id _deleteTarget;
+	SEL _deleteAction;
+	SEL _deleteLongAction;
+	BOOL _shift;
+	BOOL _autoshift;
+	BOOL _settingShift;
+	BOOL _didLongPress;
+	id _preTouchKeyplaneName;
+	BOOL _revertKeyplaneAfterTouch;
+	BOOL _wasShifted;
+	BOOL _swipeDetected;
+	BOOL _showIntlKey;
+	BOOL _showDictationKey;
+	BOOL _shiftLockReady;
+	double _shiftLockFirstTapTime;
+	id _rightSwipeRecognizer;
+	id _leftSwipeRecognizer;
+	id _upSwipeRecognizer;
+	id _transitionView;
+	double _initialSplitProgress;
+	double _finalSplitProgress;
+	double _initialPinchSeparation;
+	Array _pinchSeparationValues;
+	BOOL _pinchDetected;
+	double _autoSplitLastUpdate;
+	double _autoSplitElapsedTime;
+	id _displayLink;
+	BOOL _ghostKeysEnabled;
+	id _delayedCentroidUpdate;
+	BOOL _isRebuilding;
+	BOOL _preRotateShift;
+	id _preRotateKeyplaneName;
+	struct _keyPeripheralInset;
+	id _multitapAction;
+	BOOL _unshiftAfterMultitap;
+	int _multitapCount;
+	id _multitapKey;
+	id _flickPopupView;
+	id _compositeImages;
+	id _flickPopuptimer;
+	id _touchInfo;
+	id _dimKeyboardImageView;
+	BOOL _keyboardImageViewIsDim;
+	BOOL _isOutOfBounds;
+	int playKeyClickSoundOn;
+	id _renderConfig;
+}
+
++ resizeForKeyplaneSize:
++ handleDismissFlickView:
++ setKeyboardDim:
++ setKeyboardDim:amount:withDuration:
++ flickPopupStringForKey:withString:
++ handlePopupView:
++ handleFlick:
++ flickStringForInputKey:direction:
++ showPopupView:withKey:popupInfo:force:
++ showFlickView:withKey:flickString:
++ populateFlickPopupsForKey:
++ activateCompositeKey:direction:flickString:popupInfo:
++ compositeImageForKey:
++ setCompositeImage:forKey:
++ handlePopupView
++ handleDismissFlickView
++ getFlickCompositeImageForKey:direction:rect:
++ getPopupBackgroundImageForKey:direction:popupInfo:rect:
++ overlayCharacterImageForKey:direction:rect:flickString:popupInfo:
++ keyWithRepresentedString:
++ frameForKeyWithRepresentedString:
++ frameForLastKeyWithRepresentedString:
++ popupKeyViews
++ setKeyForTouchInfo:key:
++ initWithFrame:
++ dealloc
++ setShift:
++ removeFromSuperview
++ gestureRecognizerShouldBegin:
++ gestureRecognizer:shouldReceiveTouch:
++ isRotating
++ lastTouchUpTimestamp
++ scriptingInfoWithChildren
++ willMoveToWindow:
++ pointInside:forEvent:
++ setKeyboardAppearance:
++ logHandwritingData
++ renderConfig
++ setRenderConfig:
++ candidateList
++ clearUnusedObjects:
++ hasCandidateKeys
++ hasAccentKey
++ canMultitap
++ isAlphabeticPlane
++ deactivateActiveKeys
++ frameForKeylayoutName:
++ dragGestureSize
++ pinchDetected
++ setSplitProgress:
++ pinchSplitGestureEnabled
++ showSplitTransitionView:
++ shouldShowIndicator
++ activationIndicatorView
++ willRotate
++ didRotate
++ performReturnAction
++ currentKeyplane
++ showKeyboardWithInputTraits:screenTraits:splitTraits:
++ setAutoshift:
++ fadeWithInvocation:
++ deleteHandwritingStrokesAtIndexes:
++ usesAutoShift
++ didClearInput
++ restoreDefaultsForAllKeys
++ updateBackgroundCorners
++ restoreDefaultsForKey:
++ setTarget:forKey:
++ setAction:forKey:
++ setLongPressAction:forKey:
++ setLabel:forKey:
++ longPressAction
++ canProduceString:
++ hitBuffer
++ setReturnKeyEnabled:withDisplayName:withType:
++ ignoresShiftState
++ isShiftKeyPlaneChooser
++ isShiftKeyBeingHeld
++ updateLocalizedKeys:
++ setSplit:animated:
++ finishSplitTransitionWithProgress:
++ keyplaneName
++ keyboardName
++ localizedInputMode
++ updateKeyCentroids
++ setLayoutTag:
++ baseKeyForString:
++ keyplaneForKey:
++ keyplaneNamed:
++ changeToKeyplane:
++ simulateTouch:
++ simulateTouchForCharacter:errorVector:shouldTypeVariants:baseKeyForVariants:
++ handlerForNotification:
++ touchDown:executionContext:
++ touchDragged:executionContext:
++ touchUp:executionContext:
++ touchCancelled:executionContext:
++ canForceTouchCommit:
++ performSpaceAction
++ deactivateActiveKeysClearingTouchInfo:clearingDimming:
++ installGestureRecognizers
++ keyplane
++ refreshForDictationAvailablityDidChange
++ uninstallGestureRecognizers
++ cancelMultitapTimer
++ cancelDelayedCentroidUpdate
++ clearAllTouchInfo
++ setActiveKey:
++ setPreTouchKeyplaneName:
++ flushKeyCache:
++ defaultNameForKeyplaneName:
++ splitNameForKeyplaneName:
++ frameForKeylayoutName:onKeyplaneName:
++ visualStyleForKeyboardIfSplit:
++ updateBackgroundIfNeeded
++ setLocalizedInputKey:
++ setKeyplaneName:
++ refreshForRivenPreferences
++ displayTypeHintForShiftKey
++ displayTypeHintForMoreKey
++ setState:forKey:
++ setCurrencyKeysForCurrentLocaleOnKeyplane:
++ updateLocalizedKeysOnKeyplane:
++ rebuildSplitTransitionViewFromKeyplane:toKeyplane:
++ cachedCompositeImageWithCacheKey:
++ renderedImageWithStateFallbacksForToken:
++ stateForKey:
++ shouldShowDictationKey
++ canReuseKeyplaneView
++ splitNameForKeyplane:
++ updateKeyboardForKeyplane:
++ updateMoreAndInternationalKeys
++ cacheTokenForKeyplane:
++ cacheIdentifierForKeyplaneNamed:
++ defaultKeyplaneForKeyplane:
++ stateForShiftKey:
++ stateForKeyplaneSwitchKey:
++ stateForMultitapReverseKey:
++ stateForDictationKey:
++ updateGlobeKeyDisplayString
++ rebuildSplitTransitionView
++ updateTransitionWithFlags:
++ showIntlKey
++ showDictationKey
++ setKeyboardName:appearance:
++ initialKeyplaneNameWithKBStarName:
++ shouldHitTestKey:
++ keyHitTestContainingPoint:
++ keyHitTestClosestToPoint:
++ keyHitTestWithoutCharging:
++ keyHitTest:
++ shouldPreventInputManagerHitTestingForKey:
++ keycodeForKey:
++ activeKey
++ isLongPressedKey:
++ handwritingPlane
++ multitapCompleteKeys
++ multitapInterrupted
++ multitapExpired
++ handleMultitapTimerFired
++ activeMultitapCompleteKey
++ clearHandwritingStrokesIfNeededAndNotify:
++ downActionFlagsForKey:
++ showPopupVariantsForKey:
++ showMenu:forKey:
++ touchForKey:
++ _keyplaneVariantsKeyForString:
++ prepareForSplitTransition
++ setPlayKeyClickSoundOn:
++ interpretPinchSeparationValues
++ finishSplit
++ finishSplitTransition
++ _autoSplit:
++ generateInfoForTouch:
++ completeHitTestForTouchDown:executionContext:
++ performHitTestForTouchInfo:touchStage:hitKeyHandler:executionContext:
++ clearInfoForTouch:
++ touchDownWithKey:atPoint:executionContext:
++ playKeyClickSoundOn
++ shouldSkipResponseToGlobeKey:atPoint:
++ hideMenu:forKey:
++ playKeyClickSound
++ shouldCommitPrecedingTouchesForTouchDownWithActions:
++ completeCommitTouchesPrecedingTouchDownWithKey:withActions:executionContext:
++ createKeyEventForStringAction:forKey:isPopupVariant:isMultitap:isFlick:
++ incrementPunctuationIfNeeded:
++ completeSendStringActionForTouchDownWithKey:withActions:executionContext:
++ preTouchKeyplaneName
++ keyplaneNameForRevertAfterTouch
++ downActionShiftWithKey:
++ completeDeleteActionForTouchDownWithActions:executionContext:
++ infoForTouch:
++ interpretTouchesForSplit
++ touchPassesDragThreshold:
++ completeHitTestForTouchDragged:hitKey:
++ upActionFlagsForKey:
++ refreshGhostKeyState
++ shouldRetestKey:withKeyplane:
++ activeTouchForInteraction:
++ completeRetestForTouchUp:timestamp:interval:executionContext:
++ shouldSendTouchUpToInputManager:
++ touchMultitapTimer
++ shouldSendStringForFlick:
++ completeSendStringActionForTouchUp:withActions:timestamp:interval:didLongPress:prevActions:executionContext:
++ continueFromInternationalActionForTouchUp:withActions:timestamp:interval:didLongPress:prevActions:executionContext:
++ fadeMenu:forKey:
++ upActionShift
++ fadeMenu:forKey:withDelay:
++ handleKeyboardMenusForTouch:
++ updateShiftKeyState
++ swipeDetected:
++ cancelTouchIfNecessaryForInfo:
++ keyHasAccentedVariants:
++ keyboard
++ applyError:toKey:
++ renderedImageWithToken:
++ renderedKeyplaneWithToken:split:
++ handleDelayedCentroidUpdate
++ currentKeyplaneView
++ setKeyboardName:
++ shift
++ autoShift
++ setAutoShift:
++ didLongPress
++ setDidLongPress:
++ setShowIntlKey:
++ localizedInputKey
+- resizeForKeyplaneSize:
+- handleDismissFlickView:
+- setKeyboardDim:
+- setKeyboardDim:amount:withDuration:
+- flickPopupStringForKey:withString:
+- handlePopupView:
+- handleFlick:
+- flickStringForInputKey:direction:
+- showPopupView:withKey:popupInfo:force:
+- showFlickView:withKey:flickString:
+- populateFlickPopupsForKey:
+- activateCompositeKey:direction:flickString:popupInfo:
+- compositeImageForKey:
+- setCompositeImage:forKey:
+- handlePopupView
+- handleDismissFlickView
+- getFlickCompositeImageForKey:direction:rect:
+- getPopupBackgroundImageForKey:direction:popupInfo:rect:
+- overlayCharacterImageForKey:direction:rect:flickString:popupInfo:
+- keyWithRepresentedString:
+- frameForKeyWithRepresentedString:
+- frameForLastKeyWithRepresentedString:
+- popupKeyViews
+- setKeyForTouchInfo:key:
+- initWithFrame:
+- dealloc
+- setShift:
+- removeFromSuperview
+- gestureRecognizerShouldBegin:
+- gestureRecognizer:shouldReceiveTouch:
+- isRotating
+- lastTouchUpTimestamp
+- scriptingInfoWithChildren
+- willMoveToWindow:
+- pointInside:forEvent:
+- setKeyboardAppearance:
+- logHandwritingData
+- renderConfig
+- setRenderConfig:
+- candidateList
+- clearUnusedObjects:
+- hasCandidateKeys
+- hasAccentKey
+- canMultitap
+- isAlphabeticPlane
+- deactivateActiveKeys
+- frameForKeylayoutName:
+- dragGestureSize
+- pinchDetected
+- setSplitProgress:
+- pinchSplitGestureEnabled
+- showSplitTransitionView:
+- shouldShowIndicator
+- activationIndicatorView
+- willRotate
+- didRotate
+- performReturnAction
+- currentKeyplane
+- showKeyboardWithInputTraits:screenTraits:splitTraits:
+- setAutoshift:
+- fadeWithInvocation:
+- deleteHandwritingStrokesAtIndexes:
+- usesAutoShift
+- didClearInput
+- restoreDefaultsForAllKeys
+- updateBackgroundCorners
+- restoreDefaultsForKey:
+- setTarget:forKey:
+- setAction:forKey:
+- setLongPressAction:forKey:
+- setLabel:forKey:
+- longPressAction
+- canProduceString:
+- hitBuffer
+- setReturnKeyEnabled:withDisplayName:withType:
+- ignoresShiftState
+- isShiftKeyPlaneChooser
+- isShiftKeyBeingHeld
+- updateLocalizedKeys:
+- setSplit:animated:
+- finishSplitTransitionWithProgress:
+- keyplaneName
+- keyboardName
+- localizedInputMode
+- updateKeyCentroids
+- setLayoutTag:
+- baseKeyForString:
+- keyplaneForKey:
+- keyplaneNamed:
+- changeToKeyplane:
+- simulateTouch:
+- simulateTouchForCharacter:errorVector:shouldTypeVariants:baseKeyForVariants:
+- handlerForNotification:
+- touchDown:executionContext:
+- touchDragged:executionContext:
+- touchUp:executionContext:
+- touchCancelled:executionContext:
+- canForceTouchCommit:
+- performSpaceAction
+- deactivateActiveKeysClearingTouchInfo:clearingDimming:
+- installGestureRecognizers
+- keyplane
+- refreshForDictationAvailablityDidChange
+- uninstallGestureRecognizers
+- cancelMultitapTimer
+- cancelDelayedCentroidUpdate
+- clearAllTouchInfo
+- setActiveKey:
+- setPreTouchKeyplaneName:
+- flushKeyCache:
+- defaultNameForKeyplaneName:
+- splitNameForKeyplaneName:
+- frameForKeylayoutName:onKeyplaneName:
+- visualStyleForKeyboardIfSplit:
+- updateBackgroundIfNeeded
+- setLocalizedInputKey:
+- setKeyplaneName:
+- refreshForRivenPreferences
+- displayTypeHintForShiftKey
+- displayTypeHintForMoreKey
+- setState:forKey:
+- setCurrencyKeysForCurrentLocaleOnKeyplane:
+- updateLocalizedKeysOnKeyplane:
+- rebuildSplitTransitionViewFromKeyplane:toKeyplane:
+- cachedCompositeImageWithCacheKey:
+- renderedImageWithStateFallbacksForToken:
+- stateForKey:
+- shouldShowDictationKey
+- canReuseKeyplaneView
+- splitNameForKeyplane:
+- updateKeyboardForKeyplane:
+- updateMoreAndInternationalKeys
+- cacheTokenForKeyplane:
+- cacheIdentifierForKeyplaneNamed:
+- defaultKeyplaneForKeyplane:
+- stateForShiftKey:
+- stateForKeyplaneSwitchKey:
+- stateForMultitapReverseKey:
+- stateForDictationKey:
+- updateGlobeKeyDisplayString
+- rebuildSplitTransitionView
+- updateTransitionWithFlags:
+- showIntlKey
+- showDictationKey
+- setKeyboardName:appearance:
+- initialKeyplaneNameWithKBStarName:
+- shouldHitTestKey:
+- keyHitTestContainingPoint:
+- keyHitTestClosestToPoint:
+- keyHitTestWithoutCharging:
+- keyHitTest:
+- shouldPreventInputManagerHitTestingForKey:
+- keycodeForKey:
+- activeKey
+- isLongPressedKey:
+- handwritingPlane
+- multitapCompleteKeys
+- multitapInterrupted
+- multitapExpired
+- handleMultitapTimerFired
+- activeMultitapCompleteKey
+- clearHandwritingStrokesIfNeededAndNotify:
+- downActionFlagsForKey:
+- showPopupVariantsForKey:
+- showMenu:forKey:
+- touchForKey:
+- _keyplaneVariantsKeyForString:
+- prepareForSplitTransition
+- setPlayKeyClickSoundOn:
+- interpretPinchSeparationValues
+- finishSplit
+- finishSplitTransition
+- _autoSplit:
+- generateInfoForTouch:
+- completeHitTestForTouchDown:executionContext:
+- performHitTestForTouchInfo:touchStage:hitKeyHandler:executionContext:
+- clearInfoForTouch:
+- touchDownWithKey:atPoint:executionContext:
+- playKeyClickSoundOn
+- shouldSkipResponseToGlobeKey:atPoint:
+- hideMenu:forKey:
+- playKeyClickSound
+- shouldCommitPrecedingTouchesForTouchDownWithActions:
+- completeCommitTouchesPrecedingTouchDownWithKey:withActions:executionContext:
+- createKeyEventForStringAction:forKey:isPopupVariant:isMultitap:isFlick:
+- incrementPunctuationIfNeeded:
+- completeSendStringActionForTouchDownWithKey:withActions:executionContext:
+- preTouchKeyplaneName
+- keyplaneNameForRevertAfterTouch
+- downActionShiftWithKey:
+- completeDeleteActionForTouchDownWithActions:executionContext:
+- infoForTouch:
+- interpretTouchesForSplit
+- touchPassesDragThreshold:
+- completeHitTestForTouchDragged:hitKey:
+- upActionFlagsForKey:
+- refreshGhostKeyState
+- shouldRetestKey:withKeyplane:
+- activeTouchForInteraction:
+- completeRetestForTouchUp:timestamp:interval:executionContext:
+- shouldSendTouchUpToInputManager:
+- touchMultitapTimer
+- shouldSendStringForFlick:
+- completeSendStringActionForTouchUp:withActions:timestamp:interval:didLongPress:prevActions:executionContext:
+- continueFromInternationalActionForTouchUp:withActions:timestamp:interval:didLongPress:prevActions:executionContext:
+- fadeMenu:forKey:
+- upActionShift
+- fadeMenu:forKey:withDelay:
+- handleKeyboardMenusForTouch:
+- updateShiftKeyState
+- swipeDetected:
+- cancelTouchIfNecessaryForInfo:
+- keyHasAccentedVariants:
+- keyboard
+- applyError:toKey:
+- renderedImageWithToken:
+- renderedKeyplaneWithToken:split:
+- handleDelayedCentroidUpdate
+- currentKeyplaneView
+- setKeyboardName:
+- shift
+- autoShift
+- setAutoShift:
+- didLongPress
+- setDidLongPress:
+- setShowIntlKey:
+- localizedInputKey
+@end

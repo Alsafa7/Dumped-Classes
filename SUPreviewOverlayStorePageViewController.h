@@ -1,0 +1,6 @@
+@interface SUPreviewOverlayStorePageViewController : SUStorePageViewController
+{
+
+}
+
+@end

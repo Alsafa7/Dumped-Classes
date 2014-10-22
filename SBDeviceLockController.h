@@ -1,0 +1,82 @@
+@interface SBDeviceLockController : NSObject
+{
+	int _lockState;
+	double _lastLockDate;
+	BOOL _isPermanentlyBlocked;
+	BOOL _isBlockedForThermalCondition;
+	double _deviceLockUnblockTime;
+	id _deviceLockUnblockTimer;
+	id _assertionManager;
+	id _transientPasscodeCheckingAssertion;
+	BOOL _okToSendNotifications;
+	id _secureBackupHelper;
+	id _lastIncorrectPasscodeAttempt;
+}
+
++ androidlockIsLocked
++ androidlockIsEnabled
++ isPasscodeLockedOrBlocked
++ isPasscodeLocked
++ enablePasscodeLockImmediately
++ deviceHasPasscodeSet
++ lastLockDate
++ isPermanentlyBlocked:
++ setBlockedForThermalCondition:
++ attemptDeviceUnlockWithPassword:appRequested:
++ isPasscodeLockedCached
++ _setDeviceLockUnblockTime:
++ _enablePasscodeLockImmediately:
++ _updateDeviceLockedState
++ _uncachePasscodeIfNecessary
++ _clearUnblockTimer
++ _sendBlockStateChangeNotification
++ _temporarilyBlocked
++ _unblockTimerFired
++ _scheduleUnblockTimer
++ _shouldLockDeviceNow
++ _setLockState:
++ _cachePassword:
++ isBlockedForThermalCondition
++ _notifyOfFirstUnlock
++ _addDeviceLockDisableAssertion:
++ _removeDeviceLockDisableAssertion:
++ shouldAllowUnlockToApplication:
++ isBlocked
++ dealloc
++ init
++ description
++ _clearBlockedState
+- androidlockIsLocked
+- androidlockIsEnabled
+- isPasscodeLockedOrBlocked
+- isPasscodeLocked
+- enablePasscodeLockImmediately
+- deviceHasPasscodeSet
+- lastLockDate
+- isPermanentlyBlocked:
+- setBlockedForThermalCondition:
+- attemptDeviceUnlockWithPassword:appRequested:
+- isPasscodeLockedCached
+- _setDeviceLockUnblockTime:
+- _enablePasscodeLockImmediately:
+- _updateDeviceLockedState
+- _uncachePasscodeIfNecessary
+- _clearUnblockTimer
+- _sendBlockStateChangeNotification
+- _temporarilyBlocked
+- _unblockTimerFired
+- _scheduleUnblockTimer
+- _shouldLockDeviceNow
+- _setLockState:
+- _cachePassword:
+- isBlockedForThermalCondition
+- _notifyOfFirstUnlock
+- _addDeviceLockDisableAssertion:
+- _removeDeviceLockDisableAssertion:
+- shouldAllowUnlockToApplication:
+- isBlocked
+- dealloc
+- init
+- description
+- _clearBlockedState
+@end

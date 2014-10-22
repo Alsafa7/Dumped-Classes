@@ -1,0 +1,194 @@
+@interface UIToolbarButton : UIControl
+{
+	struct _hitRect;
+	id _info;
+	id _label;
+	id _badge;
+	id _pressedIndicator;
+	long long _barStyle;
+	long long _style;
+	struct _glowAdjust;
+	BOOL _onState;
+	BOOL _barHeight;
+	BOOL _badgeAnimated;
+	BOOL _bezel;
+	double _minimumWidth;
+	double _maximumWidth;
+	float _labelHeight;
+	struct _infoInsets;
+	id _toolbarTintColor;
+	BOOL _isAnimatedTrashButton;
+	id _appearanceStorage;
+	BOOL _isInTopBar;
+	Class _appearanceGuideClass;
+}
+
++ dealloc
++ setImage:
++ hitTest:withEvent:
++ pointInside:withEvent:
++ setFrame:
++ layoutSubviews
++ sizeThatFits:
++ alignmentRectInsets
++ _canHandleStatusBarTouchAtLocation:
++ _appearanceGuideClass
++ pointInside:forEvent:
++ hitTest:forEvent:
++ setEnabled:
++ _applyBarButtonAppearanceStorage:withTaggedSelectors:
++ setBarStyle:
++ _UIAppearance_setTintColor:
++ _setTintColor:
++ _backgroundVerticalPositionAdjustmentForBarMetrics:
++ _defaultTitleShadowOffsetForState:
++ _defaultTitleColorForState:
++ _defaultTitleShadowColorForState:
++ _updateShadowOffsetWithAttributes:forState:
++ _tintColor
++ setHighlighted:
++ _setBackgroundImage:forState:style:barMetrics:
++ _UIAppearance_setBackgroundImage:forState:style:barMetrics:
++ _UIAppearance_setBackgroundImage:forState:barMetrics:
++ _UIAppearance_setTitleTextAttributes:forState:
++ _UIAppearance_setBackgroundVerticalPositionAdjustment:forBarMetrics:
++ _UIAppearance_setTitlePositionAdjustment:forBarMetrics:
++ _setTitleTextAttributes:forState:
++ _setTitlePositionAdjustment:forBarMetrics:
++ _setBackgroundVerticalPositionAdjustment:forBarMetrics:
++ _setBackgroundImage:forState:barMetrics:
++ _backgroundImageForState:barMetrics:
++ _titleTextAttributesForState:
++ _UIAppearance_setBackButtonBackgroundImage:forState:barMetrics:
++ _setBackButtonBackgroundImage:forState:barMetrics:
++ _titlePositionAdjustmentForBarMetrics:
++ _UIAppearance_setBackButtonTitlePositionAdjustment:forBarMetrics:
++ _setBackButtonTitlePositionAdjustment:forBarMetrics:
++ _UIAppearance_setBackButtonBackgroundVerticalPositionAdjustment:forBarMetrics:
++ _setBackButtonBackgroundVerticalPositionAdjustment:forBarMetrics:
++ _setAppearanceGuideClass:
++ _setLastHighlightSuccessful:
++ pointMostlyInside:withEvent:
++ _setTouchHasHighlighted:
++ _info
++ _sizeView:toPossibleTitles:pressedTitle:
++ _newButton
++ _adjustPushButtonForMiniBar:isChangingBarHeight:
++ _isBordered
++ _setPressed:
++ _infoIsButton
++ _positionBadge
++ _badgeAnimationDidStop:finished:
++ _adjustToolbarButtonInfo
++ isAnimatedTrashButton
++ _shouldApplyPadding
++ _animateImage:withButtonBar:target:didFinishSelector:
++ _useSilverLook
++ _adjustToolbarButtonInfoTintColorHasChanged:
++ _updateInfoTextColorsForState:
++ _setInTopBar:
++ initWithImage:pressedImage:label:labelHeight:withBarStyle:withStyle:withInsets:possibleTitles:possibleSystemItems:withToolbarTintColor:bezel:imageInsets:glowInsets:landscape:
++ setSizesToFitImage:
++ _setButtonBarHitRect:
++ _buttonBarHitRect
++ _showPressedIndicator:
++ setUseSelectedImage:
++ _setBadgeValue:
++ _setBadgeAnimated:
++ _setInfoWidth:
++ _setInfoExtremityWidth:isMin:
++ _setInfoFlexibleWidth:
++ _canGetPadding
++ _paddingForLeft:
++ _setOn:
++ _isOn
++ _animateImage:withButtonBar:
++ _setBarHeight:
++ _useBarHeight
++ setToolbarTintColor:
++ setAnimatedTrashButton:
+- dealloc
+- setImage:
+- hitTest:withEvent:
+- pointInside:withEvent:
+- setFrame:
+- layoutSubviews
+- sizeThatFits:
+- alignmentRectInsets
+- _canHandleStatusBarTouchAtLocation:
+- _appearanceGuideClass
+- pointInside:forEvent:
+- hitTest:forEvent:
+- setEnabled:
+- _applyBarButtonAppearanceStorage:withTaggedSelectors:
+- setBarStyle:
+- _UIAppearance_setTintColor:
+- _setTintColor:
+- _backgroundVerticalPositionAdjustmentForBarMetrics:
+- _defaultTitleShadowOffsetForState:
+- _defaultTitleColorForState:
+- _defaultTitleShadowColorForState:
+- _updateShadowOffsetWithAttributes:forState:
+- _tintColor
+- setHighlighted:
+- _setBackgroundImage:forState:style:barMetrics:
+- _UIAppearance_setBackgroundImage:forState:style:barMetrics:
+- _UIAppearance_setBackgroundImage:forState:barMetrics:
+- _UIAppearance_setTitleTextAttributes:forState:
+- _UIAppearance_setBackgroundVerticalPositionAdjustment:forBarMetrics:
+- _UIAppearance_setTitlePositionAdjustment:forBarMetrics:
+- _setTitleTextAttributes:forState:
+- _setTitlePositionAdjustment:forBarMetrics:
+- _setBackgroundVerticalPositionAdjustment:forBarMetrics:
+- _setBackgroundImage:forState:barMetrics:
+- _backgroundImageForState:barMetrics:
+- _titleTextAttributesForState:
+- _UIAppearance_setBackButtonBackgroundImage:forState:barMetrics:
+- _setBackButtonBackgroundImage:forState:barMetrics:
+- _titlePositionAdjustmentForBarMetrics:
+- _UIAppearance_setBackButtonTitlePositionAdjustment:forBarMetrics:
+- _setBackButtonTitlePositionAdjustment:forBarMetrics:
+- _UIAppearance_setBackButtonBackgroundVerticalPositionAdjustment:forBarMetrics:
+- _setBackButtonBackgroundVerticalPositionAdjustment:forBarMetrics:
+- _setAppearanceGuideClass:
+- _setLastHighlightSuccessful:
+- pointMostlyInside:withEvent:
+- _setTouchHasHighlighted:
+- _info
+- _sizeView:toPossibleTitles:pressedTitle:
+- _newButton
+- _adjustPushButtonForMiniBar:isChangingBarHeight:
+- _isBordered
+- _setPressed:
+- _infoIsButton
+- _positionBadge
+- _badgeAnimationDidStop:finished:
+- _adjustToolbarButtonInfo
+- isAnimatedTrashButton
+- _shouldApplyPadding
+- _animateImage:withButtonBar:target:didFinishSelector:
+- _useSilverLook
+- _adjustToolbarButtonInfoTintColorHasChanged:
+- _updateInfoTextColorsForState:
+- _setInTopBar:
+- initWithImage:pressedImage:label:labelHeight:withBarStyle:withStyle:withInsets:possibleTitles:possibleSystemItems:withToolbarTintColor:bezel:imageInsets:glowInsets:landscape:
+- setSizesToFitImage:
+- _setButtonBarHitRect:
+- _buttonBarHitRect
+- _showPressedIndicator:
+- setUseSelectedImage:
+- _setBadgeValue:
+- _setBadgeAnimated:
+- _setInfoWidth:
+- _setInfoExtremityWidth:isMin:
+- _setInfoFlexibleWidth:
+- _canGetPadding
+- _paddingForLeft:
+- _setOn:
+- _isOn
+- _animateImage:withButtonBar:
+- _setBarHeight:
+- _useBarHeight
+- setToolbarTintColor:
+- setAnimatedTrashButton:
+@end

@@ -1,0 +1,6 @@
+@interface SLFacebookGraphUtils : NSObject
+{
+
+}
+
+@end

@@ -1,0 +1,177 @@
+@interface SUClientController : NSObject
+{
+	BOOL _active;
+	id _clientInterface;
+	id _dispatchQueue;
+	id _imageCache;
+	id _imagePool;
+	id _localStoreFrontAtLastSuspend;
+	id _mailComposeViewController;
+	pointer _offeredAssetTypes;
+	id _overlayConfigurations;
+	id _rootViewController;
+	id _scriptExecutionContext;
+	id _synchedStoreFrontAtLastSuspend;
+	id _urlBagKeys;
+	id _imageOperationPool;
+}
+
++ resignActive
++ imageCache
++ _applicationDidEnterBackgroundNotification:
++ becomeActive
++ dealloc
++ init
++ isActive
++ setRootViewController:
++ openURL:
++ rootViewController
++ cancelAllOperations
++ mailComposeController:didFinishWithResult:error:
++ setUserAgent:
++ clientInterface
++ isComposingEmail
++ scriptExecutionContext
++ openClientURL:withSourceApplication:sourceURLString:
++ setClientInterface:
++ isStoreEnabled
++ initWithClientInterface:
++ overlayBackgroundViewController
++ viewControllerFactory
++ presentOverlayBackgroundViewController:
++ dismissOverlayBackgroundViewController
++ _presentDialog:
++ clientIdentifier
++ composeEmailWithSubject:body:
++ userAgent
++ overlayConfigurationForStorePage:
++ setImageCache:
++ newScriptInterface
++ purchaseManagerWillBeginUpdates:
++ purchaseManagerDidEndUpdates:
++ purchaseManager:willAddPurchases:
++ purchaseManager:failedToAddPurchases:
++ purchaseManager:didAddPurchases:
++ composeReviewWithViewController:animated:
++ _memoryWarningNotification:
++ URLBagKeyForIdentifier:
++ dismissTopViewControllerAnimated:
++ _newComposeReviewViewControllerForButtonAction:
++ _newAccountViewControllerForButtonAction:
++ setURLBagKey:forIdentifier:
++ setViewControllerFactory:
++ _purgeCaches
++ exitStoreWithReason:
++ libraryContainsItemIdentifier:
++ composeEmailByRestoringAutosavedMessage
++ presentExternalURLViewController:
++ presentMailComposeViewController:animated:
++ dismissMailComposeViewControllerAnimated:
++ storeContentLanguage
++ bagDidLoadNotification:
++ _dialogNotification:
++ displayClientURL:withSourceApplication:sourceURLString:
++ offeredAssetTypes
++ _reloadOverlayConfigurationsFromURLBag
++ presentAccountViewController:showNavigationBar:animated:
++ composeEmailWithSubject:body:animated:
++ presentAccountViewController:animated:
++ openClientURL:
++ _reloadScriptExecutionContextFromURLBag
++ _reloadUserDefaultsFromURLBag
++ performActionForDialog:button:
++ clientInterface:exitStoreWithReason:
++ clientInterface:presentDialog:
++ clientInterface:setStatusBarHidden:withAnimation:
++ clientInterface:setStatusBarStyle:animated:
++ scriptInterfaceForClientInterface:
++ displayClientURL:
++ ignoresExpectedClientsProtocol
++ openURL:inClientWithIdentifier:
++ setIgnoresExpectedClientsProtocol:
++ setOfferedAssetTypes:
++ autosaveMessageWithCompletionBlock:
++ imageOperationPool
++ storeFrontDidChangeSinceLastSuspend
++ initWithClientIdentifier:
++ setImageOperationPool:
+- resignActive
+- imageCache
+- _applicationDidEnterBackgroundNotification:
+- becomeActive
+- dealloc
+- init
+- isActive
+- setRootViewController:
+- openURL:
+- rootViewController
+- cancelAllOperations
+- mailComposeController:didFinishWithResult:error:
+- setUserAgent:
+- clientInterface
+- isComposingEmail
+- scriptExecutionContext
+- openClientURL:withSourceApplication:sourceURLString:
+- setClientInterface:
+- isStoreEnabled
+- initWithClientInterface:
+- overlayBackgroundViewController
+- viewControllerFactory
+- presentOverlayBackgroundViewController:
+- dismissOverlayBackgroundViewController
+- _presentDialog:
+- clientIdentifier
+- composeEmailWithSubject:body:
+- userAgent
+- overlayConfigurationForStorePage:
+- setImageCache:
+- newScriptInterface
+- purchaseManagerWillBeginUpdates:
+- purchaseManagerDidEndUpdates:
+- purchaseManager:willAddPurchases:
+- purchaseManager:failedToAddPurchases:
+- purchaseManager:didAddPurchases:
+- composeReviewWithViewController:animated:
+- _memoryWarningNotification:
+- URLBagKeyForIdentifier:
+- dismissTopViewControllerAnimated:
+- _newComposeReviewViewControllerForButtonAction:
+- _newAccountViewControllerForButtonAction:
+- setURLBagKey:forIdentifier:
+- setViewControllerFactory:
+- _purgeCaches
+- exitStoreWithReason:
+- libraryContainsItemIdentifier:
+- composeEmailByRestoringAutosavedMessage
+- presentExternalURLViewController:
+- presentMailComposeViewController:animated:
+- dismissMailComposeViewControllerAnimated:
+- storeContentLanguage
+- bagDidLoadNotification:
+- _dialogNotification:
+- displayClientURL:withSourceApplication:sourceURLString:
+- offeredAssetTypes
+- _reloadOverlayConfigurationsFromURLBag
+- presentAccountViewController:showNavigationBar:animated:
+- composeEmailWithSubject:body:animated:
+- presentAccountViewController:animated:
+- openClientURL:
+- _reloadScriptExecutionContextFromURLBag
+- _reloadUserDefaultsFromURLBag
+- performActionForDialog:button:
+- clientInterface:exitStoreWithReason:
+- clientInterface:presentDialog:
+- clientInterface:setStatusBarHidden:withAnimation:
+- clientInterface:setStatusBarStyle:animated:
+- scriptInterfaceForClientInterface:
+- displayClientURL:
+- ignoresExpectedClientsProtocol
+- openURL:inClientWithIdentifier:
+- setIgnoresExpectedClientsProtocol:
+- setOfferedAssetTypes:
+- autosaveMessageWithCompletionBlock:
+- imageOperationPool
+- storeFrontDidChangeSinceLastSuspend
+- initWithClientIdentifier:
+- setImageOperationPool:
+@end

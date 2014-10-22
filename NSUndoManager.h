@@ -1,0 +1,115 @@
+@interface NSUndoManager : NSObject
+{
+	id _undoStack;
+	id _redoStack;
+	id _runLoopModes;
+	usigned long long _NSUndoManagerPrivate1;
+	id _target;
+	id _proxy;
+	pointer _NSUndoManagerPrivate2;
+	pointer _NSUndoManagerPrivate3;
+}
+
++ _undoStack
++ _commitUndoGrouping
++ _rollbackUndoGrouping
++ _processEndOfEventNotification:
++ _shouldCoalesceTypingForText::
++ isRedoing
++ enableUndoRegistration
++ removeAllActionsWithTarget:
++ _methodSignatureForTargetSelector:
++ _forwardTargetInvocation:
++ _endUndoGroupRemovingIfEmpty:
++ undoNestedGroup
++ _delayAutomaticTermination:
++ runLoopModes
++ _scheduleAutomaticTopLevelGroupEnding
++ _prepareEventGrouping
++ _postCheckpointNotification
++ _cancelAutomaticTopLevelGroupEnding
++ _registerUndoObject:
++ _setGroupIdentifier:
++ undoActionName
++ undoMenuTitleForUndoActionName:
++ redoActionName
++ redoMenuTitleForUndoActionName:
++ setLevelsOfUndo:
++ levelsOfUndo
++ setRunLoopModes:
++ prepareWithInvocationTarget:
++ setActionIsDiscardable:
++ undoActionIsDiscardable
++ redoActionIsDiscardable
++ dealloc
++ init
++ canUndo
++ canRedo
++ redoMenuItemTitle
++ undoMenuItemTitle
++ undo
++ redo
++ isUndoRegistrationEnabled
++ removeAllActions
++ disableUndoRegistration
++ groupsByEvent
++ setGroupsByEvent:
++ beginUndoGrouping
++ endUndoGrouping
++ groupingLevel
++ registerUndoWithTarget:selector:object:
++ setActionName:
++ isUndoing
++ finalize
+- _undoStack
+- _commitUndoGrouping
+- _rollbackUndoGrouping
+- _processEndOfEventNotification:
+- _shouldCoalesceTypingForText::
+- isRedoing
+- enableUndoRegistration
+- removeAllActionsWithTarget:
+- _methodSignatureForTargetSelector:
+- _forwardTargetInvocation:
+- _endUndoGroupRemovingIfEmpty:
+- undoNestedGroup
+- _delayAutomaticTermination:
+- runLoopModes
+- _scheduleAutomaticTopLevelGroupEnding
+- _prepareEventGrouping
+- _postCheckpointNotification
+- _cancelAutomaticTopLevelGroupEnding
+- _registerUndoObject:
+- _setGroupIdentifier:
+- undoActionName
+- undoMenuTitleForUndoActionName:
+- redoActionName
+- redoMenuTitleForUndoActionName:
+- setLevelsOfUndo:
+- levelsOfUndo
+- setRunLoopModes:
+- prepareWithInvocationTarget:
+- setActionIsDiscardable:
+- undoActionIsDiscardable
+- redoActionIsDiscardable
+- dealloc
+- init
+- canUndo
+- canRedo
+- redoMenuItemTitle
+- undoMenuItemTitle
+- undo
+- redo
+- isUndoRegistrationEnabled
+- removeAllActions
+- disableUndoRegistration
+- groupsByEvent
+- setGroupsByEvent:
+- beginUndoGrouping
+- endUndoGrouping
+- groupingLevel
+- registerUndoWithTarget:selector:object:
+- setActionName:
+- isUndoing
+- finalize
+@end

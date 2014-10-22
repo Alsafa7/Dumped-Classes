@@ -1,0 +1,108 @@
+@interface _UIModalItemContentView : UIView
+{
+	id _modalItem;
+	id _titleLabel;
+	id _subtitleLabel;
+	id _messageLabel;
+	id _loginTextField;
+	id _passwordTextField;
+	id _accessoryViewController;
+	struct _accessoryViewControllerSize;
+	id _accessoryViewControllerContrainerView;
+	struct _actualViewControllerSize;
+	id _cancelButton;
+	id _defaultButton;
+	long long _cancelButtonIndex;
+	long long _defaultButtonIndex;
+	id _buttonTable;
+	struct _presentingSize;
+	id _presentingViewController;
+	struct _maxSize;
+	BOOL _enableFirstOtherButton;
+}
+
++ initWithFrame:
++ dealloc
++ tableView:didSelectRowAtIndexPath:
++ tableView:numberOfRowsInSection:
++ tableView:cellForRowAtIndexPath:
++ cancelButtonIndex
++ presentingViewController
++ maxSize
++ titleLabel
++ setModalItem:skipLayout:
++ _createAndConfigureTitleLabel
++ _createAndConfigureSubtitleLabel
++ _createAndConfigureMessageLabel
++ _createAndConfigureTextFieldsForInputStyle:
++ _createAndConfigureButtonTable
++ _createViewControllerContentView
++ defaultButtonIndex
++ layout
++ modalItem
++ textFieldValueDidChange:
++ passwordTextField
++ loginTextField
++ setModalItem:
++ setMaxSize:
++ _reloadButtons
++ presentingSize
++ setPresentingSize:
++ setPresentingViewController:
++ actualViewControllerSize
++ setActualViewControllerSize:
++ enableFirstOtherButton
++ setEnableFirstOtherButton:
++ subtitleLabel
++ messageLabel
++ accessoryViewController
++ accessoryViewControllerSize
++ accessoryViewControllerContrainerView
++ cancelButton
++ setCancelButton:
++ defaultButton
++ setDefaultButton:
++ buttonTable
+- initWithFrame:
+- dealloc
+- tableView:didSelectRowAtIndexPath:
+- tableView:numberOfRowsInSection:
+- tableView:cellForRowAtIndexPath:
+- cancelButtonIndex
+- presentingViewController
+- maxSize
+- titleLabel
+- setModalItem:skipLayout:
+- _createAndConfigureTitleLabel
+- _createAndConfigureSubtitleLabel
+- _createAndConfigureMessageLabel
+- _createAndConfigureTextFieldsForInputStyle:
+- _createAndConfigureButtonTable
+- _createViewControllerContentView
+- defaultButtonIndex
+- layout
+- modalItem
+- textFieldValueDidChange:
+- passwordTextField
+- loginTextField
+- setModalItem:
+- setMaxSize:
+- _reloadButtons
+- presentingSize
+- setPresentingSize:
+- setPresentingViewController:
+- actualViewControllerSize
+- setActualViewControllerSize:
+- enableFirstOtherButton
+- setEnableFirstOtherButton:
+- subtitleLabel
+- messageLabel
+- accessoryViewController
+- accessoryViewControllerSize
+- accessoryViewControllerContrainerView
+- cancelButton
+- setCancelButton:
+- defaultButton
+- setDefaultButton:
+- buttonTable
+@end

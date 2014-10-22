@@ -1,0 +1,72 @@
+@interface EKPersistentAlarm : EKPersistentObject
+{
+
+}
+
++ validate:
++ setAcknowledgedDate:
++ setRelativeOffset:
++ setOriginalAlarm:
++ isAbsolute
++ relativeOffset
++ setAbsoluteDate:
++ absoluteDate
++ proximity
++ originalAlarm
++ setProximity:
++ acknowledgedDate
++ isDefaultAlarm
++ setDefaultAlarm:
++ snoozedAlarms
++ setSnoozedAlarms:
++ alarmType
++ setAlarmType:
++ entityType
++ init
++ description
++ setTimeZone:
++ copyWithZone:
++ UUID
++ location
++ timeZone
++ setExternalID:
++ externalID
++ externalData
++ setExternalData:
++ owner
++ setLocation:
++ setOwner:
+- validate:
+- setAcknowledgedDate:
+- setRelativeOffset:
+- setOriginalAlarm:
+- isAbsolute
+- relativeOffset
+- setAbsoluteDate:
+- absoluteDate
+- proximity
+- originalAlarm
+- setProximity:
+- acknowledgedDate
+- isDefaultAlarm
+- setDefaultAlarm:
+- snoozedAlarms
+- setSnoozedAlarms:
+- alarmType
+- setAlarmType:
+- entityType
+- init
+- description
+- setTimeZone:
+- copyWithZone:
+- UUID
+- location
+- timeZone
+- setExternalID:
+- externalID
+- externalData
+- setExternalData:
+- owner
+- setLocation:
+- setOwner:
+@end

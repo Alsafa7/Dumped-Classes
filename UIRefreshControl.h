@@ -1,0 +1,122 @@
+@interface UIRefreshControl : UIControl
+{
+	long long _style;
+	id _contentView;
+	id _scrollView;
+	double _refreshControlHeight;
+	double _visibleHeight;
+	double _snappingHeight;
+	double _additionalTopInset;
+	BOOL _insetsApplied;
+	BOOL _adjustingInsets;
+	struct _appliedInsets;
+	int _refreshControlState;
+}
+
++ initWithFrame:
++ dealloc
++ setBackgroundColor:
++ initWithCoder:
++ _populateArchivedSubviews:
++ encodeWithCoder:
++ init
++ setFrame:
++ _contentView
++ setBounds:
++ setAttributedTitle:
++ sizeThatFits:
++ style
++ tintColor
++ setTintColor:
++ sizeToFit
++ didMoveToSuperview
++ willMoveToSuperview:
++ _didScroll
++ _setTintColor:
++ _tintColor
++ _refreshControlHeight
++ _isApplyingInsets
++ refreshControlState
++ _removeInsets
++ _update
++ _addInsets
++ beginRefreshing
++ endRefreshing
++ _appliedInsets
++ initWithStyle:
++ attributedTitle
++ _visibleHeight
++ _setAttributedTitle:
++ _attributedTitle
++ _updateSnappingHeight
++ setRefreshControlState:
++ _resizeToFitContents
++ _removeInsetHeight:
++ _addInsetHeight:
++ revealedFraction
++ _recomputeNewState
++ _updateHiddenStateIfNeeded
++ _updateConcealingMask
++ _originForContentOffset:
++ _visibleHeightForContentOffset:origin:
++ _setVisibleHeight:
++ _stiffnessForVelocity:
++ _setRefreshControlState:notify:
++ _canTransitionFromState:toState:
++ isRefreshing
++ _snappingHeight
++ _scrollViewHeight
+- initWithFrame:
+- dealloc
+- setBackgroundColor:
+- initWithCoder:
+- _populateArchivedSubviews:
+- encodeWithCoder:
+- init
+- setFrame:
+- _contentView
+- setBounds:
+- setAttributedTitle:
+- sizeThatFits:
+- style
+- tintColor
+- setTintColor:
+- sizeToFit
+- didMoveToSuperview
+- willMoveToSuperview:
+- _didScroll
+- _setTintColor:
+- _tintColor
+- _refreshControlHeight
+- _isApplyingInsets
+- refreshControlState
+- _removeInsets
+- _update
+- _addInsets
+- beginRefreshing
+- endRefreshing
+- _appliedInsets
+- initWithStyle:
+- attributedTitle
+- _visibleHeight
+- _setAttributedTitle:
+- _attributedTitle
+- _updateSnappingHeight
+- setRefreshControlState:
+- _resizeToFitContents
+- _removeInsetHeight:
+- _addInsetHeight:
+- revealedFraction
+- _recomputeNewState
+- _updateHiddenStateIfNeeded
+- _updateConcealingMask
+- _originForContentOffset:
+- _visibleHeightForContentOffset:origin:
+- _setVisibleHeight:
+- _stiffnessForVelocity:
+- _setRefreshControlState:notify:
+- _canTransitionFromState:toState:
+- isRefreshing
+- _snappingHeight
+- _scrollViewHeight
+@end

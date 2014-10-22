@@ -1,0 +1,59 @@
+@interface GKBubbleSegmentedControlContext : NSObject
+{
+	id _gamesBubble;
+	id _friendsBubble;
+	id _pointsBubble;
+	id _masterDetailVC;
+	id _bubbleContainer;
+	id _targetGamesBubble;
+	id _targetFriendsBubble;
+	id _targetPointsBubble;
+}
+
++ pointsBubble
++ setPointsBubble:
++ translateBubbleContainerFrame:
++ translateBubbleToOurSystemWithFrame:zPosition:superlayer:
++ dupeBubble:
++ setTargetGamesBubble:
++ setTargetFriendsBubble:
++ setTargetPointsBubble:
++ masterDetailFrame
++ bubbleContainerFrame
++ translateBubbleToOurSystem:
++ masterDetailVC
++ setMasterDetailVC:
++ targetGamesBubble
++ targetFriendsBubble
++ targetPointsBubble
++ gamesBubble
++ setGamesBubble:
++ friendsBubble
++ setFriendsBubble:
++ bubbleContainer
++ setBubbleContainer:
++ dealloc
+- pointsBubble
+- setPointsBubble:
+- translateBubbleContainerFrame:
+- translateBubbleToOurSystemWithFrame:zPosition:superlayer:
+- dupeBubble:
+- setTargetGamesBubble:
+- setTargetFriendsBubble:
+- setTargetPointsBubble:
+- masterDetailFrame
+- bubbleContainerFrame
+- translateBubbleToOurSystem:
+- masterDetailVC
+- setMasterDetailVC:
+- targetGamesBubble
+- targetFriendsBubble
+- targetPointsBubble
+- gamesBubble
+- setGamesBubble:
+- friendsBubble
+- setFriendsBubble:
+- bubbleContainer
+- setBubbleContainer:
+- dealloc
+@end

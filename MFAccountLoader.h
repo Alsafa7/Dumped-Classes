@@ -1,0 +1,6 @@
+@interface MFAccountLoader : NSObject
+{
+
+}
+
+@end

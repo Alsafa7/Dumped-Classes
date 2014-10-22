@@ -1,0 +1,88 @@
+@interface UIKBRenderTraits : NSObject
+{
+	id _renderEffects;
+	BOOL _honorControlOpacity;
+	BOOL _controlOpacities;
+	id _geometry;
+	id _backgroundGradient;
+	id _layeredBackgroundGradient;
+	id _layeredForegroundGradient;
+	id _symbolStyle;
+	id _secondarySymbolStyle;
+	id _fallbackSymbolStyle;
+	id _variantGeometries;
+	id _variantTraits;
+	id _highlightedVariantTraits;
+	double _forceOpacity;
+	id _hashString;
+}
+
++ dealloc
++ description
++ copyWithZone:
++ setBackgroundGradient:
++ setLayeredBackgroundGradient:
++ geometry
++ setSymbolStyle:
++ symbolStyle
++ addRenderEffect:
++ setVariantGeometries:
++ setVariantTraits:
++ setHighlightedVariantTraits:
++ variantTraits
++ setForceOpacity:
++ setGeometry:
++ controlOpacities
++ modifyForMasking
++ hashString
++ setSecondarySymbolStyle:
++ secondarySymbolStyle
++ setControlOpacities:
++ setLayeredForegroundGradient:
++ removeAllRenderEffects
++ backgroundGradient
++ forceOpacity
++ layeredBackgroundGradient
++ layeredForegroundGradient
++ fallbackSymbolStyle
++ renderEffects
++ overlayWithTraits:
++ highlightedVariantTraits
++ setHashString:
++ setFallbackSymbolStyle:
++ variantGeometries
+- dealloc
+- description
+- copyWithZone:
+- setBackgroundGradient:
+- setLayeredBackgroundGradient:
+- geometry
+- setSymbolStyle:
+- symbolStyle
+- addRenderEffect:
+- setVariantGeometries:
+- setVariantTraits:
+- setHighlightedVariantTraits:
+- variantTraits
+- setForceOpacity:
+- setGeometry:
+- controlOpacities
+- modifyForMasking
+- hashString
+- setSecondarySymbolStyle:
+- secondarySymbolStyle
+- setControlOpacities:
+- setLayeredForegroundGradient:
+- removeAllRenderEffects
+- backgroundGradient
+- forceOpacity
+- layeredBackgroundGradient
+- layeredForegroundGradient
+- fallbackSymbolStyle
+- renderEffects
+- overlayWithTraits:
+- highlightedVariantTraits
+- setHashString:
+- setFallbackSymbolStyle:
+- variantGeometries
+@end

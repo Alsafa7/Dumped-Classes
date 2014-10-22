@@ -1,0 +1,108 @@
+@interface SSVLoadURLOperation : NSOperation
+{
+	id _dataBuffer;
+	id _dataConsumer;
+	id _dispatchQueue;
+	id _expiredOutputBlock;
+	BOOL _iTunesStoreRequest;
+	id _metricsPageEvent;
+	id _outputBlock;
+	id _protocolRedirectURLs;
+	BOOL _recordsMetrics;
+	id _redirectURL;
+	id _response;
+	id _runLoop;
+	id _storeFrontSuffix;
+	BOOL _stopped;
+	id _urlRequest;
+}
+
++ connection:willSendRequest:redirectResponse:
++ initWithURLRequest:
++ setOutputBlock:
++ setITunesStoreRequest:
++ initWithURLRequestProperties:
++ setDataConsumer:
++ URLRequest
++ init
++ URL
++ cancel
++ main
++ initWithURL:
++ connection:didFailWithError:
++ connection:didReceiveData:
++ connectionDidFinishLoading:
++ connection:didReceiveResponse:
++ dataConsumer
++ dispatchSync:
++ dispatchAsync:
++ metricsPageEvent
++ setStoreFrontSuffix:
++ cachedURLResponse
++ outputBlock
++ setExpiredOutputBlock:
++ setRecordsMetrics:
++ _initSSVLoadURLOperation
++ isITunesStoreRequest
++ _newURLRequestWithRedirectURL:
++ _stopRunLoop
++ _runOnce
++ _finishWithOutput:error:
++ _applyResponseToMetrics:
++ _redirectURLForStoreResponse:data:
++ _outputForData:error:
++ _releaseOutputBlocks
++ storeFrontSuffix
++ expiredOutputBlock
++ _dataForCachedResponse:
++ _finishWithData:
++ _stopIfCancelled
++ _runRunLoopUntilStopped
++ _keepAliveTimer:
++ recordsMetrics
++ .cxx_destruct
+- connection:willSendRequest:redirectResponse:
+- initWithURLRequest:
+- setOutputBlock:
+- setITunesStoreRequest:
+- initWithURLRequestProperties:
+- setDataConsumer:
+- URLRequest
+- init
+- URL
+- cancel
+- main
+- initWithURL:
+- connection:didFailWithError:
+- connection:didReceiveData:
+- connectionDidFinishLoading:
+- connection:didReceiveResponse:
+- dataConsumer
+- dispatchSync:
+- dispatchAsync:
+- metricsPageEvent
+- setStoreFrontSuffix:
+- cachedURLResponse
+- outputBlock
+- setExpiredOutputBlock:
+- setRecordsMetrics:
+- _initSSVLoadURLOperation
+- isITunesStoreRequest
+- _newURLRequestWithRedirectURL:
+- _stopRunLoop
+- _runOnce
+- _finishWithOutput:error:
+- _applyResponseToMetrics:
+- _redirectURLForStoreResponse:data:
+- _outputForData:error:
+- _releaseOutputBlocks
+- storeFrontSuffix
+- expiredOutputBlock
+- _dataForCachedResponse:
+- _finishWithData:
+- _stopIfCancelled
+- _runRunLoopUntilStopped
+- _keepAliveTimer:
+- recordsMetrics
+- .cxx_destruct
+@end

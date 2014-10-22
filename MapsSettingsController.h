@@ -1,0 +1,6 @@
+@interface MapsSettingsController : PSListController
+{
+
+}
+
+@end

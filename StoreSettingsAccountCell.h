@@ -1,0 +1,6 @@
+@interface StoreSettingsAccountCell : PSTableCell
+{
+
+}
+
+@end

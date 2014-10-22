@@ -1,0 +1,114 @@
+@interface SUSearchFieldController : NSObject
+{
+	id _clientInterface;
+	id _completions;
+	id _completionsOperation;
+	id _configuration;
+	id _dimmerView;
+	id _searchBar;
+	id _searchController;
+	long long _searchFieldStyle;
+	id _textFieldDelegate;
+}
+
++ operation:failedWithError:
++ operationDidFinish:
++ dealloc
++ init
++ tableView:didSelectRowAtIndexPath:
++ tableView:numberOfRowsInSection:
++ tableView:cellForRowAtIndexPath:
++ isActive
++ willRotateToInterfaceOrientation:
++ searchBar
++ searchBar:textDidChange:
++ searchBarShouldBeginEditing:
++ searchBarShouldEndEditing:
++ searchBarTextDidEndEditing:
++ searchBarSearchButtonClicked:
++ searchDisplayController:shouldReloadTableForSearchString:
++ setSearchFieldConfiguration:
++ searchFieldConfiguration
++ handleSearchURL:withSourceApplication:sourceURL:
++ newRequestPropertiesWithSearchTerm:
++ searchFieldStyle
++ initWithContentsController:style:
++ operation:finishedWithOutput:
++ initWithContentsController:
++ initWithContentsController:clientInterface:
++ initWithContentsController:clientInterface:style:
++ _newSearchDisplayControllerWithContentsController:
++ _savedSearchTermChangedNotification:
++ _tearDownDimmerView
++ _fetchResultsForURLRequestProperties:
++ _newSearchBar
++ _reloadSearchBar
++ _resizeSearchBarForOrientation:
++ _saveSearchTermToDefaults:
++ _fetchResultsForTerm:
++ _focusTransientViewController
++ _showDimmerView
++ _cancelCompletionsOperation
++ _reloadCompletionsForSearchString:
++ _fetchResultsForURL:
++ _defaultSearchTerm
++ _fetchCompletions
++ _targetViewController
++ _newBlankStorePageViewController
++ _dimmerViewAction:
++ _newTransientViewController
++ scriptDidChangeTextForField:
++ searchBarWillRemoveFromSuperview:
++ setSearchFieldStyle:
++ _cancelButtonView
+- operation:failedWithError:
+- operationDidFinish:
+- dealloc
+- init
+- tableView:didSelectRowAtIndexPath:
+- tableView:numberOfRowsInSection:
+- tableView:cellForRowAtIndexPath:
+- isActive
+- willRotateToInterfaceOrientation:
+- searchBar
+- searchBar:textDidChange:
+- searchBarShouldBeginEditing:
+- searchBarShouldEndEditing:
+- searchBarTextDidEndEditing:
+- searchBarSearchButtonClicked:
+- searchDisplayController:shouldReloadTableForSearchString:
+- setSearchFieldConfiguration:
+- searchFieldConfiguration
+- handleSearchURL:withSourceApplication:sourceURL:
+- newRequestPropertiesWithSearchTerm:
+- searchFieldStyle
+- initWithContentsController:style:
+- operation:finishedWithOutput:
+- initWithContentsController:
+- initWithContentsController:clientInterface:
+- initWithContentsController:clientInterface:style:
+- _newSearchDisplayControllerWithContentsController:
+- _savedSearchTermChangedNotification:
+- _tearDownDimmerView
+- _fetchResultsForURLRequestProperties:
+- _newSearchBar
+- _reloadSearchBar
+- _resizeSearchBarForOrientation:
+- _saveSearchTermToDefaults:
+- _fetchResultsForTerm:
+- _focusTransientViewController
+- _showDimmerView
+- _cancelCompletionsOperation
+- _reloadCompletionsForSearchString:
+- _fetchResultsForURL:
+- _defaultSearchTerm
+- _fetchCompletions
+- _targetViewController
+- _newBlankStorePageViewController
+- _dimmerViewAction:
+- _newTransientViewController
+- scriptDidChangeTextForField:
+- searchBarWillRemoveFromSuperview:
+- setSearchFieldStyle:
+- _cancelButtonView
+@end

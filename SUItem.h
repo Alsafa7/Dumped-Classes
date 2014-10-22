@@ -1,0 +1,229 @@
+@interface SUItem : NSObject
+{
+	id _artistName;
+	id _bundleIdentifier;
+	id _bundleVersion;
+	id _collectionName;
+	id _containerItem;
+	id _containerName;
+	id _contentRating;
+	id _copyrightString;
+	id _defaultStoreOffer;
+	id _dictionary;
+	id _disclaimerString;
+	BOOL _gameCenterEnabled;
+	id _genreName;
+	id _humanReadableDescription;
+	BOOL _isInstalled;
+	long long _itemDisplayType;
+	usigned long long _itemIdentifier;
+	id _itemImageCollection;
+	id _itemLinks;
+	id _itemMediaKind;
+	long long _itemType;
+	id _releaseDate;
+	id _releaseDateString;
+	long long _representedItemCount;
+	id _reviewStatistics;
+	id _secondaryTitle;
+	id _softwareType;
+	id _storeOffers;
+	id _tellAFriendDictionary;
+	id _title;
+	id _tweetDictionary;
+	id _unmodifiedTitle;
+	id _versionIdentifier;
+	id _versionOrdering;
+}
+
++ bundleVersion
++ releaseDate
++ isDownloadable
++ dealloc
++ setTitle:
++ initWithDictionary:
++ bundleIdentifier
++ copyWithZone:
++ title
++ _reloadProperties
++ valueForProperty:
++ contentRating
++ setContentRating:
++ artistName
++ setArtistName:
++ tellAFriendBody
++ tellAFriendSubject
++ isInstalled
++ itemImageCollection
++ defaultStoreOffer
++ itemIdentifier
++ itemTypeString
++ setContainerItem:
++ itemLinks
++ itemType
++ itemLinksForType:
++ boolValueForProperty:
++ humanReadableDescription
++ reviewStatistics
++ stringValueForProperty:
++ dateValueForProperty:
++ softwareType
++ versionIdentifier
++ firstItemLinkForType:
++ isDisplayable:
++ setItemType:
++ itemMediaKind
++ itemDictionary
++ containerItem
++ setItemIdentifier:
++ unmodifiedTitle
++ versionOrdering
++ _reloadDefaultStoreOffer
++ _valueForFirstAvailableKey:
++ _linkTargetForTargetString:typeString:
++ _linkTypeForString:
++ storeOfferForIdentifier:
++ _squishImageForSquishDictionary:
++ setItemImageCollection:
++ setItemLinks:
++ _newPrimaryItemLink
++ _newItemLinkWithType:dictionary:
++ _newItemLinkWithType:URLKey:titleKey:
++ _reloadStoreOffers
++ _reloadImagesAndLinksFromSquishes:
++ _reloadItemImages
++ _reloadItemLinks
++ setStoreOffers:
++ copyReleaseDateStringWithStyle:
++ externalArtistPageLink
++ integerValueForProperty:
++ relatedItemsForRelationType:
++ tellAFriendBodyMIMEType
++ tellAFriendBodyURL
++ tweetInitialText
++ tweetURL
++ setBundleIdentifier:
++ setBundleVersion:
++ collectionName
++ setCollectionName:
++ containerName
++ setContainerName:
++ copyrightString
++ setCopyrightString:
++ disclaimerString
++ setDisclaimerString:
++ isGameCenterEnabled
++ setGameCenterEnabled:
++ genreName
++ setGenreName:
++ setHumanReadableDescription:
++ itemDisplayType
++ setItemDisplayType:
++ setItemMediaKind:
++ setReleaseDate:
++ representedItemCount
++ setRepresentedItemCount:
++ setReviewStatistics:
++ secondaryTitle
++ setSecondaryTitle:
++ setSoftwareType:
++ storeOffers
++ setUnmodifiedTitle:
++ setVersionIdentifier:
++ setVersionOrdering:
+- bundleVersion
+- releaseDate
+- isDownloadable
+- dealloc
+- setTitle:
+- initWithDictionary:
+- bundleIdentifier
+- copyWithZone:
+- title
+- _reloadProperties
+- valueForProperty:
+- contentRating
+- setContentRating:
+- artistName
+- setArtistName:
+- tellAFriendBody
+- tellAFriendSubject
+- isInstalled
+- itemImageCollection
+- defaultStoreOffer
+- itemIdentifier
+- itemTypeString
+- setContainerItem:
+- itemLinks
+- itemType
+- itemLinksForType:
+- boolValueForProperty:
+- humanReadableDescription
+- reviewStatistics
+- stringValueForProperty:
+- dateValueForProperty:
+- softwareType
+- versionIdentifier
+- firstItemLinkForType:
+- isDisplayable:
+- setItemType:
+- itemMediaKind
+- itemDictionary
+- containerItem
+- setItemIdentifier:
+- unmodifiedTitle
+- versionOrdering
+- _reloadDefaultStoreOffer
+- _valueForFirstAvailableKey:
+- _linkTargetForTargetString:typeString:
+- _linkTypeForString:
+- storeOfferForIdentifier:
+- _squishImageForSquishDictionary:
+- setItemImageCollection:
+- setItemLinks:
+- _newPrimaryItemLink
+- _newItemLinkWithType:dictionary:
+- _newItemLinkWithType:URLKey:titleKey:
+- _reloadStoreOffers
+- _reloadImagesAndLinksFromSquishes:
+- _reloadItemImages
+- _reloadItemLinks
+- setStoreOffers:
+- copyReleaseDateStringWithStyle:
+- externalArtistPageLink
+- integerValueForProperty:
+- relatedItemsForRelationType:
+- tellAFriendBodyMIMEType
+- tellAFriendBodyURL
+- tweetInitialText
+- tweetURL
+- setBundleIdentifier:
+- setBundleVersion:
+- collectionName
+- setCollectionName:
+- containerName
+- setContainerName:
+- copyrightString
+- setCopyrightString:
+- disclaimerString
+- setDisclaimerString:
+- isGameCenterEnabled
+- setGameCenterEnabled:
+- genreName
+- setGenreName:
+- setHumanReadableDescription:
+- itemDisplayType
+- setItemDisplayType:
+- setItemMediaKind:
+- setReleaseDate:
+- representedItemCount
+- setRepresentedItemCount:
+- setReviewStatistics:
+- secondaryTitle
+- setSecondaryTitle:
+- setSoftwareType:
+- storeOffers
+- setUnmodifiedTitle:
+- setVersionIdentifier:
+- setVersionOrdering:
+@end

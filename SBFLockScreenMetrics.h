@@ -1,0 +1,6 @@
+@interface SBFLockScreenMetrics : NSObject
+{
+
+}
+
+@end

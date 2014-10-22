@@ -1,0 +1,89 @@
+@interface MBBackupScheduler : NSObject
+{
+	double _backupPeriod;
+	BOOL _enabled;
+	id _stateQueue;
+	id _backupTimer;
+	BOOL _initiatedBackup;
+	int _backupStateToken;
+	pointer _reachabilityRef;
+	unsigned int _powerNotification;
+	int _lockToken;
+	BOOL _isPowered;
+	BOOL _isLocked;
+	BOOL _isOnWiFi;
+	BOOL _ignorePowerState;
+	double _initialBackupWarningPeriod;
+	double _backupWarningPeriod;
+	double _recuringBackupWarningPeriod;
+}
+
++ accountChanged:
++ backupPeriod
++ _warnUserOfUnverifiedAccount
++ _installMonitors
++ _managerDidFailBackupWithError:
++ _managerDidFinishBackup
++ setIsLocked:
++ _failureCount
++ _retryAfterDate
++ _minimumRetryAfterDate:
++ _updateRetryAfterDateWithDate:
++ _clearFailureCount
++ _clearRetryAfterDate
++ _cancelScheduledBackup
++ _stateDidChange
++ _incrementFailureCount
++ _warnUserOfLateBackupIfNecessary
++ _filteredSnapshotsFromCache
++ _dateOfSnapshot:
++ _dateOfNextDesiredBackup
++ isPowered
++ _scheduleBackupAtDate:
++ _rescheduleForSoftCancel
++ setIsPowered:
++ isOnWiFi
++ setIsOnWiFi:
++ setBackupPeriod:
++ dealloc
++ init
++ isLocked
++ setEnabled:
++ enabled
++ dateOfLastBackup
++ dateOfNextScheduledBackup
+- accountChanged:
+- backupPeriod
+- _warnUserOfUnverifiedAccount
+- _installMonitors
+- _managerDidFailBackupWithError:
+- _managerDidFinishBackup
+- setIsLocked:
+- _failureCount
+- _retryAfterDate
+- _minimumRetryAfterDate:
+- _updateRetryAfterDateWithDate:
+- _clearFailureCount
+- _clearRetryAfterDate
+- _cancelScheduledBackup
+- _stateDidChange
+- _incrementFailureCount
+- _warnUserOfLateBackupIfNecessary
+- _filteredSnapshotsFromCache
+- _dateOfSnapshot:
+- _dateOfNextDesiredBackup
+- isPowered
+- _scheduleBackupAtDate:
+- _rescheduleForSoftCancel
+- setIsPowered:
+- isOnWiFi
+- setIsOnWiFi:
+- setBackupPeriod:
+- dealloc
+- init
+- isLocked
+- setEnabled:
+- enabled
+- dateOfLastBackup
+- dateOfNextScheduledBackup
+@end

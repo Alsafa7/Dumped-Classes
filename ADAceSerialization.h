@@ -1,0 +1,6 @@
+@interface ADAceSerialization : NSObject
+{
+
+}
+
+@end

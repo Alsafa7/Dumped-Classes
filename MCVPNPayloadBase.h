@@ -1,0 +1,111 @@
+@interface MCVPNPayloadBase : MCPayload
+{
+	BOOL _userNameRequired;
+	BOOL _passwordRequired;
+	BOOL _proxyUserNameRequired;
+	BOOL _proxyPasswordRequired;
+	BOOL _sharedSecretRequired;
+	BOOL _pinRequired;
+	id _atom;
+	id _certificateUUID;
+	id _userNameKey;
+	id _passwordKey;
+	id _proxyUserNameKey;
+	id _proxyPasswordKey;
+	id _sharedSecretKey;
+	id _pinKey;
+	id _userName;
+	id _password;
+	id _proxyUserName;
+	id _proxyPassword;
+	id _sharedSecret;
+	id _pin;
+}
+
++ password
++ userName
++ setPassword:
++ pin
++ initWithDictionary:profile:outError:
++ proxyPassword
++ passwordRequired
++ setPasswordRequired:
++ certificateUUID
++ setCertificateUUID:
++ setProxyPassword:
++ _validateVPNPayload:
++ atom
++ setAtom:
++ userNameRequired
++ setUserNameRequired:
++ proxyUserNameRequired
++ setProxyUserNameRequired:
++ proxyPasswordRequired
++ setProxyPasswordRequired:
++ sharedSecretRequired
++ setSharedSecretRequired:
++ pinRequired
++ setPinRequired:
++ userNameKey
++ setUserNameKey:
++ passwordKey
++ setPasswordKey:
++ proxyUserNameKey
++ setProxyUserNameKey:
++ proxyPasswordKey
++ setProxyPasswordKey:
++ sharedSecretKey
++ setSharedSecretKey:
++ pinKey
++ setPinKey:
++ setUserName:
++ proxyUserName
++ setProxyUserName:
++ sharedSecret
++ setSharedSecret:
++ setPin:
++ .cxx_destruct
+- password
+- userName
+- setPassword:
+- pin
+- initWithDictionary:profile:outError:
+- proxyPassword
+- passwordRequired
+- setPasswordRequired:
+- certificateUUID
+- setCertificateUUID:
+- setProxyPassword:
+- _validateVPNPayload:
+- atom
+- setAtom:
+- userNameRequired
+- setUserNameRequired:
+- proxyUserNameRequired
+- setProxyUserNameRequired:
+- proxyPasswordRequired
+- setProxyPasswordRequired:
+- sharedSecretRequired
+- setSharedSecretRequired:
+- pinRequired
+- setPinRequired:
+- userNameKey
+- setUserNameKey:
+- passwordKey
+- setPasswordKey:
+- proxyUserNameKey
+- setProxyUserNameKey:
+- proxyPasswordKey
+- setProxyPasswordKey:
+- sharedSecretKey
+- setSharedSecretKey:
+- pinKey
+- setPinKey:
+- setUserName:
+- proxyUserName
+- setProxyUserName:
+- sharedSecret
+- setSharedSecret:
+- setPin:
+- .cxx_destruct
+@end

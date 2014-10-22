@@ -1,0 +1,6 @@
+@interface LANetworkStatusEventDataSource : NSObject
+{
+
+}
+
+@end

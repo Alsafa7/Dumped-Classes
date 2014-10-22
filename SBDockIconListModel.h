@@ -1,0 +1,6 @@
+@interface SBDockIconListModel : SBIconListModel
+{
+
+}
+
+@end

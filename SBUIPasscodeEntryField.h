@@ -1,0 +1,79 @@
+@interface SBUIPasscodeEntryField : UIView
+{
+	id _delegate;
+	id _textField;
+	id _numericTrimmingSet;
+	BOOL _ignoreCallbacks;
+	BOOL _resigningFirstResponder;
+	id _customBackgroundColor;
+}
+
++ dealloc
++ setDelegate:
++ delegate
++ appendString:
++ resignFirstResponder
++ becomeFirstResponder
++ canBecomeFirstResponder
++ isFirstResponder
++ textFieldShouldBeginEditing:
++ textField:shouldChangeCharactersInRange:replacementString:
++ textFieldShouldReturn:
++ initWithDefaultSize
++ stringValue
++ setStringValue:
++ deleteLastCharacter
++ reset
++ setBackgroundAlpha:
++ resetForFailedPasscode
++ customBackgroundColor
++ setCustomBackgroundColor:
++ _setLuminosityBoost:
++ _resetForFailedPasscode:playUnlockFailedSound:
++ _autofillForMesaWithCompletion:
++ _appendString:
++ _deleteLastCharacter
++ _hasAnyCharacters
++ _viewSize
++ _baseBecomeFirstResponder
++ _baseResignFirstResponder
++ notePasscodeFieldDidAcceptEntry
++ shouldInsertPasscodeText:
++ notePasscodeFieldTextDidChange
++ _handleKeyUIEvent:source:
++ _textField
+- dealloc
+- setDelegate:
+- delegate
+- appendString:
+- resignFirstResponder
+- becomeFirstResponder
+- canBecomeFirstResponder
+- isFirstResponder
+- textFieldShouldBeginEditing:
+- textField:shouldChangeCharactersInRange:replacementString:
+- textFieldShouldReturn:
+- initWithDefaultSize
+- stringValue
+- setStringValue:
+- deleteLastCharacter
+- reset
+- setBackgroundAlpha:
+- resetForFailedPasscode
+- customBackgroundColor
+- setCustomBackgroundColor:
+- _setLuminosityBoost:
+- _resetForFailedPasscode:playUnlockFailedSound:
+- _autofillForMesaWithCompletion:
+- _appendString:
+- _deleteLastCharacter
+- _hasAnyCharacters
+- _viewSize
+- _baseBecomeFirstResponder
+- _baseResignFirstResponder
+- notePasscodeFieldDidAcceptEntry
+- shouldInsertPasscodeText:
+- notePasscodeFieldTextDidChange
+- _handleKeyUIEvent:source:
+- _textField
+@end

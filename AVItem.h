@@ -1,0 +1,64 @@
+@interface AVItem : NSObject
+{
+	pointer _priv;
+}
+
++ accessLog
++ errorLog
++ setEQPreset:
++ cancelDownload
++ downloadProgress
++ attributeForKey:
++ dealloc
++ init
++ duration
++ path
++ url
++ setAttribute:forKey:error:
++ initWithPath:error:
++ naturalSize
++ setPath:error:
++ stopDownload
++ eqPreset
++ formatDetailsForTracks
++ nextThumbnailTimesStartingAt:minimumInterval:forwards:maxCount:
++ evenlySpacedThumbnailTimesFromStartTime:toEndTime:maxCount:
++ urlFromPath:
++ _instantiateItem
++ chapterImageForImageID:
++ downloadThread
++ beginDownloading
++ downloadStatus
++ volume
++ setVolume:
++ initWithError:
+- accessLog
+- errorLog
+- setEQPreset:
+- cancelDownload
+- downloadProgress
+- attributeForKey:
+- dealloc
+- init
+- duration
+- path
+- url
+- setAttribute:forKey:error:
+- initWithPath:error:
+- naturalSize
+- setPath:error:
+- stopDownload
+- eqPreset
+- formatDetailsForTracks
+- nextThumbnailTimesStartingAt:minimumInterval:forwards:maxCount:
+- evenlySpacedThumbnailTimesFromStartTime:toEndTime:maxCount:
+- urlFromPath:
+- _instantiateItem
+- chapterImageForImageID:
+- downloadThread
+- beginDownloading
+- downloadStatus
+- volume
+- setVolume:
+- initWithError:
+@end

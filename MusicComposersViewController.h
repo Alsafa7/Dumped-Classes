@@ -1,0 +1,6 @@
+@interface MusicComposersViewController : MusicArtistsViewController
+{
+
+}
+
+@end

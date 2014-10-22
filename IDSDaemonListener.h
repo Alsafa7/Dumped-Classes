@@ -1,0 +1,85 @@
+@interface IDSDaemonListener : NSObject
+{
+	id _ivarQueue;
+	id _handlers;
+	id _protocol;
+	id _topicToAccountDictionaries;
+	id _topicToEnabledAccounts;
+	id _accountToDevices;
+	id _accountsLoadedGroup;
+	id _enabledAccountsLoadedGroup;
+	id _dependentDevicesLoadedGroup;
+	BOOL _setupComplete;
+	BOOL _postedSetupComplete;
+	BOOL _hidingDisconnect;
+}
+
++ dealloc
++ init
++ methodSignatureForSelector:
++ forwardInvocation:
++ accountAdded:
++ accountEnabled:onService:
++ accountDisabled:onService:
++ account:accountInfoChanged:
++ account:dependentDevicesUpdated:
++ _callHandlersWithBlockOnIvarQueue:
++ _removeAccountOnIvarQueue:
++ _callHandlersWithBlock:
++ _deferredSetupOnIvarQueue:
++ accountDictionariesForService:blocking:
++ enabledAccountsForService:blocking:
++ dependentDevicesForAccount:blocking:
++ setupComplete:info:
++ accountRemoved:
++ _hidingDisconnect
++ _noteDisconnected
++ addHandler:
++ removeHandler:
++ _setHidingDisconnect:
++ isSetupComplete
++ hasPostedSetupComplete
++ account:registrationStatusInfoChanged:
++ account:aliasesChanged:
++ account:vettedAliasesChanged:
++ account:profileChanged:
++ account:loginChanged:
++ account:displayNameChanged:
++ refreshRegistrationForAccount:
++ activeDevicesUpdatedForAccount:
++ registrationFailedForAccount:needsDeletion:
+- dealloc
+- init
+- methodSignatureForSelector:
+- forwardInvocation:
+- accountAdded:
+- accountEnabled:onService:
+- accountDisabled:onService:
+- account:accountInfoChanged:
+- account:dependentDevicesUpdated:
+- _callHandlersWithBlockOnIvarQueue:
+- _removeAccountOnIvarQueue:
+- _callHandlersWithBlock:
+- _deferredSetupOnIvarQueue:
+- accountDictionariesForService:blocking:
+- enabledAccountsForService:blocking:
+- dependentDevicesForAccount:blocking:
+- setupComplete:info:
+- accountRemoved:
+- _hidingDisconnect
+- _noteDisconnected
+- addHandler:
+- removeHandler:
+- _setHidingDisconnect:
+- isSetupComplete
+- hasPostedSetupComplete
+- account:registrationStatusInfoChanged:
+- account:aliasesChanged:
+- account:vettedAliasesChanged:
+- account:profileChanged:
+- account:loginChanged:
+- account:displayNameChanged:
+- refreshRegistrationForAccount:
+- activeDevicesUpdatedForAccount:
+- registrationFailedForAccount:needsDeletion:
+@end

@@ -1,0 +1,86 @@
+@interface ADLocationManager : NSObject
+{
+	id _queue;
+	id _delegate;
+	BOOL _needsToSendLocation;
+	id _locationManager;
+	int _lastStatus;
+	BOOL _lastEnabledState;
+	id _requestOriginCommand;
+	id _locationTimerSource;
+	id _lastLocation;
+	BOOL _isNavigating;
+	id _updateCompletion;
+}
+
++ _locationManager
++ updateLocationForCommand:completion:
++ setNeedsToSendLocation:
++ needsToSendLocation
++ _navStatusChanged:
++ _cancelLocationTimer
++ _locationAuthStatus
++ _invokeBlockForStatus:getOrigin:block:
++ _setUpdateCompletion:
++ _setRequestOriginCommand:
++ _requestOriginCommand
++ _updateCompletion
++ _invokeBlockForLocation:getOrigin:block:
++ _locationTimedOutForGetOrigin:block:
++ _clearCompletionState
++ _stopMonitoringLocation
++ _startMonitoringLocationWithDesiredAccuracy:
++ _scheduleLocationTimeout:
++ _shouldSendLocationUpdate:fromLocation:forCommand:
++ _locationDeniedForGetOrigin:block:
++ _locationUnknownForGetOrigin:block:
++ _locationAuthStatusIsDenied:
++ _locationServicesIsEnabled
++ _locationDisabledForGetOrigin:block:
++ _startMonitoringLocationForGetRequestOrigin:completion:
++ currentRequestOrigin
++ dealloc
++ setDelegate:
++ init
++ delegate
++ setQueue:
++ locationManager:didUpdateLocations:
++ locationManager:didFailWithError:
++ locationManager:didChangeAuthorizationStatus:
++ .cxx_destruct
+- _locationManager
+- updateLocationForCommand:completion:
+- setNeedsToSendLocation:
+- needsToSendLocation
+- _navStatusChanged:
+- _cancelLocationTimer
+- _locationAuthStatus
+- _invokeBlockForStatus:getOrigin:block:
+- _setUpdateCompletion:
+- _setRequestOriginCommand:
+- _requestOriginCommand
+- _updateCompletion
+- _invokeBlockForLocation:getOrigin:block:
+- _locationTimedOutForGetOrigin:block:
+- _clearCompletionState
+- _stopMonitoringLocation
+- _startMonitoringLocationWithDesiredAccuracy:
+- _scheduleLocationTimeout:
+- _shouldSendLocationUpdate:fromLocation:forCommand:
+- _locationDeniedForGetOrigin:block:
+- _locationUnknownForGetOrigin:block:
+- _locationAuthStatusIsDenied:
+- _locationServicesIsEnabled
+- _locationDisabledForGetOrigin:block:
+- _startMonitoringLocationForGetRequestOrigin:completion:
+- currentRequestOrigin
+- dealloc
+- setDelegate:
+- init
+- delegate
+- setQueue:
+- locationManager:didUpdateLocations:
+- locationManager:didFailWithError:
+- locationManager:didChangeAuthorizationStatus:
+- .cxx_destruct
+@end

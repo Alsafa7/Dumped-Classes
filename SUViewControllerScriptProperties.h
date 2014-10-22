@@ -1,0 +1,113 @@
+@interface SUViewControllerScriptProperties : NSObject
+{
+	BOOL _alwaysDispatchesScrollEvents;
+	id _backgroundColor;
+	id _contextDictionary;
+	BOOL _doubleTapEnabled;
+	BOOL _embedded;
+	BOOL _flashesScrollIndicators;
+	BOOL _inputViewObeysDOMFocus;
+	long long _loadingIndicatorStyle;
+	id _loadingTextColor;
+	id _loadingTextShadowColor;
+	id _placeholderBackgroundGradient;
+	struct _scrollContentInsets;
+	BOOL _scrollingDisabled;
+	BOOL _shouldLoadProgressively;
+	BOOL _shouldShowFormAccessory;
+	BOOL _showsHorizontalScrollIndicator;
+	BOOL _showsVerticalScrollIndicator;
+	BOOL _showsBackgroundShadow;
+	id _topExtensionColor;
+	BOOL _usesBlurredBackground;
+}
+
++ dealloc
++ setBackgroundColor:
++ initWithCoder:
++ backgroundColor
++ encodeWithCoder:
++ setShowsVerticalScrollIndicator:
++ copyWithZone:
++ showsHorizontalScrollIndicator
++ setShowsHorizontalScrollIndicator:
++ showsVerticalScrollIndicator
++ setDoubleTapEnabled:
++ isDoubleTapEnabled
++ inputViewObeysDOMFocus
++ setInputViewObeysDOMFocus:
++ setAlwaysDispatchesScrollEvents:
++ alwaysDispatchesScrollEvents
++ setEmbedded:
++ loadingTextColor
++ loadingTextShadowColor
++ setLoadingIndicatorStyle:
++ setLoadingTextColor:
++ setLoadingTextShadowColor:
++ setPlaceholderBackgroundGradient:
++ placeholderBackgroundGradient
++ loadingIndicatorStyle
++ usesBlurredBackground
++ setScrollingDisabled:
++ setShowsBackgroundShadow:
++ setTopExtensionColor:
++ isScrollingDisabled
++ showsBackgroundShadow
++ topExtensionColor
++ setFlashesScrollIndicators:
++ setShouldShowFormAccessory:
++ setShouldLoadProgressively:
++ setScrollContentInsets:
++ flashesScrollIndicators
++ scrollContentInsets
++ shouldShowFormAccessory
++ shouldLoadProgressively
++ contextDictionary
++ setUsesBlurredBackground:
++ setContextDictionary:
++ isEmbedded
+- dealloc
+- setBackgroundColor:
+- initWithCoder:
+- backgroundColor
+- encodeWithCoder:
+- setShowsVerticalScrollIndicator:
+- copyWithZone:
+- showsHorizontalScrollIndicator
+- setShowsHorizontalScrollIndicator:
+- showsVerticalScrollIndicator
+- setDoubleTapEnabled:
+- isDoubleTapEnabled
+- inputViewObeysDOMFocus
+- setInputViewObeysDOMFocus:
+- setAlwaysDispatchesScrollEvents:
+- alwaysDispatchesScrollEvents
+- setEmbedded:
+- loadingTextColor
+- loadingTextShadowColor
+- setLoadingIndicatorStyle:
+- setLoadingTextColor:
+- setLoadingTextShadowColor:
+- setPlaceholderBackgroundGradient:
+- placeholderBackgroundGradient
+- loadingIndicatorStyle
+- usesBlurredBackground
+- setScrollingDisabled:
+- setShowsBackgroundShadow:
+- setTopExtensionColor:
+- isScrollingDisabled
+- showsBackgroundShadow
+- topExtensionColor
+- setFlashesScrollIndicators:
+- setShouldShowFormAccessory:
+- setShouldLoadProgressively:
+- setScrollContentInsets:
+- flashesScrollIndicators
+- scrollContentInsets
+- shouldShowFormAccessory
+- shouldLoadProgressively
+- contextDictionary
+- setUsesBlurredBackground:
+- setContextDictionary:
+- isEmbedded
+@end

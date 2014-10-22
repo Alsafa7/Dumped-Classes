@@ -1,0 +1,74 @@
+@interface NSMapTable : NSObject
+{
+
+}
+
++ objectForKeyedSubscript:
++ setObject:forKeyedSubscript:
++ removeAllItems
++ enumerator
++ keyPointerFunctions
++ valuePointerFunctions
++ setItem:forKey:
++ setItem:forAbsentKey:
++ setItem:forKnownAbsentKey:
++ existingItemForSetItem:forAbsentKey:
++ replaceItem:forExistingKey:
++ mapMember:originalKey:value:
++ getKeys:values:
++ mutableDictionary
++ initWithCoder:
++ countByEnumeratingWithState:objects:count:
++ encodeWithCoder:
++ count
++ init
++ copy
++ removeAllObjects
++ description
++ removeObjectForKey:
++ allKeys
++ copyWithZone:
++ objectEnumerator
++ initWithKeyOptions:valueOptions:capacity:
++ allValues
++ dictionaryRepresentation
++ keyEnumerator
++ mutableCopyWithZone:
++ initWithKeyPointerFunctions:valuePointerFunctions:capacity:
++ objectForKey:
++ setObject:forKey:
+- objectForKeyedSubscript:
+- setObject:forKeyedSubscript:
+- removeAllItems
+- enumerator
+- keyPointerFunctions
+- valuePointerFunctions
+- setItem:forKey:
+- setItem:forAbsentKey:
+- setItem:forKnownAbsentKey:
+- existingItemForSetItem:forAbsentKey:
+- replaceItem:forExistingKey:
+- mapMember:originalKey:value:
+- getKeys:values:
+- mutableDictionary
+- initWithCoder:
+- countByEnumeratingWithState:objects:count:
+- encodeWithCoder:
+- count
+- init
+- copy
+- removeAllObjects
+- description
+- removeObjectForKey:
+- allKeys
+- copyWithZone:
+- objectEnumerator
+- initWithKeyOptions:valueOptions:capacity:
+- allValues
+- dictionaryRepresentation
+- keyEnumerator
+- mutableCopyWithZone:
+- initWithKeyPointerFunctions:valuePointerFunctions:capacity:
+- objectForKey:
+- setObject:forKey:
+@end

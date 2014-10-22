@@ -1,0 +1,6 @@
+@interface VideosViewControllerFactory : NSObject
+{
+
+}
+
+@end

@@ -1,0 +1,6 @@
+@interface NSMutableParagraphStyle : NSParagraphStyle
+{
+
+}
+
+@end

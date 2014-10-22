@@ -1,0 +1,6 @@
+@interface ACDispatchCerberus : NSObject
+{
+
+}
+
+@end

@@ -1,0 +1,69 @@
+@interface EKObjectToManyRelation : EKObjectRelation
+{
+	id _loadedItems;
+	id _effectiveItems;
+	id _addedItems;
+	id _removedItems;
+}
+
++ didCommit
++ validate:
++ updatePersistentObject
++ itemsWereAdded
++ itemsWereRemoved
++ committedValue
++ isWeak
++ _effectiveItems
++ _addRelatedObject:setInverse:dirty:
++ _loadedItems
++ _removeRelatedObject:setInverse:dirty:
++ _forgetRelatedObject:
++ loadedItems
++ setLoadedItems:
++ effectiveItems
++ setEffectiveItems:
++ addedItems
++ setAddedItems:
++ removedItems
++ setRemovedItems:
++ dealloc
++ count
++ description
++ items
++ setItems:
++ addItem:
++ removeItem:
++ reset
++ refresh
++ rollback
+- didCommit
+- validate:
+- updatePersistentObject
+- itemsWereAdded
+- itemsWereRemoved
+- committedValue
+- isWeak
+- _effectiveItems
+- _addRelatedObject:setInverse:dirty:
+- _loadedItems
+- _removeRelatedObject:setInverse:dirty:
+- _forgetRelatedObject:
+- loadedItems
+- setLoadedItems:
+- effectiveItems
+- setEffectiveItems:
+- addedItems
+- setAddedItems:
+- removedItems
+- setRemovedItems:
+- dealloc
+- count
+- description
+- items
+- setItems:
+- addItem:
+- removeItem:
+- reset
+- refresh
+- rollback
+@end

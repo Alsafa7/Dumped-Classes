@@ -1,0 +1,77 @@
+@interface SBSearchTableViewContentSizeCache : NSObject
+{
+	id _bodyFont;
+	id _caption1Font;
+	id _boldCaption1Font;
+	id _footnoteFont;
+	double _baseHeight;
+	double _footnoteFontLineHeight;
+	double _footnoteFontAscender;
+	double _bodyFontLineHeight;
+	double _bodyFontAscender;
+	double _caption1FontLineHeight;
+	double _caption1FontAscender;
+	double _emphasizedCaption1FontLineHeight;
+	double _emphasizedCaption1FontAscender;
+	double _summaryLineHeight;
+}
+
++ contentSizeDidChange
++ setBodyFont:
++ setCaption1Font:
++ setBoldCaption1Font:
++ setFootnoteFont:
++ bodyFont
++ caption1Font
++ boldCaption1Font
++ footnoteFont
++ baseHeight
++ setBaseHeight:
++ footnoteFontLineHeight
++ setFootnoteFontLineHeight:
++ footnoteFontAscender
++ setFootnoteFontAscender:
++ bodyFontLineHeight
++ setBodyFontLineHeight:
++ bodyFontAscender
++ setBodyFontAscender:
++ caption1FontLineHeight
++ setCaption1FontLineHeight:
++ caption1FontAscender
++ setCaption1FontAscender:
++ emphasizedCaption1FontLineHeight
++ setEmphasizedCaption1FontLineHeight:
++ emphasizedCaption1FontAscender
++ setEmphasizedCaption1FontAscender:
++ summaryLineHeight
++ setSummaryLineHeight:
+- contentSizeDidChange
+- setBodyFont:
+- setCaption1Font:
+- setBoldCaption1Font:
+- setFootnoteFont:
+- bodyFont
+- caption1Font
+- boldCaption1Font
+- footnoteFont
+- baseHeight
+- setBaseHeight:
+- footnoteFontLineHeight
+- setFootnoteFontLineHeight:
+- footnoteFontAscender
+- setFootnoteFontAscender:
+- bodyFontLineHeight
+- setBodyFontLineHeight:
+- bodyFontAscender
+- setBodyFontAscender:
+- caption1FontLineHeight
+- setCaption1FontLineHeight:
+- caption1FontAscender
+- setCaption1FontAscender:
+- emphasizedCaption1FontLineHeight
+- setEmphasizedCaption1FontLineHeight:
+- emphasizedCaption1FontAscender
+- setEmphasizedCaption1FontAscender:
+- summaryLineHeight
+- setSummaryLineHeight:
+@end

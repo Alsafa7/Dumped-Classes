@@ -1,0 +1,203 @@
+@interface UITextRangeView : UIView
+{
+	id m_selectionView;
+	id m_container;
+	int m_mode;
+	id m_rects;
+	id m_rectViews;
+	id m_activeTouch;
+	struct m_startEdge;
+	struct m_endEdge;
+	struct m_basePoint;
+	struct m_extentPoint;
+	struct m_initialBasePoint;
+	struct m_initialExtentPoint;
+	double m_initialDistance;
+	struct m_touchOffset;
+	double m_firstMovedTime;
+	id m_startGrabber;
+	id m_endGrabber;
+	BOOL m_animateUpdate;
+	BOOL m_baseIsStart;
+	BOOL m_commandsWereShowing;
+	BOOL m_inGesture;
+	BOOL m_magnifying;
+	BOOL m_scrolling;
+	BOOL m_scaling;
+	BOOL m_rotating;
+	BOOL m_inputViewIsChanging;
+}
+
++ dealloc
++ pointInside:withEvent:
++ removeFromSuperview
++ touchesCancelled:withEvent:
++ touchesBegan:withEvent:
++ touchesMoved:withEvent:
++ touchesEnded:withEvent:
++ selectionView
++ _selectionClipRect
++ updateSelectionWithDocumentPoint:
++ container
++ stopAnimating
++ startAnimating
++ setMode:
++ mode
++ willRotate
++ didRotate
++ setActiveTouch:
++ activeTouch
++ setInGesture:
++ inGesture
++ autoscrolled
++ updateBaseIsStartWithDocumentPoint:
++ baseIsStart
++ setBaseIsStart:
++ setAnimateUpdate:
++ startGrabber
++ endGrabber
++ updateBaseAndExtentPointsFromEdges
++ extentPoint
++ applyTouchOffset:
++ beginMagnifying
++ commandsWereShowing
++ magnifierPoint
++ initialExtentPoint
++ willScroll
++ didScroll
++ inputViewWillChange
++ inputViewDidChange
++ setRects:
++ updateDots
++ initWithFrame:selectionView:
++ rects
++ prepareForMagnification
++ doneMagnifying
++ scaleWillChange
++ scaleDidChange
++ cancelDelayedActions
++ setIsScrolling:
++ startEdge
++ endEdge
++ _endIsHorizontal
++ _startIsHorizontal
++ setCommandsWereShowing:
++ setStartEdge:
++ setEndEdge:
++ pointCloserToEnd:startEdge:endEdge:
++ basePoint
++ setInitialBasePoint:
++ setInitialExtentPoint:
++ initialBasePoint
++ setInitialDistance:
++ setTouchOffset:touchPoint:
++ setFirstMovedTime:
++ setExtentPoint:
++ firstMovedTime
++ initialDistance
++ updateRectViews
++ updateGrabbers
++ setMagnifying:
++ setScaling:
++ setRotating:
++ setInputViewIsChanging:
++ setTouchOffset:
++ touchOffset
++ setMagnifierOrientation
++ setBasePoint:
++ convertFromMagnifierPoint:
++ setStartGrabber:
++ setEndGrabber:
++ animateUpdate
++ magnifying
++ isScrolling
++ scaling
++ rotating
++ inputViewIsChanging
+- dealloc
+- pointInside:withEvent:
+- removeFromSuperview
+- touchesCancelled:withEvent:
+- touchesBegan:withEvent:
+- touchesMoved:withEvent:
+- touchesEnded:withEvent:
+- selectionView
+- _selectionClipRect
+- updateSelectionWithDocumentPoint:
+- container
+- stopAnimating
+- startAnimating
+- setMode:
+- mode
+- willRotate
+- didRotate
+- setActiveTouch:
+- activeTouch
+- setInGesture:
+- inGesture
+- autoscrolled
+- updateBaseIsStartWithDocumentPoint:
+- baseIsStart
+- setBaseIsStart:
+- setAnimateUpdate:
+- startGrabber
+- endGrabber
+- updateBaseAndExtentPointsFromEdges
+- extentPoint
+- applyTouchOffset:
+- beginMagnifying
+- commandsWereShowing
+- magnifierPoint
+- initialExtentPoint
+- willScroll
+- didScroll
+- inputViewWillChange
+- inputViewDidChange
+- setRects:
+- updateDots
+- initWithFrame:selectionView:
+- rects
+- prepareForMagnification
+- doneMagnifying
+- scaleWillChange
+- scaleDidChange
+- cancelDelayedActions
+- setIsScrolling:
+- startEdge
+- endEdge
+- _endIsHorizontal
+- _startIsHorizontal
+- setCommandsWereShowing:
+- setStartEdge:
+- setEndEdge:
+- pointCloserToEnd:startEdge:endEdge:
+- basePoint
+- setInitialBasePoint:
+- setInitialExtentPoint:
+- initialBasePoint
+- setInitialDistance:
+- setTouchOffset:touchPoint:
+- setFirstMovedTime:
+- setExtentPoint:
+- firstMovedTime
+- initialDistance
+- updateRectViews
+- updateGrabbers
+- setMagnifying:
+- setScaling:
+- setRotating:
+- setInputViewIsChanging:
+- setTouchOffset:
+- touchOffset
+- setMagnifierOrientation
+- setBasePoint:
+- convertFromMagnifierPoint:
+- setStartGrabber:
+- setEndGrabber:
+- animateUpdate
+- magnifying
+- isScrolling
+- scaling
+- rotating
+- inputViewIsChanging
+@end

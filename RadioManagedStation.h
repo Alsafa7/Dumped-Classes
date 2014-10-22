@@ -1,0 +1,6 @@
+@interface RadioManagedStation : NSManagedObject
+{
+
+}
+
+@end

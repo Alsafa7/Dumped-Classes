@@ -1,0 +1,94 @@
+@interface _IDSIDQueryController : NSObject
+{
+	id _listeners;
+	id _idStatusCache;
+	id _transactionIDToBlockMap;
+	id _rerouteService;
+	id _connection;
+	id _connectionQueue;
+	id _queue;
+	id _serviceToken;
+	id _delegateToInfo;
+	id _listenerIDToServicesMap;
+	id _delegateContext;
+}
+
++ __sendMessage:queue:reply:failBlock:waitForReply:
++ _disconnectFromQueryService
++ _requestCacheForService:completionBlock:
++ _requestCachedStatusForDestinations:service:listenerID:completionBlock:
++ _requestStatusForDestinations:service:listenerID:completionBlock:
++ addDelegate:queue:
++ daemonDisconnected
++ IDQueryCompletedWithFromURI:idStatusUpdates:service:success:error:
++ _callDelegatesWithBlock:
++ ___oldDealloc
++ _connect
++ addListenerID:forService:
++ removeListenerID:forService:
++ removeDelegate:
++ dealloc
++ init
++ _squishFromURIFromIDStatusCache:service:
++ _cacheForService:
++ _purgeIDStatusCache
++ _purgeIDStatusCacheAfter:
++ _reroutedPrototypeService:
++ _cachedStatusForDestination:service:
++ _updateCacheWithDictionary:service:
++ _delegateMapForListenerID:service:
++ _callDelegatesWithBlock:delegateMap:
++ _isListenerWithID:listeningToService:
++ _idStatusForDestinations:service:listenerID:allowRenew:completionBlock:
++ _refreshIDStatusForDestinations:service:listenerID:allowRefresh:queue:completionBlock:
++ refreshIDStatusForDestinations:service:listenerID:queue:completionBlock:
++ currentIDStatusForDestinations:service:listenerID:queue:completionBlock:
++ initWithDelegateContext:queue:
++ removeDelegate:forService:listenerID:
++ _warmupQueryCacheForService:
++ _flushQueryCacheForService:
++ addDelegate:forService:listenerID:queue:
++ _hasCacheForService:
++ _currentCachedIDStatusForDestination:service:listenerID:
++ currentIDStatusForDestination:service:listenerID:queue:completionBlock:
++ refreshIDStatusForDestination:service:listenerID:queue:completionBlock:
+- __sendMessage:queue:reply:failBlock:waitForReply:
+- _disconnectFromQueryService
+- _requestCacheForService:completionBlock:
+- _requestCachedStatusForDestinations:service:listenerID:completionBlock:
+- _requestStatusForDestinations:service:listenerID:completionBlock:
+- addDelegate:queue:
+- daemonDisconnected
+- IDQueryCompletedWithFromURI:idStatusUpdates:service:success:error:
+- _callDelegatesWithBlock:
+- ___oldDealloc
+- _connect
+- addListenerID:forService:
+- removeListenerID:forService:
+- removeDelegate:
+- dealloc
+- init
+- _squishFromURIFromIDStatusCache:service:
+- _cacheForService:
+- _purgeIDStatusCache
+- _purgeIDStatusCacheAfter:
+- _reroutedPrototypeService:
+- _cachedStatusForDestination:service:
+- _updateCacheWithDictionary:service:
+- _delegateMapForListenerID:service:
+- _callDelegatesWithBlock:delegateMap:
+- _isListenerWithID:listeningToService:
+- _idStatusForDestinations:service:listenerID:allowRenew:completionBlock:
+- _refreshIDStatusForDestinations:service:listenerID:allowRefresh:queue:completionBlock:
+- refreshIDStatusForDestinations:service:listenerID:queue:completionBlock:
+- currentIDStatusForDestinations:service:listenerID:queue:completionBlock:
+- initWithDelegateContext:queue:
+- removeDelegate:forService:listenerID:
+- _warmupQueryCacheForService:
+- _flushQueryCacheForService:
+- addDelegate:forService:listenerID:queue:
+- _hasCacheForService:
+- _currentCachedIDStatusForDestination:service:listenerID:
+- currentIDStatusForDestination:service:listenerID:queue:completionBlock:
+- refreshIDStatusForDestination:service:listenerID:queue:completionBlock:
+@end

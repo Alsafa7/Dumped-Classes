@@ -1,0 +1,6 @@
+@interface SUScriptNavigationBar : SUScriptObject
+{
+
+}
+
+@end

@@ -1,0 +1,101 @@
+@interface CUTWiFiManager : NSObject
+{
+	int _linkToken;
+	id _lock;
+	pointer _wifiManager;
+	pointer _wifiDevice;
+	pointer _currentNetwork;
+	pointer _dynamicStore;
+	id _delegateMap;
+	id _lastWiFiPowerInfo;
+}
+
++ dealloc
++ init
++ lock
++ setLock:
++ isWiFiEnabled
++ _createDynamicStore
++ _handlePotentialDeviceChange:
++ _performDeviceBlock:useCache:
++ _performDeviceBlock:
++ _performCurrentNetworkBlock:withDevice:
++ currentWiFiNetworkPowerUsage
++ _wifiMeasurementErrorForInterval:
++ _ssidFromNetwork:
++ _performCurrentNetworkBlock:
++ _isPrimaryCellular
++ _handleDeviceAttachedCallback
++ _setCurrentNetwork:
++ _performPowerReading
++ currentSSID
++ currentNetwork
++ setCurrentNetwork:
++ dynamicStore
++ setDynamicStore:
++ linkToken
++ setLinkToken:
++ delegateMap
++ setDelegateMap:
++ lastWiFiPowerInfo
++ setLastWiFiPowerInfo:
++ isWiFiAssociated
++ _createWiFiManager
++ isHostingWiFiHotSpot
++ willTryToAutoAssociateWiFiNetwork
++ willTryToSearchForWiFiNetwork
++ wiFiSignalStrength
++ wiFiScaledRSSI
++ wiFiScaledRate
++ isWiFiCaptive
++ wifiManager
++ setWifiManager:
++ wifiDevice
++ setWifiDevice:
++ addDelegate:
++ removeDelegate:
+- dealloc
+- init
+- lock
+- setLock:
+- isWiFiEnabled
+- _createDynamicStore
+- _handlePotentialDeviceChange:
+- _performDeviceBlock:useCache:
+- _performDeviceBlock:
+- _performCurrentNetworkBlock:withDevice:
+- currentWiFiNetworkPowerUsage
+- _wifiMeasurementErrorForInterval:
+- _ssidFromNetwork:
+- _performCurrentNetworkBlock:
+- _isPrimaryCellular
+- _handleDeviceAttachedCallback
+- _setCurrentNetwork:
+- _performPowerReading
+- currentSSID
+- currentNetwork
+- setCurrentNetwork:
+- dynamicStore
+- setDynamicStore:
+- linkToken
+- setLinkToken:
+- delegateMap
+- setDelegateMap:
+- lastWiFiPowerInfo
+- setLastWiFiPowerInfo:
+- isWiFiAssociated
+- _createWiFiManager
+- isHostingWiFiHotSpot
+- willTryToAutoAssociateWiFiNetwork
+- willTryToSearchForWiFiNetwork
+- wiFiSignalStrength
+- wiFiScaledRSSI
+- wiFiScaledRate
+- isWiFiCaptive
+- wifiManager
+- setWifiManager:
+- wifiDevice
+- setWifiDevice:
+- addDelegate:
+- removeDelegate:
+@end

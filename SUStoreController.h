@@ -1,0 +1,173 @@
+@interface SUStoreController : NSObject
+{
+	id _client;
+	id _lastBackgroundSectionsResponse;
+	id _lastSectionsResponse;
+	id _launchURL;
+	id _loadSectionsOperation;
+	id _localStoreFrontAtLastSuspend;
+	id _locationObserver;
+	id _overlayConfigurations;
+	BOOL _reloadForStorefrontChangeAfterAccountSetup;
+	BOOL _reloadSectionsOnNextLaunch;
+	id _synchedStoreFrontAtLastSuspend;
+	id _tabBarController;
+	id _mailComposeViewController;
+	id _storeFrontLanguages;
+}
+
++ tearDownUI
++ dealloc
++ init
++ application:handleOpenURL:
++ defaultImageSnapshotExpiration
++ tabBarController
++ tabBarController:didEndCustomizingViewControllers:changed:
++ connect
++ cancelAllOperations
++ mailComposeController:didFinishWithResult:error:
++ isComposingEmail
++ copySuspendSettings
++ exitStoreAfterDialogsDismiss
++ isStoreEnabled
++ overlayBackgroundViewController
++ presentOverlayBackgroundViewController:
++ dismissOverlayBackgroundViewController
++ composeEmailWithSubject:body:
++ selectSectionWithIdentifier:
++ isTabBarControllerLoaded
++ handleApplicationURL:
++ _reloadForNetworkTypeChange:
++ matchesClientApplication:
++ overlayConfigurationForStorePage:
++ newScriptInterface
++ purchaseManagerWillBeginUpdates:
++ purchaseManagerDidEndUpdates:
++ purchaseManager:willAddPurchases:
++ purchaseManager:failedToAddPurchases:
++ purchaseManager:didAddPurchases:
++ _bagDidLoadNotification:
++ client:presentModalViewController:animated:
++ topViewControllerForClient:
++ client:presentAccountViewController:animated:
++ client:openInternalURL:
++ _restrictionsChangedNotification:
++ exitStoreWithReason:
++ libraryContainsItemIdentifier:
++ _selectFooterSectionNotification:
++ _storeFrontChangedNotification:
++ _accountControllerDisappearedNotification:
++ _cancelLoadSectionsOperation
++ setLaunchURL:
++ setupUI
++ _handleFinishedBackgroundLoadSectionsOperation:
++ _loadSectionsAllowingCache:withCompletionBlock:
++ _presentSectionFetchUI
++ _handleFinishedLoadSectionsOperation:
++ topNavigationController
++ _cancelSuspendAfterDialogsDismissed
++ _dialogDidFinishNotification:
++ _isAccountViewControllerVisible
++ _saveArchivedNavigationPath
++ _resumableViewController
++ _reloadForStorefrontChange
++ _reloadOverlayConfigurations
++ _retrySectionsAfterNetworkTransition
++ _mainThreadStoreFrontChangedNotification:
++ _showWildcatAccountViewController:animated:
++ endPurchaseBatch
++ beginPurchaseBatch
++ _handleSearchURL:
++ _handleAccountURL:
++ _defaultHandleApplicationURLRequestProperties:
++ launchURL
++ composeEmailByRestoringAutosavedMessage
++ _handleSectionsLoadFailedWithError:
++ _reloadWithSectionsResponse:
++ presentExternalURLViewController:
++ presentMailComposeViewController:animated:
++ dismissMailComposeViewControllerAnimated:
++ downloadQueueForClient:downloadKinds:
++ prepareForSuspend
++ reloadSectionWithIdentifier:url:
++ showDialogForCapabilities:mismatches:
++ defaultPNGNameForSuspend
++ storeContentLanguage
+- tearDownUI
+- dealloc
+- init
+- application:handleOpenURL:
+- defaultImageSnapshotExpiration
+- tabBarController
+- tabBarController:didEndCustomizingViewControllers:changed:
+- connect
+- cancelAllOperations
+- mailComposeController:didFinishWithResult:error:
+- isComposingEmail
+- copySuspendSettings
+- exitStoreAfterDialogsDismiss
+- isStoreEnabled
+- overlayBackgroundViewController
+- presentOverlayBackgroundViewController:
+- dismissOverlayBackgroundViewController
+- composeEmailWithSubject:body:
+- selectSectionWithIdentifier:
+- isTabBarControllerLoaded
+- handleApplicationURL:
+- _reloadForNetworkTypeChange:
+- matchesClientApplication:
+- overlayConfigurationForStorePage:
+- newScriptInterface
+- purchaseManagerWillBeginUpdates:
+- purchaseManagerDidEndUpdates:
+- purchaseManager:willAddPurchases:
+- purchaseManager:failedToAddPurchases:
+- purchaseManager:didAddPurchases:
+- _bagDidLoadNotification:
+- client:presentModalViewController:animated:
+- topViewControllerForClient:
+- client:presentAccountViewController:animated:
+- client:openInternalURL:
+- _restrictionsChangedNotification:
+- exitStoreWithReason:
+- libraryContainsItemIdentifier:
+- _selectFooterSectionNotification:
+- _storeFrontChangedNotification:
+- _accountControllerDisappearedNotification:
+- _cancelLoadSectionsOperation
+- setLaunchURL:
+- setupUI
+- _handleFinishedBackgroundLoadSectionsOperation:
+- _loadSectionsAllowingCache:withCompletionBlock:
+- _presentSectionFetchUI
+- _handleFinishedLoadSectionsOperation:
+- topNavigationController
+- _cancelSuspendAfterDialogsDismissed
+- _dialogDidFinishNotification:
+- _isAccountViewControllerVisible
+- _saveArchivedNavigationPath
+- _resumableViewController
+- _reloadForStorefrontChange
+- _reloadOverlayConfigurations
+- _retrySectionsAfterNetworkTransition
+- _mainThreadStoreFrontChangedNotification:
+- _showWildcatAccountViewController:animated:
+- endPurchaseBatch
+- beginPurchaseBatch
+- _handleSearchURL:
+- _handleAccountURL:
+- _defaultHandleApplicationURLRequestProperties:
+- launchURL
+- composeEmailByRestoringAutosavedMessage
+- _handleSectionsLoadFailedWithError:
+- _reloadWithSectionsResponse:
+- presentExternalURLViewController:
+- presentMailComposeViewController:animated:
+- dismissMailComposeViewControllerAnimated:
+- downloadQueueForClient:downloadKinds:
+- prepareForSuspend
+- reloadSectionWithIdentifier:url:
+- showDialogForCapabilities:mismatches:
+- defaultPNGNameForSuspend
+- storeContentLanguage
+@end

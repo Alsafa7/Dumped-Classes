@@ -1,0 +1,6 @@
+@interface PSAppListController : PSListController
+{
+
+}
+
+@end

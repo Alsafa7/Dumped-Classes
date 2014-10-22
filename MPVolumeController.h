@@ -1,0 +1,85 @@
+@interface MPVolumeController : NSObject
+{
+	id _player;
+	id _volumeAudioCategory;
+	BOOL _volumeWarningBlinking;
+	id _volumeWarningTrackImage;
+	BOOL _debugVolumeWarning;
+	BOOL _volumeWarningEnabled;
+	float _volumeValue;
+	float _EUVolumeLimit;
+	id _delegate;
+	long long _volumeWarningState;
+}
+
++ _isExternalPlaybackActiveDidChangeNotification:
++ muted
++ _applicationDidEnterBackgroundNotification:
++ _applicationWillEnterForegroundNotification:
++ setVolumeValue:
++ setMuted:
++ volumeWarningEnabled
++ volumeWarningState
++ updateVolumeWarningState
++ updateVolumeValue
++ _availableRoutesDidChangeNotification:
++ volumeAudioCategory
++ setVolumeAudioCategory:
++ EUVolumeLimit
++ _systemVolumeDidChange:
++ _mediaServerDiedNotification:
++ _setupNotifications
++ _volumeFromAVController
++ _setVolumeWarningState:
++ _tearDownNotifications
++ volumeValue
++ _internalSetVolumeValue:
++ _isPlayerInValidState
++ _systemMuteDidChange:
++ _EUVolumeLimitDidChange:
++ _EUVolumeLimitEnforcedDidChange:
++ _volumeDidChange:
++ _forcefullySetVolumeValue:
++ dealloc
++ setDelegate:
++ init
++ delegate
++ .cxx_destruct
++ player
++ setPlayer:
+- _isExternalPlaybackActiveDidChangeNotification:
+- muted
+- _applicationDidEnterBackgroundNotification:
+- _applicationWillEnterForegroundNotification:
+- setVolumeValue:
+- setMuted:
+- volumeWarningEnabled
+- volumeWarningState
+- updateVolumeWarningState
+- updateVolumeValue
+- _availableRoutesDidChangeNotification:
+- volumeAudioCategory
+- setVolumeAudioCategory:
+- EUVolumeLimit
+- _systemVolumeDidChange:
+- _mediaServerDiedNotification:
+- _setupNotifications
+- _volumeFromAVController
+- _setVolumeWarningState:
+- _tearDownNotifications
+- volumeValue
+- _internalSetVolumeValue:
+- _isPlayerInValidState
+- _systemMuteDidChange:
+- _EUVolumeLimitDidChange:
+- _EUVolumeLimitEnforcedDidChange:
+- _volumeDidChange:
+- _forcefullySetVolumeValue:
+- dealloc
+- setDelegate:
+- init
+- delegate
+- .cxx_destruct
+- player
+- setPlayer:
+@end

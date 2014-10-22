@@ -1,0 +1,69 @@
+@interface CKDispatchCache : NSObject
+{
+	id _objectCache;
+	id _pendingKeys;
+	id _pendingGroups;
+	id _dispatchQueue;
+	id _lockQueue;
+	long long _dispatchPriority;
+}
+
++ dispatchQueue
++ dealloc
++ init
++ resume
++ setCachedObject:forKey:
++ initWithCacheLimit:dispatchPriority:
++ lockQueue
++ setLockQueue:
++ isGeneratingForKey:
++ enqueueGenerationBlock:completion:withPriority:forKey:
++ cachedObjectForKey:
++ objectCache
++ beginGeneratingForKey:
++ _endGeneratingForKeyUnlocked:
++ pendingKeys
++ pendingGroups
++ _beginGeneratingForKeyUnlocked:
++ clearQueue
++ enqueueBlock:withPriority:
++ endGeneratingForKey:
++ waitOnGenerationForKey:
++ setObjectCache:
++ setPendingKeys:
++ setPendingGroups:
++ setDispatchQueue:
++ dispatchPriority
++ setDispatchPriority:
++ systemApplicationDidSuspend
++ systemApplicationDidSuspendForEventsOnly
+- dispatchQueue
+- dealloc
+- init
+- resume
+- setCachedObject:forKey:
+- initWithCacheLimit:dispatchPriority:
+- lockQueue
+- setLockQueue:
+- isGeneratingForKey:
+- enqueueGenerationBlock:completion:withPriority:forKey:
+- cachedObjectForKey:
+- objectCache
+- beginGeneratingForKey:
+- _endGeneratingForKeyUnlocked:
+- pendingKeys
+- pendingGroups
+- _beginGeneratingForKeyUnlocked:
+- clearQueue
+- enqueueBlock:withPriority:
+- endGeneratingForKey:
+- waitOnGenerationForKey:
+- setObjectCache:
+- setPendingKeys:
+- setPendingGroups:
+- setDispatchQueue:
+- dispatchPriority
+- setDispatchPriority:
+- systemApplicationDidSuspend
+- systemApplicationDidSuspendForEventsOnly
+@end

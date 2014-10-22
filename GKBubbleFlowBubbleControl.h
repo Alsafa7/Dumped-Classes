@@ -1,0 +1,6 @@
+@interface GKBubbleFlowBubbleControl : GKValueWithCaptionBubbleControl
+{
+
+}
+
+@end

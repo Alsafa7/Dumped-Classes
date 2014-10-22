@@ -1,0 +1,241 @@
+@interface UIBarButtonItem : UIBarItem
+{
+	id _title;
+	id _possibleTitles;
+	SEL _action;
+	id _target;
+	id _image;
+	id _landscapeImagePhone;
+	struct _imageInsets;
+	struct _landscapeImagePhoneInsets;
+	double _width;
+	id _view;
+	long long _tag;
+	id _appearanceStorage;
+	struct _barButtonItemFlags;
+	BOOL _flexible;
+	BOOL _viewWantsLetterpressImage;
+	BOOL _needsViewUpdateForLetterpressImage;
+	double _toolbarCharge;
+	double _minimumWidth;
+	double _maximumWidth;
+	id _possibleSystemItems;
+	id _stylesForSizingTitles;
+	id __itemVariation;
+}
+
++ scriptingID
++ _updateView
++ _leftRightImagePaddingForEdgeMarginInNavBarIsMini:
++ _getSystemItemStyle:title:image:selectedImage:action:forBarStyle:landscape:alwaysBordered:
++ _getNavBarEdgeSizeAdjust:imageInsets:landscape:
++ _getToolbarEdgeInsets:imageInsets:glowInsets:forBarStyle:landscape:alwaysBordered:
++ window
++ view
++ nextResponder
++ setView:
++ isCustomViewItem
++ isMinibarView
++ setIsMinibarView:
++ _sendAction:withEvent:
++ createViewForNavigationItem:
++ _shouldBezelSystemButtonImage
++ _width
++ createViewForToolbar:
++ _imageHasEffects
++ _applyPositionAdjustmentToSegmentedControl:
++ _foregroundColorForLetterpressWithView:
++ _miniImage
++ _setMiniImage:
++ _miniImageInsets
++ _setMiniImageInsets:
++ _toolbarButton
++ _setImageHasEffects:
++ _setWidth:
++ _connectInterfaceBuilderEventConnection:
++ dealloc
++ setImage:
++ initWithCoder:
++ encodeWithCoder:
++ init
++ setTitle:
++ setStyle:
++ setTarget:
++ action
++ image
++ style
++ setTag:
++ isEnabled
++ tintColor
++ setTintColor:
++ tag
++ setEnabled:
++ target
++ _appearanceStorage
++ title
++ _needsViewUpdateForLetterpressImage
++ isSystemItem
++ systemItem
++ landscapeImagePhone
++ width
++ setWidth:
++ setTitleTextAttributes:forState:
++ backgroundImageForState:style:barMetrics:
++ setBackgroundImage:forState:barMetrics:
++ _stylesForSizingTitles
++ _setStylesForSizingTitles:
++ _possibleSystemItems
++ _minimumWidth
++ _maximumWidth
++ setBackButtonBackgroundImage:forState:barMetrics:
++ setSelected:
++ setAction:
++ initWithTitle:style:target:action:
++ _setPossibleItemVariations:
++ _setItemVariation:
++ backgroundImageForState:barMetrics:
++ titleTextAttributesForState:
++ customView
++ _flexible
++ setImageInsets:
++ imageInsets
++ initWithCustomView:
++ _setToolbarCharge:
++ setLandscapeImagePhone:
++ setCustomView:
++ setPossibleTitles:
++ setBackgroundImage:forState:style:barMetrics:
++ initWithImage:style:target:action:
++ initWithImage:landscapeImagePhone:style:target:action:
++ initWithBarButtonSystemItem:target:action:
++ setLandscapeImagePhoneInsets:
++ landscapeImagePhoneInsets
++ _possibleItemVariations
++ itemVariation
++ possibleTitles
++ _setSystemItem:
++ _setPossibleSystemItems:
++ selected
++ backButtonBackgroundImageForState:barMetrics:
++ setBackgroundVerticalPositionAdjustment:forBarMetrics:
++ backgroundVerticalPositionAdjustmentForBarMetrics:
++ setTitlePositionAdjustment:forBarMetrics:
++ titlePositionAdjustmentForBarMetrics:
++ setBackButtonBackgroundVerticalPositionAdjustment:forBarMetrics:
++ backButtonBackgroundVerticalPositionAdjustmentForBarMetrics:
++ setBackButtonTitlePositionAdjustment:forBarMetrics:
++ backButtonTitlePositionAdjustmentForBarMetrics:
++ _toolbarCharge
++ _setMinimumWidth:
++ _setMaximumWidth:
++ _setFlexible:
++ _viewWantsLetterpressImage
++ _itemVariation
+- scriptingID
+- _updateView
+- _leftRightImagePaddingForEdgeMarginInNavBarIsMini:
+- _getSystemItemStyle:title:image:selectedImage:action:forBarStyle:landscape:alwaysBordered:
+- _getNavBarEdgeSizeAdjust:imageInsets:landscape:
+- _getToolbarEdgeInsets:imageInsets:glowInsets:forBarStyle:landscape:alwaysBordered:
+- window
+- view
+- nextResponder
+- setView:
+- isCustomViewItem
+- isMinibarView
+- setIsMinibarView:
+- _sendAction:withEvent:
+- createViewForNavigationItem:
+- _shouldBezelSystemButtonImage
+- _width
+- createViewForToolbar:
+- _imageHasEffects
+- _applyPositionAdjustmentToSegmentedControl:
+- _foregroundColorForLetterpressWithView:
+- _miniImage
+- _setMiniImage:
+- _miniImageInsets
+- _setMiniImageInsets:
+- _toolbarButton
+- _setImageHasEffects:
+- _setWidth:
+- _connectInterfaceBuilderEventConnection:
+- dealloc
+- setImage:
+- initWithCoder:
+- encodeWithCoder:
+- init
+- setTitle:
+- setStyle:
+- setTarget:
+- action
+- image
+- style
+- setTag:
+- isEnabled
+- tintColor
+- setTintColor:
+- tag
+- setEnabled:
+- target
+- _appearanceStorage
+- title
+- _needsViewUpdateForLetterpressImage
+- isSystemItem
+- systemItem
+- landscapeImagePhone
+- width
+- setWidth:
+- setTitleTextAttributes:forState:
+- backgroundImageForState:style:barMetrics:
+- setBackgroundImage:forState:barMetrics:
+- _stylesForSizingTitles
+- _setStylesForSizingTitles:
+- _possibleSystemItems
+- _minimumWidth
+- _maximumWidth
+- setBackButtonBackgroundImage:forState:barMetrics:
+- setSelected:
+- setAction:
+- initWithTitle:style:target:action:
+- _setPossibleItemVariations:
+- _setItemVariation:
+- backgroundImageForState:barMetrics:
+- titleTextAttributesForState:
+- customView
+- _flexible
+- setImageInsets:
+- imageInsets
+- initWithCustomView:
+- _setToolbarCharge:
+- setLandscapeImagePhone:
+- setCustomView:
+- setPossibleTitles:
+- setBackgroundImage:forState:style:barMetrics:
+- initWithImage:style:target:action:
+- initWithImage:landscapeImagePhone:style:target:action:
+- initWithBarButtonSystemItem:target:action:
+- setLandscapeImagePhoneInsets:
+- landscapeImagePhoneInsets
+- _possibleItemVariations
+- itemVariation
+- possibleTitles
+- _setSystemItem:
+- _setPossibleSystemItems:
+- selected
+- backButtonBackgroundImageForState:barMetrics:
+- setBackgroundVerticalPositionAdjustment:forBarMetrics:
+- backgroundVerticalPositionAdjustmentForBarMetrics:
+- setTitlePositionAdjustment:forBarMetrics:
+- titlePositionAdjustmentForBarMetrics:
+- setBackButtonBackgroundVerticalPositionAdjustment:forBarMetrics:
+- backButtonBackgroundVerticalPositionAdjustmentForBarMetrics:
+- setBackButtonTitlePositionAdjustment:forBarMetrics:
+- backButtonTitlePositionAdjustmentForBarMetrics:
+- _toolbarCharge
+- _setMinimumWidth:
+- _setMaximumWidth:
+- _setFlexible:
+- _viewWantsLetterpressImage
+- _itemVariation
+@end

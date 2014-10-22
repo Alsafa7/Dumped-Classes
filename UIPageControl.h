@@ -1,0 +1,135 @@
+@interface UIPageControl : UIControl
+{
+	id _indicators;
+	long long _currentPage;
+	long long _displayedPage;
+	struct _pageControlFlags;
+	id _currentPageImage;
+	id _pageImage;
+	long long _lastUserInterfaceIdiom;
+	id _currentPageIndicatorTintColor;
+	id _pageIndicatorTintColor;
+	id _legibilitySettings;
+}
+
++ isElementAccessibilityExposedToInterfaceBuilder
++ initWithFrame:
++ dealloc
++ initWithCoder:
++ _populateArchivedSubviews:
++ encodeWithCoder:
++ layoutSubviews
++ _contentHuggingDefault_isUsuallyFixedHeight
++ _contentHuggingDefault_isUsuallyFixedWidth
++ sizeThatFits:
++ gestureRecognizerShouldBegin:
++ _didChangeFromIdiom:onScreen:traverseHierarchy:
++ intrinsicContentSize
++ endTrackingWithTouch:withEvent:
++ _commonPageControlInit
++ setNumberOfPages:
++ setCurrentPage:
++ setCurrentPageIndicatorTintColor:
++ setPageIndicatorTintColor:
++ numberOfPages
++ _invalidateIndicators
++ _activePageIndicatorImage
++ _pageIndicatorImageForPage:
++ _pageIndicatorCurrentImageForPage:
++ _customPageIndicatorCurrentImageForPage:
++ _customPageIndicatorImageForPage:
++ _pageIndicatorImage
++ _indicatorViewEnabled:index:
++ _setCurrentPage:
++ _setDisplayedPage:
++ _updateCurrentPageDisplay
++ _indicatorSpacing
++ _indicatorFrameAtIndex:
++ _modernBounds
++ _hasCustomImageForPage:enabled:
++ _transitionIndicator:toEnabled:index:
++ _correctIdiomaticNameForImageNamed:
++ _modernTransitionIndicator:toEnabled:index:legible:
++ _shouldDrawLegibly
++ _transitionIndicator:toEnabled:index:legible:
++ _indicatorViewEnabled:index:legible:
++ _drawModernIndicatorInView:enabled:
++ _modernIndicatorImageEnabled:
++ _setLegibilitySettings:
++ _modernColorEnabled:
++ _modernCornerRadius
++ _createModernIndicatorImageFromView:
++ currentPage
++ setHidesForSinglePage:
++ hidesForSinglePage
++ setDefersCurrentPageDisplay:
++ defersCurrentPageDisplay
++ updateCurrentPageDisplay
++ sizeForNumberOfPages:
++ _displayedPage
++ _setLegibilityStyle:
++ _legibilityStyle
++ currentPageIndicatorTintColor
++ pageIndicatorTintColor
++ _legibilitySettings
+- isElementAccessibilityExposedToInterfaceBuilder
+- initWithFrame:
+- dealloc
+- initWithCoder:
+- _populateArchivedSubviews:
+- encodeWithCoder:
+- layoutSubviews
+- _contentHuggingDefault_isUsuallyFixedHeight
+- _contentHuggingDefault_isUsuallyFixedWidth
+- sizeThatFits:
+- gestureRecognizerShouldBegin:
+- _didChangeFromIdiom:onScreen:traverseHierarchy:
+- intrinsicContentSize
+- endTrackingWithTouch:withEvent:
+- _commonPageControlInit
+- setNumberOfPages:
+- setCurrentPage:
+- setCurrentPageIndicatorTintColor:
+- setPageIndicatorTintColor:
+- numberOfPages
+- _invalidateIndicators
+- _activePageIndicatorImage
+- _pageIndicatorImageForPage:
+- _pageIndicatorCurrentImageForPage:
+- _customPageIndicatorCurrentImageForPage:
+- _customPageIndicatorImageForPage:
+- _pageIndicatorImage
+- _indicatorViewEnabled:index:
+- _setCurrentPage:
+- _setDisplayedPage:
+- _updateCurrentPageDisplay
+- _indicatorSpacing
+- _indicatorFrameAtIndex:
+- _modernBounds
+- _hasCustomImageForPage:enabled:
+- _transitionIndicator:toEnabled:index:
+- _correctIdiomaticNameForImageNamed:
+- _modernTransitionIndicator:toEnabled:index:legible:
+- _shouldDrawLegibly
+- _transitionIndicator:toEnabled:index:legible:
+- _indicatorViewEnabled:index:legible:
+- _drawModernIndicatorInView:enabled:
+- _modernIndicatorImageEnabled:
+- _setLegibilitySettings:
+- _modernColorEnabled:
+- _modernCornerRadius
+- _createModernIndicatorImageFromView:
+- currentPage
+- setHidesForSinglePage:
+- hidesForSinglePage
+- setDefersCurrentPageDisplay:
+- defersCurrentPageDisplay
+- updateCurrentPageDisplay
+- sizeForNumberOfPages:
+- _displayedPage
+- _setLegibilityStyle:
+- _legibilityStyle
+- currentPageIndicatorTintColor
+- pageIndicatorTintColor
+- _legibilitySettings
+@end

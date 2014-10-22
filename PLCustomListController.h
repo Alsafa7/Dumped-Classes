@@ -1,0 +1,6 @@
+@interface PLCustomListController : PSListController
+{
+
+}
+
+@end

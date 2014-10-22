@@ -1,0 +1,67 @@
+@interface UITableViewCell : UIView
+{
+	id _tableView;
+	id _layoutManager;
+	id _target;
+	SEL _editAction;
+	SEL _accessoryAction;
+	id _oldEditingData;
+	id _editingData;
+	double _rightMargin;
+	long long _indentationLevel;
+	double _indentationWidth;
+	id _reuseIdentifier;
+	id _contentView;
+	id _imageView;
+	id _textLabel;
+	id _detailTextLabel;
+	id _backgroundView;
+	id _selectedBackgroundView;
+	id _multipleSelectionBackgroundView;
+	id _selectedOverlayView;
+	double _selectionFadeDuration;
+	id _backgroundColor;
+	id _separatorColor;
+	id _topShadowColor;
+	id _bottomShadowColor;
+	id _sectionBorderColor;
+	id _floatingSeparatorView;
+	id _topShadowAnimationView;
+	id _bottomShadowAnimationView;
+	id _badge;
+	pointer _unhighlightedStates;
+	id _highlightingSupport;
+	id _selectionSegueTemplate;
+	id _accessoryActionSegueTemplate;
+	struct _tableCellFlags;
+	id _accessoryView;
+	id _editingAccessoryView;
+	id _customAccessoryView;
+	id _customEditingAccessoryView;
+	id _separatorView;
+	id _topSeparatorView;
+	id _topShadowView;
+	id _editableTextField;
+	double _lastSelectionTime;
+	id _deselectTimer;
+	double _textFieldOffset;
+	double _indexBarWidth;
+	struct _separatorInset;
+	struct _backgroundInset;
+	SEL _returnAction;
+	id _selectionTintColor;
+	id _accessoryTintColor;
+	id _reorderControlImage;
+	id _menuGesture;
+	id _representedIndexPath;
+	BOOL _isPigglyWigglyCell;
+	id _swipeToDeleteConfirmationView;
+	id _swipeToDeleteCancelationGesture;
+	id _wrapperView;
+	id _clearBlendingView;
+	double _swipeToDeleteDistancePulled;
+	double _sectionCornerRadius;
+	double _sectionBorderWidth;
+}
+
+@end

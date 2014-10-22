@@ -1,0 +1,98 @@
+@interface SUManagerClient : NSObject
+{
+	id _serverConnection;
+	id _delegate;
+	BOOL _connected;
+	BOOL _serverIsExiting;
+	int _clientType;
+	BOOL _installing;
+	id _installDescriptor;
+}
+
++ pauseDownload:
++ downloadDidFinish:
++ _remoteInterface
++ dealloc
++ setDelegate:
++ init
++ delegate
++ invalidate
++ _invalidateConnection
++ initWithDelegate:
++ initWithDelegate:clientType:
++ setClientType:
++ connectToServerIfNecessary
++ _remoteInterfaceWithErrorHandler:connectIfNecessary:
++ _setClientType
++ _remoteInterfaceWithErrorHandler:
++ isScanning:
++ scanForUpdates:withResult:
++ isDownloading:
++ startDownload:
++ startDownloadWithMetadata:withResult:
++ updateDownloadMetadata:withResult:
++ download:
++ isUpdateReadyForInstallation:
++ installUpdate:
++ scanRequestDidStartForOptions:
++ scanRequestDidFinishForOptions:update:error:
++ scanDidCompleteWithNewUpdateAvailable:error:
++ automaticDownloadDidFailToStartForNewUpdateAvailable:withError:
++ downloadWasInvalidatedForNewUpdateAvailable:
++ downloadDidStart:
++ downloadProgressDidChange:
++ downloadDidFail:withError:
++ installDidStart:
++ installDidFail:withError:
++ installDidFinish:
++ noteConnectionDropped
++ setInstallDescriptor:
++ noteServerExiting
++ clientType
++ installDescriptor
++ resumeDownload:
++ cancelDownload:
+- pauseDownload:
+- downloadDidFinish:
+- _remoteInterface
+- dealloc
+- setDelegate:
+- init
+- delegate
+- invalidate
+- _invalidateConnection
+- initWithDelegate:
+- initWithDelegate:clientType:
+- setClientType:
+- connectToServerIfNecessary
+- _remoteInterfaceWithErrorHandler:connectIfNecessary:
+- _setClientType
+- _remoteInterfaceWithErrorHandler:
+- isScanning:
+- scanForUpdates:withResult:
+- isDownloading:
+- startDownload:
+- startDownloadWithMetadata:withResult:
+- updateDownloadMetadata:withResult:
+- download:
+- isUpdateReadyForInstallation:
+- installUpdate:
+- scanRequestDidStartForOptions:
+- scanRequestDidFinishForOptions:update:error:
+- scanDidCompleteWithNewUpdateAvailable:error:
+- automaticDownloadDidFailToStartForNewUpdateAvailable:withError:
+- downloadWasInvalidatedForNewUpdateAvailable:
+- downloadDidStart:
+- downloadProgressDidChange:
+- downloadDidFail:withError:
+- installDidStart:
+- installDidFail:withError:
+- installDidFinish:
+- noteConnectionDropped
+- setInstallDescriptor:
+- noteServerExiting
+- clientType
+- installDescriptor
+- resumeDownload:
+- cancelDownload:
+@end

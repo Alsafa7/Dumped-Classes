@@ -1,0 +1,94 @@
+@interface SBRootSettings : _UISettings
+{
+	BOOL _preventLockover;
+	id _parallaxSettings;
+	id _folderSettings;
+	id _rootAnimationSettings;
+	id _controlCenterSettings;
+	id _appSliderSettings;
+	id _lockScreenSettings;
+	id _carDisplaySettings;
+	id _lockScreenTestPluginSettings;
+	id _iconColorSettings;
+	id _fadeAnimationSettings;
+	id _alertItemsSettings;
+	id _notificationCenterSettings;
+	id _legibilitySettings;
+	id _wallpaperSettings;
+	id _animationSettings;
+	id _testRecipeClassName;
+}
+
++ parallaxSettings
++ alertItemsSettings
++ folderSettings
++ iconColorSettings
++ appSliderSettings
++ lockScreenSettings
++ rootAnimationSettings
++ wallpaperSettings
++ fadeAnimationSettings
++ lockScreenTestPluginSettings
++ carDisplaySettings
++ animationSettings
++ testRecipeClassName
++ preventLockover
++ _hasPreviousSettings
++ setTestRecipeClassName:
++ setParallaxSettings:
++ setFolderSettings:
++ setRootAnimationSettings:
++ setControlCenterSettings:
++ setAppSliderSettings:
++ setLockScreenSettings:
++ setCarDisplaySettings:
++ setLockScreenTestPluginSettings:
++ setIconColorSettings:
++ setFadeAnimationSettings:
++ setAlertItemsSettings:
++ notificationCenterSettings
++ setNotificationCenterSettings:
++ setWallpaperSettings:
++ setAnimationSettings:
++ setPreventLockover:
++ setDefaultValues
++ legibilitySettings
++ setLegibilitySettings:
++ controlCenterSettings
+- parallaxSettings
+- alertItemsSettings
+- folderSettings
+- iconColorSettings
+- appSliderSettings
+- lockScreenSettings
+- rootAnimationSettings
+- wallpaperSettings
+- fadeAnimationSettings
+- lockScreenTestPluginSettings
+- carDisplaySettings
+- animationSettings
+- testRecipeClassName
+- preventLockover
+- _hasPreviousSettings
+- setTestRecipeClassName:
+- setParallaxSettings:
+- setFolderSettings:
+- setRootAnimationSettings:
+- setControlCenterSettings:
+- setAppSliderSettings:
+- setLockScreenSettings:
+- setCarDisplaySettings:
+- setLockScreenTestPluginSettings:
+- setIconColorSettings:
+- setFadeAnimationSettings:
+- setAlertItemsSettings:
+- notificationCenterSettings
+- setNotificationCenterSettings:
+- setWallpaperSettings:
+- setAnimationSettings:
+- setPreventLockover:
+- setDefaultValues
+- legibilitySettings
+- setLegibilitySettings:
+- controlCenterSettings
+@end

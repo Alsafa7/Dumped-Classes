@@ -1,0 +1,61 @@
+@interface UIPrintPageRenderer : NSObject
+{
+	double _headerHeight;
+	double _footerHeight;
+	struct _paperRect;
+	struct _printableRect;
+	id _printFormatters;
+	pointer _printContext;
+}
+
++ dealloc
++ numberOfPages
++ printableRect
++ _removePrintFormatter:
++ headerHeight
++ footerHeight
++ setPaperRect:
++ setPrintableRect:
++ addPrintFormatter:startingAtPageAtIndex:
++ prepareForDrawingPages:
++ _startPrintContext:printSettings:
++ _drawPage:
++ _endPrintContext:success:
++ _maxFormatterPage
++ drawHeaderForPageAtIndex:inRect:
++ drawContentForPageAtIndex:inRect:
++ drawPrintFormatter:forPageAtIndex:
++ drawFooterForPageAtIndex:inRect:
++ drawPageAtIndex:inRect:
++ setPrintFormatters:
++ printFormattersForPageAtIndex:
++ setHeaderHeight:
++ setFooterHeight:
++ paperRect
++ printFormatters
+- dealloc
+- numberOfPages
+- printableRect
+- _removePrintFormatter:
+- headerHeight
+- footerHeight
+- setPaperRect:
+- setPrintableRect:
+- addPrintFormatter:startingAtPageAtIndex:
+- prepareForDrawingPages:
+- _startPrintContext:printSettings:
+- _drawPage:
+- _endPrintContext:success:
+- _maxFormatterPage
+- drawHeaderForPageAtIndex:inRect:
+- drawContentForPageAtIndex:inRect:
+- drawPrintFormatter:forPageAtIndex:
+- drawFooterForPageAtIndex:inRect:
+- drawPageAtIndex:inRect:
+- setPrintFormatters:
+- printFormattersForPageAtIndex:
+- setHeaderHeight:
+- setFooterHeight:
+- paperRect
+- printFormatters
+@end

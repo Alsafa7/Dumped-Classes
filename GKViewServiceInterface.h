@@ -1,0 +1,6 @@
+@interface GKViewServiceInterface : NSXPCInterface
+{
+
+}
+
+@end

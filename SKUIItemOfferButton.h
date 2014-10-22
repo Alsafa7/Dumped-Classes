@@ -1,0 +1,127 @@
+@interface SKUIItemOfferButton : UIControl
+{
+	id _borderView;
+	id _cancelGestureRecognizer;
+	id _cloudImage;
+	id _confirmationColor;
+	id _confirmationTitle;
+	id _delegate;
+	id _emphasisView;
+	long long _fillStyle;
+	id _imageView;
+	id _originalBackgroundColor;
+	double _progress;
+	id _progressIndicator;
+	long long _progressType;
+	BOOL _showsConfirmationState;
+	usigned long long _state;
+	id _title;
+	struct _titleFitSize;
+	id _titleLabel;
+	BOOL _universal;
+	id _universalImageView;
+}
+
++ setConfirmationTitle:
++ isShowingConfirmation
++ confirmationTitle
++ initWithFrame:
++ dealloc
++ setImage:
++ setBackgroundColor:
++ setDelegate:
++ didMoveToWindow
++ layoutSubviews
++ setTitle:
++ sizeThatFits:
++ delegate
++ _basicAnimationWithKeyPath:
++ image
++ tintColorDidChange
++ _removeAllAnimations:
++ setProgress:
++ title
++ cancelTrackingWithEvent:
++ beginTrackingWithTouch:withEvent:
++ endTrackingWithTouch:withEvent:
++ setProgress:animated:
++ progress
++ progressType
++ _removeCancelGestureRecognizer
++ setValuesUsingItemOffer:itemState:clientContext:animated:
++ setColoringWithAppearance:
++ removeButtonStateAnimations
++ setShowingConfirmation:animated:
++ layoutSizeThatFits:
++ setUniversal:
++ _sendWillAnimate
++ _reloadForCurrentState
++ setProgressType:animated:
++ _updateForProgressFinished:
++ _setProgressVisible:animated:
++ _activeTintColor
++ _shouldHideUniversalIndicator
++ _cancelGestureAction:
++ setShowsConfirmationState:
++ showCloudImage
++ _emphasisView
++ _animateToCancelTracking
++ showsConfirmationState
++ setProgressType:
++ isUniversal
++ .cxx_destruct
++ fillStyle
++ setFillStyle:
++ _setImage:
+- setConfirmationTitle:
+- isShowingConfirmation
+- confirmationTitle
+- initWithFrame:
+- dealloc
+- setImage:
+- setBackgroundColor:
+- setDelegate:
+- didMoveToWindow
+- layoutSubviews
+- setTitle:
+- sizeThatFits:
+- delegate
+- _basicAnimationWithKeyPath:
+- image
+- tintColorDidChange
+- _removeAllAnimations:
+- setProgress:
+- title
+- cancelTrackingWithEvent:
+- beginTrackingWithTouch:withEvent:
+- endTrackingWithTouch:withEvent:
+- setProgress:animated:
+- progress
+- progressType
+- _removeCancelGestureRecognizer
+- setValuesUsingItemOffer:itemState:clientContext:animated:
+- setColoringWithAppearance:
+- removeButtonStateAnimations
+- setShowingConfirmation:animated:
+- layoutSizeThatFits:
+- setUniversal:
+- _sendWillAnimate
+- _reloadForCurrentState
+- setProgressType:animated:
+- _updateForProgressFinished:
+- _setProgressVisible:animated:
+- _activeTintColor
+- _shouldHideUniversalIndicator
+- _cancelGestureAction:
+- setShowsConfirmationState:
+- showCloudImage
+- _emphasisView
+- _animateToCancelTracking
+- showsConfirmationState
+- setProgressType:
+- isUniversal
+- .cxx_destruct
+- fillStyle
+- setFillStyle:
+- _setImage:
+@end

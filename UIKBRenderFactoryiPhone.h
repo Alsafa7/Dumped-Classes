@@ -1,0 +1,72 @@
+@interface UIKBRenderFactoryiPhone : UIKBRenderFactory
+{
+
+}
+
++ backgroundTraitsForKeyplane:
++ _traitsForKey:onKeyplane:
++ controlKeyTraits
++ activeControlKeyTraits
++ multitapCompleteKeyImageName
++ muttitapReverseKeyImageName
++ setupLayoutSegments
++ shiftKeyImageName
++ shiftOnKeyImageName
++ deleteKeyImageName
++ skinnyKeyThreshold
++ globalKeyImageName
++ dictationKeyImageName
++ internationalKeyOffset
++ dictationKeyOffset
++ deleteKeyOffset
++ shiftKeyOffset
++ more123KeyOffset
++ moreABCKeyOffset
++ wideShadowPaddleInsets
++ variantSymbolTextOffset
++ _customizeSymbolStyle:forKey:contents:
++ _customizeGeometry:forKey:contents:
++ _customizePopupTraits:forKey:onKeyplane:
++ _popupStyleForKey:
++ variantDisplayFrameInsets
++ variantSymbolFrameInsets
++ variantPaddedFrameInsets
++ variantGeometriesForGeometry:variantCount:
++ dualStringBottomAdditionalOffsetForDisplayContents:
++ _row4ControlSegmentWidth
++ shiftedControlKeyTraits
++ shiftLockControlKeyTraits
+- backgroundTraitsForKeyplane:
+- _traitsForKey:onKeyplane:
+- controlKeyTraits
+- activeControlKeyTraits
+- multitapCompleteKeyImageName
+- muttitapReverseKeyImageName
+- setupLayoutSegments
+- shiftKeyImageName
+- shiftOnKeyImageName
+- deleteKeyImageName
+- skinnyKeyThreshold
+- globalKeyImageName
+- dictationKeyImageName
+- internationalKeyOffset
+- dictationKeyOffset
+- deleteKeyOffset
+- shiftKeyOffset
+- more123KeyOffset
+- moreABCKeyOffset
+- wideShadowPaddleInsets
+- variantSymbolTextOffset
+- _customizeSymbolStyle:forKey:contents:
+- _customizeGeometry:forKey:contents:
+- _customizePopupTraits:forKey:onKeyplane:
+- _popupStyleForKey:
+- variantDisplayFrameInsets
+- variantSymbolFrameInsets
+- variantPaddedFrameInsets
+- variantGeometriesForGeometry:variantCount:
+- dualStringBottomAdditionalOffsetForDisplayContents:
+- _row4ControlSegmentWidth
+- shiftedControlKeyTraits
+- shiftLockControlKeyTraits
+@end

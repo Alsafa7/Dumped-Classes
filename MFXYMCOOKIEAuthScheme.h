@@ -1,0 +1,6 @@
+@interface MFXYMCOOKIEAuthScheme : MFAuthScheme
+{
+
+}
+
+@end

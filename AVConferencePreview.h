@@ -1,0 +1,88 @@
+@interface AVConferencePreview : NSObject
+{
+	BOOL clientWantsPreview;
+	unsigned int connectionAttempts;
+	id connection;
+	id caLayerFront;
+	id caLayerBack;
+	id localVideoAttributes;
+	struct localScreenPortraitAspectRatio;
+	struct localScreenLandscapeAspectRatio;
+	id delegate;
+	id avConferencePreviewQueue;
+	id avConferencePreviewNotificationQueue;
+}
+
++ release
++ retain
++ dealloc
++ setDelegate:
++ init
++ autorelease
++ retainCount
++ delegate
++ allocWithZone:
++ copyWithZone:
++ localScreenAttributesForVideoAttributes:
++ setLocalScreenAttributes:
++ startPreview
++ isPreviewRunning
++ localVideoAttributes
++ pausePreview
++ stopPreview
++ setLocalVideoAttributes:
++ beginPreviewToPIPAnimation
++ endPreviewToPIPAnimation
++ beginPIPToPreviewAnimation
++ endPIPToPreviewAnimation
++ didReceiveErrorFromCamera:error:
++ didReceiveFirstPreviewFrameFromCamera:
++ didChangeLocalVideoAttributes:
++ didChangeLocalScreenAttributes:
++ didStartPreview
++ didPausePreview
++ didStopPreview
++ startPreviewUnpausing:
++ didReceiveCommError
++ setLocalVideoLayer:front:
++ connectLayer:withSlot:
++ localVideoLayer:
++ setLocalCamera:
++ localCamera
+- release
+- retain
+- dealloc
+- setDelegate:
+- init
+- autorelease
+- retainCount
+- delegate
+- allocWithZone:
+- copyWithZone:
+- localScreenAttributesForVideoAttributes:
+- setLocalScreenAttributes:
+- startPreview
+- isPreviewRunning
+- localVideoAttributes
+- pausePreview
+- stopPreview
+- setLocalVideoAttributes:
+- beginPreviewToPIPAnimation
+- endPreviewToPIPAnimation
+- beginPIPToPreviewAnimation
+- endPIPToPreviewAnimation
+- didReceiveErrorFromCamera:error:
+- didReceiveFirstPreviewFrameFromCamera:
+- didChangeLocalVideoAttributes:
+- didChangeLocalScreenAttributes:
+- didStartPreview
+- didPausePreview
+- didStopPreview
+- startPreviewUnpausing:
+- didReceiveCommError
+- setLocalVideoLayer:front:
+- connectLayer:withSlot:
+- localVideoLayer:
+- setLocalCamera:
+- localCamera
+@end

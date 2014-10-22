@@ -1,0 +1,85 @@
+@interface _UIMotionAnalyzer : NSObject
+{
+	id _settings;
+	double _smoothingDegree;
+	double _referenceShiftSpeed;
+	double _distanceMultiplier;
+	BOOL _hasReferenceQuaternion;
+	union _referenceQuaternion;
+	union _absoluteQuaternion;
+	double _lastUpdate;
+	double _idleStartTime;
+	struct _idleStartOffset;
+	double _jumpThreshold;
+	double _idleLeeway;
+	double _secondsBeforeIdle;
+	double _lockValue;
+	double _lockStrength;
+	id _diagnosticsWindow;
+	id _idleIndicator;
+	id _horizontalLockIndicator;
+	id _verticalLockIndicator;
+	id _viewerRelativeDevicePose;
+}
+
++ dealloc
++ init
++ description
++ settings:changedValueForKey:
++ initWithSettings:
++ updateWithDeviceMotionStruct:timestamp:
++ viewerRelativeDevicePose
++ _shiftReferenceToYieldRelativeQuaternion:
++ _relativeQuaternion
++ reset
++ updateWithDeviceMotion:
++ _updateSettings
++ _tearDownDiagnosticsWindow
++ _tearDownDirectionLockIndicators
++ _tearDownIdleIndicator
++ _currentRawOffset:
++ _updateSmoothedOffsetForRawOffset:
++ _updateIdleStateForRawOffset:timestamp:
++ _updateReferenceAttitude:timestamp:
++ _resetDirectionalLockWithViewerOffset:
++ _updateDirectionalLockIndicators
++ _updateAcceleratedOutputRangeFixingOffset:
++ _directionLockStatus
++ isIdleGivenTimestamp:
++ _referenceShiftRadiansPerSecondForAngle:
++ _showIdleUI:
++ _createIdleIndicator
++ _createDirectionLockIndicators
++ _createDiagnosticsWindow
++ _directionLockStrength
+- dealloc
+- init
+- description
+- settings:changedValueForKey:
+- initWithSettings:
+- updateWithDeviceMotionStruct:timestamp:
+- viewerRelativeDevicePose
+- _shiftReferenceToYieldRelativeQuaternion:
+- _relativeQuaternion
+- reset
+- updateWithDeviceMotion:
+- _updateSettings
+- _tearDownDiagnosticsWindow
+- _tearDownDirectionLockIndicators
+- _tearDownIdleIndicator
+- _currentRawOffset:
+- _updateSmoothedOffsetForRawOffset:
+- _updateIdleStateForRawOffset:timestamp:
+- _updateReferenceAttitude:timestamp:
+- _resetDirectionalLockWithViewerOffset:
+- _updateDirectionalLockIndicators
+- _updateAcceleratedOutputRangeFixingOffset:
+- _directionLockStatus
+- isIdleGivenTimestamp:
+- _referenceShiftRadiansPerSecondForAngle:
+- _showIdleUI:
+- _createIdleIndicator
+- _createDirectionLockIndicators
+- _createDiagnosticsWindow
+- _directionLockStrength
+@end

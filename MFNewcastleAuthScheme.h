@@ -1,0 +1,6 @@
+@interface MFNewcastleAuthScheme : MFAuthScheme
+{
+
+}
+
+@end

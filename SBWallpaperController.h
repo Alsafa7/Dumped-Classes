@@ -1,0 +1,226 @@
+@interface SBWallpaperController : NSObject
+{
+	id _wallpaperWindow;
+	id _wallpaperContainerView;
+	long long _orientation;
+	id _lockscreenWallpaperView;
+	id _homescreenWallpaperView;
+	id _sharedWallpaperView;
+	id _lockscreenObservers;
+	id _homescreenObservers;
+	Array _lockscreenPriorityInfo;
+	Array _homescreenPriorityInfo;
+	struct _lockscreenStyleTransitionState;
+	struct _homescreenStyleTransitionState;
+	id _lockscreenEffectView;
+	id _homescreenEffectView;
+	id _suspendColorSamplingReasons;
+	id _suspendWallpaperAnimationReasons;
+	id _requireWallpaperReasons;
+	id _hideHomescreenWallpaperReasons;
+	id _hideLockscreenWallpaperReasons;
+	long long _displayedVariant;
+	double _lockscreenOnlyWallpaperAlpha;
+	id _lockscreenBlurViews;
+	id _homescreenBlurViews;
+	long long _disallowRasterizationBlockCount;
+	id _disallowRasterizationReasonsHomeVariant;
+	id _disallowRasterizationReasonsLockVariant;
+	pointer _homescreenLightForegroundBlurColor;
+	struct _homescreenLightForegroundBlurColorRect;
+	BOOL _isSuspendingMotionEffectsForBlur;
+	id _previewCache;
+	long long _activeOrientationSource;
+	BOOL _coalescingGeometryChanges;
+	long long _locationsWithCoalescedGeometryChanges;
+	double _homescreenWallpaperScale;
+	double _lockscreenWallpaperScale;
+}
+
++ removeObserver:forVariant:
++ addObserver:forVariant:
++ orientationSource:willRotateToInterfaceOrientation:duration:
++ orientationSource:willAnimateRotationToInterfaceOrientation:duration:
++ orientationSource:didRotateFromInterfaceOrientation:
++ beginRequiringWithReason:
++ endRequiringWithReason:
++ legibilitySettingsForVariant:
++ setHomescreenStyle:forPriority:withAnimationFactory:
++ setLockscreenStyle:forPriority:withAnimationFactory:
++ removeHomescreenStyleForPriority:withAnimationFactory:
++ removeLockscreenStyleForPriority:withAnimationFactory:
++ homescreenWallpaperScale
++ previewCache
++ setActiveOrientationSource:andUpdateToOrientation:
++ suspendColorSamplingForReason:
++ resumeColorSamplingForReason:
++ averageColorInRect:forVariant:
++ setDisallowsRasterization:forVariant:withReason:
++ setLockscreenStyleTransitionState:forPriority:withAnimationFactory:
++ suspendWallpaperAnimationForReason:
++ resumeWallpaperAnimationForReason:
++ initWithOrientation:variant:
++ _updateWallpaperForLocations:withCompletion:
++ _updateScreenBlanked
++ _motionEffectsChanged
++ _accessibilityEnhanceBackgroundContrastChanged:
++ _endSuspendingMotionEffectsForBlurIfNeeded
++ setVariant:withOutAnimationFactory:inAnimationFactory:completion:
++ _shouldSuspendMotionEffectsForState:
++ _updateMotionEffectsForState:
++ _updateWallpaperHidden
++ setHomescreenStyleTransitionState:forPriority:withAnimationFactory:
++ _updateEffectViewForVariant:withFactory:
++ _suspendOrResumeColorSampling
++ _suspendOrResumeWallpaperAnimation
++ averageColorInRect:forVariant:withSmudgeRadius:
++ _wallpaperViewForVariant:
++ averageColorForVariant:
++ _createHomescreenLightForegroundBlurColorIfNecessary
++ _setDisallowRasterization:withReason:reasons:
++ variantsShareWallpaper
++ _updateSharedWallpaper
++ _updateSeparateWallpaper
++ setHomescreenWallpaperScale:
++ setLockscreenWallpaperScale:
++ setLockscreenOnlyWallpaperAlpha:
++ _updateBlurGeneration
++ _clearWallpaperView:
++ _newWallpaperViewForProcedural:orImage:
++ _handleWallpaperChangedForVariant:
++ _setWallpaperHidden:variant:reason:
++ _beginSuspendingMotionEffectsForBlurIfNeeded
++ _newWallpaperEffectViewForVariant:transitionState:
++ _clearWallpaperEffectView:
++ _clearHomescreenLightForegroundBlurColor
++ _observersForVariant:
++ _reconfigureBlurViewsForVariant:
++ _updateBlurImagesForVariant:
++ _blurViewsForVariant:
++ _blurImageObservableForBlurView:sourceView:
++ _isRasterizationDisallowedForCurrentVariant
++ _isAcceptingOrientationChangesFromSource:
++ _handleWallpaperGeometryChangedForVariant:
++ _handleWallpaperLegibilitySettingsChanged:forVariant:
++ setLockscreenWallpaperContentsRect:
++ currentHomescreenStyleTransitionState
++ setHomescreenStyleForGuidedAccessPriorityWithAnimationFactory:
++ removeHomescreenStyleForGuidedAccessPriorityWithAnimationFactory:
++ homescreenLightForegroundBlurColor
++ homescreenLightForegroundBlurColorPhaseForRect:
++ _registerFakeBlurView:
++ _unregisterFakeBlurView:
++ _sourceForFakeBlurView:
++ _newFakeBlurViewForVariant:
++ _getImageInRect:withZoomFactor:forVariant:style:
++ lockscreenWallpaperScale
++ activeInterfaceOrientationWillChangeToOrientation:
++ activeInterfaceOrientationDidChangeToOrientation:willAnimateWithDuration:fromOrientation:
++ variant
++ dealloc
++ setWindowLevel:
++ windowLevel
++ willAnimateRotationToInterfaceOrientation:duration:
++ wallpaperView:legibilitySettingsDidChange:
++ _updateRasterizationState
++ _beginDisallowRasterizationBlock
++ wallpaperView:didChangeZoomFactor:
++ _endDisallowRasterizationBlock
++ wallpaperViewDidInvalidateBlurs:
++ wallpaperViewDidInvalidateGeometry:
++ wallpaperViewDidChangeWantsRasterization:
++ setVariant:
+- removeObserver:forVariant:
+- addObserver:forVariant:
+- orientationSource:willRotateToInterfaceOrientation:duration:
+- orientationSource:willAnimateRotationToInterfaceOrientation:duration:
+- orientationSource:didRotateFromInterfaceOrientation:
+- beginRequiringWithReason:
+- endRequiringWithReason:
+- legibilitySettingsForVariant:
+- setHomescreenStyle:forPriority:withAnimationFactory:
+- setLockscreenStyle:forPriority:withAnimationFactory:
+- removeHomescreenStyleForPriority:withAnimationFactory:
+- removeLockscreenStyleForPriority:withAnimationFactory:
+- homescreenWallpaperScale
+- previewCache
+- setActiveOrientationSource:andUpdateToOrientation:
+- suspendColorSamplingForReason:
+- resumeColorSamplingForReason:
+- averageColorInRect:forVariant:
+- setDisallowsRasterization:forVariant:withReason:
+- setLockscreenStyleTransitionState:forPriority:withAnimationFactory:
+- suspendWallpaperAnimationForReason:
+- resumeWallpaperAnimationForReason:
+- initWithOrientation:variant:
+- _updateWallpaperForLocations:withCompletion:
+- _updateScreenBlanked
+- _motionEffectsChanged
+- _accessibilityEnhanceBackgroundContrastChanged:
+- _endSuspendingMotionEffectsForBlurIfNeeded
+- setVariant:withOutAnimationFactory:inAnimationFactory:completion:
+- _shouldSuspendMotionEffectsForState:
+- _updateMotionEffectsForState:
+- _updateWallpaperHidden
+- setHomescreenStyleTransitionState:forPriority:withAnimationFactory:
+- _updateEffectViewForVariant:withFactory:
+- _suspendOrResumeColorSampling
+- _suspendOrResumeWallpaperAnimation
+- averageColorInRect:forVariant:withSmudgeRadius:
+- _wallpaperViewForVariant:
+- averageColorForVariant:
+- _createHomescreenLightForegroundBlurColorIfNecessary
+- _setDisallowRasterization:withReason:reasons:
+- variantsShareWallpaper
+- _updateSharedWallpaper
+- _updateSeparateWallpaper
+- setHomescreenWallpaperScale:
+- setLockscreenWallpaperScale:
+- setLockscreenOnlyWallpaperAlpha:
+- _updateBlurGeneration
+- _clearWallpaperView:
+- _newWallpaperViewForProcedural:orImage:
+- _handleWallpaperChangedForVariant:
+- _setWallpaperHidden:variant:reason:
+- _beginSuspendingMotionEffectsForBlurIfNeeded
+- _newWallpaperEffectViewForVariant:transitionState:
+- _clearWallpaperEffectView:
+- _clearHomescreenLightForegroundBlurColor
+- _observersForVariant:
+- _reconfigureBlurViewsForVariant:
+- _updateBlurImagesForVariant:
+- _blurViewsForVariant:
+- _blurImageObservableForBlurView:sourceView:
+- _isRasterizationDisallowedForCurrentVariant
+- _isAcceptingOrientationChangesFromSource:
+- _handleWallpaperGeometryChangedForVariant:
+- _handleWallpaperLegibilitySettingsChanged:forVariant:
+- setLockscreenWallpaperContentsRect:
+- currentHomescreenStyleTransitionState
+- setHomescreenStyleForGuidedAccessPriorityWithAnimationFactory:
+- removeHomescreenStyleForGuidedAccessPriorityWithAnimationFactory:
+- homescreenLightForegroundBlurColor
+- homescreenLightForegroundBlurColorPhaseForRect:
+- _registerFakeBlurView:
+- _unregisterFakeBlurView:
+- _sourceForFakeBlurView:
+- _newFakeBlurViewForVariant:
+- _getImageInRect:withZoomFactor:forVariant:style:
+- lockscreenWallpaperScale
+- activeInterfaceOrientationWillChangeToOrientation:
+- activeInterfaceOrientationDidChangeToOrientation:willAnimateWithDuration:fromOrientation:
+- variant
+- dealloc
+- setWindowLevel:
+- windowLevel
+- willAnimateRotationToInterfaceOrientation:duration:
+- wallpaperView:legibilitySettingsDidChange:
+- _updateRasterizationState
+- _beginDisallowRasterizationBlock
+- wallpaperView:didChangeZoomFactor:
+- _endDisallowRasterizationBlock
+- wallpaperViewDidInvalidateBlurs:
+- wallpaperViewDidInvalidateGeometry:
+- wallpaperViewDidChangeWantsRasterization:
+- setVariant:
+@end

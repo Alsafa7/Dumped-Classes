@@ -1,0 +1,71 @@
+@interface WATodayDataProvider : NSObject
+{
+	BOOL _isReachable;
+	id _lastBulletin;
+	id _city;
+	id _reachabilityTimer;
+}
+
++ setIsReachable:
++ cleanupUpdaters
++ becameReachable
++ updateForCity:
++ newTodayRequest
++ lastBulletin
++ setLastBulletin:
++ setReachabilityTimer:
++ reachabilityTimer
++ prepareToRefreshWeather
++ cleanupSharedManagers
++ setupLocationControllers
++ _cleanupReachabilityTimer
++ refreshForUnitsChange
++ prepareToDisplay
++ applyDeferredUnreachablityUpdate
++ _applyDeferredReachablityUpdate:
++ city
++ setCity:
++ dealloc
++ init
++ sectionIdentifier
++ bulletinsWithRequestParameters:lastCleared:
++ defaultSectionInfo
++ _reachabilityChanged:
++ isReachable
++ locationManager:didUpdateLocations:
++ locationManager:didChangeAuthorizationStatus:
++ sortDescriptors
++ ubiquitousDefaultsDidChange:
++ resetLocale
+- setIsReachable:
+- cleanupUpdaters
+- becameReachable
+- updateForCity:
+- newTodayRequest
+- lastBulletin
+- setLastBulletin:
+- setReachabilityTimer:
+- reachabilityTimer
+- prepareToRefreshWeather
+- cleanupSharedManagers
+- setupLocationControllers
+- _cleanupReachabilityTimer
+- refreshForUnitsChange
+- prepareToDisplay
+- applyDeferredUnreachablityUpdate
+- _applyDeferredReachablityUpdate:
+- city
+- setCity:
+- dealloc
+- init
+- sectionIdentifier
+- bulletinsWithRequestParameters:lastCleared:
+- defaultSectionInfo
+- _reachabilityChanged:
+- isReachable
+- locationManager:didUpdateLocations:
+- locationManager:didChangeAuthorizationStatus:
+- sortDescriptors
+- ubiquitousDefaultsDidChange:
+- resetLocale
+@end

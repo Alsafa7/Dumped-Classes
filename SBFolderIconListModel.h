@@ -1,0 +1,6 @@
+@interface SBFolderIconListModel : SBIconListModel
+{
+
+}
+
+@end

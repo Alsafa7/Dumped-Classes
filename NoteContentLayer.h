@@ -1,0 +1,103 @@
+@interface NoteContentLayer : UIView
+{
+	id _textView;
+	id _delegate;
+	BOOL _containsCJK;
+	BOOL _updatedTitleRange;
+	bit[1] _handlingMouseUp;
+	double _scrollingAdjustmentForKeyboard;
+	double _savedBottomContentInsetWithoutKeyboard;
+	id _dateLabel;
+}
+
++ handleKeyboardShow:
++ containsCJK
++ scrollView:setContentOffset:
++ contentContainsNonWhitespaceCharacters
++ setTimestampDate:
++ reloadInterface
++ contentAsPlainText:
++ setContent:isPlainText:isCJK:
++ updateMarginsForOrientation:
++ _topBodyTextInsetForOrientation:
++ frameForProposedTextViewFrame:
++ newNotesWebPreferences
++ _insetsForRect:orientation:
++ resetTextViewFrame
++ handleKeyboardDidHide:
++ handleKeyboardWillHide:
++ layoutDateLabel
++ forcedSetContainsCJK:
++ initWithFrame:
++ dealloc
++ setDelegate:
++ layoutSubviews
++ scrollViewWillBeginDragging:
++ delegate
++ resignFirstResponder
++ becomeFirstResponder
++ _automationID
++ setContentOffset:
++ contentOffset
++ setScrollIndicatorInsets:
++ flashScrollIndicators
++ title
++ setEditable:
++ textViewDidBeginEditing:
++ textViewDidEndEditing:
++ textViewShouldBeginEditing:
++ textView:shouldChangeTextInRange:replacementText:
++ textViewDidChange:
++ editable
++ textView
++ _bottomInset
++ scrollToTop
++ setContainsCJK:
++ .cxx_destruct
++ summary
+- handleKeyboardShow:
+- containsCJK
+- scrollView:setContentOffset:
+- contentContainsNonWhitespaceCharacters
+- setTimestampDate:
+- reloadInterface
+- contentAsPlainText:
+- setContent:isPlainText:isCJK:
+- updateMarginsForOrientation:
+- _topBodyTextInsetForOrientation:
+- frameForProposedTextViewFrame:
+- newNotesWebPreferences
+- _insetsForRect:orientation:
+- resetTextViewFrame
+- handleKeyboardDidHide:
+- handleKeyboardWillHide:
+- layoutDateLabel
+- forcedSetContainsCJK:
+- initWithFrame:
+- dealloc
+- setDelegate:
+- layoutSubviews
+- scrollViewWillBeginDragging:
+- delegate
+- resignFirstResponder
+- becomeFirstResponder
+- _automationID
+- setContentOffset:
+- contentOffset
+- setScrollIndicatorInsets:
+- flashScrollIndicators
+- title
+- setEditable:
+- textViewDidBeginEditing:
+- textViewDidEndEditing:
+- textViewShouldBeginEditing:
+- textView:shouldChangeTextInRange:replacementText:
+- textViewDidChange:
+- editable
+- textView
+- _bottomInset
+- scrollToTop
+- setContainsCJK:
+- .cxx_destruct
+- summary
+@end

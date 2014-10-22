@@ -1,0 +1,83 @@
+@interface MCEASAccountPayload : MCEmailAccountPayloadBase
+{
+	id _accountDescription;
+	id _hostname;
+	id _username;
+	id _password;
+	id _emailAddress;
+	BOOL _useSSL;
+	id _mailNumberOfPastDaysToSync;
+	id _embeddedCertificate;
+	id _embeddedCertificateName;
+	id _embeddedCertificatePassword;
+	id _certificateUUID;
+	id _accountPersistentUUID;
+	id _certificatePersistentID;
+	BOOL _syncDefaultFoldersOnly;
+}
+
++ handlerWithProfileHandler:
++ password
++ setPassword:
++ description
++ title
++ setEmailAddress:
++ useSSL
++ syncDefaultFoldersOnly
++ accountPersistentUUID
++ initWithDictionary:profile:outError:
++ stubDictionary
++ subtitle1Label
++ subtitle1Description
++ subtitle2Label
++ subtitle2Description
++ certificatePersistentID
++ setCertificatePersistentID:
++ certificateUUID
++ setAccountPersistentUUID:
++ hasCertificate
++ embeddedCertificate
++ embeddedCertificateName
++ embeddedCertificatePassword
++ setEmbeddedCertificatePassword:
++ setSyncDefaultFoldersOnly:
++ accountDescription
++ setUsername:
++ emailAddress
++ mailNumberOfPastDaysToSync
++ username
++ .cxx_destruct
++ hostname
+- handlerWithProfileHandler:
+- password
+- setPassword:
+- description
+- title
+- setEmailAddress:
+- useSSL
+- syncDefaultFoldersOnly
+- accountPersistentUUID
+- initWithDictionary:profile:outError:
+- stubDictionary
+- subtitle1Label
+- subtitle1Description
+- subtitle2Label
+- subtitle2Description
+- certificatePersistentID
+- setCertificatePersistentID:
+- certificateUUID
+- setAccountPersistentUUID:
+- hasCertificate
+- embeddedCertificate
+- embeddedCertificateName
+- embeddedCertificatePassword
+- setEmbeddedCertificatePassword:
+- setSyncDefaultFoldersOnly:
+- accountDescription
+- setUsername:
+- emailAddress
+- mailNumberOfPastDaysToSync
+- username
+- .cxx_destruct
+- hostname
+@end

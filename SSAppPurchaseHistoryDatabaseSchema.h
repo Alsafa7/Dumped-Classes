@@ -1,0 +1,6 @@
+@interface SSAppPurchaseHistoryDatabaseSchema : NSObject
+{
+
+}
+
+@end

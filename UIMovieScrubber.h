@@ -1,0 +1,234 @@
+@interface UIMovieScrubber : UIControl
+{
+	id _thumbView;
+	id _trackView;
+	id _editingView;
+	id _elapsedLabel;
+	id _remainingLabel;
+	int _timeComponents;
+	id _fillImage;
+	id _innerShadowImage;
+	id _maskImage;
+	id _shadowImage;
+	id _dataSource;
+	id _delegate;
+	struct _trackRect;
+	double _hitOffset;
+	double _zoomDelay;
+	BOOL _showTimeViews;
+	BOOL _editable;
+	double _value;
+	double _maximumValue;
+	double _minimumValue;
+	struct _touchLocationWhenTrackPressBegan;
+	double _trimStartValue;
+	double _trimEndValue;
+	double _minTrimmedLength;
+	double _maxTrimmedLength;
+	double _zoomAnimationDuration;
+	double _zoomAnimationDelay;
+	struct _sliderFlags;
+	double _edgeInset;
+}
+
++ initWithFrame:
++ dealloc
++ setDataSource:
++ setDelegate:
++ didMoveToWindow
++ reloadData
++ init
++ setFrame:
++ layoutSubviews
++ sizeThatFits:
++ dataSource
++ delegate
++ duration
++ setDuration:
++ touchesCancelled:withEvent:
++ isEditable
++ setValue:
++ scriptingInfoWithChildren
++ cancelTouchTracking
++ value
++ didMoveToSuperview
++ _alwaysHandleScrollerMouseEvent
++ _scriptingInfo
++ intrinsicContentSize
++ isEditing
++ setEditing:animated:
++ setEditing:
++ beginTrackingWithTouch:withEvent:
++ _controlTouchBegan:withEvent:
++ continueTrackingWithTouch:withEvent:
++ _controlTouchMoved:withEvent:
++ endTrackingWithTouch:withEvent:
++ _controlTouchEnded:withEvent:
++ _sendDelayedActions
++ setEditable:
++ _initSubviews
++ setValue:animated:
++ _sliderAnimationWillStart:context:
++ _sliderAnimationDidStop:finished:context:
++ _setValue:andSendAction:
++ isContinuous
++ setContinuous:
++ isAnimatingValueChange
++ movieScrubberTrackView:clampedSizeWidthDelta:actualSizeWidthDelta:originXDelta:minimumVisibleValue:maximumVisibleValue:
++ movieScrubberTrackViewDidExpand:
++ movieScrubberTrackViewDidCollapse:
++ movieScrubberTrackViewWillBeginRequestingThumbnails:
++ movieScrubberTrackViewDidFinishRequestingThumbnails:
++ movieScrubberTrackViewZoomAnimationDuration:
++ movieScrubberTrackViewZoomAnimationDelay:
++ movieScrubberTrackView:requestThumbnailImageForTimestamp:isSummaryThumbnail:
++ movieScrubberTrackViewThumbnailAspectRatio:
++ movieScrubberTrackViewDuration:
++ movieScrubberTrackView:evenlySpacedTimestamps:startingAt:endingAt:
++ isInsideNavigationBar
++ setThumbnailImage:forTimestamp:
++ setZoomAnimationDuration:
++ _sliderValueDidChange:
++ _editingRect
++ setEdgeInset:
++ _trimAnimationDidStop:finished:context:
++ setThumbIsVisible:
++ _editingRectForStartTime:endTime:
++ _cancelTrackPress:
++ animateCancelEdit
++ _animateAfterEdit:
++ _computeTrackRectForBounds:
++ trackRect
++ _updateTimes
++ _updateThumbLocation
++ thumbRectForValue:
++ setTrimEndValue:
++ setTrimStartValue:
++ _trackPressWasHeld
++ _setZoomAnimating:
++ setRotationDisabled:
++ pointInsideThumb:withEvent:
++ _editingHandleWithTouch:
++ _valueForTouch:
++ _beginTrackPressWithTouch:touchesBegan:
++ _cancelTrackPressIfNeccessaryWithTouch:
++ thumbIsVisible
++ animateAfterEdit
++ alignmentMargins
++ trimStartValue
++ trimEndValue
++ forceZoom
++ forceUnzoom
++ zoomMinimumValue
++ zoomMaximumValue
++ isZoomAnimating
++ zoomDelay
++ setZoomDelay:
++ showTimeViews
++ setShowTimeViews:
++ maximumTrimLength
++ setMaximumTrimLength:
++ minimumTrimLength
++ setMinimumTrimLength:
++ edgeInset
+- initWithFrame:
+- dealloc
+- setDataSource:
+- setDelegate:
+- didMoveToWindow
+- reloadData
+- init
+- setFrame:
+- layoutSubviews
+- sizeThatFits:
+- dataSource
+- delegate
+- duration
+- setDuration:
+- touchesCancelled:withEvent:
+- isEditable
+- setValue:
+- scriptingInfoWithChildren
+- cancelTouchTracking
+- value
+- didMoveToSuperview
+- _alwaysHandleScrollerMouseEvent
+- _scriptingInfo
+- intrinsicContentSize
+- isEditing
+- setEditing:animated:
+- setEditing:
+- beginTrackingWithTouch:withEvent:
+- _controlTouchBegan:withEvent:
+- continueTrackingWithTouch:withEvent:
+- _controlTouchMoved:withEvent:
+- endTrackingWithTouch:withEvent:
+- _controlTouchEnded:withEvent:
+- _sendDelayedActions
+- setEditable:
+- _initSubviews
+- setValue:animated:
+- _sliderAnimationWillStart:context:
+- _sliderAnimationDidStop:finished:context:
+- _setValue:andSendAction:
+- isContinuous
+- setContinuous:
+- isAnimatingValueChange
+- movieScrubberTrackView:clampedSizeWidthDelta:actualSizeWidthDelta:originXDelta:minimumVisibleValue:maximumVisibleValue:
+- movieScrubberTrackViewDidExpand:
+- movieScrubberTrackViewDidCollapse:
+- movieScrubberTrackViewWillBeginRequestingThumbnails:
+- movieScrubberTrackViewDidFinishRequestingThumbnails:
+- movieScrubberTrackViewZoomAnimationDuration:
+- movieScrubberTrackViewZoomAnimationDelay:
+- movieScrubberTrackView:requestThumbnailImageForTimestamp:isSummaryThumbnail:
+- movieScrubberTrackViewThumbnailAspectRatio:
+- movieScrubberTrackViewDuration:
+- movieScrubberTrackView:evenlySpacedTimestamps:startingAt:endingAt:
+- isInsideNavigationBar
+- setThumbnailImage:forTimestamp:
+- setZoomAnimationDuration:
+- _sliderValueDidChange:
+- _editingRect
+- setEdgeInset:
+- _trimAnimationDidStop:finished:context:
+- setThumbIsVisible:
+- _editingRectForStartTime:endTime:
+- _cancelTrackPress:
+- animateCancelEdit
+- _animateAfterEdit:
+- _computeTrackRectForBounds:
+- trackRect
+- _updateTimes
+- _updateThumbLocation
+- thumbRectForValue:
+- setTrimEndValue:
+- setTrimStartValue:
+- _trackPressWasHeld
+- _setZoomAnimating:
+- setRotationDisabled:
+- pointInsideThumb:withEvent:
+- _editingHandleWithTouch:
+- _valueForTouch:
+- _beginTrackPressWithTouch:touchesBegan:
+- _cancelTrackPressIfNeccessaryWithTouch:
+- thumbIsVisible
+- animateAfterEdit
+- alignmentMargins
+- trimStartValue
+- trimEndValue
+- forceZoom
+- forceUnzoom
+- zoomMinimumValue
+- zoomMaximumValue
+- isZoomAnimating
+- zoomDelay
+- setZoomDelay:
+- showTimeViews
+- setShowTimeViews:
+- maximumTrimLength
+- setMaximumTrimLength:
+- minimumTrimLength
+- setMinimumTrimLength:
+- edgeInset
+@end

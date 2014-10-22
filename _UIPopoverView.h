@@ -1,0 +1,116 @@
+@interface _UIPopoverView : UIView
+{
+	id _contentView;
+	id _backgroundView;
+	Class _backgroundViewClass;
+	id _toolbarShine;
+	BOOL _showsBackgroundComponentHighlights;
+	BOOL _showsBackgroundViewHighlight;
+	BOOL _showsContentViewHighlight;
+	id _presentedActionSheet;
+	id _popoverController;
+}
+
++ initWithFrame:
++ dealloc
++ layoutSubviews
++ touchesCancelled:withEvent:
++ touchesBegan:withEvent:
++ touchesMoved:withEvent:
++ touchesEnded:withEvent:
++ contentView
++ _needsLayoutOnAnimatedFrameChangeForNewFrame:
++ willMoveToWindow:
++ _style
++ backgroundView
++ viewController
++ setUseToolbarShine:
++ toolbarShine
++ _allowsCustomizationOfContent
++ setPopoverController:
++ arrowDirection
++ setArrowDirection:
++ _snapshotBounds
++ popoverController
++ setPresentedActionSheet:
++ _isIgnoringTapsInDimmingView
++ _setIgnoreTapsInDimmingView:
++ toolbarIsVisible
++ _presentationInPopoverWillBeginForViewController:
++ _presentationInPopoverWillEndForViewController:
++ _presentationInPopoverDidBeginForViewController:
++ _presentationInPopoverDidEndForViewController:
++ setBackgroundStyle:
++ setArrowOffset:
++ arrowOffset
++ backgroundStyle
++ popoverBackgroundColor
++ setPopoverBackgroundColor:
++ initWithFrame:backgroundViewClass:embeddedInView:
++ standardChromeView
++ initWithFrame:backgroundViewClass:
++ _layoutToolbarShine
++ _setFrame:arrowOffset:
++ _setCornerRadius:
++ _showArrow
++ _hideArrow
++ _viewForModalPresentationOfViewController:
++ showsBackgroundComponentHighlights
++ setShowsBackgroundComponentHighlights:
++ showsBackgroundViewHighlight
++ setShowsBackgroundViewHighlight:
++ showsContentViewHighlight
++ setShowsContentViewHighlight:
++ presentedActionSheet
+- initWithFrame:
+- dealloc
+- layoutSubviews
+- touchesCancelled:withEvent:
+- touchesBegan:withEvent:
+- touchesMoved:withEvent:
+- touchesEnded:withEvent:
+- contentView
+- _needsLayoutOnAnimatedFrameChangeForNewFrame:
+- willMoveToWindow:
+- _style
+- backgroundView
+- viewController
+- setUseToolbarShine:
+- toolbarShine
+- _allowsCustomizationOfContent
+- setPopoverController:
+- arrowDirection
+- setArrowDirection:
+- _snapshotBounds
+- popoverController
+- setPresentedActionSheet:
+- _isIgnoringTapsInDimmingView
+- _setIgnoreTapsInDimmingView:
+- toolbarIsVisible
+- _presentationInPopoverWillBeginForViewController:
+- _presentationInPopoverWillEndForViewController:
+- _presentationInPopoverDidBeginForViewController:
+- _presentationInPopoverDidEndForViewController:
+- setBackgroundStyle:
+- setArrowOffset:
+- arrowOffset
+- backgroundStyle
+- popoverBackgroundColor
+- setPopoverBackgroundColor:
+- initWithFrame:backgroundViewClass:embeddedInView:
+- standardChromeView
+- initWithFrame:backgroundViewClass:
+- _layoutToolbarShine
+- _setFrame:arrowOffset:
+- _setCornerRadius:
+- _showArrow
+- _hideArrow
+- _viewForModalPresentationOfViewController:
+- showsBackgroundComponentHighlights
+- setShowsBackgroundComponentHighlights:
+- showsBackgroundViewHighlight
+- setShowsBackgroundViewHighlight:
+- showsContentViewHighlight
+- setShowsContentViewHighlight:
+- presentedActionSheet
+@end

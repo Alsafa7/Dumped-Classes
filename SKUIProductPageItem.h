@@ -1,0 +1,76 @@
+@interface SKUIProductPageItem : SKUIItem
+{
+	id _artistPageURL;
+	id _contentRatingAdvisories;
+	id _contentRatingName;
+	id _copyrightString;
+	id _developerInfo;
+	BOOL _hasInAppPurchases;
+	id _inAppPurchases;
+	id _installationRequirementsDescription;
+	id _itemDescription;
+	id _lastUpdateDateString;
+	id _licenseAgreementURLString;
+	id _privacyPolicyURLString;
+	id _releaseNotes;
+	id _reviewsURLString;
+	id _screenshots;
+	id _shortenedProductPageURLString;
+	id _storeNotes;
+	long long _supportedFeatures;
+	id _supportURLString;
+	id _trailers;
+	id _updateDescription;
+}
+
++ developerInfo
++ screenshots
++ storeNotes
++ itemDescription
++ updateDescription
++ inAppPurchases
++ releaseNotes
++ supportedFeatures
++ trailers
++ lastUpdateDateString
++ contentRatingName
++ hasInAppPurchases
++ artistPageURL
++ contentRatingAdvisories
++ installationRequirementsDescription
++ _setVersionHistory:
++ _setInAppPurchases:
++ licenseAgreementURLString
++ privacyPolicyURLString
++ reviewsURLString
++ shortenedProductPageURLString
++ supportURLString
++ .cxx_destruct
++ copyrightString
++ initWithLookupDictionary:
+- developerInfo
+- screenshots
+- storeNotes
+- itemDescription
+- updateDescription
+- inAppPurchases
+- releaseNotes
+- supportedFeatures
+- trailers
+- lastUpdateDateString
+- contentRatingName
+- hasInAppPurchases
+- artistPageURL
+- contentRatingAdvisories
+- installationRequirementsDescription
+- _setVersionHistory:
+- _setInAppPurchases:
+- licenseAgreementURLString
+- privacyPolicyURLString
+- reviewsURLString
+- shortenedProductPageURLString
+- supportURLString
+- .cxx_destruct
+- copyrightString
+- initWithLookupDictionary:
+@end

@@ -1,0 +1,6 @@
+@interface SBAppWindow : SBWindow
+{
+
+}
+
+@end

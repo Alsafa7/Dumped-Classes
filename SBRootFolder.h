@@ -1,0 +1,70 @@
+@interface SBRootFolder : SBFolder
+{
+	id _dock;
+}
+
++ listContainingLeafIconWithIdentifier:
++ removeEmptyList:
++ nodeIdentifier
++ containsNodeIdentifier:
++ iconsOfClass:
++ dockModel
++ resetWithRepresentation:model:leafIdentifiersAdded:
++ placeIconsOnFirstPage:
++ isIconStateDirty
++ markIconStateClean
++ containedNodeIdentifiers
++ indexPathsForContainedNodeIdentifier:prefixPath:
++ nodesAlongIndexPath:consumedIndexes:
++ nodeDescriptionWithPrefix:
++ node:didAddContainedNodeIdentifiers:
++ node:didRemoveContainedNodeIdentifiers:
++ indexOfList:
++ _listsForCompaction
++ listModelClass
++ listViewClass
++ list:didAddContainedNodeIdentifiers:
++ list:didRemoveContainedNodeIdentifiers:
++ controllerClass
++ canRemoveIcons
++ canEditDisplayName
++ listContainingIcon:
++ _notifyIndexChange:identifiers:withValidationBlock:
++ dealloc
++ init
++ representation
++ listAtIndex:
++ folderType
+- listContainingLeafIconWithIdentifier:
+- removeEmptyList:
+- nodeIdentifier
+- containsNodeIdentifier:
+- iconsOfClass:
+- dockModel
+- resetWithRepresentation:model:leafIdentifiersAdded:
+- placeIconsOnFirstPage:
+- isIconStateDirty
+- markIconStateClean
+- containedNodeIdentifiers
+- indexPathsForContainedNodeIdentifier:prefixPath:
+- nodesAlongIndexPath:consumedIndexes:
+- nodeDescriptionWithPrefix:
+- node:didAddContainedNodeIdentifiers:
+- node:didRemoveContainedNodeIdentifiers:
+- indexOfList:
+- _listsForCompaction
+- listModelClass
+- listViewClass
+- list:didAddContainedNodeIdentifiers:
+- list:didRemoveContainedNodeIdentifiers:
+- controllerClass
+- canRemoveIcons
+- canEditDisplayName
+- listContainingIcon:
+- _notifyIndexChange:identifiers:withValidationBlock:
+- dealloc
+- init
+- representation
+- listAtIndex:
+- folderType
+@end

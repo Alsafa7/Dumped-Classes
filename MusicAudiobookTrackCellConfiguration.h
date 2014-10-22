@@ -1,0 +1,6 @@
+@interface MusicAudiobookTrackCellConfiguration : MusicCellConfiguration
+{
+
+}
+
+@end

@@ -1,0 +1,68 @@
+@interface MCGlobalHTTPProxyPayload : MCPayload
+{
+	BOOL _proxyPACFallbackAllowed;
+	BOOL _proxyCaptiveLoginAllowed;
+	int _proxyType;
+	id _proxyServer;
+	id _proxyServerPort;
+	id _proxyUsername;
+	id _proxyPassword;
+	id _proxyPACURLString;
+	id _credentialUUID;
+}
+
++ handlerWithProfileHandler:
++ proxyType
++ description
++ initWithDictionary:profile:outError:
++ stubDictionary
++ subtitle1Label
++ subtitle1Description
++ subtitle2Label
++ subtitle2Description
++ proxyServer
++ setProxyServer:
++ setProxyType:
++ proxyServerPort
++ proxyUsername
++ proxyPassword
++ proxyPACURLString
++ proxyPACFallbackAllowed
++ setProxyServerPort:
++ setProxyUsername:
++ setProxyPassword:
++ setProxyPACURLString:
++ setProxyPACFallbackAllowed:
++ credentialUUID
++ setCredentialUUID:
++ proxyCaptiveLoginAllowed
++ setProxyCaptiveLoginAllowed:
++ .cxx_destruct
+- handlerWithProfileHandler:
+- proxyType
+- description
+- initWithDictionary:profile:outError:
+- stubDictionary
+- subtitle1Label
+- subtitle1Description
+- subtitle2Label
+- subtitle2Description
+- proxyServer
+- setProxyServer:
+- setProxyType:
+- proxyServerPort
+- proxyUsername
+- proxyPassword
+- proxyPACURLString
+- proxyPACFallbackAllowed
+- setProxyServerPort:
+- setProxyUsername:
+- setProxyPassword:
+- setProxyPACURLString:
+- setProxyPACFallbackAllowed:
+- credentialUUID
+- setCredentialUUID:
+- proxyCaptiveLoginAllowed
+- setProxyCaptiveLoginAllowed:
+- .cxx_destruct
+@end

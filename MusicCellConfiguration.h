@@ -1,0 +1,6 @@
+@interface MusicCellConfiguration : MPUCellConfiguration
+{
+
+}
+
+@end

@@ -1,0 +1,282 @@
+@interface WiFiManager : NSObject
+{
+	pointer _manager;
+	pointer _device;
+	pointer _store;
+	pointer _prefs;
+	id _interfaceName;
+	id _dynamicStoreKeys;
+	id _ipv4StateKey;
+	id _ipv6StateKey;
+	id _current;
+	pointer _currentWiFiNetworkRef;
+	id _currentNetworkScanDict;
+	id _configurationDict;
+	id _networks;
+	id _favorites;
+	id _favoritesArray;
+	id _customSettings;
+	id _managedNetworkNames;
+	id _networksInCurrentScan;
+	id _hiddenFavoritesQueue;
+	BOOL _isConnected;
+	BOOL _enabled;
+	int _autojoin;
+	BOOL _associating;
+	BOOL _joiningEnterprise;
+	BOOL _isDirty;
+	BOOL _shouldScan;
+	BOOL _initialPowerOnScan;
+	BOOL _haveValidIPv4Address;
+	id _scanList;
+	int _rssiThreshold;
+	int _scanningMode;
+	id _joinNetwork;
+	id _scanForHiddenNetwork;
+	id _deferredJoin;
+	unsigned int _consecutiveScanFailures;
+	unsigned int _enterpriseAssociationAttempts;
+	BOOL _settingScanResults;
+	int _supportsWAPI;
+	BOOL _globalProxyEnabled;
+	BOOL _hs20Supported;
+	BOOL _hs20ProfilesInstalled;
+	id _hs20LabelDict;
+	id _captivePlugInDict;
+	BOOL _networkSyncingEnabled;
+	BOOL _waitingForCircleStatusCheck;
+}
+
++ _setScanResults:
++ _initDynamicStoreMonitor
++ _getCurrentNetworkInfo
++ _copyAutojoinPropertiesToNetwork:
++ _scanListForChannels:
++ _scanListForNetworks:
++ _scanDictForChannels:andNetworks:
++ _addNetworkForDictionary:
++ _associationAttemptFinishedWithError:onNetwork:
++ _forgetWiFiNetwork:
++ _forgetNetworkWithSSID:
++ _setupNewSetForNetwork:
++ _storeCustomSettingsForNetwork:
++ _applySetForCurrentNetwork
++ _loadCustomSettingsForNetwork:
++ _interfaceName
++ _loadFavorites
++ _postEnterpriseNotification:
++ _checkIsCurrentNetwork:
++ _updateAutojoinInformation
++ _loadCustomSettings
++ _updateHiddenFavoritesQueue
++ _checkCloudNetworkSyncStatus
++ _logScanResults:
++ _checkForGasQueries
++ _refreshHs20LabeledNetworks:
++ _scanCompletedWithResults:
++ _networkFromDictionary:
++ _dynamicStoreChanged:
++ _deleteSetForNetworkWithSSID:
++ _createNewSetForNetwork:
++ _defaultSetRetained
++ _setForNetwork:
++ _applyCustomProxySettings:forService:
++ _resetDynamicStoreMonitor
++ _delayedPerformSelector:
++ _currentNetwork
++ _arrayFromCommaSeparatedString:
++ _enterpriseAssociationResult:withInfo:
++ _scanFailedWithError:
++ _gasQueryCompletedWithResults:
++ _setIPv4StateKey:
++ _linkChangedWithDict:
++ _linkChanged
++ _powerChanged
++ _deleteSetForNetwork:
++ _postNotificationName:
++ _delayedPerformSelectorOnMainThread:withObject:
++ _load
++ store
++ dealloc
++ init
++ setEnabled:
++ enabled
++ wifiIsTethering
++ currentNetwork:
++ currentCachedNetwork
++ canSupportWAPI
++ forgetNetwork:
++ isNetworkCloudSynced:
++ renewLease
++ loadCustomSettingsForNetwork:
++ canForgetNetwork:
++ canSetAutoJoin:
++ canSetAutoLogin:
++ globalProxyEnabled
++ saveCustomSettingsForNetwork:
++ setAutoJoin:forNetwork:
++ networkEnabled:
++ setAutoLogin:forNetwork:
++ autoLogin:
++ loadConfiguration
++ knownNetworks
++ disablePersonalHotspot
++ personalHotspotHasClients
++ availableNetworks
++ autojoinMode
++ setAutojoinMode:
++ beginCaptivePlugInScan
++ endCaptivePlugInScan
++ removeNetworkNamed:
++ setShouldScan:
++ scanForNetwork:
++ cancelEnterpriseTrust:forUser:
++ cleanupNetworks
++ joinNetwork:isHidden:
++ joinNetwork:
++ attemptEnterpriseAssociation
++ acceptEnterpriseTrust:
++ cancelEnterpriseAssociation
++ relayCircleStatusCheck:
++ findEqualKnownWiFiNetworks:
++ _cancelEnterpriseAssociation
++ _scanForHiddenNetwork:
++ setWiFiTetheringOff
++ getSCRef
++ isCaptive:
++ isPreferredAdhocNetwork:
++ findEqualKnownNetworks:
++ haveValidIPv6
++ labelForNetwork:
++ scanning
++ currentNetworkInfo
++ currentNetworkStrength
++ asyncCircleStatusCheck:
++ disconnectFromCurrentNetwork
++ forgetNetworkName:
++ movedKnownNetworkAtIndex:toIndex:
++ findMatchingSSIDKnownNetworks:
++ haveValidIP
++ haveValidIPv4OrIPv6AddressForNetwork:
++ isAssociatingToNetwork:
++ isAssociating
++ deviceSupportsHS20
++ releaseResources:
++ connected
+- _setScanResults:
+- _initDynamicStoreMonitor
+- _getCurrentNetworkInfo
+- _copyAutojoinPropertiesToNetwork:
+- _scanListForChannels:
+- _scanListForNetworks:
+- _scanDictForChannels:andNetworks:
+- _addNetworkForDictionary:
+- _associationAttemptFinishedWithError:onNetwork:
+- _forgetWiFiNetwork:
+- _forgetNetworkWithSSID:
+- _setupNewSetForNetwork:
+- _storeCustomSettingsForNetwork:
+- _applySetForCurrentNetwork
+- _loadCustomSettingsForNetwork:
+- _interfaceName
+- _loadFavorites
+- _postEnterpriseNotification:
+- _checkIsCurrentNetwork:
+- _updateAutojoinInformation
+- _loadCustomSettings
+- _updateHiddenFavoritesQueue
+- _checkCloudNetworkSyncStatus
+- _logScanResults:
+- _checkForGasQueries
+- _refreshHs20LabeledNetworks:
+- _scanCompletedWithResults:
+- _networkFromDictionary:
+- _dynamicStoreChanged:
+- _deleteSetForNetworkWithSSID:
+- _createNewSetForNetwork:
+- _defaultSetRetained
+- _setForNetwork:
+- _applyCustomProxySettings:forService:
+- _resetDynamicStoreMonitor
+- _delayedPerformSelector:
+- _currentNetwork
+- _arrayFromCommaSeparatedString:
+- _enterpriseAssociationResult:withInfo:
+- _scanFailedWithError:
+- _gasQueryCompletedWithResults:
+- _setIPv4StateKey:
+- _linkChangedWithDict:
+- _linkChanged
+- _powerChanged
+- _deleteSetForNetwork:
+- _postNotificationName:
+- _delayedPerformSelectorOnMainThread:withObject:
+- _load
+- store
+- dealloc
+- init
+- setEnabled:
+- enabled
+- wifiIsTethering
+- currentNetwork:
+- currentCachedNetwork
+- canSupportWAPI
+- forgetNetwork:
+- isNetworkCloudSynced:
+- renewLease
+- loadCustomSettingsForNetwork:
+- canForgetNetwork:
+- canSetAutoJoin:
+- canSetAutoLogin:
+- globalProxyEnabled
+- saveCustomSettingsForNetwork:
+- setAutoJoin:forNetwork:
+- networkEnabled:
+- setAutoLogin:forNetwork:
+- autoLogin:
+- loadConfiguration
+- knownNetworks
+- disablePersonalHotspot
+- personalHotspotHasClients
+- availableNetworks
+- autojoinMode
+- setAutojoinMode:
+- beginCaptivePlugInScan
+- endCaptivePlugInScan
+- removeNetworkNamed:
+- setShouldScan:
+- scanForNetwork:
+- cancelEnterpriseTrust:forUser:
+- cleanupNetworks
+- joinNetwork:isHidden:
+- joinNetwork:
+- attemptEnterpriseAssociation
+- acceptEnterpriseTrust:
+- cancelEnterpriseAssociation
+- relayCircleStatusCheck:
+- findEqualKnownWiFiNetworks:
+- _cancelEnterpriseAssociation
+- _scanForHiddenNetwork:
+- setWiFiTetheringOff
+- getSCRef
+- isCaptive:
+- isPreferredAdhocNetwork:
+- findEqualKnownNetworks:
+- haveValidIPv6
+- labelForNetwork:
+- scanning
+- currentNetworkInfo
+- currentNetworkStrength
+- asyncCircleStatusCheck:
+- disconnectFromCurrentNetwork
+- forgetNetworkName:
+- movedKnownNetworkAtIndex:toIndex:
+- findMatchingSSIDKnownNetworks:
+- haveValidIP
+- haveValidIPv4OrIPv6AddressForNetwork:
+- isAssociatingToNetwork:
+- isAssociating
+- deviceSupportsHS20
+- releaseResources:
+- connected
+@end

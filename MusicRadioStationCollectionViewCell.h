@@ -1,0 +1,90 @@
+@interface MusicRadioStationCollectionViewCell : UICollectionViewCell
+{
+	id _imageTintView;
+	BOOL _adjustsArtworkImageWhenHighlighted;
+	BOOL _displaysAsStack;
+	BOOL _nowPlaying;
+	id _artworkImage;
+	id _emphasizedTextAttributes;
+	id _imageRequest;
+	id _regularTextAttributes;
+	id _title;
+	id _stackView;
+	id _titleLabel;
+}
+
++ artworkImage
++ initWithFrame:
++ dealloc
++ setFrame:
++ layoutSubviews
++ setBounds:
++ setTitle:
++ setCenter:
++ tintColorDidChange
++ title
++ titleLabel
++ setHighlighted:
++ setSelected:
++ setArtworkImage:
++ applyAttributesForInterfaceOrientation:
++ stackView:applyAttributesToItem:atIndex:
++ isNowPlaying
++ setNowPlaying:
++ setDisplaysAsStack:
++ setRegularTextAttributes:emphasizedTextAttributes:
++ setAdjustsArtworkImageWhenHighlighted:
++ setImageRequest:
++ imageRequest
++ displaysAsStack
++ performCompressionAnimationWithCompletionHandler:
++ performInsertionAnimationWithCompletionHandler:
++ _updateImageTintView
++ _updateAttributedTitle
++ stackBaseSize
++ numberOfItemsInStackView:
++ stackView:didCreateItem:
++ setStackBaseSize:
++ adjustsArtworkImageWhenHighlighted
++ emphasizedTextAttributes
++ regularTextAttributes
++ stackView
++ .cxx_destruct
+- artworkImage
+- initWithFrame:
+- dealloc
+- setFrame:
+- layoutSubviews
+- setBounds:
+- setTitle:
+- setCenter:
+- tintColorDidChange
+- title
+- titleLabel
+- setHighlighted:
+- setSelected:
+- setArtworkImage:
+- applyAttributesForInterfaceOrientation:
+- stackView:applyAttributesToItem:atIndex:
+- isNowPlaying
+- setNowPlaying:
+- setDisplaysAsStack:
+- setRegularTextAttributes:emphasizedTextAttributes:
+- setAdjustsArtworkImageWhenHighlighted:
+- setImageRequest:
+- imageRequest
+- displaysAsStack
+- performCompressionAnimationWithCompletionHandler:
+- performInsertionAnimationWithCompletionHandler:
+- _updateImageTintView
+- _updateAttributedTitle
+- stackBaseSize
+- numberOfItemsInStackView:
+- stackView:didCreateItem:
+- setStackBaseSize:
+- adjustsArtworkImageWhenHighlighted
+- emphasizedTextAttributes
+- regularTextAttributes
+- stackView
+- .cxx_destruct
+@end

@@ -1,0 +1,304 @@
+@interface UINavigationItem : NSObject
+{
+	id _title;
+	id _backButtonTitle;
+	id _backBarButtonItem;
+	id _prompt;
+	long long _tag;
+	id _context;
+	id _navigationBar;
+	id _defaultTitleView;
+	id _titleView;
+	id _backButtonView;
+	id _leftBarButtonItems;
+	id _rightBarButtonItems;
+	id _customLeftViews;
+	id _customRightViews;
+	BOOL _hidesBackButton;
+	BOOL _leftItemsSupplementBackButton;
+	id _frozenTitleView;
+	BOOL _barStyleIndependent;
+	double _fontScaleAdjustment;
+	id _pendingTitle;
+	id _abbreviatedBackButtonTitles;
+	long long _independentBarStyle;
+	id _leftItemSpaceList;
+	id _rightItemSpaceList;
+	usigned long long _leftFlexibleSpaceCount;
+	usigned long long _rightFlexibleSpaceCount;
+	id _backgroundImages;
+	double __titleViewWidthForAnimations;
+	double __idealCustomTitleWidth;
+}
+
++ dealloc
++ initWithCoder:
++ encodeWithCoder:
++ init
++ setTitle:
++ navigationBar
++ hidesBackButton
++ leftBarButtonItems
++ leftItemsSupplementBackButton
++ _automationID
++ setTag:
++ context
++ tag
++ _setFontScaleAdjustment:
++ existingBackButtonView
++ initWithTitle:
++ _removeTitleAndButtonViews
++ _setCustomLeftViews:
++ _setCustomRightViews:
++ _setLeftBarButtonItems:
++ _setRightBarButtonItems:
++ _setLeftItemSpaceList:
++ _setRightItemSpaceList:
++ _cleanupFrozenTitleView
++ _setPendingTitle:
++ _freezeCurrentTitleView
++ _setTitleAnimationDidStop:finished:context:
++ _setTitle:animated:matchBarButtonItemAnimationDuration:
++ backButtonView
++ _setBackButtonTitle:lineBreakMode:
++ _removeBackButtonView
++ title
++ backButtonTitle
++ setFont:
++ font
++ rightBarButtonItems
++ titleView
++ _setIdealCustomTitleWidth:
++ _customLeftViews
++ _customRightViews
++ setHidesBackButton:animated:
++ _setLeftBarButtonItem:
++ _setRightBarButtonItem:
++ _setCustomRightView:
++ _setCustomLeftView:
++ updateNavigationBarButtonsAnimated:
++ _leftBarButtonItem
++ setLeftBarButtonItem:animated:
++ setObject:forLeftRightKeyPath:animated:
++ _rightBarButtonItem
++ setRightBarButtonItem:animated:
++ _accumulateViewsFromItems:isLeft:refreshViews:
++ _customLeftViewsCreating:
++ _customLeftViewCreating:
++ _customRightViewCreating:
++ _customRightViewsCreating:
++ _setCustomLeftRightView:left:
++ _customLeftView
++ setCustomLeftView:animated:
++ _customRightView
++ setCustomRightView:animated:
++ setLeftBarButtonItems:animated:
++ setRightBarButtonItems:animated:
++ _setLeftFlexibleSpaceCount:
++ _setRightFlexibleSpaceCount:
++ setTitleView:
++ setLeftBarButtonItem:
++ leftBarButtonItem
++ setRightBarButtonItem:
++ rightBarButtonItem
++ _firstNonSpaceItemInList:
++ _setBarStyleIndependent:
++ _backgroundImages
++ _setAbbreviatedBackButtonTitles:
++ _setBackButtonPressed:
++ setNavigationBar:
++ _setTitle:animated:
++ setBackButtonTitle:
++ setBackBarButtonItem:
++ currentBackButtonTitle
++ backBarButtonItem
++ width
++ setWidth:
++ setContext:
++ _removeBarButtonItemViews
++ _replaceCustomLeftRightViewAtIndex:withView:left:
++ prompt
++ setPrompt:
++ _updateItemsForLetterpressImagesVisualStateIfNecessary
++ setHidesBackButton:
++ set_leftBarButtonItem:
++ set_rightBarButtonItem:
++ set_customRightView:
++ set_customLeftView:
++ set_rightBarButtonItems:
++ set_leftBarButtonItems:
++ set_customLeftViews:
++ set_customRightViews:
++ customLeftView
++ setCustomLeftView:
++ customRightView
++ setCustomRightView:
++ setLeftBarButtonItems:
++ setRightBarButtonItems:
++ _rightBarButtonItems
++ _leftBarButtonItems
++ setLeftItemsSupplementBackButton:
++ _updateViewsForBarSizeChangeAndApply:
++ _titleView
++ setCustomTitleView:
++ customTitleView
++ setCustomLeftItem:
++ customLeftItem
++ setCustomLeftItem:animated:
++ setCustomRightItem:
++ customRightItem
++ setCustomRightItem:animated:
++ _firstNonSpaceLeftItem
++ _firstNonSpaceRightItem
++ _setIndependentBarStyle:
++ _setIndependentBackgroundImage:shadowImage:forBarMetrics:
++ _independentBackgroundImageForBarMetrics:
++ _independentShadowImage
++ _fontScaleAdjustment
++ _pendingTitle
++ _abbreviatedBackButtonTitles
++ _isBarStyleIndependent
++ _independentBarStyle
++ _leftItemSpaceList
++ _rightItemSpaceList
++ _leftFlexibleSpaceCount
++ _rightFlexibleSpaceCount
++ _titleViewWidthForAnimations
++ set_titleViewWidthForAnimations:
++ _idealCustomTitleWidth
+- dealloc
+- initWithCoder:
+- encodeWithCoder:
+- init
+- setTitle:
+- navigationBar
+- hidesBackButton
+- leftBarButtonItems
+- leftItemsSupplementBackButton
+- _automationID
+- setTag:
+- context
+- tag
+- _setFontScaleAdjustment:
+- existingBackButtonView
+- initWithTitle:
+- _removeTitleAndButtonViews
+- _setCustomLeftViews:
+- _setCustomRightViews:
+- _setLeftBarButtonItems:
+- _setRightBarButtonItems:
+- _setLeftItemSpaceList:
+- _setRightItemSpaceList:
+- _cleanupFrozenTitleView
+- _setPendingTitle:
+- _freezeCurrentTitleView
+- _setTitleAnimationDidStop:finished:context:
+- _setTitle:animated:matchBarButtonItemAnimationDuration:
+- backButtonView
+- _setBackButtonTitle:lineBreakMode:
+- _removeBackButtonView
+- title
+- backButtonTitle
+- setFont:
+- font
+- rightBarButtonItems
+- titleView
+- _setIdealCustomTitleWidth:
+- _customLeftViews
+- _customRightViews
+- setHidesBackButton:animated:
+- _setLeftBarButtonItem:
+- _setRightBarButtonItem:
+- _setCustomRightView:
+- _setCustomLeftView:
+- updateNavigationBarButtonsAnimated:
+- _leftBarButtonItem
+- setLeftBarButtonItem:animated:
+- setObject:forLeftRightKeyPath:animated:
+- _rightBarButtonItem
+- setRightBarButtonItem:animated:
+- _accumulateViewsFromItems:isLeft:refreshViews:
+- _customLeftViewsCreating:
+- _customLeftViewCreating:
+- _customRightViewCreating:
+- _customRightViewsCreating:
+- _setCustomLeftRightView:left:
+- _customLeftView
+- setCustomLeftView:animated:
+- _customRightView
+- setCustomRightView:animated:
+- setLeftBarButtonItems:animated:
+- setRightBarButtonItems:animated:
+- _setLeftFlexibleSpaceCount:
+- _setRightFlexibleSpaceCount:
+- setTitleView:
+- setLeftBarButtonItem:
+- leftBarButtonItem
+- setRightBarButtonItem:
+- rightBarButtonItem
+- _firstNonSpaceItemInList:
+- _setBarStyleIndependent:
+- _backgroundImages
+- _setAbbreviatedBackButtonTitles:
+- _setBackButtonPressed:
+- setNavigationBar:
+- _setTitle:animated:
+- setBackButtonTitle:
+- setBackBarButtonItem:
+- currentBackButtonTitle
+- backBarButtonItem
+- width
+- setWidth:
+- setContext:
+- _removeBarButtonItemViews
+- _replaceCustomLeftRightViewAtIndex:withView:left:
+- prompt
+- setPrompt:
+- _updateItemsForLetterpressImagesVisualStateIfNecessary
+- setHidesBackButton:
+- set_leftBarButtonItem:
+- set_rightBarButtonItem:
+- set_customRightView:
+- set_customLeftView:
+- set_rightBarButtonItems:
+- set_leftBarButtonItems:
+- set_customLeftViews:
+- set_customRightViews:
+- customLeftView
+- setCustomLeftView:
+- customRightView
+- setCustomRightView:
+- setLeftBarButtonItems:
+- setRightBarButtonItems:
+- _rightBarButtonItems
+- _leftBarButtonItems
+- setLeftItemsSupplementBackButton:
+- _updateViewsForBarSizeChangeAndApply:
+- _titleView
+- setCustomTitleView:
+- customTitleView
+- setCustomLeftItem:
+- customLeftItem
+- setCustomLeftItem:animated:
+- setCustomRightItem:
+- customRightItem
+- setCustomRightItem:animated:
+- _firstNonSpaceLeftItem
+- _firstNonSpaceRightItem
+- _setIndependentBarStyle:
+- _setIndependentBackgroundImage:shadowImage:forBarMetrics:
+- _independentBackgroundImageForBarMetrics:
+- _independentShadowImage
+- _fontScaleAdjustment
+- _pendingTitle
+- _abbreviatedBackButtonTitles
+- _isBarStyleIndependent
+- _independentBarStyle
+- _leftItemSpaceList
+- _rightItemSpaceList
+- _leftFlexibleSpaceCount
+- _rightFlexibleSpaceCount
+- _titleViewWidthForAnimations
+- set_titleViewWidthForAnimations:
+- _idealCustomTitleWidth
+@end

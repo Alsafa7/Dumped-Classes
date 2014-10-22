@@ -1,0 +1,62 @@
+@interface ABRefreshController : NSObject
+{
+	id _accountStore;
+	double _refreshDelay;
+	id _accountGroupListsToRefreshByObserver;
+	id _contactsFiltersToRefreshByObserver;
+	id _refreshTimer;
+}
+
++ accountStore
++ scheduleRefreshForAccountGroupList:withObserver:
++ cancelAllScheduledRefreshesWithObserver:
++ refreshEverythingNow
++ canRefreshSources:
++ scheduleRefreshForContactsFilter:withObserver:
++ startRefreshingOrphanedAccountsWithAddressBook:
++ _setRefreshDelay:
++ _invalidateTimer
++ _proceedWithRefresh:
++ _scheduleRefreshTimerIfNeeded
++ refreshContactsFilter:
++ refreshAccountGroupList:
++ refreshableAccountIdentifiersForContactsFilter:
++ canRefreshContactsFilter:
++ _addObjectToRefresh:withObserver:toDictionary:
++ canRefreshAccountIdentifier:
++ _refreshGroupListForACAccountWithIdentifier:isUserRequested:
++ _actuallyRefreshOrphanedAccountsWithAddressBook:
++ startRefreshingOrphanedAccountsWithAddressBook:afterDelay:
++ _acAccountExistsForIdentifier:
++ _refreshACAccountWithIdentifier:isUserRequested:
++ _postponeAllRefreshes
++ _resumeAllRefreshes
++ dealloc
++ init
+- accountStore
+- scheduleRefreshForAccountGroupList:withObserver:
+- cancelAllScheduledRefreshesWithObserver:
+- refreshEverythingNow
+- canRefreshSources:
+- scheduleRefreshForContactsFilter:withObserver:
+- startRefreshingOrphanedAccountsWithAddressBook:
+- _setRefreshDelay:
+- _invalidateTimer
+- _proceedWithRefresh:
+- _scheduleRefreshTimerIfNeeded
+- refreshContactsFilter:
+- refreshAccountGroupList:
+- refreshableAccountIdentifiersForContactsFilter:
+- canRefreshContactsFilter:
+- _addObjectToRefresh:withObserver:toDictionary:
+- canRefreshAccountIdentifier:
+- _refreshGroupListForACAccountWithIdentifier:isUserRequested:
+- _actuallyRefreshOrphanedAccountsWithAddressBook:
+- startRefreshingOrphanedAccountsWithAddressBook:afterDelay:
+- _acAccountExistsForIdentifier:
+- _refreshACAccountWithIdentifier:isUserRequested:
+- _postponeAllRefreshes
+- _resumeAllRefreshes
+- dealloc
+- init
+@end

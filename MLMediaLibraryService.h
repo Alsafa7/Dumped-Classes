@@ -1,0 +1,66 @@
+@interface MLMediaLibraryService : NSObject
+{
+	id _xpcConnection;
+	id _serialQueue;
+	id _completionQueue;
+	id _serviceProxy;
+	id _pendingServiceCompletionHandlers;
+	BOOL _processRequestsInApp;
+	BOOL _connectionOpen;
+}
+
++ dealloc
++ init
++ validateDatabaseAtPath:withCompletionHandler:
++ recreateDatabaseAtPath:withCompletionHandler:
++ beginTransactionForDatabaseAtPath:withPriorityLevel:withCompletionHandler:
++ executeUpdate:withParameters:onTransaction:withCompletionHandler:
++ executeQuery:withParameters:options:onTransaction:withCompletionHandler:
++ endTransaction:shouldCommit:withCompletionHandler:
++ executeTemplatedDatabaseOperation:withAttributes:options:completionHandler:
++ setOptions:withCompletionHandler:
++ performImportFromSource:intoDatabaseAtPath:withTrackData:options:completionHandler:
++ pollCurrentImportStatus:
++ serviceWillTerminateTransactionWithIdentifier:replyBlock:
++ serviceTerminatedTransactionWithIdentifier:error:
++ openServiceConnection
++ closeServiceConnection
++ _enqueueClientCompletionHandler:forInterfaceMessage:withBlockFacade:
++ _onQueueCloseServiceConnection
++ _onQueueInvalidatePendingCompletionHandlersWithError:
++ __enqueueClientCompletionHandler:forInterfaceMessage:withBlockFacade:
++ _addPendingCompletionHandler:
++ _retrieveCompletionHandlerForToken:
++ serviceProxy
++ validateDatabaseForLibrary:withCompletionHandler:
++ _invalidatePendingCompletionHandlersWithError:
++ connectionOpen
++ .cxx_destruct
+- dealloc
+- init
+- validateDatabaseAtPath:withCompletionHandler:
+- recreateDatabaseAtPath:withCompletionHandler:
+- beginTransactionForDatabaseAtPath:withPriorityLevel:withCompletionHandler:
+- executeUpdate:withParameters:onTransaction:withCompletionHandler:
+- executeQuery:withParameters:options:onTransaction:withCompletionHandler:
+- endTransaction:shouldCommit:withCompletionHandler:
+- executeTemplatedDatabaseOperation:withAttributes:options:completionHandler:
+- setOptions:withCompletionHandler:
+- performImportFromSource:intoDatabaseAtPath:withTrackData:options:completionHandler:
+- pollCurrentImportStatus:
+- serviceWillTerminateTransactionWithIdentifier:replyBlock:
+- serviceTerminatedTransactionWithIdentifier:error:
+- openServiceConnection
+- closeServiceConnection
+- _enqueueClientCompletionHandler:forInterfaceMessage:withBlockFacade:
+- _onQueueCloseServiceConnection
+- _onQueueInvalidatePendingCompletionHandlersWithError:
+- __enqueueClientCompletionHandler:forInterfaceMessage:withBlockFacade:
+- _addPendingCompletionHandler:
+- _retrieveCompletionHandlerForToken:
+- serviceProxy
+- validateDatabaseForLibrary:withCompletionHandler:
+- _invalidatePendingCompletionHandlersWithError:
+- connectionOpen
+- .cxx_destruct
+@end

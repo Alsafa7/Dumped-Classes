@@ -1,0 +1,90 @@
+@interface PBDataReader : NSObject
+{
+	usigned long long _pos;
+	BOOL _error;
+	_bytes;
+	id _data;
+	usigned long long _length;
+}
+
++ dealloc
++ length
++ data
++ initWithData:
++ setPosition:
++ position
++ offset
++ setLength:
++ isAtEnd
++ readFloat
++ readString
++ readBytes:
++ seekToOffset:
++ readBigEndianFixed32
++ readBigEndianFixed16
++ updateData:
++ readTag:andType:
++ skipValueWithTag:andType:
++ readBigEndianFixed64
++ readProtoBuffer
++ readInt8
++ readVarInt
++ readDouble
++ readInt32
++ readInt64
++ readUint32
++ readUint64
++ readSint32
++ readSint64
++ readFixed32
++ readFixed64
++ readSfixed32
++ readSfixed64
++ readBOOL
++ readData
++ mark:
++ recall:
++ readBigEndianShortThenString
++ hasMoreData
++ hasError
+- dealloc
+- length
+- data
+- initWithData:
+- setPosition:
+- position
+- offset
+- setLength:
+- isAtEnd
+- readFloat
+- readString
+- readBytes:
+- seekToOffset:
+- readBigEndianFixed32
+- readBigEndianFixed16
+- updateData:
+- readTag:andType:
+- skipValueWithTag:andType:
+- readBigEndianFixed64
+- readProtoBuffer
+- readInt8
+- readVarInt
+- readDouble
+- readInt32
+- readInt64
+- readUint32
+- readUint64
+- readSint32
+- readSint64
+- readFixed32
+- readFixed64
+- readSfixed32
+- readSfixed64
+- readBOOL
+- readData
+- mark:
+- recall:
+- readBigEndianShortThenString
+- hasMoreData
+- hasError
+@end

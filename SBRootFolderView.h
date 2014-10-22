@@ -1,0 +1,69 @@
+@interface SBRootFolderView : SBFolderView
+{
+	id _dockView;
+	id _dockListView;
+	id _idleTextView;
+	id _parallaxSettings;
+	double _searchGestureProgress;
+	id _searchViewController;
+}
+
++ searchViewController
++ searchGesture:changedPercentComplete:
++ initWithFolder:orientation:
++ setIdleText:
++ dockView
++ setDockOffscreenFraction:
++ setDockVerticalStretch:
++ iconListViewAtIndex:
++ layoutIconLists:domino:forceRelayout:
++ returnScalingView
++ fadeContentForMagnificationFraction:
++ willAnimate
++ didAnimate
++ layoutViewsForSearch
++ initWithFolder:orientation:forSnapshot:
++ resetIconListViews
++ fadeContentForMinificationFraction:
++ _configureParallax
++ _disableUserInteractionBeforeSignificantAnimation
++ _enableUserInteractionAfterSignificantAnimation
++ iconListViewAtPoint:
++ tearDownListViews
++ dealloc
++ setNeedsLayout
++ setOrientation:
++ settings:changedValueForKey:
++ _layoutSubviews
++ _updateEditingStateAnimated:
++ lcdTextViewCompletedScroll:
+- searchViewController
+- searchGesture:changedPercentComplete:
+- initWithFolder:orientation:
+- setIdleText:
+- dockView
+- setDockOffscreenFraction:
+- setDockVerticalStretch:
+- iconListViewAtIndex:
+- layoutIconLists:domino:forceRelayout:
+- returnScalingView
+- fadeContentForMagnificationFraction:
+- willAnimate
+- didAnimate
+- layoutViewsForSearch
+- initWithFolder:orientation:forSnapshot:
+- resetIconListViews
+- fadeContentForMinificationFraction:
+- _configureParallax
+- _disableUserInteractionBeforeSignificantAnimation
+- _enableUserInteractionAfterSignificantAnimation
+- iconListViewAtPoint:
+- tearDownListViews
+- dealloc
+- setNeedsLayout
+- setOrientation:
+- settings:changedValueForKey:
+- _layoutSubviews
+- _updateEditingStateAnimated:
+- lcdTextViewCompletedScroll:
+@end

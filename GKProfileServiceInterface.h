@@ -1,0 +1,6 @@
+@interface GKProfileServiceInterface : GKServiceInterface
+{
+
+}
+
+@end

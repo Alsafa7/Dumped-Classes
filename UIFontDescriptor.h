@@ -1,0 +1,61 @@
+@interface UIFontDescriptor : NSObject
+{
+	id _attributes;
+	id _reserved1;
+	id _reserved2;
+	id _reserved3;
+	id _reserved4;
+	id _reserved5;
+}
+
++ dealloc
++ initWithCoder:
++ encodeWithCoder:
++ init
++ description
++ copyWithZone:
++ classForCoder
++ pointSize
++ fontDescriptorWithSymbolicTraits:
++ symbolicTraits
++ objectForKey:
++ _attributes
++ _initWithFontAttributes:options:
++ initWithFontAttributes:
++ fontAttributes
++ fontDescriptorByAddingAttributes:
++ postscriptName
++ matchingFontDescriptorsWithMandatoryKeys:
++ matchingFontDescriptorWithMandatoryKeys:
++ fontDescriptorWithSize:
++ fontDescriptorWithMatrix:
++ fontDescriptorWithFace:
++ fontDescriptorWithFamily:
++ _visibleName
++ matrix
+- dealloc
+- initWithCoder:
+- encodeWithCoder:
+- init
+- description
+- copyWithZone:
+- classForCoder
+- pointSize
+- fontDescriptorWithSymbolicTraits:
+- symbolicTraits
+- objectForKey:
+- _attributes
+- _initWithFontAttributes:options:
+- initWithFontAttributes:
+- fontAttributes
+- fontDescriptorByAddingAttributes:
+- postscriptName
+- matchingFontDescriptorsWithMandatoryKeys:
+- matchingFontDescriptorWithMandatoryKeys:
+- fontDescriptorWithSize:
+- fontDescriptorWithMatrix:
+- fontDescriptorWithFace:
+- fontDescriptorWithFamily:
+- _visibleName
+- matrix
+@end

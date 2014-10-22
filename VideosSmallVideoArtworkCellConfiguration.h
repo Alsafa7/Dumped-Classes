@@ -1,0 +1,6 @@
+@interface VideosSmallVideoArtworkCellConfiguration : VideosArtworkCellConfiguration
+{
+
+}
+
+@end

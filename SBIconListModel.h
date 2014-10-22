@@ -1,0 +1,100 @@
+@interface SBIconListModel : NSObject
+{
+	id _icons;
+	id _nodeObservers;
+	id _listObservers;
+	BOOL _iconStateIsDirty;
+	id _folder;
+}
+
++ needsCompacting
++ compactIcons
++ containsIcon:
++ firstFreeSlotIndexForType:
++ placeIcon:atIndex:
++ insertIcon:atIndex:
++ removeIconAtIndex:
++ indexForIcon:
++ firstFreeSlotIndex
++ removeIcon:
++ nodeIdentifier
++ containsNodeIdentifier:
++ iconsOfClass:
++ numberOfIcons
++ initWithFolder:
++ matchesRepresentation:
++ isIconStateDirty
++ markIconStateClean
++ addNodeObserver:
++ removeNodeObserver:
++ containedNodeIdentifiers
++ indexPathsForContainedNodeIdentifier:prefixPath:
++ nodesAlongIndexPath:consumedIndexes:
++ nodeDescriptionWithPrefix:
++ removeListObserver:
++ addListObserver:
++ containsLeafIconWithIdentifier:
++ resetWithRepresentation:model:overflowNodes:leafIdentifiersAdded:
++ list:didAddContainedNodeIdentifiers:
++ list:didRemoveContainedNodeIdentifiers:
++ indexForLeafIconWithIdentifier:
++ addIcon:asDirty:
++ allowsAddingIcon:
++ _notifyListObservers:
++ warmUpIconImages
++ isFull
++ dealloc
++ countByEnumeratingWithState:objects:count:
++ description
++ representation
++ isEmpty
++ icons
++ folder
++ addIcon:
++ iconAtIndex:
+- needsCompacting
+- compactIcons
+- containsIcon:
+- firstFreeSlotIndexForType:
+- placeIcon:atIndex:
+- insertIcon:atIndex:
+- removeIconAtIndex:
+- indexForIcon:
+- firstFreeSlotIndex
+- removeIcon:
+- nodeIdentifier
+- containsNodeIdentifier:
+- iconsOfClass:
+- numberOfIcons
+- initWithFolder:
+- matchesRepresentation:
+- isIconStateDirty
+- markIconStateClean
+- addNodeObserver:
+- removeNodeObserver:
+- containedNodeIdentifiers
+- indexPathsForContainedNodeIdentifier:prefixPath:
+- nodesAlongIndexPath:consumedIndexes:
+- nodeDescriptionWithPrefix:
+- removeListObserver:
+- addListObserver:
+- containsLeafIconWithIdentifier:
+- resetWithRepresentation:model:overflowNodes:leafIdentifiersAdded:
+- list:didAddContainedNodeIdentifiers:
+- list:didRemoveContainedNodeIdentifiers:
+- indexForLeafIconWithIdentifier:
+- addIcon:asDirty:
+- allowsAddingIcon:
+- _notifyListObservers:
+- warmUpIconImages
+- isFull
+- dealloc
+- countByEnumeratingWithState:objects:count:
+- description
+- representation
+- isEmpty
+- icons
+- folder
+- addIcon:
+- iconAtIndex:
+@end

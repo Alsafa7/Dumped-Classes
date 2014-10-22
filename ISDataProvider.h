@@ -1,0 +1,84 @@
+@interface ISDataProvider : NSObject
+{
+	id _authenticationContext;
+	id _authenticatedAccountDSID;
+	id _bagContext;
+	long long _contentLength;
+	id _contentType;
+	id _output;
+	id _parentOperation;
+	id _redirectURL;
+	long long _errorHandlerResponseType;
+}
+
++ output
++ contentLength
++ setContentLength:
++ dealloc
++ copyWithZone:
++ setContentType:
++ setup
++ contentType
++ setRedirectURL:
++ setParentOperation:
++ parentOperation
++ isStream
++ streamCancelled
++ streamedBytes
++ isStreamComplete
++ closeStream
++ errorHandlerResponseType
++ resetStream
++ streamDidFailWithError:
++ canStreamContentLength:error:
++ bagContext
++ setBagContext:
++ setAuthenticatedAccountDSID:
++ _runServerAuthenticationOperation:error:
++ runSubOperation:error:
++ setErrorHandlerResponseType:
++ authenticationContext
++ setAuthenticationContext:
++ setOutput:
++ configureFromProvider:
++ parseData:returningError:
++ migrateOutputFromSubProvider:
++ runAuthorizationDialog:error:
++ authenticatedAccountDSID
++ redirectURL
+- output
+- contentLength
+- setContentLength:
+- dealloc
+- copyWithZone:
+- setContentType:
+- setup
+- contentType
+- setRedirectURL:
+- setParentOperation:
+- parentOperation
+- isStream
+- streamCancelled
+- streamedBytes
+- isStreamComplete
+- closeStream
+- errorHandlerResponseType
+- resetStream
+- streamDidFailWithError:
+- canStreamContentLength:error:
+- bagContext
+- setBagContext:
+- setAuthenticatedAccountDSID:
+- _runServerAuthenticationOperation:error:
+- runSubOperation:error:
+- setErrorHandlerResponseType:
+- authenticationContext
+- setAuthenticationContext:
+- setOutput:
+- configureFromProvider:
+- parseData:returningError:
+- migrateOutputFromSubProvider:
+- runAuthorizationDialog:error:
+- authenticatedAccountDSID
+- redirectURL
+@end

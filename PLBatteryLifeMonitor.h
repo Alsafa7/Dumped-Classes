@@ -1,0 +1,6 @@
+@interface PLBatteryLifeMonitor : PLXPCConnectionClient
+{
+
+}
+
+@end

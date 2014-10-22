@@ -1,0 +1,663 @@
+@interface IMAccount : NSObject
+{
+	id _service;
+	id _buddyList;
+	id _lock;
+	id _imHandles;
+	id _inlineTransfers;
+	id _loginIMHandle;
+	id _cachedAllowList;
+	id _cachedBlockList;
+	id _loginID;
+	id _displayName;
+	id _uniqueID;
+	long long _accountType;
+	id _data;
+	id _dataChanges;
+	id _localCache;
+	id _profile;
+	id _profileChanges;
+	id _countryCode;
+	long long _profileStatus;
+	id _accountPreferences;
+	id _accountPreferencesChanges;
+	id _accountPersistentProperties;
+	id _accountPersistentPropertiesChanges;
+	id _groups;
+	id _sortOrders;
+	id _members;
+	id _coalescedChanges;
+	id _targetGroupState;
+	id _lastReceivedGroupState;
+	id _subtypeInfo;
+	id _vettedAliases;
+	usigned long long _myStatus;
+	id _currentAccountStatus;
+	id _myStatusMessage;
+	id _myNowPlaying;
+	id _myIdleSince;
+	id _myPictureData;
+	id _accountImageData;
+	usigned long long _capabilities;
+	usigned long long _defaultHandleCapabilities;
+	BOOL _hasCheckedDefaultHandleCapabilities;
+	id _myProfile;
+	long long _registrationStatus;
+	long long _registrationFailureReason;
+	id _registrationAlertInfo;
+	usigned long long _loginStatus;
+	BOOL _isActive;
+	BOOL _hasPostedOfflineNotification;
+	BOOL _justLoggedIn;
+	BOOL _useMeCardName;
+	unsigned int _cachedBlockingMode;
+	BOOL _blockIdleStatus;
+	BOOL _syncedWithRemoteBuddyList;
+	BOOL _hasReceivedSync;
+	int _numHolding;
+	int _coalesceCount;
+	BOOL _needToCheckForWatchedIMHandles;
+	BOOL _iconChecked;
+	BOOL _hasBeenRemoved;
+	id _smallImage;
+	id _accountImage;
+	BOOL _asleep;
+}
+
++ __ck_handlesFromAddressStrings:
++ loginDisplayString
++ CNFRegSignInComplete
++ CNFRegRegisteringLocalPhoneNumberSentinelAlias
++ CNFRegIsSignedOut
++ CNFRegSignInFailed
++ isConnected
++ isRegistered
++ password
++ service
++ setInteger:forKey:
++ setPassword:
++ serviceName
++ isConnecting
++ dealloc
++ description
++ isActive
++ boolForKey:
++ dictionary
++ removeObjectForKey:
++ server
++ stringForKey:
++ setBool:forKey:
++ name
++ integerForKey:
++ setIsActive:
++ displayName
++ imHandleWithID:alreadyCanonical:
++ compareIDs:
++ isOperational
++ existingIMHandleWithID:
++ imHandleWithID:
++ internalName
++ _isUsableForSending
++ loginStatus
++ initWithService:
++ uniqueID
++ setUniqueID:
++ useSSL
++ updateCapabilities:
++ registrationStatus
++ _registrationStatusChanged:
++ addAlias:
++ aliases
++ myStatus
++ login
++ canonicalFormOfID:
++ _syncWithRemoteBuddies
++ setIMAccountLoginStatus:
++ hasSyncedWithRemoteBuddies
++ _markHasSyncedWithRemoteBuddies
++ arrayOfAllIMHandles
++ equalID:andID:
++ compareNames:
++ addressBookProperty
++ supportsAuthorization
++ handlesChatInvites
++ supportsRegistration
++ addressBookProperties
++ emailDomains
++ shortName
++ initWithUniqueID:service:
++ clearServiceCaches
++ syncWithRemoteBuddies
++ _serviceDidConnect:
++ _serviceDidReconnect:
++ _serviceDidDisconnect:
++ _loginWithAutoLogin:
++ setIMAccountLoginStatus:errorMessage:reason:
++ _refreshLoginIMHandle
++ _setString:forKey:
++ _updateLogin:
++ _updateMyStatus:message:
++ canonicalFormOfID:countryCode:
++ profileInfo
++ _setObject:forKey:
++ accountPreferences
++ _loadFromDictionary:force:
++ setAutoLogin:
++ compareAccountNames:
++ removePassword
++ removeTemporaryPassword
++ isInvisible
++ _setBool:forKey:
++ loginStatusMessage
++ _serverWithSSL:
++ blockIdleStatus
++ setBlockIdleStatus:
++ invalidSettings
++ validLogin
++ validServer
++ validPort
++ authorizationID
++ vettedAliases
++ _statuses
++ _aliases
++ _updateProfileInfo:
++ _updateRegistrationStatus:error:info:
++ validationErrorReasonForAlias:
++ _updateDisplayName:
++ blockingMode
++ blockList
++ allowList
++ setBlockList:
++ setBlockingMode:
++ setAllowList:
++ setCachedBlockList:
++ setCachedAllowList:
++ setCachedBlockingMode:
++ setCachedBlockIdleStatus:
++ writeSettings
++ targetGroupStateTimeout
++ hasTargetGroupStateBeenMet
++ clearTargetState
++ groupsChanged:error:
++ setWaitForTargetState
++ updateWithTargetGroups
++ setTargetGroupsState:
++ makingChanges
++ requestGroups
++ groupList
++ changeBuddyList:add:groups:atLocation:
++ _ensureGroupsExists:
++ requestBuddyListAuthorizationFromIMHandle:
++ addPeople:toGroups:atLocation:
++ beginChanges
++ propertiesForGroup:
++ reorderGroups:
++ endChanges
++ _applyChangesToTemporaryCache:
++ _resumeBuddyUpdatesNow
++ existingIMHandleWithInfo:
++ buddyPropertiesChanged:
++ hookupToDaemon
++ setIMAccountLoginStatus:errorMessage:
++ profileValidationStatus
++ _notJustLoggedIn
++ forgetAllWatches
++ nowLoggedIn
++ nowLoggedOut
++ isAwaitingTargetGroupState
++ buddyList
++ imHandle:buddyStatusChanged:
++ watchBuddiesIfNecessary
++ existingIMHandleWithID:alreadyCanonical:
++ _imHandleWithID:alreadyCanonical:knownIDStatus:originalID:countryCode:
++ defaultHandleCapabilities
++ personForIMHandle:
++ imHandlesForIMPerson:
++ emailAddressIsID:
++ startWatchingIMHandle:
++ _watchBuddiesIfNecessary
++ imHandleWithInfo:
++ setBuddyListAuthorization:forIMHandle:
++ disconnectAllIMHandles
++ defaultChatSuffix
++ authenticateAccount
++ _removeObjectForKey:
++ profileValueForKey:
++ setProfileValue:forKey:
++ profileStringForKey:
++ profileValidationErrorReason
++ hasAlias:
++ typeForAlias:
++ addAliases:
++ _setLocalCachedObject:forKey:
++ removeAliases:
++ removeAlias:
++ unvalidateAliases:
++ validateAliases:
++ validateAlias:
++ _aliasInfoForAlias:
++ validationStatusForAlias:
++ setObject:forPreferenceKey:
++ objectForPreferenceKey:
++ autoLoginAccount
++ loginAccount
++ logoutAccount
++ loginStatusChanged:message:reason:properties:
++ setLogin:
++ setCurrentAccountStatus:
++ myNowPlayingString
++ accountImageData
++ resetToDefaults
++ compareLoginStatus:
++ compareStatus:
++ compareServices:
++ temporaryPassword
++ setTemporaryPassword:
++ setInvisible:
++ hasCustomDescription
++ autoLogin
++ goIdle
++ setGoIdle:
++ allowsVCRelay
++ setAllowsVCRelay:
++ canActivate
++ isManaged
++ requestProperty:ofIMHandle:
++ setValue:ofExtraProperty:ofIMHandle:
++ blockMessages:fromID:
++ blockOtherAddresses
++ setBlockOtherAddresses:
++ removePeople:fromGroups:
++ addIMHandle:toGroups:atLocation:
++ removeIMHandle:fromGroups:
++ addBuddyToBuddyList:
++ renameGroup:to:
++ reorderGroup:order:
++ groupMembers:
++ memberGroups:
++ holdBuddyUpdates
++ resumeBuddyUpdates
++ buddyPictureChanged:imageData:imageHash:
++ setBuddyProperties:buddyPictures:
++ accountWillBeRemoved
++ accountDidBecomeActive
++ accountDidDeactivate
++ registrationFailureAlertInfo
++ registrationFailureReason
++ registerAccount
++ unregisterAccount
++ recalculatedSubtypeInfo
++ _clearImageCache
++ recalculateSubtypeInfo
++ imHandleClass
++ imHandleWithInfo:alreadyCanonical:
++ existingIMHandleWithInfo:alreadyCanonical:
++ imHandleWithID:countryCode:
++ existingIMHandleWithID:countryCode:
++ personForIMHandle:identifier:
++ personSibsForIMHandle:
++ sortOrderForIMHandle:inGroup:
++ addIMHandle:toIMPerson:
++ removeIMHandle:fromIMPerson:
++ stopWatchingIMHandle:
++ registerIMHandle:
++ unregisterIMHandle:
++ handleSubscriptionRequestFrom:withMessage:
++ chatIDForRoomName:
++ validityOfChatRoomName:
++ authorizationToken
++ requestNewAuthorizationCredentials
++ updateAuthorizationCredentials:token:
++ removeProfileValueForKey:
++ setProfileString:forKey:
++ validateProfile
++ hasAlias:type:
++ aliasesForType:
++ addAlias:type:
++ removeAlias:type:
++ unvalidateAlias:
++ validateAlias:type:
++ validationStatusForAlias:type:
++ validationErrorReasonForAlias:type:
++ setDictionaryData:forKey:
++ _setDictionaryData:forKey:
++ dictionaryDataForKey:
++ _setInteger:forKey:
++ isAsleep
++ _persistentProperties
++ _persistentPropertyForKey:
++ _setPersistentPropertyObject:forKey:
++ _removePersistentPropertyForKey:
++ removeObjectForPreferenceKey:
++ setDictionaryData:forPreferenceKey:
++ dictionaryDataForPreferenceKey:
++ stringForPreferenceKey:
++ setString:forPreferenceKey:
++ boolForPreferenceKey:
++ setBool:forPreferenceKey:
++ integerForPreferenceKey:
++ setInteger:forPreferenceKey:
++ _handleDeliveredCommand:withProperties:fromBuddyInfo:
++ _handleIncomingCommand:withProperties:fromBuddyInfo:
++ myStatusDictionary
++ myProfile
++ myStatusMessage
++ myPictureData
++ myIdleSince
++ accountSubtypeInfo
++ loginIMHandle
++ justLoggedIn
++ accountDescription
++ setAccountDescription:
++ systemDidWake
++ systemWillSleep
++ capabilities
++ setDisplayName:
++ setString:forKey:
++ countryCode
++ objectForKey:
++ setObject:forKey:
++ finalize
++ port
++ hasCapability:
++ loadFromDictionary:
++ accountType
+- __ck_handlesFromAddressStrings:
+- loginDisplayString
+- CNFRegSignInComplete
+- CNFRegRegisteringLocalPhoneNumberSentinelAlias
+- CNFRegIsSignedOut
+- CNFRegSignInFailed
+- isConnected
+- isRegistered
+- password
+- service
+- setInteger:forKey:
+- setPassword:
+- serviceName
+- isConnecting
+- dealloc
+- description
+- isActive
+- boolForKey:
+- dictionary
+- removeObjectForKey:
+- server
+- stringForKey:
+- setBool:forKey:
+- name
+- integerForKey:
+- setIsActive:
+- displayName
+- imHandleWithID:alreadyCanonical:
+- compareIDs:
+- isOperational
+- existingIMHandleWithID:
+- imHandleWithID:
+- internalName
+- _isUsableForSending
+- loginStatus
+- initWithService:
+- uniqueID
+- setUniqueID:
+- useSSL
+- updateCapabilities:
+- registrationStatus
+- _registrationStatusChanged:
+- addAlias:
+- aliases
+- myStatus
+- login
+- canonicalFormOfID:
+- _syncWithRemoteBuddies
+- setIMAccountLoginStatus:
+- hasSyncedWithRemoteBuddies
+- _markHasSyncedWithRemoteBuddies
+- arrayOfAllIMHandles
+- equalID:andID:
+- compareNames:
+- addressBookProperty
+- supportsAuthorization
+- handlesChatInvites
+- supportsRegistration
+- addressBookProperties
+- emailDomains
+- shortName
+- initWithUniqueID:service:
+- clearServiceCaches
+- syncWithRemoteBuddies
+- _serviceDidConnect:
+- _serviceDidReconnect:
+- _serviceDidDisconnect:
+- _loginWithAutoLogin:
+- setIMAccountLoginStatus:errorMessage:reason:
+- _refreshLoginIMHandle
+- _setString:forKey:
+- _updateLogin:
+- _updateMyStatus:message:
+- canonicalFormOfID:countryCode:
+- profileInfo
+- _setObject:forKey:
+- accountPreferences
+- _loadFromDictionary:force:
+- setAutoLogin:
+- compareAccountNames:
+- removePassword
+- removeTemporaryPassword
+- isInvisible
+- _setBool:forKey:
+- loginStatusMessage
+- _serverWithSSL:
+- blockIdleStatus
+- setBlockIdleStatus:
+- invalidSettings
+- validLogin
+- validServer
+- validPort
+- authorizationID
+- vettedAliases
+- _statuses
+- _aliases
+- _updateProfileInfo:
+- _updateRegistrationStatus:error:info:
+- validationErrorReasonForAlias:
+- _updateDisplayName:
+- blockingMode
+- blockList
+- allowList
+- setBlockList:
+- setBlockingMode:
+- setAllowList:
+- setCachedBlockList:
+- setCachedAllowList:
+- setCachedBlockingMode:
+- setCachedBlockIdleStatus:
+- writeSettings
+- targetGroupStateTimeout
+- hasTargetGroupStateBeenMet
+- clearTargetState
+- groupsChanged:error:
+- setWaitForTargetState
+- updateWithTargetGroups
+- setTargetGroupsState:
+- makingChanges
+- requestGroups
+- groupList
+- changeBuddyList:add:groups:atLocation:
+- _ensureGroupsExists:
+- requestBuddyListAuthorizationFromIMHandle:
+- addPeople:toGroups:atLocation:
+- beginChanges
+- propertiesForGroup:
+- reorderGroups:
+- endChanges
+- _applyChangesToTemporaryCache:
+- _resumeBuddyUpdatesNow
+- existingIMHandleWithInfo:
+- buddyPropertiesChanged:
+- hookupToDaemon
+- setIMAccountLoginStatus:errorMessage:
+- profileValidationStatus
+- _notJustLoggedIn
+- forgetAllWatches
+- nowLoggedIn
+- nowLoggedOut
+- isAwaitingTargetGroupState
+- buddyList
+- imHandle:buddyStatusChanged:
+- watchBuddiesIfNecessary
+- existingIMHandleWithID:alreadyCanonical:
+- _imHandleWithID:alreadyCanonical:knownIDStatus:originalID:countryCode:
+- defaultHandleCapabilities
+- personForIMHandle:
+- imHandlesForIMPerson:
+- emailAddressIsID:
+- startWatchingIMHandle:
+- _watchBuddiesIfNecessary
+- imHandleWithInfo:
+- setBuddyListAuthorization:forIMHandle:
+- disconnectAllIMHandles
+- defaultChatSuffix
+- authenticateAccount
+- _removeObjectForKey:
+- profileValueForKey:
+- setProfileValue:forKey:
+- profileStringForKey:
+- profileValidationErrorReason
+- hasAlias:
+- typeForAlias:
+- addAliases:
+- _setLocalCachedObject:forKey:
+- removeAliases:
+- removeAlias:
+- unvalidateAliases:
+- validateAliases:
+- validateAlias:
+- _aliasInfoForAlias:
+- validationStatusForAlias:
+- setObject:forPreferenceKey:
+- objectForPreferenceKey:
+- autoLoginAccount
+- loginAccount
+- logoutAccount
+- loginStatusChanged:message:reason:properties:
+- setLogin:
+- setCurrentAccountStatus:
+- myNowPlayingString
+- accountImageData
+- resetToDefaults
+- compareLoginStatus:
+- compareStatus:
+- compareServices:
+- temporaryPassword
+- setTemporaryPassword:
+- setInvisible:
+- hasCustomDescription
+- autoLogin
+- goIdle
+- setGoIdle:
+- allowsVCRelay
+- setAllowsVCRelay:
+- canActivate
+- isManaged
+- requestProperty:ofIMHandle:
+- setValue:ofExtraProperty:ofIMHandle:
+- blockMessages:fromID:
+- blockOtherAddresses
+- setBlockOtherAddresses:
+- removePeople:fromGroups:
+- addIMHandle:toGroups:atLocation:
+- removeIMHandle:fromGroups:
+- addBuddyToBuddyList:
+- renameGroup:to:
+- reorderGroup:order:
+- groupMembers:
+- memberGroups:
+- holdBuddyUpdates
+- resumeBuddyUpdates
+- buddyPictureChanged:imageData:imageHash:
+- setBuddyProperties:buddyPictures:
+- accountWillBeRemoved
+- accountDidBecomeActive
+- accountDidDeactivate
+- registrationFailureAlertInfo
+- registrationFailureReason
+- registerAccount
+- unregisterAccount
+- recalculatedSubtypeInfo
+- _clearImageCache
+- recalculateSubtypeInfo
+- imHandleClass
+- imHandleWithInfo:alreadyCanonical:
+- existingIMHandleWithInfo:alreadyCanonical:
+- imHandleWithID:countryCode:
+- existingIMHandleWithID:countryCode:
+- personForIMHandle:identifier:
+- personSibsForIMHandle:
+- sortOrderForIMHandle:inGroup:
+- addIMHandle:toIMPerson:
+- removeIMHandle:fromIMPerson:
+- stopWatchingIMHandle:
+- registerIMHandle:
+- unregisterIMHandle:
+- handleSubscriptionRequestFrom:withMessage:
+- chatIDForRoomName:
+- validityOfChatRoomName:
+- authorizationToken
+- requestNewAuthorizationCredentials
+- updateAuthorizationCredentials:token:
+- removeProfileValueForKey:
+- setProfileString:forKey:
+- validateProfile
+- hasAlias:type:
+- aliasesForType:
+- addAlias:type:
+- removeAlias:type:
+- unvalidateAlias:
+- validateAlias:type:
+- validationStatusForAlias:type:
+- validationErrorReasonForAlias:type:
+- setDictionaryData:forKey:
+- _setDictionaryData:forKey:
+- dictionaryDataForKey:
+- _setInteger:forKey:
+- isAsleep
+- _persistentProperties
+- _persistentPropertyForKey:
+- _setPersistentPropertyObject:forKey:
+- _removePersistentPropertyForKey:
+- removeObjectForPreferenceKey:
+- setDictionaryData:forPreferenceKey:
+- dictionaryDataForPreferenceKey:
+- stringForPreferenceKey:
+- setString:forPreferenceKey:
+- boolForPreferenceKey:
+- setBool:forPreferenceKey:
+- integerForPreferenceKey:
+- setInteger:forPreferenceKey:
+- _handleDeliveredCommand:withProperties:fromBuddyInfo:
+- _handleIncomingCommand:withProperties:fromBuddyInfo:
+- myStatusDictionary
+- myProfile
+- myStatusMessage
+- myPictureData
+- myIdleSince
+- accountSubtypeInfo
+- loginIMHandle
+- justLoggedIn
+- accountDescription
+- setAccountDescription:
+- systemDidWake
+- systemWillSleep
+- capabilities
+- setDisplayName:
+- setString:forKey:
+- countryCode
+- objectForKey:
+- setObject:forKey:
+- finalize
+- port
+- hasCapability:
+- loadFromDictionary:
+- accountType
+@end

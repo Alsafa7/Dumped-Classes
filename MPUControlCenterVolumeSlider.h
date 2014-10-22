@@ -1,0 +1,6 @@
+@interface MPUControlCenterVolumeSlider : SBUIControlCenterSlider
+{
+
+}
+
+@end

@@ -1,0 +1,6 @@
+@interface ABPersonAdditions : NSObject
+{
+
+}
+
+@end

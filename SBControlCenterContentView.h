@@ -1,0 +1,73 @@
+@interface SBControlCenterContentView : UIView
+{
+	id _dividerViews;
+	id _viewController;
+	id _grabberView;
+	id _settingsSection;
+	id _brightnessSection;
+	id _mediaControlsSection;
+	id _airplaySection;
+	id _quickLaunchSection;
+}
+
++ controlCenterWillPresent
++ controlCenterDidDismiss
++ controlCenterWillBeginTransition
++ controlCenterDidFinishTransition
++ contentHeightForOrientation:
++ setSettingsSection:
++ setBrightnessSection:
++ setMediaControlsSection:
++ setAirplaySection:
++ setQuickLaunchSection:
++ updateEnabledSections
++ updateSectionVisibility:animated:
++ settingsSection
++ brightnessSection
++ mediaControlsSection
++ airplaySection
++ _addSectionController:
++ _removeSectionController:
++ _separatorAtIndex:
++ _iPad_layoutSubviewsInBounds:orientation:
++ _iPhone_layoutSubviewsInBounds:orientation:
++ setGrabberView:
++ initWithFrame:
++ dealloc
++ layoutSubviews
++ setViewController:
++ viewController
++ _allSections
++ grabberView
++ quickLaunchSection
+- controlCenterWillPresent
+- controlCenterDidDismiss
+- controlCenterWillBeginTransition
+- controlCenterDidFinishTransition
+- contentHeightForOrientation:
+- setSettingsSection:
+- setBrightnessSection:
+- setMediaControlsSection:
+- setAirplaySection:
+- setQuickLaunchSection:
+- updateEnabledSections
+- updateSectionVisibility:animated:
+- settingsSection
+- brightnessSection
+- mediaControlsSection
+- airplaySection
+- _addSectionController:
+- _removeSectionController:
+- _separatorAtIndex:
+- _iPad_layoutSubviewsInBounds:orientation:
+- _iPhone_layoutSubviewsInBounds:orientation:
+- setGrabberView:
+- initWithFrame:
+- dealloc
+- layoutSubviews
+- setViewController:
+- viewController
+- _allSections
+- grabberView
+- quickLaunchSection
+@end

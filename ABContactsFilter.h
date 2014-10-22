@@ -1,0 +1,60 @@
+@interface ABContactsFilter : NSObject
+{
+	pointer _addressBook;
+	BOOL _showsAllContacts;
+	id _groups;
+	id _sources;
+	pointer _directorySource;
+}
+
++ initWithAddressBook:
++ groups
++ showsAllContacts
++ initWithGroups:sources:addressBook:
++ initWithDirectorySource:addressBook:
++ sortedGroupsForGroups:
++ sortedSourcesForSources:
++ _defaultSourceForAccountContainingSource:
++ _getWritableSource:andGroup:
++ _sortedRecordsForRecords:byNameProperty:
++ directorySource
++ invalidateSourcesForAllContacts
++ copyDictionaryRepresentation
++ shouldChangeModelSelectionWhenDisplayed
++ groupForNewRecords
++ sourceForNewRecords
++ isDirectory
++ sources
++ dealloc
++ isEqual:
++ hash
++ description
++ isEditable
++ name
++ addressBook
+- initWithAddressBook:
+- groups
+- showsAllContacts
+- initWithGroups:sources:addressBook:
+- initWithDirectorySource:addressBook:
+- sortedGroupsForGroups:
+- sortedSourcesForSources:
+- _defaultSourceForAccountContainingSource:
+- _getWritableSource:andGroup:
+- _sortedRecordsForRecords:byNameProperty:
+- directorySource
+- invalidateSourcesForAllContacts
+- copyDictionaryRepresentation
+- shouldChangeModelSelectionWhenDisplayed
+- groupForNewRecords
+- sourceForNewRecords
+- isDirectory
+- sources
+- dealloc
+- isEqual:
+- hash
+- description
+- isEditable
+- name
+- addressBook
+@end

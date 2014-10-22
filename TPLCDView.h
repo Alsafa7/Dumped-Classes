@@ -1,0 +1,83 @@
+@interface TPLCDView : TPLCDBar
+{
+	id _contentView;
+	id _textView;
+	id _labelView;
+	id _imageView;
+	bit[1] _layoutAsLabelled;
+	BOOL _verticallyCenterTextViewIfLabelless;
+	BOOL _hasBackgroundGradient;
+	id _backgroundGradientView;
+}
+
++ dealloc
++ didMoveToWindow
++ layoutSubviews
++ setShadowColor:
++ text
++ _labelFrame
++ setText:
++ label
++ setLabel:
++ textFrame
++ initWithDefaultSizeForOrientation:
++ setHasBackgroundGradient:
++ setSubImage:
++ fullSizedContentViewFrame
++ subImage
++ _resetContentViewFrame
++ _textVInset
++ _labelVInset
++ shouldCenterContentView
++ verticallyCenterTextViewIfLabelless
++ _text1Frame
++ shouldCenterText
++ _imageViewFrame
++ _backgroundGradientViewOrigin
++ setLabel:animate:
++ didFinishAnimatingLCDLabelFadeOut:finished:context:
++ setContentsAlpha:
++ blinkLabel
++ setLayoutAsLabelled:
++ setSecondLineText:
++ secondLineText
++ setVerticallyCenterTextViewIfLabelless:
++ backgroundGradientView
++ setBackgroundGradientView:
++ hasBackgroundGradient
+- dealloc
+- didMoveToWindow
+- layoutSubviews
+- setShadowColor:
+- text
+- _labelFrame
+- setText:
+- label
+- setLabel:
+- textFrame
+- initWithDefaultSizeForOrientation:
+- setHasBackgroundGradient:
+- setSubImage:
+- fullSizedContentViewFrame
+- subImage
+- _resetContentViewFrame
+- _textVInset
+- _labelVInset
+- shouldCenterContentView
+- verticallyCenterTextViewIfLabelless
+- _text1Frame
+- shouldCenterText
+- _imageViewFrame
+- _backgroundGradientViewOrigin
+- setLabel:animate:
+- didFinishAnimatingLCDLabelFadeOut:finished:context:
+- setContentsAlpha:
+- blinkLabel
+- setLayoutAsLabelled:
+- setSecondLineText:
+- secondLineText
+- setVerticallyCenterTextViewIfLabelless:
+- backgroundGradientView
+- setBackgroundGradientView:
+- hasBackgroundGradient
+@end

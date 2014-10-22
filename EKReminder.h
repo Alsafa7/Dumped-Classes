@@ -1,0 +1,64 @@
+@interface EKReminder : EKCalendarItem
+{
+	BOOL hadRecurrences;
+}
+
++ initWithPersistentObject:
++ commit:
++ validate:
++ setCompleted:
++ _persistentReminder
++ displayOrder
++ setDisplayOrder:
++ externalURI
++ _sendModifiedNote
++ snoozeAlarm:withTimeIntervalFromNow:
++ dueDate
++ dueDateComponents
++ reminderIdentifier
++ startDateComponents
++ setStartDateComponents:
++ completionDate
++ setCompletionDate:
++ parentID
++ setDueDateComponents:
++ isCompleted
++ clearParentID
++ bestDisplayAlarm
++ hadRecurrences
++ setHadRecurrences:
++ dealloc
++ description
++ setTimeZone:
++ priority
++ setPriority:
+- initWithPersistentObject:
+- commit:
+- validate:
+- setCompleted:
+- _persistentReminder
+- displayOrder
+- setDisplayOrder:
+- externalURI
+- _sendModifiedNote
+- snoozeAlarm:withTimeIntervalFromNow:
+- dueDate
+- dueDateComponents
+- reminderIdentifier
+- startDateComponents
+- setStartDateComponents:
+- completionDate
+- setCompletionDate:
+- parentID
+- setDueDateComponents:
+- isCompleted
+- clearParentID
+- bestDisplayAlarm
+- hadRecurrences
+- setHadRecurrences:
+- dealloc
+- description
+- setTimeZone:
+- priority
+- setPriority:
+@end

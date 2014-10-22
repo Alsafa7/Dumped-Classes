@@ -1,0 +1,77 @@
+@interface BKSApplicationStateMonitor : NSObject
+{
+	id _connection;
+	id _invalidationSignal;
+	id _handler;
+	unsigned int _interestedStates;
+	id _interestedBundleIDs;
+	id _queue;
+	id _messageHandlingQueue;
+	id _serverEndpoint;
+}
+
++ initWithBundleIDs:states:
++ applicationStateForApplication:
++ _setEndpoint:
++ dealloc
++ init
++ invalidate
++ _connection
++ setHandler:
++ handler
++ queue_registerWithServer
++ initWithEndpoint:bundleIDs:states:
++ setInterestedBundleIDs:
++ setInterestedStates:
++ queue_invalidate
++ queue_setHandler:
++ queue_setInterestedBundleIDs:
++ queue_setInterestedStates:
++ updateInterestedBundleIDs:states:
++ interestedBundleIDs
++ queue_updateInterestedStates
++ queue_updateInterestedStates:
++ queue_reregister
++ queue_connectionWasInvalidated
++ queue_handleMessage:
++ updateInterestedBundleIDs:
++ updateInterestedStates:
++ applicationInfoForApplication:completion:
++ mostElevatedApplicationStateForPID:
++ isApplicationBeingDebugged:
++ bundleInfoValueForKey:PID:
++ applicationInfoForPID:completion:
++ interestedStates
+- initWithBundleIDs:states:
+- applicationStateForApplication:
+- _setEndpoint:
+- dealloc
+- init
+- invalidate
+- _connection
+- setHandler:
+- handler
+- queue_registerWithServer
+- initWithEndpoint:bundleIDs:states:
+- setInterestedBundleIDs:
+- setInterestedStates:
+- queue_invalidate
+- queue_setHandler:
+- queue_setInterestedBundleIDs:
+- queue_setInterestedStates:
+- updateInterestedBundleIDs:states:
+- interestedBundleIDs
+- queue_updateInterestedStates
+- queue_updateInterestedStates:
+- queue_reregister
+- queue_connectionWasInvalidated
+- queue_handleMessage:
+- updateInterestedBundleIDs:
+- updateInterestedStates:
+- applicationInfoForApplication:completion:
+- mostElevatedApplicationStateForPID:
+- isApplicationBeingDebugged:
+- bundleInfoValueForKey:PID:
+- applicationInfoForPID:completion:
+- interestedStates
+@end

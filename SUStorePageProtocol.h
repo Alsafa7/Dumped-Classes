@@ -1,0 +1,89 @@
+@interface SUStorePageProtocol : NSObject
+{
+	id _allowedOrientations;
+	id _copyright;
+	id _expectedClientIdentifiers;
+	id _focusedItemIdentifier;
+	id _navigationButtons;
+	id _navigationHistoryItems;
+	id _navigationMenus;
+	id _overlayBackgroundURLRequestProperties;
+	id _rootSectionIdentifier;
+	BOOL _shouldDisplayInOverlay;
+	BOOL _shouldExcludeFromNavigationHistory;
+	BOOL _shouldReplaceRootViewController;
+}
+
++ dealloc
++ init
++ copyWithZone:
++ shouldExcludeFromNavigationHistory
++ setShouldExcludeFromNavigationHistory:
++ expectedClientIdentifiers
++ shouldDisplayInOverlay
++ navigationButtonForLocation:
++ navigationMenuForLocation:
++ navigationHistoryItems
++ overlayBackgroundURLRequestProperties
++ rootSectionIdentifier
++ shouldReplaceRootViewController
++ copyright
++ setValuesFromStorePageDictionary:
++ focusedItemIdentifier
++ setFocusedItemIdentifier:
++ allowedOrientations
++ overlayBackgroundURLRequest
++ setAllowedOrientations:
++ setCopyright:
++ setOverlayBackgroundURLRequest:
++ _initCommon
++ setExpectedClientIdentifiers:
++ _newNavigationButtonsFromArray:
++ _newNavigationHistoryItemsFromArray:
++ _newNavigationMenusFromArray:
++ setRootSectionIdentifier:
++ setShouldReplaceRootViewController:
++ setOverlayBackgroundURLRequestProperties:
++ setShouldDisplayInOverlay:
++ navigationButtons
++ setNavigationButtons:
++ setNavigationHistoryItems:
++ navigationMenus
++ setNavigationMenus:
+- dealloc
+- init
+- copyWithZone:
+- shouldExcludeFromNavigationHistory
+- setShouldExcludeFromNavigationHistory:
+- expectedClientIdentifiers
+- shouldDisplayInOverlay
+- navigationButtonForLocation:
+- navigationMenuForLocation:
+- navigationHistoryItems
+- overlayBackgroundURLRequestProperties
+- rootSectionIdentifier
+- shouldReplaceRootViewController
+- copyright
+- setValuesFromStorePageDictionary:
+- focusedItemIdentifier
+- setFocusedItemIdentifier:
+- allowedOrientations
+- overlayBackgroundURLRequest
+- setAllowedOrientations:
+- setCopyright:
+- setOverlayBackgroundURLRequest:
+- _initCommon
+- setExpectedClientIdentifiers:
+- _newNavigationButtonsFromArray:
+- _newNavigationHistoryItemsFromArray:
+- _newNavigationMenusFromArray:
+- setRootSectionIdentifier:
+- setShouldReplaceRootViewController:
+- setOverlayBackgroundURLRequestProperties:
+- setShouldDisplayInOverlay:
+- navigationButtons
+- setNavigationButtons:
+- setNavigationHistoryItems:
+- navigationMenus
+- setNavigationMenus:
+@end

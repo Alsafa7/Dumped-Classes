@@ -1,0 +1,133 @@
+@interface SBApplicationController : NSObject
+{
+	id _applications;
+	id _applicationsByBundleIdentifer;
+	id _applicationsPlayingMutedAudioSinceLastLock;
+	id _applicationCurrentlyRecordingAudio;
+	int _locationStatusBarIconType;
+	id _backgroundDisplayDict;
+	id _backgroundOperationQueue;
+	id _applicationsLock;
+	id _systemAppsVisibilityOverrides;
+	BOOL _visibilityOverridesAreDirty;
+	id _appStateMonitor;
+	BOOL _booting;
+	id _appsToAutoLaunchAfterBoot;
+	id _restrictionController;
+	id _lsWorkspaceObserver;
+	id _pendingRequestedUninstallsBundleID;
+}
+
++ setupApplication
++ restrictionController
++ buildLocationState
++ autoLaunchAppsIfNecessaryAfterBoot
++ dataActivation
++ applicationWithPid:
++ applicationsWithBundleIdentifier:
++ iPod
++ applicationCurrentlyRecordingAudio
++ waitForOperationsToComplete
++ uninstallApplication:
++ _registerForAVSystemControllerNotifications
++ _unregisterForAVSystemControllerNotifications
++ applicationsWithPid:
++ newsstandApps
++ loadWebclipAndIcon:
++ loadApplicationsAndIcons:reveal:popIn:
++ updateAppIconVisibilityOverridesShowing:hiding:
++ appVisibilityOverrideForBundleIdentifier:
++ webApplications
++ _loadApplications:removed:applicationProxies:
++ _lockStateChanged:
++ _memoryWarningReceived
++ _deviceFirstUnlocked
++ _recordingStateChanged:
++ _mediaServerConnectionDied:
++ _unusuallyMutedAudioPlaying:
++ _updateLocationState
++ _reloadBackgroundIDsDict
++ loadApplicationsWithBundle:bundlePath:isSystemApplication:defaultTags:signerIdentity:provisioningProfileValidated:seatbeltEnvironmentVariables:entitlements:
++ _applicationHasBeenModified:applicationProxy:
++ _preLoadApplications
++ _getLSApplicationProxies
++ _calculateApplicationDiff:removed:applicationProxies:
++ _modifiedApplications:applicationProxies:
++ removeApplicationsFromModelWithBundleIdentifier:
++ _loadApplication:proxy:
++ _sendInstalledAppsDidChangeNotification:removed:modified:
++ _updateIconControllerAndModelForLoadedApplications:reveal:popIn:reloadAllIcons:
++ _loadApplicationsAndIcons:removed:applicationProxies:reveal:popIn:reloadAllIcons:
++ applicationClassForInfoDictionary:
++ applicationsUninstalled:
++ applicationsInstalled:
++ locationStatusBarIconType
++ allDisplayIdentifiers
++ faceTimeApp
++ clockApplication
++ loadApplications
++ loadApplication:
++ _setVisibilityOverridesAreDirty:
++ _removePendingRequestedUninstalledBundleID:
++ mobilePhone
++ allApplications
++ dealloc
++ init
++ applicationWithDisplayIdentifier:
+- setupApplication
+- restrictionController
+- buildLocationState
+- autoLaunchAppsIfNecessaryAfterBoot
+- dataActivation
+- applicationWithPid:
+- applicationsWithBundleIdentifier:
+- iPod
+- applicationCurrentlyRecordingAudio
+- waitForOperationsToComplete
+- uninstallApplication:
+- _registerForAVSystemControllerNotifications
+- _unregisterForAVSystemControllerNotifications
+- applicationsWithPid:
+- newsstandApps
+- loadWebclipAndIcon:
+- loadApplicationsAndIcons:reveal:popIn:
+- updateAppIconVisibilityOverridesShowing:hiding:
+- appVisibilityOverrideForBundleIdentifier:
+- webApplications
+- _loadApplications:removed:applicationProxies:
+- _lockStateChanged:
+- _memoryWarningReceived
+- _deviceFirstUnlocked
+- _recordingStateChanged:
+- _mediaServerConnectionDied:
+- _unusuallyMutedAudioPlaying:
+- _updateLocationState
+- _reloadBackgroundIDsDict
+- loadApplicationsWithBundle:bundlePath:isSystemApplication:defaultTags:signerIdentity:provisioningProfileValidated:seatbeltEnvironmentVariables:entitlements:
+- _applicationHasBeenModified:applicationProxy:
+- _preLoadApplications
+- _getLSApplicationProxies
+- _calculateApplicationDiff:removed:applicationProxies:
+- _modifiedApplications:applicationProxies:
+- removeApplicationsFromModelWithBundleIdentifier:
+- _loadApplication:proxy:
+- _sendInstalledAppsDidChangeNotification:removed:modified:
+- _updateIconControllerAndModelForLoadedApplications:reveal:popIn:reloadAllIcons:
+- _loadApplicationsAndIcons:removed:applicationProxies:reveal:popIn:reloadAllIcons:
+- applicationClassForInfoDictionary:
+- applicationsUninstalled:
+- applicationsInstalled:
+- locationStatusBarIconType
+- allDisplayIdentifiers
+- faceTimeApp
+- clockApplication
+- loadApplications
+- loadApplication:
+- _setVisibilityOverridesAreDirty:
+- _removePendingRequestedUninstalledBundleID:
+- mobilePhone
+- allApplications
+- dealloc
+- init
+- applicationWithDisplayIdentifier:
+@end

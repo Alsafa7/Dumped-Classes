@@ -1,0 +1,78 @@
+@interface MFMailDataProvider : NSObject
+{
+	id _accountsUsingExternalSync;
+	id _delayedMessages;
+	int _launchToken;
+	id _queue;
+	id _lock;
+	id _accounts;
+	id _service;
+}
+
++ _cacheAccounts:
++ _copyCachedAccounts
++ _nts_setAccounts:shouldCache:
++ _nts_setService:
++ previewNumberOfLines
++ usingExternalSyncForAccountWithID:
++ _nts_recalculateAccountsUsingExternalSync
++ bulletinRequestForMessage:showsLoading:
++ service
++ dealloc
++ init
++ sectionIdentifier
++ syncsBulletinDismissal
++ sectionParameters
++ bulletinsFilteredBy:count:lastCleared:
++ bulletinsFilteredBy:enabledSectionIDs:count:lastCleared:
++ clearedInfoForBulletins:lastClearedInfo:
++ defaultSectionInfo
++ defaultSubsectionInfos
++ displayNameForSubsectionID:
++ migrateSectionInfo:oldSectionInfo:
++ accounts
++ notificationServiceDidShutdown:withError:
++ notificationService:didFetchMessages:
++ notificationService:didFetchSummaryForMessages:
++ notificationService:didRemoveMessageIds:
++ notificationService:didChangeAccounts:hadError:
++ messagesInvalidatedForNotificationService:
++ protectedDataBecameAvailableForNotificationService:
++ _invalidateSectionParametersForNotificationService:
++ setService:
++ sortDescriptors
++ setAccounts:
+- _cacheAccounts:
+- _copyCachedAccounts
+- _nts_setAccounts:shouldCache:
+- _nts_setService:
+- previewNumberOfLines
+- usingExternalSyncForAccountWithID:
+- _nts_recalculateAccountsUsingExternalSync
+- bulletinRequestForMessage:showsLoading:
+- service
+- dealloc
+- init
+- sectionIdentifier
+- syncsBulletinDismissal
+- sectionParameters
+- bulletinsFilteredBy:count:lastCleared:
+- bulletinsFilteredBy:enabledSectionIDs:count:lastCleared:
+- clearedInfoForBulletins:lastClearedInfo:
+- defaultSectionInfo
+- defaultSubsectionInfos
+- displayNameForSubsectionID:
+- migrateSectionInfo:oldSectionInfo:
+- accounts
+- notificationServiceDidShutdown:withError:
+- notificationService:didFetchMessages:
+- notificationService:didFetchSummaryForMessages:
+- notificationService:didRemoveMessageIds:
+- notificationService:didChangeAccounts:hadError:
+- messagesInvalidatedForNotificationService:
+- protectedDataBecameAvailableForNotificationService:
+- _invalidateSectionParametersForNotificationService:
+- setService:
+- sortDescriptors
+- setAccounts:
+@end

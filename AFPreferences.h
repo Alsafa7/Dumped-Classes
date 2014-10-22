@@ -1,0 +1,99 @@
+@interface AFPreferences : NSObject
+{
+	BOOL _registeredForInternalPrefs;
+	BOOL _registeredForLanguageCode;
+	BOOL _registeredForOutputVoice;
+	id _navTokenQueue;
+	BOOL _navTokenIsValid;
+	int _navToken;
+}
+
++ dealloc
++ init
++ synchronize
++ dictationIsEnabled
++ languageCode
++ birthCertificateDataForLanguageCode:
++ outputVoice
++ _registerForInteralPrefs
++ _registerForLanguageCode
++ _registerForOutputVoice
++ setOutputVoice:
++ _registerForNavStatusIfNeeded
++ setBirthCertificateData:forLanguageCode:
++ whitelistedLanguages
++ _preferencesDidChangeExternally
++ _internalPreferencesDidChangeExternally
++ _languageCodeDidChangeExternally
++ _ouputVoiceDidChangeExternally
++ _setAssistantIsEnabledLocal:
++ _setDictationIsEnabledLocal:
++ setAssistantIsEnabled:
++ setDictationIsEnabled:
++ bugReportingMode
++ setBugReportingMode:
++ debugButtonIsEnabled
++ setDebugButtonIsEnabled:
++ handsFreeMode
++ setHandsFreeMode:
++ manualEndpointingEnabled
++ setManualEndpointingEnabled:
++ disableAssistantWhilePasscodeLocked
++ setDisableAssistantWhilePasscodeLocked:
++ shouldShowReadyForLanguageCode:
++ didShowReadyForLanguageCode:
++ setShouldShowReadyForLanguageCode:
++ synchronizeVoiceServicesLanguageCode
++ valueForSessionContextPreferenceKey:
++ setValue:forSessionContextKey:
++ languagesMissingBirthCertificates
++ setFileLoggingIsEnabled:
++ fileLoggingIsEnabled
++ assistantIsEnabled
++ setLanguageCode:
++ .cxx_destruct
+- dealloc
+- init
+- synchronize
+- dictationIsEnabled
+- languageCode
+- birthCertificateDataForLanguageCode:
+- outputVoice
+- _registerForInteralPrefs
+- _registerForLanguageCode
+- _registerForOutputVoice
+- setOutputVoice:
+- _registerForNavStatusIfNeeded
+- setBirthCertificateData:forLanguageCode:
+- whitelistedLanguages
+- _preferencesDidChangeExternally
+- _internalPreferencesDidChangeExternally
+- _languageCodeDidChangeExternally
+- _ouputVoiceDidChangeExternally
+- _setAssistantIsEnabledLocal:
+- _setDictationIsEnabledLocal:
+- setAssistantIsEnabled:
+- setDictationIsEnabled:
+- bugReportingMode
+- setBugReportingMode:
+- debugButtonIsEnabled
+- setDebugButtonIsEnabled:
+- handsFreeMode
+- setHandsFreeMode:
+- manualEndpointingEnabled
+- setManualEndpointingEnabled:
+- disableAssistantWhilePasscodeLocked
+- setDisableAssistantWhilePasscodeLocked:
+- shouldShowReadyForLanguageCode:
+- didShowReadyForLanguageCode:
+- setShouldShowReadyForLanguageCode:
+- synchronizeVoiceServicesLanguageCode
+- valueForSessionContextPreferenceKey:
+- setValue:forSessionContextKey:
+- languagesMissingBirthCertificates
+- setFileLoggingIsEnabled:
+- fileLoggingIsEnabled
+- assistantIsEnabled
+- setLanguageCode:
+- .cxx_destruct
+@end

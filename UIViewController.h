@@ -1,0 +1,68 @@
+@interface UIViewController : UIResponder
+{
+	id _view;
+	id _tabBarItem;
+	id _navigationItem;
+	id _toolbarItems;
+	id _title;
+	id _nibName;
+	id _nibBundle;
+	id _parentViewController;
+	id _childModalViewController;
+	id _parentModalViewController;
+	id _previousRootViewController;
+	id _modalTransitionView;
+	id _modalPreservedFirstResponder;
+	id _dimmingView;
+	id _dropShadowView;
+	id _currentAction;
+	id _storyboard;
+	id _storyboardSegueTemplates;
+	id _externalObjectsTableForViewLoading;
+	id _topLevelObjectsToKeepAliveFromStoryboard;
+	id _savedHeaderSuperview;
+	id _savedFooterSuperview;
+	id _editButtonItem;
+	id _searchDisplayController;
+	long long _modalTransitionStyle;
+	long long _modalPresentationStyle;
+	long long _lastKnownInterfaceOrientation;
+	id _popoverController;
+	id _containerViewInSheet;
+	struct _contentSizeForViewInPopover;
+	struct _formSheetSize;
+	id _recordedContentScrollView;
+	id _afterAppearance;
+	long long _explicitAppearanceTransitionLevel;
+	id _keyCommands;
+	struct _viewControllerFlags;
+	long long _retainCount;
+	BOOL _ignoreAppSupportedOrientations;
+	BOOL _viewHostsLayoutEngine;
+	id _storyboardIdentifier;
+	id _transitioningDelegate;
+	BOOL _modalPresentationCapturesStatusBarAppearance;
+	id _childViewControllers;
+	double _customNavigationInteractiveTransitionDuration;
+	double _customNavigationInteractiveTransitionPercentComplete;
+	id _transitionDelegate;
+	id _customTransitioningView;
+	double _navigationControllerContentOffsetAdjustment;
+	id _topLayoutGuide;
+	id _bottomLayoutGuide;
+	id _topBarInsetGuideConstraint;
+	id _bottomBarInsetGuideConstraint;
+	id _sourceViewControllerIfPresentedViaPopoverSegue;
+	id _modalSourceViewController;
+	id _presentedStatusBarViewController;
+	usigned long long _edgesForExtendedLayout;
+	id __embeddedView;
+	id __embeddingView;
+	id __embeddedDelegate;
+	struct _preferredContentSize;
+	struct _navigationControllerContentInsetAdjustment;
+	struct _contentOverlayInsets;
+	struct __embeddedViewFrame;
+}
+
+@end

@@ -1,0 +1,6 @@
+@interface MusicMoreListController : UIMoreListController
+{
+
+}
+
+@end

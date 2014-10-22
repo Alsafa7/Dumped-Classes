@@ -1,0 +1,63 @@
+@interface SBDateLabelStringFormatCache : NSObject
+{
+	id _dayOfWeekFormatter;
+	id _dayOfWeekWithTimeFormatter;
+	id _dayMonthYearFormatter;
+	id _shortDayMonthFormatter;
+	id _shortDayMonthTimeFormatter;
+	id _abbrevDayMonthFormatter;
+	id _abbrevDayMonthTimeFormatter;
+	id _timeFormatter;
+	id _relativeDateTimeFormatter;
+	id _relativeDateFormatter;
+	id _dayOfWeekMonthDayFormatter;
+	id _timeNoAMPMFormatter;
+	id _decimalFormatter;
+	id _timerNumberFormatter;
+	id _abbreviatedTimerFormatter;
+	id _alarmSnoozeFormatter;
+	id _timerReferenceDate;
+	id _alarmReferenceDate;
+}
+
++ formatAlarmSnoozeDuration:
++ formatNumberAsDecimal:
++ formatDateAsTimeStyle:
++ formatDateAsRelativeDateAndTimeStyle:
++ formatDateAsAbbreviatedDayOfWeekWithTime:
++ formatDateAsShortDayMonthWithTimeStyle:
++ formatDateAsRelativeDateStyle:
++ formatDateAsDayOfWeek:
++ formatDateAsDayMonthYearStyle:
++ formatDateAsAbbreviatedDayMonthStyle:
++ resetFormatters:
++ _shouldShowHoursForTimerDuration:
++ formatDateAsAbbreviatedDayMonthWithTimeStyle:
++ formatTimerDuration:
++ formatAbbreviatedTimerDuration:
++ dealloc
++ init
++ formatDateAsTimeNoAMPM:
++ formatDateAsDayOfWeekMonthDayStyle:
++ resetFormattersIfNecessary
+- formatAlarmSnoozeDuration:
+- formatNumberAsDecimal:
+- formatDateAsTimeStyle:
+- formatDateAsRelativeDateAndTimeStyle:
+- formatDateAsAbbreviatedDayOfWeekWithTime:
+- formatDateAsShortDayMonthWithTimeStyle:
+- formatDateAsRelativeDateStyle:
+- formatDateAsDayOfWeek:
+- formatDateAsDayMonthYearStyle:
+- formatDateAsAbbreviatedDayMonthStyle:
+- resetFormatters:
+- _shouldShowHoursForTimerDuration:
+- formatDateAsAbbreviatedDayMonthWithTimeStyle:
+- formatTimerDuration:
+- formatAbbreviatedTimerDuration:
+- dealloc
+- init
+- formatDateAsTimeNoAMPM:
+- formatDateAsDayOfWeekMonthDayStyle:
+- resetFormattersIfNecessary
+@end

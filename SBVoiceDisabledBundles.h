@@ -1,0 +1,6 @@
+@interface SBVoiceDisabledBundles : NSObject
+{
+
+}
+
+@end

@@ -1,0 +1,77 @@
+@interface __NSCFLocalSessionBridge : __NSCFSessionBridge
+{
+	id _session;
+	usigned long long _identSeed;
+	pointer _connectionSession;
+	pointer _tasks;
+	id _invalidateQueue;
+	id _invalidateCallback;
+}
+
++ replaceTask:withDownloadTask:
++ taskTerminating:
++ _onqueue_invokeInvalidateCallback
++ _onqueue_checkForCompletion
++ copyTasks
++ initWithConfiguration:session:queue:
++ invalidateSession:withQueue:completion:
++ dataTaskForRequest:completion:
++ uploadTaskForRequest:uploadFile:bodyData:completion:
++ downloadTaskForRequest:resumeData:completion:
++ flushStorageWithCompletionHandler:
++ resetStorageWithCompletionHandler:
++ classicConnectionSession
++ statusMessage:
++ bridgeInvalidated:
++ operationCompleted:
++ connToTask:
++ taskCreated:
++ task:wasRedirected:newRequest:responseCallback:
++ task:didReceiveResponse:
++ task:willCacheResponse:responseCallback:
++ task:didFinishLoadingWithError:
++ task:request:needsNewBodyStreamCallback:
++ task:challenged:authCallback:
++ task:didReceiveData:
++ task:sentBodyBytes:totalBytes:expectedBytes:
++ demuxv:args:
++ _onqueue_connectUploadTask:strippedRequest:bodyStream:bodyParts:
++ taskForClass:request:uploadFile:bodyData:completion:
++ _onqueue_withDataTaskForSession:perform:
++ _onqueue_withDownloadTaskForSession:perform:
++ taskDidFinishLoading:
++ dealloc
+- replaceTask:withDownloadTask:
+- taskTerminating:
+- _onqueue_invokeInvalidateCallback
+- _onqueue_checkForCompletion
+- copyTasks
+- initWithConfiguration:session:queue:
+- invalidateSession:withQueue:completion:
+- dataTaskForRequest:completion:
+- uploadTaskForRequest:uploadFile:bodyData:completion:
+- downloadTaskForRequest:resumeData:completion:
+- flushStorageWithCompletionHandler:
+- resetStorageWithCompletionHandler:
+- classicConnectionSession
+- statusMessage:
+- bridgeInvalidated:
+- operationCompleted:
+- connToTask:
+- taskCreated:
+- task:wasRedirected:newRequest:responseCallback:
+- task:didReceiveResponse:
+- task:willCacheResponse:responseCallback:
+- task:didFinishLoadingWithError:
+- task:request:needsNewBodyStreamCallback:
+- task:challenged:authCallback:
+- task:didReceiveData:
+- task:sentBodyBytes:totalBytes:expectedBytes:
+- demuxv:args:
+- _onqueue_connectUploadTask:strippedRequest:bodyStream:bodyParts:
+- taskForClass:request:uploadFile:bodyData:completion:
+- _onqueue_withDataTaskForSession:perform:
+- _onqueue_withDownloadTaskForSession:perform:
+- taskDidFinishLoading:
+- dealloc
+@end

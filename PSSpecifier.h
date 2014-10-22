@@ -1,0 +1,138 @@
+@interface PSSpecifier : NSObject
+{
+	id target;
+	SEL getter;
+	SEL setter;
+	SEL action;
+	SEL cancel;
+	Class detailControllerClass;
+	long long cellType;
+	Class editPaneClass;
+	long long keyboardType;
+	long long autoCapsType;
+	long long autoCorrectionType;
+	usigned long long textFieldType;
+	id _name;
+	id _values;
+	id _titleDict;
+	id _shortTitleDict;
+	id _userInfo;
+	id _properties;
+	SEL _confirmationAction;
+	SEL _confirmationCancelAction;
+	SEL _buttonAction;
+	SEL _controllerLoadAction;
+	BOOL _showContentString;
+}
+
++ preferenceLoaderBundle
++ CNFRegAlias
++ CNFRegAccount
++ setCNFRegAccount:
++ setCNFRegAlias:
++ CNFRegCallerIdAlias
++ setCNFRegCallerIdAlias:
++ acui_dataclass
++ acui_appBundleID
++ propertyForKey:
++ setProperty:forKey:
++ dealloc
++ init
++ description
++ setTarget:
++ userInfo
++ setName:
++ setValues:
++ values
++ name
++ target
++ identifier
++ setIdentifier:
++ properties
++ setUserInfo:
++ setProperties:
++ setButtonAction:
++ buttonAction
++ setValues:titles:
++ setKeyboardType:autoCaps:autoCorrection:
++ removePropertyForKey:
++ showContentString
++ controllerLoadAction
++ confirmationAction
++ cellType
++ confirmationCancelAction
++ setControllerLoadAction:
++ setupIconImageWithPath:
++ setValues:titles:shortTitles:
++ setTitleDictionary:
++ setShortTitleDictionary:
++ loadValuesAndTitlesFromDataSource
++ setValues:titles:shortTitles:usingLocalizedTitleSorting:
++ setupIconImageWithBundle:
++ shortTitleDictionary
++ titleCompare:
++ detailControllerClass
++ setDetailControllerClass:
++ setCellType:
++ editPaneClass
++ setEditPaneClass:
++ titleDictionary
++ setConfirmationAction:
++ setConfirmationCancelAction:
++ setShowContentString:
+- preferenceLoaderBundle
+- CNFRegAlias
+- CNFRegAccount
+- setCNFRegAccount:
+- setCNFRegAlias:
+- CNFRegCallerIdAlias
+- setCNFRegCallerIdAlias:
+- acui_dataclass
+- acui_appBundleID
+- propertyForKey:
+- setProperty:forKey:
+- dealloc
+- init
+- description
+- setTarget:
+- userInfo
+- setName:
+- setValues:
+- values
+- name
+- target
+- identifier
+- setIdentifier:
+- properties
+- setUserInfo:
+- setProperties:
+- setButtonAction:
+- buttonAction
+- setValues:titles:
+- setKeyboardType:autoCaps:autoCorrection:
+- removePropertyForKey:
+- showContentString
+- controllerLoadAction
+- confirmationAction
+- cellType
+- confirmationCancelAction
+- setControllerLoadAction:
+- setupIconImageWithPath:
+- setValues:titles:shortTitles:
+- setTitleDictionary:
+- setShortTitleDictionary:
+- loadValuesAndTitlesFromDataSource
+- setValues:titles:shortTitles:usingLocalizedTitleSorting:
+- setupIconImageWithBundle:
+- shortTitleDictionary
+- titleCompare:
+- detailControllerClass
+- setDetailControllerClass:
+- setCellType:
+- editPaneClass
+- setEditPaneClass:
+- titleDictionary
+- setConfirmationAction:
+- setConfirmationCancelAction:
+- setShowContentString:
+@end

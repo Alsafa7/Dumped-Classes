@@ -1,0 +1,6 @@
+@interface DOMRGBColor : DOMObject
+{
+
+}
+
+@end

@@ -1,0 +1,79 @@
+@interface AudioDeviceController : NSObject
+{
+	id _delegate;
+	id _avController;
+	id _pickedRoute;
+	id _pickableRoutes;
+}
+
++ callAudioRouteChangedEventHandler:
++ handsetRouteAvailable
++ speakerRouteAvailable
++ _routeIsDefault:
++ _routeIsAirPlayMirroring:
++ _routeIsBlueToothLEA:
++ pickDefaultRoute
++ setAVController:
++ clearCachedRoutes
++ _pickedRoute
++ _routeIsSpeaker:
++ _routeIsHandset:
++ _pickableRoutes
++ routeNameAtIndex:isPicked:
++ _routeIsReceiver:
++ numberOfAudioRoutes
++ pickHandsetRoute
++ pickRouteAtIndex:
++ pickSpeakerRoute
++ receiverRouteIsPicked
++ restorePickedRoute
++ speakerRouteIsPicked
++ dealloc
++ setDelegate:
++ init
++ auxiliaryAudioRoutesAvailable
++ _registerForAVControllerNotifications
++ _pickRoute:
++ audioCategoryIsTTY
++ _routeIsAirTunes:
++ invalidateAVController
++ _pickableRoutesChanged
++ _mediaServerDied
++ pickRouteWithUID:
++ isAirPlayMirroring
+- callAudioRouteChangedEventHandler:
+- handsetRouteAvailable
+- speakerRouteAvailable
+- _routeIsDefault:
+- _routeIsAirPlayMirroring:
+- _routeIsBlueToothLEA:
+- pickDefaultRoute
+- setAVController:
+- clearCachedRoutes
+- _pickedRoute
+- _routeIsSpeaker:
+- _routeIsHandset:
+- _pickableRoutes
+- routeNameAtIndex:isPicked:
+- _routeIsReceiver:
+- numberOfAudioRoutes
+- pickHandsetRoute
+- pickRouteAtIndex:
+- pickSpeakerRoute
+- receiverRouteIsPicked
+- restorePickedRoute
+- speakerRouteIsPicked
+- dealloc
+- setDelegate:
+- init
+- auxiliaryAudioRoutesAvailable
+- _registerForAVControllerNotifications
+- _pickRoute:
+- audioCategoryIsTTY
+- _routeIsAirTunes:
+- invalidateAVController
+- _pickableRoutesChanged
+- _mediaServerDied
+- pickRouteWithUID:
+- isAirPlayMirroring
+@end

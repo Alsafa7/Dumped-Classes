@@ -1,0 +1,6 @@
+@interface MPLoggingUtility : NSObject
+{
+
+}
+
+@end

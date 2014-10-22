@@ -1,0 +1,115 @@
+@interface UIWebTiledView : UIView
+{
+	id _wakWindow;
+	int _inGestureType;
+	int _tilingArea;
+	BOOL _didFirstTileLayout;
+	BOOL _layoutTilesInMainThread;
+	BOOL _tilingModeIsLocked;
+	BOOL _allowsPaintingAndScriptsWhilePanning;
+	BOOL _editingTilingModeEnabled;
+}
+
++ initWithFrame:
++ dealloc
++ setNeedsDisplay
++ setNeedsLayout
++ layoutSubviews
++ setTransform:
++ willMoveToWindow:
++ setNeedsDisplayInRect:
++ _didScroll
++ visibleRect
++ setTileSize:
++ setMaxTileCount:
++ setTilingEnabled:
++ setLayoutTilesInMainThread:
++ layoutTilesNow
++ setEditingTilingModeEnabled:
++ removeAllNonVisibleTiles
++ setTilingArea:
++ setTilesOpaque:
++ removeAllTiles
++ removeForegroundTiles
++ setInGesture:
++ tilingArea
++ _updateForScreen:
++ _screenChanged:
++ layoutTilesNowForRect:
++ updateTilingMode
++ tilesOpaque
++ setKeepsZoomedOutTiles:
++ keepsZoomedOutTiles
++ dumpTiles
++ setWAKWindow:
++ layoutTilesNowOnWebThread
++ drawImageIntoTiles:
++ lockTilingMode
++ unlockTilingMode
++ allowsPaintingAndScriptsWhilePanning
++ setAllowsPaintingAndScriptsWhilePanning:
++ tileSize
++ setDrawsGrid:
++ drawsGrid
++ maxTileCount
++ adjustedMaxTileCount
++ isTilingEnabled
++ setLogsTilingChanges:
++ logsTilingChanges
++ setTileDrawingEnabled:
++ editingTilingModeEnabled
++ tileDrawingEnabled
++ layoutTilesInMainThread
++ wakWindow
+- initWithFrame:
+- dealloc
+- setNeedsDisplay
+- setNeedsLayout
+- layoutSubviews
+- setTransform:
+- willMoveToWindow:
+- setNeedsDisplayInRect:
+- _didScroll
+- visibleRect
+- setTileSize:
+- setMaxTileCount:
+- setTilingEnabled:
+- setLayoutTilesInMainThread:
+- layoutTilesNow
+- setEditingTilingModeEnabled:
+- removeAllNonVisibleTiles
+- setTilingArea:
+- setTilesOpaque:
+- removeAllTiles
+- removeForegroundTiles
+- setInGesture:
+- tilingArea
+- _updateForScreen:
+- _screenChanged:
+- layoutTilesNowForRect:
+- updateTilingMode
+- tilesOpaque
+- setKeepsZoomedOutTiles:
+- keepsZoomedOutTiles
+- dumpTiles
+- setWAKWindow:
+- layoutTilesNowOnWebThread
+- drawImageIntoTiles:
+- lockTilingMode
+- unlockTilingMode
+- allowsPaintingAndScriptsWhilePanning
+- setAllowsPaintingAndScriptsWhilePanning:
+- tileSize
+- setDrawsGrid:
+- drawsGrid
+- maxTileCount
+- adjustedMaxTileCount
+- isTilingEnabled
+- setLogsTilingChanges:
+- logsTilingChanges
+- setTileDrawingEnabled:
+- editingTilingModeEnabled
+- tileDrawingEnabled
+- layoutTilesInMainThread
+- wakWindow
+@end

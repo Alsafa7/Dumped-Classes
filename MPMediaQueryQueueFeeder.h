@@ -1,0 +1,88 @@
+@interface MPMediaQueryQueueFeeder : MPQueueFeeder
+{
+	long long _ignoreShuffleTypeChangesCount;
+	id _items;
+	bit[1] _itemsChanged;
+	id _connectionAssertion;
+	id _query;
+	id _prefixMediaItems;
+	id _focusedItem;
+	bit[1] _hasPendingLibraryChanges;
+	BOOL _useAirPlayMusicMode;
+}
+
++ setQuery:
++ nonRepeatingItemCount
++ itemCount
++ copyRawItemAtIndex:
++ playbackInfoAtIndex:
++ itemClass
++ restoreAVControllerPlaybackQueue:fromUnarchiver:
++ initialPlaybackQueueDepth
++ setSubsequenceFocused:currentItemIndex:
++ shuffleItemsWithAnchor:
++ shouldBeginPlaybackOfItem:error:
++ itemTypeForIndex:
++ trackChangesCanEndPlayback
++ archiveAVControllerPlaybackQueue:toArchiver:
++ setAVController:
++ _applicationWillEnterForegroundNotification:
++ _availableRoutesDidChangeNotification:
++ _libraryDidChangeNotification:
++ mediaItemAtIndex:
++ _shuffleItemsInFeederQueryWithShuffleType:initialIndex:
++ setPrefixMediaItems:
++ _performWhileIgnoringShuffleChanges:
++ _handleMediaLibraryDidChange
++ _applyAirPlayMusicMode
++ indexOfMediaItem:
++ setUseAirPlayMusicMode:
++ unshuffledIndexOfAVItem:
++ prefixMediaItems
++ focusedItem
++ setFocusedItem:
++ useAirPlayMusicMode
++ dealloc
++ init
++ query
++ preferredLanguages
++ pathAtIndex:
++ .cxx_destruct
+- setQuery:
+- nonRepeatingItemCount
+- itemCount
+- copyRawItemAtIndex:
+- playbackInfoAtIndex:
+- itemClass
+- restoreAVControllerPlaybackQueue:fromUnarchiver:
+- initialPlaybackQueueDepth
+- setSubsequenceFocused:currentItemIndex:
+- shuffleItemsWithAnchor:
+- shouldBeginPlaybackOfItem:error:
+- itemTypeForIndex:
+- trackChangesCanEndPlayback
+- archiveAVControllerPlaybackQueue:toArchiver:
+- setAVController:
+- _applicationWillEnterForegroundNotification:
+- _availableRoutesDidChangeNotification:
+- _libraryDidChangeNotification:
+- mediaItemAtIndex:
+- _shuffleItemsInFeederQueryWithShuffleType:initialIndex:
+- setPrefixMediaItems:
+- _performWhileIgnoringShuffleChanges:
+- _handleMediaLibraryDidChange
+- _applyAirPlayMusicMode
+- indexOfMediaItem:
+- setUseAirPlayMusicMode:
+- unshuffledIndexOfAVItem:
+- prefixMediaItems
+- focusedItem
+- setFocusedItem:
+- useAirPlayMusicMode
+- dealloc
+- init
+- query
+- preferredLanguages
+- pathAtIndex:
+- .cxx_destruct
+@end

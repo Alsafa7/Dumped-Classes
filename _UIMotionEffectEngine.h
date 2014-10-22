@@ -1,0 +1,93 @@
+@interface _UIMotionEffectEngine : NSObject
+{
+	id _effectViewAssociationTable;
+	id _analyzerSettingsToAnalyzers;
+	id _analyzersToEffects;
+	id _analyzersToHistories;
+	id _suspendedViewsToEffectSets;
+	id _motionManager;
+	id _motionEventQueue;
+	BOOL _hasReceivedAtLeastOneMotionEventSinceStarting;
+	struct _pendingDeviceMotionStruct;
+	double _pendingDeviceMotionTimestamp;
+	int _pendingDeviceMotionLock;
+	id _displayLink;
+	BOOL _generatingUpdates;
+	id _suspendReasons;
+	struct _lastDeviceQuaternion;
+	double _lastUpdateTimestamp;
+	BOOL _slowUpdatesEnabled;
+	BOOL _pendingSlowDown;
+	long long _sensorStatus;
+	BOOL _allAnalyzersAreCentered;
+	BOOL _hasAppliedAtLeastOneUpdateSinceStarting;
+	BOOL _isPendingReset;
+	id _motionLogger;
+	int _thermalNotificationToken;
+	int _screenDimmingNotificationToken;
+	long long _targetInterfaceOrientation;
+}
+
++ dealloc
++ init
++ debugDescription
++ beginSuspendingMotionEffectsForView:
++ beginApplyingMotionEffect:toView:
++ endApplyingMotionEffect:toView:
++ _hasMotionEffectsForView:
++ endSuspendingMotionEffectsForView:
++ _unregisterAllMotionEffectsForView:
++ beginSuspendingForReason:
++ endSuspendingForReason:
++ resetMotionAnalysis
++ _motionEffectsForView:
++ _motionEffectsAreSuspendedForView:
++ _setTargetInterfaceOrientation:
++ _targetInterfaceOrientation
++ suspensionReasons
++ _startOrStopGeneratingUpdates
++ _stopGeneratingUpdates
++ _unapplyAllEffects
++ _updateDisplayLinkInterval
++ _isSuspended
++ _toggleSlowUpdates
++ _shouldSuspendApplicationForHysteresisGivenLastAppliedViewerOffset:newViewerOffset:wasSuspendingApplicationForHysteresis:
++ _applyEffectsFromAnalyzer:
++ _shouldGenerateUpdates
++ _startGeneratingUpdates
++ _handleLatestDeviceMotion
++ _unregisterMotionEffect:fromView:
++ _scheduleUpdateWithDeviceMotion:timestamp:
++ _setMotionManagerSensorStatus:
+- dealloc
+- init
+- debugDescription
+- beginSuspendingMotionEffectsForView:
+- beginApplyingMotionEffect:toView:
+- endApplyingMotionEffect:toView:
+- _hasMotionEffectsForView:
+- endSuspendingMotionEffectsForView:
+- _unregisterAllMotionEffectsForView:
+- beginSuspendingForReason:
+- endSuspendingForReason:
+- resetMotionAnalysis
+- _motionEffectsForView:
+- _motionEffectsAreSuspendedForView:
+- _setTargetInterfaceOrientation:
+- _targetInterfaceOrientation
+- suspensionReasons
+- _startOrStopGeneratingUpdates
+- _stopGeneratingUpdates
+- _unapplyAllEffects
+- _updateDisplayLinkInterval
+- _isSuspended
+- _toggleSlowUpdates
+- _shouldSuspendApplicationForHysteresisGivenLastAppliedViewerOffset:newViewerOffset:wasSuspendingApplicationForHysteresis:
+- _applyEffectsFromAnalyzer:
+- _shouldGenerateUpdates
+- _startGeneratingUpdates
+- _handleLatestDeviceMotion
+- _unregisterMotionEffect:fromView:
+- _scheduleUpdateWithDeviceMotion:timestamp:
+- _setMotionManagerSensorStatus:
+@end

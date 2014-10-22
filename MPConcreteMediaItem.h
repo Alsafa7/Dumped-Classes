@@ -1,0 +1,72 @@
+@interface MPConcreteMediaItem : MPMediaItem
+{
+	id _library;
+	usigned long long _persistentID;
+	id _propertiesCache;
+}
+
++ mediaLibrary
++ initWithPersistentID:
++ setValue:forProperty:withCompletionBlock:
++ enumerateValuesForProperties:usingBlock:
++ itemArrayCoderPIDDataCodingClass
++ valuesForProperties:
++ didSkipWithPlayedToTime:
++ markNominalAmountHasBeenPlayed
++ noteWasPlayedToTime:skipped:
++ incrementSkipCount
++ incrementPlayCountForPlayingToEnd
++ incrementPlayCountForStopTime:
++ updateDateAccessedToCurrentDateWithWriteCompletionBlock:
++ _initWithPersistentID:library:propertiesCache:
++ _nonBatchableOrCachedValueForProperty:needsFetch:
++ nominalHasBeenPlayedThreshold
++ reallyIncrementPlayCount
++ initWithPersistentID:library:
++ cachedPropertyValues
++ invalidateCachedProperties
++ dealloc
++ initWithCoder:
++ encodeWithCoder:
++ init
++ description
++ copyWithZone:
++ classForCoder
++ valueForProperty:
++ setValue:forProperty:
++ persistentID
++ existsInLibrary
++ .cxx_destruct
+- mediaLibrary
+- initWithPersistentID:
+- setValue:forProperty:withCompletionBlock:
+- enumerateValuesForProperties:usingBlock:
+- itemArrayCoderPIDDataCodingClass
+- valuesForProperties:
+- didSkipWithPlayedToTime:
+- markNominalAmountHasBeenPlayed
+- noteWasPlayedToTime:skipped:
+- incrementSkipCount
+- incrementPlayCountForPlayingToEnd
+- incrementPlayCountForStopTime:
+- updateDateAccessedToCurrentDateWithWriteCompletionBlock:
+- _initWithPersistentID:library:propertiesCache:
+- _nonBatchableOrCachedValueForProperty:needsFetch:
+- nominalHasBeenPlayedThreshold
+- reallyIncrementPlayCount
+- initWithPersistentID:library:
+- cachedPropertyValues
+- invalidateCachedProperties
+- dealloc
+- initWithCoder:
+- encodeWithCoder:
+- init
+- description
+- copyWithZone:
+- classForCoder
+- valueForProperty:
+- setValue:forProperty:
+- persistentID
+- existsInLibrary
+- .cxx_destruct
+@end

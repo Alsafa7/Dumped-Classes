@@ -1,0 +1,65 @@
+@interface APNetworksController : PSListController
+{
+	id _manager;
+	id _group1;
+	id _alwaysVisibleGroup;
+	id _poweredOnGroup;
+	id _askToJoinGroup;
+	id _knownNetworksGroup;
+	id _buddyGroup;
+	id _networksGroup;
+	id _powerSpecifier;
+	id _diagnosticsSpecifier;
+	id _networks;
+	id _networksDict;
+	id _unconfigGroup;
+	id _unconfig;
+	id _config;
+	id _unconfigSpecifiers;
+	id _adhocGroup;
+	id _adhocs;
+	id _adhocSpecifiers;
+	id _securityDict;
+	id _enterprisePrompt;
+	id _autojoinOn;
+	id _autojoinOff;
+	id _locationWarning;
+	id _knownNetworks;
+	id _currentNetworkSpecifier;
+	id _tetheringGroup;
+	BOOL _tetheringGroupVisible;
+	BOOL _power;
+	id _scanTimer;
+	BOOL _scanning;
+	BOOL _disclosing;
+	BOOL _joining;
+	BOOL _joiningEnterprise;
+	BOOL _showingCert;
+	BOOL _showKnownNetworks;
+	id _lastNetworkName;
+	id _joiningSpecifier;
+	id _passwordAlert;
+	id _alert;
+	id _hotspotAlert;
+	id _adhocJoinAlert;
+	id _buddyHeaderLabel;
+	id _buddyFooterView;
+	id _buddyIPadContainerView;
+	id _otherSpecifier;
+	id _currentScanList;
+	int _role;
+	id _certificateChain;
+	id _scanDictForTrustRequest;
+	BOOL _formSheetVisible;
+	BOOL _willResign;
+	id _assistantNavController;
+	BOOL _buddyGroupVisible;
+	BOOL _buddyButtonCellular;
+	BOOL _buddySimpleMode;
+	BOOL _visible;
+	id _otherUINetworkToJoin;
+	BOOL _joinRequestedFromSettings;
+	BOOL _joinedFromSettings;
+}
+
+@end

@@ -1,0 +1,102 @@
+@interface SKUIItemStateCenter : NSObject
+{
+	id _accessQueue;
+	char _appInstallRestricted;
+	char _canAccessPurchaseHistory;
+	id _downloadManager;
+	id _finishLoadBlocks;
+	long long _gratisState;
+	long long _loadCount;
+	id _itemStates;
+	id _observerQueue;
+	pointer _observers;
+	long long _parentalControlsRank;
+	id _purchaseHistoryDatabase;
+	char _runningInStoreDemoMode;
+}
+
++ downloadManager:downloadStatesDidChange:
++ downloadManagerDownloadsDidChange:
++ _applicationDidEnterBackgroundNotification:
++ dealloc
++ init
++ isRunningInStoreDemoMode
++ removeObserver:
++ addObserver:
++ _reloadPurchaseHistory
++ _reloadSoftwareLibrary
++ _fireFinishLoadBlocksIfNecessary
++ isApplicationInstallRestricted
++ parentalControlsRank
++ stateForItemWithIdentifier:
++ metricsActionTypeForItem:
++ purchaseItem:withCompletionBlock:
++ cancelDownloadForItemWithIdentifier:
++ purchaseItems:withCompletionBlock:
++ _newPurchasesWithItems:
++ _addState:forItemIdentifier:
++ _notifyObserversOfStateChanges:
++ _replacePurchasingItem:withDownloadIDs:
++ _notifyObserversOfPurchasesResponses:
++ _removePurchasingItemsForPurchases:
++ _setGratisIdentifiers:error:
++ _notifyObserversOfRestrictionsChange
++ _setDownloads:
++ _purchaseHistoryDatabase
++ _setPurchaseHistoryItemsWithIdentifiers:
++ _setInstalledItems:
++ _removeState:forItemIdentifier:
++ _notifyObserversOfStateChange:
++ _setStateFlag:forOnlyItemsWithIdentifiers:
++ finishLoadingWithCompletionBlock:
++ isGratisEligible
++ isItemRestrictedWithParentalControlsRank:
++ performActionForItem:withCompletionBlock:
++ reloadGratisEligibilityWithBundleIdentifiers:clientContext:
++ .cxx_destruct
++ _restrictionsChangedNotification:
++ reloadFromServer
++ _reloadDownloadManager
+- downloadManager:downloadStatesDidChange:
+- downloadManagerDownloadsDidChange:
+- _applicationDidEnterBackgroundNotification:
+- dealloc
+- init
+- isRunningInStoreDemoMode
+- removeObserver:
+- addObserver:
+- _reloadPurchaseHistory
+- _reloadSoftwareLibrary
+- _fireFinishLoadBlocksIfNecessary
+- isApplicationInstallRestricted
+- parentalControlsRank
+- stateForItemWithIdentifier:
+- metricsActionTypeForItem:
+- purchaseItem:withCompletionBlock:
+- cancelDownloadForItemWithIdentifier:
+- purchaseItems:withCompletionBlock:
+- _newPurchasesWithItems:
+- _addState:forItemIdentifier:
+- _notifyObserversOfStateChanges:
+- _replacePurchasingItem:withDownloadIDs:
+- _notifyObserversOfPurchasesResponses:
+- _removePurchasingItemsForPurchases:
+- _setGratisIdentifiers:error:
+- _notifyObserversOfRestrictionsChange
+- _setDownloads:
+- _purchaseHistoryDatabase
+- _setPurchaseHistoryItemsWithIdentifiers:
+- _setInstalledItems:
+- _removeState:forItemIdentifier:
+- _notifyObserversOfStateChange:
+- _setStateFlag:forOnlyItemsWithIdentifiers:
+- finishLoadingWithCompletionBlock:
+- isGratisEligible
+- isItemRestrictedWithParentalControlsRank:
+- performActionForItem:withCompletionBlock:
+- reloadGratisEligibilityWithBundleIdentifiers:clientContext:
+- .cxx_destruct
+- _restrictionsChangedNotification:
+- reloadFromServer
+- _reloadDownloadManager
+@end

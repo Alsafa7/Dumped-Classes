@@ -1,0 +1,6 @@
+@interface NSFaultHandler : NSObject
+{
+
+}
+
+@end

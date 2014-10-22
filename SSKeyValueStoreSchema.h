@@ -1,0 +1,6 @@
+@interface SSKeyValueStoreSchema : NSObject
+{
+
+}
+
+@end

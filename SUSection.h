@@ -1,0 +1,95 @@
+@interface SUSection : NSObject
+{
+	id _clientInterface;
+	id _dictionary;
+	id _image;
+	id _moreListImage;
+	id _searchFieldConfiguration;
+	id _sectionButtonImages;
+	id _selectedImage;
+	id _selectedMoreListImage;
+}
+
++ dealloc
++ setImage:
++ description
++ type
++ image
++ title
++ identifier
++ moreListImage
++ selectedImage
++ setSelectedImage:
++ url
++ backgroundGradient
++ valueForProperty:
++ isTransient
++ initWithClientInterface:
++ isDefaultSection
++ partnerHeader
++ urlBagKey
++ _imageBaseName
++ itemImages
++ _sectionButtonsForKey:
++ setSearchFieldConfiguration:
++ _colorForKey:
++ _minimumNetworkTypeFromDictionary:
++ _typeForString:
++ defaultPNGStyle
++ imageForSectionButtonWithTag:
++ isUsingLocalArtwork
++ leftSectionButtons
++ loadFromDictionary:searchField:
++ loadingIndicatorColor
++ loadingTextColor
++ loadingTextShadowColor
++ minimumNetworkType
++ pageSectionGroup
++ rightSectionButtons
++ selectedMoreListImage
++ setSectionButtonImage:forTag:
++ setMoreListImage:
++ searchFieldConfiguration
++ setSelectedMoreListImage:
+- dealloc
+- setImage:
+- description
+- type
+- image
+- title
+- identifier
+- moreListImage
+- selectedImage
+- setSelectedImage:
+- url
+- backgroundGradient
+- valueForProperty:
+- isTransient
+- initWithClientInterface:
+- isDefaultSection
+- partnerHeader
+- urlBagKey
+- _imageBaseName
+- itemImages
+- _sectionButtonsForKey:
+- setSearchFieldConfiguration:
+- _colorForKey:
+- _minimumNetworkTypeFromDictionary:
+- _typeForString:
+- defaultPNGStyle
+- imageForSectionButtonWithTag:
+- isUsingLocalArtwork
+- leftSectionButtons
+- loadFromDictionary:searchField:
+- loadingIndicatorColor
+- loadingTextColor
+- loadingTextShadowColor
+- minimumNetworkType
+- pageSectionGroup
+- rightSectionButtons
+- selectedMoreListImage
+- setSectionButtonImage:forTag:
+- setMoreListImage:
+- searchFieldConfiguration
+- setSelectedMoreListImage:
+@end

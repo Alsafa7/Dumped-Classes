@@ -1,0 +1,159 @@
+@interface NSXPCConnection : NSObject
+{
+	pointer _xconnection;
+	id _incomingReplyInfo;
+	id _userQueue;
+	unsigned int _state;
+	unsigned int _state2;
+	id _interruptionHandler;
+	id _invalidationHandler;
+	id _exportInfo;
+	id _replyInfo;
+	id _importInfo;
+	id _otherInfo;
+	id _reserved1;
+	id _lock;
+	id _remoteObjectInterface;
+	id _serviceName;
+	id _endpoint;
+	id _eCache;
+	id _dCache;
+}
+
++ sl_localizedClientName
++ sl_clientHasEntitlement:
++ _clientBundleID
++ ml_setValid:
++ ml_isValid
++ initWithServiceName:options:
++ initWithListenerEndpoint:
++ _invalidate:
++ invalidationHandler
++ _sendInvocation:proxyNumber:remoteInterface:withErrorHandler:timeout:userInfo:
++ _sendDesistForProxyNumber:
++ _decodeAndInvokeReplyBlockWithData:
++ _decodeAndInvokeMessageWithData:
++ _initWithPeerConnection:name:options:
++ initWithEndpoint:
++ addBarrierBlock:
++ _sendInvocation:proxyNumber:remoteInterface:
++ _sendInvocation:proxyNumber:remoteInterface:withErrorHandler:
++ _sendInvocation:proxyNumber:remoteInterface:withErrorHandler:timeout:
++ interruptionHandler
++ serviceName
++ _exportTable
++ valueForEntitlement:
++ replacementObjectForEncoder:object:
++ _encodeCacheContainsClass:
++ _addClassToEncodeCache:
++ _decodeCacheContainsClass:
++ _addClassToDecodeCache:
++ exportedObject
++ remoteObjectProxyWithUserInfo:errorHandler:
++ remoteObjectProxyWithTimeout:errorHandler:
++ _addImportedProxy:
++ _removeImportedProxy:
++ auditSessionIdentifier
++ effectiveUserIdentifier
++ effectiveGroupIdentifier
++ _setUUID:
++ remoteObjectInterface
++ dealloc
++ setDelegate:
++ init
++ debugDescription
++ delegate
++ invalidate
++ suspend
++ userInfo
++ start
++ initWithMachServiceName:options:
++ setRemoteObjectInterface:
++ resume
++ remoteObjectProxyWithErrorHandler:
++ initWithMachServiceName:
++ setOptions:
++ _setQueue:
++ remoteObjectProxy
++ setUserInfo:
++ stop
++ _queue
++ exportedInterface
++ setExportedInterface:
++ setExportedObject:
++ setInterruptionHandler:
++ setInvalidationHandler:
++ processIdentifier
++ auditToken
++ endpoint
++ initWithServiceName:
++ finalize
+- sl_localizedClientName
+- sl_clientHasEntitlement:
+- _clientBundleID
+- ml_setValid:
+- ml_isValid
+- initWithServiceName:options:
+- initWithListenerEndpoint:
+- _invalidate:
+- invalidationHandler
+- _sendInvocation:proxyNumber:remoteInterface:withErrorHandler:timeout:userInfo:
+- _sendDesistForProxyNumber:
+- _decodeAndInvokeReplyBlockWithData:
+- _decodeAndInvokeMessageWithData:
+- _initWithPeerConnection:name:options:
+- initWithEndpoint:
+- addBarrierBlock:
+- _sendInvocation:proxyNumber:remoteInterface:
+- _sendInvocation:proxyNumber:remoteInterface:withErrorHandler:
+- _sendInvocation:proxyNumber:remoteInterface:withErrorHandler:timeout:
+- interruptionHandler
+- serviceName
+- _exportTable
+- valueForEntitlement:
+- replacementObjectForEncoder:object:
+- _encodeCacheContainsClass:
+- _addClassToEncodeCache:
+- _decodeCacheContainsClass:
+- _addClassToDecodeCache:
+- exportedObject
+- remoteObjectProxyWithUserInfo:errorHandler:
+- remoteObjectProxyWithTimeout:errorHandler:
+- _addImportedProxy:
+- _removeImportedProxy:
+- auditSessionIdentifier
+- effectiveUserIdentifier
+- effectiveGroupIdentifier
+- _setUUID:
+- remoteObjectInterface
+- dealloc
+- setDelegate:
+- init
+- debugDescription
+- delegate
+- invalidate
+- suspend
+- userInfo
+- start
+- initWithMachServiceName:options:
+- setRemoteObjectInterface:
+- resume
+- remoteObjectProxyWithErrorHandler:
+- initWithMachServiceName:
+- setOptions:
+- _setQueue:
+- remoteObjectProxy
+- setUserInfo:
+- stop
+- _queue
+- exportedInterface
+- setExportedInterface:
+- setExportedObject:
+- setInterruptionHandler:
+- setInvalidationHandler:
+- processIdentifier
+- auditToken
+- endpoint
+- initWithServiceName:
+- finalize
+@end

@@ -1,0 +1,93 @@
+@interface ADRequestStatistics : NSObject
+{
+	BOOL _usedBluetooth;
+	BOOL _aggressivelyPrewarmed;
+	id _recordingWillStartTime;
+	id _enabledLogging;
+	id _baselineTime;
+	id _addViewsReceivedTimes;
+	id _requestCompletedTime;
+	id _speechRecognizedTime;
+	id _startedRecordingTime;
+	id _activationEventTime;
+	id _expectedActivationEventTime;
+	long long _activationEvent;
+}
+
++ markBaselineTime
++ markAddViewsReceived
++ markRequestCompleted
++ requestDuration
++ markSpeechRecognized
++ setRecordingWillStartTime:
++ markStartedRecording
++ setUsedBluetooth:
++ hasSpeechRecognized
++ setActivationEventTime:expectedActivationEventTime:forEvent:
++ setEnabledLogging:
++ _setBaselineTime:
++ _setAddViewsReceivedTimes:
++ _setRequestCompletedTime:
++ _setSpeechRecognizedTime:
++ _setActivationEvent:
++ _setActivationEventTime:
++ _setExpectedActivationEventTime:
++ _systemUptime
++ _setStartedRecordingTime:
++ _activationEvent
++ _addViewsReceivedTimes
++ _expectedActivationEventTime
++ recordingWillStartTime
++ _startedRecordingTime
++ _activationEventTime
++ _speechRecognizedTime
++ _requestCompletedTime
++ _baselineTime
++ _timeSinceBaselineTime
++ usedBluetooth
++ aggressivelyPrewarmed
++ setAggressivelyPrewarmed:
++ enabledLogging
++ init
++ metrics
++ reset
++ .cxx_destruct
+- markBaselineTime
+- markAddViewsReceived
+- markRequestCompleted
+- requestDuration
+- markSpeechRecognized
+- setRecordingWillStartTime:
+- markStartedRecording
+- setUsedBluetooth:
+- hasSpeechRecognized
+- setActivationEventTime:expectedActivationEventTime:forEvent:
+- setEnabledLogging:
+- _setBaselineTime:
+- _setAddViewsReceivedTimes:
+- _setRequestCompletedTime:
+- _setSpeechRecognizedTime:
+- _setActivationEvent:
+- _setActivationEventTime:
+- _setExpectedActivationEventTime:
+- _systemUptime
+- _setStartedRecordingTime:
+- _activationEvent
+- _addViewsReceivedTimes
+- _expectedActivationEventTime
+- recordingWillStartTime
+- _startedRecordingTime
+- _activationEventTime
+- _speechRecognizedTime
+- _requestCompletedTime
+- _baselineTime
+- _timeSinceBaselineTime
+- usedBluetooth
+- aggressivelyPrewarmed
+- setAggressivelyPrewarmed:
+- enabledLogging
+- init
+- metrics
+- reset
+- .cxx_destruct
+@end

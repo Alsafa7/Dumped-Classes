@@ -1,0 +1,74 @@
+@interface CNFAudioDeviceController : NSObject
+{
+	id _delegate;
+	id _avController;
+	id _pickedRoute;
+	id _pickableRoutes;
+	id _currentAudioRoute;
+}
+
++ setAVController:
++ clearCachedRoutes
++ routeOtherThanHandsetIsAvailable
++ routeOtherThanHandsetAndSpeakerIsAvailable
++ _pickedRoute
++ _routeIsSpeaker:
++ _routeIsHandset:
++ _pickableRoutes
++ routeNameAtIndex:isPicked:
++ _routeIsReceiver:
++ numberOfAudioRoutes
++ pickHandsetRoute
++ pickRouteAtIndex:
++ pickSpeakerRoute
++ receiverRouteIsPicked
++ restorePickedRoute
++ speakerRouteIsPicked
++ dealloc
++ setDelegate:
++ auxiliaryAudioRoutesAvailable
++ _registerForAVControllerNotifications
++ _pickRoute:
++ audioCategoryIsTTY
++ currentAudioRoute
++ _routeIsAirTunes:
++ setCurrentAudioRoute:
++ invalidateAVController
++ _pickableRoutesChanged
++ _mediaServerDied
++ pickRouteWithUID:
++ isAirPlayMirroring
++ isUsingBlueToothLEA
+- setAVController:
+- clearCachedRoutes
+- routeOtherThanHandsetIsAvailable
+- routeOtherThanHandsetAndSpeakerIsAvailable
+- _pickedRoute
+- _routeIsSpeaker:
+- _routeIsHandset:
+- _pickableRoutes
+- routeNameAtIndex:isPicked:
+- _routeIsReceiver:
+- numberOfAudioRoutes
+- pickHandsetRoute
+- pickRouteAtIndex:
+- pickSpeakerRoute
+- receiverRouteIsPicked
+- restorePickedRoute
+- speakerRouteIsPicked
+- dealloc
+- setDelegate:
+- auxiliaryAudioRoutesAvailable
+- _registerForAVControllerNotifications
+- _pickRoute:
+- audioCategoryIsTTY
+- currentAudioRoute
+- _routeIsAirTunes:
+- setCurrentAudioRoute:
+- invalidateAVController
+- _pickableRoutesChanged
+- _mediaServerDied
+- pickRouteWithUID:
+- isAirPlayMirroring
+- isUsingBlueToothLEA
+@end

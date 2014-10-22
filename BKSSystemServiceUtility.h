@@ -1,0 +1,6 @@
+@interface BKSSystemServiceUtility : NSObject
+{
+
+}
+
+@end

@@ -1,0 +1,117 @@
+@interface ABContactPhotoView : UIControl
+{
+	BOOL _editing;
+	id _contact;
+	id _delegate;
+	id _photoPickerInfo;
+	id _currentThumbnailImage;
+	id _currentImage;
+	id _contactImageView;
+	id _addPhotoLabel;
+	id _editPhotoLabel;
+	id _attributionImageView;
+}
+
++ contact
++ setContact:
++ initWithContact:frame:
++ menuWillHide:
++ saveEdits
++ reloadPhoto
++ tapGesture:
++ longPressGesture:
++ editPhotoLabel
++ addPhotoLabel
++ contactImageView
++ attributionImageView
++ currentImageDataAndCropRect:
++ currentThumbnailImage
++ photoPickerInfo
++ setCurrentThumbnailImage:
++ currentImageData
++ _presentPhotoEditingSheet
++ _zoomContactPhoto
++ setHighlightedFrame:
++ setCurrentImage:
++ setPhotoPickerInfo:
++ updatePhoto
++ updatePhotoWithImage:
++ updateAttributionBadge
++ setAttributionImageView:
++ _createImagePicker
++ _createImagePickerForEditingImageData:withCropRect:
++ _presentFullScreenPhoto:
++ _bounceSmallPhoto
++ _dismissFullScreenPhoto:
++ setContactImageView:
++ setAddPhotoLabel:
++ setEditPhotoLabel:
++ dealloc
++ setDelegate:
++ layoutSubviews
++ sizeThatFits:
++ delegate
++ canPerformAction:withSender:
++ actionSheet:willDismissWithButtonIndex:
++ canBecomeFirstResponder
++ tintColorDidChange
++ intrinsicContentSize
++ isEditing
++ setEditing:
++ currentImage
++ copy:
++ paste:
++ imagePickerControllerDidCancel:
++ imagePickerController:didFinishPickingMediaWithInfo:
+- contact
+- setContact:
+- initWithContact:frame:
+- menuWillHide:
+- saveEdits
+- reloadPhoto
+- tapGesture:
+- longPressGesture:
+- editPhotoLabel
+- addPhotoLabel
+- contactImageView
+- attributionImageView
+- currentImageDataAndCropRect:
+- currentThumbnailImage
+- photoPickerInfo
+- setCurrentThumbnailImage:
+- currentImageData
+- _presentPhotoEditingSheet
+- _zoomContactPhoto
+- setHighlightedFrame:
+- setCurrentImage:
+- setPhotoPickerInfo:
+- updatePhoto
+- updatePhotoWithImage:
+- updateAttributionBadge
+- setAttributionImageView:
+- _createImagePicker
+- _createImagePickerForEditingImageData:withCropRect:
+- _presentFullScreenPhoto:
+- _bounceSmallPhoto
+- _dismissFullScreenPhoto:
+- setContactImageView:
+- setAddPhotoLabel:
+- setEditPhotoLabel:
+- dealloc
+- setDelegate:
+- layoutSubviews
+- sizeThatFits:
+- delegate
+- canPerformAction:withSender:
+- actionSheet:willDismissWithButtonIndex:
+- canBecomeFirstResponder
+- tintColorDidChange
+- intrinsicContentSize
+- isEditing
+- setEditing:
+- currentImage
+- copy:
+- paste:
+- imagePickerControllerDidCancel:
+- imagePickerController:didFinishPickingMediaWithInfo:
+@end

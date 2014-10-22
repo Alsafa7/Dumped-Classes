@@ -1,0 +1,116 @@
+@interface ABContactHeaderView : UIView
+{
+	id _photoView;
+	id _nameLabel;
+	id _taglineLabel;
+	id _editingTable;
+	id _contact;
+	id _personHeaderView;
+	BOOL _editing;
+	id _delegate;
+	id _backgroundColor;
+	id _nameTextAttributes;
+	id _taglineTextAttributes;
+	id _editingGroups;
+	id _alternateName;
+	id _message;
+	struct _contentMargins;
+}
+
++ alternateName
++ handleNameLabelLongPress:
++ _headerStringForContact:
++ _taglineStringForContact:
++ setEditingGroups:
++ updateFontSizes
++ menuWillHide:
++ setNameTextAttributes:
++ setTaglineTextAttributes:
++ contentMargins
++ _labelsVSpacing
++ _updatePhotoView
++ contentViewEditingConstraints
++ contentViewConstraints
++ _topMarginToNameBaselineWithName:tagline:
++ propertyItem:didChangeValue:
++ initWithContact:withEditingGroups:personHeaderView:frame:
++ updateWithNewContact:
++ setContentMargins:
++ saveContactPhoto
++ selectEditingGroupAtIndex:
++ nameTextAttributes
++ taglineTextAttributes
++ editingGroups
++ setAlternateName:
++ dealloc
++ setBackgroundColor:
++ backgroundColor
++ setDelegate:
++ reloadData
++ tableView:willDisplayCell:forRowAtIndexPath:
++ tableView:editingStyleForRowAtIndexPath:
++ tableView:shouldIndentWhileEditingRowAtIndexPath:
++ tableView:numberOfRowsInSection:
++ tableView:cellForRowAtIndexPath:
++ sizeThatFits:
++ delegate
++ canPerformAction:withSender:
++ canBecomeFirstResponder
++ tintColorDidChange
++ willMoveToSuperview:
++ isEditing
++ setEditing:
++ message
++ updateConstraints
++ copy:
++ setMessage:
++ setNeedsUpdateConstraints
+- alternateName
+- handleNameLabelLongPress:
+- _headerStringForContact:
+- _taglineStringForContact:
+- setEditingGroups:
+- updateFontSizes
+- menuWillHide:
+- setNameTextAttributes:
+- setTaglineTextAttributes:
+- contentMargins
+- _labelsVSpacing
+- _updatePhotoView
+- contentViewEditingConstraints
+- contentViewConstraints
+- _topMarginToNameBaselineWithName:tagline:
+- propertyItem:didChangeValue:
+- initWithContact:withEditingGroups:personHeaderView:frame:
+- updateWithNewContact:
+- setContentMargins:
+- saveContactPhoto
+- selectEditingGroupAtIndex:
+- nameTextAttributes
+- taglineTextAttributes
+- editingGroups
+- setAlternateName:
+- dealloc
+- setBackgroundColor:
+- backgroundColor
+- setDelegate:
+- reloadData
+- tableView:willDisplayCell:forRowAtIndexPath:
+- tableView:editingStyleForRowAtIndexPath:
+- tableView:shouldIndentWhileEditingRowAtIndexPath:
+- tableView:numberOfRowsInSection:
+- tableView:cellForRowAtIndexPath:
+- sizeThatFits:
+- delegate
+- canPerformAction:withSender:
+- canBecomeFirstResponder
+- tintColorDidChange
+- willMoveToSuperview:
+- isEditing
+- setEditing:
+- message
+- updateConstraints
+- copy:
+- setMessage:
+- setNeedsUpdateConstraints
+@end

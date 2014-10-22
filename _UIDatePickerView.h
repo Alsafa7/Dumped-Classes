@@ -1,0 +1,211 @@
+@interface _UIDatePickerView : UIPickerView
+{
+	long long _loadingDate;
+	id _userSuppliedDate;
+	id _userSuppliedMinimumDate;
+	id _userSuppliedMaximumDate;
+	id _compositeLocale;
+	id _userProvidedLocale;
+	id _userProvidedCalendar;
+	id _minimumDate;
+	id _maximumDate;
+	id _lastSelectedDateComponents;
+	BOOL _allowsZeroTimeInterval;
+	id _mode;
+	id _timeZone;
+	double _timeInterval;
+	id _hourLabel;
+	id _minuteLabel;
+	id _datePickerDelegate;
+	id _delegateOfDatePicker;
+	int _expectedAMPM;
+	struct _datePickerFlags;
+}
+
++ calendar
++ locale
++ setHighlightsToday:
++ _updateDateOrTime
++ _selectedTextForCalendarUnit:
++ _labelTextForCalendarUnit:
++ _amPmValue
++ _hoursStringForHour:
++ _minutesStringForHour:minutes:
++ _hrMinFont
++ _lastSelectedDateComponents
++ staggerTimeIntervals
++ highlightsToday
++ _selectionBarRowInComponent:
++ hour
++ dateComponents
++ setDateComponents:
++ setStaggerTimeIntervals:
++ minute
++ second
++ initWithFrame:
++ dealloc
++ pickerImageNamePrefix
++ _orientationImageSuffix
++ setDelegate:
++ _selectRow:inComponent:animated:notify:
++ numberOfComponentsInPickerView:
++ pickerView:numberOfRowsInComponent:
++ pickerView:widthForComponent:
++ pickerView:rowHeightForComponent:
++ _tableRowHeight
++ setFrame:
++ layoutSubviews
++ _resetSelectionOfTables
++ pickerView:viewForRow:forComponent:reusingView:
++ pickerView:didSelectRow:inComponent:
++ pickerTableView:didChangeSelectionBarRowFrom:to:
++ scrollViewWillBeginDragging:
++ setTimeZone:
++ date
++ shadowColor
++ setDate:
++ timeInterval
++ setTimeInterval:
++ setDatePickerMode:
++ setMinuteInterval:
++ _isTimeIntervalMode
++ setMinimumDate:
++ setMaximumDate:
++ datePickerMode
++ _hasCustomLocale
++ timeZone
++ _hasCustomCalendar
++ minimumDate
++ maximumDate
++ minuteInterval
++ userProvidedLocale
++ setUserProvidedLocale:
++ userProvidedCalendar
++ setUserProvidedCalendar:
++ setDate:animated:
++ setDelegateOfDatePicker:
++ contentWidth
++ _setHidesLabels:
++ _setUsesBlackChrome:
++ _usesBlackChrome
++ _allowsZeroCountDownDuration
++ _setAllowsZeroCountDownDuration:
++ _allowsZeroTimeInterval
++ _setAllowsZeroTimeInterval:
++ _rebuildCompositeLocale
++ _datePickerReset:
++ _todayChanged:
++ _updatedLastSelectedComponentsByValidatingSelectedDateWithLastManipulatedComponent:
++ _isCurrentCalendar:
++ _setDate:animated:forced:
++ _doneLoadingDateOrTime
++ _loadDate:animated:
++ _updateEnabledCellsIncludingWMDCells:
++ _setMode:
++ _componentsSelectedAfterEnforcingValidityOfComponents:withLastManipulatedComponent:
++ _selectedHourForColumn:
++ _fadeLabelForCalendarUnit:toText:animated:
++ _selectedMinuteForColumn:
++ _contentViewForSizingLabelForPositioningInComponent:
++ _labelForCalendarUnit:createIfNecessary:
++ _makeNewAccessoryLabel
++ _positionLabel:forCalendarUnit:relativeTo:order:
++ _setLabel:forCalendarUnit:animated:
++ _updateLabels:
++ _showingDate
++ _viewForSelectedRowInComponent:
++ delegateOfDatePicker
+- calendar
+- locale
+- setHighlightsToday:
+- _updateDateOrTime
+- _selectedTextForCalendarUnit:
+- _labelTextForCalendarUnit:
+- _amPmValue
+- _hoursStringForHour:
+- _minutesStringForHour:minutes:
+- _hrMinFont
+- _lastSelectedDateComponents
+- staggerTimeIntervals
+- highlightsToday
+- _selectionBarRowInComponent:
+- hour
+- dateComponents
+- setDateComponents:
+- setStaggerTimeIntervals:
+- minute
+- second
+- initWithFrame:
+- dealloc
+- pickerImageNamePrefix
+- _orientationImageSuffix
+- setDelegate:
+- _selectRow:inComponent:animated:notify:
+- numberOfComponentsInPickerView:
+- pickerView:numberOfRowsInComponent:
+- pickerView:widthForComponent:
+- pickerView:rowHeightForComponent:
+- _tableRowHeight
+- setFrame:
+- layoutSubviews
+- _resetSelectionOfTables
+- pickerView:viewForRow:forComponent:reusingView:
+- pickerView:didSelectRow:inComponent:
+- pickerTableView:didChangeSelectionBarRowFrom:to:
+- scrollViewWillBeginDragging:
+- setTimeZone:
+- date
+- shadowColor
+- setDate:
+- timeInterval
+- setTimeInterval:
+- setDatePickerMode:
+- setMinuteInterval:
+- _isTimeIntervalMode
+- setMinimumDate:
+- setMaximumDate:
+- datePickerMode
+- _hasCustomLocale
+- timeZone
+- _hasCustomCalendar
+- minimumDate
+- maximumDate
+- minuteInterval
+- userProvidedLocale
+- setUserProvidedLocale:
+- userProvidedCalendar
+- setUserProvidedCalendar:
+- setDate:animated:
+- setDelegateOfDatePicker:
+- contentWidth
+- _setHidesLabels:
+- _setUsesBlackChrome:
+- _usesBlackChrome
+- _allowsZeroCountDownDuration
+- _setAllowsZeroCountDownDuration:
+- _allowsZeroTimeInterval
+- _setAllowsZeroTimeInterval:
+- _rebuildCompositeLocale
+- _datePickerReset:
+- _todayChanged:
+- _updatedLastSelectedComponentsByValidatingSelectedDateWithLastManipulatedComponent:
+- _isCurrentCalendar:
+- _setDate:animated:forced:
+- _doneLoadingDateOrTime
+- _loadDate:animated:
+- _updateEnabledCellsIncludingWMDCells:
+- _setMode:
+- _componentsSelectedAfterEnforcingValidityOfComponents:withLastManipulatedComponent:
+- _selectedHourForColumn:
+- _fadeLabelForCalendarUnit:toText:animated:
+- _selectedMinuteForColumn:
+- _contentViewForSizingLabelForPositioningInComponent:
+- _labelForCalendarUnit:createIfNecessary:
+- _makeNewAccessoryLabel
+- _positionLabel:forCalendarUnit:relativeTo:order:
+- _setLabel:forCalendarUnit:animated:
+- _updateLabels:
+- _showingDate
+- _viewForSelectedRowInComponent:
+- delegateOfDatePicker
+@end

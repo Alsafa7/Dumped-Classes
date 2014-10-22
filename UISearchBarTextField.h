@@ -1,0 +1,95 @@
+@interface UISearchBarTextField : UITextField
+{
+	id _customClearButtons;
+	id _iconOffsets;
+	id _searchTextOffsetValue;
+	id _effectBackgroundTop;
+	id _effectBackgroundBottom;
+	BOOL _deferringFirstResponder;
+	BOOL _animatePlaceholderOnResignFirstResponder;
+	BOOL __preventSelectionViewActivation;
+}
+
++ initWithFrame:
++ dealloc
++ resignFirstResponder
++ _becomeFirstResponderWhenPossible
++ tintColorDidChange
++ _hasActionForEventMask:
++ editingRectForBounds:
++ _becomeFirstResponder
++ textRectForBounds:
++ rightViewRectForBounds:
++ _placeholderColor
++ _shouldSendContentChangedNotificationsIfOnlyMarkedTextChanged
++ _setClearButtonImage:forState:
++ _setSearchTextOffetValue:
++ _searchTextOffsetValue
++ _setOffsetValue:forIcon:
++ _offsetValueForIcon:
++ leftViewRectForBounds:
++ updateForBackdropStyle:
++ _removeEffectsBackgroundViews
++ _setPreventSelectionViewActivation:
++ _activateSelectionView
++ _setEnabled:animated:
++ _setBottomEffectBackgroundVisible:
++ _clearButtonImageForState:
++ _adjustedTextOrEditingRect:forBounds:
++ _adjustmentsForLeftViewRectForBounds:
++ _shouldCenterPlaceholder
++ placeholderRectForBounds:
++ _clearButtonSize
++ clearButtonRectForBounds:
++ _availableTextRectForBounds:forEditing:
++ _suffixFrame
++ _updateBackgroundView:withStyle:filter:
++ _createEffectsBackgroundViewWithStyle:applyFilter:
++ _updateBackgroundViewsAnimated:
++ _clearBackgroundViews
++ _preventSelectionViewActivation
++ _suffixLabelTextAlignment
++ _placeholderLabelClass
++ _systemBackgroundViewClass
+- initWithFrame:
+- dealloc
+- resignFirstResponder
+- _becomeFirstResponderWhenPossible
+- tintColorDidChange
+- _hasActionForEventMask:
+- editingRectForBounds:
+- _becomeFirstResponder
+- textRectForBounds:
+- rightViewRectForBounds:
+- _placeholderColor
+- _shouldSendContentChangedNotificationsIfOnlyMarkedTextChanged
+- _setClearButtonImage:forState:
+- _setSearchTextOffetValue:
+- _searchTextOffsetValue
+- _setOffsetValue:forIcon:
+- _offsetValueForIcon:
+- leftViewRectForBounds:
+- updateForBackdropStyle:
+- _removeEffectsBackgroundViews
+- _setPreventSelectionViewActivation:
+- _activateSelectionView
+- _setEnabled:animated:
+- _setBottomEffectBackgroundVisible:
+- _clearButtonImageForState:
+- _adjustedTextOrEditingRect:forBounds:
+- _adjustmentsForLeftViewRectForBounds:
+- _shouldCenterPlaceholder
+- placeholderRectForBounds:
+- _clearButtonSize
+- clearButtonRectForBounds:
+- _availableTextRectForBounds:forEditing:
+- _suffixFrame
+- _updateBackgroundView:withStyle:filter:
+- _createEffectsBackgroundViewWithStyle:applyFilter:
+- _updateBackgroundViewsAnimated:
+- _clearBackgroundViews
+- _preventSelectionViewActivation
+- _suffixLabelTextAlignment
+- _placeholderLabelClass
+- _systemBackgroundViewClass
+@end

@@ -1,0 +1,198 @@
+@interface UIActivityIndicatorView : UIView
+{
+	double _duration;
+	BOOL _animating;
+	long long _activityIndicatorViewStyle;
+	long long _actualActivityIndicatorViewStyle;
+	BOOL _hidesWhenStopped;
+	BOOL _hasShadow;
+	BOOL _clockWise;
+	BOOL _spinning;
+	BOOL _useArtwork;
+	BOOL _useOutlineShadow;
+	double _width;
+	id _color;
+	long long _spokeCount;
+	id _shadowColor;
+	double _innerRadius;
+	long long _spokeFrameRatio;
+	id _spokeImages;
+	double _spinningDuration;
+	id _artBackupKeyString;
+	id _internalView;
+	struct _shadowOffset;
+}
+
++ isElementAccessibilityExposedToInterfaceBuilder
++ initWithFrame:
++ dealloc
++ initWithCoder:
++ _populateArchivedSubviews:
++ encodeWithCoder:
++ _intrinsicSizeWithinSize:
++ setFrame:
++ setBounds:
++ _contentHuggingDefault_isUsuallyFixedHeight
++ _contentHuggingDefault_isUsuallyFixedWidth
++ sizeThatFits:
++ setStyle:
++ setAnimationDuration:
++ setShadowColor:
++ setShadowOffset:
++ _commonInit
++ _didMoveFromWindow:toWindow:
++ _removeAllAnimations:
++ width
++ setWidth:
++ shadowOffset
++ shadowColor
++ setHighlighted:
++ isHighlighted
++ stopAnimation
++ isAnimating
++ stopAnimating
++ startAnimating
++ setAnimating:
++ activityIndicatorViewStyle
++ setActivityIndicatorViewStyle:
++ startAnimation
++ color
++ setColor:
++ _tearDownAnimation
++ _setUpAnimation
++ setHidesWhenStopped:
++ _applicationDidEnterBackground:
++ _applicationWillEnterForeground:
++ _feedTheGear
++ _defaulColorForStyle:
++ _layoutInfosForStyle:
++ hidesWhenStopped
++ _canCustomize
++ spokeCount
++ spokeFrameRatio
++ _spokeWidthForGearWidth:
++ _spokeLengthForGearWidth:
++ _widthForGearWidth:
++ _alphaValueForStep:
++ _isModern
++ _artBackupKey
++ _imageForStep:
++ _shouldGoToCustomStyle
++ _customStyleForStyle:
++ _shouldGoBackToBaseStyle
++ _hasCustomColor
++ _generateModernImagesForImages:
++ _isArtWorkBased
++ _generateImages
++ _updateInternalViewFrameWithBounds:
++ _canCustomizeStyle:
++ initWithActivityIndicatorStyle:
++ setUseOutlineShadow:
++ setSpokeCount:
++ setInnerRadius:
++ setSpokeFrameRatio:
++ setClockWise:
++ setSpinningDuration:
++ artBackupKey
++ _styleNameForStyle:
++ generateImages
++ hasShadow
++ setHasShadow:
++ innerRadius
++ spokeImages
++ clockWise
++ spinning
++ setSpinning:
++ spinningDuration
++ useArtwork
++ setUseArtwork:
++ artBackupKeyString
++ internalView
++ useOutlineShadow
+- isElementAccessibilityExposedToInterfaceBuilder
+- initWithFrame:
+- dealloc
+- initWithCoder:
+- _populateArchivedSubviews:
+- encodeWithCoder:
+- _intrinsicSizeWithinSize:
+- setFrame:
+- setBounds:
+- _contentHuggingDefault_isUsuallyFixedHeight
+- _contentHuggingDefault_isUsuallyFixedWidth
+- sizeThatFits:
+- setStyle:
+- setAnimationDuration:
+- setShadowColor:
+- setShadowOffset:
+- _commonInit
+- _didMoveFromWindow:toWindow:
+- _removeAllAnimations:
+- width
+- setWidth:
+- shadowOffset
+- shadowColor
+- setHighlighted:
+- isHighlighted
+- stopAnimation
+- isAnimating
+- stopAnimating
+- startAnimating
+- setAnimating:
+- activityIndicatorViewStyle
+- setActivityIndicatorViewStyle:
+- startAnimation
+- color
+- setColor:
+- _tearDownAnimation
+- _setUpAnimation
+- setHidesWhenStopped:
+- _applicationDidEnterBackground:
+- _applicationWillEnterForeground:
+- _feedTheGear
+- _defaulColorForStyle:
+- _layoutInfosForStyle:
+- hidesWhenStopped
+- _canCustomize
+- spokeCount
+- spokeFrameRatio
+- _spokeWidthForGearWidth:
+- _spokeLengthForGearWidth:
+- _widthForGearWidth:
+- _alphaValueForStep:
+- _isModern
+- _artBackupKey
+- _imageForStep:
+- _shouldGoToCustomStyle
+- _customStyleForStyle:
+- _shouldGoBackToBaseStyle
+- _hasCustomColor
+- _generateModernImagesForImages:
+- _isArtWorkBased
+- _generateImages
+- _updateInternalViewFrameWithBounds:
+- _canCustomizeStyle:
+- initWithActivityIndicatorStyle:
+- setUseOutlineShadow:
+- setSpokeCount:
+- setInnerRadius:
+- setSpokeFrameRatio:
+- setClockWise:
+- setSpinningDuration:
+- artBackupKey
+- _styleNameForStyle:
+- generateImages
+- hasShadow
+- setHasShadow:
+- innerRadius
+- spokeImages
+- clockWise
+- spinning
+- setSpinning:
+- spinningDuration
+- useArtwork
+- setUseArtwork:
+- artBackupKeyString
+- internalView
+- useOutlineShadow
+@end

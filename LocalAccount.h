@@ -1,0 +1,6 @@
+@interface LocalAccount : MailAccount
+{
+
+}
+
+@end

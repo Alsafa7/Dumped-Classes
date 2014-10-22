@@ -1,0 +1,6 @@
+@interface NSGlyphGenerator : NSObject
+{
+
+}
+
+@end

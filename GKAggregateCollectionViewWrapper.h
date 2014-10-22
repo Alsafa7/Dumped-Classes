@@ -1,0 +1,79 @@
+@interface GKAggregateCollectionViewWrapper : NSObject
+{
+	id _wrappedView;
+	id _mapping;
+}
+
++ _gkRegisterCellClass:
++ _gkDequeueCellForClass:forIndexPath:
++ _gkRegisterClass:forSupplementaryViewOfKind:
++ _gkDequeueSupplementaryViewForClass:ofKind:forIndexPath:
++ initWithView:mapping:
++ setMapping:
++ dealloc
++ respondsToSelector:
++ wrappedView
++ setWrappedView:
++ methodSignatureForSelector:
++ indexPathForCell:
++ moveSection:toSection:
++ forwardingTargetForSelector:
++ scrollToItemAtIndexPath:atScrollPosition:animated:
++ dequeueReusableCellWithReuseIdentifier:forIndexPath:
++ indexPathsForSelectedItems
++ indexPathsForVisibleItems
++ cellForItemAtIndexPath:
++ numberOfItemsInSection:
++ insertItemsAtIndexPaths:
++ layoutAttributesForItemAtIndexPath:
++ dequeueReusableSupplementaryViewOfKind:withReuseIdentifier:forIndexPath:
++ selectItemAtIndexPath:animated:scrollPosition:
++ valueForUndefinedKey:
++ deleteItemsAtIndexPaths:
++ indexPathForItemAtPoint:
++ deselectItemAtIndexPath:animated:
++ layoutAttributesForSupplementaryElementOfKind:atIndexPath:
++ insertSections:
++ deleteSections:
++ reloadSections:
++ reloadItemsAtIndexPaths:
++ moveItemAtIndexPath:toIndexPath:
++ mapping
++ setValue:forUndefinedKey:
+- _gkRegisterCellClass:
+- _gkDequeueCellForClass:forIndexPath:
+- _gkRegisterClass:forSupplementaryViewOfKind:
+- _gkDequeueSupplementaryViewForClass:ofKind:forIndexPath:
+- initWithView:mapping:
+- setMapping:
+- dealloc
+- respondsToSelector:
+- wrappedView
+- setWrappedView:
+- methodSignatureForSelector:
+- indexPathForCell:
+- moveSection:toSection:
+- forwardingTargetForSelector:
+- scrollToItemAtIndexPath:atScrollPosition:animated:
+- dequeueReusableCellWithReuseIdentifier:forIndexPath:
+- indexPathsForSelectedItems
+- indexPathsForVisibleItems
+- cellForItemAtIndexPath:
+- numberOfItemsInSection:
+- insertItemsAtIndexPaths:
+- layoutAttributesForItemAtIndexPath:
+- dequeueReusableSupplementaryViewOfKind:withReuseIdentifier:forIndexPath:
+- selectItemAtIndexPath:animated:scrollPosition:
+- valueForUndefinedKey:
+- deleteItemsAtIndexPaths:
+- indexPathForItemAtPoint:
+- deselectItemAtIndexPath:animated:
+- layoutAttributesForSupplementaryElementOfKind:atIndexPath:
+- insertSections:
+- deleteSections:
+- reloadSections:
+- reloadItemsAtIndexPaths:
+- moveItemAtIndexPath:toIndexPath:
+- mapping
+- setValue:forUndefinedKey:
+@end

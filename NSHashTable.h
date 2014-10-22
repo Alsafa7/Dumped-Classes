@@ -1,0 +1,74 @@
+@interface NSHashTable : NSObject
+{
+
+}
+
++ pointerFunctions
++ getItem:
++ removeAllItems
++ weakCount
++ insertKnownAbsentItem:
++ getKeys:count:
++ initWithPointerFunctions:capacity:
++ intersectsHashTable:
++ isEqualToHashTable:
++ isSubsetOfHashTable:
++ intersectHashTable:
++ unionHashTable:
++ minusHashTable:
++ mutableSet
++ setRepresentation
++ initWithCoder:
++ removeObject:
++ countByEnumeratingWithState:objects:count:
++ encodeWithCoder:
++ count
++ init
++ addObject:
++ copy
++ removeAllObjects
++ description
++ containsObject:
++ anyObject
++ copyWithZone:
++ objectEnumerator
++ allObjects
++ initWithOptions:capacity:
++ removeItem:
++ member:
++ mutableCopyWithZone:
+- pointerFunctions
+- getItem:
+- removeAllItems
+- weakCount
+- insertKnownAbsentItem:
+- getKeys:count:
+- initWithPointerFunctions:capacity:
+- intersectsHashTable:
+- isEqualToHashTable:
+- isSubsetOfHashTable:
+- intersectHashTable:
+- unionHashTable:
+- minusHashTable:
+- mutableSet
+- setRepresentation
+- initWithCoder:
+- removeObject:
+- countByEnumeratingWithState:objects:count:
+- encodeWithCoder:
+- count
+- init
+- addObject:
+- copy
+- removeAllObjects
+- description
+- containsObject:
+- anyObject
+- copyWithZone:
+- objectEnumerator
+- allObjects
+- initWithOptions:capacity:
+- removeItem:
+- member:
+- mutableCopyWithZone:
+@end

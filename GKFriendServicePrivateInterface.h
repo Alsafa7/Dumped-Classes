@@ -1,0 +1,6 @@
+@interface GKFriendServicePrivateInterface : GKServiceInterface
+{
+
+}
+
+@end

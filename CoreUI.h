@@ -1,0 +1,6 @@
+@interface CoreUI : NSObject
+{
+
+}
+
+@end

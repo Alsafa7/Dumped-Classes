@@ -1,0 +1,74 @@
+@interface SBWiFiManager : NSObject
+{
+	id _lock;
+	pointer _manager;
+	pointer _device;
+	id _deviceInterfaceName;
+	pointer _currentNetwork;
+	pointer _previousNetwork;
+	BOOL _currentNetworkHasBeenSet;
+	BOOL _currentNetworkIsIOSHotspot;
+	BOOL _currentNetworkIsIOSHotspotHasBeenSet;
+	BOOL _powered;
+	BOOL _poweredHasBeenSet;
+	int _rssiThreshold;
+	int _signalStrengthBars;
+	int _signalStrengthRSSI;
+	BOOL _signalStrengthHasBeenSet;
+	pointer _SCDynamicStoreNetworkState;
+	id _SCUpdateTimeoutSource;
+	pointer _primaryInterface;
+	BOOL _primaryInterfaceHasBeenSet;
+	BOOL _isPrimaryInterface;
+	BOOL _isPrimaryInterfaceChanging;
+}
+
++ updateSignalStrength
++ signalStrengthBars
++ wiFiEnabled
++ _manager
++ _linkDidChange
++ _powerStateDidChange
++ _updateWiFiDevice:
++ _setWiFiDevice:
++ _updateCurrentNetwork
++ _updateWiFiState
++ isPrimaryInterface
++ _primaryInterfaceChanged:
++ _cachedIsAssociated
++ updateSignalStrengthFromRawRSSI:andScaledRSSI:
++ isAssociated
++ isAssociatedToIOSHotspot
++ currentNetworkName
++ isPowered
++ signalStrengthRSSI
++ resetSettings
++ _wifiInterface
++ init
++ knownNetworks
++ setWiFiEnabled:
+- updateSignalStrength
+- signalStrengthBars
+- wiFiEnabled
+- _manager
+- _linkDidChange
+- _powerStateDidChange
+- _updateWiFiDevice:
+- _setWiFiDevice:
+- _updateCurrentNetwork
+- _updateWiFiState
+- isPrimaryInterface
+- _primaryInterfaceChanged:
+- _cachedIsAssociated
+- updateSignalStrengthFromRawRSSI:andScaledRSSI:
+- isAssociated
+- isAssociatedToIOSHotspot
+- currentNetworkName
+- isPowered
+- signalStrengthRSSI
+- resetSettings
+- _wifiInterface
+- init
+- knownNetworks
+- setWiFiEnabled:
+@end

@@ -1,0 +1,74 @@
+@interface _UIViewServiceTextEffectsOperator : NSObject
+{
+	id _remoteViewControllerProxy;
+	id _prepareForDisconnectionInvocation;
+	id _invalidationInvocation;
+	id _hostedWindow;
+	struct _windowOffset;
+	BOOL _canRestoreInputViews;
+	BOOL _isRestoringInputViews;
+	BOOL _didResignForDisappear;
+	id _delegate;
+	int __automatic_invalidation_retainCount;
+	BOOL __automatic_invalidation_invalidated;
+}
+
++ release
++ retain
++ dealloc
++ retainCount
++ invalidate
++ _tryRetain
++ _isDeallocating
++ willRotateToInterfaceOrientation:
++ finishRotation
++ __setContentSize:windowOffset:
++ __hostViewWillDisappear:
++ __hostWillEnterForeground
++ __hostDidEnterBackground
++ __prepareForDisconnectionWithCompletionHandler:
++ __createHostedTextEffectsWithReplyHandler:
++ __setNextAutomaticOrderOutDirection:duration:
++ __hostViewWillAppear:
++ _queue
++ __automatic_invalidation_logic
++ proxy:detailedSignatureForSelector:
++ _invalidateUnconditionallyThen:
++ setDeputyDelegate:
++ setHostedWindow:
++ rotateToInterfaceOrientation:
++ _prepareForDisconnectionUnconditionallyThen:
++ windowDidGainFirstResponder:
++ _sendNotification:
++ _viewServiceHostWillEnterForeground:
++ _restoreInputViews
+- release
+- retain
+- dealloc
+- retainCount
+- invalidate
+- _tryRetain
+- _isDeallocating
+- willRotateToInterfaceOrientation:
+- finishRotation
+- __setContentSize:windowOffset:
+- __hostViewWillDisappear:
+- __hostWillEnterForeground
+- __hostDidEnterBackground
+- __prepareForDisconnectionWithCompletionHandler:
+- __createHostedTextEffectsWithReplyHandler:
+- __setNextAutomaticOrderOutDirection:duration:
+- __hostViewWillAppear:
+- _queue
+- __automatic_invalidation_logic
+- proxy:detailedSignatureForSelector:
+- _invalidateUnconditionallyThen:
+- setDeputyDelegate:
+- setHostedWindow:
+- rotateToInterfaceOrientation:
+- _prepareForDisconnectionUnconditionallyThen:
+- windowDidGainFirstResponder:
+- _sendNotification:
+- _viewServiceHostWillEnterForeground:
+- _restoreInputViews
+@end

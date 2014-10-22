@@ -1,0 +1,94 @@
+@interface SKUICategoryController : NSObject
+{
+	id _artworkLoader;
+	id _button;
+	id _clientContext;
+	id _contentsController;
+	id _defaultURL;
+	id _delegate;
+	id _loadOperation;
+	id _operationQueue;
+	id _popover;
+	id _rootCategory;
+	id _selectedURL;
+	id _segmentedControl;
+	long long _segmentedControlLength;
+	id _segmentedControlSegments;
+	id _tableViewController;
+}
+
++ operationQueue
++ setOperationQueue:
++ dealloc
++ setDelegate:
++ delegate
++ dismiss
++ isLoading
++ setCategory:
++ category
++ popoverControllerShouldDismissPopover:
++ segmentedControl
++ buttonAction:
++ clientContext
++ _setResponse:error:
++ loadFromURL:withCompletionBlock:
++ setSelectedURL:
++ setDefaultURL:
++ categoryButton
++ categoryTableView:didSelectCategory:
++ metricsPageContextForCategoryTableView:
++ defaultURL
++ selectedURL
++ _setCachedResponse:error:
++ segmentedControlAction:
++ _reloadSegmentedControl
++ _precacheArtworkForCategory:
++ _reloadSelectedSegment
++ _rootMetricsLocations
++ _tableViewControllerWithCategory:
++ _metricsLocationsWithIndex:
++ _recordClickEventWithCategory:index:
++ setSegmentedControlLength:
++ segmentedControlLength
++ .cxx_destruct
++ initWithContentsController:
++ setClientContext:
++ _artworkLoader
+- operationQueue
+- setOperationQueue:
+- dealloc
+- setDelegate:
+- delegate
+- dismiss
+- isLoading
+- setCategory:
+- category
+- popoverControllerShouldDismissPopover:
+- segmentedControl
+- buttonAction:
+- clientContext
+- _setResponse:error:
+- loadFromURL:withCompletionBlock:
+- setSelectedURL:
+- setDefaultURL:
+- categoryButton
+- categoryTableView:didSelectCategory:
+- metricsPageContextForCategoryTableView:
+- defaultURL
+- selectedURL
+- _setCachedResponse:error:
+- segmentedControlAction:
+- _reloadSegmentedControl
+- _precacheArtworkForCategory:
+- _reloadSelectedSegment
+- _rootMetricsLocations
+- _tableViewControllerWithCategory:
+- _metricsLocationsWithIndex:
+- _recordClickEventWithCategory:index:
+- setSegmentedControlLength:
+- segmentedControlLength
+- .cxx_destruct
+- initWithContentsController:
+- setClientContext:
+- _artworkLoader
+@end

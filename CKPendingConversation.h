@@ -1,0 +1,6 @@
+@interface CKPendingConversation : CKConversation
+{
+
+}
+
+@end

@@ -1,0 +1,6 @@
+@interface CKRecipientTableView : UITableView
+{
+
+}
+
+@end

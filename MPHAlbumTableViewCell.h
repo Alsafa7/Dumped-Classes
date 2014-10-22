@@ -1,0 +1,6 @@
+@interface MPHAlbumTableViewCell : MusicTableViewCell
+{
+
+}
+
+@end

@@ -1,0 +1,75 @@
+@interface WFWiFiManager : NSObject
+{
+	id _lock;
+	pointer _manager;
+	pointer _device;
+	pointer _callbackRunLoop;
+	int _rssiThreshold;
+	BOOL _joining;
+	BOOL _bluetoothTethered;
+	BOOL _delayedForBTScan;
+	id _alertItem;
+	id _lastWifiScanDictionary;
+	unsigned int _notificationID;
+	id _sbUserAgent;
+}
+
++ currentAlertItem
++ _trustCallbackWithID:type:network:data:
++ acceptTrust:
++ dismissAlerts
++ _scanFailed
++ scan
++ cancelTrust:
++ _appLaunched:
++ _managerLocked
++ joining
++ _bluetoothScanComplete:
++ setCurrentAlertItem:
++ userChoseNetwork:
++ joinNetwork:password:
++ setLastWifiScanDictionary:
++ lastWifiScanDictionary
++ _appDeactivated:
++ _appFlagsChanged:
++ _lockButtonPressed:
++ _askToJoinWithID:
++ _bluetoothConnectionChanged:
++ _runManagerCallbackThread
++ _shouldShowPicker
++ _joinComplete:network:
++ _wifiScanComplete:
++ setDevice:
++ cancelPicker:
++ init
++ knownNetworks
+- currentAlertItem
+- _trustCallbackWithID:type:network:data:
+- acceptTrust:
+- dismissAlerts
+- _scanFailed
+- scan
+- cancelTrust:
+- _appLaunched:
+- _managerLocked
+- joining
+- _bluetoothScanComplete:
+- setCurrentAlertItem:
+- userChoseNetwork:
+- joinNetwork:password:
+- setLastWifiScanDictionary:
+- lastWifiScanDictionary
+- _appDeactivated:
+- _appFlagsChanged:
+- _lockButtonPressed:
+- _askToJoinWithID:
+- _bluetoothConnectionChanged:
+- _runManagerCallbackThread
+- _shouldShowPicker
+- _joinComplete:network:
+- _wifiScanComplete:
+- setDevice:
+- cancelPicker:
+- init
+- knownNetworks
+@end

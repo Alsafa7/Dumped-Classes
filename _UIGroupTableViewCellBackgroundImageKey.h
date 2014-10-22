@@ -1,0 +1,95 @@
+@interface _UIGroupTableViewCellBackgroundImageKey : NSObject
+{
+	BOOL _opaque;
+	BOOL _selected;
+	struct _size;
+	id _backgroundColor;
+	id _sectionBorderColor;
+	double _sectionBorderWidth;
+	id _separatorColor;
+	id _topShadowColor;
+	id _bottomShadowColor;
+	id _fillColor;
+	id _selectionColor;
+	double _leftPhase;
+	double _rightPhase;
+	int _sectionLocation;
+	long long _selectionStyle;
+	struct _separatorInset;
+}
+
++ setOpaque:
++ dealloc
++ size
++ setBackgroundColor:
++ backgroundColor
++ isEqual:
++ hash
++ description
++ copyWithZone:
++ setSize:
++ separatorColor
++ setSectionBorderColor:
++ separatorInset
++ setSeparatorColor:
++ setTopShadowColor:
++ setBottomShadowColor:
++ sectionBorderColor
++ setSelected:
++ setSeparatorInset:
++ setFillColor:
++ fillColor
++ setSelectionStyle:
++ selectionStyle
++ sectionLocation
++ topShadowColor
++ opaque
++ setSectionBorderWidth:
++ setSectionLocation:
++ bottomShadowColor
++ selected
++ sectionBorderWidth
++ selectionColor
++ setSelectionColor:
++ leftPhase
++ setLeftPhase:
++ rightPhase
++ setRightPhase:
+- setOpaque:
+- dealloc
+- size
+- setBackgroundColor:
+- backgroundColor
+- isEqual:
+- hash
+- description
+- copyWithZone:
+- setSize:
+- separatorColor
+- setSectionBorderColor:
+- separatorInset
+- setSeparatorColor:
+- setTopShadowColor:
+- setBottomShadowColor:
+- sectionBorderColor
+- setSelected:
+- setSeparatorInset:
+- setFillColor:
+- fillColor
+- setSelectionStyle:
+- selectionStyle
+- sectionLocation
+- topShadowColor
+- opaque
+- setSectionBorderWidth:
+- setSectionLocation:
+- bottomShadowColor
+- selected
+- sectionBorderWidth
+- selectionColor
+- setSelectionColor:
+- leftPhase
+- setLeftPhase:
+- rightPhase
+- setRightPhase:
+@end

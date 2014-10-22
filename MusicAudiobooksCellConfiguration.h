@@ -1,0 +1,6 @@
+@interface MusicAudiobooksCellConfiguration : MusicPodcastCellConfiguration
+{
+
+}
+
+@end

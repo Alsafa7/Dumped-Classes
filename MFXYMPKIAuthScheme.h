@@ -1,0 +1,6 @@
+@interface MFXYMPKIAuthScheme : MFAuthScheme
+{
+
+}
+
+@end

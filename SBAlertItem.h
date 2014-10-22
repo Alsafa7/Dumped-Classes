@@ -1,0 +1,148 @@
+@interface SBAlertItem : NSObject
+{
+	id _alertSheet;
+	BOOL _orderOverSBAlert;
+	BOOL _preventLockOver;
+	BOOL _didEverActivate;
+	BOOL _ignoreIfAlreadyDisplaying;
+	BOOL _didPlayPresentationSound;
+	BOOL _allowInSetup;
+	BOOL _pendInSetupIfNotAllowed;
+	BOOL _pendWhileKeyBagLocked;
+	id _allowedBundleIDs;
+	BOOL _allowInStark;
+}
+
++ isSystemLocalNotificationAlert
++ alertSheet
++ setAllowInSetup:
++ shouldShowInLockScreen
++ shouldShowInEmergencyCall
++ allowMenuButtonDismissal
++ unlocksScreen
++ forcesModalAlertAppearance
++ allowInSetup
++ ignoreIfAlreadyDisplaying
++ configure:requirePasscodeForActions:
++ dealloc
++ init
++ alertView:clickedButtonAtIndex:
++ dismiss
++ sound
++ alertSheetClass
++ setPendInSetupIfNotAllowed:
++ didPlayPresentationSound
++ _playPresentationSound
++ hasActiveKeyboardOnScreen
++ buttonDismissed
++ cleanPreviousConfiguration
++ allowAutoUnlock
++ undimsScreen
++ unlockSource
++ togglesMediaControls
++ dismissOnModalDisplayActivation
++ isCriticalAlert
++ playPresentationSound
++ lockLabel
++ shortLockLabel
++ autoDismissInterval
++ performUnlockAction
++ setOrderOverSBAlert:
++ preventLockOver
++ setPreventLockOver:
++ _didEverActivate
++ willActivate
++ didActivate
++ willRelockForButtonPress:
++ screenWillUndim
++ didFailToActivate
++ willDeactivateForReason:
++ didDeactivateForReason:
++ noteVolumeOrLockPressed
++ alertItemNotificationType
++ alertItemNotificationDate
++ alertItemNotificationSender
++ behavesSuperModally
++ reappearsAfterLock
++ reappearsAfterUnlock
++ preventInterruption
++ alertPriority
++ displayActionButtonOnLockScreen
++ prepareNewAlertSheetWithLockedState:requirePasscodeForActions:
++ setIgnoreIfAlreadyDisplaying:
++ pendInSetupIfNotAllowed
++ pendWhileKeyBagLocked
++ setPendWhileKeyBagLocked:
++ allowedBundleIDs
++ setAllowedBundleIDs:
++ allowInStark
++ setAllowInStark:
++ dismissOnLock
++ dismiss:
+- isSystemLocalNotificationAlert
+- alertSheet
+- setAllowInSetup:
+- shouldShowInLockScreen
+- shouldShowInEmergencyCall
+- allowMenuButtonDismissal
+- unlocksScreen
+- forcesModalAlertAppearance
+- allowInSetup
+- ignoreIfAlreadyDisplaying
+- configure:requirePasscodeForActions:
+- dealloc
+- init
+- alertView:clickedButtonAtIndex:
+- dismiss
+- sound
+- alertSheetClass
+- setPendInSetupIfNotAllowed:
+- didPlayPresentationSound
+- _playPresentationSound
+- hasActiveKeyboardOnScreen
+- buttonDismissed
+- cleanPreviousConfiguration
+- allowAutoUnlock
+- undimsScreen
+- unlockSource
+- togglesMediaControls
+- dismissOnModalDisplayActivation
+- isCriticalAlert
+- playPresentationSound
+- lockLabel
+- shortLockLabel
+- autoDismissInterval
+- performUnlockAction
+- setOrderOverSBAlert:
+- preventLockOver
+- setPreventLockOver:
+- _didEverActivate
+- willActivate
+- didActivate
+- willRelockForButtonPress:
+- screenWillUndim
+- didFailToActivate
+- willDeactivateForReason:
+- didDeactivateForReason:
+- noteVolumeOrLockPressed
+- alertItemNotificationType
+- alertItemNotificationDate
+- alertItemNotificationSender
+- behavesSuperModally
+- reappearsAfterLock
+- reappearsAfterUnlock
+- preventInterruption
+- alertPriority
+- displayActionButtonOnLockScreen
+- prepareNewAlertSheetWithLockedState:requirePasscodeForActions:
+- setIgnoreIfAlreadyDisplaying:
+- pendInSetupIfNotAllowed
+- pendWhileKeyBagLocked
+- setPendWhileKeyBagLocked:
+- allowedBundleIDs
+- setAllowedBundleIDs:
+- allowInStark
+- setAllowInStark:
+- dismissOnLock
+- dismiss:
+@end

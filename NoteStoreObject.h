@@ -1,0 +1,6 @@
+@interface NoteStoreObject : NoteCollectionObject
+{
+
+}
+
+@end

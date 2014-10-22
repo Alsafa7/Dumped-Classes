@@ -1,0 +1,78 @@
+@interface SBRemoteNotificationServer : NSObject
+{
+	id _bundleIdentifiersToClients;
+	id _environmentsToConnections;
+	id _bundleIdentifiersNeedingToken;
+	id _lastNotificationReceivedBundleIdentifier;
+	id _appImportanceTracker;
+}
+
++ postSettingsChangedNotificationForBundleIdentifier:
++ lastNotificationReceivedBundleIdentifier
++ _appStateDidChange:
++ _appDebugStateDidChange:
++ calculateTopics
++ _allTopicsForApplication:
++ _moveTopicsForApp:fromList:toList:
++ _appImportanceIncreased:
++ _appImportanceDecreased:
++ _cloudDatabaseTopicsForApplication:
++ registerApplication:forEnvironment:withTypes:
++ allAppEnabledTypeValues
++ setSettingsTypes:forBundleIdentifier:
++ getMessageUserInfoForToken:forBundleIdentifier:
++ allSettingsEnabledTypeValues
++ getEffectiveEnabledTypesForApplication:
++ notePermissionAlertAcceptedTypes:forBundleIdentifier:
++ appEnabledTypesForBundleIdentifier:
++ settingsEnabledTypesForBundleIdentifier:
++ setMessageUserInfo:forBundleIdentifier:
++ setMessageUserInfo:forToken:forBundleIdentifier:
++ getMessageUserInfoForBundleIdentifier:
++ clearMessageUserInfoForToken:forBundleIdentifier:
++ _allPushRegisteredThirdPartyBundleIDs
++ unregisterApplication:
++ dealloc
++ init
++ run
++ connection:didReceivePublicToken:
++ connection:didReceiveToken:forTopic:identifier:
++ connection:didReceiveIncomingMessage:
++ isSystemwideEnabled
++ setSystemwideEnabled:
++ hasRegisteredBundleIdentifiers
+- postSettingsChangedNotificationForBundleIdentifier:
+- lastNotificationReceivedBundleIdentifier
+- _appStateDidChange:
+- _appDebugStateDidChange:
+- calculateTopics
+- _allTopicsForApplication:
+- _moveTopicsForApp:fromList:toList:
+- _appImportanceIncreased:
+- _appImportanceDecreased:
+- _cloudDatabaseTopicsForApplication:
+- registerApplication:forEnvironment:withTypes:
+- allAppEnabledTypeValues
+- setSettingsTypes:forBundleIdentifier:
+- getMessageUserInfoForToken:forBundleIdentifier:
+- allSettingsEnabledTypeValues
+- getEffectiveEnabledTypesForApplication:
+- notePermissionAlertAcceptedTypes:forBundleIdentifier:
+- appEnabledTypesForBundleIdentifier:
+- settingsEnabledTypesForBundleIdentifier:
+- setMessageUserInfo:forBundleIdentifier:
+- setMessageUserInfo:forToken:forBundleIdentifier:
+- getMessageUserInfoForBundleIdentifier:
+- clearMessageUserInfoForToken:forBundleIdentifier:
+- _allPushRegisteredThirdPartyBundleIDs
+- unregisterApplication:
+- dealloc
+- init
+- run
+- connection:didReceivePublicToken:
+- connection:didReceiveToken:forTopic:identifier:
+- connection:didReceiveIncomingMessage:
+- isSystemwideEnabled
+- setSystemwideEnabled:
+- hasRegisteredBundleIdentifiers
+@end

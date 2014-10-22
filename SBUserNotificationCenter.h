@@ -1,0 +1,6 @@
+@interface SBUserNotificationCenter : NSObject
+{
+
+}
+
+@end

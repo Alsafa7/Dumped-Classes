@@ -1,0 +1,60 @@
+@interface CNFDisplayController : UIViewController
+{
+	id _currentChat;
+	id _videoGroupView;
+	id _localVideoGroupView;
+	id _localVideoContainer;
+	id _localVideoView;
+	id _localVideoBackView;
+	id _localVideoFrameView;
+	id _remoteVideoGroupView;
+	id _remoteVideoContainer;
+	id _remoteVideoView;
+	id _remoteVideoBackView;
+	id _localVideoOverlayView;
+	id _remoteVideoBackdropView;
+	id _localVideoMutedView;
+	id _remoteVideoPausedView;
+	id _remoteVideoDegradedView;
+	id _remoteVideoReconnectingView;
+	id _remoteVideoStatusBarGradientView;
+	id _localVideoStatusBarGradientView;
+	id _activityIndicator;
+	id _statsHUDTextLabel;
+	id _statsHUDTimer;
+	id _contactName;
+	id _contactImage;
+	BOOL _contactNameIsPhoneNumber;
+	long long _lastKnownOrientation;
+	id _callBarOverlayView;
+	id _topBar;
+	id _bottomBar;
+	id _routeList;
+	id _errorAlert;
+	long long _routeListVisible;
+	long long _routeListReloadPending;
+	id _autodismissRouteListTimer;
+	BOOL _isShowingFullConferenceDisplay;
+	BOOL _isShowingCallWaitingUI;
+	BOOL _isShowingLockScreenUI;
+	BOOL _isShowingTopBar;
+	BOOL _isShowingBottomBar;
+	BOOL _isShowingVideoDegradedUI;
+	BOOL _isShowingVideoReconnectingUI;
+	BOOL _isShowingFailureUI;
+	BOOL _waitingForLocalVideoFirstFrame;
+	BOOL _supportsAutoRotation;
+	BOOL _alwaysVisible;
+	BOOL _useLargeTextAndIcons;
+	BOOL _useLargePIP;
+	BOOL _showsLocalPreviewStatusBarGradient;
+	BOOL _userWantsInCallControlsVisible;
+	usigned long long _displayControllerOptions;
+	id _delegate;
+	BOOL _stillAnimatingFromVoiceControl;
+	BOOL _callFailedWhileAnimatingFromVoiceControl;
+	id _localCameraFlipCompletion;
+	id _hudOverlayView;
+}
+
+@end

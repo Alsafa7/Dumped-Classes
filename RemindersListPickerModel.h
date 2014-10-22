@@ -1,0 +1,82 @@
+@interface RemindersListPickerModel : NSObject
+{
+	bit[1] _isOverridingSourceInfos;
+	bit[1] _scheduledSelected;
+	bit[1] _showsSynthesizedCards;
+	id _selectedCalendar;
+	id _eventStore;
+	id _calendarSourceInfos;
+	pointer _sourceIndicesForViewing;
+	pointer _sourceIndicesForEditing;
+	id _delegate;
+}
+
++ selectCalendar:
++ selectScheduled
++ scheduledSelected
++ indexPathForCalendar:whenEditing:
++ selectFirstAvailableCalendar
++ hasSpecialCardSection
++ sectionForVisibleIndex:whenEditing:
++ visibleIndexForSection:whenEditing:
++ sourceInfoIndexForSection:whenEditing:
++ specialCardsSection:
++ sourceInfoForSection:whenEditing:
++ isEllipsisRowAtIndexPath:whenEditing:
++ isScheduledRowAtIndexPath:whenEditing:
++ isCalendarRowAtIndexPath:whenEditing:
++ indexInSourceInfoForCalendarAtIndexPath:whenEditing:
++ calendarForIndexPath:whenEditing:
++ _canDeleteCalendar:inSourceInfo:
++ initWithEventStore:orCalendarSourceInfos:showingSynthesizedCards:
++ sectionForSourceInfo:whenEditing:
++ selectedIndexPathWhenEditing:
++ canDeleteRowAtIndexPath:whenEditing:
++ didAddCalendarToSection:whenEditing:
++ deleteCalendarAtIndexPath:whenEditing:
++ dictionaryForAnimationToEditing:
++ numberOfSectionsWhenEditing:
++ numberOfRowsInSection:whenEditing:
++ eventStore
++ selectedCalendar
++ dealloc
++ setDelegate:
++ delegate
++ isEmpty
++ reloadCalendars
++ .cxx_destruct
+- selectCalendar:
+- selectScheduled
+- scheduledSelected
+- indexPathForCalendar:whenEditing:
+- selectFirstAvailableCalendar
+- hasSpecialCardSection
+- sectionForVisibleIndex:whenEditing:
+- visibleIndexForSection:whenEditing:
+- sourceInfoIndexForSection:whenEditing:
+- specialCardsSection:
+- sourceInfoForSection:whenEditing:
+- isEllipsisRowAtIndexPath:whenEditing:
+- isScheduledRowAtIndexPath:whenEditing:
+- isCalendarRowAtIndexPath:whenEditing:
+- indexInSourceInfoForCalendarAtIndexPath:whenEditing:
+- calendarForIndexPath:whenEditing:
+- _canDeleteCalendar:inSourceInfo:
+- initWithEventStore:orCalendarSourceInfos:showingSynthesizedCards:
+- sectionForSourceInfo:whenEditing:
+- selectedIndexPathWhenEditing:
+- canDeleteRowAtIndexPath:whenEditing:
+- didAddCalendarToSection:whenEditing:
+- deleteCalendarAtIndexPath:whenEditing:
+- dictionaryForAnimationToEditing:
+- numberOfSectionsWhenEditing:
+- numberOfRowsInSection:whenEditing:
+- eventStore
+- selectedCalendar
+- dealloc
+- setDelegate:
+- delegate
+- isEmpty
+- reloadCalendars
+- .cxx_destruct
+@end

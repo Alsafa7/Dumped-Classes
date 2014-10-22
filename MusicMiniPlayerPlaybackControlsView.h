@@ -1,0 +1,102 @@
+@interface MusicMiniPlayerPlaybackControlsView : MPPlaybackControlsView
+{
+	id _createActivityIndicatorView;
+	id _createButton;
+	id _createPopoverController;
+	id _createViewController;
+	id _hairlineView;
+	BOOL _isDetailScrubbing;
+	id _titlesView;
+	id _transportControls;
+	id _volumeSlider;
+	BOOL _showingCreateLoadingIndicator;
+	id _prospectivePlaybackInformation;
+}
+
++ _playbackStateDidChangeNotification:
++ setItem:
++ newButtonForPart:
++ detailSliderTrackingDidBegin:
++ detailSliderTrackingDidEnd:
++ detailSliderTrackingDidCancel:
++ detailSlider:didChangeScrubSpeed:
++ repeatButtonImage
++ shuffleButtonImage
++ detailScrubbingHidesControls
++ shouldOverrideProgressTimeLabelStyle
++ reloadView
++ newProgressIndicator
++ _radioModelDidChangeNotification:
++ initWithFrame:
++ dealloc
++ setDelegate:
++ didMoveToWindow
++ layoutSubviews
++ tintColorDidChange
++ buttonType
++ popoverControllerDidDismissPopover:
++ setProspectivePlaybackInformation:animated:
++ setProspectivePlaybackInformation:
++ prospectivePlaybackInformation
++ musicMiniPlayerActionsViewController:didSelectAction:
++ _itemTitlesDidChangeNotification:
++ _updateMarqueeStatusAllowingCurrentMarqueeToFinish:
++ viewForPresentingRepeat
++ setShowingCreateLoadingIndicator:
++ viewForPresentingTrackActions
++ viewForPresentingStationActions
++ _applyRepeatSettingsToButton:
++ _applyShuffleSettingsToButton:
++ isShowingCreateLoadingIndicator
++ _createButtonAction:
++ _allowsScrubbingForItem:
++ _updatePlaybackControlsAnimated:
++ _playerContentsChangedNotification:
++ _updateForChangedShowingCreateLoadingIndicator
++ _updateTitles
++ .cxx_destruct
++ setPlayer:
+- _playbackStateDidChangeNotification:
+- setItem:
+- newButtonForPart:
+- detailSliderTrackingDidBegin:
+- detailSliderTrackingDidEnd:
+- detailSliderTrackingDidCancel:
+- detailSlider:didChangeScrubSpeed:
+- repeatButtonImage
+- shuffleButtonImage
+- detailScrubbingHidesControls
+- shouldOverrideProgressTimeLabelStyle
+- reloadView
+- newProgressIndicator
+- _radioModelDidChangeNotification:
+- initWithFrame:
+- dealloc
+- setDelegate:
+- didMoveToWindow
+- layoutSubviews
+- tintColorDidChange
+- buttonType
+- popoverControllerDidDismissPopover:
+- setProspectivePlaybackInformation:animated:
+- setProspectivePlaybackInformation:
+- prospectivePlaybackInformation
+- musicMiniPlayerActionsViewController:didSelectAction:
+- _itemTitlesDidChangeNotification:
+- _updateMarqueeStatusAllowingCurrentMarqueeToFinish:
+- viewForPresentingRepeat
+- setShowingCreateLoadingIndicator:
+- viewForPresentingTrackActions
+- viewForPresentingStationActions
+- _applyRepeatSettingsToButton:
+- _applyShuffleSettingsToButton:
+- isShowingCreateLoadingIndicator
+- _createButtonAction:
+- _allowsScrubbingForItem:
+- _updatePlaybackControlsAnimated:
+- _playerContentsChangedNotification:
+- _updateForChangedShowingCreateLoadingIndicator
+- _updateTitles
+- .cxx_destruct
+- setPlayer:
+@end

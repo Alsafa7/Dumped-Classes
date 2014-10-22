@@ -1,0 +1,74 @@
+@interface CKTranscriptStatusController : NSObject
+{
+	id _progressView;
+	id _title;
+	id _conversation;
+	float _lastVal;
+	id _lastMsg;
+	id _progressUpdateTimer;
+	id _currentMessages;
+	BOOL _updatingProgress;
+	BOOL _viewTitle;
+	BOOL _finishingUp;
+	BOOL _animatingFadeOut;
+	id _delegate;
+	BOOL _suspended;
+}
+
++ dealloc
++ setDelegate:
++ setTitle:
++ delegate
++ suspend
++ title
++ _title
++ resume
++ reset
++ conversation
++ brieflyShowName
++ setProgressIndicatorHidden:
++ resetProgress
++ setConversation:
++ _updateTitle:
++ _hideName
++ _updateCurrentMessages
++ _shouldShowProgress
++ _updateNavItemTitleView:
++ _startUpdatingProgress
++ _localizedTitleForSendingPart:ofPart:
++ _refreshNavigationItemViewAnimate:
++ _calcVals:
++ _refreshNavigationItemView
++ _finishProgress
++ _generateVal
++ _generateStatusTitle
++ refresh
+- dealloc
+- setDelegate:
+- setTitle:
+- delegate
+- suspend
+- title
+- _title
+- resume
+- reset
+- conversation
+- brieflyShowName
+- setProgressIndicatorHidden:
+- resetProgress
+- setConversation:
+- _updateTitle:
+- _hideName
+- _updateCurrentMessages
+- _shouldShowProgress
+- _updateNavItemTitleView:
+- _startUpdatingProgress
+- _localizedTitleForSendingPart:ofPart:
+- _refreshNavigationItemViewAnimate:
+- _calcVals:
+- _refreshNavigationItemView
+- _finishProgress
+- _generateVal
+- _generateStatusTitle
+- refresh
+@end

@@ -1,0 +1,6 @@
+@interface SSKeyValueStoreValueEntity : SSSQLiteEntity
+{
+
+}
+
+@end

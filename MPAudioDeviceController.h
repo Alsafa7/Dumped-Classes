@@ -1,0 +1,125 @@
+@interface MPAudioDeviceController : NSObject
+{
+	id _category;
+	id _delegate;
+	BOOL _determiningPickableRoutes;
+	BOOL _fakeRouteAvailable;
+	id _pickableRoutes;
+	id _pickedRoute;
+	BOOL _pickedRouteHasVolumeControl;
+	BOOL _pickedRouteHasVolumeControlIsValid;
+	id _pickableRoutesCompletionHandlers;
+	BOOL _scheduledSendAudioRoutesDidChange;
+}
+
++ pickBestDeviceRoute
++ volumeControlIsAvailable
++ nameOfPickedRoute
++ isPickedRouteDistinctFromRoute:
++ clearCachedRoutes
++ pickedRouteDescription
++ routeTypeAtIndex:
++ airtunesRouteIsPicked
++ wirelessRouteIsPicked
++ _activeAudioRouteDidChange:
++ _registerNotifications
++ _unregisterNotifications
++ routeOtherThanHandsetIsAvailable
++ determinePickableRoutesWithCompletionHandler:
++ setRouteDiscoveryEnabled:
++ routeOtherThanHandsetAndSpeakerIsAvailable
++ indexOfPickedRoute
++ pickRouteAtIndex:withPassword:
++ _pickedRoute
++ _routeIsSpeaker:
++ _routeIsDisplayPort:
++ _routeIsHandset:
++ _pickableRoutes
++ routeNameAtIndex:isPicked:
++ _routeIsHeadphones:
++ pickRoute:
++ pickRoute:withPassword:
++ _routeIsReceiver:
++ _routeIsWireless:
++ routeDiscoveryEnabled
++ _scheduleSendDelegateAudioRoutesChanged
++ _pickableRoutesChangedNotification:
++ _portStatusDidChangeNotification:
++ _mediaServerDiedNotification:
++ _routeDiscoveryDidEndNotification:
++ handsetRouteIsPicked
++ indexOfRouteWithName:
++ logCurrentRoutes
++ numberOfAudioRoutes
++ pickHandsetRoute
++ pickRouteAtIndex:
++ pickSpeakerRoute
++ receiverRouteIsPicked
++ restorePickedRoute
++ routeDescriptionAtIndex:
++ routeRequiresPasswordAtIndex:
++ speakerRouteIsPicked
++ _sendFakeRouteChange
++ dealloc
++ setDelegate:
++ init
++ delegate
++ alertView:didDismissWithButtonIndex:
++ setCategory:
++ .cxx_destruct
+- pickBestDeviceRoute
+- volumeControlIsAvailable
+- nameOfPickedRoute
+- isPickedRouteDistinctFromRoute:
+- clearCachedRoutes
+- pickedRouteDescription
+- routeTypeAtIndex:
+- airtunesRouteIsPicked
+- wirelessRouteIsPicked
+- _activeAudioRouteDidChange:
+- _registerNotifications
+- _unregisterNotifications
+- routeOtherThanHandsetIsAvailable
+- determinePickableRoutesWithCompletionHandler:
+- setRouteDiscoveryEnabled:
+- routeOtherThanHandsetAndSpeakerIsAvailable
+- indexOfPickedRoute
+- pickRouteAtIndex:withPassword:
+- _pickedRoute
+- _routeIsSpeaker:
+- _routeIsDisplayPort:
+- _routeIsHandset:
+- _pickableRoutes
+- routeNameAtIndex:isPicked:
+- _routeIsHeadphones:
+- pickRoute:
+- pickRoute:withPassword:
+- _routeIsReceiver:
+- _routeIsWireless:
+- routeDiscoveryEnabled
+- _scheduleSendDelegateAudioRoutesChanged
+- _pickableRoutesChangedNotification:
+- _portStatusDidChangeNotification:
+- _mediaServerDiedNotification:
+- _routeDiscoveryDidEndNotification:
+- handsetRouteIsPicked
+- indexOfRouteWithName:
+- logCurrentRoutes
+- numberOfAudioRoutes
+- pickHandsetRoute
+- pickRouteAtIndex:
+- pickSpeakerRoute
+- receiverRouteIsPicked
+- restorePickedRoute
+- routeDescriptionAtIndex:
+- routeRequiresPasswordAtIndex:
+- speakerRouteIsPicked
+- _sendFakeRouteChange
+- dealloc
+- setDelegate:
+- init
+- delegate
+- alertView:didDismissWithButtonIndex:
+- setCategory:
+- .cxx_destruct
+@end

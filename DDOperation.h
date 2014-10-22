@@ -1,0 +1,92 @@
+@interface DDOperation : NSOperation
+{
+	id _container;
+	BOOL _needContinuation;
+	int _generationNumber;
+	usigned long long _types;
+	pointer _query;
+	id _results;
+	BOOL _isCurrentlyUsingTheScanner;
+	BOOL _isDiscarded;
+	int _tryCount;
+	int _containerNotReadyTryCount;
+	id _context;
+}
+
++ dealloc
++ copyWithZone:
++ context
++ setContainer:
++ setContext:
++ container
++ cancel
++ main
++ cleanup
++ results
++ setResults:
++ initWithContainer:
++ isDiscarded
++ dispatchScanQueryCreationWithCompletionBlock:
++ setDetectionTypes:
++ dispatchContainerModificationBlock:
++ needsFullScanner
++ tryCount
++ containerIsReady
++ needsToStartOver
++ doURLificationOnDocument
++ needContinuation
++ scanQuery
++ newOperationForStartingOver
++ newOperationForContinuation
++ _applyContainerRestrictionsToTypes
++ _containerReadyForDetection
++ _updateGenerationNumber
++ _rangeValidForContainer
++ _createScanQueryForBackend
++ _setScanQuery:
++ detectionTypes
++ setIsDiscarded:
++ setTryCount:
++ _createScanQuery
++ setNeedContinuation:
++ generationNumber
++ setGenerationNumber:
+- dealloc
+- copyWithZone:
+- context
+- setContainer:
+- setContext:
+- container
+- cancel
+- main
+- cleanup
+- results
+- setResults:
+- initWithContainer:
+- isDiscarded
+- dispatchScanQueryCreationWithCompletionBlock:
+- setDetectionTypes:
+- dispatchContainerModificationBlock:
+- needsFullScanner
+- tryCount
+- containerIsReady
+- needsToStartOver
+- doURLificationOnDocument
+- needContinuation
+- scanQuery
+- newOperationForStartingOver
+- newOperationForContinuation
+- _applyContainerRestrictionsToTypes
+- _containerReadyForDetection
+- _updateGenerationNumber
+- _rangeValidForContainer
+- _createScanQueryForBackend
+- _setScanQuery:
+- detectionTypes
+- setIsDiscarded:
+- setTryCount:
+- _createScanQuery
+- setNeedContinuation:
+- generationNumber
+- setGenerationNumber:
+@end

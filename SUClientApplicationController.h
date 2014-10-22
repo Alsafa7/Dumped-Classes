@@ -1,0 +1,174 @@
+@interface SUClientApplicationController : SUClientController
+{
+	id _activeMediaPlayer;
+	id _exitStoreButtonTitle;
+	id _fetchSectionsPlaceholder;
+	long long _ignoreDownloadQueueChangeCount;
+	id _launchURL;
+	id _lastBackgroundSectionsResponse;
+	id _lastSectionsResponse;
+	id _loadSectionsOperation;
+	id _locationObserver;
+	id _preMediaDefaultPNG;
+	id _previewOverlay;
+	BOOL _reloadForStorefrontChangeAfterAccountSetup;
+	BOOL _reloadSectionsOnNextLaunch;
+	BOOL _shouldPrepareUserInterfaceWhenActivated;
+	id _tabBarController;
+}
+
++ tearDownUI
++ resignActive
++ becomeActive
++ dealloc
++ defaultImageSnapshotExpiration
++ tabBarController
++ cancelAllOperations
++ openClientURL:withSourceApplication:sourceURLString:
++ copySuspendSettings
++ exitStoreAfterDialogsDismiss
++ initWithClientInterface:
++ overlayBackgroundViewController
++ tabBarController:shouldShowSection:
++ presentOverlayBackgroundViewController:
++ dismissOverlayBackgroundViewController
++ _previewOverlayViewController
++ selectSectionWithIdentifier:
++ isTabBarControllerLoaded
++ exitStoreButtonTitle
++ _reloadForNetworkTypeChange:
++ dismissTopViewControllerAnimated:
++ _restrictionsChangedNotification:
++ wasLaunchedFromLibrary
++ returnToLibrary
++ _selectFooterSectionNotification:
++ _storeFrontChangedNotification:
++ _accountControllerDisappearedNotification:
++ _cancelLoadSectionsOperation
++ setupUI
++ _handleFinishedBackgroundLoadSectionsOperation:
++ _loadSectionsAllowingCache:withCompletionBlock:
++ _presentSectionFetchUI
++ _handleFinishedLoadSectionsOperation:
++ topNavigationController
++ _cancelSuspendAfterDialogsDismissed
++ _dialogDidFinishNotification:
++ _resumableViewController
++ _reloadForStorefrontChange
++ _retrySectionsAfterNetworkTransition
++ _showWildcatAccountViewController:animated:
++ _handleAccountURL:
++ _defaultHandleApplicationURLRequestProperties:
++ launchURL
++ _handleSectionsLoadFailedWithError:
++ _reloadWithSectionsResponse:
++ presentExternalURLViewController:
++ reloadSectionWithIdentifier:url:
++ defaultPNGNameForSuspend
++ bagDidLoadNotification:
++ displayClientURL:withSourceApplication:sourceURLString:
++ presentAccountViewController:showNavigationBar:animated:
++ clientInterface:hidePreviewOverlayAnimated:
++ clientInterface:showPreviewOverlayAnimated:
++ returnToLibraryForClientInterface:
++ previewOverlayForClientInterface:
++ tabBarControllerForClientInterface:
++ _activeMediaPlayer
++ _setupTabBarController
++ _openClientURL:
++ _showPageForExternalOriginatedURLBagKey:
++ _newTabBarController
++ shouldPrepareUserInterfaceWhenActivated
++ _handleSearchURL:withSourceApplication:sourceURL:
++ _handleDonationURL:
++ _displayClientURL:
++ _restorePreMediaPlayerSettings
++ _showPreviewOverlayAnimated:
++ _accountViewController
++ _cancelSectionFetchPlaceholder
++ beginIgnoringDownloadQueueChanges
++ endIgnoringDownloadQueueChanges
++ isIgnoringDownloadQueueChanges
++ prepareUserInterface
++ setExitStoreButtonTitle:
++ showMainPageForItemKind:sectionIdentifiers:
++ _setActiveMediaPlayer:
++ setShouldPrepareUserInterfaceWhenActivated:
+- tearDownUI
+- resignActive
+- becomeActive
+- dealloc
+- defaultImageSnapshotExpiration
+- tabBarController
+- cancelAllOperations
+- openClientURL:withSourceApplication:sourceURLString:
+- copySuspendSettings
+- exitStoreAfterDialogsDismiss
+- initWithClientInterface:
+- overlayBackgroundViewController
+- tabBarController:shouldShowSection:
+- presentOverlayBackgroundViewController:
+- dismissOverlayBackgroundViewController
+- _previewOverlayViewController
+- selectSectionWithIdentifier:
+- isTabBarControllerLoaded
+- exitStoreButtonTitle
+- _reloadForNetworkTypeChange:
+- dismissTopViewControllerAnimated:
+- _restrictionsChangedNotification:
+- wasLaunchedFromLibrary
+- returnToLibrary
+- _selectFooterSectionNotification:
+- _storeFrontChangedNotification:
+- _accountControllerDisappearedNotification:
+- _cancelLoadSectionsOperation
+- setupUI
+- _handleFinishedBackgroundLoadSectionsOperation:
+- _loadSectionsAllowingCache:withCompletionBlock:
+- _presentSectionFetchUI
+- _handleFinishedLoadSectionsOperation:
+- topNavigationController
+- _cancelSuspendAfterDialogsDismissed
+- _dialogDidFinishNotification:
+- _resumableViewController
+- _reloadForStorefrontChange
+- _retrySectionsAfterNetworkTransition
+- _showWildcatAccountViewController:animated:
+- _handleAccountURL:
+- _defaultHandleApplicationURLRequestProperties:
+- launchURL
+- _handleSectionsLoadFailedWithError:
+- _reloadWithSectionsResponse:
+- presentExternalURLViewController:
+- reloadSectionWithIdentifier:url:
+- defaultPNGNameForSuspend
+- bagDidLoadNotification:
+- displayClientURL:withSourceApplication:sourceURLString:
+- presentAccountViewController:showNavigationBar:animated:
+- clientInterface:hidePreviewOverlayAnimated:
+- clientInterface:showPreviewOverlayAnimated:
+- returnToLibraryForClientInterface:
+- previewOverlayForClientInterface:
+- tabBarControllerForClientInterface:
+- _activeMediaPlayer
+- _setupTabBarController
+- _openClientURL:
+- _showPageForExternalOriginatedURLBagKey:
+- _newTabBarController
+- shouldPrepareUserInterfaceWhenActivated
+- _handleSearchURL:withSourceApplication:sourceURL:
+- _handleDonationURL:
+- _displayClientURL:
+- _restorePreMediaPlayerSettings
+- _showPreviewOverlayAnimated:
+- _accountViewController
+- _cancelSectionFetchPlaceholder
+- beginIgnoringDownloadQueueChanges
+- endIgnoringDownloadQueueChanges
+- isIgnoringDownloadQueueChanges
+- prepareUserInterface
+- setExitStoreButtonTitle:
+- showMainPageForItemKind:sectionIdentifiers:
+- _setActiveMediaPlayer:
+- setShouldPrepareUserInterfaceWhenActivated:
+@end

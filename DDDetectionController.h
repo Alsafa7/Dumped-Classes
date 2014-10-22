@@ -1,0 +1,101 @@
+@interface DDDetectionController : NSObject
+{
+	id _fullScannerQueue;
+	id _urlScannerQueue;
+	id _protectQueue;
+	id _containerToOperationsTable;
+	id _containerToResultsTable;
+	id _containerToContextsTable;
+	id _actionController;
+	id _delegate;
+}
+
++ shouldImmediatelyShowActionSheetForTapAtIndex:ofStorage:
++ actionsAtIndex:ofStorage:context:
++ defaultActionAtIndex:ofStorage:context:
++ resetResultsForTextView:
++ _subResultAtIndex:ofResult:
++ _resultForLinkAtIndex:inTextStorage:subResult:url:
++ _applyBlock:withResultsAtIndex:ofStorage:context:
++ resultForLinkAtIndex:inTextStorage:
++ startURLificationForFrame:detectedTypes:options:
++ setResults:forFrame:
++ setContext:forFrame:
++ frameWillBeRemoved:
++ cancelURLificationForFrame:
++ startURLificationForFrame:detectedTypes:
++ resetResultsForFrame:
++ actionsForDOMNode:forFrame:
++ shouldImmediatelyShowActionSheetForURL:forFrame:
++ defaultActionForDOMNode:forFrame:
++ _resultForAnchor:forFrame:context:
++ resultForNode:url:frame:contextRef:
++ actionsForAnchor:url:forFrame:
++ defaultActionForAnchor:url:forFrame:
++ resultForDOMNode:forFrame:
++ dealloc
++ setDelegate:
++ init
++ delegate
++ performAction:inView:withPopoverController:interactionDelegate:
++ cancelURLificationForContainer:
++ startURLificationForContainer:detectedTypes:
++ resetResultsForContainer:
++ _newOperationForContainer:
++ _startCoalescedURLification:
++ startURLificationForContainer:detectedTypes:options:
++ _doURLification:
++ _resultForIdentifier:forContainer:context:
++ setResults:forContainer:
++ setContext:forContainer:
++ _commonResetResultsForContainer:
++ containerWillBeRemoved:
++ _resultForURL:forContainer:context:
++ _shouldImmediatelyShowActionSheetForCoreResult:
++ _shouldImmediatelyShowActionSheetForURL:
++ _enqueueOperation:
+- shouldImmediatelyShowActionSheetForTapAtIndex:ofStorage:
+- actionsAtIndex:ofStorage:context:
+- defaultActionAtIndex:ofStorage:context:
+- resetResultsForTextView:
+- _subResultAtIndex:ofResult:
+- _resultForLinkAtIndex:inTextStorage:subResult:url:
+- _applyBlock:withResultsAtIndex:ofStorage:context:
+- resultForLinkAtIndex:inTextStorage:
+- startURLificationForFrame:detectedTypes:options:
+- setResults:forFrame:
+- setContext:forFrame:
+- frameWillBeRemoved:
+- cancelURLificationForFrame:
+- startURLificationForFrame:detectedTypes:
+- resetResultsForFrame:
+- actionsForDOMNode:forFrame:
+- shouldImmediatelyShowActionSheetForURL:forFrame:
+- defaultActionForDOMNode:forFrame:
+- _resultForAnchor:forFrame:context:
+- resultForNode:url:frame:contextRef:
+- actionsForAnchor:url:forFrame:
+- defaultActionForAnchor:url:forFrame:
+- resultForDOMNode:forFrame:
+- dealloc
+- setDelegate:
+- init
+- delegate
+- performAction:inView:withPopoverController:interactionDelegate:
+- cancelURLificationForContainer:
+- startURLificationForContainer:detectedTypes:
+- resetResultsForContainer:
+- _newOperationForContainer:
+- _startCoalescedURLification:
+- startURLificationForContainer:detectedTypes:options:
+- _doURLification:
+- _resultForIdentifier:forContainer:context:
+- setResults:forContainer:
+- setContext:forContainer:
+- _commonResetResultsForContainer:
+- containerWillBeRemoved:
+- _resultForURL:forContainer:context:
+- _shouldImmediatelyShowActionSheetForCoreResult:
+- _shouldImmediatelyShowActionSheetForURL:
+- _enqueueOperation:
+@end

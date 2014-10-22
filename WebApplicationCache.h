@@ -1,0 +1,6 @@
+@interface WebApplicationCache : NSObject
+{
+
+}
+
+@end

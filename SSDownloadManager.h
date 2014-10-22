@@ -1,0 +1,116 @@
+@interface SSDownloadManager : NSObject
+{
+	id _accessQueue;
+	id _activeDownloads;
+	BOOL _activeDownloadsChanged;
+	id _backgroundQueue;
+	id _connection;
+	id _downloads;
+	BOOL _downloadsChanged;
+	BOOL _isUsingNetwork;
+	id _observerConnection;
+	id _observerQueue;
+	pointer _observers;
+	id _options;
+	id _removedDownloads;
+}
+
++ finishDownloads:
++ cancelDownloads:completionBlock:
++ getDownloadsUsingBlock:
++ addDownloads:completionBlock:
++ resumeDownloads:completionBlock:
++ initWithManagerOptions:
++ downloads
++ moveDownload:afterDownload:completionBlock:
++ dealloc
++ removeObserver:
++ addObserver:
++ initWithDownloadKinds:
++ _XPCConnection
++ _handleDownloadsRemoved:
++ _willFinishDownloads:
++ _finishDownloads:
++ _initSSDownloadManager
++ _connectAsObserver
++ _copyDownloadsForMessage:downloadIDs:
++ _insertDownloads:before:after:completionBlock:
++ _sendMessage:withCompletionBlock:
++ _copyDownloads
++ _moveDownload:before:after:completionBlock:
++ _pauseDownloads:forced:completionBlock:
++ setDownloads:forKinds:completionBlock:
++ _handleReply:forDownloads:message:isRetry:block:
++ _handleMessage:fromServerConnection:
++ _sendObserverConnection
++ _reloadIsUsingNetworkWithDownloadKinds:
++ _loadDownloadKindsUsingNetwork
++ _sendDownloadsChanged:
++ _handleDownloadKindsUsingNetworkChanged:
++ _handleDownloadsChanged:
++ _handleDownloadStatesChanged:
++ _copyDownloadKindsUsingNetwork
++ _sendMessageToObservers:
++ _newOptionsDictionary
++ activeDownloads
++ cancelAllDownloadsWithCompletionBlock:
++ insertDownloads:afterDownload:completionBlock:
++ insertDownloads:beforeDownload:completionBlock:
++ moveDownload:beforeDownload:completionBlock:
++ pauseDownloads:completionBlock:
++ setDownloads:completionBlock:
++ _pauseDownloads:completionBlock:
++ isUsingNetwork
++ managerOptions
++ reloadFromServer
++ canCancelDownload:
+- finishDownloads:
+- cancelDownloads:completionBlock:
+- getDownloadsUsingBlock:
+- addDownloads:completionBlock:
+- resumeDownloads:completionBlock:
+- initWithManagerOptions:
+- downloads
+- moveDownload:afterDownload:completionBlock:
+- dealloc
+- removeObserver:
+- addObserver:
+- initWithDownloadKinds:
+- _XPCConnection
+- _handleDownloadsRemoved:
+- _willFinishDownloads:
+- _finishDownloads:
+- _initSSDownloadManager
+- _connectAsObserver
+- _copyDownloadsForMessage:downloadIDs:
+- _insertDownloads:before:after:completionBlock:
+- _sendMessage:withCompletionBlock:
+- _copyDownloads
+- _moveDownload:before:after:completionBlock:
+- _pauseDownloads:forced:completionBlock:
+- setDownloads:forKinds:completionBlock:
+- _handleReply:forDownloads:message:isRetry:block:
+- _handleMessage:fromServerConnection:
+- _sendObserverConnection
+- _reloadIsUsingNetworkWithDownloadKinds:
+- _loadDownloadKindsUsingNetwork
+- _sendDownloadsChanged:
+- _handleDownloadKindsUsingNetworkChanged:
+- _handleDownloadsChanged:
+- _handleDownloadStatesChanged:
+- _copyDownloadKindsUsingNetwork
+- _sendMessageToObservers:
+- _newOptionsDictionary
+- activeDownloads
+- cancelAllDownloadsWithCompletionBlock:
+- insertDownloads:afterDownload:completionBlock:
+- insertDownloads:beforeDownload:completionBlock:
+- moveDownload:beforeDownload:completionBlock:
+- pauseDownloads:completionBlock:
+- setDownloads:completionBlock:
+- _pauseDownloads:completionBlock:
+- isUsingNetwork
+- managerOptions
+- reloadFromServer
+- canCancelDownload:
+@end

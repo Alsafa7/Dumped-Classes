@@ -1,0 +1,6 @@
+@interface SBReducedMotionFadeSettings : SBIconAnimationSettings
+{
+
+}
+
+@end

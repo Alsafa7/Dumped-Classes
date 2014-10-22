@@ -1,0 +1,6 @@
+@interface CFXPreferencesManagedSource : CFXPreferencesPropertyListSource
+{
+
+}
+
+@end

@@ -1,0 +1,66 @@
+@interface SBSIMLockManager : NSObject
+{
+	BOOL _isInitialUpdate;
+	BOOL _isBrickedDevice;
+	int _status;
+	id _currentAlert;
+	id _lockEntryAlert;
+	id _languageCode;
+	BOOL _hasHadSIMWhileNotBricked;
+	BOOL _wasActivated;
+	BOOL _neededUIM;
+}
+
++ registerForAlerts
++ _CTToSBSIMStatus:
++ _statusFromCT
++ _updateToStatus:
++ _tryToUpdateStatus
++ _tearDownAlertAndUpdateStatus
++ _shouldSuppressAlert
++ _setupAppActivationStateDidChange:
++ _activationDidChange
++ _telephonyDidRestart
++ _postponementDidChange
++ _externalSIMStatusChanged:
++ _initialUpdate
++ lockEntryAlertDismissed:
++ alertItemDismissed:
++ repopAlert
++ attemptUnlock
++ _handlePromptForUnlock
++ _updateSIMStatus:withOptions:
++ pinLockAttemptsRemaining
++ pukLockAttemptsRemaining
++ dealloc
++ init
++ languageCode
++ status
++ airplaneModeChanged
+- registerForAlerts
+- _CTToSBSIMStatus:
+- _statusFromCT
+- _updateToStatus:
+- _tryToUpdateStatus
+- _tearDownAlertAndUpdateStatus
+- _shouldSuppressAlert
+- _setupAppActivationStateDidChange:
+- _activationDidChange
+- _telephonyDidRestart
+- _postponementDidChange
+- _externalSIMStatusChanged:
+- _initialUpdate
+- lockEntryAlertDismissed:
+- alertItemDismissed:
+- repopAlert
+- attemptUnlock
+- _handlePromptForUnlock
+- _updateSIMStatus:withOptions:
+- pinLockAttemptsRemaining
+- pukLockAttemptsRemaining
+- dealloc
+- init
+- languageCode
+- status
+- airplaneModeChanged
+@end

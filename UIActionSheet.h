@@ -1,0 +1,453 @@
+@interface UIActionSheet : UIView
+{
+	id _delegate;
+	id _titleLabel;
+	id _attributedTitleString;
+	id _subtitleLabel;
+	id _bodyTextLabel;
+	id _taglineTextLabel;
+	double _startY;
+	id _context;
+	long long _cancelButton;
+	long long _defaultButton;
+	long long _firstOtherButton;
+	id _toolbar;
+	id _originalWindow;
+	id _dimWindow;
+	long long _suspendTag;
+	long long _dismissButtonIndex;
+	double _bodyTextHeight;
+	id _buttons;
+	id _buttonsInTable;
+	id _textFields;
+	id _keyboard;
+	id _table;
+	id _buttonTableView;
+	id _dimView;
+	id _popoverController;
+	double _fontSizeInTableView;
+	double _iconOffset;
+	double _labelOffset;
+	double _labelWidth;
+	double _titleWidth;
+	BOOL _oldIgnoreTapsValue;
+	struct _modalViewFlags;
+	long long _actionSheetStyle;
+	id _selectedButtonGlyphImage;
+	id _selectedButtonGlyphHighlightedImage;
+	id _shadowImageView;
+	id _backdropView;
+	id _dimViewGestureRecognizer;
+	id _dimViewImage;
+	id _dimViewImageView;
+}
+
++ mf_addButtonWithTitle:tag:
++ mf_tagForButtonIndex:
++ rc_showInView:dismissHandlerBlock:
++ initWithFrame:
++ dealloc
++ drawRect:
++ setDelegate:
++ removeFromSuperview
++ setTitle:
++ tableView:willDisplayCell:forRowAtIndexPath:
++ tableView:didSelectRowAtIndexPath:
++ tableView:numberOfRowsInSection:
++ tableView:cellForRowAtIndexPath:
++ delegate
++ cancelButtonIndex
++ dismissWithClickedButtonIndex:animated:
++ addButtonWithTitle:
++ setCancelButtonIndex:
++ resignFirstResponder
++ _handleKeyUIEvent:
++ becomeFirstResponder
++ context
++ _canDrawContent
++ tintColor
++ setTintColor:
++ _normalInheritedTintColor
++ canBecomeFirstResponder
++ title
++ setContext:
++ numberOfRows
++ _isAnimating
++ _separatorInset
++ message
++ defaultButtonIndex
++ layout
++ textFieldAtIndex:
++ _maxHeight
++ defaultButton
++ setDefaultButton:
++ _titleLabel
++ _maxSize
++ _keyboardWillShow:
++ _keyboardWillHide:
++ showInView:
++ setSubtitle:
++ subtitle
++ setMessage:
++ isVisible
++ dismiss
++ initWithTitle:buttons:defaultButtonIndex:delegate:context:
++ setNumberOfRows:
++ popupAlertAnimated:
++ setActionSheetStyle:
++ setTitleMaxLineCount:
++ _relinquishPopoverController
++ numberOfButtons
++ setRunsModal:
++ setDefaultButtonIndex:
++ textField
++ tableView
++ keyboard
++ buttonTitleAtIndex:
++ requiresPortraitOrientation
++ setAlertSheetStyle:
++ _createBodyTextLabelIfNeeded
++ _createTaglineTextLabelIfNeeded
++ _createSubtitleLabelIfNeeded
++ _alertSheetTextFieldReturn:
++ textFieldCount
++ addTextFieldWithValue:label:
++ _buttonClicked:
++ _currentOrientation
++ buttons
++ _addButtonWithTitle:label:
++ _needsKeyboard
++ layoutAnimated:
++ _cancelAnimated:
++ _temporarilyHideAnimated:
++ _canShowAlerts
++ _layoutIfNeeded
++ _growAnimationDidStop:finished:
++ _cleanupAfterPopupAnimation
++ _bubbleAnimationShrinkDidStop:finished:
++ _bubbleAnimationNormalDidStop:finished:
++ _removeAlertWindowOrShowAnOldAlert
++ _popoutAnimationDidStop:finished:
++ _setupInitialFrame
++ _performPopup:
++ _repopup
++ _isInsidePopOverContent
++ _isHostedByPopOver
++ _performPopoutAnimationAnimated:
++ dismissAnimated:
++ minimumSize
++ _rotatingAnimationDidStop:
++ _layoutPopupAlertWithOrientation:animated:
++ _appSuspended:
++ popupAlertAnimated:atOffset:
++ _setAlertSheetStyleFromButtonBar:
++ _presentSheetStartingFromYCoordinate:
++ _presentSheetFromView:above:
++ _dimView
++ _alertSheetAnimationDidStop:finished:
++ _setupTitleStyle
++ _titleHorizontalInset
++ _buttonHeight
++ _titleVerticalTopInset
++ _titleVerticalBottomInset
++ _bottomVerticalInset
++ _truncateViewHeight:toFitInFrame:withMinimumHeight:
++ presentSheetFromAboveView:
++ presentSheetFromBehindView:
++ _createTitleLabelIfNeeded
++ setBodyText:
++ setTaglineText:
++ bodyText
++ titleMaxLineCount
++ setBodyTextMaxLineCount:
++ bodyMaxLineCount
++ setDestructiveButton:
++ destructiveButton
++ addButtonWithTitle:label:
++ _addButtonWithTitle:
++ buttonCount
++ _isSBAlert
++ setTableShouldShowMinimumContent:
++ tableShouldShowMinimumContent
++ setShowsOverSpringBoardAlerts:
++ showsOverSpringBoardAlerts
++ _repopupNoAnimation
++ _dimsBackground
++ isBodyTextTruncated
++ presentSheetInView:
++ presentSheetToAboveView:
++ setDimView:
++ _slideSheetOut:
++ backgroundSize
++ alertSheetStyle
++ setDimsBackground:
++ dimsBackground
++ setSuspendTag:
++ suspendTag
++ setBlocksInteraction:
++ blocksInteraction
++ runsModal
++ titleRect
++ numberOfLinesInTitle
++ presentSheetFromButtonBar:
++ initWithTitle:message:delegate:defaultButton:cancelButton:otherButtons:
++ _setFirstOtherButtonIndex:
++ firstOtherButtonIndex
++ _addButtonWithTitle:label:buttonClass:
++ _addMediaButtonWithTitle:iconView:andTableIconView:
++ _popoverHiddingAnimationDidStop:finished:
++ _popoverRepresentationAnimationDidStop:finished:
++ _actionSheetHidingAnimationDidStop:finished:
++ _actionSheetRepresentingAnimationDidStop:finished:
++ _representHostingPopOverViewAnimated:
++ _representActionSheetInsidePopOverAnimated:
++ _hideHostingPopOverViewAnimated:
++ _hideActionSheetInsidePopOverAnimated:
++ _presentViaResponderChainFromYCoordinate:
++ presentSheetInContentView:
++ _presentSheetStartingFromYCoordinate:inView:
++ _dimViewWithFrame:
++ _handleTap:
++ _shouldParallax
++ _installGestureRecognizerInDimView
++ _transitionUIInView:toSaturated:
++ _applyParallaxToContentIfNecessary
++ showFromToolbar:
++ _transitionToLegacyAppearanceIfNecessary
++ _removeBackdropViewIfNecessary
++ _presentFromBarButtonItem:orFromRect:inView:direction:allowInteractionWithViews:backgroundStyle:animated:
++ _presentViaResponderChain:asPopoverFromBarButtonItem:orFromRect:inView:withPreferredArrowDirections:passthroughViews:backgroundStyle:animated:
++ _assertIfValidForView:
++ _presentingViewForView:
++ presentSheetInPopoverView:
++ _presentPopoverInCenterOfWindowForView:
++ showFromBarButtonItem:animated:
++ _shouldHaveBackdropView
++ _setAttributedTitleString:
++ _attributedTitleString
++ addButtonWithTitle:buttonClass:
++ addMediaButtonWithTitle:iconView:andTableIconView:
++ buttonAtIndex:
++ _buttonAtIndex:
++ popoverControllerDidDismissPopover:
++ _resizeDimViewAnimatingUp:
++ setInPopover:
++ setUseThreeColumnsButtonsLayout:
++ useThreeColumnsButtonsLayout
++ setIndexOfSelectedButton:
++ setSelectedButtonGlyphImage:
++ setSelectedButtonGlyphHighlightedImage:
++ initWithTitle:delegate:cancelButtonTitle:destructiveButtonTitle:otherButtonTitles:
++ actionSheetStyle
++ destructiveButtonIndex
++ setDestructiveButtonIndex:
++ presentFromBarButtonItem:direction:allowInteractionWithViews:backgroundStyle:animated:
++ presentFromRect:inView:direction:allowInteractionWithViews:backgroundStyle:animated:
++ showFromTabBar:
++ showFromRect:inView:animated:
++ showFromBarButtonItem:
+- mf_addButtonWithTitle:tag:
+- mf_tagForButtonIndex:
+- rc_showInView:dismissHandlerBlock:
+- initWithFrame:
+- dealloc
+- drawRect:
+- setDelegate:
+- removeFromSuperview
+- setTitle:
+- tableView:willDisplayCell:forRowAtIndexPath:
+- tableView:didSelectRowAtIndexPath:
+- tableView:numberOfRowsInSection:
+- tableView:cellForRowAtIndexPath:
+- delegate
+- cancelButtonIndex
+- dismissWithClickedButtonIndex:animated:
+- addButtonWithTitle:
+- setCancelButtonIndex:
+- resignFirstResponder
+- _handleKeyUIEvent:
+- becomeFirstResponder
+- context
+- _canDrawContent
+- tintColor
+- setTintColor:
+- _normalInheritedTintColor
+- canBecomeFirstResponder
+- title
+- setContext:
+- numberOfRows
+- _isAnimating
+- _separatorInset
+- message
+- defaultButtonIndex
+- layout
+- textFieldAtIndex:
+- _maxHeight
+- defaultButton
+- setDefaultButton:
+- _titleLabel
+- _maxSize
+- _keyboardWillShow:
+- _keyboardWillHide:
+- showInView:
+- setSubtitle:
+- subtitle
+- setMessage:
+- isVisible
+- dismiss
+- initWithTitle:buttons:defaultButtonIndex:delegate:context:
+- setNumberOfRows:
+- popupAlertAnimated:
+- setActionSheetStyle:
+- setTitleMaxLineCount:
+- _relinquishPopoverController
+- numberOfButtons
+- setRunsModal:
+- setDefaultButtonIndex:
+- textField
+- tableView
+- keyboard
+- buttonTitleAtIndex:
+- requiresPortraitOrientation
+- setAlertSheetStyle:
+- _createBodyTextLabelIfNeeded
+- _createTaglineTextLabelIfNeeded
+- _createSubtitleLabelIfNeeded
+- _alertSheetTextFieldReturn:
+- textFieldCount
+- addTextFieldWithValue:label:
+- _buttonClicked:
+- _currentOrientation
+- buttons
+- _addButtonWithTitle:label:
+- _needsKeyboard
+- layoutAnimated:
+- _cancelAnimated:
+- _temporarilyHideAnimated:
+- _canShowAlerts
+- _layoutIfNeeded
+- _growAnimationDidStop:finished:
+- _cleanupAfterPopupAnimation
+- _bubbleAnimationShrinkDidStop:finished:
+- _bubbleAnimationNormalDidStop:finished:
+- _removeAlertWindowOrShowAnOldAlert
+- _popoutAnimationDidStop:finished:
+- _setupInitialFrame
+- _performPopup:
+- _repopup
+- _isInsidePopOverContent
+- _isHostedByPopOver
+- _performPopoutAnimationAnimated:
+- dismissAnimated:
+- minimumSize
+- _rotatingAnimationDidStop:
+- _layoutPopupAlertWithOrientation:animated:
+- _appSuspended:
+- popupAlertAnimated:atOffset:
+- _setAlertSheetStyleFromButtonBar:
+- _presentSheetStartingFromYCoordinate:
+- _presentSheetFromView:above:
+- _dimView
+- _alertSheetAnimationDidStop:finished:
+- _setupTitleStyle
+- _titleHorizontalInset
+- _buttonHeight
+- _titleVerticalTopInset
+- _titleVerticalBottomInset
+- _bottomVerticalInset
+- _truncateViewHeight:toFitInFrame:withMinimumHeight:
+- presentSheetFromAboveView:
+- presentSheetFromBehindView:
+- _createTitleLabelIfNeeded
+- setBodyText:
+- setTaglineText:
+- bodyText
+- titleMaxLineCount
+- setBodyTextMaxLineCount:
+- bodyMaxLineCount
+- setDestructiveButton:
+- destructiveButton
+- addButtonWithTitle:label:
+- _addButtonWithTitle:
+- buttonCount
+- _isSBAlert
+- setTableShouldShowMinimumContent:
+- tableShouldShowMinimumContent
+- setShowsOverSpringBoardAlerts:
+- showsOverSpringBoardAlerts
+- _repopupNoAnimation
+- _dimsBackground
+- isBodyTextTruncated
+- presentSheetInView:
+- presentSheetToAboveView:
+- setDimView:
+- _slideSheetOut:
+- backgroundSize
+- alertSheetStyle
+- setDimsBackground:
+- dimsBackground
+- setSuspendTag:
+- suspendTag
+- setBlocksInteraction:
+- blocksInteraction
+- runsModal
+- titleRect
+- numberOfLinesInTitle
+- presentSheetFromButtonBar:
+- initWithTitle:message:delegate:defaultButton:cancelButton:otherButtons:
+- _setFirstOtherButtonIndex:
+- firstOtherButtonIndex
+- _addButtonWithTitle:label:buttonClass:
+- _addMediaButtonWithTitle:iconView:andTableIconView:
+- _popoverHiddingAnimationDidStop:finished:
+- _popoverRepresentationAnimationDidStop:finished:
+- _actionSheetHidingAnimationDidStop:finished:
+- _actionSheetRepresentingAnimationDidStop:finished:
+- _representHostingPopOverViewAnimated:
+- _representActionSheetInsidePopOverAnimated:
+- _hideHostingPopOverViewAnimated:
+- _hideActionSheetInsidePopOverAnimated:
+- _presentViaResponderChainFromYCoordinate:
+- presentSheetInContentView:
+- _presentSheetStartingFromYCoordinate:inView:
+- _dimViewWithFrame:
+- _handleTap:
+- _shouldParallax
+- _installGestureRecognizerInDimView
+- _transitionUIInView:toSaturated:
+- _applyParallaxToContentIfNecessary
+- showFromToolbar:
+- _transitionToLegacyAppearanceIfNecessary
+- _removeBackdropViewIfNecessary
+- _presentFromBarButtonItem:orFromRect:inView:direction:allowInteractionWithViews:backgroundStyle:animated:
+- _presentViaResponderChain:asPopoverFromBarButtonItem:orFromRect:inView:withPreferredArrowDirections:passthroughViews:backgroundStyle:animated:
+- _assertIfValidForView:
+- _presentingViewForView:
+- presentSheetInPopoverView:
+- _presentPopoverInCenterOfWindowForView:
+- showFromBarButtonItem:animated:
+- _shouldHaveBackdropView
+- _setAttributedTitleString:
+- _attributedTitleString
+- addButtonWithTitle:buttonClass:
+- addMediaButtonWithTitle:iconView:andTableIconView:
+- buttonAtIndex:
+- _buttonAtIndex:
+- popoverControllerDidDismissPopover:
+- _resizeDimViewAnimatingUp:
+- setInPopover:
+- setUseThreeColumnsButtonsLayout:
+- useThreeColumnsButtonsLayout
+- setIndexOfSelectedButton:
+- setSelectedButtonGlyphImage:
+- setSelectedButtonGlyphHighlightedImage:
+- initWithTitle:delegate:cancelButtonTitle:destructiveButtonTitle:otherButtonTitles:
+- actionSheetStyle
+- destructiveButtonIndex
+- setDestructiveButtonIndex:
+- presentFromBarButtonItem:direction:allowInteractionWithViews:backgroundStyle:animated:
+- presentFromRect:inView:direction:allowInteractionWithViews:backgroundStyle:animated:
+- showFromTabBar:
+- showFromRect:inView:animated:
+- showFromBarButtonItem:
+@end

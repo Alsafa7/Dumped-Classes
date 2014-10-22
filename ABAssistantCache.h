@@ -1,0 +1,6 @@
+@interface ABAssistantCache : NSObject
+{
+
+}
+
+@end

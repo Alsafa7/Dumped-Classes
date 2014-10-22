@@ -1,0 +1,75 @@
+@interface AceObject : NSObject
+{
+	id _aceId;
+	id _refId;
+	id _plistData;
+	id _dict;
+}
+
++ af_logDiagnostics
++ propertyForKey:
++ setProperty:forKey:
++ groupIdentifier
++ dealloc
++ initWithCoder:
++ encodeWithCoder:
++ init
++ isEqual:
++ hash
++ description
++ initWithDictionary:
++ dictionary
++ copyWithZone:
++ properties
++ mutableCopyWithZone:
++ plistData
++ dict
++ initWithDictionary:context:
++ encodedClassName
++ aceId
++ setAceId:
++ refId
++ setRefId:
++ _initWithPlistData:aceId:refId:
++ _initWithMutableDictionary:
++ _deserializeFromPlistData
++ topLevelPropertyForKey:
++ _dict
++ _appendDescriptionOfObject:toString:atDepth:withPrefixes:
++ setTopLevelProperty:forKey:
++ hasArrayForPropertyForKey:
++ forceEagerDeserialization
+- af_logDiagnostics
+- propertyForKey:
+- setProperty:forKey:
+- groupIdentifier
+- dealloc
+- initWithCoder:
+- encodeWithCoder:
+- init
+- isEqual:
+- hash
+- description
+- initWithDictionary:
+- dictionary
+- copyWithZone:
+- properties
+- mutableCopyWithZone:
+- plistData
+- dict
+- initWithDictionary:context:
+- encodedClassName
+- aceId
+- setAceId:
+- refId
+- setRefId:
+- _initWithPlistData:aceId:refId:
+- _initWithMutableDictionary:
+- _deserializeFromPlistData
+- topLevelPropertyForKey:
+- _dict
+- _appendDescriptionOfObject:toString:atDepth:withPrefixes:
+- setTopLevelProperty:forKey:
+- hasArrayForPropertyForKey:
+- forceEagerDeserialization
+@end

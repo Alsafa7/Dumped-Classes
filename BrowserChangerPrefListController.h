@@ -1,0 +1,6 @@
+@interface BrowserChangerPrefListController : PSListController
+{
+
+}
+
+@end

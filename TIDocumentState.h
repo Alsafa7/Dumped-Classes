@@ -1,0 +1,86 @@
+@interface TIDocumentState : NSObject
+{
+	id _contextBeforeInput;
+	id _markedText;
+	id _selectedText;
+	id _contextAfterInput;
+	struct _selectedRangeInMarkedText;
+}
+
++ hasSufficientContextBeforeInputWithTerminatorPredicate:
++ initWithDocument:
++ _positionFromPosition:toPreviousWordBoundaryInDocument:tokenAccumulator:
++ _positionFromPosition:toPreviousWordStartInDocument:tokenAccumulator:
++ _contextBeforePosition:inDocument:
++ _contextAfterPosition:inDocument:
++ textRangeFromPosition:toPosition:inDocument:
++ copyTextInRange:fromDocument:
++ initWithText:selectedRange:
++ documentStateAfterTrimmingContextToLength:
++ documentStateAfterTrimmingContextToWords:terminatorPredicate:
++ inputStemWithTerminatorPredicate:
++ inputStringWithTerminatorPredicate:
++ wordPrefixOfString:withTerminatorPredicate:reverse:
++ inputIndexWithTerminatorPredicate:
++ documentStateAfterSettingMarkedText:selectedRange:
++ documentStateAfterUnmarkingText
++ documentStateAfterInsertingText:
++ documentStateAfterInsertingTextAfterSelection:
++ documentStateAfterDeletingBackward
++ documentStateAfterReplacingText:withText:
++ documentStateAfterDeletingForward
++ documentStateAfterCollapsingSelection
++ dealloc
++ initWithCoder:
++ encodeWithCoder:
++ isEqual:
++ hash
++ description
++ selectedText
++ markedText
++ selectedRangeInMarkedText
++ initWithContextBefore:markedText:selectedText:contextAfter:selectedRangeInMarkedText:
++ contextBeforeInput
++ string:matchesString:
++ hashString:intoHashValue:
++ contextAfterInput
++ matchesContextOfDocumentState:
+- hasSufficientContextBeforeInputWithTerminatorPredicate:
+- initWithDocument:
+- _positionFromPosition:toPreviousWordBoundaryInDocument:tokenAccumulator:
+- _positionFromPosition:toPreviousWordStartInDocument:tokenAccumulator:
+- _contextBeforePosition:inDocument:
+- _contextAfterPosition:inDocument:
+- textRangeFromPosition:toPosition:inDocument:
+- copyTextInRange:fromDocument:
+- initWithText:selectedRange:
+- documentStateAfterTrimmingContextToLength:
+- documentStateAfterTrimmingContextToWords:terminatorPredicate:
+- inputStemWithTerminatorPredicate:
+- inputStringWithTerminatorPredicate:
+- wordPrefixOfString:withTerminatorPredicate:reverse:
+- inputIndexWithTerminatorPredicate:
+- documentStateAfterSettingMarkedText:selectedRange:
+- documentStateAfterUnmarkingText
+- documentStateAfterInsertingText:
+- documentStateAfterInsertingTextAfterSelection:
+- documentStateAfterDeletingBackward
+- documentStateAfterReplacingText:withText:
+- documentStateAfterDeletingForward
+- documentStateAfterCollapsingSelection
+- dealloc
+- initWithCoder:
+- encodeWithCoder:
+- isEqual:
+- hash
+- description
+- selectedText
+- markedText
+- selectedRangeInMarkedText
+- initWithContextBefore:markedText:selectedText:contextAfter:selectedRangeInMarkedText:
+- contextBeforeInput
+- string:matchesString:
+- hashString:intoHashValue:
+- contextAfterInput
+- matchesContextOfDocumentState:
+@end

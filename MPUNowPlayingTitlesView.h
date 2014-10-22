@@ -1,0 +1,85 @@
+@interface MPUNowPlayingTitlesView : UIView
+{
+	id _detailLabel;
+	id _detailMarqueeView;
+	id _explicitImageView;
+	BOOL _needsLabelUpdate;
+	id _titleLabel;
+	id _titleMarqueeView;
+	BOOL _explicit;
+	long long _style;
+	id _titleTextAttributes;
+	id _detailTextAttributes;
+	id _albumText;
+	id _artistText;
+	id _stationNameText;
+	double _textMargin;
+	id _titleText;
+	id _explicitImage;
+}
+
++ isExplicit
++ initWithFrame:
++ layoutSubviews
++ sizeThatFits:
++ style
++ titleTextAttributes
++ setTitleTextAttributes:
++ _titleLabel
++ initWithStyle:
++ setMarqueeEnabled:
++ setTitleText:
++ _updateAttributedTitleLabel
++ isMarqueeEnabled
++ detailTextAttributes
++ textMargin
++ explicitImage
++ setExplicitImage:
++ setTextMargin:
++ setArtistText:
++ titleBaselineOffsetFromBottom
++ setMarqueeEnabled:allowCurrentMarqueeToFinish:
++ setExplicit:
++ setAlbumText:
++ setStationNameText:
++ setDetailTextAttributes:
++ resetMarqueePositions
++ artistText
++ albumText
++ stationNameText
++ _detailLabel
++ titleText
++ .cxx_destruct
+- isExplicit
+- initWithFrame:
+- layoutSubviews
+- sizeThatFits:
+- style
+- titleTextAttributes
+- setTitleTextAttributes:
+- _titleLabel
+- initWithStyle:
+- setMarqueeEnabled:
+- setTitleText:
+- _updateAttributedTitleLabel
+- isMarqueeEnabled
+- detailTextAttributes
+- textMargin
+- explicitImage
+- setExplicitImage:
+- setTextMargin:
+- setArtistText:
+- titleBaselineOffsetFromBottom
+- setMarqueeEnabled:allowCurrentMarqueeToFinish:
+- setExplicit:
+- setAlbumText:
+- setStationNameText:
+- setDetailTextAttributes:
+- resetMarqueePositions
+- artistText
+- albumText
+- stationNameText
+- _detailLabel
+- titleText
+- .cxx_destruct
+@end

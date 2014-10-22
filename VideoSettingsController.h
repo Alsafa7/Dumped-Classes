@@ -1,0 +1,6 @@
+@interface VideoSettingsController : VideoBaseSettingsController
+{
+
+}
+
+@end

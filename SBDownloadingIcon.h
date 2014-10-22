@@ -1,0 +1,62 @@
+@interface SBDownloadingIcon : SBLeafIcon
+{
+	BOOL _wasUninstalledByUser;
+	BOOL _isNewsstandDownload;
+	id _appPlaceholder;
+}
+
++ iconAppearsInNewsstand
++ setNewsstandDownload:
++ homescreenIconImage
++ matchesApplicationIcon:
++ completeUninstall
++ initWithApplicationPlaceholder:
++ identifierForCorrespondingApplicationIcon
++ matchesRepresentation:
++ isNewsstandDownload
++ realDisplayName
++ setUninstalledByUser:
++ uninstallAlertTitle
++ uninstallAlertBody
++ uninstallAlertConfirmTitle
++ uninstallAlertCancelTitle
++ setApplicationPlaceholder:
++ gridCellImage
++ _darkenedIconImageForImage:
++ uninstalledByUser
++ appPlaceholder
++ _showAlertForError:
++ cancelDownload
++ dealloc
++ description
++ representation
++ copyWithZone:
++ reloadForStatusChange
+- iconAppearsInNewsstand
+- setNewsstandDownload:
+- homescreenIconImage
+- matchesApplicationIcon:
+- completeUninstall
+- initWithApplicationPlaceholder:
+- identifierForCorrespondingApplicationIcon
+- matchesRepresentation:
+- isNewsstandDownload
+- realDisplayName
+- setUninstalledByUser:
+- uninstallAlertTitle
+- uninstallAlertBody
+- uninstallAlertConfirmTitle
+- uninstallAlertCancelTitle
+- setApplicationPlaceholder:
+- gridCellImage
+- _darkenedIconImageForImage:
+- uninstalledByUser
+- appPlaceholder
+- _showAlertForError:
+- cancelDownload
+- dealloc
+- description
+- representation
+- copyWithZone:
+- reloadForStatusChange
+@end

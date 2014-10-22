@@ -1,0 +1,6 @@
+@interface FlinfoPreferencesListController : PSListController
+{
+
+}
+
+@end

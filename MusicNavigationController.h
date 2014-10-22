@@ -1,0 +1,6 @@
+@interface MusicNavigationController : UINavigationController
+{
+
+}
+
+@end

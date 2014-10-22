@@ -1,0 +1,73 @@
+@interface UITextMagnifier : UIView
+{
+	id _target;
+	struct _magnificationPoint;
+	struct _animationPoint;
+	struct _terminalPoint;
+	BOOL _terminalPointPlacedCarefully;
+	id _text;
+	id _weightedPoint;
+	id _magnifierRenderer;
+	id _autoscrollRenderer;
+	int _autoscrollDirections;
+}
+
++ initWithFrame:
++ dealloc
++ setNeedsDisplay
++ setFrame:
++ setTarget:
++ text
++ target
++ setText:
++ autoscrollWillNotStart
++ postAutoscrollPoint:
++ stopMagnifying:
++ beginMagnifyingTarget:text:magnificationPoint:offset:animated:
++ setMagnificationPoint:
++ terminalPoint
++ terminalPointPlacedCarefully
++ setAnimationPoint:
++ setAutoscrollDirections:
++ animateToMagnifierRenderer
++ animateToAutoscrollRenderer
++ zoomUpAnimationDidStop:finished:
++ zoomDownAnimationDidStop:finished:
++ remove
++ magnificationPoint
++ detectLostTouches:
++ setToMagnifierRenderer
++ zoomUpAnimation
++ windowWillRotate:
++ animationPoint
++ zoomDownAnimation
+- initWithFrame:
+- dealloc
+- setNeedsDisplay
+- setFrame:
+- setTarget:
+- text
+- target
+- setText:
+- autoscrollWillNotStart
+- postAutoscrollPoint:
+- stopMagnifying:
+- beginMagnifyingTarget:text:magnificationPoint:offset:animated:
+- setMagnificationPoint:
+- terminalPoint
+- terminalPointPlacedCarefully
+- setAnimationPoint:
+- setAutoscrollDirections:
+- animateToMagnifierRenderer
+- animateToAutoscrollRenderer
+- zoomUpAnimationDidStop:finished:
+- zoomDownAnimationDidStop:finished:
+- remove
+- magnificationPoint
+- detectLostTouches:
+- setToMagnifierRenderer
+- zoomUpAnimation
+- windowWillRotate:
+- animationPoint
+- zoomDownAnimation
+@end

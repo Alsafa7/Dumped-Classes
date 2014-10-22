@@ -1,0 +1,77 @@
+@interface MBSSnapshotAttributes : PBCodable
+{
+	int _backupReason;
+	int _backupType;
+	id _buildVersion;
+	id _deviceName;
+	unsigned int _keybagID;
+	id _keybagUUID;
+	id _productVersion;
+	struct _has;
+}
+
++ hasKeybagID
++ keybagID
++ setKeybagID:
++ setHasKeybagID:
++ setKeybagUUID:
++ hasDeviceName
++ hasProductVersion
++ hasBuildVersion
++ hasKeybagUUID
++ keybagUUID
++ hasBackupReason
++ backupReason
++ setBackupReason:
++ hasBackupType
++ backupType
++ setBackupType:
++ setHasBackupReason:
++ setHasBackupType:
++ setBuildVersion:
++ setDeviceName:
++ dealloc
++ isEqual:
++ hash
++ description
++ dictionaryRepresentation
++ buildVersion
++ deviceName
++ readFrom:
++ setProductVersion:
++ writeTo:
++ copyTo:
++ productVersion
+- hasKeybagID
+- keybagID
+- setKeybagID:
+- setHasKeybagID:
+- setKeybagUUID:
+- hasDeviceName
+- hasProductVersion
+- hasBuildVersion
+- hasKeybagUUID
+- keybagUUID
+- hasBackupReason
+- backupReason
+- setBackupReason:
+- hasBackupType
+- backupType
+- setBackupType:
+- setHasBackupReason:
+- setHasBackupType:
+- setBuildVersion:
+- setDeviceName:
+- dealloc
+- isEqual:
+- hash
+- description
+- dictionaryRepresentation
+- buildVersion
+- deviceName
+- readFrom:
+- setProductVersion:
+- writeTo:
+- copyTo:
+- productVersion
+@end

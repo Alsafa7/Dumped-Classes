@@ -1,0 +1,83 @@
+@interface _UINavigationParallaxTransition : NSObject
+{
+	BOOL _interactionAborted;
+	BOOL _clipUnderlapWhileTransitioning;
+	long long _operation;
+	id _transitionContext;
+	id _interactionController;
+	id _borderDimmingView;
+	id _contentDimmingView;
+	id _containerFromView;
+	id _containerToView;
+	id _clipUnderView;
+	long long _transitionStyle;
+	double _transitionGap;
+}
+
++ dealloc
++ setContentDimmingView:
++ setBorderDimmingView:
++ interactionController
++ setTransitionContext:
++ setInteractionAborted:
++ contentDimmingView
++ operation
++ setOperation:
++ transitionStyle
++ transitionDuration:
++ borderDimmingView
++ setClipUnderView:
++ _basicAnimationForView:withKeyPath:
++ _timingFunctionForAnimation
++ setInteractionController:
++ interactionAborted
++ animateTransition:
++ animationEnded:
++ initWithCurrentOperation:
++ resizedToContainerView
++ resizedFromContainerView
++ transitionContext
++ containerFromView
++ setContainerFromView:
++ containerToView
++ setContainerToView:
++ clipUnderView
++ clipUnderlapWhileTransitioning
++ setClipUnderlapWhileTransitioning:
++ setTransitionStyle:
++ transitionGap
++ setTransitionGap:
+- dealloc
+- setContentDimmingView:
+- setBorderDimmingView:
+- interactionController
+- setTransitionContext:
+- setInteractionAborted:
+- contentDimmingView
+- operation
+- setOperation:
+- transitionStyle
+- transitionDuration:
+- borderDimmingView
+- setClipUnderView:
+- _basicAnimationForView:withKeyPath:
+- _timingFunctionForAnimation
+- setInteractionController:
+- interactionAborted
+- animateTransition:
+- animationEnded:
+- initWithCurrentOperation:
+- resizedToContainerView
+- resizedFromContainerView
+- transitionContext
+- containerFromView
+- setContainerFromView:
+- containerToView
+- setContainerToView:
+- clipUnderView
+- clipUnderlapWhileTransitioning
+- setClipUnderlapWhileTransitioning:
+- setTransitionStyle:
+- transitionGap
+- setTransitionGap:
+@end

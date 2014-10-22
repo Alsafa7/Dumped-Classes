@@ -1,0 +1,6 @@
+@interface DOMNodeList : DOMObject
+{
+
+}
+
+@end

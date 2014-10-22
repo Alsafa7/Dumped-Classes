@@ -1,0 +1,94 @@
+@interface SBUIPluginHost : NSObject
+{
+	id _plugin;
+	BOOL _expectsFaceContact;
+	BOOL _isPluginRunning;
+}
+
++ pluginWantsActivationEvent:interval:
++ activatePluginForEvent:context:
++ pluginHandledPasscodeUnlockWithCompletion:
++ expectsFaceContact
++ preparePluginForActivationEvent:afterInterval:
++ _pluginDidLoad:
++ _pluginWillUnload:
++ pluginHandledMenuButtonDownEvent
++ pluginHandledMenuButtonTap
++ cancelPendingPluginActivationEvent:
++ activatePluginForEvent:
++ pluginWantsInterfaceOrientation:
++ pluginSuppressesNotifications
++ pluginWantsScreenDimInterval:
++ pluginSupportedAndEnabled
++ isPluginVisible
++ isPluginRunning
++ _notePluginVisibilityDidChange
++ dismissPluginForEvent:
++ pluginController
++ uiPluginAttemptDeviceUnlock:withPassword:lockViewOwner:
++ uiPlugin:launchApplicationWithBundleID:openURL:
++ uiPlugin:isNowRunning:
++ _dismissUIPlugin:animated:
++ uiPluginWantsActivation:forEvent:completion:
++ uiPlugin:openURL:
++ uiPluginUserEventOccurred:
++ uiPlugin:forceUpdateToInterfaceOrientation:animated:
++ _removeObserversForPlugin:
++ setPluginController:
++ _noteDeviceLockedOrBlocked
++ _updateFaceContactForVisibilityChange:
++ _uiLocked:
++ _deviceBlocked:
++ _remoteLocked:
++ _restoreOrientation
++ uiPluginWantsDismissal:withAnimation:
++ uiPluginExpectsFaceContact:
++ uiPlugin:setExpectsFaceContact:
++ pluginHandledWiredMicButtonTap
++ _updateExpectsFaceContactWithChangedValue:
++ dealloc
++ init
+- pluginWantsActivationEvent:interval:
+- activatePluginForEvent:context:
+- pluginHandledPasscodeUnlockWithCompletion:
+- expectsFaceContact
+- preparePluginForActivationEvent:afterInterval:
+- _pluginDidLoad:
+- _pluginWillUnload:
+- pluginHandledMenuButtonDownEvent
+- pluginHandledMenuButtonTap
+- cancelPendingPluginActivationEvent:
+- activatePluginForEvent:
+- pluginWantsInterfaceOrientation:
+- pluginSuppressesNotifications
+- pluginWantsScreenDimInterval:
+- pluginSupportedAndEnabled
+- isPluginVisible
+- isPluginRunning
+- _notePluginVisibilityDidChange
+- dismissPluginForEvent:
+- pluginController
+- uiPluginAttemptDeviceUnlock:withPassword:lockViewOwner:
+- uiPlugin:launchApplicationWithBundleID:openURL:
+- uiPlugin:isNowRunning:
+- _dismissUIPlugin:animated:
+- uiPluginWantsActivation:forEvent:completion:
+- uiPlugin:openURL:
+- uiPluginUserEventOccurred:
+- uiPlugin:forceUpdateToInterfaceOrientation:animated:
+- _removeObserversForPlugin:
+- setPluginController:
+- _noteDeviceLockedOrBlocked
+- _updateFaceContactForVisibilityChange:
+- _uiLocked:
+- _deviceBlocked:
+- _remoteLocked:
+- _restoreOrientation
+- uiPluginWantsDismissal:withAnimation:
+- uiPluginExpectsFaceContact:
+- uiPlugin:setExpectsFaceContact:
+- pluginHandledWiredMicButtonTap
+- _updateExpectsFaceContactWithChangedValue:
+- dealloc
+- init
+@end

@@ -1,0 +1,6 @@
+@interface MCManagedAppManagerReader : NSObject
+{
+
+}
+
+@end

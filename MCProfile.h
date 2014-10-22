@@ -1,0 +1,142 @@
+@interface MCProfile : NSObject
+{
+	int _trustQueueTrustLevel;
+	BOOL _trustQueueTrustHasBeenEvaluated;
+	id _trustEvaluationQueue;
+	id _signerQueueSignerSummary;
+	id _signerQueueSignerCertificates;
+	id _signerEvaluationQueue;
+	BOOL _encrypted;
+	BOOL _isLocked;
+	BOOL _needsReboot;
+	BOOL _isStub;
+	BOOL _mustInstallNonInteractively;
+	id _profileDescription;
+	id _displayName;
+	id _identifier;
+	id _UUID;
+	id _organization;
+	long long _version;
+	id _installDate;
+	id _expiryDate;
+	id _removalPasscode;
+	id _productVersion;
+	id _productBuildVersion;
+	id _removalDate;
+	id _installOptions;
+	id _localizedConsentText;
+}
+
++ createHandler
++ stubDictionary
++ initWithDictionary:allowEmptyPayload:outError:
++ malformedProfileErrorWithError:
++ stubFileName
++ writeStubToPath:
++ profileIDHashFileName
++ UUIDHashFileName
++ writeStubToDirectory:
++ containsPayloadOfClass:
++ countOfPayloadsOfClass:
++ description
++ isLocked
++ UUID
++ setLocked:
++ identifier
++ displayName
++ version
++ productBuildVersion
++ isStub
++ friendlyName
++ removalPasscode
++ setRemovalPasscode:
++ profileDescription
++ installationWarningsIncludeUnsignedProfileWarning:
++ installationWarnings
++ payloads
++ payloadWithUUID:
++ isManagedByProfileService
++ localizedPayloadSummaryByType
++ earliestCertificateExpiryDate
++ signerCertificates
++ isSigned
++ organization
++ setSignerCertificates:
++ trustLevel
++ localizedConsentText
++ mustInstallNonInteractively
++ expiryDate
++ signerSummary
++ evaluateSignerTrust
++ signerCertificate
++ evaluateSignerTrustAsynchronouslyWithCompletion:
++ mayInstallWithOptions:hasInteractionClient:outError:
++ setEncrypted:
++ installDate
++ setInstallDate:
++ needsReboot
++ removalDate
++ installOptions
++ setInstallOptions:
++ setMustInstallNonInteractively:
++ setDisplayName:
++ isEncrypted
++ .cxx_destruct
++ productVersion
+- createHandler
+- stubDictionary
+- initWithDictionary:allowEmptyPayload:outError:
+- malformedProfileErrorWithError:
+- stubFileName
+- writeStubToPath:
+- profileIDHashFileName
+- UUIDHashFileName
+- writeStubToDirectory:
+- containsPayloadOfClass:
+- countOfPayloadsOfClass:
+- description
+- isLocked
+- UUID
+- setLocked:
+- identifier
+- displayName
+- version
+- productBuildVersion
+- isStub
+- friendlyName
+- removalPasscode
+- setRemovalPasscode:
+- profileDescription
+- installationWarningsIncludeUnsignedProfileWarning:
+- installationWarnings
+- payloads
+- payloadWithUUID:
+- isManagedByProfileService
+- localizedPayloadSummaryByType
+- earliestCertificateExpiryDate
+- signerCertificates
+- isSigned
+- organization
+- setSignerCertificates:
+- trustLevel
+- localizedConsentText
+- mustInstallNonInteractively
+- expiryDate
+- signerSummary
+- evaluateSignerTrust
+- signerCertificate
+- evaluateSignerTrustAsynchronouslyWithCompletion:
+- mayInstallWithOptions:hasInteractionClient:outError:
+- setEncrypted:
+- installDate
+- setInstallDate:
+- needsReboot
+- removalDate
+- installOptions
+- setInstallOptions:
+- setMustInstallNonInteractively:
+- setDisplayName:
+- isEncrypted
+- .cxx_destruct
+- productVersion
+@end

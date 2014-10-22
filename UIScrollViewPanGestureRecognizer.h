@@ -1,0 +1,61 @@
+@interface UIScrollViewPanGestureRecognizer : UIPanGestureRecognizer
+{
+	id _scrollView;
+	SEL _scrollViewAction;
+	struct _reconsideredLockingLocation;
+	bit[2] _lastLockingAxis;
+	bit[2] _lockingAxis;
+	bit[1] _hasChildScrollView;
+	bit[1] _hasParentScrollView;
+	bit[1] _caughtDeceleratingScrollView;
+	bit[1] _directionalLockEnabled;
+	bit[1] _transfersTrackingFromParentScrollView;
+}
+
++ setDelegate:
++ translationInView:
++ velocityInView:
++ initWithTarget:action:
++ _hysteresis
++ touchesCancelled:withEvent:
++ touchesBegan:withEvent:
++ touchesMoved:withEvent:
++ setDirectionalLockEnabled:
++ isDirectionalLockEnabled
++ setScrollView:
++ removeTarget:action:
++ _caughtDeceleratingScrollView
++ _scrollViewDidEndZooming
++ canBePreventedByGestureRecognizer:
++ _resetGestureRecognizer
++ scrollView
++ _adjustScreenLocation:
++ _centroidMovedTo:atTime:
++ _shouldTryToBeginWithEvent:
++ _canTransferTrackingFromParentPagingScrollView
++ _shouldTransferTrackingFromParentScrollViewForCurrentOffset
++ _shouldContinueToWaitToTransferTrackingFromParentScrollView
+- setDelegate:
+- translationInView:
+- velocityInView:
+- initWithTarget:action:
+- _hysteresis
+- touchesCancelled:withEvent:
+- touchesBegan:withEvent:
+- touchesMoved:withEvent:
+- setDirectionalLockEnabled:
+- isDirectionalLockEnabled
+- setScrollView:
+- removeTarget:action:
+- _caughtDeceleratingScrollView
+- _scrollViewDidEndZooming
+- canBePreventedByGestureRecognizer:
+- _resetGestureRecognizer
+- scrollView
+- _adjustScreenLocation:
+- _centroidMovedTo:atTime:
+- _shouldTryToBeginWithEvent:
+- _canTransferTrackingFromParentPagingScrollView
+- _shouldTransferTrackingFromParentScrollViewForCurrentOffset
+- _shouldContinueToWaitToTransferTrackingFromParentScrollView
+@end

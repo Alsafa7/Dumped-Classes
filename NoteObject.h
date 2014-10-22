@@ -1,0 +1,6 @@
+@interface NoteObject : NSManagedObject
+{
+
+}
+
+@end

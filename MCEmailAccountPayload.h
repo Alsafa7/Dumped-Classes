@@ -1,0 +1,79 @@
+@interface MCEmailAccountPayload : MCEmailAccountPayloadBase
+{
+	id _emailAccountDescription;
+	id _emailAccountName;
+	id _emailAccountType;
+	id _emailAddress;
+	id _incomingMailServerAuthentication;
+	id _incomingMailServerHostname;
+	id _incomingMailServerPortNumber;
+	BOOL _incomingMailServerUseSSL;
+	id _incomingMailServerUsername;
+	id _incomingMailServerIMAPPathPrefix;
+	id _incomingPassword;
+	id _outgoingPassword;
+	BOOL _outgoingPasswordSameAsIncomingPassword;
+	id _outgoingMailServerAuthentication;
+	id _outgoingMailServerHostname;
+	id _outgoingMailServerPortNumber;
+	BOOL _outgoingMailServerUseSSL;
+	id _outgoingMailServerUsername;
+}
+
++ handlerWithProfileHandler:
++ description
++ title
++ initWithDictionary:profile:outError:
++ stubDictionary
++ subtitle1Label
++ subtitle1Description
++ emailAccountDescription
++ emailAccountType
++ incomingMailServerHostname
++ subtitle2Label
++ subtitle2Description
++ emailAccountName
++ incomingMailServerAuthentication
++ incomingMailServerPortNumber
++ incomingMailServerUseSSL
++ incomingMailServerUsername
++ incomingMailServerIMAPPathPrefix
++ incomingPassword
++ outgoingPassword
++ outgoingPasswordSameAsIncomingPassword
++ outgoingMailServerAuthentication
++ outgoingMailServerHostname
++ outgoingMailServerPortNumber
++ outgoingMailServerUseSSL
++ outgoingMailServerUsername
++ emailAddress
++ .cxx_destruct
+- handlerWithProfileHandler:
+- description
+- title
+- initWithDictionary:profile:outError:
+- stubDictionary
+- subtitle1Label
+- subtitle1Description
+- emailAccountDescription
+- emailAccountType
+- incomingMailServerHostname
+- subtitle2Label
+- subtitle2Description
+- emailAccountName
+- incomingMailServerAuthentication
+- incomingMailServerPortNumber
+- incomingMailServerUseSSL
+- incomingMailServerUsername
+- incomingMailServerIMAPPathPrefix
+- incomingPassword
+- outgoingPassword
+- outgoingPasswordSameAsIncomingPassword
+- outgoingMailServerAuthentication
+- outgoingMailServerHostname
+- outgoingMailServerPortNumber
+- outgoingMailServerUseSSL
+- outgoingMailServerUsername
+- emailAddress
+- .cxx_destruct
+@end

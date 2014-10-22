@@ -1,0 +1,6 @@
+@interface CMMotionUtils : NSObject
+{
+
+}
+
+@end

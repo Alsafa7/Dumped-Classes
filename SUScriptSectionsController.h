@@ -1,0 +1,6 @@
+@interface SUScriptSectionsController : SUScriptObject
+{
+
+}
+
+@end

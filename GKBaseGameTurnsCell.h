@@ -1,0 +1,6 @@
+@interface GKBaseGameTurnsCell : GKBaseGameCell
+{
+
+}
+
+@end

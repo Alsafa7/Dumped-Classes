@@ -1,0 +1,161 @@
+@interface UISegment : UIImageView
+{
+	id _info;
+	id _appearanceStorage;
+	double _width;
+	struct _contentOffset;
+	long long _barStyle;
+	usigned long long _rightSegmentState;
+	id _badgeValue;
+	id _badgeView;
+	id _objectValue;
+	struct _segmentFlags;
+	id _infoConstraints;
+	double _requestedScaleFactor;
+}
+
++ dealloc
++ initWithCoder:
++ _populateArchivedSubviews:
++ encodeWithCoder:
++ hitTest:withEvent:
++ setFrame:
++ setBounds:
++ setPosition:
++ useBlockyMagnificationInClassic
++ _tintColorArchivingKey
++ setTintColor:
++ tintColorDidChange
++ hitTest:forEvent:
++ setEnabled:
++ setContentOffset:
++ contentSize
++ _updateBackgroundImage
++ setControlSize:
++ setBarStyle:
++ setHighlighted:
++ isHighlighted
++ controlSize
++ isSelected
++ setSelected:
++ updateConstraints
++ setBadgeValue:
++ badgeValue
++ insertDividerView
++ _updateTextColors
++ setObjectValue:
++ _commonSegmentInit
++ objectValue
++ _isInMiniBar
++ _segmentState
++ _shouldUsePadMomentaryAppearance
++ updateDividerViewForChangedSegment:
++ _dividerImageIsCustom:
++ _dividerImage
++ _hasSelectedColor
++ updateMasking
++ _attributedTextForState:selected:
++ _positionInfo
++ disabledTextColor
++ _currentOptionsStyleTextColor
++ _currentOptionsStyleTextShadowColor
++ _setEnabledAppearance:
++ _invalidateInfoConstraints
++ _paddingInsets
++ _contentRectForBounds:
++ _maximumTextSize
++ _barHeight
++ _setInfoConstraints:
++ contentRect
++ initWithInfo:style:size:barStyle:tintColor:appearanceStorage:position:autosizeText:
++ updateForAppearance:style:
++ setWasSelected:
++ setAutosizeText:
++ badgeView
++ isMomentary
++ setMomentary:
++ showDivider
++ setShowDivider:
++ animateAdd:
++ animateRemoveForWidth:
++ label
++ setRequestedScaleFactor:
++ _forceInfoDisplay
++ infoName
++ _idealWidth
++ viewForBaselineLayout
++ _infoConstraints
++ requestedScaleFactor
+- dealloc
+- initWithCoder:
+- _populateArchivedSubviews:
+- encodeWithCoder:
+- hitTest:withEvent:
+- setFrame:
+- setBounds:
+- setPosition:
+- useBlockyMagnificationInClassic
+- _tintColorArchivingKey
+- setTintColor:
+- tintColorDidChange
+- hitTest:forEvent:
+- setEnabled:
+- setContentOffset:
+- contentSize
+- _updateBackgroundImage
+- setControlSize:
+- setBarStyle:
+- setHighlighted:
+- isHighlighted
+- controlSize
+- isSelected
+- setSelected:
+- updateConstraints
+- setBadgeValue:
+- badgeValue
+- insertDividerView
+- _updateTextColors
+- setObjectValue:
+- _commonSegmentInit
+- objectValue
+- _isInMiniBar
+- _segmentState
+- _shouldUsePadMomentaryAppearance
+- updateDividerViewForChangedSegment:
+- _dividerImageIsCustom:
+- _dividerImage
+- _hasSelectedColor
+- updateMasking
+- _attributedTextForState:selected:
+- _positionInfo
+- disabledTextColor
+- _currentOptionsStyleTextColor
+- _currentOptionsStyleTextShadowColor
+- _setEnabledAppearance:
+- _invalidateInfoConstraints
+- _paddingInsets
+- _contentRectForBounds:
+- _maximumTextSize
+- _barHeight
+- _setInfoConstraints:
+- contentRect
+- initWithInfo:style:size:barStyle:tintColor:appearanceStorage:position:autosizeText:
+- updateForAppearance:style:
+- setWasSelected:
+- setAutosizeText:
+- badgeView
+- isMomentary
+- setMomentary:
+- showDivider
+- setShowDivider:
+- animateAdd:
+- animateRemoveForWidth:
+- label
+- setRequestedScaleFactor:
+- _forceInfoDisplay
+- infoName
+- _idealWidth
+- viewForBaselineLayout
+- _infoConstraints
+- requestedScaleFactor
+@end

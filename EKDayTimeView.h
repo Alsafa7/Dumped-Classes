@@ -1,0 +1,99 @@
+@interface EKDayTimeView : UIView
+{
+	id _topContentView;
+	id _bottomContentView;
+	bit[1] _leftBorder;
+	bit[1] _rightBorder;
+	BOOL _useLightText;
+	double _highlightedHour;
+	long long _orientation;
+	double _hourSize;
+	double _designatorSize;
+	id _timeMarker;
+	id _timeMarkerExtension;
+	BOOL _showsTimeMarker;
+	BOOL _showsTimeMarkerExtension;
+	BOOL _usesLightText;
+	id _timeColor;
+	double _hoursToPad;
+	double _hourHeight;
+	double _timeWidth;
+	id _delegate;
+	struct _hoursToRender;
+}
+
++ setShowsLeftBorder:
++ showsLeftBorder
++ _localeChanged
++ setUsesLightText:
++ setShowsTimeMarker:
++ updateMarkerPosition
++ showsTimeMarker
++ setShowsRightBorder:
++ _positionOfSecond:
++ timeColor
++ hoursToRender
++ setHoursToRender:
++ setHighlightedHour:
++ highlightedHour
++ timeWidth
++ hourHeight
++ showsRightBorder
++ drawRect:forContentView:withHourRange:
++ setShowsTimeMarkerExtension:
++ showsTimeMarkerExtension
++ usesLightText
++ hoursToPad
++ setHoursToPad:
++ topPadding
++ timeMarker
++ initWithFrame:
++ setOpaque:
++ dealloc
++ setNeedsDisplay
++ setDelegate:
++ setFrame:
++ sizeThatFits:
++ delegate
++ defaultHeight
++ setTimeColor:
++ setOrientation:
++ .cxx_destruct
+- setShowsLeftBorder:
+- showsLeftBorder
+- _localeChanged
+- setUsesLightText:
+- setShowsTimeMarker:
+- updateMarkerPosition
+- showsTimeMarker
+- setShowsRightBorder:
+- _positionOfSecond:
+- timeColor
+- hoursToRender
+- setHoursToRender:
+- setHighlightedHour:
+- highlightedHour
+- timeWidth
+- hourHeight
+- showsRightBorder
+- drawRect:forContentView:withHourRange:
+- setShowsTimeMarkerExtension:
+- showsTimeMarkerExtension
+- usesLightText
+- hoursToPad
+- setHoursToPad:
+- topPadding
+- timeMarker
+- initWithFrame:
+- setOpaque:
+- dealloc
+- setNeedsDisplay
+- setDelegate:
+- setFrame:
+- sizeThatFits:
+- delegate
+- defaultHeight
+- setTimeColor:
+- setOrientation:
+- .cxx_destruct
+@end

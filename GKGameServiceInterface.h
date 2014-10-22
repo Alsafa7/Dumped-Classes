@@ -1,0 +1,6 @@
+@interface GKGameServiceInterface : GKServiceInterface
+{
+
+}
+
+@end

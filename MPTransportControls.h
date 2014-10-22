@@ -1,0 +1,162 @@
+@interface MPTransportControls : UIView
+{
+	id _target;
+	id _item;
+	id _player;
+	usigned long long _desiredParts;
+	usigned long long _disabledParts;
+	id _heldParts;
+	usigned long long _visibleParts;
+	bit[1] _playing;
+	BOOL _allowsWirelessPlayback;
+	BOOL _registeredForPlayerNotifications;
+	id _alternatesButton;
+	id _bookmarkButton;
+	id _chaptersButton;
+	id _devicePickerButton;
+	id _emailButton;
+	id _fastForward15SecondsButton;
+	id _likeOrBanButton;
+	id _nextButton;
+	id _playButton;
+	id _previousButton;
+	id _rewind15SecondsButton;
+	id _rewind30SecondsButton;
+	id _scaleButton;
+	id _toggleFullscreenButton;
+	id _volumeSlider;
+}
+
++ _isExternalPlaybackActiveDidChangeNotification:
++ setAllowsWirelessPlayback:
++ allowsWirelessPlayback
++ setItem:
++ visibleParts
++ desiredParts
++ setDesiredParts:
++ setVisibleParts:
++ setDisabledParts:
++ _itemChangedNotification:
++ _validityChangedNotification:
++ registerForPlayerNotifications
++ unregisterForPlayerNotifications
++ disabledParts
++ setRegisteredForPlayerNotifications:
++ registeredForPlayerNotifications
++ _timeMarkersAvailableNotification:
++ _alternateTypesChangedNotification:
++ _isLikedDidChangeNotification:
++ _availableRoutesChangedNotification:
++ _playbackStateChangedNotification:
++ _reloadViewWithAnimation:
++ _applyDesiredPartsWithAnimation:
++ setDesiredParts:animated:
++ _updateEnabledStates:
++ _updateButtonImageForPart:
++ setVisibleParts:animated:
++ _applyPossibleVisiblePartsToParts:
++ pauseButtonImage
++ playButtonImage
++ buttonImageForPart:
++ highlightedButtonImageForPart:
++ _handleHoldForPart:
++ _handleReleaseForPart:
++ _handleTapForPart:
++ buttonDown:
++ buttonUp:
++ disabledButtonImageForPart:
++ usesTintColorForControls
++ tintColorForPart:
++ playPauseButtonImage
++ allowsWirelessPlaybackForCurrentItem
++ showsVolumeSliderWhenNoVolumeControlAvailable
++ _updateAdditions:removals:forPart:
++ buttonHeld:
++ buttonHoldReleased:
++ newVolumeSlider
++ reloadForAdditions:removals:animate:
++ buttonForPart:
++ newButtonForPart:
++ alwaysHidesSystemVolumeHUD
++ updateVisibleButtonImages
++ initWithFrame:
++ dealloc
++ setHidden:
++ setAlpha:
++ didMoveToWindow
++ init
++ setFrame:
++ setTarget:
++ didMoveToSuperview
++ target
++ item
++ .cxx_destruct
++ player
++ setPlayer:
+- _isExternalPlaybackActiveDidChangeNotification:
+- setAllowsWirelessPlayback:
+- allowsWirelessPlayback
+- setItem:
+- visibleParts
+- desiredParts
+- setDesiredParts:
+- setVisibleParts:
+- setDisabledParts:
+- _itemChangedNotification:
+- _validityChangedNotification:
+- registerForPlayerNotifications
+- unregisterForPlayerNotifications
+- disabledParts
+- setRegisteredForPlayerNotifications:
+- registeredForPlayerNotifications
+- _timeMarkersAvailableNotification:
+- _alternateTypesChangedNotification:
+- _isLikedDidChangeNotification:
+- _availableRoutesChangedNotification:
+- _playbackStateChangedNotification:
+- _reloadViewWithAnimation:
+- _applyDesiredPartsWithAnimation:
+- setDesiredParts:animated:
+- _updateEnabledStates:
+- _updateButtonImageForPart:
+- setVisibleParts:animated:
+- _applyPossibleVisiblePartsToParts:
+- pauseButtonImage
+- playButtonImage
+- buttonImageForPart:
+- highlightedButtonImageForPart:
+- _handleHoldForPart:
+- _handleReleaseForPart:
+- _handleTapForPart:
+- buttonDown:
+- buttonUp:
+- disabledButtonImageForPart:
+- usesTintColorForControls
+- tintColorForPart:
+- playPauseButtonImage
+- allowsWirelessPlaybackForCurrentItem
+- showsVolumeSliderWhenNoVolumeControlAvailable
+- _updateAdditions:removals:forPart:
+- buttonHeld:
+- buttonHoldReleased:
+- newVolumeSlider
+- reloadForAdditions:removals:animate:
+- buttonForPart:
+- newButtonForPart:
+- alwaysHidesSystemVolumeHUD
+- updateVisibleButtonImages
+- initWithFrame:
+- dealloc
+- setHidden:
+- setAlpha:
+- didMoveToWindow
+- init
+- setFrame:
+- setTarget:
+- didMoveToSuperview
+- target
+- item
+- .cxx_destruct
+- player
+- setPlayer:
+@end

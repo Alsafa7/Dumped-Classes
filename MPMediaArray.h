@@ -1,0 +1,6 @@
+@interface MPMediaArray : NSArray
+{
+
+}
+
+@end

@@ -1,0 +1,78 @@
+@interface PBCoreImageContext : PBContext
+{
+	id _glesContext;
+	pointer _textureCache;
+	pointer _inputTexture;
+	pointer _outputTexture;
+	pointer _smallPool;
+	pointer _largePool;
+	struct _smallPoolSize;
+	struct _largePoolSize;
+	pointer _outputImageQueue;
+	id _ciContext;
+	pointer _inputPixelBuffer;
+	pointer _outputPixelBuffer;
+	BOOL _render9Up;
+	BOOL _renderForSave;
+	struct _outputSize;
+}
+
++ _createPixelBuffer:withSize:
++ ciContext
++ outputSize
++ setOutputSize:
++ dealloc
++ initWithOptions:
++ inputPixelBuffer
++ inputTexture
++ renderForSave
++ outputPixelBuffer
++ render9Up
++ outputTexture
++ createCVPixelBufferForFilter:inputPixelBuffer:mirrored:
++ renderFilter:inputPixelBuffer:
++ renderFilter:inputPixelBuffer:mirrored:
++ renderNineUp:inputPixelBuffer:
++ renderNineUp:inputPixelBuffer:mirrored:
++ outputImageQueue
++ setOutputImageQueue:
++ largePool
++ setLargePool:
++ smallPool
++ setSmallPool:
++ setInputPixelBuffer:mapTexture:
++ setOutputPixelBuffer:mapTexture:
++ setInputPixelBuffer:
++ setRender9Up:
++ setRenderForSave:
++ setOutputPixelBuffer:
+- _createPixelBuffer:withSize:
+- ciContext
+- outputSize
+- setOutputSize:
+- dealloc
+- initWithOptions:
+- inputPixelBuffer
+- inputTexture
+- renderForSave
+- outputPixelBuffer
+- render9Up
+- outputTexture
+- createCVPixelBufferForFilter:inputPixelBuffer:mirrored:
+- renderFilter:inputPixelBuffer:
+- renderFilter:inputPixelBuffer:mirrored:
+- renderNineUp:inputPixelBuffer:
+- renderNineUp:inputPixelBuffer:mirrored:
+- outputImageQueue
+- setOutputImageQueue:
+- largePool
+- setLargePool:
+- smallPool
+- setSmallPool:
+- setInputPixelBuffer:mapTexture:
+- setOutputPixelBuffer:mapTexture:
+- setInputPixelBuffer:
+- setRender9Up:
+- setRenderForSave:
+- setOutputPixelBuffer:
+@end

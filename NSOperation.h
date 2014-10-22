@@ -1,0 +1,66 @@
+@interface NSOperation : NSObject
+{
+	id _private;
+	int _private1;
+	int _private1b;
+}
+
++ setTag:
++ tag
++ setObservationInfo:
++ _implicitObservationInfo
++ waitUntilFinished
++ isReady
++ threadPriority
++ setThreadPriority:
++ completionBlock
++ __
++ isConcurrent
++ isAsynchronous
++ queuePriority
++ waitUntilFinishedOrTimeout:
++ addDependency:
++ removeDependency:
++ dependencies
++ dealloc
++ init
++ isCancelled
++ cancel
++ start
++ main
++ setCompletionBlock:
++ observationInfo
++ isFinished
++ isExecuting
++ setQueuePriority:
++ finalize
+- setTag:
+- tag
+- setObservationInfo:
+- _implicitObservationInfo
+- waitUntilFinished
+- isReady
+- threadPriority
+- setThreadPriority:
+- completionBlock
+- __
+- isConcurrent
+- isAsynchronous
+- queuePriority
+- waitUntilFinishedOrTimeout:
+- addDependency:
+- removeDependency:
+- dependencies
+- dealloc
+- init
+- isCancelled
+- cancel
+- start
+- main
+- setCompletionBlock:
+- observationInfo
+- isFinished
+- isExecuting
+- setQueuePriority:
+- finalize
+@end

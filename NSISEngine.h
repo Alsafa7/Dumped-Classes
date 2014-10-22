@@ -1,0 +1,242 @@
+@interface NSISEngine : NSObject
+{
+	id _rows;
+	id _rowsCrossIndex;
+	id _headForObjectiveRow;
+	id _variablesWithValueRestrictionViolations;
+	id _pendingRemovals;
+	id _delegate;
+	id _brokenConstraintPositiveErrors;
+	id _brokenConstraintNegativeErrors;
+	id _variablesWithIntegralizationViolations;
+	pointer _integralizationAdjustmentsForConstraintMarkers;
+	id _unsatisfiabilityHandler;
+	usigned long long _pivotCount;
+	struct _engineScalingCoefficients;
+	id _recordedOperations;
+	int _automaticOptimizationDisabledCount;
+	int _engineDelegateCallsDisabledCount;
+	int _variableDelegateCallsDisabledCount;
+	unsigned int _totalChangeCount;
+	unsigned int _changeCountAtLastOptimization;
+	BOOL _lastOptimizationInvolvedIntegralization;
+	BOOL _shouldIntegralize;
+	BOOL _revertsAfterUnsatisfiabilityHandler;
+	BOOL _accumulatingRemovals;
+}
+
++ setShouldIntegralize:
++ optimize
++ tryToAddConstraintWithMarker:expression:integralizationAdjustment:mutuallyExclusiveConstraints:
++ addVariableToBeOptimized:priority:
++ removeVariableToBeOptimized:priority:
++ changeVariableToBeOptimized:fromPriority:toPriority:
++ removeConstraintWithMarker:
++ constraintDidChangeSuchThatMarker:shouldBeReplacedByMarkerPlusDelta:
++ tryToChangeConstraintSuchThatMarker:isReplacedByMarkerPlusDelta:undoHandler:
++ verifyInternalIntegrity
++ _brokenConstraintPositiveErrors
++ _brokenConstraintPositiveErrorsIfAvailable
++ _brokenConstraintNegativeErrors
++ _brokenConstraintNegativeErrorsIfAvailable
++ markerForBrokenConstraintWithPositiveErrorVar:
++ markerForBrokenConstraintWithNegativeErrorVar:
++ rawSetRowWithHead:body:
++ rowCrossIndexNoteBodyVariable:wasAddedToRowWithHead:
++ rowBodyForHead:
++ rowCrossIndexNoteBodyVariable:wasRemovedFromRowWithHead:
++ rawRemoveRowWithHead:
++ rowHeadsForRowsContainingBodyVar:
++ rowCrossIndexNoteDroppedBodyVar:
++ rowBodyForNonObjectiveHead:
++ removeRowWithHead:
++ substituteOutAllOccurencesOfBodyVar:withExpression:
++ setRowWithHead:body:
++ addVariable:coefficient:toRowWithHead:body:
++ rowBodyForObjectiveHead:
++ addVariable:priority:times:toObjectiveRowWithHead:body:
++ replaceMarker:withMarkerPlusCoefficient:timesVariable:
++ setPositiveErrorVar:forBrokenConstraintWithMarker:
++ setNegativeErrorVar:forBrokenConstraintWithMarker:
++ fallbackMarkerForConstraintToBreakInRowWithHead:body:
++ errorVariableIntroducedByBreakingConstraintWithMarker:errorIsPositive:
++ chooseOutgoingRowHeadForIncomingRowHead:
++ pivotToMakeBodyVar:newHeadOfRowWithHead:andDropRow:
++ handleUnsatisfiableRowWithHead:body:usingInfeasibilityHandlingBehavior:mutuallyExclusiveConstraints:
++ integralizationAdjustmentForMarker:
++ variableToWorkOnAmongVariablesWithIntegralizationViolationsIgnoringLostCauses:varsAlreadyAdjusted:
++ valueForVariableWithoutIntegralizationAdjustments:
++ setIntegralizationAdjustment:forMarker:
++ withoutOptimizingAtEndRunBlockWithAutomaticOptimizationDisabled:
++ chooseHeadForRowBody:
++ minimizeConstantInObjectiveRowWithHead:
++ removeBodyVarFromAllRows:
++ setRowsCrossIndex:
++ setHeadForObjectiveRow:
++ setVariablesWithValueRestrictionViolations:
++ setVariablesWithIntegralizationViolations:
++ setIntegralizationAdjustmentsForConstraintMarkers:
++ fixUpValueRestrictionViolationsWithInfeasibilityHandlingBehavior:
++ fixupIntegralizationViolations
++ _flushPendingRemovals
++ withBehaviors:performModifications:
++ createExpressionBySubstitutingForRowHeadVariablesInExpression:
++ tryAddingDirectly:
++ tryUsingArtificialVariableToAddConstraintWithMarker:rowBody:usingInfeasibilityHandlingBehavior:mutuallyExclusiveConstraints:
++ addExpression:priority:times:toObjectiveRowWithHead:body:
++ outgoingRowHeadForRemovingConstraintWithMarker:
++ positiveErrorVarForBrokenConstraintWithMarker:
++ negativeErrorVarForBrokenConstraintWithMarker:
++ _coreReplaceMarker:withMarkerPlusDelta:
++ tryToOptimizeReturningMutuallyExclusiveConstraints
++ enumerateRows:
++ enumerateRowsCrossIndex:
++ enumerateOriginalConstraints:
++ bodyVarIsAmbiguous:withPivotOfOutgoingRowHead:
++ incoming:andOutgoing:rowHeadsThatMakeValueAmbiguousForVariable:
++ integralizationAdjustmentsForConstraintMarkers
++ allRowHeads
++ addExpression:times:toRowWithHead:body:
++ performModifications:withUnsatisfiableConstraintsHandler:
++ numberOfConstraintsEligibleForAdjustmentToIntegralizeVariable:ignoringConstraintsWithMarkers:
++ beginRecording
++ recordedCommandsData
++ replayCommandsData:verifyingIntegrity:
++ shouldIntegralize
++ withDelegateCallsDisabled:
++ pivotCount
++ rowsCrossIndex
++ headForObjectiveRow
++ variablesWithValueRestrictionViolations
++ variablesWithIntegralizationViolations
++ revertsAfterUnsatisfiabilityHandler
++ setRevertsAfterUnsatisfiabilityHandler:
++ dealloc
++ setDelegate:
++ init
++ description
++ delegate
++ engineScalingCoefficients
++ setEngineScalingCoefficients:
++ withAutomaticOptimizationDisabled:
++ valueForVariable:
++ valueOfVariableIsAmbiguous:
++ constraints
++ nsis_valueOfVariable:didChangeInEngine:
++ rows
++ setRows:
++ candidateRedundantConstraints
++ constraintsAffectingValueOfVariable:
++ hasValue:forVariable:
++ exerciseAmbiguityInVariable:
++ nsis_descriptionOfVariable:
++ nsis_shouldIntegralizeVariable:
++ nsis_valueOfVariableIsUserObservable:
+- setShouldIntegralize:
+- optimize
+- tryToAddConstraintWithMarker:expression:integralizationAdjustment:mutuallyExclusiveConstraints:
+- addVariableToBeOptimized:priority:
+- removeVariableToBeOptimized:priority:
+- changeVariableToBeOptimized:fromPriority:toPriority:
+- removeConstraintWithMarker:
+- constraintDidChangeSuchThatMarker:shouldBeReplacedByMarkerPlusDelta:
+- tryToChangeConstraintSuchThatMarker:isReplacedByMarkerPlusDelta:undoHandler:
+- verifyInternalIntegrity
+- _brokenConstraintPositiveErrors
+- _brokenConstraintPositiveErrorsIfAvailable
+- _brokenConstraintNegativeErrors
+- _brokenConstraintNegativeErrorsIfAvailable
+- markerForBrokenConstraintWithPositiveErrorVar:
+- markerForBrokenConstraintWithNegativeErrorVar:
+- rawSetRowWithHead:body:
+- rowCrossIndexNoteBodyVariable:wasAddedToRowWithHead:
+- rowBodyForHead:
+- rowCrossIndexNoteBodyVariable:wasRemovedFromRowWithHead:
+- rawRemoveRowWithHead:
+- rowHeadsForRowsContainingBodyVar:
+- rowCrossIndexNoteDroppedBodyVar:
+- rowBodyForNonObjectiveHead:
+- removeRowWithHead:
+- substituteOutAllOccurencesOfBodyVar:withExpression:
+- setRowWithHead:body:
+- addVariable:coefficient:toRowWithHead:body:
+- rowBodyForObjectiveHead:
+- addVariable:priority:times:toObjectiveRowWithHead:body:
+- replaceMarker:withMarkerPlusCoefficient:timesVariable:
+- setPositiveErrorVar:forBrokenConstraintWithMarker:
+- setNegativeErrorVar:forBrokenConstraintWithMarker:
+- fallbackMarkerForConstraintToBreakInRowWithHead:body:
+- errorVariableIntroducedByBreakingConstraintWithMarker:errorIsPositive:
+- chooseOutgoingRowHeadForIncomingRowHead:
+- pivotToMakeBodyVar:newHeadOfRowWithHead:andDropRow:
+- handleUnsatisfiableRowWithHead:body:usingInfeasibilityHandlingBehavior:mutuallyExclusiveConstraints:
+- integralizationAdjustmentForMarker:
+- variableToWorkOnAmongVariablesWithIntegralizationViolationsIgnoringLostCauses:varsAlreadyAdjusted:
+- valueForVariableWithoutIntegralizationAdjustments:
+- setIntegralizationAdjustment:forMarker:
+- withoutOptimizingAtEndRunBlockWithAutomaticOptimizationDisabled:
+- chooseHeadForRowBody:
+- minimizeConstantInObjectiveRowWithHead:
+- removeBodyVarFromAllRows:
+- setRowsCrossIndex:
+- setHeadForObjectiveRow:
+- setVariablesWithValueRestrictionViolations:
+- setVariablesWithIntegralizationViolations:
+- setIntegralizationAdjustmentsForConstraintMarkers:
+- fixUpValueRestrictionViolationsWithInfeasibilityHandlingBehavior:
+- fixupIntegralizationViolations
+- _flushPendingRemovals
+- withBehaviors:performModifications:
+- createExpressionBySubstitutingForRowHeadVariablesInExpression:
+- tryAddingDirectly:
+- tryUsingArtificialVariableToAddConstraintWithMarker:rowBody:usingInfeasibilityHandlingBehavior:mutuallyExclusiveConstraints:
+- addExpression:priority:times:toObjectiveRowWithHead:body:
+- outgoingRowHeadForRemovingConstraintWithMarker:
+- positiveErrorVarForBrokenConstraintWithMarker:
+- negativeErrorVarForBrokenConstraintWithMarker:
+- _coreReplaceMarker:withMarkerPlusDelta:
+- tryToOptimizeReturningMutuallyExclusiveConstraints
+- enumerateRows:
+- enumerateRowsCrossIndex:
+- enumerateOriginalConstraints:
+- bodyVarIsAmbiguous:withPivotOfOutgoingRowHead:
+- incoming:andOutgoing:rowHeadsThatMakeValueAmbiguousForVariable:
+- integralizationAdjustmentsForConstraintMarkers
+- allRowHeads
+- addExpression:times:toRowWithHead:body:
+- performModifications:withUnsatisfiableConstraintsHandler:
+- numberOfConstraintsEligibleForAdjustmentToIntegralizeVariable:ignoringConstraintsWithMarkers:
+- beginRecording
+- recordedCommandsData
+- replayCommandsData:verifyingIntegrity:
+- shouldIntegralize
+- withDelegateCallsDisabled:
+- pivotCount
+- rowsCrossIndex
+- headForObjectiveRow
+- variablesWithValueRestrictionViolations
+- variablesWithIntegralizationViolations
+- revertsAfterUnsatisfiabilityHandler
+- setRevertsAfterUnsatisfiabilityHandler:
+- dealloc
+- setDelegate:
+- init
+- description
+- delegate
+- engineScalingCoefficients
+- setEngineScalingCoefficients:
+- withAutomaticOptimizationDisabled:
+- valueForVariable:
+- valueOfVariableIsAmbiguous:
+- constraints
+- nsis_valueOfVariable:didChangeInEngine:
+- rows
+- setRows:
+- candidateRedundantConstraints
+- constraintsAffectingValueOfVariable:
+- hasValue:forVariable:
+- exerciseAmbiguityInVariable:
+- nsis_descriptionOfVariable:
+- nsis_shouldIntegralizeVariable:
+- nsis_valueOfVariableIsUserObservable:
+@end

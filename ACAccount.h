@@ -1,0 +1,331 @@
+@interface ACAccount : NSObject
+{
+	id _store;
+	id _identifier;
+	id _accountDescription;
+	id _owningBundleID;
+	id _username;
+	id _authenticationType;
+	id _credentialType;
+	id _clientToken;
+	BOOL _haveCheckedForClientToken;
+	id _accountType;
+	id _credential;
+	id _properties;
+	id _dataclassProperties;
+	BOOL _accountAccessAvailable;
+	BOOL _authenticated;
+	BOOL _active;
+	BOOL _supportsAuthentication;
+	id _objectID;
+	id _date;
+	id _lastCredentialRenewalRejectionDate;
+	id _parentAccount;
+	BOOL _haveCheckedForParentAccount;
+	id _parentAccountIdentifier;
+	BOOL _haveCheckedForChildAccounts;
+	id _childAccounts;
+	id _enabledDataclasses;
+	id _provisionedDataclasses;
+	id _dirtyProperties;
+	id _dirtyAccountProperties;
+	id _credentialsDidChangeObserver;
+	id _accountPropertiesTransformer;
+	BOOL _creatingFromManagedObject;
+}
+
++ aa_configureCerts
++ aa_removeCerts
++ aa_appleId
++ aa_setPassword:
++ aa_setAuthToken:
++ aa_updateWithProvisioningResponse:
++ aa_isPrimaryAccount
++ mobileMeAccountStatus
++ aa_setNeedsToVerifyTerms:
++ aa_fmipAccount
++ aa_setMapsToken:
++ aa_childMailAccount
++ aa_displayName
++ aa_accountTypeString
++ aa_isPrimaryEmailVerified
++ aa_protocolVersion
++ aa_fmipToken
++ aa_mapsToken
++ aa_accountFooterText
++ aa_accountFooterButton
++ aa_accountFirstDisplayAlert
++ aa_serviceUnavailable
++ aa_serviceUnavailableInfo
++ aa_isSyncedAccount
++ aa_useCellularForDataclass:
++ aa_setUseCellular:forDataclass:
++ aa_needsEmailConfiguration
++ aa_syncStoreIdentifier
++ aa_liverpoolAccount
++ aa_needsToVerifyTerms
++ aa_authTokenWithError:
++ aa_authToken
++ aa_needsRegistration
++ aa_setPrimaryAccount:
++ aa_setPrimaryEmailVerified:
++ aa_setSyncedAccount:
++ aa_firstName
++ aa_lastName
++ aa_personID
++ aa_primaryEmail
++ aa_appleIDAliases
++ aa_password
++ storeOriginalUsername
++ appleID
++ initWithAppleID:password:
++ _registeredBundles
++ setDSID:
++ canRemoveAccount
++ dsid
++ mcProfileUUID
++ setMcProfileUUID:
++ mcPayloadUUID
++ setMcPayloadUUID:
++ mcBackingPayload
++ displayUsername
++ _clearCachedChildAccounts
++ _clearDirtyProperties
++ _clearCachedCredentials
++ _installCredentialsChangedObserver
++ _markPropertyDirty:
++ credentialsChanged:
++ accountPropertiesTransformer
++ _markAccountPropertyDirty:
++ enabledAndSyncableDataclasses
++ _useParentForCredentials
++ _markCredentialDirty
++ setAccountProperties:
++ setProperties:forDataclass:
++ setCreatingFromManagedObject:
++ setAccountPropertiesTransformer:
++ displayAccount
++ accountStore
++ _setObjectID:
++ dirtyProperties
++ isPropertyDirty:
++ userFullName
++ isAuthenticated
++ credentialType
++ dealloc
++ initWithCoder:
++ encodeWithCoder:
++ description
++ reload
++ isActive
++ copyWithZone:
++ identifier
++ setActive:
++ setIdentifier:
++ setSupportsAuthentication:
++ supportsAuthentication
++ initWithManagedAccount:accountStore:
++ shortDebugName
++ _setAccountStore:
++ setOwningBundleID:
++ _loadAllCachedProperties
++ owningBundleID
++ diffAccount:
++ setParentAccount:
++ dirtyAccountProperties
++ setEnabledDataclasses:
++ markAllPropertiesDirty
++ initWithManagedAccount:
++ childAccounts
++ setLastCredentialRenewalRejectionDate:
++ accountByCleaningThirdPartyTransformations
++ lastCredentialRenewalRejectionDate
++ childAccountsWithAccountTypeIdentifier:
++ setDataclassProperties:
++ clientToken
++ authenticated
++ isEnabledToSyncDataclass:
++ dataclassProperties
++ addClientToken:
++ takeValuesFromModifiedAccount:
++ supportsPush
++ provisionedDataclasses
++ authenticationType
++ setAuthenticationType:
++ propertiesForDataclass:
++ setProvisionedDataclasses:
++ setEnabled:forDataclass:
++ setAuthenticated:
++ accountPropertyForKey:
++ parentAccount
++ parentAccountIdentifier
++ accountProperties
++ setAccountProperty:forKey:
++ accountDescription
++ setUsername:
++ setAccountDescription:
++ credentialWithError:
++ setCredential:
++ enabledDataclasses
++ refresh
++ initWithAccountType:
++ setCredentialType:
++ objectID
++ creationDate
++ isEnabledForDataclass:
++ setCreationDate:
++ isProvisionedForDataclass:
++ username
++ isDirty
++ .cxx_destruct
++ setAccountType:
++ accountType
++ credential
+- aa_configureCerts
+- aa_removeCerts
+- aa_appleId
+- aa_setPassword:
+- aa_setAuthToken:
+- aa_updateWithProvisioningResponse:
+- aa_isPrimaryAccount
+- mobileMeAccountStatus
+- aa_setNeedsToVerifyTerms:
+- aa_fmipAccount
+- aa_setMapsToken:
+- aa_childMailAccount
+- aa_displayName
+- aa_accountTypeString
+- aa_isPrimaryEmailVerified
+- aa_protocolVersion
+- aa_fmipToken
+- aa_mapsToken
+- aa_accountFooterText
+- aa_accountFooterButton
+- aa_accountFirstDisplayAlert
+- aa_serviceUnavailable
+- aa_serviceUnavailableInfo
+- aa_isSyncedAccount
+- aa_useCellularForDataclass:
+- aa_setUseCellular:forDataclass:
+- aa_needsEmailConfiguration
+- aa_syncStoreIdentifier
+- aa_liverpoolAccount
+- aa_needsToVerifyTerms
+- aa_authTokenWithError:
+- aa_authToken
+- aa_needsRegistration
+- aa_setPrimaryAccount:
+- aa_setPrimaryEmailVerified:
+- aa_setSyncedAccount:
+- aa_firstName
+- aa_lastName
+- aa_personID
+- aa_primaryEmail
+- aa_appleIDAliases
+- aa_password
+- storeOriginalUsername
+- appleID
+- initWithAppleID:password:
+- _registeredBundles
+- setDSID:
+- canRemoveAccount
+- dsid
+- mcProfileUUID
+- setMcProfileUUID:
+- mcPayloadUUID
+- setMcPayloadUUID:
+- mcBackingPayload
+- displayUsername
+- _clearCachedChildAccounts
+- _clearDirtyProperties
+- _clearCachedCredentials
+- _installCredentialsChangedObserver
+- _markPropertyDirty:
+- credentialsChanged:
+- accountPropertiesTransformer
+- _markAccountPropertyDirty:
+- enabledAndSyncableDataclasses
+- _useParentForCredentials
+- _markCredentialDirty
+- setAccountProperties:
+- setProperties:forDataclass:
+- setCreatingFromManagedObject:
+- setAccountPropertiesTransformer:
+- displayAccount
+- accountStore
+- _setObjectID:
+- dirtyProperties
+- isPropertyDirty:
+- userFullName
+- isAuthenticated
+- credentialType
+- dealloc
+- initWithCoder:
+- encodeWithCoder:
+- description
+- reload
+- isActive
+- copyWithZone:
+- identifier
+- setActive:
+- setIdentifier:
+- setSupportsAuthentication:
+- supportsAuthentication
+- initWithManagedAccount:accountStore:
+- shortDebugName
+- _setAccountStore:
+- setOwningBundleID:
+- _loadAllCachedProperties
+- owningBundleID
+- diffAccount:
+- setParentAccount:
+- dirtyAccountProperties
+- setEnabledDataclasses:
+- markAllPropertiesDirty
+- initWithManagedAccount:
+- childAccounts
+- setLastCredentialRenewalRejectionDate:
+- accountByCleaningThirdPartyTransformations
+- lastCredentialRenewalRejectionDate
+- childAccountsWithAccountTypeIdentifier:
+- setDataclassProperties:
+- clientToken
+- authenticated
+- isEnabledToSyncDataclass:
+- dataclassProperties
+- addClientToken:
+- takeValuesFromModifiedAccount:
+- supportsPush
+- provisionedDataclasses
+- authenticationType
+- setAuthenticationType:
+- propertiesForDataclass:
+- setProvisionedDataclasses:
+- setEnabled:forDataclass:
+- setAuthenticated:
+- accountPropertyForKey:
+- parentAccount
+- parentAccountIdentifier
+- accountProperties
+- setAccountProperty:forKey:
+- accountDescription
+- setUsername:
+- setAccountDescription:
+- credentialWithError:
+- setCredential:
+- enabledDataclasses
+- refresh
+- initWithAccountType:
+- setCredentialType:
+- objectID
+- creationDate
+- isEnabledForDataclass:
+- setCreationDate:
+- isProvisionedForDataclass:
+- username
+- isDirty
+- .cxx_destruct
+- setAccountType:
+- accountType
+- credential
+@end

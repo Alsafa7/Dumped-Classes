@@ -1,0 +1,93 @@
+@interface SPSearchResult : PBCodable
+{
+	usigned long long _identifier;
+	id _auxiliarySubtitle;
+	id _auxiliaryTitle;
+	int _flags;
+	unsigned int _numberOfSummaryLines;
+	id _subtitle;
+	id _summary;
+	id _title;
+	id _url;
+	struct _has;
+}
+
++ isEquivalentToResult:
++ dealloc
++ setTitle:
++ isEqual:
++ hash
++ description
++ title
++ identifier
++ setSubtitle:
++ subtitle
++ dictionaryRepresentation
++ url
++ setUrl:
++ setIdentifier:
++ flags
++ hasTitle
++ hasUrl
++ hasIdentifier
++ setHasIdentifier:
++ readFrom:
++ setFlags:
++ setAuxiliaryTitle:
++ setAuxiliarySubtitle:
++ hasSubtitle
++ hasSummary
++ hasAuxiliaryTitle
++ auxiliaryTitle
++ hasAuxiliarySubtitle
++ auxiliarySubtitle
++ hasFlags
++ hasNumberOfSummaryLines
++ numberOfSummaryLines
++ setNumberOfSummaryLines:
++ setHasFlags:
++ setHasNumberOfSummaryLines:
++ writeTo:
++ copyTo:
++ summary
++ setSummary:
+- isEquivalentToResult:
+- dealloc
+- setTitle:
+- isEqual:
+- hash
+- description
+- title
+- identifier
+- setSubtitle:
+- subtitle
+- dictionaryRepresentation
+- url
+- setUrl:
+- setIdentifier:
+- flags
+- hasTitle
+- hasUrl
+- hasIdentifier
+- setHasIdentifier:
+- readFrom:
+- setFlags:
+- setAuxiliaryTitle:
+- setAuxiliarySubtitle:
+- hasSubtitle
+- hasSummary
+- hasAuxiliaryTitle
+- auxiliaryTitle
+- hasAuxiliarySubtitle
+- auxiliarySubtitle
+- hasFlags
+- hasNumberOfSummaryLines
+- numberOfSummaryLines
+- setNumberOfSummaryLines:
+- setHasFlags:
+- setHasNumberOfSummaryLines:
+- writeTo:
+- copyTo:
+- summary
+- setSummary:
+@end

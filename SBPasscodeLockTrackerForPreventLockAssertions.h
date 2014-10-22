@@ -1,0 +1,6 @@
+@interface SBPasscodeLockTrackerForPreventLockAssertions : SBPasscodeLockAssertionTracker
+{
+
+}
+
+@end

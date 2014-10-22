@@ -1,0 +1,91 @@
+@interface ABCardPropertyGroup : ABCardGroup
+{
+	id _propertyItems;
+	id _displayItems;
+	id _editingItems;
+	BOOL _showActionsWhenEmpty;
+	BOOL _isAdded;
+	id _property;
+	id _contacts;
+	id _deletedItems;
+}
+
++ displayItems
++ editingItems
++ _loadPropertyItems
++ setShowActionsWhenEmpty:
++ initWithProperty:contact:withLinkedContacts:
++ isMultiValue
++ isFixedValue
++ _nextAvailableSocialService
++ _nextAvailableInstantMessageService
++ _nextAvailableLabel
++ nextAvailableLabel
++ canAddEditingItem
++ setIsAdded:
++ contacts
++ emptyLabeledValue
++ _arrayContainsMaxAllowedItems:
++ setEditingItems:
++ deletedItems
++ setDeletedItems:
++ saveChangesForItems:
++ _mergeItems:forEditing:
++ showActionsWhenEmpty
++ isAdded
++ _shoulShowGroupWhenEditing:
++ _itemToBeMergedWith:fromItems:forEditing:
++ propertyItems
++ _updateNameValuesForItems:
++ _nextAvailableLabelInLabels:withValueSelector:
++ allowsAdding
++ isMultiLine
++ addEditingItem
++ removeEditingItem:
++ setContacts:
++ property
++ saveChanges
++ dealloc
++ reloadData
++ description
++ isRequired
+- displayItems
+- editingItems
+- _loadPropertyItems
+- setShowActionsWhenEmpty:
+- initWithProperty:contact:withLinkedContacts:
+- isMultiValue
+- isFixedValue
+- _nextAvailableSocialService
+- _nextAvailableInstantMessageService
+- _nextAvailableLabel
+- nextAvailableLabel
+- canAddEditingItem
+- setIsAdded:
+- contacts
+- emptyLabeledValue
+- _arrayContainsMaxAllowedItems:
+- setEditingItems:
+- deletedItems
+- setDeletedItems:
+- saveChangesForItems:
+- _mergeItems:forEditing:
+- showActionsWhenEmpty
+- isAdded
+- _shoulShowGroupWhenEditing:
+- _itemToBeMergedWith:fromItems:forEditing:
+- propertyItems
+- _updateNameValuesForItems:
+- _nextAvailableLabelInLabels:withValueSelector:
+- allowsAdding
+- isMultiLine
+- addEditingItem
+- removeEditingItem:
+- setContacts:
+- property
+- saveChanges
+- dealloc
+- reloadData
+- description
+- isRequired
+@end

@@ -1,0 +1,6 @@
+@interface SUUtility : NSObject
+{
+
+}
+
+@end

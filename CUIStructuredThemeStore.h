@@ -1,0 +1,101 @@
+@interface CUIStructuredThemeStore : NSObject
+{
+	id _cache;
+	id _store;
+	id _cacheLock;
+	id _storeLock;
+	usigned long long _themeIndex;
+	id _bundleID;
+}
+
++ bundleID
++ debugDescription
++ constantNameForElementID:
++ displayNameForElementID:
++ constantNameForPartID:
++ displayNameForPartID:
++ setThemeIndex:
++ dealloc
++ initWithURL:
++ cache
++ initWithPath:
++ colorSpaceID
++ canGetRenditionWithKey:
++ renditionWithKey:
++ canGetRenditionWithKey:isFPO:
++ usesCUISystemThemeRenditionKey
++ zeroCodeGlyphList
++ debugDescriptionForKeyList:
++ renditionKeyForName:cursorHotSpot:
++ keyFormat
++ maximumRenditionKeyTokenCount
++ assetExistsForKey:
++ getFontName:baselineOffset:forFontType:
++ fontSizeForFontSizeType:
++ _newRenditionKeyDataFromKey:
++ _updateKeyWithCompatibilityMapping:
++ _getKeyForAssetClosestToKey:foundAsset:
++ renditionKeyFormat
++ lookupAssetForKey:
++ copyKeySignatureForKey:withBytesNoCopy:length:
++ _getKeyForAssetInOtherLookGroupClosestToKey:foundAsset:
++ _canGetRenditionWithKey:isFPO:lookForSubstitutions:
++ getPhysicalColor:withName:
++ hasPhysicalColorWithName:
++ documentFormatVersion
++ distilledInCoreUIVersion
++ authoredWithSchemaVersion
++ renditionKeyForName:
++ baseGradationKeySignatureForKey:
++ keySignatureForKey:
++ themeStore
++ convertRenditionKeyToKeyData:
++ prefilteredAssetDataForKey:
++ cacheLock
++ clearRenditionCache
+- bundleID
+- debugDescription
+- constantNameForElementID:
+- displayNameForElementID:
+- constantNameForPartID:
+- displayNameForPartID:
+- setThemeIndex:
+- dealloc
+- initWithURL:
+- cache
+- initWithPath:
+- colorSpaceID
+- canGetRenditionWithKey:
+- renditionWithKey:
+- canGetRenditionWithKey:isFPO:
+- usesCUISystemThemeRenditionKey
+- zeroCodeGlyphList
+- debugDescriptionForKeyList:
+- renditionKeyForName:cursorHotSpot:
+- keyFormat
+- maximumRenditionKeyTokenCount
+- assetExistsForKey:
+- getFontName:baselineOffset:forFontType:
+- fontSizeForFontSizeType:
+- _newRenditionKeyDataFromKey:
+- _updateKeyWithCompatibilityMapping:
+- _getKeyForAssetClosestToKey:foundAsset:
+- renditionKeyFormat
+- lookupAssetForKey:
+- copyKeySignatureForKey:withBytesNoCopy:length:
+- _getKeyForAssetInOtherLookGroupClosestToKey:foundAsset:
+- _canGetRenditionWithKey:isFPO:lookForSubstitutions:
+- getPhysicalColor:withName:
+- hasPhysicalColorWithName:
+- documentFormatVersion
+- distilledInCoreUIVersion
+- authoredWithSchemaVersion
+- renditionKeyForName:
+- baseGradationKeySignatureForKey:
+- keySignatureForKey:
+- themeStore
+- convertRenditionKeyToKeyData:
+- prefilteredAssetDataForKey:
+- cacheLock
+- clearRenditionCache
+@end

@@ -1,0 +1,163 @@
+@interface UIWebClip : NSObject
+{
+	id identifier;
+	id pageURL;
+	id icons;
+	usigned long long currentIconIndex;
+	id startupImageURL;
+	id startupLandscapeImageURL;
+	id title;
+	BOOL fullScreen;
+	BOOL classicMode;
+	BOOL removalDisallowed;
+	BOOL iconIsScreenShotBased;
+	BOOL iconIsPrecomposed;
+	BOOL iconIsPrerendered;
+	usigned long long supportedOrientations;
+	long long statusBarStyle;
+	id iconImage;
+	id startupImage;
+	id startupLandscapeImage;
+	id initialLaunchImage;
+	id delegate;
+	id _customIconData;
+	id _iconConnection;
+	id _customStartupImageData;
+	id _startupImageConnection;
+	id _customStartupLandscapeImageData;
+	id _startupLandscapeImageConnection;
+}
+
++ dealloc
++ setDelegate:
++ setTitle:
++ delegate
++ bundleIdentifier
++ statusBarStyle
++ setStatusBarStyle:
++ title
++ identifier
++ _info
++ setPageURL:
++ setFullScreen:
++ setClassicMode:
++ setRemovalDisallowed:
++ setSupportedOrientations:
++ _readPropertiesFromBundle:
++ _reloadProperties
++ _writeImage:toDiskWithFileName:
++ setStartupImage:
++ setStartupLandscapeImage:
++ setInitialLaunchImage:
++ updateOnDisk
++ setIdentifier:
++ _bundleResourceWithName:
++ iconImage
++ iconIsPrecomposed
++ _bundleImageWithName:
++ _setIconImage:isPrecomposed:isScreenShotBased:
++ cancelMediaUpdate
++ _initWithIdentifier:
++ stopLoadingCustomIcon
++ stopLoadingStartupImage
++ stopLoadingStartupLandscapeImage
++ fullScreen
++ setIcons:
++ setStartupImageURL:
++ setStartupLandscapeImageURL:
++ requestCustomIconUpdate
++ requestCustomPortraitStartupImageUpdate
++ requestCustomLandscapeStartupImageUpdate
++ tryLoadingNextCustomIcon
++ setIconImage:isPrecomposed:
++ requestIconUpdateInSpringBoard
++ connection:didFailWithError:
++ startupImage
++ startupLandscapeImage
++ pageURL
++ createOnDisk
++ removeFromDisk
++ iconImagePath
++ generateIconImageForFormat:scale:
++ setIconImageFromScreenshot:
++ initialLaunchImage
++ connection:didReceiveData:
++ updateCustomMediaLocationsFromWebDocumentView:
++ connectionDidFinishLoading:
++ connection:didReceiveResponse:
++ getStartupImage:
++ icons
++ startupImageURL
++ startupLandscapeImageURL
++ classicMode
++ removalDisallowed
++ iconIsScreenShotBased
++ iconIsPrerendered
++ supportedOrientations
+- dealloc
+- setDelegate:
+- setTitle:
+- delegate
+- bundleIdentifier
+- statusBarStyle
+- setStatusBarStyle:
+- title
+- identifier
+- _info
+- setPageURL:
+- setFullScreen:
+- setClassicMode:
+- setRemovalDisallowed:
+- setSupportedOrientations:
+- _readPropertiesFromBundle:
+- _reloadProperties
+- _writeImage:toDiskWithFileName:
+- setStartupImage:
+- setStartupLandscapeImage:
+- setInitialLaunchImage:
+- updateOnDisk
+- setIdentifier:
+- _bundleResourceWithName:
+- iconImage
+- iconIsPrecomposed
+- _bundleImageWithName:
+- _setIconImage:isPrecomposed:isScreenShotBased:
+- cancelMediaUpdate
+- _initWithIdentifier:
+- stopLoadingCustomIcon
+- stopLoadingStartupImage
+- stopLoadingStartupLandscapeImage
+- fullScreen
+- setIcons:
+- setStartupImageURL:
+- setStartupLandscapeImageURL:
+- requestCustomIconUpdate
+- requestCustomPortraitStartupImageUpdate
+- requestCustomLandscapeStartupImageUpdate
+- tryLoadingNextCustomIcon
+- setIconImage:isPrecomposed:
+- requestIconUpdateInSpringBoard
+- connection:didFailWithError:
+- startupImage
+- startupLandscapeImage
+- pageURL
+- createOnDisk
+- removeFromDisk
+- iconImagePath
+- generateIconImageForFormat:scale:
+- setIconImageFromScreenshot:
+- initialLaunchImage
+- connection:didReceiveData:
+- updateCustomMediaLocationsFromWebDocumentView:
+- connectionDidFinishLoading:
+- connection:didReceiveResponse:
+- getStartupImage:
+- icons
+- startupImageURL
+- startupLandscapeImageURL
+- classicMode
+- removalDisallowed
+- iconIsScreenShotBased
+- iconIsPrerendered
+- supportedOrientations
+@end

@@ -1,0 +1,104 @@
+@interface NSTextStorage : NSMutableAttributedString
+{
+	struct _editedRange;
+	long long _editedDelta;
+	struct _flags;
+	id _layoutManagers;
+	id _sideData;
+	usigned long long _editedMask;
+	long long _changeInLength;
+}
+
++ _undoRedoTextOperation:
++ _undoRedoAttributedSubstringFromRange:
++ coordinateAccess:
++ edited:range:changeInLength:
++ dealloc
++ initWithCoder:
++ encodeWithCoder:
++ setDelegate:
++ init
++ delegate
++ classForCoder
++ addLayoutManager:
++ beginEditing
++ endEditing
++ coordinateEditing:
++ _setUsesSimpleTextEffects:
++ _usesSimpleTextEffects
++ _shouldSetOriginalFontAttribute
++ coordinateReading:
++ editedMask
++ editedRange
++ cuiCatalog
++ cuiStyleEffects
++ _isEditing
++ _lockForReading
++ _unlock
++ _setForceFixAttributes:
++ layoutManagers
++ removeLayoutManager:
++ _lockForWriting
++ _attributeFixingInProgress
++ _setAttributeFixingInProgress:
++ fontSetChanged
++ invalidateAttributesInRange:
++ changeInLength
++ _notifyEdited:range:changeInLength:invalidatedRange:
++ processEditing
++ _lockForWritingWithExceptionHandler:
++ fixesAttributesLazily
++ _rangeByEstimatingAttributeFixingForRange:
++ _forceFixAttributes
++ ensureAttributesAreFixedInRange:
++ setEditedMask:
++ setEditedRange:
++ setChangeInLength:
++ finalize
+- _undoRedoTextOperation:
+- _undoRedoAttributedSubstringFromRange:
+- coordinateAccess:
+- edited:range:changeInLength:
+- dealloc
+- initWithCoder:
+- encodeWithCoder:
+- setDelegate:
+- init
+- delegate
+- classForCoder
+- addLayoutManager:
+- beginEditing
+- endEditing
+- coordinateEditing:
+- _setUsesSimpleTextEffects:
+- _usesSimpleTextEffects
+- _shouldSetOriginalFontAttribute
+- coordinateReading:
+- editedMask
+- editedRange
+- cuiCatalog
+- cuiStyleEffects
+- _isEditing
+- _lockForReading
+- _unlock
+- _setForceFixAttributes:
+- layoutManagers
+- removeLayoutManager:
+- _lockForWriting
+- _attributeFixingInProgress
+- _setAttributeFixingInProgress:
+- fontSetChanged
+- invalidateAttributesInRange:
+- changeInLength
+- _notifyEdited:range:changeInLength:invalidatedRange:
+- processEditing
+- _lockForWritingWithExceptionHandler:
+- fixesAttributesLazily
+- _rangeByEstimatingAttributeFixingForRange:
+- _forceFixAttributes
+- ensureAttributesAreFixedInRange:
+- setEditedMask:
+- setEditedRange:
+- setChangeInLength:
+- finalize
+@end

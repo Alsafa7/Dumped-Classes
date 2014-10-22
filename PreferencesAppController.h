@@ -1,0 +1,108 @@
+@interface PreferencesAppController : UIApplication
+{
+	id _splitViewController;
+	id _controller;
+	id _window;
+	BOOL _isLocked;
+	id _busyControllers;
+	BOOL _dontSelectGeneralOnLaunch;
+	BOOL _loadingExternalURL;
+	usigned long long _backgroundTaskHandle;
+	double _timeoutLimit;
+	BOOL _settingsWasResigned;
+	unsigned int _rootDomainConnect;
+	unsigned int _pmNotifier;
+	pointer _systemPowerPortRef;
+	pointer _pmSource;
+	id _speakerAccessory;
+}
+
++ _registerForPowerNotifications
++ systemDidWake:
++ updateSoftwareUpdateBadgeOnSpecifier:
++ oneTimeJumpURL
++ processURL:
++ _handleBusyControllers
++ clearControllersForSuspendedState
++ generateURL
++ keyValueDictionaryForURL:
++ _deregisterForPowerNotifications
++ setDontSelectGeneralOnLaunch:
++ addBusyControllersFromRootController:
++ _suspendControllers
++ _resetSnapshotImage
++ endAndInvalidateBackgroundTask
++ stopPlayback
++ _handleExternalApplicationChange
++ dontSelectGeneralOnLaunch
++ accessoryDidDisconnect:
++ profileConnectionDidReceiveRestrictionChangedNotification:userInfo:
++ profileConnectionDidReceivePasscodeChangedNotification:userInfo:
++ profileConnectionDidReceiveProfileListChangedNotification:userInfo:
++ profileConnectionDidReceiveEffectiveSettingsChangedNotification:userInfo:
++ dealloc
++ applicationWillTerminate:
++ applicationDidBecomeActive:
++ applicationWillResignActive:
++ applicationDidEnterBackground:
++ applicationWillEnterForeground:
++ application:didFinishLaunchingWithOptions:
++ applicationWillSuspendForEventsOnly
++ applicationDidResumeForEventsOnly
++ defaultImageSnapshotExpiration
++ applicationOpenURL:
++ userDefaultsDidChange:
++ significantTimeChange
++ runTest:options:
++ _accessoryDidConnect:
++ rootDomainConnect
++ setRootDomainConnect:
++ rootController
++ controllerFinished:
++ appWindow
++ resetLocale
+- _registerForPowerNotifications
+- systemDidWake:
+- updateSoftwareUpdateBadgeOnSpecifier:
+- oneTimeJumpURL
+- processURL:
+- _handleBusyControllers
+- clearControllersForSuspendedState
+- generateURL
+- keyValueDictionaryForURL:
+- _deregisterForPowerNotifications
+- setDontSelectGeneralOnLaunch:
+- addBusyControllersFromRootController:
+- _suspendControllers
+- _resetSnapshotImage
+- endAndInvalidateBackgroundTask
+- stopPlayback
+- _handleExternalApplicationChange
+- dontSelectGeneralOnLaunch
+- accessoryDidDisconnect:
+- profileConnectionDidReceiveRestrictionChangedNotification:userInfo:
+- profileConnectionDidReceivePasscodeChangedNotification:userInfo:
+- profileConnectionDidReceiveProfileListChangedNotification:userInfo:
+- profileConnectionDidReceiveEffectiveSettingsChangedNotification:userInfo:
+- dealloc
+- applicationWillTerminate:
+- applicationDidBecomeActive:
+- applicationWillResignActive:
+- applicationDidEnterBackground:
+- applicationWillEnterForeground:
+- application:didFinishLaunchingWithOptions:
+- applicationWillSuspendForEventsOnly
+- applicationDidResumeForEventsOnly
+- defaultImageSnapshotExpiration
+- applicationOpenURL:
+- userDefaultsDidChange:
+- significantTimeChange
+- runTest:options:
+- _accessoryDidConnect:
+- rootDomainConnect
+- setRootDomainConnect:
+- rootController
+- controllerFinished:
+- appWindow
+- resetLocale
+@end

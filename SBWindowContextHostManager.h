@@ -1,0 +1,89 @@
+@interface SBWindowContextHostManager : NSObject
+{
+	id _contextManager;
+	id _screen;
+	id _identifier;
+	id _defaultBackgroundColorWhileHosting;
+	id _defaultBackgroundColorWhileNotHosting;
+	id _hostView;
+	BOOL _suspended;
+	id _hostRequesters;
+	id _hostRequesterInfo;
+	int _jailBehavior;
+	id _delegate;
+	struct _flags;
+}
+
++ disableHostingForRequester:
++ hostViewForRequester:enableAndOrderFront:
++ hideHostViewOnDefaultWindowForRequester:
++ contextCount
++ unhideHostViewOnDefaultWindowForRequester:
++ initWithContextManager:screen:jailBehavior:
++ hideHostViewOnDefaultWindowForRequester:priority:
++ setDefaultBackgroundColorWhileHosting:
++ suspendContextHosting
++ createIOSurfaceForFrame:excludeContext:outTransform:
++ resumeContextHosting
++ initWithContextManager:screen:
++ enableHostingForRequester:priority:
++ hostViewForRequester:
++ setContextId:hidden:forRequester:
++ _overrideRequesterIfNecessary:
++ _infoForRequester:
++ enableHostingForRequester:orderFront:
++ _removeRequesterInfo:
++ _applyRequesterInfo:
++ _hostOnDefaultWindowForRequester:priority:hide:
++ createIOSurfaceForFrame:outTransform:
++ defaultBackgroundColorWhileHosting
++ setDefaultBackgroundColorWhileNotHosting:
++ defaultBackgroundColorWhileNotHosting
++ orderRequesterFront:
++ createIOSurfaceForFrame:
++ _realContextHostViewWhichIReallyNeedToAccessAndIKnowWhatImDoingISwear
++ _notePropertiesSetOnRealContextHostViewWhichIReallyNeedToChangeAndIKnowWhatImDoingISwear:originalProperties:forRequester:
++ dealloc
++ setDelegate:
++ description
++ delegate
++ screen
++ identifier
++ setIdentifier:
+- disableHostingForRequester:
+- hostViewForRequester:enableAndOrderFront:
+- hideHostViewOnDefaultWindowForRequester:
+- contextCount
+- unhideHostViewOnDefaultWindowForRequester:
+- initWithContextManager:screen:jailBehavior:
+- hideHostViewOnDefaultWindowForRequester:priority:
+- setDefaultBackgroundColorWhileHosting:
+- suspendContextHosting
+- createIOSurfaceForFrame:excludeContext:outTransform:
+- resumeContextHosting
+- initWithContextManager:screen:
+- enableHostingForRequester:priority:
+- hostViewForRequester:
+- setContextId:hidden:forRequester:
+- _overrideRequesterIfNecessary:
+- _infoForRequester:
+- enableHostingForRequester:orderFront:
+- _removeRequesterInfo:
+- _applyRequesterInfo:
+- _hostOnDefaultWindowForRequester:priority:hide:
+- createIOSurfaceForFrame:outTransform:
+- defaultBackgroundColorWhileHosting
+- setDefaultBackgroundColorWhileNotHosting:
+- defaultBackgroundColorWhileNotHosting
+- orderRequesterFront:
+- createIOSurfaceForFrame:
+- _realContextHostViewWhichIReallyNeedToAccessAndIKnowWhatImDoingISwear
+- _notePropertiesSetOnRealContextHostViewWhichIReallyNeedToChangeAndIKnowWhatImDoingISwear:originalProperties:forRequester:
+- dealloc
+- setDelegate:
+- description
+- delegate
+- screen
+- identifier
+- setIdentifier:
+@end

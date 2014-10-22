@@ -1,0 +1,6 @@
+@interface SBUIPasscodeLockViewFactory : NSObject
+{
+
+}
+
+@end

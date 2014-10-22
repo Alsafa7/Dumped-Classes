@@ -1,0 +1,62 @@
+@interface UIStatusBarServerThread : NSThread
+{
+	id _clientPorts;
+	id _publishers;
+	struct _statusBarData;
+	struct _composedStatusBarData;
+	struct _overrides;
+	pointer _doubleHeightStatusStrings;
+	pointer _glowAnimationStates;
+	id _glowAnimationEndTimes;
+	BOOL _composedStatusBarDataValid;
+}
+
++ main
++ _publisherForPort:
++ _broadcastStatusBarDataWithActions:
++ _broadcastStyleOverrides
++ _statusBarData
++ _styleOverrides
++ _setAnimationEndTimesForOverrides:
++ _removeAnimationEndTimesForOverrides:
++ _glowAnimationEndTimeForStyle:
++ _addClient:
++ _removeClient:
++ _removePublisher:
++ _statusBarOverrideData
++ _postStatusBarData:actions:
++ _addStyleOverrides:forPublisher:
++ _removeStyleOverrides:forPublisher:
++ _glowAnimationStateForStyle:
++ _postGlowAnimationState:forStyle:
++ _doubleHeightStatusStringForStyle:
++ _postDoubleHeightStatus:forStyle:
++ _postStatusBarOverrideData:
++ _permanentizeStatusBarOverrideData
++ _addStatusBarItem:forPublisher:
++ _removeStatusBarItem:forPublisher:
+- main
+- _publisherForPort:
+- _broadcastStatusBarDataWithActions:
+- _broadcastStyleOverrides
+- _statusBarData
+- _styleOverrides
+- _setAnimationEndTimesForOverrides:
+- _removeAnimationEndTimesForOverrides:
+- _glowAnimationEndTimeForStyle:
+- _addClient:
+- _removeClient:
+- _removePublisher:
+- _statusBarOverrideData
+- _postStatusBarData:actions:
+- _addStyleOverrides:forPublisher:
+- _removeStyleOverrides:forPublisher:
+- _glowAnimationStateForStyle:
+- _postGlowAnimationState:forStyle:
+- _doubleHeightStatusStringForStyle:
+- _postDoubleHeightStatus:forStyle:
+- _postStatusBarOverrideData:
+- _permanentizeStatusBarOverrideData
+- _addStatusBarItem:forPublisher:
+- _removeStatusBarItem:forPublisher:
+@end

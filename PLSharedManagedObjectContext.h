@@ -1,0 +1,6 @@
+@interface PLSharedManagedObjectContext : PLManagedObjectContext
+{
+
+}
+
+@end

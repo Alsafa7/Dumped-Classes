@@ -1,0 +1,88 @@
+@interface NSMigrationManager : NSObject
+{
+	id _sourceModel;
+	id _sourceEntitiesByVersionHash;
+	id _destinationModel;
+	id _destinationEntitiesByVersionHash;
+	id _mappingModel;
+	id _sourceManagedObjectContext;
+	id _destinationManagedObjectContext;
+	id _migrationContext;
+	id _userInfo;
+	struct _migrationManagerFlags;
+	id _migrationCancellationError;
+	id _reserved1;
+	id _reserved2;
+	id _reserved3;
+	id _reserved4;
+}
+
++ _migrationContext
++ _doCleanupOnFailure:
++ _migrateStoreFromURL:type:options:withMappingModel:toDestinationURL:destinationType:destinationOptions:error:
++ _mappingNamed:
++ fetchRequestForSourceEntityNamed:predicateString:includesSubentities:
++ _evaluateSourceExpressionForMapping:entityPolicy:
++ _doFirstPassForMapping:error:
++ _doSecondPassForMapping:error:
++ _validateAllObjectsAfterMigration:
++ _doThirdPassForMapping:error:
++ fetchRequestForSourceEntityNamed:predicateString:
++ initWithSourceModel:destinationModel:
++ destinationContext
++ associateSourceInstance:withDestinationInstance:forEntityMapping:
++ sourceInstancesForEntityMappingNamed:destinationInstances:
++ destinationEntityForEntityMapping:
++ currentEntityMapping
++ currentPropertyMapping
++ usesStoreSpecificMigrationManager
++ sourceModel
++ destinationModel
++ migrateStoreFromURL:type:options:withMappingModel:toDestinationURL:destinationType:destinationOptions:error:
++ sourceEntityForEntityMapping:
++ mappingModel
++ sourceContext
++ destinationInstancesForEntityMappingNamed:sourceInstances:
++ destinationInstancesForSourceRelationshipNamed:sourceInstances:
++ migrationProgress
++ cancelMigrationWithError:
++ setUsesStoreSpecificMigrationManager:
++ dealloc
++ userInfo
++ reset
++ setUserInfo:
+- _migrationContext
+- _doCleanupOnFailure:
+- _migrateStoreFromURL:type:options:withMappingModel:toDestinationURL:destinationType:destinationOptions:error:
+- _mappingNamed:
+- fetchRequestForSourceEntityNamed:predicateString:includesSubentities:
+- _evaluateSourceExpressionForMapping:entityPolicy:
+- _doFirstPassForMapping:error:
+- _doSecondPassForMapping:error:
+- _validateAllObjectsAfterMigration:
+- _doThirdPassForMapping:error:
+- fetchRequestForSourceEntityNamed:predicateString:
+- initWithSourceModel:destinationModel:
+- destinationContext
+- associateSourceInstance:withDestinationInstance:forEntityMapping:
+- sourceInstancesForEntityMappingNamed:destinationInstances:
+- destinationEntityForEntityMapping:
+- currentEntityMapping
+- currentPropertyMapping
+- usesStoreSpecificMigrationManager
+- sourceModel
+- destinationModel
+- migrateStoreFromURL:type:options:withMappingModel:toDestinationURL:destinationType:destinationOptions:error:
+- sourceEntityForEntityMapping:
+- mappingModel
+- sourceContext
+- destinationInstancesForEntityMappingNamed:sourceInstances:
+- destinationInstancesForSourceRelationshipNamed:sourceInstances:
+- migrationProgress
+- cancelMigrationWithError:
+- setUsesStoreSpecificMigrationManager:
+- dealloc
+- userInfo
+- reset
+- setUserInfo:
+@end

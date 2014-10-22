@@ -1,0 +1,6 @@
+@interface SBLockScreenNotificationTableView : UITableView
+{
+
+}
+
+@end

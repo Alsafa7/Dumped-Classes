@@ -1,0 +1,104 @@
+@interface GKCollectionViewCell : UICollectionViewCell
+{
+	BOOL _shouldDisplaySwipeToEditAccessories;
+	BOOL _doesAbutLeftEdge;
+	id _representedItem;
+	id _gkContentView;
+	id _editActions;
+	id _collectionView;
+	id _editActionsView;
+	id _leftGradientMask;
+	id _topHairline;
+	id _bottomHairline;
+	id _editActionsConstraints;
+	id _hairlineConstraints;
+	id _contentLeftConstraint;
+}
+
++ gkContentView
++ representedItem
++ setRepresentedItem:
++ didUpdateModel
++ editActions
++ setContentLeftConstraint:
++ setTopHairline:
++ setBottomHairline:
++ prepareEditActionsConstraintsIfNeeded
++ setShouldDisplaySwipeToEditAccessories:
++ setLeftGradientMask:
++ leftGradientMask
++ prepareHairlineConstraintsIfNeeded
++ applyGradientMaskIfNeeded
++ topHairline
++ bottomHairline
++ setDoesAbutLeftEdge:
++ setEditActionsVisibleWidth:
++ contentViewOriginXWhileEditing
++ editActionsVisibleWidth
++ finishEditing
++ animateOutSwipeToEditAccessories
++ setUserInteractionEnabledForEditing:
++ userInteractionEnabledForEditing
++ touchWithinEditActions:
++ closeForDelete
++ shutActionPaneAnimated:completion:
++ setEditActions:
++ editActionsView
++ doesAbutLeftEdge
++ editActionsConstraints
++ setEditActionsConstraints:
++ hairlineConstraints
++ setHairlineConstraints:
++ contentLeftConstraint
++ initWithFrame:
++ dealloc
++ layoutSubviews
++ prepareForReuse
++ beginEditing
++ collectionView
++ applyLayoutAttributes:
++ setCollectionView:
+- gkContentView
+- representedItem
+- setRepresentedItem:
+- didUpdateModel
+- editActions
+- setContentLeftConstraint:
+- setTopHairline:
+- setBottomHairline:
+- prepareEditActionsConstraintsIfNeeded
+- setShouldDisplaySwipeToEditAccessories:
+- setLeftGradientMask:
+- leftGradientMask
+- prepareHairlineConstraintsIfNeeded
+- applyGradientMaskIfNeeded
+- topHairline
+- bottomHairline
+- setDoesAbutLeftEdge:
+- setEditActionsVisibleWidth:
+- contentViewOriginXWhileEditing
+- editActionsVisibleWidth
+- finishEditing
+- animateOutSwipeToEditAccessories
+- setUserInteractionEnabledForEditing:
+- userInteractionEnabledForEditing
+- touchWithinEditActions:
+- closeForDelete
+- shutActionPaneAnimated:completion:
+- setEditActions:
+- editActionsView
+- doesAbutLeftEdge
+- editActionsConstraints
+- setEditActionsConstraints:
+- hairlineConstraints
+- setHairlineConstraints:
+- contentLeftConstraint
+- initWithFrame:
+- dealloc
+- layoutSubviews
+- prepareForReuse
+- beginEditing
+- collectionView
+- applyLayoutAttributes:
+- setCollectionView:
+@end

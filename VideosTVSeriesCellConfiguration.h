@@ -1,0 +1,6 @@
+@interface VideosTVSeriesCellConfiguration : VideosArtworkCellConfiguration
+{
+
+}
+
+@end

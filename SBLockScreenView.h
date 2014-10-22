@@ -1,0 +1,433 @@
+@interface SBLockScreenView : SBAlertView
+{
+	id _contentUnderlayOverride;
+	id _contentUnderlayRequesters;
+	id _contentOverlays;
+	id _passcodeOverlayView;
+	id _wallpaperBlurView;
+	id _foregroundView;
+	id _foregroundScrollView;
+	id _foregroundLockView;
+	id _foregroundLockUnderlayView;
+	id _foregroundLockContentView;
+	id _foregroundLockContentOverlaysView;
+	id _foregroundLockHUDView;
+	id _dateView;
+	id _legalView;
+	id _timerView;
+	id _slideToUnlockView;
+	id _slideToUnlockParentSpringView;
+	id _slideToUnlockSpringView;
+	id _slideToUnlockLegibilityLabel;
+	BOOL _isShakingSlideToUnlockText;
+	BOOL _isAnimatingSlideToUnlockText;
+	id _slideToUnlockBackgroundView;
+	id _topGrabberBackgroundView;
+	id _bottomGrabberBackgroundView;
+	id _cameraGrabberBackgroundView;
+	id _topGrabberView;
+	id _bottomGrabberView;
+	id _cameraGrabberView;
+	id _passcodeView;
+	id _passcodeOverscrollBackgroundView;
+	id _batteryChargingView;
+	id _modalAlertView;
+	id _notificationView;
+	id _emergencyCallView;
+	id _mediaControlsContainerView;
+	id _mediaControlsView;
+	id _pluginView;
+	id _pluginBackgroundView;
+	usigned long long _pluginPresentationStyle;
+	id _foregroundHiddenRequesters;
+	id _foregroundLockContentHiddenRequesters;
+	id _foregroundLockContentOverlaysHiddenRequesters;
+	id _foregroundLockHUDHiddenRequesters;
+	id _slideToUnlockHiddenRequesters;
+	id _modalAlertHiddenRequesters;
+	id _notificationsHiddenRequesters;
+	id _passcodeHiddenRequesters;
+	id _topGrabberHiddenRequesters;
+	id _bottomGrabberHiddenRequesters;
+	id _cameraGrabberHiddenRequesters;
+	id _legalTextHiddenRequesters;
+	id _mediaControlsHiddenRequesters;
+	id _pluginHiddenRequesters;
+	id _scrollingDisabledRequesters;
+	double _foregroundTranslationY;
+	id _bounceAnimator;
+	id _scrollCompletionBlocks;
+	long long _currentPage;
+	struct _staringContentOffset;
+	BOOL _scrolling;
+	BOOL _setGrabberOrigins;
+	double _topGrabberOriginalOriginY;
+	double _bottomGrabberOriginalOriginY;
+	double _currentBlurRadius;
+	id _defaultUnderlayPropertiesFactory;
+	id _whiteUnderlayView;
+	id _fakePasscodeStatusBarView;
+	id _fakeLockStatusBarView;
+	id _fakeStatusBarWithTimeView;
+	id _statusBarAssertion;
+	id _slideToUnlockFailureRecognizer;
+	int _slideToUnlockFailureGestureToken;
+	BOOL _slideToUnlockFailureRecognizerNeedsRemoval;
+	BOOL _statusBarLegibilityEnabled;
+	id _delegate;
+	id _legibilitySettings;
+}
+
++ _legibilityPrototypeSettings
++ _updateLegibility
++ scrollToPage:animated:completion:
++ pluginBackgroundView
++ setPluginBackgroundView:
++ setPluginView:presentationStyle:notificationBehavior:
++ pluginViewHidden
++ scrollToPage:animated:
++ setCameraGrabberHidden:forRequester:
++ setMediaControlsHidden:forRequester:
++ timerView
++ isCurrentPageTransparent
++ _addViews
++ _slideToUnlockFailureGestureRecognizerChanged
++ _updateDateViewLegibility
++ _updateTimerLegibility
++ _setEnableTemporaryPasscodeButtonHysteresis:
++ _passcodePropertiesChanged
++ _preventScrollingOnGrabberView:
++ _updateCameraGrabberLegibilityIfNecessary
++ setPasscodeHidden:forRequester:
++ _evaluateOverlaysForChange
++ setTopGrabberHidden:forRequester:
++ setBottomGrabberHidden:forRequester:
++ batteryChargingView
++ _setScrollingEnabled:
++ startAnimatingDelayFinished
++ startAnimatingWithDelay:
++ setCustomSlideToUnlockText:
++ _defaultSlideToUnlockText
++ _updateVibrantViewLegibility
++ _shakeSlideToUnlockAnimationEnded
++ _isPluginBelowForegroundScrollView
++ _setCurrentBlurRadius:
++ _newScrollView
++ _updateVibrantViewBackgrounds
++ _addGrabberViews
++ _addBounceAnimator
++ _updateStatusBarLegibility
++ _updateGrabbersLegibilityIfNecessary
++ _updateLegalLegibility
++ _addOrRemoveFakeStatusBars
++ _effectiveStatusBarColor
++ _effectiveStatusBarLegibilityStyle
++ _resetSlideToUnlockLegibilityLabel
++ _layoutSlideToUnlockView
++ _layoutLegalView
++ _averageWallpaperColorForFrame:
++ _updateVibrantView:screenRect:backgroundView:
++ _updateSlideToUnlockBackground
++ _updateTopGrabberBackground
++ _updateBottomGrabberBackground
++ _updateCameraGrabberBackground
++ _scrollBy:
++ _needsRealBlur
++ _overlayStylePropertiesFromPropertiesFactory:
++ _percentScrolled
++ _updateOverlaysForScroll:
++ _showFakeWallpaperBlurWithAlpha:
++ _layoutWallpaperBlurView
++ _layoutForegroundView
++ _layoutFakeStatusBars
++ _layoutScrollView
++ _layoutGrabberView:atTop:
++ _layoutPluginView
++ _topGrabberYOriginForPercentScrolled:
++ _bottomGrabberYOriginForPercentScrolled:
++ _layoutLockContentView
++ _layoutLockHUDView
++ _layoutCameraGrabberView
++ _layoutNotificationView
++ _layoutModalAlertView
++ _layoutTimerView
++ _layoutChargingView
++ _layoutMediaControlsView
++ _mediaControlsY
++ _mediaControlsHeight
++ _layoutGrabberView:atTop:percentScrolled:
++ _layoutLockView
++ _layoutPasscodeView
++ _layoutEmergencyCallView
++ _layoutOverlayViews
++ _isValidPage:
++ _beginCrossfadingFakeStatusBars
++ _scrollingDidFinish
++ _percentScrolledForOffset:
++ setScrollingDisabled:forRequester:
++ _setAllowPasscodeCharacterUndoOnTouchesCancelled:
++ _endCrossfadingFakeStatusBars
++ _adjustTopAndBottomGrabbersForPercentScrolled:
++ _updateFakeStatusBarsForPercentScrolled:
++ _shouldCrossfadeStatusBarsForLegibility
++ _shouldCrossfadeStatusBars
++ topGrabberView
++ bottomGrabberView
++ hasTransparentUnderlay
++ setLegalView:
++ setTimerView:
++ setMediaControlsView:
++ setModalAlertView:
++ setNotificationView:
++ setCameraGrabberView:
++ setBatteryChargingView:
++ setEmergencyCallView:withDuration:completion:
++ slideForegroundVerticallyBy:
++ setForegroundHidden:forRequester:
++ setLockContentHidden:forRequester:
++ setLockContentOverlaysHidden:forRequester:
++ setLockHUDHidden:forRequester:
++ setLegalTextHidden:forRequester:
++ setSlideToUnlockHidden:forRequester:
++ setModalAlertHidden:forRequester:
++ setNotificationsHidden:forRequester:
++ isTopGrabberHidden
++ isBottomGrabberHidden
++ setTopBottomGrabbersHidden:forRequester:
++ mediaControlsHidden
++ setMediaControlsContainerAlpha:
++ setPluginViewHidden:forRequester:
++ setCustomSlideToUnlockDisplayForBuddyMode:
++ shakeSlideToUnlockTextWithCustomText:
++ setCustomSlideToUnlockLanguage:
++ _noteAppearing
++ setStatusBarLegibilityEnabled:
++ _lockContentOverlaysShouldBeHidden
++ _addLockContentOverlay:
++ _removeLockContentOverlay:
++ _hasLockContentUnderlayRequester:
++ _addLockContentUnderlayWithRequester:
++ _removeLockContentUnderlayWithRequester:
++ _setLockContentUnderlayPropertiesFactoryOverride:
++ invalidateGrabberOrigins
++ resetContentOffsetToCurrentPage
++ legalView
++ modalAlertView
++ notificationView
++ cameraGrabberView
++ statusBarLegibilityEnabled
++ isShakingSlideToUnlockText
++ mediaControlsView
++ setTopGrabberView:
++ setBottomGrabberView:
++ initWithFrame:
++ dealloc
++ setDelegate:
++ didMoveToWindow
++ layoutSubviews
++ description
++ scrollViewDidScroll:
++ scrollViewWillBeginDragging:
++ scrollViewWillEndDragging:withVelocity:targetContentOffset:
++ scrollViewDidEndDragging:willDecelerate:
++ scrollViewDidEndDecelerating:
++ scrollViewDidEndScrollingAnimation:
++ delegate
++ _shouldAnimatePropertyWithKey:
++ animationDidStop:finished:
++ willMoveToWindow:
++ stopAnimating
++ startAnimating
++ settings:changedValueForKey:
++ scrollView
++ _setCurrentPage:
++ currentPage
++ foregroundView
++ legibilitySettings
++ glintyAnimationDidStart
++ glintyAnimationDidStop
++ glintyFadeOutAnimationDidStop
++ glintyFadeInAnimationDidStop
++ setLegibilitySettings:
++ setDateView:
++ dateView
++ _layoutDateView
++ setPasscodeView:
++ passcodeView
+- _legibilityPrototypeSettings
+- _updateLegibility
+- scrollToPage:animated:completion:
+- pluginBackgroundView
+- setPluginBackgroundView:
+- setPluginView:presentationStyle:notificationBehavior:
+- pluginViewHidden
+- scrollToPage:animated:
+- setCameraGrabberHidden:forRequester:
+- setMediaControlsHidden:forRequester:
+- timerView
+- isCurrentPageTransparent
+- _addViews
+- _slideToUnlockFailureGestureRecognizerChanged
+- _updateDateViewLegibility
+- _updateTimerLegibility
+- _setEnableTemporaryPasscodeButtonHysteresis:
+- _passcodePropertiesChanged
+- _preventScrollingOnGrabberView:
+- _updateCameraGrabberLegibilityIfNecessary
+- setPasscodeHidden:forRequester:
+- _evaluateOverlaysForChange
+- setTopGrabberHidden:forRequester:
+- setBottomGrabberHidden:forRequester:
+- batteryChargingView
+- _setScrollingEnabled:
+- startAnimatingDelayFinished
+- startAnimatingWithDelay:
+- setCustomSlideToUnlockText:
+- _defaultSlideToUnlockText
+- _updateVibrantViewLegibility
+- _shakeSlideToUnlockAnimationEnded
+- _isPluginBelowForegroundScrollView
+- _setCurrentBlurRadius:
+- _newScrollView
+- _updateVibrantViewBackgrounds
+- _addGrabberViews
+- _addBounceAnimator
+- _updateStatusBarLegibility
+- _updateGrabbersLegibilityIfNecessary
+- _updateLegalLegibility
+- _addOrRemoveFakeStatusBars
+- _effectiveStatusBarColor
+- _effectiveStatusBarLegibilityStyle
+- _resetSlideToUnlockLegibilityLabel
+- _layoutSlideToUnlockView
+- _layoutLegalView
+- _averageWallpaperColorForFrame:
+- _updateVibrantView:screenRect:backgroundView:
+- _updateSlideToUnlockBackground
+- _updateTopGrabberBackground
+- _updateBottomGrabberBackground
+- _updateCameraGrabberBackground
+- _scrollBy:
+- _needsRealBlur
+- _overlayStylePropertiesFromPropertiesFactory:
+- _percentScrolled
+- _updateOverlaysForScroll:
+- _showFakeWallpaperBlurWithAlpha:
+- _layoutWallpaperBlurView
+- _layoutForegroundView
+- _layoutFakeStatusBars
+- _layoutScrollView
+- _layoutGrabberView:atTop:
+- _layoutPluginView
+- _topGrabberYOriginForPercentScrolled:
+- _bottomGrabberYOriginForPercentScrolled:
+- _layoutLockContentView
+- _layoutLockHUDView
+- _layoutCameraGrabberView
+- _layoutNotificationView
+- _layoutModalAlertView
+- _layoutTimerView
+- _layoutChargingView
+- _layoutMediaControlsView
+- _mediaControlsY
+- _mediaControlsHeight
+- _layoutGrabberView:atTop:percentScrolled:
+- _layoutLockView
+- _layoutPasscodeView
+- _layoutEmergencyCallView
+- _layoutOverlayViews
+- _isValidPage:
+- _beginCrossfadingFakeStatusBars
+- _scrollingDidFinish
+- _percentScrolledForOffset:
+- setScrollingDisabled:forRequester:
+- _setAllowPasscodeCharacterUndoOnTouchesCancelled:
+- _endCrossfadingFakeStatusBars
+- _adjustTopAndBottomGrabbersForPercentScrolled:
+- _updateFakeStatusBarsForPercentScrolled:
+- _shouldCrossfadeStatusBarsForLegibility
+- _shouldCrossfadeStatusBars
+- topGrabberView
+- bottomGrabberView
+- hasTransparentUnderlay
+- setLegalView:
+- setTimerView:
+- setMediaControlsView:
+- setModalAlertView:
+- setNotificationView:
+- setCameraGrabberView:
+- setBatteryChargingView:
+- setEmergencyCallView:withDuration:completion:
+- slideForegroundVerticallyBy:
+- setForegroundHidden:forRequester:
+- setLockContentHidden:forRequester:
+- setLockContentOverlaysHidden:forRequester:
+- setLockHUDHidden:forRequester:
+- setLegalTextHidden:forRequester:
+- setSlideToUnlockHidden:forRequester:
+- setModalAlertHidden:forRequester:
+- setNotificationsHidden:forRequester:
+- isTopGrabberHidden
+- isBottomGrabberHidden
+- setTopBottomGrabbersHidden:forRequester:
+- mediaControlsHidden
+- setMediaControlsContainerAlpha:
+- setPluginViewHidden:forRequester:
+- setCustomSlideToUnlockDisplayForBuddyMode:
+- shakeSlideToUnlockTextWithCustomText:
+- setCustomSlideToUnlockLanguage:
+- _noteAppearing
+- setStatusBarLegibilityEnabled:
+- _lockContentOverlaysShouldBeHidden
+- _addLockContentOverlay:
+- _removeLockContentOverlay:
+- _hasLockContentUnderlayRequester:
+- _addLockContentUnderlayWithRequester:
+- _removeLockContentUnderlayWithRequester:
+- _setLockContentUnderlayPropertiesFactoryOverride:
+- invalidateGrabberOrigins
+- resetContentOffsetToCurrentPage
+- legalView
+- modalAlertView
+- notificationView
+- cameraGrabberView
+- statusBarLegibilityEnabled
+- isShakingSlideToUnlockText
+- mediaControlsView
+- setTopGrabberView:
+- setBottomGrabberView:
+- initWithFrame:
+- dealloc
+- setDelegate:
+- didMoveToWindow
+- layoutSubviews
+- description
+- scrollViewDidScroll:
+- scrollViewWillBeginDragging:
+- scrollViewWillEndDragging:withVelocity:targetContentOffset:
+- scrollViewDidEndDragging:willDecelerate:
+- scrollViewDidEndDecelerating:
+- scrollViewDidEndScrollingAnimation:
+- delegate
+- _shouldAnimatePropertyWithKey:
+- animationDidStop:finished:
+- willMoveToWindow:
+- stopAnimating
+- startAnimating
+- settings:changedValueForKey:
+- scrollView
+- _setCurrentPage:
+- currentPage
+- foregroundView
+- legibilitySettings
+- glintyAnimationDidStart
+- glintyAnimationDidStop
+- glintyFadeOutAnimationDidStop
+- glintyFadeInAnimationDidStop
+- setLegibilitySettings:
+- setDateView:
+- dateView
+- _layoutDateView
+- setPasscodeView:
+- passcodeView
+@end

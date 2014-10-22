@@ -1,0 +1,75 @@
+@interface CAMShutterButton : UIButton
+{
+	BOOL _pulsing;
+	BOOL _spinning;
+	BOOL __small;
+	long long _mode;
+	id __outerView;
+	id __outerImageView;
+	id __innerView;
+	id __progressActivityIndicatorView;
+}
+
++ initWithFrame:
++ dealloc
++ initWithCoder:
++ layoutSubviews
++ sizeThatFits:
++ setHighlighted:
++ setMode:
++ mode
++ setSpinning:
++ _performHighlightAnimation
++ setMode:animated:
++ _setSmall:
++ _updateOuterAndInnerLayers
++ _commonCAMShutterButtonInitialization
++ _sizeForMode:
++ _cornerRadiusForMode:
++ _performModeSwitchAnimationFromMode:toMode:animated:
++ _updateSpinningAnimations
++ _shouldUseImageViewForMode:
++ _outerImageForMode:
++ _outerView
++ _borderWidthForMode:
++ _innerView
++ _colorForMode:
++ _isStopMode:
++ setPulsing:
++ isPulsing
++ isSpinning
++ _isSmall
++ _outerImageView
++ _progressActivityIndicatorView
+- initWithFrame:
+- dealloc
+- initWithCoder:
+- layoutSubviews
+- sizeThatFits:
+- setHighlighted:
+- setMode:
+- mode
+- setSpinning:
+- _performHighlightAnimation
+- setMode:animated:
+- _setSmall:
+- _updateOuterAndInnerLayers
+- _commonCAMShutterButtonInitialization
+- _sizeForMode:
+- _cornerRadiusForMode:
+- _performModeSwitchAnimationFromMode:toMode:animated:
+- _updateSpinningAnimations
+- _shouldUseImageViewForMode:
+- _outerImageForMode:
+- _outerView
+- _borderWidthForMode:
+- _innerView
+- _colorForMode:
+- _isStopMode:
+- setPulsing:
+- isPulsing
+- isSpinning
+- _isSmall
+- _outerImageView
+- _progressActivityIndicatorView
+@end

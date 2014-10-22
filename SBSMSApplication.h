@@ -1,0 +1,6 @@
+@interface SBSMSApplication : SBApplication
+{
+
+}
+
+@end

@@ -1,0 +1,6 @@
+@interface NSIdRunStorage : NSRunStorage
+{
+
+}
+
+@end

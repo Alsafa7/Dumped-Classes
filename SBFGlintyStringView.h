@@ -1,0 +1,294 @@
+@interface SBFGlintyStringView : UIView
+{
+	BOOL _animationRepeats;
+	BOOL _adjustsFontSizeToFitWidth;
+	BOOL _hasCustomBackgroundColor;
+	BOOL _highlight;
+	BOOL _needsTextUpdate;
+	BOOL _chevronGlimmerAnimatesBackgroundColor;
+	BOOL _hidden;
+	int _textIndex;
+	id _delegate;
+	id _settings;
+	id _text;
+	id _font;
+	id _textLanguage;
+	id _legibilitySettings;
+	id _vibrantSettings;
+	id _backgroundView;
+	id _backgroundColor;
+	id _chevronBackgroundColor;
+	long long _chevronStyle;
+	double _horizontalPadding;
+	id _timer;
+	id _label;
+	id _lightTintView;
+	id _colorCompositingView;
+	id _darkTintView;
+	id _chevronGlimmer1;
+	id _chevronGlimmer2;
+	id _chevronGlimmerColor;
+	id _spotlightView1;
+	id _spotlightView2;
+	double _spotlightPointTraversalTime;
+	long long _animationCounter;
+	id _chevron;
+	id _effectiveChevronBackgroundColor;
+	id _highlightView;
+	id _textMaskImage;
+	id _clearMaskImage;
+	struct _labelSize;
+	struct _chevronFrame;
+	struct _spotlightAnimationStartFrame;
+	struct _spotlightAnimationEndFrame;
+}
+
++ chevron
++ setChevron:
++ horizontalPadding
++ setHorizontalPadding:
++ setMaskImage:
++ highlightView
++ setHighlightView:
++ labelFrame
++ dealloc
++ setBackgroundColor:
++ backgroundColor
++ setDelegate:
++ setHidden:
++ didMoveToWindow
++ layoutSubviews
++ sizeThatFits:
++ _highlightColor
++ delegate
++ animationDidStop:finished:
++ text
++ setFont:
++ font
++ setText:
++ setAdjustsFontSizeToFitWidth:
++ adjustsFontSizeToFitWidth
++ setBackgroundView:
++ backgroundView
++ isAnimating
++ stopAnimating
++ startAnimating
++ label
++ setLabel:
++ hide
++ settings:changedValueForKeyPath:
++ setSettings:
++ settings
++ fadeOut
++ setTimer:
++ timer
++ setChevronFrame:
++ chevronFrame
++ setHighlight:
++ highlight
++ textIndex
++ legibilitySettings
++ fadeIn
++ updateText
++ hasCustomBackgroundColor
++ animate
++ spotlightAnimationStartFrame
++ fadeAnimation
++ fadeOutAnimation
++ fadeInAnimation
++ animationCounter
++ setAnimationCounter:
++ animateSpotlight
++ animateChevronGlimmer
++ spotlightView1
++ spotlightView2
++ spotlightAnimationEndFrame
++ chevronGlimmer1
++ chevronGlimmer2
++ chevronGlimmerAnimatesBackgroundColor
++ chevronGlimmerColor
++ _chevronImageForStyle:
++ _highlightCompositingFilter
++ _spotlightImage
++ setSpotlightView1:
++ setSpotlightView2:
++ setSpotlightAnimationStartFrame:
++ setSpotlightAnimationEndFrame:
++ effectiveChevronBackgroundColor
++ chevronBackgroundColor
++ setChevronGlimmerColor:
++ setChevronGlimmer1:
++ setChevronGlimmer2:
++ _chevronWidthWithPadding
++ _chevronWidthWithPaddingCompression:
++ _chevronHeightWithMaxOffset
++ _updateLabelWithFrame:
++ _chevronVerticalOffset
++ _updateMaskWithFrame:
++ _updateClearMaskWithFrame:
++ setColorCompositingView:
++ colorCompositingView
++ _updateTintViews
++ _updateLabelSpotlight
++ _updateChevronGlimmer
++ _updateHightlight
++ setDarkTintView:
++ setEffectiveChevronBackgroundColor:
++ darkTintView
++ setLightTintView:
++ lightTintView
++ _shouldUseLightStyle
++ _backgroundDodgeColorWithFactor:
++ _spotlightColor
++ _chevronPadding
++ setTextLanguage:
++ setLegibilitySettings:
++ setVibrantSettings:
++ baselineOffsetFromBottom
++ textLanguage
++ vibrantSettings
++ setChevronBackgroundColor:
++ animationRepeats
++ setAnimationRepeats:
++ setHasCustomBackgroundColor:
++ chevronStyle
++ needsTextUpdate
++ setNeedsTextUpdate:
++ labelSize
++ setLabelSize:
++ setChevronGlimmerAnimatesBackgroundColor:
++ setTextIndex:
++ spotlightPointTraversalTime
++ setSpotlightPointTraversalTime:
++ textMaskImage
++ setTextMaskImage:
++ clearMaskImage
++ setClearMaskImage:
++ initWithText:andFont:
++ setChevronStyle:
++ hidden
+- chevron
+- setChevron:
+- horizontalPadding
+- setHorizontalPadding:
+- setMaskImage:
+- highlightView
+- setHighlightView:
+- labelFrame
+- dealloc
+- setBackgroundColor:
+- backgroundColor
+- setDelegate:
+- setHidden:
+- didMoveToWindow
+- layoutSubviews
+- sizeThatFits:
+- _highlightColor
+- delegate
+- animationDidStop:finished:
+- text
+- setFont:
+- font
+- setText:
+- setAdjustsFontSizeToFitWidth:
+- adjustsFontSizeToFitWidth
+- setBackgroundView:
+- backgroundView
+- isAnimating
+- stopAnimating
+- startAnimating
+- label
+- setLabel:
+- hide
+- settings:changedValueForKeyPath:
+- setSettings:
+- settings
+- fadeOut
+- setTimer:
+- timer
+- setChevronFrame:
+- chevronFrame
+- setHighlight:
+- highlight
+- textIndex
+- legibilitySettings
+- fadeIn
+- updateText
+- hasCustomBackgroundColor
+- animate
+- spotlightAnimationStartFrame
+- fadeAnimation
+- fadeOutAnimation
+- fadeInAnimation
+- animationCounter
+- setAnimationCounter:
+- animateSpotlight
+- animateChevronGlimmer
+- spotlightView1
+- spotlightView2
+- spotlightAnimationEndFrame
+- chevronGlimmer1
+- chevronGlimmer2
+- chevronGlimmerAnimatesBackgroundColor
+- chevronGlimmerColor
+- _chevronImageForStyle:
+- _highlightCompositingFilter
+- _spotlightImage
+- setSpotlightView1:
+- setSpotlightView2:
+- setSpotlightAnimationStartFrame:
+- setSpotlightAnimationEndFrame:
+- effectiveChevronBackgroundColor
+- chevronBackgroundColor
+- setChevronGlimmerColor:
+- setChevronGlimmer1:
+- setChevronGlimmer2:
+- _chevronWidthWithPadding
+- _chevronWidthWithPaddingCompression:
+- _chevronHeightWithMaxOffset
+- _updateLabelWithFrame:
+- _chevronVerticalOffset
+- _updateMaskWithFrame:
+- _updateClearMaskWithFrame:
+- setColorCompositingView:
+- colorCompositingView
+- _updateTintViews
+- _updateLabelSpotlight
+- _updateChevronGlimmer
+- _updateHightlight
+- setDarkTintView:
+- setEffectiveChevronBackgroundColor:
+- darkTintView
+- setLightTintView:
+- lightTintView
+- _shouldUseLightStyle
+- _backgroundDodgeColorWithFactor:
+- _spotlightColor
+- _chevronPadding
+- setTextLanguage:
+- setLegibilitySettings:
+- setVibrantSettings:
+- baselineOffsetFromBottom
+- textLanguage
+- vibrantSettings
+- setChevronBackgroundColor:
+- animationRepeats
+- setAnimationRepeats:
+- setHasCustomBackgroundColor:
+- chevronStyle
+- needsTextUpdate
+- setNeedsTextUpdate:
+- labelSize
+- setLabelSize:
+- setChevronGlimmerAnimatesBackgroundColor:
+- setTextIndex:
+- spotlightPointTraversalTime
+- setSpotlightPointTraversalTime:
+- textMaskImage
+- setTextMaskImage:
+- clearMaskImage
+- setClearMaskImage:
+- initWithText:andFont:
+- setChevronStyle:
+- hidden
+@end

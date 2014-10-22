@@ -1,0 +1,63 @@
+@interface GKCollectionViewPlaceholderView : UICollectionReusableView
+{
+	id _placeholderView;
+	id _loadingState;
+	id _noContentTitle;
+	id _noContentMessage;
+	id _errorTitle;
+	id _errorMessage;
+	id _loadingIndicatorView;
+	id _loadingMachine;
+}
+
++ setNoContentTitle:
++ setNoContentMessage:
++ setErrorTitle:
++ setErrorMessage:
++ setPlaceholderView:
++ delayedShowLoadingIndicator
++ setLoadingState:
++ didEnterLoadingState
++ didExitLoadingState
++ didEnterNoContentState
++ didExitNoContentState
++ didEnterErrorState
++ didExitErrorState
++ placeholderView
++ loadingState
++ noContentTitle
++ noContentMessage
++ errorTitle
++ errorMessage
++ loadingIndicatorView
++ setLoadingIndicatorView:
++ loadingMachine
++ setLoadingMachine:
++ initWithFrame:
++ dealloc
+- setNoContentTitle:
+- setNoContentMessage:
+- setErrorTitle:
+- setErrorMessage:
+- setPlaceholderView:
+- delayedShowLoadingIndicator
+- setLoadingState:
+- didEnterLoadingState
+- didExitLoadingState
+- didEnterNoContentState
+- didExitNoContentState
+- didEnterErrorState
+- didExitErrorState
+- placeholderView
+- loadingState
+- noContentTitle
+- noContentMessage
+- errorTitle
+- errorMessage
+- loadingIndicatorView
+- setLoadingIndicatorView:
+- loadingMachine
+- setLoadingMachine:
+- initWithFrame:
+- dealloc
+@end

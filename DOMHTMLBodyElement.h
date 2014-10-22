@@ -1,0 +1,6 @@
+@interface DOMHTMLBodyElement : DOMHTMLElement
+{
+
+}
+
+@end

@@ -1,0 +1,62 @@
+@interface UIEvent : NSObject
+{
+	double _timestamp;
+}
+
++ _screen
++ _init
++ _windows
++ _sendEventToResponder:
++ _setTimestamp:
++ isKeyDown
++ _allPhysicalButtons
++ _gsEvent
++ _isKeyDown
++ _hidEvent
++ _moveDirection
++ _modifierFlags
++ _modifiedInput
++ _unmodifiedInput
++ _initWithEvent:touches:
++ _touchesForGestureRecognizer:
++ _shakeState
++ _physicalButtonsForWindow:
++ _physicalButtonsForResponder:
++ _physicalButtonsForGestureRecognizer:
++ _triggeringPhysicalButton
++ timestamp
++ type
++ touchesForGestureRecognizer:
++ allTouches
++ subtype
++ touchesForWindow:
++ touchesForView:
+- _screen
+- _init
+- _windows
+- _sendEventToResponder:
+- _setTimestamp:
+- isKeyDown
+- _allPhysicalButtons
+- _gsEvent
+- _isKeyDown
+- _hidEvent
+- _moveDirection
+- _modifierFlags
+- _modifiedInput
+- _unmodifiedInput
+- _initWithEvent:touches:
+- _touchesForGestureRecognizer:
+- _shakeState
+- _physicalButtonsForWindow:
+- _physicalButtonsForResponder:
+- _physicalButtonsForGestureRecognizer:
+- _triggeringPhysicalButton
+- timestamp
+- type
+- touchesForGestureRecognizer:
+- allTouches
+- subtype
+- touchesForWindow:
+- touchesForView:
+@end

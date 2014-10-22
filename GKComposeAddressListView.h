@@ -1,0 +1,73 @@
+@interface GKComposeAddressListView : UIView
+{
+	id _atoms;
+	id _recipients;
+	id _textEntryField;
+	double _firstLineIndent;
+	double _preferredMaxLayoutWidth;
+	id _delegate;
+	id _selectedAtom;
+	struct _textEntryRect;
+}
+
++ setSelectedRecipient:
++ selectedRecipient
++ selectedAtom
++ setSelectedAtom:
++ setRecipients:animated:
++ flowAtomsForRect:updateViewFrames:
++ layoutSubviewsAnimated:
++ selectRecipientBefore:
++ selectRecipientAfter:
++ atoms
++ setAtoms:
++ textEntryRect
++ dealloc
++ setDelegate:
++ layoutSubviews
++ sizeThatFits:
++ delegate
++ intrinsicContentSize
++ viewForBaselineLayout
++ setPreferredMaxLayoutWidth:
++ preferredMaxLayoutWidth
++ setTextEntryField:
++ textEntryField
++ selectComposeRecipientAtom:
++ addRecipients:
++ removeRecipients:
++ recipients
++ firstLineIndent
++ setFirstLineIndent:
++ setRecipients:
+- setSelectedRecipient:
+- selectedRecipient
+- selectedAtom
+- setSelectedAtom:
+- setRecipients:animated:
+- flowAtomsForRect:updateViewFrames:
+- layoutSubviewsAnimated:
+- selectRecipientBefore:
+- selectRecipientAfter:
+- atoms
+- setAtoms:
+- textEntryRect
+- dealloc
+- setDelegate:
+- layoutSubviews
+- sizeThatFits:
+- delegate
+- intrinsicContentSize
+- viewForBaselineLayout
+- setPreferredMaxLayoutWidth:
+- preferredMaxLayoutWidth
+- setTextEntryField:
+- textEntryField
+- selectComposeRecipientAtom:
+- addRecipients:
+- removeRecipients:
+- recipients
+- firstLineIndent
+- setFirstLineIndent:
+- setRecipients:
+@end

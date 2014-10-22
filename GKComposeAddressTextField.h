@@ -1,0 +1,6 @@
+@interface GKComposeAddressTextField : GKTextField
+{
+
+}
+
+@end

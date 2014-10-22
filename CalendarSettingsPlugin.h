@@ -1,0 +1,85 @@
+@interface CalendarSettingsPlugin : NSObject
+{
+	id _parentController;
+	id _invitationAlertsSpecifier;
+	id _sharedCalendarAlertsSpecifier;
+	id _syncDaysSpecifier;
+	id _timeZoneSupportSpecifier;
+	id _defaultCalendarSpecifier;
+	id _birthdayCalendarSpecifier;
+	id _defaultAlarmsSpecifier;
+	id _eventStore;
+	id _accountStore;
+	BOOL _moreThanOneCalendar;
+	id _weekStartSpecifier;
+}
+
++ _eventStore
++ _eventStoreChanged:
++ dealloc
++ _freeSpecifiers
++ setInvitationAlertsEnabled:specifier:
++ invitationAlertsEnabled:
++ setSharedCalendarAlertsEnabled:specifier:
++ sharedCalendarAlertsEnabled:
++ timeZoneSupportEnabled:
++ setDaysToSync:specifier:
++ daysToSync:
++ _titlesForDaysToSync
++ setDefaultCalendar:specifier:
++ defaultCalendarName:
++ setWeekStart:specifier:
++ weekStart:
++ _numbersForWeekdays
++ _titlesForWeekDays:
++ setWeekStartSpecifier:
++ _createAllCommonSpecifiers
++ _countOfAccountsSyncingCalendars
++ weekStartSpecifier
++ setShowWeekNumbers:specifier:
++ showWeekNumbers:
++ setImmediateAlarmCreation:specifier:
++ immediateAlarmCreation:
++ footerText
++ shouldLoadSpecifiersLazily
++ initWithParentController:
++ _localeChanged:
++ specifiers
++ headerText
++ .cxx_destruct
++ _accountStore
+- _eventStore
+- _eventStoreChanged:
+- dealloc
+- _freeSpecifiers
+- setInvitationAlertsEnabled:specifier:
+- invitationAlertsEnabled:
+- setSharedCalendarAlertsEnabled:specifier:
+- sharedCalendarAlertsEnabled:
+- timeZoneSupportEnabled:
+- setDaysToSync:specifier:
+- daysToSync:
+- _titlesForDaysToSync
+- setDefaultCalendar:specifier:
+- defaultCalendarName:
+- setWeekStart:specifier:
+- weekStart:
+- _numbersForWeekdays
+- _titlesForWeekDays:
+- setWeekStartSpecifier:
+- _createAllCommonSpecifiers
+- _countOfAccountsSyncingCalendars
+- weekStartSpecifier
+- setShowWeekNumbers:specifier:
+- showWeekNumbers:
+- setImmediateAlarmCreation:specifier:
+- immediateAlarmCreation:
+- footerText
+- shouldLoadSpecifiersLazily
+- initWithParentController:
+- _localeChanged:
+- specifiers
+- headerText
+- .cxx_destruct
+- _accountStore
+@end

@@ -1,0 +1,142 @@
+@interface Alarm : NSObject
+{
+	id _id;
+	id _idUrl;
+	id _settings;
+	id _notification;
+	Array _weeklyNotifications;
+	id _snoozedNotification;
+	unsigned int _hour;
+	unsigned int _minute;
+	unsigned int _daySetting;
+	id _repeatDays;
+	BOOL _allowsSnooze;
+	long long _soundType;
+	id _sound;
+	id _title;
+	id _lastModified;
+	unsigned int _revision;
+	id _delegate;
+	id _editingProxy;
+	BOOL _pretendActiveIfProxy;
+	long long _snapshotSoundType;
+	id _snapshotSound;
+}
+
++ dealloc
++ setDelegate:
++ init
++ setTitle:
++ isEqual:
++ hash
++ description
++ debugDescription
++ delegate
++ isActive
++ applySettings:
++ setHour:
++ hour
++ initWithDefaultValues
++ minute
++ initWithSettings:
++ settings
++ setMinute:
++ soundType
++ repeats
++ sound
++ setAllowsSnooze:
++ setSound:ofType:
++ setDaySetting:
++ markModified
++ compareTime:
++ scheduleNotifications
++ rawTitle
++ alarmIdUrl
++ cancelNotifications
++ tryAddNotification:
++ dropNotifications
++ refreshActiveState
++ handleNotificationSnoozed:notifyDelegate:
++ handleAlarmFired:
++ nowDateForOffsetCalculation
++ dropEditingProxy
++ daySetting
++ allowsSnooze
++ timeZoneForOffsetCalculation
++ _newBaseDateComponentsForDay:
++ _newNotification:
++ prepareNotifications
++ nextFireDateAfterDate:notification:day:
++ isSnoozed
++ _notificationsCount
++ initWithNotification:
++ prepareEditingProxy
++ applyChangesFromEditingProxy
++ repeatDays
++ uiTitle
++ editingProxy
++ snapshotSoundType
++ snapshotSound
++ revision
++ alarmId
++ nextFireDate
++ lastModified
+- dealloc
+- setDelegate:
+- init
+- setTitle:
+- isEqual:
+- hash
+- description
+- debugDescription
+- delegate
+- isActive
+- applySettings:
+- setHour:
+- hour
+- initWithDefaultValues
+- minute
+- initWithSettings:
+- settings
+- setMinute:
+- soundType
+- repeats
+- sound
+- setAllowsSnooze:
+- setSound:ofType:
+- setDaySetting:
+- markModified
+- compareTime:
+- scheduleNotifications
+- rawTitle
+- alarmIdUrl
+- cancelNotifications
+- tryAddNotification:
+- dropNotifications
+- refreshActiveState
+- handleNotificationSnoozed:notifyDelegate:
+- handleAlarmFired:
+- nowDateForOffsetCalculation
+- dropEditingProxy
+- daySetting
+- allowsSnooze
+- timeZoneForOffsetCalculation
+- _newBaseDateComponentsForDay:
+- _newNotification:
+- prepareNotifications
+- nextFireDateAfterDate:notification:day:
+- isSnoozed
+- _notificationsCount
+- initWithNotification:
+- prepareEditingProxy
+- applyChangesFromEditingProxy
+- repeatDays
+- uiTitle
+- editingProxy
+- snapshotSoundType
+- snapshotSound
+- revision
+- alarmId
+- nextFireDate
+- lastModified
+@end

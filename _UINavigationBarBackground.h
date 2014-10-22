@@ -1,0 +1,64 @@
+@interface _UINavigationBarBackground : _UIBarBackgroundImageView
+{
+	id _barTintColor;
+	id _appearanceStorage;
+	id _shadowView;
+	id _adaptiveBackdrop;
+	struct _navbarFlags;
+}
+
++ dealloc
++ setFrame:
++ setBounds:
++ isTranslucent
++ _didMoveFromWindow:toWindow:
++ didMoveToSuperview
++ setAppearanceStorage:
++ _shadowView
++ initWithFrame:barStyle:barTintColor:appearance:barTranslucence:
++ appearanceStorage
++ updateBackgroundImage
++ setBarStyle:
++ setBarWantsAdaptiveBackdrop:
++ barStyle
++ setTranslucent:
++ setBarTintColor:
++ _setIsContainedInPopover:
++ _currentCustomBackground
++ _currentCustomBackgroundRespectOversize_legacy:
++ _setFrame:forceUpdateBackgroundImage:
++ barTintColor
++ _currentCustomBackgroundDedicatedToBarMetrics:barPosition:
++ barWantsAdaptiveBackdrop
++ _setShadowView:
++ backdropView:willChangeToGraphicsQuality:
++ backdropView:didChangeToGraphicsQuality:
++ _customShadowImageForSearchBar
+- dealloc
+- setFrame:
+- setBounds:
+- isTranslucent
+- _didMoveFromWindow:toWindow:
+- didMoveToSuperview
+- setAppearanceStorage:
+- _shadowView
+- initWithFrame:barStyle:barTintColor:appearance:barTranslucence:
+- appearanceStorage
+- updateBackgroundImage
+- setBarStyle:
+- setBarWantsAdaptiveBackdrop:
+- barStyle
+- setTranslucent:
+- setBarTintColor:
+- _setIsContainedInPopover:
+- _currentCustomBackground
+- _currentCustomBackgroundRespectOversize_legacy:
+- _setFrame:forceUpdateBackgroundImage:
+- barTintColor
+- _currentCustomBackgroundDedicatedToBarMetrics:barPosition:
+- barWantsAdaptiveBackdrop
+- _setShadowView:
+- backdropView:willChangeToGraphicsQuality:
+- backdropView:didChangeToGraphicsQuality:
+- _customShadowImageForSearchBar
+@end

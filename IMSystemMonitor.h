@@ -1,0 +1,219 @@
+@interface IMSystemMonitor : NSObject
+{
+	BOOL _watchesDataProtectionLockState;
+	BOOL _watchesScreenLightState;
+	BOOL _receivesMemoryWarnings;
+	BOOL _willSleep;
+	BOOL _screenLocked;
+	BOOL _screensaverActive;
+	BOOL _watchesSystemLockState;
+	BOOL _underFirstLock;
+	BOOL _active;
+	BOOL _backingUp;
+	BOOL _switchedOut;
+	BOOL _screenLit;
+	BOOL _systemLocked;
+	BOOL _idleOverride;
+	BOOL _usesPowerNotifications;
+	BOOL _usesSystemIdleState;
+	BOOL _inBackground;
+	int _dataProtectionState;
+	int _userIdleToken;
+	id _listeners;
+	id _idleStart;
+	id _dateScreenLightLastChanged;
+	id _dateSystemLockLastChanged;
+	id _userID;
+	double _delayTime;
+	id _earlyListeners;
+}
+
++ dealloc
++ init
++ isActive
++ setReceivesMemoryWarnings:
++ _receivedMemoryNotification
++ setActive:
++ _applicationDidBecomeActive:
++ _applicationWillResignActive:
++ _applicationDidEnterBackground:
++ _applicationWillEnterForeground:
++ _screenUnlocked:
++ _screenLocked:
++ _forceResumed
++ addListener:
++ removeListener:
++ _userID
++ _addEarlyListener:
++ _removeEarlyListener:
++ isSetup
++ isUnderFirstDataProtectionLock
++ isFastUserSwitched
++ isScreenLit
++ dateScreenLightLastChanged
++ setUsesPowerNotifications:
++ setWatchesScreenLightState:
++ isInBackground
++ systemIsShuttingDown
++ _suspend:
++ _resume:
++ _suspendEventsOnly:
++ _resumeEventsOnly:
++ _applicationWillAddDeactivationReason:
++ _applicationDidRemoveDeactivationReason:
++ _registerForRestoreNotifications
++ _unregisterForRestoreNotifications
++ _unregisterForLoginWindowNotifications
++ _deliverNotificationSelector:
++ _postScreenLocked
++ _updateIdleState
++ _postScreenSaverStarted
++ usesPowerNotifications
++ _notificationCenterWillAppear:
++ _notificationCenterDidDisappear:
++ isUnderDataProtectionLock
++ isSystemIdle
++ _systemDidWake
++ _systemWillSleep
++ _screenSaverStopped:
++ _screenSaverStarted:
++ _setDataProtectionLockState:
++ setWatchesDataProtectionLockState:
++ setWatchesSystemLockState:
++ _setSystemScreenState:
++ _setSystemLockState:
++ setUsesSystemIdleState:
++ _setIdleState:
++ _overrideAndDisableIdleTimer:
++ systemIdleTime
++ _systemWillShutdown
++ _checkRestoredFromBackup
++ _restoreDidStart
++ _restoreDidStop
++ _setupStateChanged
++ _handleLoginWindowNotification:
++ _registerForLoginWindowNotifications
++ watchesDataProtectionLockState
++ watchesScreenLightState
++ receivesMemoryWarnings
++ systemIsSleeping
++ isScreenLocked
++ isScreenSaverActive
++ watchesSystemLockState
++ _dataProtectionState
++ set_dataProtectionState:
++ _underFirstLock
++ set_underFirstLock:
++ isBackingUp
++ setIsFastUserSwitched:
++ _listeners
++ set_listeners:
++ _idleStart
++ set_idleStart:
++ dateSystemLockLastChanged
++ isSystemLocked
++ set_userID:
++ _delayTime
++ set_delayTime:
++ _idleOverride
++ set_idleOverride:
++ _earlyListeners
++ set_earlyListeners:
++ usesSystemIdleState
++ userIdleToken
++ setUserIdleToken:
+- dealloc
+- init
+- isActive
+- setReceivesMemoryWarnings:
+- _receivedMemoryNotification
+- setActive:
+- _applicationDidBecomeActive:
+- _applicationWillResignActive:
+- _applicationDidEnterBackground:
+- _applicationWillEnterForeground:
+- _screenUnlocked:
+- _screenLocked:
+- _forceResumed
+- addListener:
+- removeListener:
+- _userID
+- _addEarlyListener:
+- _removeEarlyListener:
+- isSetup
+- isUnderFirstDataProtectionLock
+- isFastUserSwitched
+- isScreenLit
+- dateScreenLightLastChanged
+- setUsesPowerNotifications:
+- setWatchesScreenLightState:
+- isInBackground
+- systemIsShuttingDown
+- _suspend:
+- _resume:
+- _suspendEventsOnly:
+- _resumeEventsOnly:
+- _applicationWillAddDeactivationReason:
+- _applicationDidRemoveDeactivationReason:
+- _registerForRestoreNotifications
+- _unregisterForRestoreNotifications
+- _unregisterForLoginWindowNotifications
+- _deliverNotificationSelector:
+- _postScreenLocked
+- _updateIdleState
+- _postScreenSaverStarted
+- usesPowerNotifications
+- _notificationCenterWillAppear:
+- _notificationCenterDidDisappear:
+- isUnderDataProtectionLock
+- isSystemIdle
+- _systemDidWake
+- _systemWillSleep
+- _screenSaverStopped:
+- _screenSaverStarted:
+- _setDataProtectionLockState:
+- setWatchesDataProtectionLockState:
+- setWatchesSystemLockState:
+- _setSystemScreenState:
+- _setSystemLockState:
+- setUsesSystemIdleState:
+- _setIdleState:
+- _overrideAndDisableIdleTimer:
+- systemIdleTime
+- _systemWillShutdown
+- _checkRestoredFromBackup
+- _restoreDidStart
+- _restoreDidStop
+- _setupStateChanged
+- _handleLoginWindowNotification:
+- _registerForLoginWindowNotifications
+- watchesDataProtectionLockState
+- watchesScreenLightState
+- receivesMemoryWarnings
+- systemIsSleeping
+- isScreenLocked
+- isScreenSaverActive
+- watchesSystemLockState
+- _dataProtectionState
+- set_dataProtectionState:
+- _underFirstLock
+- set_underFirstLock:
+- isBackingUp
+- setIsFastUserSwitched:
+- _listeners
+- set_listeners:
+- _idleStart
+- set_idleStart:
+- dateSystemLockLastChanged
+- isSystemLocked
+- set_userID:
+- _delayTime
+- set_delayTime:
+- _idleOverride
+- set_idleOverride:
+- _earlyListeners
+- set_earlyListeners:
+- usesSystemIdleState
+- userIdleToken
+- setUserIdleToken:
+@end

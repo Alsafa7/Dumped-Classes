@@ -1,0 +1,6 @@
+@interface PULocalization : NSObject
+{
+
+}
+
+@end

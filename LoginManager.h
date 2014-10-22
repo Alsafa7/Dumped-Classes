@@ -1,0 +1,67 @@
+@interface LoginManager : NSObject
+{
+	int UserState;
+	BOOL doneLogin;
+	id internetReachableFoo;
+	BOOL internetConnected;
+	BOOL didRecieveReachability;
+	id loadedData;
+	id loginState;
+	id bldobfra;
+	id sklocbra;
+	id xlspvdafb;
+	id dafj;
+	id gmlajnybfcac;
+	id iksdxc;
+	id tskdb;
+	id memberusername;
+	id displayname;
+}
+
++ testInternetConnection
++ login:andPassword:andIsHackersOnly:
++ userState
++ getDeviceUUID
++ getBatteryValue
++ getMemberID
++ getPostCount
++ getProfileViews
++ getIsBanned
++ getIsChatBanned
++ getCurrentDeviceCount
++ getMemberTitle
++ internetConnected
++ setInternetConnected:
++ didRecieveReachability
++ setDidRecieveReachability:
++ internetReachableFoo
++ setInternetReachableFoo:
++ init
++ alertView:clickedButtonAtIndex:
++ logout
++ getName
++ .cxx_destruct
+- testInternetConnection
+- login:andPassword:andIsHackersOnly:
+- userState
+- getDeviceUUID
+- getBatteryValue
+- getMemberID
+- getPostCount
+- getProfileViews
+- getIsBanned
+- getIsChatBanned
+- getCurrentDeviceCount
+- getMemberTitle
+- internetConnected
+- setInternetConnected:
+- didRecieveReachability
+- setDidRecieveReachability:
+- internetReachableFoo
+- setInternetReachableFoo:
+- init
+- alertView:clickedButtonAtIndex:
+- logout
+- getName
+- .cxx_destruct
+@end

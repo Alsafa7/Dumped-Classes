@@ -1,0 +1,134 @@
+@interface MBDomain : NSObject
+{
+	BOOL _shouldDigest;
+	id _rootPath;
+	id _name;
+	id _relativePathsToBackupAndRestore;
+	id _relativePathsNotToBackup;
+	id _relativePathsNotToBackupToDrive;
+	id _relativePathsNotToBackupToService;
+	id _relativePathsNotToCheckIfModifiedDuringBackup;
+	id _relativePathsToRestoreOnly;
+	id _relativePathsToRestoreOnlyFromService;
+	id _relativePathsToRemoveOnRestore;
+	id _relativePathsOfSystemFilesToAlwaysRestore;
+	id _relativePathsOfSystemFilesToAlwaysRemoveOnRestore;
+	id _relativePathsNotToRestore;
+	id _relativePathsNotToMigrate;
+	id _relativePathsNotToRestoreToIPods;
+	id _relativePathsNotToBackupAndRestoreToAppleTVs;
+	id _relativePathsToBackgroundRestore;
+	id _relativePathsNotToRemoveIfNotRestored;
+	id _relativePathAggregateDictionaryGroups;
+	id _relativePathDomainRedirects;
+}
+
++ bundleID
++ dealloc
++ isEqual:
++ hash
++ description
++ name
++ compare:
++ isAppDomain
++ initWithName:plist:
++ initWithName:rootPath:
++ isEqualToDomain:
++ relativePathsToBackup
++ relativePathsToRestore
++ isPlaceholderAppDomain
++ isUninstalledAppDomain
++ rootPath
++ relativePathsToBackupAndRestore
++ setRelativePathsToBackupAndRestore:
++ relativePathsNotToBackup
++ setRelativePathsNotToBackup:
++ relativePathsNotToBackupToDrive
++ setRelativePathsNotToBackupToDrive:
++ relativePathsNotToBackupToService
++ setRelativePathsNotToBackupToService:
++ relativePathsNotToCheckIfModifiedDuringBackup
++ setRelativePathsNotToCheckIfModifiedDuringBackup:
++ relativePathsToRestoreOnly
++ setRelativePathsToRestoreOnly:
++ relativePathsToRestoreOnlyFromService
++ setRelativePathsToRestoreOnlyFromService:
++ relativePathsToRemoveOnRestore
++ setRelativePathsToRemoveOnRestore:
++ relativePathsOfSystemFilesToAlwaysRestore
++ setRelativePathsOfSystemFilesToAlwaysRestore:
++ relativePathsOfSystemFilesToAlwaysRemoveOnRestore
++ setRelativePathsOfSystemFilesToAlwaysRemoveOnRestore:
++ relativePathsNotToRestore
++ setRelativePathsNotToRestore:
++ relativePathsNotToMigrate
++ setRelativePathsNotToMigrate:
++ relativePathsNotToRestoreToIPods
++ setRelativePathsNotToRestoreToIPods:
++ relativePathsNotToBackupAndRestoreToAppleTVs
++ setRelativePathsNotToBackupAndRestoreToAppleTVs:
++ relativePathsToBackgroundRestore
++ setRelativePathsToBackgroundRestore:
++ relativePathsNotToRemoveIfNotRestored
++ setRelativePathsNotToRemoveIfNotRestored:
++ relativePathAggregateDictionaryGroups
++ setRelativePathAggregateDictionaryGroups:
++ relativePathDomainRedirects
++ setRelativePathDomainRedirects:
++ shouldDigest
++ setShouldDigest:
+- bundleID
+- dealloc
+- isEqual:
+- hash
+- description
+- name
+- compare:
+- isAppDomain
+- initWithName:plist:
+- initWithName:rootPath:
+- isEqualToDomain:
+- relativePathsToBackup
+- relativePathsToRestore
+- isPlaceholderAppDomain
+- isUninstalledAppDomain
+- rootPath
+- relativePathsToBackupAndRestore
+- setRelativePathsToBackupAndRestore:
+- relativePathsNotToBackup
+- setRelativePathsNotToBackup:
+- relativePathsNotToBackupToDrive
+- setRelativePathsNotToBackupToDrive:
+- relativePathsNotToBackupToService
+- setRelativePathsNotToBackupToService:
+- relativePathsNotToCheckIfModifiedDuringBackup
+- setRelativePathsNotToCheckIfModifiedDuringBackup:
+- relativePathsToRestoreOnly
+- setRelativePathsToRestoreOnly:
+- relativePathsToRestoreOnlyFromService
+- setRelativePathsToRestoreOnlyFromService:
+- relativePathsToRemoveOnRestore
+- setRelativePathsToRemoveOnRestore:
+- relativePathsOfSystemFilesToAlwaysRestore
+- setRelativePathsOfSystemFilesToAlwaysRestore:
+- relativePathsOfSystemFilesToAlwaysRemoveOnRestore
+- setRelativePathsOfSystemFilesToAlwaysRemoveOnRestore:
+- relativePathsNotToRestore
+- setRelativePathsNotToRestore:
+- relativePathsNotToMigrate
+- setRelativePathsNotToMigrate:
+- relativePathsNotToRestoreToIPods
+- setRelativePathsNotToRestoreToIPods:
+- relativePathsNotToBackupAndRestoreToAppleTVs
+- setRelativePathsNotToBackupAndRestoreToAppleTVs:
+- relativePathsToBackgroundRestore
+- setRelativePathsToBackgroundRestore:
+- relativePathsNotToRemoveIfNotRestored
+- setRelativePathsNotToRemoveIfNotRestored:
+- relativePathAggregateDictionaryGroups
+- setRelativePathAggregateDictionaryGroups:
+- relativePathDomainRedirects
+- setRelativePathDomainRedirects:
+- shouldDigest
+- setShouldDigest:
+@end

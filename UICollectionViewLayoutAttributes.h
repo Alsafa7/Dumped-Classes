@@ -1,0 +1,96 @@
+@interface UICollectionViewLayoutAttributes : NSObject
+{
+	id _elementKind;
+	id _reuseIdentifier;
+	struct _center;
+	struct _size;
+	struct _frame;
+	double _alpha;
+	struct _transform;
+	id _indexPath;
+	id _isCloneString;
+	struct _layoutFlags;
+	long long _zIndex;
+}
+
++ dealloc
++ bounds
++ size
++ isHidden
++ alpha
++ setHidden:
++ setAlpha:
++ init
++ setFrame:
++ frame
++ setBounds:
++ isEqual:
++ hash
++ description
++ copyWithZone:
++ setSize:
++ center
++ transform
++ setCenter:
++ setTransform:
++ indexPath
++ _reuseIdentifier
++ representedElementCategory
++ _isCell
++ _isSupplementaryView
++ _elementKind
++ _isClone
++ transform3D
++ zIndex
++ _isDecorationView
++ _isEquivalentTo:
++ _isTransitionVisibleTo:
++ setIndexPath:
++ _setReuseIdentifier:
++ setTransform3D:
++ _setIsClone:
++ _setElementKind:
++ initialLayoutAttributesForInsertedDecorationElementOfKind:atIndexPath:
++ representedElementKind
++ setZIndex:
+- dealloc
+- bounds
+- size
+- isHidden
+- alpha
+- setHidden:
+- setAlpha:
+- init
+- setFrame:
+- frame
+- setBounds:
+- isEqual:
+- hash
+- description
+- copyWithZone:
+- setSize:
+- center
+- transform
+- setCenter:
+- setTransform:
+- indexPath
+- _reuseIdentifier
+- representedElementCategory
+- _isCell
+- _isSupplementaryView
+- _elementKind
+- _isClone
+- transform3D
+- zIndex
+- _isDecorationView
+- _isEquivalentTo:
+- _isTransitionVisibleTo:
+- setIndexPath:
+- _setReuseIdentifier:
+- setTransform3D:
+- _setIsClone:
+- _setElementKind:
+- initialLayoutAttributesForInsertedDecorationElementOfKind:atIndexPath:
+- representedElementKind
+- setZIndex:
+@end

@@ -1,0 +1,76 @@
+@interface SSEntity : NSObject
+{
+	id _connection;
+	id _dispatchQueue;
+	id _localExternalValues;
+	id _localValues;
+	long long _pid;
+	id _dirtyLocalExternalProperties;
+	id _dirtyLocalProperties;
+}
+
++ exists
++ dealloc
++ init
++ isEqual:
++ hash
++ description
++ valueForProperty:
++ setValue:forProperty:
++ getValues:forProperties:count:
++ setValuesWithDictionary:
++ _initWithPersistentIdentifier:
++ _becomeManagedOnConnection:
++ _isManaged
++ setExternalValuesWithDictionary:
++ _resetLocalIVars
++ copyXPCEncoding
++ _addCachedExternalValues:
++ _addCachedPropertyValues:
++ _localExternalValues
++ _setLocalExternalValues:
++ _localValues
++ _setLocalValues:
++ _setDirtyCachedExternalProperties:
++ _setDirtyCachedProperties:
++ _getValues:forProperties:count:message:
++ getValues:forExternalProperties:count:
++ _persistentIdentifier
++ __addCachedExternalValues:
++ __addCachedPropertyValues:
++ resetCachedExternalProperties:count:
++ valueForExternalProperty:
++ resetCachedProperties:count:
+- exists
+- dealloc
+- init
+- isEqual:
+- hash
+- description
+- valueForProperty:
+- setValue:forProperty:
+- getValues:forProperties:count:
+- setValuesWithDictionary:
+- _initWithPersistentIdentifier:
+- _becomeManagedOnConnection:
+- _isManaged
+- setExternalValuesWithDictionary:
+- _resetLocalIVars
+- copyXPCEncoding
+- _addCachedExternalValues:
+- _addCachedPropertyValues:
+- _localExternalValues
+- _setLocalExternalValues:
+- _localValues
+- _setLocalValues:
+- _setDirtyCachedExternalProperties:
+- _setDirtyCachedProperties:
+- _getValues:forProperties:count:message:
+- getValues:forExternalProperties:count:
+- _persistentIdentifier
+- __addCachedExternalValues:
+- __addCachedPropertyValues:
+- resetCachedExternalProperties:count:
+- valueForExternalProperty:
+- resetCachedProperties:count:
+@end

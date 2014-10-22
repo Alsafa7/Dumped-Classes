@@ -1,0 +1,116 @@
+@interface GKTurnBasedMatchInternal : GKInternalRepresentation
+{
+	id _matchID;
+	id _status;
+	id _message;
+	id _localizableMessage;
+	id _reason;
+	id _creationDate;
+	id _lastTurnDate;
+	id _deletionDate;
+	id _currentPlayer;
+	id _lastTurnPlayerID;
+	id _matchData;
+	id _matchDataVersion;
+	id _participants;
+	id _bundleID;
+	id _bundleVersion;
+	id _game;
+	id _exchanges;
+	unsigned int _turnNumber;
+	unsigned char _minPlayers;
+	unsigned char _maxPlayers;
+	char _currentParticipant;
+}
+
++ exchanges
++ currentPlayer
++ localizableMessage
++ setLocalizableMessage:
++ matchData
++ setCurrentParticipant:
++ setMatchData:
++ setReason:
++ setMatchID:
++ setCurrentPlayer:
++ turnNumber
++ setTurnNumber:
++ lastTurnPlayerID
++ setLastTurnPlayerID:
++ setParticipants:
++ matchDataVersion
++ setMatchDataVersion:
++ setExchanges:
++ game
++ setGame:
++ lastTurnDate
++ setLastTurnDate:
++ currentParticipant
++ minPlayers
++ maxPlayers
++ setMinPlayers:
++ setMaxPlayers:
++ participants
++ matchID
++ bundleVersion
++ bundleID
++ dealloc
++ isEqual:
++ hash
++ message
++ setMessage:
++ status
++ setStatus:
++ reason
++ setDeletionDate:
++ deletionDate
++ creationDate
++ setCreationDate:
++ setBundleID:
++ setBundleVersion:
+- exchanges
+- currentPlayer
+- localizableMessage
+- setLocalizableMessage:
+- matchData
+- setCurrentParticipant:
+- setMatchData:
+- setReason:
+- setMatchID:
+- setCurrentPlayer:
+- turnNumber
+- setTurnNumber:
+- lastTurnPlayerID
+- setLastTurnPlayerID:
+- setParticipants:
+- matchDataVersion
+- setMatchDataVersion:
+- setExchanges:
+- game
+- setGame:
+- lastTurnDate
+- setLastTurnDate:
+- currentParticipant
+- minPlayers
+- maxPlayers
+- setMinPlayers:
+- setMaxPlayers:
+- participants
+- matchID
+- bundleVersion
+- bundleID
+- dealloc
+- isEqual:
+- hash
+- message
+- setMessage:
+- status
+- setStatus:
+- reason
+- setDeletionDate:
+- deletionDate
+- creationDate
+- setCreationDate:
+- setBundleID:
+- setBundleVersion:
+@end

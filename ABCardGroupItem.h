@@ -1,0 +1,6 @@
+@interface ABCardGroupItem : NSObject
+{
+
+}
+
+@end

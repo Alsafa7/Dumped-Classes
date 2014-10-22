@@ -1,0 +1,64 @@
+@interface _UITextFieldPasscodeCutoutBackground : UITextFieldBackgroundView
+{
+	BOOL _customStrokeColor;
+	BOOL _customFillColor;
+	id _lighteningOutline;
+	double _outlineAlpha;
+	double _cornerRadius;
+}
+
++ initWithFrame:
++ dealloc
++ setFrame:
++ setBounds:
++ lineWidth
++ setLineWidth:
++ _shouldAnimatePropertyWithKey:
++ _layer
++ cornerRadius
++ setCornerRadius:
++ setFillColor:
++ setStrokeColor:
++ setActive:
++ setEnabled:animated:
++ initWithFrame:active:
++ fillColor
++ _strokeColor:
++ strokeColor
++ _fillColor:
++ _updatePath
++ setLineWidth:updatePath:
++ _pathInset
++ _pixelAlignment
++ _updateLightingOutlinePath
++ customPath
++ setOutlineAlpha:
++ outlineAlpha
+- initWithFrame:
+- dealloc
+- setFrame:
+- setBounds:
+- lineWidth
+- setLineWidth:
+- _shouldAnimatePropertyWithKey:
+- _layer
+- cornerRadius
+- setCornerRadius:
+- setFillColor:
+- setStrokeColor:
+- setActive:
+- setEnabled:animated:
+- initWithFrame:active:
+- fillColor
+- _strokeColor:
+- strokeColor
+- _fillColor:
+- _updatePath
+- setLineWidth:updatePath:
+- _pathInset
+- _pixelAlignment
+- _updateLightingOutlinePath
+- customPath
+- setOutlineAlpha:
+- outlineAlpha
+@end

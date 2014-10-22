@@ -1,0 +1,113 @@
+@interface ContactsSettingsPlugin : NSObject
+{
+	pointer _addressBook;
+	id _currentSpecifiers;
+	id _SIMImportSpacerSpecifier;
+	id _SIMImportSpecifier;
+	id _MeCardSpecifier;
+	id _ContactsSortOrderSpecifier;
+	id _PersonNameOrderSpecifier;
+	id _parentController;
+	id _contactStores;
+	id _contactStoreNames;
+	long long _contactStoresCount;
+	int _meCardLastCheckedSequenceNumber;
+	pointer _ctServerConnection;
+	id _loadingContacts;
+	pointer _importButtonIndexToStoreID;
+	int _importStoreID;
+	BOOL _shouldShowSIMImport;
+	id _meCardPopover;
+	id _meCardPicker;
+	id _addressBookQueue;
+}
+
++ dealloc
++ actionSheet:clickedButtonAtIndex:
++ windowDidRotate:
++ windowWillRotate:
++ popoverControllerDidDismissPopover:
++ peoplePickerNavigationControllerDidCancel:
++ peoplePickerNavigationController:shouldContinueAfterSelectingPerson:
++ peoplePickerNavigationController:shouldContinueAfterSelectingPerson:property:identifier:
++ _rootControllerDidSuspend
++ _dismissMeCardPickerAnimated:
++ _importAlreadyInProgress
++ _updateSIMImportVisibility
++ _updateABStoresAndNames
++ _updateSIMImportSpecifier:
++ _setDefaultContacts:specifier:
++ _stopListeningForSIMPhonebookNotifications
++ _noteImportEnded
++ _erroredDuringSIMPhonebookFetch
++ _getSIMPhonebookEntryAtIndex:entry:
++ _noteImportStarted
++ _fetchSIMPhonebook
++ _beginImportToStoreID:
++ _reloadMeCardCellIfVisible
++ _showMeCardPopover
++ setDefaultContacts:specifier:
++ defaultContactsName:
++ contactStoreTitlesForSpecifier:
++ _phonebookSelected
++ _phonebookAvailable
++ importFromSIM:
++ _clearSpecifiers
++ _SIMStatusChanged
++ meCardName:
++ showMeCardPicker:
++ contactsSortOrder:
++ setContactsSortOrder:specifier:
++ personNameOrder:
++ setPersonNameOrder:specifier:
++ footerText
++ shouldLoadSpecifiersLazily
++ initWithParentController:
++ _ctServerConnection
++ specifiers
++ headerText
+- dealloc
+- actionSheet:clickedButtonAtIndex:
+- windowDidRotate:
+- windowWillRotate:
+- popoverControllerDidDismissPopover:
+- peoplePickerNavigationControllerDidCancel:
+- peoplePickerNavigationController:shouldContinueAfterSelectingPerson:
+- peoplePickerNavigationController:shouldContinueAfterSelectingPerson:property:identifier:
+- _rootControllerDidSuspend
+- _dismissMeCardPickerAnimated:
+- _importAlreadyInProgress
+- _updateSIMImportVisibility
+- _updateABStoresAndNames
+- _updateSIMImportSpecifier:
+- _setDefaultContacts:specifier:
+- _stopListeningForSIMPhonebookNotifications
+- _noteImportEnded
+- _erroredDuringSIMPhonebookFetch
+- _getSIMPhonebookEntryAtIndex:entry:
+- _noteImportStarted
+- _fetchSIMPhonebook
+- _beginImportToStoreID:
+- _reloadMeCardCellIfVisible
+- _showMeCardPopover
+- setDefaultContacts:specifier:
+- defaultContactsName:
+- contactStoreTitlesForSpecifier:
+- _phonebookSelected
+- _phonebookAvailable
+- importFromSIM:
+- _clearSpecifiers
+- _SIMStatusChanged
+- meCardName:
+- showMeCardPicker:
+- contactsSortOrder:
+- setContactsSortOrder:specifier:
+- personNameOrder:
+- setPersonNameOrder:specifier:
+- footerText
+- shouldLoadSpecifiersLazily
+- initWithParentController:
+- _ctServerConnection
+- specifiers
+- headerText
+@end

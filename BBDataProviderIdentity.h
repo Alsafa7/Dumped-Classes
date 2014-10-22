@@ -1,0 +1,66 @@
+@interface BBDataProviderIdentity : NSObject
+{
+	struct _traits;
+	id _sectionIdentifier;
+	id _defaultSectionInfo;
+	id _sectionDisplayName;
+	id _sectionIcon;
+	id _sortDescriptors;
+	id _sectionParameters;
+	id _defaultSubsectionInfos;
+	id _subsectionDisplayNames;
+	id _sortKey;
+	BOOL _syncsBulletinDismissal;
+}
+
++ sortKey
++ dealloc
++ initWithCoder:
++ encodeWithCoder:
++ description
++ traits
++ setSortDescriptors:
++ sectionIdentifier
++ setSectionIdentifier:
++ syncsBulletinDismissal
++ sectionParameters
++ sectionDisplayName
++ sectionIcon
++ initForDataProvider:
++ defaultSectionInfo
++ defaultSubsectionInfos
++ setSortKey:
++ setDefaultSectionInfo:
++ setSectionDisplayName:
++ setSectionIcon:
++ setSectionParameters:
++ setDefaultSubsectionInfos:
++ subsectionDisplayNames
++ setSubsectionDisplayNames:
++ sortDescriptors
+- sortKey
+- dealloc
+- initWithCoder:
+- encodeWithCoder:
+- description
+- traits
+- setSortDescriptors:
+- sectionIdentifier
+- setSectionIdentifier:
+- syncsBulletinDismissal
+- sectionParameters
+- sectionDisplayName
+- sectionIcon
+- initForDataProvider:
+- defaultSectionInfo
+- defaultSubsectionInfos
+- setSortKey:
+- setDefaultSectionInfo:
+- setSectionDisplayName:
+- setSectionIcon:
+- setSectionParameters:
+- setDefaultSubsectionInfos:
+- subsectionDisplayNames
+- setSubsectionDisplayNames:
+- sortDescriptors
+@end

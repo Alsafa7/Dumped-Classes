@@ -1,0 +1,305 @@
+@interface UIPopoverController : NSObject
+{
+	id _delegate;
+	id _contentViewController;
+	id _splitParentController;
+	id _popoverView;
+	id _dimmingView;
+	id _layoutConstraintView;
+	struct _targetRectInEmbeddingView;
+	id _targetBarButtonItem;
+	usigned long long _requestedArrowDirections;
+	usigned long long _currentArrowDirection;
+	long long _popoverBackgroundStyle;
+	id _backgroundColor;
+	id _preferredLayoutInfo;
+	Class _popoverBackgroundViewClass;
+	struct _popoverContentSize;
+	struct _targetRectInDimmingView;
+	struct _embeddedTargetRect;
+	long long _popoverControllerStyle;
+	BOOL _ignoresKeyboardNotifications;
+	id _currentPresentationView;
+	struct _currentPresentationRectInView;
+	usigned long long _originalArrowDirections;
+	unsigned int draggingChildScrollViewCount;
+	id _target;
+	SEL _didEndSelector;
+	id _modalPresentationFromViewController;
+	id _modalPresentationToViewController;
+	usigned long long _toViewAutoResizingMask;
+	id _slidingViewController;
+	id _presentingView;
+	usigned long long _presentationEdge;
+	long long _presentationDirection;
+	int _presentationState;
+	BOOL _didPresentInActiveSequence;
+	usigned long long _slideTransitionCount;
+	id _vendedGestureRecognizer;
+	id _dimmingViewGestureRecognizer;
+	struct _popoverControllerFlags;
+	BOOL _allowResizePastTargetRect;
+	BOOL _dismissesOnRotation;
+	BOOL _showsTargetRect;
+	BOOL _showsOrientationMarker;
+	BOOL _showsPresentationArea;
+	BOOL _retainsSelfWhilePresented;
+	usigned long long _popoverArrowDirection;
+	struct _popoverLayoutMargins;
+}
+
++ copyScriptPopOver
++ dealloc
++ setBackgroundColor:
++ backgroundColor
++ setDelegate:
++ init
++ delegate
++ _gestureRecognizer:shouldBeRequiredToFailByGestureRecognizer:
++ _gestureRecognizerShouldBegin:
++ _popoverControllerStyle
++ _gestureRecognizer:shouldRequireFailureOfGestureRecognizer:
++ contentViewController
++ _embedsInView
++ setPopoverContentSize:animated:
++ _containedViewControllerModalStateChanged
++ _popoverBackgroundStyle
++ popoverView
++ _popoverBackgroundViewWantsDefaultContentAppearance
++ dismissPopoverAnimated:
++ _manuallyHandlesContentViewControllerAppearanceCalls
++ isPopoverVisible
++ _modalTransition:fromViewController:toViewController:target:didEndSelector:
++ _dimmingView
++ _splitParentController
++ _adjustPopoverForNewContentSizeFromViewController:allowShrink:
++ _newViewControllerWillBePushed:
++ _newViewControllerWasPushed:
++ dimmingViewWasTapped:
++ passthroughViews
++ setPassthroughViews:
++ initWithContentViewController:
++ setContentViewController:
++ presentPopoverFromRect:inView:permittedArrowDirections:animated:
++ _setManagingSplitViewController:
++ _gestureRecognizerForPresentationFromEdge:
++ _setGesturesEnabled:
++ _initWithContentViewController:popoverControllerStyle:
++ setPopoverBackgroundViewClass:
++ presentPopoverFromBarButtonItem:permittedArrowDirections:animated:
++ _presentPopoverFromEdge:ofView:animated:
++ _dismissPopoverAnimated:stateOnly:notifyDelegate:
++ _slideTransitionCount
++ _setPopoverBackgroundStyle:
++ dimmingView
++ _setRetainsSelfWhilePresented:
++ _performHierarchyCheckOnViewController:
++ _transitionFromViewController:toViewController:animated:
++ _swipe:
++ setContentViewController:animated:
++ setAllowResizePastTargetRect:
++ _layoutInfoForCurrentKeyboardState
++ _presentationAnimationDuration
++ setPreferredLayoutInfo:
++ _isPresenting
++ setPopoverFrame:animated:
++ _layoutDimmingViewForInterfaceOrientationOfHostingWindow:
++ _managingSplitViewController
++ _popoverLayoutInfoForChromeClass:
++ _layoutInfoFromLayoutInfo:forCurrentKeyboardStateAndHostingWindow:
++ _startWatchingForKeyboardNotificationsIfNecessary
++ _layoutInfoForCurrentKeyboardStateAndHostingWindow:
++ _incrementSlideTransitionCount:
++ _startWatchingForWindowRotations
++ _completionBlockForDismissalWhenNotifyingDelegate:
++ _presentationState
++ _setPresentationState:
++ _setPresentingView:
++ _setPresentationEdge:
++ _postludeForDismissal
++ _resetSlideTransitionCount
++ _presentPopoverBySlidingIn:fromEdge:ofView:animated:stateOnly:notifyDelegate:
++ _defaultChromeViewClass
++ _centerPointForScale:frame:anchor:
++ _presentPopoverFromRect:embeddedInView:usingViewForLayoutConstraints:permittedArrowDirections:animate:
++ _shimPresentSlidingPopoverAnimated:
++ isPresentingOrDismissing
++ _startWatchingForScrollViewNotifications
++ _commonPresentPopoverFromRect:inView:permittedArrowDirections:animated:
++ _updateDimmingViewTransformForInterfaceOrientationOfHostingWindow:
++ _beginMapsTransitionToNewViewController:newTargetRect:inView:arrowDirections:slideDuration:expandDuration:
++ _setSplitParentController:
++ _setPopoverView:
++ _stopWatchingForNotifications
++ _dismissalAnimationDuration
++ _isDismissing
++ _attemptsToAvoidKeyboard
++ _moveAwayFromTheKeyboard:
++ _keyboardStateChanged:
++ _invalidateLayoutInfo
++ _canRepresentAutomatically
++ _hostingWindowWillRotate:
++ _hostingWindowDidRotate:
++ _scrollViewWillBeginDragging:
++ _scrollViewDidEndDragging:
++ _stopWatchingForKeyboardNotifications
++ _stopWatchingForScrollViewNotifications
++ _stopWatchingForWindowRotations
++ _currentPopoverContentSize
++ _modalAnimation:finished:context:
++ popoverContentSize
++ setPopoverContentSize:
++ popoverArrowDirection
++ _presentPopoverFromRect:embeddedInView:usingViewForLayoutConstraints:permittedArrowDirections:
++ _setContentViewController:backgroundStyle:animated:
++ _beginMapsTransitionToNewViewController:arrowDirections:slideDuration:expandDuration:
++ _startWatchingForNavigationControllerNotifications:
++ _stopWatchingForNavigationControllerNotifications:
++ _ignoresKeyboardNotifications
++ _setIgnoresKeyboardNotifications:
++ setDimmingView:
++ allowResizePastTargetRect
++ dismissesOnRotation
++ setDismissesOnRotation:
++ popoverLayoutMargins
++ setPopoverLayoutMargins:
++ popoverBackgroundViewClass
++ showsTargetRect
++ setShowsTargetRect:
++ showsOrientationMarker
++ setShowsOrientationMarker:
++ showsPresentationArea
++ setShowsPresentationArea:
++ _retainsSelfWhilePresented
++ preferredLayoutInfo
++ _presentingView
++ _presentationEdge
++ setPopoverArrowDirection:
+- copyScriptPopOver
+- dealloc
+- setBackgroundColor:
+- backgroundColor
+- setDelegate:
+- init
+- delegate
+- _gestureRecognizer:shouldBeRequiredToFailByGestureRecognizer:
+- _gestureRecognizerShouldBegin:
+- _popoverControllerStyle
+- _gestureRecognizer:shouldRequireFailureOfGestureRecognizer:
+- contentViewController
+- _embedsInView
+- setPopoverContentSize:animated:
+- _containedViewControllerModalStateChanged
+- _popoverBackgroundStyle
+- popoverView
+- _popoverBackgroundViewWantsDefaultContentAppearance
+- dismissPopoverAnimated:
+- _manuallyHandlesContentViewControllerAppearanceCalls
+- isPopoverVisible
+- _modalTransition:fromViewController:toViewController:target:didEndSelector:
+- _dimmingView
+- _splitParentController
+- _adjustPopoverForNewContentSizeFromViewController:allowShrink:
+- _newViewControllerWillBePushed:
+- _newViewControllerWasPushed:
+- dimmingViewWasTapped:
+- passthroughViews
+- setPassthroughViews:
+- initWithContentViewController:
+- setContentViewController:
+- presentPopoverFromRect:inView:permittedArrowDirections:animated:
+- _setManagingSplitViewController:
+- _gestureRecognizerForPresentationFromEdge:
+- _setGesturesEnabled:
+- _initWithContentViewController:popoverControllerStyle:
+- setPopoverBackgroundViewClass:
+- presentPopoverFromBarButtonItem:permittedArrowDirections:animated:
+- _presentPopoverFromEdge:ofView:animated:
+- _dismissPopoverAnimated:stateOnly:notifyDelegate:
+- _slideTransitionCount
+- _setPopoverBackgroundStyle:
+- dimmingView
+- _setRetainsSelfWhilePresented:
+- _performHierarchyCheckOnViewController:
+- _transitionFromViewController:toViewController:animated:
+- _swipe:
+- setContentViewController:animated:
+- setAllowResizePastTargetRect:
+- _layoutInfoForCurrentKeyboardState
+- _presentationAnimationDuration
+- setPreferredLayoutInfo:
+- _isPresenting
+- setPopoverFrame:animated:
+- _layoutDimmingViewForInterfaceOrientationOfHostingWindow:
+- _managingSplitViewController
+- _popoverLayoutInfoForChromeClass:
+- _layoutInfoFromLayoutInfo:forCurrentKeyboardStateAndHostingWindow:
+- _startWatchingForKeyboardNotificationsIfNecessary
+- _layoutInfoForCurrentKeyboardStateAndHostingWindow:
+- _incrementSlideTransitionCount:
+- _startWatchingForWindowRotations
+- _completionBlockForDismissalWhenNotifyingDelegate:
+- _presentationState
+- _setPresentationState:
+- _setPresentingView:
+- _setPresentationEdge:
+- _postludeForDismissal
+- _resetSlideTransitionCount
+- _presentPopoverBySlidingIn:fromEdge:ofView:animated:stateOnly:notifyDelegate:
+- _defaultChromeViewClass
+- _centerPointForScale:frame:anchor:
+- _presentPopoverFromRect:embeddedInView:usingViewForLayoutConstraints:permittedArrowDirections:animate:
+- _shimPresentSlidingPopoverAnimated:
+- isPresentingOrDismissing
+- _startWatchingForScrollViewNotifications
+- _commonPresentPopoverFromRect:inView:permittedArrowDirections:animated:
+- _updateDimmingViewTransformForInterfaceOrientationOfHostingWindow:
+- _beginMapsTransitionToNewViewController:newTargetRect:inView:arrowDirections:slideDuration:expandDuration:
+- _setSplitParentController:
+- _setPopoverView:
+- _stopWatchingForNotifications
+- _dismissalAnimationDuration
+- _isDismissing
+- _attemptsToAvoidKeyboard
+- _moveAwayFromTheKeyboard:
+- _keyboardStateChanged:
+- _invalidateLayoutInfo
+- _canRepresentAutomatically
+- _hostingWindowWillRotate:
+- _hostingWindowDidRotate:
+- _scrollViewWillBeginDragging:
+- _scrollViewDidEndDragging:
+- _stopWatchingForKeyboardNotifications
+- _stopWatchingForScrollViewNotifications
+- _stopWatchingForWindowRotations
+- _currentPopoverContentSize
+- _modalAnimation:finished:context:
+- popoverContentSize
+- setPopoverContentSize:
+- popoverArrowDirection
+- _presentPopoverFromRect:embeddedInView:usingViewForLayoutConstraints:permittedArrowDirections:
+- _setContentViewController:backgroundStyle:animated:
+- _beginMapsTransitionToNewViewController:arrowDirections:slideDuration:expandDuration:
+- _startWatchingForNavigationControllerNotifications:
+- _stopWatchingForNavigationControllerNotifications:
+- _ignoresKeyboardNotifications
+- _setIgnoresKeyboardNotifications:
+- setDimmingView:
+- allowResizePastTargetRect
+- dismissesOnRotation
+- setDismissesOnRotation:
+- popoverLayoutMargins
+- setPopoverLayoutMargins:
+- popoverBackgroundViewClass
+- showsTargetRect
+- setShowsTargetRect:
+- showsOrientationMarker
+- setShowsOrientationMarker:
+- showsPresentationArea
+- setShowsPresentationArea:
+- _retainsSelfWhilePresented
+- preferredLayoutInfo
+- _presentingView
+- _presentationEdge
+- setPopoverArrowDirection:
+@end

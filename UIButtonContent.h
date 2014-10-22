@@ -1,0 +1,61 @@
+@interface UIButtonContent : NSObject
+{
+	id title;
+	id attributedTitle;
+	id image;
+	id background;
+	id titleColor;
+	id imageColor;
+	id shadowColor;
+	id drawingStroke;
+}
+
++ dealloc
++ setImage:
++ initWithCoder:
++ encodeWithCoder:
++ setAttributedTitle:
++ setTitle:
++ description
++ copyWithZone:
++ isEmpty
++ image
++ setShadowColor:
++ title
++ shadowColor
++ letterpressStyle
++ setLetterpressStyle:
++ attributedTitle
++ background
++ setBackground:
++ titleColor
++ setTitleColor:
++ imageColor
++ setImageColor:
++ drawingStroke
++ setDrawingStroke:
+- dealloc
+- setImage:
+- initWithCoder:
+- encodeWithCoder:
+- setAttributedTitle:
+- setTitle:
+- description
+- copyWithZone:
+- isEmpty
+- image
+- setShadowColor:
+- title
+- shadowColor
+- letterpressStyle
+- setLetterpressStyle:
+- attributedTitle
+- background
+- setBackground:
+- titleColor
+- setTitleColor:
+- imageColor
+- setImageColor:
+- drawingStroke
+- setDrawingStroke:
+@end

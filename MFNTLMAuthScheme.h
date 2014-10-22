@@ -1,0 +1,6 @@
+@interface MFNTLMAuthScheme : MFAuthScheme
+{
+
+}
+
+@end

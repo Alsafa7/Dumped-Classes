@@ -1,0 +1,115 @@
+@interface WeatherPreferences : NSObject
+{
+	BOOL _isCelsius;
+	id _UUID;
+	id _serviceHost;
+	BOOL _serviceDebugging;
+	id _lastUbiquitousWrittenDefaults;
+	id _syncDelegate;
+	id _yahooWeatherURLString;
+	id _twcURLString;
+}
+
++ _cacheDirectoryPath
++ dealloc
++ init
++ UUID
++ readDefaultValueForKey:
++ isCelsius
++ _synchronizedDefaultsDidChange:
++ readTemperatureUnits
++ setCelsius:
++ synchronizeStateToDisk
++ registerTemperatureUnits
++ _defaultsCurrent
++ cityFromPreferencesDictionary:
++ isLocalWeatherEnabled
++ preferencesDictionaryForCity:
++ saveToDiskWithCities:
++ _ppt_addFakeTestCities
++ _defaultsAreValid
++ _defaultCities
++ loadActiveCity
++ setActiveCity:
++ twcURLString
++ yahooWeatherURLString
++ _areDefaultCities:
++ loadSavedCities
++ combineCloudCities:withExisting:byAppending:
++ _setLastUbiquitousWrittenDefaults:isCloudCityArray:
++ saveToDiskWithCities:activeCity:
++ _cityArrayToCloudCityArray:
++ _syncToCloudIfNotDefaultCities:
++ _saveUbiquitousDefaults:
++ resetLocale
++ setSyncDelegate:
++ setYahooWeatherURLString:
++ localWeatherCity
++ saveToDiskWithLocalWeatherCity:
++ loadSavedCityAtIndex:
++ saveToDiskWithCity:forActiveIndex:
++ serviceHost
++ twcLogoURL
++ yahooLogoURL
++ logoButtonImage
++ primaryBacksideLogoImage
++ secondBacksideLogoImage
++ writeDefaultValue:forKey:
++ setLocalWeatherEnabled:
++ serviceDebugging
++ saveToUbiquitousStore
++ _clearCachedObjects
++ syncDelegate
++ setTwcURLString:
+- _cacheDirectoryPath
+- dealloc
+- init
+- UUID
+- readDefaultValueForKey:
+- isCelsius
+- _synchronizedDefaultsDidChange:
+- readTemperatureUnits
+- setCelsius:
+- synchronizeStateToDisk
+- registerTemperatureUnits
+- _defaultsCurrent
+- cityFromPreferencesDictionary:
+- isLocalWeatherEnabled
+- preferencesDictionaryForCity:
+- saveToDiskWithCities:
+- _ppt_addFakeTestCities
+- _defaultsAreValid
+- _defaultCities
+- loadActiveCity
+- setActiveCity:
+- twcURLString
+- yahooWeatherURLString
+- _areDefaultCities:
+- loadSavedCities
+- combineCloudCities:withExisting:byAppending:
+- _setLastUbiquitousWrittenDefaults:isCloudCityArray:
+- saveToDiskWithCities:activeCity:
+- _cityArrayToCloudCityArray:
+- _syncToCloudIfNotDefaultCities:
+- _saveUbiquitousDefaults:
+- resetLocale
+- setSyncDelegate:
+- setYahooWeatherURLString:
+- localWeatherCity
+- saveToDiskWithLocalWeatherCity:
+- loadSavedCityAtIndex:
+- saveToDiskWithCity:forActiveIndex:
+- serviceHost
+- twcLogoURL
+- yahooLogoURL
+- logoButtonImage
+- primaryBacksideLogoImage
+- secondBacksideLogoImage
+- writeDefaultValue:forKey:
+- setLocalWeatherEnabled:
+- serviceDebugging
+- saveToUbiquitousStore
+- _clearCachedObjects
+- syncDelegate
+- setTwcURLString:
+@end

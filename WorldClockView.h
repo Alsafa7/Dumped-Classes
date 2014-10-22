@@ -1,0 +1,115 @@
+@interface WorldClockView : UIView
+{
+	int _appearance;
+	int _orientation;
+	id _city;
+	id _timeZone;
+	id _backgroundHost;
+	id _analogClock;
+	id _addClockButton;
+	id _highlightImageView;
+	double _highlightAlpha;
+	id _nameLabel;
+	id _dayLabel;
+	id _weatherLabel;
+	id _listButton;
+	id _timeFormatter;
+	id _dayFormatter;
+	long long _nowInMinutes;
+}
+
++ handleLocaleChange
++ updateAppearanceIfNeeded
++ weatherDataUpdated
++ addClockButton
++ weatherLabel
++ dayLabel
++ listButton
++ updateHighlightWithImage:
++ updateFullscreenBackground
++ appearanceOrientationFromCurrentInterfaceOrientation
++ doesAppearanceOrientationMatchInterfaceOrientation
++ setupWorldClockAppearanceTile
++ setupWorldClockAppearanceTileAdd
++ setupWorldClockAppearanceFullScreenPortraitUpdatingOrientationOnly:
++ setupWorldClockAppearanceFullScreenLandscapeUpdatingOrientationOnly:
++ removeAddButton
++ removeAnalogClock
++ handleMidnightCrossing
++ handleNighttimeChange
++ handleNoonCrossing
++ updateColorThemeForTile
++ updateDay
++ updateColorThemeForFullscreen
++ setupAnalogClockForStyle:
++ setupTimeDependentAppearanceProperties
++ setTileHighlighted:
++ updateCombinedTime
++ setupAddButton
++ isTileHighlighted
++ setBackgroundHost:
++ backgroundHost
++ city
++ setCity:
++ nameLabel
++ initWithFrame:
++ dealloc
++ layoutSubviews
++ appearance
++ start
++ updateInterval
++ stop
++ coarseUpdateInterval
++ updateTimeContinuously:
++ runMode
++ analogClock
++ updateTime
++ setAppearance:
+- handleLocaleChange
+- updateAppearanceIfNeeded
+- weatherDataUpdated
+- addClockButton
+- weatherLabel
+- dayLabel
+- listButton
+- updateHighlightWithImage:
+- updateFullscreenBackground
+- appearanceOrientationFromCurrentInterfaceOrientation
+- doesAppearanceOrientationMatchInterfaceOrientation
+- setupWorldClockAppearanceTile
+- setupWorldClockAppearanceTileAdd
+- setupWorldClockAppearanceFullScreenPortraitUpdatingOrientationOnly:
+- setupWorldClockAppearanceFullScreenLandscapeUpdatingOrientationOnly:
+- removeAddButton
+- removeAnalogClock
+- handleMidnightCrossing
+- handleNighttimeChange
+- handleNoonCrossing
+- updateColorThemeForTile
+- updateDay
+- updateColorThemeForFullscreen
+- setupAnalogClockForStyle:
+- setupTimeDependentAppearanceProperties
+- setTileHighlighted:
+- updateCombinedTime
+- setupAddButton
+- isTileHighlighted
+- setBackgroundHost:
+- backgroundHost
+- city
+- setCity:
+- nameLabel
+- initWithFrame:
+- dealloc
+- layoutSubviews
+- appearance
+- start
+- updateInterval
+- stop
+- coarseUpdateInterval
+- updateTimeContinuously:
+- runMode
+- analogClock
+- updateTime
+- setAppearance:
+@end

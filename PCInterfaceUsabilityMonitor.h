@@ -1,0 +1,84 @@
+@interface PCInterfaceUsabilityMonitor : NSObject
+{
+	pointer _delegateQueue;
+	pointer _ivarQueue;
+	long long _interfaceIdentifier;
+	id _interfaceName;
+	id _delegateReference;
+	pointer _reachability;
+	BOOL _isInternetReachable;
+	pointer _dynamicStore;
+	pointer _linkQualitySource;
+	pointer _lqKey;
+	int _linkQuality;
+	BOOL _trackUsability;
+	usigned long long _thresholdOffTransitionCount;
+	double _trackedTimeInterval;
+	id _offTransitions;
+}
+
++ dealloc
++ setDelegate:
++ init
++ delegate
++ isInterfaceUsable
++ isPoorLinkQuality
++ isInternetReachable
++ linkQualityString
++ isInterfaceHistoricallyUsable
++ _createLinkQualityMonitorOnIvarQueue
++ _createReachabilityMonitorOnIvarQueue
++ _unscheduleLinkQualityMonitorOnIvarQueue
++ _unscheduleReachabilityMonitorOnIvarQueue
++ _flushStaleTransitionsOnIvarQueue
++ _isInterfaceUsableOnIvarQueue
++ _isInterfaceHistoricallyUsableOnIvarQueue
++ _reachabilityCallbackOnIvarQueue:
++ _callDelegateOnIvarQueueWithBlock:
++ _updateOffTransitionsForLinkQualityChangeOnIvarQueue
++ _processLinkQualityUpdateOnIvarQueueWithUpdatedLinkQuality:
++ _dynamicStoreCallbackOnIvarQueue:
++ _dynamicStoreCallback:
++ setTrackedTimeInterval:
++ setThresholdOffTransitionCount:
++ setTrackUsability:
++ isRadioHot
++ interfaceIdentifier
++ initWithInterfaceName:interfaceIdentifier:delegateQueue:
++ _createReachabilityMonitor
++ _reachabilityCallback:
++ _createLinkQualityMonitor
++ linkQuality
+- dealloc
+- setDelegate:
+- init
+- delegate
+- isInterfaceUsable
+- isPoorLinkQuality
+- isInternetReachable
+- linkQualityString
+- isInterfaceHistoricallyUsable
+- _createLinkQualityMonitorOnIvarQueue
+- _createReachabilityMonitorOnIvarQueue
+- _unscheduleLinkQualityMonitorOnIvarQueue
+- _unscheduleReachabilityMonitorOnIvarQueue
+- _flushStaleTransitionsOnIvarQueue
+- _isInterfaceUsableOnIvarQueue
+- _isInterfaceHistoricallyUsableOnIvarQueue
+- _reachabilityCallbackOnIvarQueue:
+- _callDelegateOnIvarQueueWithBlock:
+- _updateOffTransitionsForLinkQualityChangeOnIvarQueue
+- _processLinkQualityUpdateOnIvarQueueWithUpdatedLinkQuality:
+- _dynamicStoreCallbackOnIvarQueue:
+- _dynamicStoreCallback:
+- setTrackedTimeInterval:
+- setThresholdOffTransitionCount:
+- setTrackUsability:
+- isRadioHot
+- interfaceIdentifier
+- initWithInterfaceName:interfaceIdentifier:delegateQueue:
+- _createReachabilityMonitor
+- _reachabilityCallback:
+- _createLinkQualityMonitor
+- linkQuality
+@end

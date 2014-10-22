@@ -1,0 +1,6 @@
+@interface CNFUIUtilities : NSObject
+{
+
+}
+
+@end

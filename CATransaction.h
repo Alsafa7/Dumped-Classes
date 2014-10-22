@@ -1,0 +1,6 @@
+@interface CATransaction : NSObject
+{
+
+}
+
+@end

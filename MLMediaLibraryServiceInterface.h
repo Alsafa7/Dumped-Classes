@@ -1,0 +1,6 @@
+@interface MLMediaLibraryServiceInterface : NSObject
+{
+
+}
+
+@end

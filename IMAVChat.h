@@ -1,0 +1,513 @@
+@interface IMAVChat : NSObject
+{
+	id _GUID;
+	id _conferenceID;
+	id _participants;
+	id _initiator;
+	id _localParticipant;
+	id _conferenceStateCache;
+	id _natType;
+	id _extraServerContext;
+	id _dateCreated;
+	id _dateStartedConnecting;
+	id _dateConnected;
+	id _dateEnded;
+	id _dateReceivedRelayInitiate;
+	id _dateReceivedRelayUpdate;
+	id _interruptionBegan;
+	id _pingTestResults;
+	id _frontCameraCaptureTime;
+	id _backCameraCaptureTime;
+	id _dataRate;
+	id _dataUploaded;
+	id _dataDownloaded;
+	id _timingCollection;
+	usigned long long _localNetworkConnectionType;
+	usigned long long _remoteNetworkConnectionType;
+	long long _pingTestResult;
+	long long _networkCheckResult;
+	id _callerProperties;
+	id _conferenceQueue;
+	id _inviteTimeoutTimer;
+	id _inviteTimeoutTimerStart;
+	id _firstFrameTimeoutTimer;
+	id _connectionTimeoutTimer;
+	id _breakBeforeMakeTimeoutTimer;
+	id _conferenceController;
+	unsigned int _sessionID;
+	id _error;
+	unsigned int _localState;
+	unsigned int _lastPostedState;
+	id _pendingPreemptiveRelayInitate;
+	id _callStatisticsGUID;
+	struct _portraitAspectRatios;
+	struct _landscapeAspectRatios;
+	double _connectionTimeoutTime;
+	double _invitationTimeoutTime;
+	BOOL _hasGatheredInfo;
+	BOOL _hasReceivedFirstFrame;
+	BOOL _hasPendingAccept;
+	BOOL _hasPendingInit;
+	BOOL _isTerminating;
+	BOOL _isCaller;
+	BOOL _isVideo;
+	BOOL _didRemoteMute;
+	BOOL _didRemotePause;
+	int _connectionType;
+	BOOL _needsVideoRestart;
+	BOOL _needsAudioRestart;
+	BOOL _airplaneModeEnabled;
+	BOOL _isVideoInterrupted;
+	BOOL _isAudioInterrupted;
+	BOOL _isCallUpgrade;
+	BOOL _startedAudioSession;
+	BOOL _connectionStarted;
+}
+
++ _submitCallStartedLoggingWithRecipientID:isCaller:isVideo:
++ _submitCallEndedLoggingWithReason:andError:
++ _submitCallConnectedLogging
++ _submitCallInterruptionBeganLogging
++ _submitCallInterruptionEndedLogging
++ __sendEndCallMetricToAWDWithReason:andError:
++ __sendEndCallMetricToViceroyWithReason:andError:
++ _proxyRepresentation
++ _proxyRepresentationForIMAVChatParticipant:
++ remoteParticipants
++ _peerID:changedTo:
++ _initParticipantsWithIMHandles:
++ _participantsCheckOut
++ initiatorParticipant
++ _insertRemoteParticipant:atIndex:
++ _participantMatchingVCPartyID:
++ _updateIMHandleInBuddyList:
++ _moveVCPartyID:toIndex:inCount:
++ _allParticipantsUsingICE
++ isActive
++ systemWillShutdown
++ systemApplicationDidEnterBackground
++ systemApplicationWillEnterForeground
++ systemApplicationDidBecomeActive
++ systemApplicationDidSuspend
++ systemApplicationDidResume
++ systemApplicationDidResumeForEventsOnly
++ notificationCenterWillAppear
++ notificationCenterDidDisappear
++ systemDidFastUserSwitchOut
++ _airplaneModeChanged:
++ _entitlementsChanged:
++ _postStateToDelegateIfNecessary
++ _setActiveConference
++ participant:changedFromState:toState:
++ isStateFinal
++ _resumeAudioState
++ _resumeVideoState
++ _saveVideoRestartState
++ _saveAudioRestartState
++ _handleRelayInitate:fromParticipant:
++ _handleRelayUpdate:fromParticipant:
++ _handleRelayCancel:fromParticipant:
++ isPaused
++ setPaused:
++ isSendingVideo
++ setIsSendingVideo:
++ hasReceivedFirstFrame
++ togglePaused
++ didRemotePause
++ setMute:
++ isSendingAudio
++ setIsSendingAudio:
++ isMute
++ toggleMute
++ setRemoteMute:
++ isRemoteMute
++ didRemoteMute
++ _vccInitDidFinish:
++ conferencePersonWithID:mediaDidStall:
++ _conferenceOtherParticipant:didConnect:
++ conferenceDidStopWithCallID:error:
++ conferenceAVConferenceCallID:didConnect:
++ conferencePersonWithID:didMute:
++ conferencePersonWithID:didPause:
++ conferencePersonWithID:didDegrade:
++ conferencePersonWithID:sendRelayRequest:
++ conferencePersonWithID:sendRelayUpdate:
++ conferencePersonWithID:sendRelayCancel:
++ conferencePersonWithID:localIPDidChange:
++ _clearConnectionTimeoutTimer
++ _clearFirstFrameTimeoutTimer
++ _clearInvitationTimeoutTimer
++ _clearBreakBeforeMakeTimer
++ _reduceInvitationTimeoutTime
++ _setBreakBeforeMakeTimer
++ _setInvitationTimeoutTimer
++ _setConnectionTimeoutTimer
++ _connectionTimeout:
++ _invitationTimeout:
++ _firstFrameTimeout:
++ _breakBeforeMakeTimer:
++ _setFirstFrameTimeoutTimer
++ setInvitationTimeoutTime:
++ setConnectionTimeoutTime:
++ invitationTimeoutTime
++ connectionTimeoutTime
++ setCameraType:
++ stopPreview
++ setLocalAspectRatio:cameraOrientation:cameraType:
++ localAspectRatioForCameraOrientation:cameraType:
++ startPreviewWithError:
++ _postParticipantMediaChangeNotification:cameraChanged:orientationChanged:aspectChanged:cameraWillSwitch:camera:orientation:aspect:
++ cameraType
++ cameraOrientation
++ setCameraOrientation:
++ setLocalVideoLayer:
++ localVideoLayer
++ localVideoBackLayer
++ setLocalVideoBackLayer:
++ _postNotificationName:userInfo:
++ participants
++ _clearCache
++ dealloc
++ description
++ state
++ isVideo
++ isCaller
++ sessionID
++ conferenceID
++ participantMatchingIMHandle:
++ localParticipant
++ otherIMHandle
++ initIncomingFrom:isVideo:callerProperties:
++ _setConferenceID:
++ _isVideoUpgradeTo:
++ _setIsCallUpgrade:
++ beginChat
++ cancelInvitation
++ endChat
++ declineInvitationWithResponse:
++ _responseToVCInvite:
++ _cancelInvitationWithReason:error:
++ handleGenericAVMessageFromParticipant:type:userInfo:
++ initiatorIMHandle
++ _timings
++ _initOutgoingTo:isVideo:GUID:
++ inviteAll
++ invite:additionalPeers:
++ _handleAVError:
++ _isCallUpgrade
++ _setCreationDate
++ _initWith:invitedBy:sessionID:GUID:video:extraProperties:
++ _setCallerProperties:
++ _endChatWithReason:andError:
++ _isCallUpgradeTo:
++ endChatWithReason:
++ _breakCallsIfNecessary:
++ endChatWithReason:error:
++ endedError
++ _processVCResponseDict:
++ __responseToVCInvite:
++ _handleGenericAVMessageFromParticipant:type:userInfo:handled:
++ _natType
++ dateConnected
++ dateEnded
++ _connectionType
++ _localNetworkConnectionType
++ initOutgoingTo:isVideo:
++ endChatWithError:
++ inviteesInfo
++ invite:
++ _setStateDisconnected
++ _applicationWillTerminate:
++ participantWithAVConferenceCallID:
++ participantWithID:
++ vcPartyIDForIMHandle:
++ _isProxy
++ _setDateConnected
++ _bustedCallID
++ isConferenceSilent
++ _remoteNatType
++ _currentNatType
++ _connectDuration
++ _callDuration
++ _relayConnectDuration
++ _usesRelay
++ isUsingWifi
++ _imHandles
++ _postNotificationName:participant:userInfo:
++ _noteFirstFrame
++ _cacheBool:forKey:
++ _hasCachedBoolForKey:
++ _cachedBoolForKey:
++ _conferenceQueue
++ _setConnectionType:
++ _callStatisticsGUID
++ _setCallStatisticsGUID:
++ _startedAudioSession
++ _setStartedAudioSession:
++ callerProperties
++ _setNatType:
++ _setLocalNetworkConnectionType:
++ _remoteNetworkConnectionType
++ _setRemoteNetworkConnectionType:
++ _needsAudioRestart
++ _setNeedsAudioRestart:
++ _needsVideoRestart
++ _setNeedsVideoRestart:
++ _interruptionBegan
++ _setInterruptionBegan:
++ _frontCameraCaptureTime
++ _setFrontCameraCaptureTime:
++ _backCameraCaptureTime
++ _setBackCameraCaptureTime:
++ _setDataRate:
++ _dataUploaded
++ _setDataUploaded:
++ _dataDownloaded
++ _setDataDownloaded:
++ _isVideoInterrupted
++ _setIsVideoInterrupted:
++ _isAudioInterrupted
++ _setIsAudioInterrupted:
++ _connectionStarted
++ _setConnectionStarted:
++ _setGUID:
++ _conferenceController
++ _setConferenceController:
++ _extraServerContext
++ _pingTestResults
++ _setPingTestResults:
++ _pingTestResult
++ _setPingTestResult:
++ _networkCheckResult
++ _setNetworkCheckResult:
++ acceptInvitation
++ declineInvitation
++ account
++ dateCreated
++ GUID
++ _dataRate
++ endedReason
+- _submitCallStartedLoggingWithRecipientID:isCaller:isVideo:
+- _submitCallEndedLoggingWithReason:andError:
+- _submitCallConnectedLogging
+- _submitCallInterruptionBeganLogging
+- _submitCallInterruptionEndedLogging
+- __sendEndCallMetricToAWDWithReason:andError:
+- __sendEndCallMetricToViceroyWithReason:andError:
+- _proxyRepresentation
+- _proxyRepresentationForIMAVChatParticipant:
+- remoteParticipants
+- _peerID:changedTo:
+- _initParticipantsWithIMHandles:
+- _participantsCheckOut
+- initiatorParticipant
+- _insertRemoteParticipant:atIndex:
+- _participantMatchingVCPartyID:
+- _updateIMHandleInBuddyList:
+- _moveVCPartyID:toIndex:inCount:
+- _allParticipantsUsingICE
+- isActive
+- systemWillShutdown
+- systemApplicationDidEnterBackground
+- systemApplicationWillEnterForeground
+- systemApplicationDidBecomeActive
+- systemApplicationDidSuspend
+- systemApplicationDidResume
+- systemApplicationDidResumeForEventsOnly
+- notificationCenterWillAppear
+- notificationCenterDidDisappear
+- systemDidFastUserSwitchOut
+- _airplaneModeChanged:
+- _entitlementsChanged:
+- _postStateToDelegateIfNecessary
+- _setActiveConference
+- participant:changedFromState:toState:
+- isStateFinal
+- _resumeAudioState
+- _resumeVideoState
+- _saveVideoRestartState
+- _saveAudioRestartState
+- _handleRelayInitate:fromParticipant:
+- _handleRelayUpdate:fromParticipant:
+- _handleRelayCancel:fromParticipant:
+- isPaused
+- setPaused:
+- isSendingVideo
+- setIsSendingVideo:
+- hasReceivedFirstFrame
+- togglePaused
+- didRemotePause
+- setMute:
+- isSendingAudio
+- setIsSendingAudio:
+- isMute
+- toggleMute
+- setRemoteMute:
+- isRemoteMute
+- didRemoteMute
+- _vccInitDidFinish:
+- conferencePersonWithID:mediaDidStall:
+- _conferenceOtherParticipant:didConnect:
+- conferenceDidStopWithCallID:error:
+- conferenceAVConferenceCallID:didConnect:
+- conferencePersonWithID:didMute:
+- conferencePersonWithID:didPause:
+- conferencePersonWithID:didDegrade:
+- conferencePersonWithID:sendRelayRequest:
+- conferencePersonWithID:sendRelayUpdate:
+- conferencePersonWithID:sendRelayCancel:
+- conferencePersonWithID:localIPDidChange:
+- _clearConnectionTimeoutTimer
+- _clearFirstFrameTimeoutTimer
+- _clearInvitationTimeoutTimer
+- _clearBreakBeforeMakeTimer
+- _reduceInvitationTimeoutTime
+- _setBreakBeforeMakeTimer
+- _setInvitationTimeoutTimer
+- _setConnectionTimeoutTimer
+- _connectionTimeout:
+- _invitationTimeout:
+- _firstFrameTimeout:
+- _breakBeforeMakeTimer:
+- _setFirstFrameTimeoutTimer
+- setInvitationTimeoutTime:
+- setConnectionTimeoutTime:
+- invitationTimeoutTime
+- connectionTimeoutTime
+- setCameraType:
+- stopPreview
+- setLocalAspectRatio:cameraOrientation:cameraType:
+- localAspectRatioForCameraOrientation:cameraType:
+- startPreviewWithError:
+- _postParticipantMediaChangeNotification:cameraChanged:orientationChanged:aspectChanged:cameraWillSwitch:camera:orientation:aspect:
+- cameraType
+- cameraOrientation
+- setCameraOrientation:
+- setLocalVideoLayer:
+- localVideoLayer
+- localVideoBackLayer
+- setLocalVideoBackLayer:
+- _postNotificationName:userInfo:
+- participants
+- _clearCache
+- dealloc
+- description
+- state
+- isVideo
+- isCaller
+- sessionID
+- conferenceID
+- participantMatchingIMHandle:
+- localParticipant
+- otherIMHandle
+- initIncomingFrom:isVideo:callerProperties:
+- _setConferenceID:
+- _isVideoUpgradeTo:
+- _setIsCallUpgrade:
+- beginChat
+- cancelInvitation
+- endChat
+- declineInvitationWithResponse:
+- _responseToVCInvite:
+- _cancelInvitationWithReason:error:
+- handleGenericAVMessageFromParticipant:type:userInfo:
+- initiatorIMHandle
+- _timings
+- _initOutgoingTo:isVideo:GUID:
+- inviteAll
+- invite:additionalPeers:
+- _handleAVError:
+- _isCallUpgrade
+- _setCreationDate
+- _initWith:invitedBy:sessionID:GUID:video:extraProperties:
+- _setCallerProperties:
+- _endChatWithReason:andError:
+- _isCallUpgradeTo:
+- endChatWithReason:
+- _breakCallsIfNecessary:
+- endChatWithReason:error:
+- endedError
+- _processVCResponseDict:
+- __responseToVCInvite:
+- _handleGenericAVMessageFromParticipant:type:userInfo:handled:
+- _natType
+- dateConnected
+- dateEnded
+- _connectionType
+- _localNetworkConnectionType
+- initOutgoingTo:isVideo:
+- endChatWithError:
+- inviteesInfo
+- invite:
+- _setStateDisconnected
+- _applicationWillTerminate:
+- participantWithAVConferenceCallID:
+- participantWithID:
+- vcPartyIDForIMHandle:
+- _isProxy
+- _setDateConnected
+- _bustedCallID
+- isConferenceSilent
+- _remoteNatType
+- _currentNatType
+- _connectDuration
+- _callDuration
+- _relayConnectDuration
+- _usesRelay
+- isUsingWifi
+- _imHandles
+- _postNotificationName:participant:userInfo:
+- _noteFirstFrame
+- _cacheBool:forKey:
+- _hasCachedBoolForKey:
+- _cachedBoolForKey:
+- _conferenceQueue
+- _setConnectionType:
+- _callStatisticsGUID
+- _setCallStatisticsGUID:
+- _startedAudioSession
+- _setStartedAudioSession:
+- callerProperties
+- _setNatType:
+- _setLocalNetworkConnectionType:
+- _remoteNetworkConnectionType
+- _setRemoteNetworkConnectionType:
+- _needsAudioRestart
+- _setNeedsAudioRestart:
+- _needsVideoRestart
+- _setNeedsVideoRestart:
+- _interruptionBegan
+- _setInterruptionBegan:
+- _frontCameraCaptureTime
+- _setFrontCameraCaptureTime:
+- _backCameraCaptureTime
+- _setBackCameraCaptureTime:
+- _setDataRate:
+- _dataUploaded
+- _setDataUploaded:
+- _dataDownloaded
+- _setDataDownloaded:
+- _isVideoInterrupted
+- _setIsVideoInterrupted:
+- _isAudioInterrupted
+- _setIsAudioInterrupted:
+- _connectionStarted
+- _setConnectionStarted:
+- _setGUID:
+- _conferenceController
+- _setConferenceController:
+- _extraServerContext
+- _pingTestResults
+- _setPingTestResults:
+- _pingTestResult
+- _setPingTestResult:
+- _networkCheckResult
+- _setNetworkCheckResult:
+- acceptInvitation
+- declineInvitation
+- account
+- dateCreated
+- GUID
+- _dataRate
+- endedReason
+@end

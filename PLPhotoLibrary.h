@@ -1,0 +1,303 @@
+@interface PLPhotoLibrary : NSObject
+{
+	BOOL _listeningForITunesSyncing;
+	BOOL _isTransient;
+	usigned long long _pendingTransactions;
+	pointer _allPhotos;
+	int _databaseMigrationKind;
+	id _transactionCompletionHandlers;
+	id _thumbnailManager;
+	id _allImportedPhotosAlbum;
+	id _lastImportedPhotosAlbum;
+	id _exifConversionCalendar;
+	id _photoStreamAlbumsByStreamID;
+	id _photoStreamAlbums;
+	id _imageFileExtensions;
+	id _rawImageFileExtensions;
+	id _audioFileExtensions;
+	id _extraVideoExtensions;
+	usigned long long _lastFetchedGPSCount;
+	usigned long long _insertedCountSinceLastFetchedGPSCount;
+	usigned long long _deletedCountSinceLastFetchedGPSCount;
+	usigned long long _newlyCompleteWithGPS;
+	id _cameraRollAlbum;
+	id _cameraSessionAlbum;
+	id _inFlightAssetsAlbum;
+	id managedObjectContext;
+}
+
++ dealloc
++ init
++ _init
++ performBlock:
++ managedObjectContext
++ initWithTransientContext:
++ loadDatabase
++ setManagedObjectContext:
++ _releaseThumbnailManager
++ copyAssetToCameraRoll:
++ _hasAtLeastOneItem:
++ _withDispatchGroup:synchronously:performTransaction:completionHandler:
++ _withDispatchGroup:synchronously:performBlock:completionHandler:
++ savedPhotosAlbum
++ removeInflightAssets:
++ albums
++ allPhotoStreamPhotosAlbum
++ photoStreamAlbumsForPreferences
++ photoStreamAlbums
++ existingObjectWithID:error:
++ assetWithUUID:inContainer:
++ performTransaction:completionHandler:
++ globalValueForKey:
++ setGlobalValue:forKey:
++ _deleteObsoleteMetadataFiles
++ _safeSave:
++ _calculatePendingItemCountsAfterOTARestoreWithMangedObjectContext:
++ _allAssetsForDeletion:
++ _batchDeleteAssets:inManagedObjectContext:
++ _removeSyncedAlbumsInTransactionWithManagedObjectContext:
++ _linkAsideAlbumMetadataForOTARestore
++ prepareDatabaseForOTAAssetsPhase
++ allImportedPhotosAlbumCreateIfNeeded:
++ lastImportedPhotosAlbumCreateIfNeeded:
++ _updateHasAtLeastOnePhotoWithGPSWithInsertedCount:deletedCount:updatedAssets:
++ allPhotosAlbum
++ iPadAllPhotosAlbum
++ newImageForPhoto:format:
++ thumbnailManager
++ newImageForPhoto:format:outImageProperties:
++ addDCIMEntryAtFileURL:toEvent:sidecarFileInfo:progress:importSessionIdentifier:isImported:previewImage:thumbnailImage:savedAssetType:replacementUUID:publicGlobalUUID:extendedInfo:thumbnailsData:withUUID:
++ allImportedPhotosAlbum
++ priorityForFileExtension:
++ _loadFileExtensionInformation
++ isVideoFileExtension:
++ isNonRawImageFileExtension:
++ isRawImageFileExtension:
++ isAudioFileExtension:
++ cleanupFilesAfteriTunesSyncBeforeDate:
++ syncProgressAlbum
++ eventAlbumContainingPhoto:
++ albumListForContentMode:
++ imagePickerAlbums
++ otaRestoreProgressAlbum
++ filesystemImportProgressAlbum
++ syncProgressAlbums
++ hasCompletedRestorePostProcessing
++ _hasPendingAssets
++ hasCompletedMomentAnalysis
++ testForRecoveryInBackground
++ flushDCIMAlbums
++ flushPhotoStreamAlbums
++ flushAlbums
++ countOfAllPhotosAndVideos
++ clientApplicationWillEnterForeground
++ photoLibraryCorruptNotification
++ hasAtLeastOneItem
++ hasAtLeastOnePhoto
++ deleteImages:
++ deleteAllImages
++ performTransaction:
++ performTransactionAndWait:
++ performTransactionAndWait:completionHandler:
++ addCompletionHandlerToCurrentTransaction:
++ performBlock:completionHandler:
++ performBlockAndWait:completionHandler:
++ withDispatchGroup:performTransaction:
++ withDispatchGroup:performTransaction:completionHandler:
++ withDispatchGroup:performBlock:
++ inFlightAssetsAlbum
++ inFlightAssetsAlbumIfAvailable
++ addInflightAsset:
++ eventWithName:andImportSessionIdentifier:
++ albumWithUuid:
++ userAlbums
++ wallpaperAlbums
++ importAlbums
++ eventAlbums
++ faceAlbums
++ placeAlbums
++ userDeleteAlbums:
++ albumListForAlbumOfKind:
++ countOfLocalAlbumsContainingAssets:assetsInSomeAlbumCount:
++ objectWithObjectID:
++ assetWithUUID:
++ userDeleteAssets:
++ addToKnownPhotoStreamAlbums:
++ removeFromKnownPhotoStreamAlbums:
++ duplicatePhotoStreamPhotosForPhotos:
++ lastImportSessionUUID
++ setLastImportSessionUUID:
++ assetURLForPhoto:extension:
++ assetURLForPhoto:
++ assetURLForManagedPhoto:
++ photoFromAssetURL:
++ albumFromGroupURL:
++ handleAssetsLibrarySetGlobalMessage:userInfo:
++ handleAssetsLibraryGetGlobalMessage:userInfo:
++ _migrationDidFinish
++ cleanupModelAfterRestoreFromiTunesBackup
++ cleanupForStoreDemoMode
++ isTransient
++ concurrencyType
++ managedObjectWithObjectID:
++ needsMigration
++ recreateAlbumsFromMetadata
++ lastImportedPhotosAlbum
++ resetCachedImportAlbumsIfNeededForAlbum:
++ hasAtLeastOnePhotoWithGPS
++ _updateWithInsertedAssetsCount:deletedCount:updatedAssets:
++ syncedAlbums
++ editableAlbumCount
++ allPhotosAlbumIfExists
++ iPadAllPhotosAlbumIfExists
++ imageForFormat:forAsset:
++ dataForPhoto:format:width:height:bytesPerRow:dataWidth:dataHeight:imageDataOffset:
++ modifyDCIMEntryForPhoto:
++ addDCIMEntryAtFileURL:toEvent:sidecarFileInfo:progress:importSessionIdentifier:isImported:previewImage:thumbnailImage:savedAssetType:replacementUUID:extendedInfo:thumbnailsData:withUUID:
++ masterURLFromSidecarURLs:
++ masterFilenameFromSidecarFileInfo:
++ isImageFileExtension:
++ hasPhotoWithFileCreationDate:fileName:fileSize:
++ processSyncSaveJob:albumMap:
++ isPhotoInSavedPhotosAlbum:
++ albumsForContentMode:
++ getPhotoCount:videoCount:
++ librarySizes
+- dealloc
+- init
+- _init
+- performBlock:
+- managedObjectContext
+- initWithTransientContext:
+- loadDatabase
+- setManagedObjectContext:
+- _releaseThumbnailManager
+- copyAssetToCameraRoll:
+- _hasAtLeastOneItem:
+- _withDispatchGroup:synchronously:performTransaction:completionHandler:
+- _withDispatchGroup:synchronously:performBlock:completionHandler:
+- savedPhotosAlbum
+- removeInflightAssets:
+- albums
+- allPhotoStreamPhotosAlbum
+- photoStreamAlbumsForPreferences
+- photoStreamAlbums
+- existingObjectWithID:error:
+- assetWithUUID:inContainer:
+- performTransaction:completionHandler:
+- globalValueForKey:
+- setGlobalValue:forKey:
+- _deleteObsoleteMetadataFiles
+- _safeSave:
+- _calculatePendingItemCountsAfterOTARestoreWithMangedObjectContext:
+- _allAssetsForDeletion:
+- _batchDeleteAssets:inManagedObjectContext:
+- _removeSyncedAlbumsInTransactionWithManagedObjectContext:
+- _linkAsideAlbumMetadataForOTARestore
+- prepareDatabaseForOTAAssetsPhase
+- allImportedPhotosAlbumCreateIfNeeded:
+- lastImportedPhotosAlbumCreateIfNeeded:
+- _updateHasAtLeastOnePhotoWithGPSWithInsertedCount:deletedCount:updatedAssets:
+- allPhotosAlbum
+- iPadAllPhotosAlbum
+- newImageForPhoto:format:
+- thumbnailManager
+- newImageForPhoto:format:outImageProperties:
+- addDCIMEntryAtFileURL:toEvent:sidecarFileInfo:progress:importSessionIdentifier:isImported:previewImage:thumbnailImage:savedAssetType:replacementUUID:publicGlobalUUID:extendedInfo:thumbnailsData:withUUID:
+- allImportedPhotosAlbum
+- priorityForFileExtension:
+- _loadFileExtensionInformation
+- isVideoFileExtension:
+- isNonRawImageFileExtension:
+- isRawImageFileExtension:
+- isAudioFileExtension:
+- cleanupFilesAfteriTunesSyncBeforeDate:
+- syncProgressAlbum
+- eventAlbumContainingPhoto:
+- albumListForContentMode:
+- imagePickerAlbums
+- otaRestoreProgressAlbum
+- filesystemImportProgressAlbum
+- syncProgressAlbums
+- hasCompletedRestorePostProcessing
+- _hasPendingAssets
+- hasCompletedMomentAnalysis
+- testForRecoveryInBackground
+- flushDCIMAlbums
+- flushPhotoStreamAlbums
+- flushAlbums
+- countOfAllPhotosAndVideos
+- clientApplicationWillEnterForeground
+- photoLibraryCorruptNotification
+- hasAtLeastOneItem
+- hasAtLeastOnePhoto
+- deleteImages:
+- deleteAllImages
+- performTransaction:
+- performTransactionAndWait:
+- performTransactionAndWait:completionHandler:
+- addCompletionHandlerToCurrentTransaction:
+- performBlock:completionHandler:
+- performBlockAndWait:completionHandler:
+- withDispatchGroup:performTransaction:
+- withDispatchGroup:performTransaction:completionHandler:
+- withDispatchGroup:performBlock:
+- inFlightAssetsAlbum
+- inFlightAssetsAlbumIfAvailable
+- addInflightAsset:
+- eventWithName:andImportSessionIdentifier:
+- albumWithUuid:
+- userAlbums
+- wallpaperAlbums
+- importAlbums
+- eventAlbums
+- faceAlbums
+- placeAlbums
+- userDeleteAlbums:
+- albumListForAlbumOfKind:
+- countOfLocalAlbumsContainingAssets:assetsInSomeAlbumCount:
+- objectWithObjectID:
+- assetWithUUID:
+- userDeleteAssets:
+- addToKnownPhotoStreamAlbums:
+- removeFromKnownPhotoStreamAlbums:
+- duplicatePhotoStreamPhotosForPhotos:
+- lastImportSessionUUID
+- setLastImportSessionUUID:
+- assetURLForPhoto:extension:
+- assetURLForPhoto:
+- assetURLForManagedPhoto:
+- photoFromAssetURL:
+- albumFromGroupURL:
+- handleAssetsLibrarySetGlobalMessage:userInfo:
+- handleAssetsLibraryGetGlobalMessage:userInfo:
+- _migrationDidFinish
+- cleanupModelAfterRestoreFromiTunesBackup
+- cleanupForStoreDemoMode
+- isTransient
+- concurrencyType
+- managedObjectWithObjectID:
+- needsMigration
+- recreateAlbumsFromMetadata
+- lastImportedPhotosAlbum
+- resetCachedImportAlbumsIfNeededForAlbum:
+- hasAtLeastOnePhotoWithGPS
+- _updateWithInsertedAssetsCount:deletedCount:updatedAssets:
+- syncedAlbums
+- editableAlbumCount
+- allPhotosAlbumIfExists
+- iPadAllPhotosAlbumIfExists
+- imageForFormat:forAsset:
+- dataForPhoto:format:width:height:bytesPerRow:dataWidth:dataHeight:imageDataOffset:
+- modifyDCIMEntryForPhoto:
+- addDCIMEntryAtFileURL:toEvent:sidecarFileInfo:progress:importSessionIdentifier:isImported:previewImage:thumbnailImage:savedAssetType:replacementUUID:extendedInfo:thumbnailsData:withUUID:
+- masterURLFromSidecarURLs:
+- masterFilenameFromSidecarFileInfo:
+- isImageFileExtension:
+- hasPhotoWithFileCreationDate:fileName:fileSize:
+- processSyncSaveJob:albumMap:
+- isPhotoInSavedPhotosAlbum:
+- albumsForContentMode:
+- getPhotoCount:videoCount:
+- librarySizes
+@end

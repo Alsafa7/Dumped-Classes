@@ -1,0 +1,6 @@
+@interface MusicPodcastCellConfiguration : MusicCellConfiguration
+{
+
+}
+
+@end

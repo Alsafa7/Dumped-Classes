@@ -1,0 +1,6 @@
+@interface PUUIImagePickerControllerHelper : NSObject
+{
+
+}
+
+@end

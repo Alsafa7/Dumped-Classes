@@ -1,0 +1,230 @@
+@interface UIKeyboardCandidateBar : UIView
+{
+	BOOL _canExtend;
+	BOOL _shouldSkipLayoutUntilScrollViewAnimationEnds;
+	BOOL _didSkipLayout;
+	id _inlineText;
+	id _candidateMaskView;
+	id _delegate;
+	double _upArrowWidth;
+	id _candidateListDelegate;
+	id _candidateViews;
+	usigned long long _currentCandidateViewIndex;
+	id _secondaryCandidatesViewEdgeGradient;
+	id _candidateResultSet;
+	id _filteredCandidates;
+	id _dragStartNextPageIndexPath;
+	id _dragStartPreviousPageIndexPath;
+	id _skippedSetCandidatesBlock;
+	struct _dragStartOffset;
+}
+
++ initWithFrame:
++ dealloc
++ setDelegate:
++ count
++ setFrame:
++ scrollViewDidScroll:
++ scrollViewWillBeginDragging:
++ scrollViewWillEndDragging:withVelocity:targetContentOffset:
++ scrollViewDidEndScrollingAnimation:
++ delegate
++ hasCandidates
++ hasNextPage
++ candidates
++ candidateListAcceptCandidate:
++ candidateResultSet
++ setCandidateResultSet:
++ setCandidates:inlineText:inlineRect:maxX:layout:
++ candidateListSelectionDidChange:
++ isExtendedList
++ isHiddenCandidatesList
++ setUIKeyboardCandidateListDelegate:
++ showCandidateAtIndex:
++ showCandidate:
++ showNextCandidate
++ showPreviousCandidate
++ showNextPage
++ showPreviousPage
++ showNextRow
++ showPreviousRow
++ currentCandidate
++ currentIndex
++ candidateAcceptedAtIndex:
++ keyboardBehaviors
++ statisticsIdentifier
++ selectedSortIndex
++ setInlineText:
++ hasPreviousPage
++ candidatesDidChange
++ revealHiddenCandidates
++ inlineText
++ collectionView:numberOfItemsInSection:
++ collectionView:cellForItemAtIndexPath:
++ numberOfSectionsInCollectionView:
++ collectionView:viewForSupplementaryElementOfKind:atIndexPath:
++ collectionView:layout:sizeForItemAtIndexPath:
++ collectionView:didSelectItemAtIndexPath:
++ candidateListDelegate
++ setCandidateListDelegate:
++ candidateListShouldBeDismissed:
++ _clearData
++ candidateViews
++ _sectionForSectionIndex:candidateView:
++ _countOfItemsInSection:
++ _itemAtIndex:inSection:
++ _barCellClassForSection:
++ _widthOfItemAtIndex:inSection:
++ _updateCanExtendState
++ setCurrentCandidateViewIndex:
++ _showingInitiallyHiddenCandidates
++ setShouldSkipLayoutUntilScrollViewAnimationEnds:
++ shouldSkipLayoutUntilScrollViewAnimationEnds
++ _scrollToFirstCandidateInSection:withAnimation:
++ currentCandidateView
++ didSkipLayout
++ _performSkippedLayoutIfNeeded
++ setDragStartOffset:
++ _nextPageIndexPath
++ setDragStartNextPageIndexPath:
++ _previousPageIndexPath
++ setDragStartPreviousPageIndexPath:
++ dragStartOffset
++ _indexPathForFirstVisibleItem
++ dragStartNextPageIndexPath
++ canExtend
++ _candidateViewForSection:
++ dragStartPreviousPageIndexPath
++ _indexPathForLastVisibleItem
++ setSkippedSetCandidatesBlock:
++ setDidSkipLayout:
++ setFilteredCandidates:
++ filteredCandidates
++ _reloadDataByAppendingAtEnd:initiallyHiddenCandidatesChanged:
++ _reloadData
++ _showCandidateAtIndex:inSection:scrollCellToVisible:animated:
++ _stepSelectedCandidateInDirection:
++ _showPageAtIndexPath:
++ _indexPathForCandidateFromIndexPath:inCandidateView:
++ currentCandidateViewIndex
++ _stepSelectedCandidateInDirection:candidateView:section:
++ setCandidateViews:
++ upArrowWidth
++ secondaryCandidatesViewEdgeGradient
++ setSecondaryCandidatesViewEdgeGradient:
++ _updateCandidateViews
++ skippedSetCandidatesBlock
++ _sectionIndexForSection:
++ _indexPathForCurrentCandidateViewFromIndexPath:
++ setCanExtend:
++ sizeOfDummyItemForCollectionView:layout:
++ candidateBarLayoutDidFinishPreparingLayout
++ _emptySpaceForItemsToIndex:inSection:
++ setUpArrowWidth:
++ candidateMaskView
++ setCandidateMaskView:
+- initWithFrame:
+- dealloc
+- setDelegate:
+- count
+- setFrame:
+- scrollViewDidScroll:
+- scrollViewWillBeginDragging:
+- scrollViewWillEndDragging:withVelocity:targetContentOffset:
+- scrollViewDidEndScrollingAnimation:
+- delegate
+- hasCandidates
+- hasNextPage
+- candidates
+- candidateListAcceptCandidate:
+- candidateResultSet
+- setCandidateResultSet:
+- setCandidates:inlineText:inlineRect:maxX:layout:
+- candidateListSelectionDidChange:
+- isExtendedList
+- isHiddenCandidatesList
+- setUIKeyboardCandidateListDelegate:
+- showCandidateAtIndex:
+- showCandidate:
+- showNextCandidate
+- showPreviousCandidate
+- showNextPage
+- showPreviousPage
+- showNextRow
+- showPreviousRow
+- currentCandidate
+- currentIndex
+- candidateAcceptedAtIndex:
+- keyboardBehaviors
+- statisticsIdentifier
+- selectedSortIndex
+- setInlineText:
+- hasPreviousPage
+- candidatesDidChange
+- revealHiddenCandidates
+- inlineText
+- collectionView:numberOfItemsInSection:
+- collectionView:cellForItemAtIndexPath:
+- numberOfSectionsInCollectionView:
+- collectionView:viewForSupplementaryElementOfKind:atIndexPath:
+- collectionView:layout:sizeForItemAtIndexPath:
+- collectionView:didSelectItemAtIndexPath:
+- candidateListDelegate
+- setCandidateListDelegate:
+- candidateListShouldBeDismissed:
+- _clearData
+- candidateViews
+- _sectionForSectionIndex:candidateView:
+- _countOfItemsInSection:
+- _itemAtIndex:inSection:
+- _barCellClassForSection:
+- _widthOfItemAtIndex:inSection:
+- _updateCanExtendState
+- setCurrentCandidateViewIndex:
+- _showingInitiallyHiddenCandidates
+- setShouldSkipLayoutUntilScrollViewAnimationEnds:
+- shouldSkipLayoutUntilScrollViewAnimationEnds
+- _scrollToFirstCandidateInSection:withAnimation:
+- currentCandidateView
+- didSkipLayout
+- _performSkippedLayoutIfNeeded
+- setDragStartOffset:
+- _nextPageIndexPath
+- setDragStartNextPageIndexPath:
+- _previousPageIndexPath
+- setDragStartPreviousPageIndexPath:
+- dragStartOffset
+- _indexPathForFirstVisibleItem
+- dragStartNextPageIndexPath
+- canExtend
+- _candidateViewForSection:
+- dragStartPreviousPageIndexPath
+- _indexPathForLastVisibleItem
+- setSkippedSetCandidatesBlock:
+- setDidSkipLayout:
+- setFilteredCandidates:
+- filteredCandidates
+- _reloadDataByAppendingAtEnd:initiallyHiddenCandidatesChanged:
+- _reloadData
+- _showCandidateAtIndex:inSection:scrollCellToVisible:animated:
+- _stepSelectedCandidateInDirection:
+- _showPageAtIndexPath:
+- _indexPathForCandidateFromIndexPath:inCandidateView:
+- currentCandidateViewIndex
+- _stepSelectedCandidateInDirection:candidateView:section:
+- setCandidateViews:
+- upArrowWidth
+- secondaryCandidatesViewEdgeGradient
+- setSecondaryCandidatesViewEdgeGradient:
+- _updateCandidateViews
+- skippedSetCandidatesBlock
+- _sectionIndexForSection:
+- _indexPathForCurrentCandidateViewFromIndexPath:
+- setCanExtend:
+- sizeOfDummyItemForCollectionView:layout:
+- candidateBarLayoutDidFinishPreparingLayout
+- _emptySpaceForItemsToIndex:inSection:
+- setUpArrowWidth:
+- candidateMaskView
+- setCandidateMaskView:
+@end

@@ -1,0 +1,78 @@
+@interface AlarmDetailView : UIView
+{
+	id _alarm;
+	id _calendar;
+	id _baseDate;
+	id _timeLabel;
+	id _meridiemLabel;
+	id _formatter;
+	BOOL _24hrMode;
+	id _titleAndRepeatView;
+	id _enabledSwitch;
+	id _keylineView;
+	id _delegate;
+	id _noAlarmsView;
+	id _time;
+	id _timeLabelBaselineOffsetConstraint;
+	id _meridiemTimeLabelConstraint;
+	id _switchTopPaddingConstraint;
+	id _switchSidePaddingConstraint;
+}
+
++ handleLocaleChange
++ handleSignificantTimeChange:
++ setShowingNoAlarms:
++ refreshUIAnimated:
++ handleEnabledChanged:
++ configureAutolayout
++ isShowingNoAlarms
++ updateLabelConstraints:
++ timeLabelBaselineOffsetConstraint
++ meridiemTimeLabelConstraint
++ switchTopPaddingConstraint
++ switchSidePaddingConstraint
++ setTimeLabelBaselineOffsetConstraint:
++ setMeridiemTimeLabelConstraint:
++ setSwitchTopPaddingConstraint:
++ setSwitchSidePaddingConstraint:
++ refreshTimeView
++ setTime:force:
++ defaultHeightForInterfaceOrientation:
++ setAlarm:
++ alarm
++ initWithFrame:
++ dealloc
++ setDelegate:
++ delegate
++ updateConstraints
++ setTime:
++ time
+- handleLocaleChange
+- handleSignificantTimeChange:
+- setShowingNoAlarms:
+- refreshUIAnimated:
+- handleEnabledChanged:
+- configureAutolayout
+- isShowingNoAlarms
+- updateLabelConstraints:
+- timeLabelBaselineOffsetConstraint
+- meridiemTimeLabelConstraint
+- switchTopPaddingConstraint
+- switchSidePaddingConstraint
+- setTimeLabelBaselineOffsetConstraint:
+- setMeridiemTimeLabelConstraint:
+- setSwitchTopPaddingConstraint:
+- setSwitchSidePaddingConstraint:
+- refreshTimeView
+- setTime:force:
+- defaultHeightForInterfaceOrientation:
+- setAlarm:
+- alarm
+- initWithFrame:
+- dealloc
+- setDelegate:
+- delegate
+- updateConstraints
+- setTime:
+- time
+@end

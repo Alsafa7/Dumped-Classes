@@ -1,0 +1,153 @@
+@interface UIConcreteLocalNotification : UILocalNotification
+{
+	id fireDate;
+	id timeZone;
+	usigned long long repeatInterval;
+	id repeatCalendar;
+	int totalRepeatCount;
+	int remainingRepeatCount;
+	id alertBody;
+	BOOL hasAction;
+	id alertAction;
+	id alertLaunchImage;
+	id soundName;
+	long long applicationIconBadgeNumber;
+	id userInfoData;
+	BOOL hideAlertTitle;
+	BOOL allowSnooze;
+	int soundType;
+	BOOL interruptAudioAndLockDevice;
+	BOOL resumeApplicationInBackground;
+	BOOL fireNotificationsWhenAppRunning;
+	BOOL showAlarmStatusBarItem;
+	id customLockSliderLabel;
+	id firedNotificationName;
+	id snoozedNotificationName;
+	BOOL isSystemAlert;
+}
+
++ dealloc
++ initWithCoder:
++ encodeWithCoder:
++ init
++ isEqual:
++ hash
++ description
++ isValid
++ setFireDate:
++ setTimeZone:
++ setRepeatInterval:
++ applicationIconBadgeNumber
++ setApplicationIconBadgeNumber:
++ copyWithZone:
++ userInfo
++ repeatInterval
++ timeZone
++ setTotalRepeatCount:
++ setSoundType:
++ setRepeatCalendar:
++ setRemainingRepeatCount:
++ setAlertBody:
++ setHasAction:
++ setAlertAction:
++ setAlertLaunchImage:
++ setSoundName:
++ _setUserInfoData:
++ setHideAlertTitle:
++ setAllowSnooze:
++ setInterruptAudioAndLockDevice:
++ setResumeApplicationInBackground:
++ setFireNotificationsWhenAppRunning:
++ setShowAlarmStatusBarItem:
++ setCustomLockSliderLabel:
++ setFiredNotificationName:
++ setSnoozedNotificationName:
++ setIsSystemAlert:
++ fireDate
++ repeatCalendar
++ totalRepeatCount
++ alertBody
++ hasAction
++ alertAction
++ alertLaunchImage
++ soundName
++ hideAlertTitle
++ allowSnooze
++ soundType
++ interruptAudioAndLockDevice
++ resumeApplicationInBackground
++ fireNotificationsWhenAppRunning
++ showAlarmStatusBarItem
++ customLockSliderLabel
++ firedNotificationName
++ snoozedNotificationName
++ nextFireDateForLastFireDate:
++ nextFireDateAfterDate:localTimeZone:
++ compareFireDates:
++ setUserInfo:
++ clearNonSystemProperties
++ remainingRepeatCount
++ isSystemAlert
+- dealloc
+- initWithCoder:
+- encodeWithCoder:
+- init
+- isEqual:
+- hash
+- description
+- isValid
+- setFireDate:
+- setTimeZone:
+- setRepeatInterval:
+- applicationIconBadgeNumber
+- setApplicationIconBadgeNumber:
+- copyWithZone:
+- userInfo
+- repeatInterval
+- timeZone
+- setTotalRepeatCount:
+- setSoundType:
+- setRepeatCalendar:
+- setRemainingRepeatCount:
+- setAlertBody:
+- setHasAction:
+- setAlertAction:
+- setAlertLaunchImage:
+- setSoundName:
+- _setUserInfoData:
+- setHideAlertTitle:
+- setAllowSnooze:
+- setInterruptAudioAndLockDevice:
+- setResumeApplicationInBackground:
+- setFireNotificationsWhenAppRunning:
+- setShowAlarmStatusBarItem:
+- setCustomLockSliderLabel:
+- setFiredNotificationName:
+- setSnoozedNotificationName:
+- setIsSystemAlert:
+- fireDate
+- repeatCalendar
+- totalRepeatCount
+- alertBody
+- hasAction
+- alertAction
+- alertLaunchImage
+- soundName
+- hideAlertTitle
+- allowSnooze
+- soundType
+- interruptAudioAndLockDevice
+- resumeApplicationInBackground
+- fireNotificationsWhenAppRunning
+- showAlarmStatusBarItem
+- customLockSliderLabel
+- firedNotificationName
+- snoozedNotificationName
+- nextFireDateForLastFireDate:
+- nextFireDateAfterDate:localTimeZone:
+- compareFireDates:
+- setUserInfo:
+- clearNonSystemProperties
+- remainingRepeatCount
+- isSystemAlert
+@end

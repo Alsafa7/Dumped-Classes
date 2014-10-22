@@ -1,0 +1,244 @@
+@interface AppDelegate : NSObject
+{
+	id _pendingNotification;
+	id _pendingFriendRequest;
+	BOOL _presentingAnimated;
+	BOOL _handlingOpenURL;
+	BOOL _didDisplayAuthUI;
+	id _window;
+	id _tabBarController;
+	id _theme;
+	long long _friendRequestCount;
+	id _controllersToPresent;
+	id _openURL;
+	id _openURLApplication;
+	id _currentPlayerController;
+	id _friendsController;
+	id _challengesController;
+	id _turnsController;
+	id _gamesController;
+	id _meTabController;
+	id _friendsTabController;
+	id _gamesTabController;
+	id _challengesTabController;
+	id _turnsTabController;
+	id _lastKnownAuthenticatedPlayerID;
+	id _restorationViewControllers;
+	id _storePageCompleteBlock;
+}
+
++ dispatchURL:
++ displayScoreForLeaderboardWithID:orAchievementWithID:forGameWithBundleID:forPlayerWithID:
++ displayPlayerWithID:
++ displayScoreForLeaderboardWithID:forGameWithBundleID:forPlayerWithID:
++ displayAchievementWithID:forGameWithBundleID:forPlayerWithID:
++ handleFriendRequestWithQueryDict:
++ displayLocalPlayer
++ showPlayerDetailsForFriend:
++ showLocalPlayerDetails
++ showFriendRequest:
++ setControllersToPresent:
++ setStorePageCompleteBlock:
++ _setTabBadgeCount:forType:
++ setLastKnownAuthenticatedPlayerID:
++ lastKnownAuthenticatedPlayerID
++ fixupRestorationClassForViewController:
++ tabBarBadgeWasReset:
++ setupTopLevelViewControllers
++ setupRootViewControllerWithTabBar
++ setupRootViewControllerWithoutTabBar
++ setDidDisplayAuthUI:
++ showAuthenticateViewController:
++ localPlayerDidAuthenticate
++ handleOpenURL:fromApplication:
++ setOpenURLApplication:
++ setMeTabController:
++ challengesController
++ turnsController
++ splitViewControllerForRootController:restorationIdentifierForSplitView:restorationIdentifierForRootController:
++ setFriendsTabController:
++ setChallengesTabController:
++ setTurnsTabController:
++ setGamesTabController:
++ updateTabBarEnabledState
++ setupNavigationControllersForTabs
++ setupTabBarController
++ setFriendsController:
++ setGamesController:
++ setChallengesController:
++ setTurnsController:
++ setCurrentPlayerController:
++ challengesTabController
++ turnsTabController
++ setRestorationViewControllers:
++ restorationViewControllers
++ currentPlayerController
++ meTabController
++ friendsNavController
++ challengesNavController
++ turnsNavController
++ invalidateViewRestorationDictionary
++ setupFriendsViewController
++ setupGamesViewController
++ setupChallengesViewController
++ setupTurnsViewController
++ setupCurrentPlayerViewController
++ tabBarShouldBeEnabled
++ markAllBadgesViewedForType:
++ didDisplayAuthUI
++ pendingFriendRequest
++ showSandboxSignOutAlert
++ setPendingFriendRequest:
++ presentStoreProductPageForURL:withContext:completion:
++ showAddEmailAddressAlertForFriendRequest:
++ showLoginAlertForFriendRequest:
++ layoutRTL
++ setTabBarController:
++ pendingNotification
++ setPendingNotification:
++ isPresentingAnimated
++ setPresentingAnimated:
++ controllersToPresent
++ openURLApplication
++ setHandlingOpenURL:
++ storePageCompleteBlock
++ setFriendRequestCount:
++ friendRequestCount
++ setBadgeCount:forType:
++ refreshContentsForDataType:userInfo:
++ authenticationChanged:
++ gamesTabController
++ gamesController
++ friendsTabController
++ friendsController
++ handlingOpenURL
++ productViewControllerDidFinish:
++ dealloc
++ window
++ init
++ application:openURL:sourceApplication:annotation:
++ applicationDidBecomeActive:
++ applicationWillEnterForeground:
++ application:shouldSaveApplicationState:
++ application:shouldRestoreApplicationState:
++ application:willFinishLaunchingWithOptions:
++ application:didFinishLaunchingWithOptions:
++ setWindow:
++ alertView:clickedButtonAtIndex:
++ application:viewControllerWithRestorationIdentifierPath:coder:
++ tabBarController
++ tabBarController:didSelectViewController:
++ tabBarController:shouldSelectViewController:
++ tabBarController:animatorForFromViewController:toViewController:
++ openURL
++ setOpenURL:
++ theme
++ setTheme:
+- dispatchURL:
+- displayScoreForLeaderboardWithID:orAchievementWithID:forGameWithBundleID:forPlayerWithID:
+- displayPlayerWithID:
+- displayScoreForLeaderboardWithID:forGameWithBundleID:forPlayerWithID:
+- displayAchievementWithID:forGameWithBundleID:forPlayerWithID:
+- handleFriendRequestWithQueryDict:
+- displayLocalPlayer
+- showPlayerDetailsForFriend:
+- showLocalPlayerDetails
+- showFriendRequest:
+- setControllersToPresent:
+- setStorePageCompleteBlock:
+- _setTabBadgeCount:forType:
+- setLastKnownAuthenticatedPlayerID:
+- lastKnownAuthenticatedPlayerID
+- fixupRestorationClassForViewController:
+- tabBarBadgeWasReset:
+- setupTopLevelViewControllers
+- setupRootViewControllerWithTabBar
+- setupRootViewControllerWithoutTabBar
+- setDidDisplayAuthUI:
+- showAuthenticateViewController:
+- localPlayerDidAuthenticate
+- handleOpenURL:fromApplication:
+- setOpenURLApplication:
+- setMeTabController:
+- challengesController
+- turnsController
+- splitViewControllerForRootController:restorationIdentifierForSplitView:restorationIdentifierForRootController:
+- setFriendsTabController:
+- setChallengesTabController:
+- setTurnsTabController:
+- setGamesTabController:
+- updateTabBarEnabledState
+- setupNavigationControllersForTabs
+- setupTabBarController
+- setFriendsController:
+- setGamesController:
+- setChallengesController:
+- setTurnsController:
+- setCurrentPlayerController:
+- challengesTabController
+- turnsTabController
+- setRestorationViewControllers:
+- restorationViewControllers
+- currentPlayerController
+- meTabController
+- friendsNavController
+- challengesNavController
+- turnsNavController
+- invalidateViewRestorationDictionary
+- setupFriendsViewController
+- setupGamesViewController
+- setupChallengesViewController
+- setupTurnsViewController
+- setupCurrentPlayerViewController
+- tabBarShouldBeEnabled
+- markAllBadgesViewedForType:
+- didDisplayAuthUI
+- pendingFriendRequest
+- showSandboxSignOutAlert
+- setPendingFriendRequest:
+- presentStoreProductPageForURL:withContext:completion:
+- showAddEmailAddressAlertForFriendRequest:
+- showLoginAlertForFriendRequest:
+- layoutRTL
+- setTabBarController:
+- pendingNotification
+- setPendingNotification:
+- isPresentingAnimated
+- setPresentingAnimated:
+- controllersToPresent
+- openURLApplication
+- setHandlingOpenURL:
+- storePageCompleteBlock
+- setFriendRequestCount:
+- friendRequestCount
+- setBadgeCount:forType:
+- refreshContentsForDataType:userInfo:
+- authenticationChanged:
+- gamesTabController
+- gamesController
+- friendsTabController
+- friendsController
+- handlingOpenURL
+- productViewControllerDidFinish:
+- dealloc
+- window
+- init
+- application:openURL:sourceApplication:annotation:
+- applicationDidBecomeActive:
+- applicationWillEnterForeground:
+- application:shouldSaveApplicationState:
+- application:shouldRestoreApplicationState:
+- application:willFinishLaunchingWithOptions:
+- application:didFinishLaunchingWithOptions:
+- setWindow:
+- alertView:clickedButtonAtIndex:
+- application:viewControllerWithRestorationIdentifierPath:coder:
+- tabBarController
+- tabBarController:didSelectViewController:
+- tabBarController:shouldSelectViewController:
+- tabBarController:animatorForFromViewController:toViewController:
+- openURL
+- setOpenURL:
+- theme
+- setTheme:
+@end

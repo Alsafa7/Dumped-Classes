@@ -1,0 +1,93 @@
+@interface SKUIMetricsController : NSObject
+{
+	id _accountID;
+	id _activeImpressionsSession;
+	id _applicationIdentifier;
+	id _controller;
+	id _globalConfiguration;
+	BOOL _impressionsEnabled;
+	id _impressionsTimer;
+	BOOL _loggingEnabled;
+	id _pageConfiguration;
+	id _pageContext;
+	id _pageURL;
+	id _topic;
+	id _userAgent;
+	id _windowOrientation;
+}
+
++ setAccountIdentifier:
++ dealloc
++ applicationIdentifier
++ setPageURL:
++ pageURL
++ setUserAgent:
++ setTopic:
++ topic
++ accountIdentifier
++ setWindowOrientation:
++ recordEvent:
++ setPageConfiguration:
++ setPageContext:
++ pingURLs:withClientContext:
++ activeImpressionsSession
++ itemOfferClickEventWithItem:locationPosition:
++ locationWithPosition:type:fieldData:
++ locationWithPageComponent:
++ performActionForItem:
++ canRecordEventWithType:
++ clickEventWithItem:locationPosition:
++ setApplicationIdentifier:
++ initWithGlobalConfiguration:
++ _recordActiveImpressions
++ compoundStringWithElements:
++ tokenStringWithElements:
++ flushImmediately
++ closeImpressionsSession
++ flushInterval
++ pingURLs:
++ _waitUntilRecordingComplete
++ globalConfiguration
++ pageConfiguration
++ pageContext
++ windowOrientation
++ .cxx_destruct
++ userAgent
+- setAccountIdentifier:
+- dealloc
+- applicationIdentifier
+- setPageURL:
+- pageURL
+- setUserAgent:
+- setTopic:
+- topic
+- accountIdentifier
+- setWindowOrientation:
+- recordEvent:
+- setPageConfiguration:
+- setPageContext:
+- pingURLs:withClientContext:
+- activeImpressionsSession
+- itemOfferClickEventWithItem:locationPosition:
+- locationWithPosition:type:fieldData:
+- locationWithPageComponent:
+- performActionForItem:
+- canRecordEventWithType:
+- clickEventWithItem:locationPosition:
+- setApplicationIdentifier:
+- initWithGlobalConfiguration:
+- _recordActiveImpressions
+- compoundStringWithElements:
+- tokenStringWithElements:
+- flushImmediately
+- closeImpressionsSession
+- flushInterval
+- pingURLs:
+- _waitUntilRecordingComplete
+- globalConfiguration
+- pageConfiguration
+- pageContext
+- windowOrientation
+- .cxx_destruct
+- userAgent
+@end

@@ -1,0 +1,6 @@
+@interface NotesAccountsTableView : NotesTableView
+{
+
+}
+
+@end

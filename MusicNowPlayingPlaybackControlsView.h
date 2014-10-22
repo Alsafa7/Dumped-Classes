@@ -1,0 +1,89 @@
+@interface MusicNowPlayingPlaybackControlsView : MPPlaybackControlsView
+{
+	id _createActionSheet;
+	id _createActivityIndicatorView;
+	id _createButton;
+	Array _createButtonActions;
+	id _infoButton;
+	BOOL _isDetailScrubbing;
+	id _transportControls;
+	id _volumeSlider;
+	BOOL _usesMiniProgressControl;
+	long long _orientation;
+}
+
++ setItem:
++ newButtonForPart:
++ repeatButtonImage
++ shuffleButtonImage
++ detailScrubbingHidesControls
++ shouldOverrideProgressTimeLabelStyle
++ reloadView
++ newProgressIndicator
++ playbackSpeedButtonImageForPlaybackSpeed:
++ playbackSpeedTitleForPlaybackSpeed:
++ initWithFrame:
++ dealloc
++ setDelegate:
++ layoutSubviews
++ orientation
++ actionSheet:clickedButtonAtIndex:
++ tintColorDidChange
++ setOrientation:
++ buttonType
++ infoButton
++ _playbackContentsDidChangeNotification:
++ _defaultsDidChangeNotification
++ createActionSheet
++ viewForPresentingRepeat
++ _infoButtonAction:
++ setShowingCreateLoadingIndicator:
++ setUsesMiniProgressControl:animated:
++ _createAction:
++ _applyRepeatSettingsToButton:
++ _applyShuffleSettingsToButton:
++ _isCreateAvailable
++ _updateForItemDidChangeAnimated:
++ isShowingCreateLoadingIndicator
++ setUsesMiniProgressControl:
++ usesMiniProgressControl
++ .cxx_destruct
++ setPlayer:
+- setItem:
+- newButtonForPart:
+- repeatButtonImage
+- shuffleButtonImage
+- detailScrubbingHidesControls
+- shouldOverrideProgressTimeLabelStyle
+- reloadView
+- newProgressIndicator
+- playbackSpeedButtonImageForPlaybackSpeed:
+- playbackSpeedTitleForPlaybackSpeed:
+- initWithFrame:
+- dealloc
+- setDelegate:
+- layoutSubviews
+- orientation
+- actionSheet:clickedButtonAtIndex:
+- tintColorDidChange
+- setOrientation:
+- buttonType
+- infoButton
+- _playbackContentsDidChangeNotification:
+- _defaultsDidChangeNotification
+- createActionSheet
+- viewForPresentingRepeat
+- _infoButtonAction:
+- setShowingCreateLoadingIndicator:
+- setUsesMiniProgressControl:animated:
+- _createAction:
+- _applyRepeatSettingsToButton:
+- _applyShuffleSettingsToButton:
+- _isCreateAvailable
+- _updateForItemDidChangeAnimated:
+- isShowingCreateLoadingIndicator
+- setUsesMiniProgressControl:
+- usesMiniProgressControl
+- .cxx_destruct
+- setPlayer:
+@end

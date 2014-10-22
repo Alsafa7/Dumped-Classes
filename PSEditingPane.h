@@ -1,0 +1,63 @@
+@interface PSEditingPane : UIView
+{
+	id _specifier;
+	id _delegate;
+	bit[1] _requiresKeyboard;
+	id _viewController;
+}
+
++ changed
++ initWithFrame:
++ dealloc
++ setDelegate:
++ setViewController:
++ viewController
++ willRotateToInterfaceOrientation:duration:
++ willAnimateRotationToInterfaceOrientation:duration:
++ didRotateFromInterfaceOrientation:
++ contentRect
++ editMode
++ childViewControllerForHostingViewController
++ shouldInsetContent
++ insetContent
++ requiresKeyboard
++ layoutInsetContent:
++ setPreferenceSpecifier:
++ setPreferenceValue:
++ preferenceSpecifier
++ viewDidBecomeVisible
++ preferenceValue
++ handlesDoneButton
++ scrollViewToBeInsetted
++ specifierLabel
++ wantsNewButton
++ addNewValue
++ doneEditing
+- changed
+- initWithFrame:
+- dealloc
+- setDelegate:
+- setViewController:
+- viewController
+- willRotateToInterfaceOrientation:duration:
+- willAnimateRotationToInterfaceOrientation:duration:
+- didRotateFromInterfaceOrientation:
+- contentRect
+- editMode
+- childViewControllerForHostingViewController
+- shouldInsetContent
+- insetContent
+- requiresKeyboard
+- layoutInsetContent:
+- setPreferenceSpecifier:
+- setPreferenceValue:
+- preferenceSpecifier
+- viewDidBecomeVisible
+- preferenceValue
+- handlesDoneButton
+- scrollViewToBeInsetted
+- specifierLabel
+- wantsNewButton
+- addNewValue
+- doneEditing
+@end

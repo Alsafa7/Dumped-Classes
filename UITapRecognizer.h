@@ -1,0 +1,85 @@
+@interface UITapRecognizer : NSObject
+{
+	usigned long long _numberOfTouchesRequired;
+	usigned long long _numberOfTapsRequired;
+	id _activeTouches;
+	int _currentNumberOfTouches;
+	int _currentNumberOfTaps;
+	struct _location;
+	struct _startPoint;
+	double _allowableMovement;
+	double _maximumSingleTapDuration;
+	double _maximumIntervalBetweenSuccessiveTaps;
+	id _touches;
+	id _delegate;
+	bit[1] _timerOn;
+	bit[1] _noNewTouches;
+}
+
++ dealloc
++ initWithCoder:
++ encodeWithCoder:
++ setDelegate:
++ init
++ delegate
++ locationInView:
++ _physicalButtonsBegan:withEvent:
++ touchesCancelled:withEvent:
++ _physicalButtonsEnded:withEvent:
++ _physicalButtonsCancelled:withEvent:
++ touchesBegan:withEvent:
++ touchesMoved:withEvent:
++ touchesEnded:withEvent:
++ numberOfTouchesRequired
++ numberOfTapsRequired
++ setNumberOfTapsRequired:
++ setNumberOfTouchesRequired:
++ _reset
++ setAllowableMovement:
++ touches
++ maximumIntervalBetweenSuccessiveTaps
++ allowableMovement
++ clearTapTimer
++ tooSlow:
++ _beginInteraction
++ _locationOnScreen
++ _effectiveAllowableMovement
++ _interactionEndedTouch:
++ startTapTimer:
++ maximumSingleTapDuration
++ setMaximumSingleTapDuration:
++ setMaximumIntervalBetweenSuccessiveTaps:
+- dealloc
+- initWithCoder:
+- encodeWithCoder:
+- setDelegate:
+- init
+- delegate
+- locationInView:
+- _physicalButtonsBegan:withEvent:
+- touchesCancelled:withEvent:
+- _physicalButtonsEnded:withEvent:
+- _physicalButtonsCancelled:withEvent:
+- touchesBegan:withEvent:
+- touchesMoved:withEvent:
+- touchesEnded:withEvent:
+- numberOfTouchesRequired
+- numberOfTapsRequired
+- setNumberOfTapsRequired:
+- setNumberOfTouchesRequired:
+- _reset
+- setAllowableMovement:
+- touches
+- maximumIntervalBetweenSuccessiveTaps
+- allowableMovement
+- clearTapTimer
+- tooSlow:
+- _beginInteraction
+- _locationOnScreen
+- _effectiveAllowableMovement
+- _interactionEndedTouch:
+- startTapTimer:
+- maximumSingleTapDuration
+- setMaximumSingleTapDuration:
+- setMaximumIntervalBetweenSuccessiveTaps:
+@end

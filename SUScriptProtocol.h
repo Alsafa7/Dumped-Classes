@@ -1,0 +1,6 @@
+@interface SUScriptProtocol : SUScriptObject
+{
+
+}
+
+@end

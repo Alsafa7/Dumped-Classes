@@ -1,0 +1,90 @@
+@interface SBSlideToUnlockFailureRecognizer : UIGestureRecognizer
+{
+	struct _startingLocation;
+	usigned long long _maxAllowableVerticalOffset;
+	double _maxAllowedTopAngle;
+	double _minAllowedTopAngle;
+	double _effectiveTopAngle;
+	double _minAllowedBottomAngle;
+	double _maxAllowedBottomAngle;
+	double _effectiveBottomAngle;
+	BOOL _tracking;
+	BOOL _allowMultiTouch;
+	BOOL _viewDebugArea;
+	id _relativeView;
+	id _debugHorizontalView;
+	id _debugInclineUpView;
+	id _debugInclineDownView;
+}
+
++ setRelativeView:
++ setViewDebugArea:
++ setMaxAllowableVerticalOffset:
++ viewDebugArea
++ maxAllowableVerticalOffset
++ _effectiveTopAngle
++ _effectiveBottomAngle
++ _loadFromSettings:
++ _setDebugViewsVisible:
++ _activeTouchCountForEvent:
++ allowMultiTouch
++ _averagePointFromTouches:
++ _computeEffectiveAngleFromMin:max:
++ _isLocationOutOfBounds:
++ setMaxAllowedTopAngle:
++ setMinAllowedTopAngle:
++ setMaxAllowedBottomAngle:
++ setMinAllowedBottomAngle:
++ relativeView
++ _isOutOfBoundsVertically:
++ _isOutOfBounds:forAngle:
++ setAllowMultiTouch:
++ maxAllowedTopAngle
++ minAllowedTopAngle
++ maxAllowedBottomAngle
++ minAllowedBottomAngle
++ dealloc
++ initWithTarget:action:
++ touchesCancelled:withEvent:
++ touchesBegan:withEvent:
++ touchesMoved:withEvent:
++ touchesEnded:withEvent:
++ canBePreventedByGestureRecognizer:
++ settings:changedValueForKey:
++ reset
+- setRelativeView:
+- setViewDebugArea:
+- setMaxAllowableVerticalOffset:
+- viewDebugArea
+- maxAllowableVerticalOffset
+- _effectiveTopAngle
+- _effectiveBottomAngle
+- _loadFromSettings:
+- _setDebugViewsVisible:
+- _activeTouchCountForEvent:
+- allowMultiTouch
+- _averagePointFromTouches:
+- _computeEffectiveAngleFromMin:max:
+- _isLocationOutOfBounds:
+- setMaxAllowedTopAngle:
+- setMinAllowedTopAngle:
+- setMaxAllowedBottomAngle:
+- setMinAllowedBottomAngle:
+- relativeView
+- _isOutOfBoundsVertically:
+- _isOutOfBounds:forAngle:
+- setAllowMultiTouch:
+- maxAllowedTopAngle
+- minAllowedTopAngle
+- maxAllowedBottomAngle
+- minAllowedBottomAngle
+- dealloc
+- initWithTarget:action:
+- touchesCancelled:withEvent:
+- touchesBegan:withEvent:
+- touchesMoved:withEvent:
+- touchesEnded:withEvent:
+- canBePreventedByGestureRecognizer:
+- settings:changedValueForKey:
+- reset
+@end

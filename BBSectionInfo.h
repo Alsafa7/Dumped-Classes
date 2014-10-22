@@ -1,0 +1,169 @@
+@interface BBSectionInfo : NSObject
+{
+	id _sectionID;
+	id _subsectionID;
+	long long _sectionType;
+	long long _sectionCategory;
+	BOOL _showsInNotificationCenter;
+	usigned long long _suppressedSettings;
+	usigned long long _pushSettings;
+	usigned long long _alertType;
+	usigned long long _notificationCenterLimit;
+	BOOL _showsInLockScreen;
+	BOOL _showsOnBluetoothDevices;
+	id _pathToWeeAppPluginBundle;
+	id _displayName;
+	id _icon;
+	id _subsections;
+	id _parentSection;
+	id _factorySectionID;
+	id _dataProviderIDs;
+	BOOL _suppressFromSettings;
+	BOOL _displaysCriticalBulletins;
+	BOOL _hideWeeApp;
+	BOOL _showsMessagePreview;
+	long long _subsectionPriority;
+	usigned long long _version;
+}
+
++ iconImageWithFormat:
++ iconImageWithFormat:overridingBundleID:
++ effectiveSectionInfoWithFactoryInfo:
++ effectiveSectionInfo
++ icon
++ dealloc
++ initWithCoder:
++ encodeWithCoder:
++ init
++ description
++ copyWithZone:
++ setEnabled:
++ setIcon:
++ displayName
++ enabled
++ setVersion:
++ version
++ sectionID
++ setSectionID:
++ showsMessagePreview
++ setShowsMessagePreview:
++ notificationCenterLimit
++ dataProviderIDs
++ subsections
++ subsectionID
++ showsInNotificationCenter
++ alertType
++ showsInLockScreen
++ factorySectionID
++ _subsectionForID:
++ _replaceSubsection:
++ pathToWeeAppPluginBundle
++ hideWeeApp
++ setHideWeeApp:
++ setSuppressFromSettings:
++ setFactorySectionID:
++ sectionCategory
++ _configureWithDefaultsForSectionType:
++ setParentSection:
++ setSuppressedSettings:
++ setShowsInNotificationCenter:
++ setShowsInLockScreen:
++ setShowsOnBluetoothDevices:
++ setPushSettings:
++ setAlertType:
++ setBulletinCount:
++ parentSection
++ _pushSettingsDescription
++ suppressedSettings
++ setSubsections:
++ setDataProviderIDs:
++ setNotificationCenterLimit:
++ setSubsectionID:
++ setSectionCategory:
++ suppressFromSettings
++ showsOnBluetoothDevices
++ pushSettings
++ setPathToWeeAppPluginBundle:
++ displaysCriticalBulletins
++ setDisplaysCriticalBulletins:
++ _addSubsection:
++ subsectionPriority
++ setSubsectionPriority:
++ _associateDataProviderSectionInfo:
++ _dissociateDataProviderSectionInfo:
++ bulletinCount
++ iconData
++ setDisplayName:
++ sectionType
++ setSectionType:
+- iconImageWithFormat:
+- iconImageWithFormat:overridingBundleID:
+- effectiveSectionInfoWithFactoryInfo:
+- effectiveSectionInfo
+- icon
+- dealloc
+- initWithCoder:
+- encodeWithCoder:
+- init
+- description
+- copyWithZone:
+- setEnabled:
+- setIcon:
+- displayName
+- enabled
+- setVersion:
+- version
+- sectionID
+- setSectionID:
+- showsMessagePreview
+- setShowsMessagePreview:
+- notificationCenterLimit
+- dataProviderIDs
+- subsections
+- subsectionID
+- showsInNotificationCenter
+- alertType
+- showsInLockScreen
+- factorySectionID
+- _subsectionForID:
+- _replaceSubsection:
+- pathToWeeAppPluginBundle
+- hideWeeApp
+- setHideWeeApp:
+- setSuppressFromSettings:
+- setFactorySectionID:
+- sectionCategory
+- _configureWithDefaultsForSectionType:
+- setParentSection:
+- setSuppressedSettings:
+- setShowsInNotificationCenter:
+- setShowsInLockScreen:
+- setShowsOnBluetoothDevices:
+- setPushSettings:
+- setAlertType:
+- setBulletinCount:
+- parentSection
+- _pushSettingsDescription
+- suppressedSettings
+- setSubsections:
+- setDataProviderIDs:
+- setNotificationCenterLimit:
+- setSubsectionID:
+- setSectionCategory:
+- suppressFromSettings
+- showsOnBluetoothDevices
+- pushSettings
+- setPathToWeeAppPluginBundle:
+- displaysCriticalBulletins
+- setDisplaysCriticalBulletins:
+- _addSubsection:
+- subsectionPriority
+- setSubsectionPriority:
+- _associateDataProviderSectionInfo:
+- _dissociateDataProviderSectionInfo:
+- bulletinCount
+- iconData
+- setDisplayName:
+- sectionType
+- setSectionType:
+@end

@@ -1,0 +1,156 @@
+@interface SSDevice : NSObject
+{
+	long long _deviceType;
+	id _dispatchQueue;
+	id _keyValueStore;
+	id _legacyUserAgent;
+	id _localStoreFrontIdentifier;
+	BOOL _localStoreFrontIsTransient;
+	id _mediaLibraryIdentifier;
+	id _productType;
+	id _productVersion;
+	id _softwareLibraryIdentifier;
+	id _synchedStoreFrontIdentifier;
+	id _urlBag;
+	id _userAgent;
+	double _batteryLevel;
+	unsigned int _batteryMonitorNotification;
+	pointer _batteryMonitorPort;
+	BOOL _pluggedIn;
+	int _pluggedInToken;
+	long long _powerMonitorCount;
+}
+
++ supportsDeviceCapability:
++ dealloc
++ init
++ batteryLevel
++ isPluggedIn
++ setStoreFrontIdentifier:accountIdentifier:isTransient:
++ _getDeviceType:error:
++ _cacheKeyValueStoreValues
++ setStoreFrontIdentifier:isTransient:
++ _newLegacyUserAgent:
++ _userAgentClientNameForInfoPlist:
++ _newModernUserAgentWithClientName:version:isCachable:
++ _deviceType
++ _updateAutomaticDownloadKinds:withValue:completionBlock:
++ _copyProductType
++ _deviceTypeForProductType:
++ _productVersion
++ _reloadAfterStoreFrontChange
++ _setStoreFrontIdentifier:isTransient:
++ _postStoreFrontDidChangeNotification
++ _updateBatteryLevelFromService:
++ _reloadPluggedInState
++ _is720pCapable
++ _is1080pCapable
++ _userAgentClientNameForBundleID:
++ userAgentWithClientName:version:
++ _deviceTypeForUnknownIPad:
++ _deviceTypeForUnknownIPhone:
++ _deviceTypeForUnknownIPod:
++ _deviceTypeForUnknownAppleTV:
++ _deviceClass
++ _diskCapacityString
++ _fairPlayDeviceTypeString
++ copyStoreFrontRequestHeaders
++ getAvailableItemKindsWithBlock:
++ getCellularNetworkingAllowedWithBlock:
++ loadStoreFrontWithCompletionHandler:
++ mediaLibraryIdentifier
++ setCellularNetworkingAllowed:
++ setStoreFrontWithResponseHeaders:
++ showPromptWithIdentifier:completionHandler:
++ softwareLibraryIdentifier
++ legacyUserAgent
++ enableAllAutomaticDownloadKindsWithCompletionBlock:
++ minusAutomaticDownloadKinds:withCompletionBlock:
++ productType
++ setMediaLibraryIdentifier:
++ startPowerMonitoring
++ stopPowerMonitoring
++ synchronizeAutomaticDownloadKinds
++ unionAutomaticDownloadKinds:withCompletionBlock:
++ userAgentWithBundleIdentifier:version:
++ resetStoreFrontForSignOut
++ _copyKeyValueStoreValueForDomain:key:
++ _invalidateSoftwareCUID
++ setSoftwareLibraryIdentifier:
++ productVersion
++ userAgent
++ storeFrontIdentifier
++ setAutomaticDownloadKinds:withCompletionBlock:
++ automaticDownloadKinds
++ deviceTypeIdentifier
++ deviceType
++ reloadStoreFrontIdentifier
++ isStoreFrontIdentifierTransient
++ synchedStoreFrontIdentifier
+- supportsDeviceCapability:
+- dealloc
+- init
+- batteryLevel
+- isPluggedIn
+- setStoreFrontIdentifier:accountIdentifier:isTransient:
+- _getDeviceType:error:
+- _cacheKeyValueStoreValues
+- setStoreFrontIdentifier:isTransient:
+- _newLegacyUserAgent:
+- _userAgentClientNameForInfoPlist:
+- _newModernUserAgentWithClientName:version:isCachable:
+- _deviceType
+- _updateAutomaticDownloadKinds:withValue:completionBlock:
+- _copyProductType
+- _deviceTypeForProductType:
+- _productVersion
+- _reloadAfterStoreFrontChange
+- _setStoreFrontIdentifier:isTransient:
+- _postStoreFrontDidChangeNotification
+- _updateBatteryLevelFromService:
+- _reloadPluggedInState
+- _is720pCapable
+- _is1080pCapable
+- _userAgentClientNameForBundleID:
+- userAgentWithClientName:version:
+- _deviceTypeForUnknownIPad:
+- _deviceTypeForUnknownIPhone:
+- _deviceTypeForUnknownIPod:
+- _deviceTypeForUnknownAppleTV:
+- _deviceClass
+- _diskCapacityString
+- _fairPlayDeviceTypeString
+- copyStoreFrontRequestHeaders
+- getAvailableItemKindsWithBlock:
+- getCellularNetworkingAllowedWithBlock:
+- loadStoreFrontWithCompletionHandler:
+- mediaLibraryIdentifier
+- setCellularNetworkingAllowed:
+- setStoreFrontWithResponseHeaders:
+- showPromptWithIdentifier:completionHandler:
+- softwareLibraryIdentifier
+- legacyUserAgent
+- enableAllAutomaticDownloadKindsWithCompletionBlock:
+- minusAutomaticDownloadKinds:withCompletionBlock:
+- productType
+- setMediaLibraryIdentifier:
+- startPowerMonitoring
+- stopPowerMonitoring
+- synchronizeAutomaticDownloadKinds
+- unionAutomaticDownloadKinds:withCompletionBlock:
+- userAgentWithBundleIdentifier:version:
+- resetStoreFrontForSignOut
+- _copyKeyValueStoreValueForDomain:key:
+- _invalidateSoftwareCUID
+- setSoftwareLibraryIdentifier:
+- productVersion
+- userAgent
+- storeFrontIdentifier
+- setAutomaticDownloadKinds:withCompletionBlock:
+- automaticDownloadKinds
+- deviceTypeIdentifier
+- deviceType
+- reloadStoreFrontIdentifier
+- isStoreFrontIdentifierTransient
+- synchedStoreFrontIdentifier
+@end

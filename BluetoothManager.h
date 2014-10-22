@@ -1,0 +1,137 @@
+@interface BluetoothManager : NSObject
+{
+	pointer _localDevice;
+	pointer _session;
+	int _available;
+	BOOL _audioConnected;
+	BOOL _scanningEnabled;
+	BOOL _scanningInProgress;
+	unsigned int _scanningServiceMask;
+	pointer _discoveryAgent;
+	pointer _pairingAgent;
+	pointer _accessoryManager;
+	id _btAddrDict;
+	id _btDeviceDict;
+}
+
++ _accessoryManager
++ setDevicePairingEnabled:
++ setDeviceScanningEnabled:
++ resetDeviceScanning
++ showPowerPrompt
++ pairedDevices
++ isServiceSupported:
++ scanForConnectableDevices:
++ scanForServices:
++ cancelPairing
++ dealloc
++ init
++ postNotificationName:object:
++ setEnabled:
++ postNotification:
++ enabled
++ _powerChanged
++ connectedDevices
++ connectDevice:
++ connectDevice:withServices:
++ setPincode:forDevice:
++ acceptSSP:forDevice:
++ unpairDevice:
++ startVoiceCommand:
++ endVoiceCommand:
++ _attach:
++ _setup:
++ _cleanup:
++ _postNotificationWithArray:
++ _scanForServices:withMode:
++ _setScanState:
++ _restartScan
++ addDeviceIfNeeded:
++ _removeDevice:
++ devicePairingEnabled
++ postNotificationName:object:error:
++ _onlySensorsConnected
++ _connectedStatusChanged
++ _connectabilityChanged
++ _discoveryStateChanged
++ _advertisingChanged
++ setAudioConnected:
++ isAnyoneScanning
++ isAnyoneAdvertising
++ wasDeviceDiscovered:
++ deviceScanningEnabled
++ deviceScanningInProgress
++ isDiscoverable
++ setDiscoverable:
++ connectable
++ setConnectable:
++ connectingDevices
++ audioConnected
++ enableTestMode
++ setPowered:
++ available
++ powered
++ _postNotification:
++ connected
++ powerState
+- _accessoryManager
+- setDevicePairingEnabled:
+- setDeviceScanningEnabled:
+- resetDeviceScanning
+- showPowerPrompt
+- pairedDevices
+- isServiceSupported:
+- scanForConnectableDevices:
+- scanForServices:
+- cancelPairing
+- dealloc
+- init
+- postNotificationName:object:
+- setEnabled:
+- postNotification:
+- enabled
+- _powerChanged
+- connectedDevices
+- connectDevice:
+- connectDevice:withServices:
+- setPincode:forDevice:
+- acceptSSP:forDevice:
+- unpairDevice:
+- startVoiceCommand:
+- endVoiceCommand:
+- _attach:
+- _setup:
+- _cleanup:
+- _postNotificationWithArray:
+- _scanForServices:withMode:
+- _setScanState:
+- _restartScan
+- addDeviceIfNeeded:
+- _removeDevice:
+- devicePairingEnabled
+- postNotificationName:object:error:
+- _onlySensorsConnected
+- _connectedStatusChanged
+- _connectabilityChanged
+- _discoveryStateChanged
+- _advertisingChanged
+- setAudioConnected:
+- isAnyoneScanning
+- isAnyoneAdvertising
+- wasDeviceDiscovered:
+- deviceScanningEnabled
+- deviceScanningInProgress
+- isDiscoverable
+- setDiscoverable:
+- connectable
+- setConnectable:
+- connectingDevices
+- audioConnected
+- enableTestMode
+- setPowered:
+- available
+- powered
+- _postNotification:
+- connected
+- powerState
+@end

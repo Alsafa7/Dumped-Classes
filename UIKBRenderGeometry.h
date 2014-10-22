@@ -1,0 +1,105 @@
+@interface UIKBRenderGeometry : NSObject
+{
+	BOOL _detachedVariants;
+	int _roundRectCorners;
+	int _popupBias;
+	double _roundRectRadius;
+	long long _flickDirection;
+	id _splitLeftRect;
+	id _splitRightRect;
+	struct _popupSource;
+	struct _frame;
+	struct _paddedFrame;
+	struct _displayFrame;
+	struct _symbolFrame;
+}
+
++ adjustForTranslucentGapsInFrameWithSize_10Key:centerX:isInBottomRow:
++ adjustForTranslucentGapsWithSize:inFrame:
++ _copyForDirection:positionFactor:sizeFactor:scale:
++ applyOffset:
++ makeIntegralWithScale:
++ adjustToTopWithInsets:
++ copyForFlickDirection:scale:
++ copyForPopupDirection:scale:
++ dealloc
++ setFrame:
++ frame
++ description
++ copyWithZone:
++ paddedFrame
++ setDisplayFrame:
++ setPaddedFrame:
++ displayFrame
++ setPopupBias:
++ setSymbolFrame:
++ setRoundRectCorners:
++ setRoundRectRadius:
++ setSplitLeftRect:
++ setSplitRightRect:
++ splitLeftRect
++ splitRightRect
++ setFlickDirection:
++ flickDirection
++ displayInsets
++ symbolFrame
++ setPopupSource:
++ applyInsets:
++ initWithShape:
++ popupSource
++ roundRectCorners
++ popupBias
++ detachedVariants
++ roundRectRadius
++ setDetachedVariants:
++ overlayWithGeometry:
++ applyShadowInsets:
++ iPhoneVariantGeometries:
++ iPadVariantGeometries:
++ similarShape
++ paddedInsets
+- adjustForTranslucentGapsInFrameWithSize_10Key:centerX:isInBottomRow:
+- adjustForTranslucentGapsWithSize:inFrame:
+- _copyForDirection:positionFactor:sizeFactor:scale:
+- applyOffset:
+- makeIntegralWithScale:
+- adjustToTopWithInsets:
+- copyForFlickDirection:scale:
+- copyForPopupDirection:scale:
+- dealloc
+- setFrame:
+- frame
+- description
+- copyWithZone:
+- paddedFrame
+- setDisplayFrame:
+- setPaddedFrame:
+- displayFrame
+- setPopupBias:
+- setSymbolFrame:
+- setRoundRectCorners:
+- setRoundRectRadius:
+- setSplitLeftRect:
+- setSplitRightRect:
+- splitLeftRect
+- splitRightRect
+- setFlickDirection:
+- flickDirection
+- displayInsets
+- symbolFrame
+- setPopupSource:
+- applyInsets:
+- initWithShape:
+- popupSource
+- roundRectCorners
+- popupBias
+- detachedVariants
+- roundRectRadius
+- setDetachedVariants:
+- overlayWithGeometry:
+- applyShadowInsets:
+- iPhoneVariantGeometries:
+- iPadVariantGeometries:
+- similarShape
+- paddedInsets
+@end

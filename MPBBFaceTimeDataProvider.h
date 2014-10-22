@@ -1,0 +1,6 @@
+@interface MPBBFaceTimeDataProvider : MPBBDataProvider
+{
+
+}
+
+@end

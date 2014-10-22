@@ -1,0 +1,59 @@
+@interface CKColoredBalloonView : CKBalloonView
+{
+	char _color;
+	BOOL _wantsGradient;
+	id _mask;
+	id _gradientView;
+}
+
++ configureForMessagePart:
++ initWithFrame:
++ dealloc
++ setMask:
++ setFrame:
++ layoutSubviews
++ setBounds:
++ description
++ alignmentRectInsets
++ mask
++ prepareForReuse
++ color
++ setColor:
++ prepareForDisplay
++ setHasTail:
++ overlayColor
++ setCanUseOpaqueMask:
++ setGradientReferenceView:
++ setGradientView:
++ gradientView
++ gradientReferenceView
++ wantsGradient
++ balloonImage
++ updateWantsGradient
++ setWantsGradient:
+- configureForMessagePart:
+- initWithFrame:
+- dealloc
+- setMask:
+- setFrame:
+- layoutSubviews
+- setBounds:
+- description
+- alignmentRectInsets
+- mask
+- prepareForReuse
+- color
+- setColor:
+- prepareForDisplay
+- setHasTail:
+- overlayColor
+- setCanUseOpaqueMask:
+- setGradientReferenceView:
+- setGradientView:
+- gradientView
+- gradientReferenceView
+- wantsGradient
+- balloonImage
+- updateWantsGradient
+- setWantsGradient:
+@end

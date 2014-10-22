@@ -1,0 +1,102 @@
+@interface ADAccount : NSObject
+{
+	id _identifier;
+	id _label;
+	id _assistantIdentifier;
+	id _speechIdentifier;
+	id _hostname;
+	id _group;
+	id _predefinedServer;
+	id _aceHost;
+	id _localeIdentifier;
+	id _lastAssistantDataAnchor;
+	id _syncTimestamps;
+	id _validationExpiration;
+	BOOL _needsDestruction;
+}
+
++ removeAndSave
++ needsDestruction
++ setNeedsDestruction:
++ validationExpiration
++ _setSyncTimestamps:
++ setLastAssistantDataAnchor:
++ setValidationExpiration:
++ _hostnameOverride
++ _hostnameQAOverride
++ _keychainValueForKey:
++ _setKeychainValue:forKey:
++ _removeKeychainValueForKey:
++ _infoDictionaryForPreferences
++ setServerCertificateData:
++ lastSyncDateForKey:
++ setLastSyncDate:forKey:
++ serverCertificateData
++ clearAssistantData
++ lastAssistantDataAnchor
++ save
++ identifier
++ label
++ setLabel:
++ localeIdentifier
++ setIdentifier:
++ setGroup:
++ group
++ setAssistantIdentifier:
++ setSpeechIdentifier:
++ setPredefinedServer:
++ setAceHost:
++ messageDictionary
++ assistantIdentifier
++ speechIdentifier
++ predefinedServer
++ aceHost
++ validationData
++ setValidationData:
++ setHostname:
++ .cxx_destruct
++ hostname
++ setLocaleIdentifier:
+- removeAndSave
+- needsDestruction
+- setNeedsDestruction:
+- validationExpiration
+- _setSyncTimestamps:
+- setLastAssistantDataAnchor:
+- setValidationExpiration:
+- _hostnameOverride
+- _hostnameQAOverride
+- _keychainValueForKey:
+- _setKeychainValue:forKey:
+- _removeKeychainValueForKey:
+- _infoDictionaryForPreferences
+- setServerCertificateData:
+- lastSyncDateForKey:
+- setLastSyncDate:forKey:
+- serverCertificateData
+- clearAssistantData
+- lastAssistantDataAnchor
+- save
+- identifier
+- label
+- setLabel:
+- localeIdentifier
+- setIdentifier:
+- setGroup:
+- group
+- setAssistantIdentifier:
+- setSpeechIdentifier:
+- setPredefinedServer:
+- setAceHost:
+- messageDictionary
+- assistantIdentifier
+- speechIdentifier
+- predefinedServer
+- aceHost
+- validationData
+- setValidationData:
+- setHostname:
+- .cxx_destruct
+- hostname
+- setLocaleIdentifier:
+@end

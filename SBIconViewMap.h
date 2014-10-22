@@ -1,0 +1,73 @@
+@interface SBIconViewMap : NSObject
+{
+	id _model;
+	id _iconViewsForIcons;
+	id _delegate;
+	id _viewDelegate;
+	id _recycledIconViewsByType;
+	id _labelsForIcons;
+	id _lightLegibilityImagesForIcons;
+	id _darkLegibilityImagesForIcons;
+	id _accessoryImagesForIcons;
+	id _legibilitySettings;
+}
+
++ mappedIconViewForIcon:
++ recycleViewForIcon:
++ iconViewForIcon:
++ tryToReplaceIcon:withIcon:
++ purgeIconFromMap:
++ node:didAddContainedNodeIdentifiers:
++ node:didRemoveContainedNodeIdentifiers:
++ iconAccessoriesDidUpdate:
++ iconViewDidChangeLocation:
++ initWithIconModel:delegate:
++ setViewDelegate:
++ _modelRemovedIcon:
++ _modelReloadedIcons
++ _modelReloadedState
++ recycleAndPurgeAll
++ _iconViewForIcon:
++ _addIconView:forIcon:
++ _recycleIconView:
++ _cacheImagesForIcon:
++ _cacheLabelImagesForIcon:location:
++ _cacheAccessoryImagesForIcon:location:
++ iconModel
++ extraIconViewForIcon:
++ recycleIconView:
++ purgeRecycledIconViewsForClass:
++ viewDelegate
++ dealloc
++ legibilitySettings
++ setLegibilitySettings:
+- mappedIconViewForIcon:
+- recycleViewForIcon:
+- iconViewForIcon:
+- tryToReplaceIcon:withIcon:
+- purgeIconFromMap:
+- node:didAddContainedNodeIdentifiers:
+- node:didRemoveContainedNodeIdentifiers:
+- iconAccessoriesDidUpdate:
+- iconViewDidChangeLocation:
+- initWithIconModel:delegate:
+- setViewDelegate:
+- _modelRemovedIcon:
+- _modelReloadedIcons
+- _modelReloadedState
+- recycleAndPurgeAll
+- _iconViewForIcon:
+- _addIconView:forIcon:
+- _recycleIconView:
+- _cacheImagesForIcon:
+- _cacheLabelImagesForIcon:location:
+- _cacheAccessoryImagesForIcon:location:
+- iconModel
+- extraIconViewForIcon:
+- recycleIconView:
+- purgeRecycledIconViewsForClass:
+- viewDelegate
+- dealloc
+- legibilitySettings
+- setLegibilitySettings:
+@end

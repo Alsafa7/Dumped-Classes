@@ -1,0 +1,148 @@
+@interface UIInputViewTransition : NSObject
+{
+	id oldSet;
+	id newSet;
+	id animationStyle;
+	BOOL cancelled;
+	int animationState;
+	double animationStartTime;
+	BOOL skipNotifications;
+	BOOL skipFencing;
+	struct beginFrame;
+	struct endFrame;
+	struct beginFrameScreen;
+	struct endFrameScreen;
+	struct beginFloatingFrame;
+	struct endFloatingFrame;
+	struct beginFloatingFrameScreen;
+	struct endFloatingFrameScreen;
+	BOOL ignoreFrameChanges;
+	int activeClippingMode;
+	id snapshotView;
+	struct snapshotViewBeginFrame;
+	struct snapshotViewEndFrame;
+}
+
++ dealloc
++ description
++ snapshotView
++ setAnimationStartTime:
++ cancelled
++ setCancelled:
++ setEndFrame:
++ endFrame
++ isOnScreen
++ shouldCompleteOnSuspend
++ animationStyle
++ postNotificationsForTransitionEnd
++ postNotificationsForTransitionStart
++ skipFencing
++ ignoreFrameChanges
++ endFrameScreen
++ animationState
++ setIgnoreFrameChanges:
++ shouldRecomputeEndFrame
++ oldSet
++ newSet
++ setEndFrameScreen:
++ beginFrame
++ snapshotViewBeginFrame
++ snapshotViewEndFrame
++ fadeAccessoryView
++ requiresAutomaticAppearanceEnabled
++ endState
++ subsumesTransition:
++ activeClippingMode
++ setActiveClippingMode:
++ setAnimationState:
++ transitioningState
++ cancelState
++ setOldSet:
++ setNewSet:
++ setBeginFrameScreen:
++ setAnimationStyle:
++ setBeginFrame:
++ setSkipNotifications:
++ setSkipFencing:
++ setBeginFloatingFrame:
++ setEndFloatingFrame:
++ setBeginFloatingFrameScreen:
++ setEndFloatingFrameScreen:
++ beginFrameScreen
++ beginFloatingFrame
++ endFloatingFrame
++ setSnapshotView:
++ setSnapshotViewBeginFrame:
++ setSnapshotViewEndFrame:
++ deprecatedBounds
++ deprecatedCenterBegin
++ deprecatedCenterEnd
++ skipNotifications
++ userInfoForTransition
++ beginFloatingFrameScreen
++ endFloatingFrameScreen
++ isAlmostDone
++ animationStartTime
++ beginState
+- dealloc
+- description
+- snapshotView
+- setAnimationStartTime:
+- cancelled
+- setCancelled:
+- setEndFrame:
+- endFrame
+- isOnScreen
+- shouldCompleteOnSuspend
+- animationStyle
+- postNotificationsForTransitionEnd
+- postNotificationsForTransitionStart
+- skipFencing
+- ignoreFrameChanges
+- endFrameScreen
+- animationState
+- setIgnoreFrameChanges:
+- shouldRecomputeEndFrame
+- oldSet
+- newSet
+- setEndFrameScreen:
+- beginFrame
+- snapshotViewBeginFrame
+- snapshotViewEndFrame
+- fadeAccessoryView
+- requiresAutomaticAppearanceEnabled
+- endState
+- subsumesTransition:
+- activeClippingMode
+- setActiveClippingMode:
+- setAnimationState:
+- transitioningState
+- cancelState
+- setOldSet:
+- setNewSet:
+- setBeginFrameScreen:
+- setAnimationStyle:
+- setBeginFrame:
+- setSkipNotifications:
+- setSkipFencing:
+- setBeginFloatingFrame:
+- setEndFloatingFrame:
+- setBeginFloatingFrameScreen:
+- setEndFloatingFrameScreen:
+- beginFrameScreen
+- beginFloatingFrame
+- endFloatingFrame
+- setSnapshotView:
+- setSnapshotViewBeginFrame:
+- setSnapshotViewEndFrame:
+- deprecatedBounds
+- deprecatedCenterBegin
+- deprecatedCenterEnd
+- skipNotifications
+- userInfoForTransition
+- beginFloatingFrameScreen
+- endFloatingFrameScreen
+- isAlmostDone
+- animationStartTime
+- beginState
+@end

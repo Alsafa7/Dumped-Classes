@@ -1,0 +1,6 @@
+@interface CollectionCellAnalogClockLandscapeView : CollectionCellAnalogClockView
+{
+
+}
+
+@end

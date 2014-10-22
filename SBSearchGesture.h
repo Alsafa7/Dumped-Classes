@@ -1,0 +1,61 @@
+@interface SBSearchGesture : NSObject
+{
+	id _observers;
+	id _scrollView;
+	BOOL _suppressObserverCallbacks;
+	BOOL _animatingResetOrReveal;
+	BOOL _enabled;
+	id _targetView;
+}
+
++ revealAnimated:
++ _iconEditingStateChanged:
++ _openFolderChanged:
++ _displayLaunched:
++ updateForRotation
++ _updateForScrollingEnded
++ _updateScrollingEnabled
++ _updateForFinalContentOffset
++ _isShowingSearch
++ resetAnimated:
++ isAnimatingResetOrReveal
++ dealloc
++ init
++ scrollViewDidScroll:
++ scrollViewWillEndDragging:withVelocity:targetContentOffset:
++ scrollViewDidEndDragging:willDecelerate:
++ scrollViewDidEndDecelerating:
++ scrollViewDidEndScrollingAnimation:
++ scrollViewDidScrollToTop:
++ removeObserver:
++ setEnabled:
++ enabled
++ targetView
++ setTargetView:
++ addObserver:
+- revealAnimated:
+- _iconEditingStateChanged:
+- _openFolderChanged:
+- _displayLaunched:
+- updateForRotation
+- _updateForScrollingEnded
+- _updateScrollingEnabled
+- _updateForFinalContentOffset
+- _isShowingSearch
+- resetAnimated:
+- isAnimatingResetOrReveal
+- dealloc
+- init
+- scrollViewDidScroll:
+- scrollViewWillEndDragging:withVelocity:targetContentOffset:
+- scrollViewDidEndDragging:willDecelerate:
+- scrollViewDidEndDecelerating:
+- scrollViewDidEndScrollingAnimation:
+- scrollViewDidScrollToTop:
+- removeObserver:
+- setEnabled:
+- enabled
+- targetView
+- setTargetView:
+- addObserver:
+@end

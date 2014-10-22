@@ -1,0 +1,59 @@
+@interface TIKeyboardInput : NSObject
+{
+	union _flags;
+	BOOL _backspace;
+	id _string;
+	id _object;
+	id _touchEvent;
+	id _acceptedCandidate;
+}
+
++ dealloc
++ initWithCoder:
++ encodeWithCoder:
++ description
++ string
++ object
++ setTouchEvent:
++ setString:
++ setUppercase:
++ setAutoshifted:
++ setPopupVariant:
++ setMultitap:
++ setFlick:
++ setBackspace:
++ setObject:
++ setAcceptedCandidate:
++ isFlick
++ isPopupVariant
++ touchEvent
++ acceptedCandidate
++ isBackspace
++ isUppercase
++ isAutoshifted
++ isMultitap
+- dealloc
+- initWithCoder:
+- encodeWithCoder:
+- description
+- string
+- object
+- setTouchEvent:
+- setString:
+- setUppercase:
+- setAutoshifted:
+- setPopupVariant:
+- setMultitap:
+- setFlick:
+- setBackspace:
+- setObject:
+- setAcceptedCandidate:
+- isFlick
+- isPopupVariant
+- touchEvent
+- acceptedCandidate
+- isBackspace
+- isUppercase
+- isAutoshifted
+- isMultitap
+@end

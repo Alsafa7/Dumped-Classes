@@ -1,0 +1,6 @@
+@interface PUInterfaceManager : NSObject
+{
+
+}
+
+@end

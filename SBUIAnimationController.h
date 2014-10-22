@@ -1,0 +1,129 @@
+@interface SBUIAnimationController : NSObject
+{
+	id _delegate;
+	id _transitionWindow;
+	id _transitionContainer;
+	id _activatingApp;
+	id _deactivatingApp;
+	id _activatingContext;
+	id _deactivatingContext;
+	id _activationAssertion;
+	id _commitBlock;
+	int _animationState;
+	BOOL _cancelOnNextSuspendIfNecessary;
+	BOOL _didPostBeginAnimationNotification;
+	BOOL _didNotifyDelegateOfCompletion;
+	BOOL _needsCATransactionActivate;
+}
+
++ _prepareAnimation
++ _animationIdentifier
++ _noteAnimationDidFinish
++ _noteAnimationDidCommit:withDuration:afterDelay:
++ initWithActivatingApp:deactivatingApp:
++ deactivatingApp
++ _getTransitionWindow
++ deactivatingContext
++ activatingApp
++ _cleanupAnimation
++ activatingContext
++ _shouldDismissBanner
++ _animationShouldStart
++ _animationProgressDependency
++ isReasonableMomentToInterrupt
++ _applicationDependencyStateChanged
++ setActivatingApp:
++ setDeactivatingApp:
++ _shouldTakeActivationAssertionForDeactivatingApp
++ setActivationAssertion:
++ activationAssertion
++ _setAnimationState:
++ _cancelAnimation
++ __startAnimation
++ _evaluateProgressConditions
++ _willAnimate
++ setActivatingContext:
++ setDeactivatingContext:
++ _applicationActivationStateDidChange
++ __cancelAnimation
++ _notifyDelegateOfCompletion
++ __cleanupAnimation
++ _isNullAnimation
++ commitBlock
++ setCommitBlock:
++ __noteAnimationDidTerminateWithSuccess:
++ _releaseActivationAssertion
++ _animationState
++ waitingToStart
++ endAnimation
++ _noteAnimationDidFail
++ cancelOnNextSuspendIfNecessary
++ setCancelOnNextSuspendIfNecessary:
++ needsCATransactionActivate
++ setNeedsCATransactionActivate:
++ dealloc
++ setDelegate:
++ init
++ delegate
++ containerView
++ animating
++ isComplete
++ beginAnimation
++ _startAnimation
++ _setHidden:
+- _prepareAnimation
+- _animationIdentifier
+- _noteAnimationDidFinish
+- _noteAnimationDidCommit:withDuration:afterDelay:
+- initWithActivatingApp:deactivatingApp:
+- deactivatingApp
+- _getTransitionWindow
+- deactivatingContext
+- activatingApp
+- _cleanupAnimation
+- activatingContext
+- _shouldDismissBanner
+- _animationShouldStart
+- _animationProgressDependency
+- isReasonableMomentToInterrupt
+- _applicationDependencyStateChanged
+- setActivatingApp:
+- setDeactivatingApp:
+- _shouldTakeActivationAssertionForDeactivatingApp
+- setActivationAssertion:
+- activationAssertion
+- _setAnimationState:
+- _cancelAnimation
+- __startAnimation
+- _evaluateProgressConditions
+- _willAnimate
+- setActivatingContext:
+- setDeactivatingContext:
+- _applicationActivationStateDidChange
+- __cancelAnimation
+- _notifyDelegateOfCompletion
+- __cleanupAnimation
+- _isNullAnimation
+- commitBlock
+- setCommitBlock:
+- __noteAnimationDidTerminateWithSuccess:
+- _releaseActivationAssertion
+- _animationState
+- waitingToStart
+- endAnimation
+- _noteAnimationDidFail
+- cancelOnNextSuspendIfNecessary
+- setCancelOnNextSuspendIfNecessary:
+- needsCATransactionActivate
+- setNeedsCATransactionActivate:
+- dealloc
+- setDelegate:
+- init
+- delegate
+- containerView
+- animating
+- isComplete
+- beginAnimation
+- _startAnimation
+- _setHidden:
+@end

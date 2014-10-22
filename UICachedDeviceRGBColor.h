@@ -1,0 +1,6 @@
+@interface UICachedDeviceRGBColor : UIDeviceRGBColor
+{
+
+}
+
+@end

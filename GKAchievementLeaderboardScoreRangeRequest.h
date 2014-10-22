@@ -1,0 +1,6 @@
+@interface GKAchievementLeaderboardScoreRangeRequest : GKLeaderboardScoreRangeRequest
+{
+
+}
+
+@end

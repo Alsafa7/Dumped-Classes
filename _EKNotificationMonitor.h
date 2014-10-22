@@ -1,0 +1,72 @@
+@interface _EKNotificationMonitor : NSObject
+{
+	id _eventStore;
+	id _eventStoreGetter;
+	BOOL _running;
+	id _timer;
+	id _nextFireTime;
+	id _syncTimer;
+	BOOL _pendingChanges;
+	id _queue;
+	id _timerQueue;
+	usigned long long _lastCount;
+	id _notifications;
+	id _recentlyRepliedNotifications;
+	id _culledRecentlyRepliedNotifications;
+	BOOL _initialCheck;
+	BOOL _shouldInstallPersistentTimer;
+	BOOL _useSyncIdleTimer;
+	BOOL _loadRecentlyRepliedNotifications;
+}
+
++ _databaseChanged
++ initWithEventStore:
++ _killSyncTimer
++ _syncTimerFired:
++ _syncDidEnd
++ _resetSyncTimer
++ _syncDidStart
++ _resetTimer
++ _checkForUpdates
++ killTimer
++ _eventStore
++ _checkForRecentlyRepliedNotifications:
++ _timerFired
++ adjust
++ _notificationFromEvent:
++ _checkForNotifications:
++ _notifyForUnalertedNotifications:
++ initForBulletinBoardWithEventStoreGetter:
++ notificationCount
++ notifications
++ recentlyRepliedNotifications
++ dealloc
++ init
++ start
++ stop
+- _databaseChanged
+- initWithEventStore:
+- _killSyncTimer
+- _syncTimerFired:
+- _syncDidEnd
+- _resetSyncTimer
+- _syncDidStart
+- _resetTimer
+- _checkForUpdates
+- killTimer
+- _eventStore
+- _checkForRecentlyRepliedNotifications:
+- _timerFired
+- adjust
+- _notificationFromEvent:
+- _checkForNotifications:
+- _notifyForUnalertedNotifications:
+- initForBulletinBoardWithEventStoreGetter:
+- notificationCount
+- notifications
+- recentlyRepliedNotifications
+- dealloc
+- init
+- start
+- stop
+@end
